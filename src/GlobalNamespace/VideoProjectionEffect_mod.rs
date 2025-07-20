@@ -77,14 +77,17 @@ impl crate::GlobalNamespace::VideoProjectionEffect {
     pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VideoProjectionEffect as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::VideoProjectionEffect as
-                    quest_hook::libil2cpp::Type > ::class(), "OnDestroy", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "OnDestroy", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -94,14 +97,17 @@ impl crate::GlobalNamespace::VideoProjectionEffect {
     pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VideoProjectionEffect as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::VideoProjectionEffect as
-                    quest_hook::libil2cpp::Type > ::class(), "Start", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Start", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -111,14 +117,17 @@ impl crate::GlobalNamespace::VideoProjectionEffect {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VideoProjectionEffect as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::VideoProjectionEffect as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -188,15 +197,17 @@ impl crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionB
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior
-                    as quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Dispose", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -207,22 +218,23 @@ impl crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionB
         &mut self,
         data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BasicBeatmapEventData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BasicBeatmapEventData,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("HandleBeatmapEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior
-                    as quest_hook::libil2cpp::Type > ::class(), "HandleBeatmapEvent",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::BasicBeatmapEventData,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("HandleBeatmapEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HandleBeatmapEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (data))?
@@ -278,34 +290,38 @@ impl crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionB
         >,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::IReadonlyBeatmapData,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::VideoProjectionDataModelSO,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::SongTimeSyncedVideoPlayer,
-                    >,
-                    crate::GlobalNamespace::BasicBeatmapEventType,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::BeatmapCallbacksController,
-                    >,
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-                ),
-                quest_hook::libil2cpp::Void,
-                6usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IReadonlyBeatmapData,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::VideoProjectionDataModelSO,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SongTimeSyncedVideoPlayer,
+                            >,
+                            crate::GlobalNamespace::BasicBeatmapEventType,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapCallbacksController,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapLevel,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -413,31 +429,35 @@ impl crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavi
         videoEventType: crate::GlobalNamespace::BasicBeatmapEventType,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavior as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::IReadonlyBeatmapData,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::VideoProjectionDataModelSO,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::SongTimeSyncedVideoPlayer,
-                    >,
-                    crate::GlobalNamespace::BasicBeatmapEventType,
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-                ),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavior
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IReadonlyBeatmapData,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::VideoProjectionDataModelSO,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SongTimeSyncedVideoPlayer,
+                            >,
+                            crate::GlobalNamespace::BasicBeatmapEventType,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapLevel,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -514,18 +534,23 @@ impl crate::GlobalNamespace::VideoProjectionEffect_InitData {
         &mut self,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VideoProjectionEffect_InitData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::VideoProjectionEffect_InitData as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::BeatmapLevel,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (beatmapLevel))?
@@ -601,15 +626,17 @@ impl crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior as
-                    quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Dispose", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -619,20 +646,21 @@ impl crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
     pub fn LoadPreviewCoverAsset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("LoadPreviewCoverAsset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior as
-                    quest_hook::libil2cpp::Type > ::class(), "LoadPreviewCoverAsset",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("LoadPreviewCoverAsset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "LoadPreviewCoverAsset", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -643,19 +671,21 @@ impl crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
         &mut self,
         eventValue: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (i32),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("LoadVideoFromModel")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior as
-                    quest_hook::libil2cpp::Type > ::class(), "LoadVideoFromModel", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("LoadVideoFromModel")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "LoadVideoFromModel", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (eventValue))?
@@ -680,15 +710,21 @@ impl crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
     pub fn UnloadCoverAsset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UnloadCoverAsset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior as
-                    quest_hook::libil2cpp::Type > ::class(), "UnloadCoverAsset", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("UnloadCoverAsset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UnloadCoverAsset", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -705,27 +741,31 @@ impl crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
         >,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::VideoProjectionDataModelSO,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::SongTimeSyncedVideoPlayer,
-                    >,
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::VideoProjectionDataModelSO,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SongTimeSyncedVideoPlayer,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapLevel,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (dataModel, videoPlayer, beatmapLevel))?

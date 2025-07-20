@@ -48,18 +48,21 @@ impl crate::GlobalNamespace::LevelPackHeaderTableCell {
         &mut self,
         transitionType: crate::HMUI::SelectableCell_TransitionType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelPackHeaderTableCell as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::HMUI::SelectableCell_TransitionType),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("HighlightDidChange")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::LevelPackHeaderTableCell as
-                    quest_hook::libil2cpp::Type > ::class(), "HighlightDidChange", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::HMUI::SelectableCell_TransitionType),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("HighlightDidChange")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HighlightDidChange", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (transitionType))?
@@ -76,14 +79,21 @@ impl crate::GlobalNamespace::LevelPackHeaderTableCell {
     pub fn RefreshVisuals(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelPackHeaderTableCell as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("RefreshVisuals")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::LevelPackHeaderTableCell as
-                    quest_hook::libil2cpp::Type > ::class(), "RefreshVisuals", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("RefreshVisuals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "RefreshVisuals", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -94,18 +104,21 @@ impl crate::GlobalNamespace::LevelPackHeaderTableCell {
         &mut self,
         transitionType: crate::HMUI::SelectableCell_TransitionType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelPackHeaderTableCell as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::HMUI::SelectableCell_TransitionType),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("SelectionDidChange")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::LevelPackHeaderTableCell as
-                    quest_hook::libil2cpp::Type > ::class(), "SelectionDidChange", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::HMUI::SelectableCell_TransitionType),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SelectionDidChange")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SelectionDidChange", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (transitionType))?
@@ -116,18 +129,21 @@ impl crate::GlobalNamespace::LevelPackHeaderTableCell {
         &mut self,
         headerText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelPackHeaderTableCell as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("SetData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::LevelPackHeaderTableCell as
-                    quest_hook::libil2cpp::Type > ::class(), "SetData", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetData", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (headerText))?
@@ -137,14 +153,17 @@ impl crate::GlobalNamespace::LevelPackHeaderTableCell {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelPackHeaderTableCell as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::LevelPackHeaderTableCell as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

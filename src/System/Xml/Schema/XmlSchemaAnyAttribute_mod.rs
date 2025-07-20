@@ -48,18 +48,23 @@ impl crate::System::Xml::Schema::XmlSchemaAnyAttribute {
         &mut self,
         qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaAnyAttribute as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>),
-                bool,
-                1usize,
-            >("Allows")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Xml::Schema::XmlSchemaAnyAttribute as
-                    quest_hook::libil2cpp::Type > ::class(), "Allows", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::XmlQualifiedName,
+                        >),
+                        bool,
+                        1usize,
+                    >("Allows")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Allows", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (qname))? };
         Ok(__cordl_ret.into())
@@ -68,18 +73,21 @@ impl crate::System::Xml::Schema::XmlSchemaAnyAttribute {
         &mut self,
         targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaAnyAttribute as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("BuildNamespaceList")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Xml::Schema::XmlSchemaAnyAttribute as
-                    quest_hook::libil2cpp::Type > ::class(), "BuildNamespaceList", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("BuildNamespaceList")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BuildNamespaceList", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (targetNamespace))?
@@ -90,19 +98,21 @@ impl crate::System::Xml::Schema::XmlSchemaAnyAttribute {
         &mut self,
         targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaAnyAttribute as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("BuildNamespaceListV1Compat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Xml::Schema::XmlSchemaAnyAttribute as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "BuildNamespaceListV1Compat", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("BuildNamespaceListV1Compat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BuildNamespaceListV1Compat", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (targetNamespace))?
@@ -116,28 +126,31 @@ impl crate::System::Xml::Schema::XmlSchemaAnyAttribute {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAnyAttribute>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaAnyAttribute as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Xml::Schema::XmlSchemaAnyAttribute,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Xml::Schema::XmlSchemaAnyAttribute,
-                    >,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Xml::Schema::XmlSchemaAnyAttribute,
-                >,
-                3usize,
-            >("Intersection")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Xml::Schema::XmlSchemaAnyAttribute as
-                    quest_hook::libil2cpp::Type > ::class(), "Intersection", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+                            >,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+                        >,
+                        3usize,
+                    >("Intersection")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Intersection", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaAnyAttribute,
@@ -152,25 +165,28 @@ impl crate::System::Xml::Schema::XmlSchemaAnyAttribute {
             crate::System::Xml::Schema::XmlSchemaAnyAttribute,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaAnyAttribute as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Xml::Schema::XmlSchemaAnyAttribute,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Xml::Schema::XmlSchemaAnyAttribute,
-                    >,
-                ),
-                bool,
-                2usize,
-            >("IsSubset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Xml::Schema::XmlSchemaAnyAttribute as
-                    quest_hook::libil2cpp::Type > ::class(), "IsSubset", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("IsSubset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsSubset", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (sub, _cordl_super))?
@@ -191,28 +207,31 @@ impl crate::System::Xml::Schema::XmlSchemaAnyAttribute {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAnyAttribute>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaAnyAttribute as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Xml::Schema::XmlSchemaAnyAttribute,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Xml::Schema::XmlSchemaAnyAttribute,
-                    >,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Xml::Schema::XmlSchemaAnyAttribute,
-                >,
-                3usize,
-            >("Union")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Xml::Schema::XmlSchemaAnyAttribute as
-                    quest_hook::libil2cpp::Type > ::class(), "Union", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+                            >,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+                        >,
+                        3usize,
+                    >("Union")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Union", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaAnyAttribute,
@@ -222,14 +241,17 @@ impl crate::System::Xml::Schema::XmlSchemaAnyAttribute {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaAnyAttribute as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Xml::Schema::XmlSchemaAnyAttribute as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -241,18 +263,23 @@ impl crate::System::Xml::Schema::XmlSchemaAnyAttribute {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::NamespaceList>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaAnyAttribute as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::NamespaceList>,
-                0usize,
-            >("get_NamespaceList")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Xml::Schema::XmlSchemaAnyAttribute as
-                    quest_hook::libil2cpp::Type > ::class(), "get_NamespaceList", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::NamespaceList,
+                        >,
+                        0usize,
+                    >("get_NamespaceList")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_NamespaceList", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::NamespaceList,
@@ -264,19 +291,21 @@ impl crate::System::Xml::Schema::XmlSchemaAnyAttribute {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Xml::Schema::XmlSchemaContentProcessing,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaAnyAttribute as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Xml::Schema::XmlSchemaContentProcessing,
-                0usize,
-            >("get_ProcessContents")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Xml::Schema::XmlSchemaAnyAttribute as
-                    quest_hook::libil2cpp::Type > ::class(), "get_ProcessContents",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Xml::Schema::XmlSchemaContentProcessing,
+                        0usize,
+                    >("get_ProcessContents")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_ProcessContents", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Xml::Schema::XmlSchemaContentProcessing = unsafe {
             method.invoke_unchecked(self, ())?
@@ -288,19 +317,21 @@ impl crate::System::Xml::Schema::XmlSchemaAnyAttribute {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Xml::Schema::XmlSchemaContentProcessing,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaAnyAttribute as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Xml::Schema::XmlSchemaContentProcessing,
-                0usize,
-            >("get_ProcessContentsCorrect")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Xml::Schema::XmlSchemaAnyAttribute as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_ProcessContentsCorrect", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Xml::Schema::XmlSchemaContentProcessing,
+                        0usize,
+                    >("get_ProcessContentsCorrect")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_ProcessContentsCorrect", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Xml::Schema::XmlSchemaContentProcessing = unsafe {
             method.invoke_unchecked(self, ())?
@@ -311,18 +342,21 @@ impl crate::System::Xml::Schema::XmlSchemaAnyAttribute {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaAnyAttribute as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_Namespace")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Xml::Schema::XmlSchemaAnyAttribute as
-                    quest_hook::libil2cpp::Type > ::class(), "set_Namespace", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_Namespace")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_Namespace", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -333,19 +367,21 @@ impl crate::System::Xml::Schema::XmlSchemaAnyAttribute {
         &mut self,
         value: crate::System::Xml::Schema::XmlSchemaContentProcessing,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaAnyAttribute as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Xml::Schema::XmlSchemaContentProcessing),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_ProcessContents")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Xml::Schema::XmlSchemaAnyAttribute as
-                    quest_hook::libil2cpp::Type > ::class(), "set_ProcessContents",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Xml::Schema::XmlSchemaContentProcessing),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_ProcessContents")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_ProcessContents", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

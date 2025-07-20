@@ -53,14 +53,17 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -72,18 +75,21 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                0usize,
-            >("get_mesh")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO as
-                    quest_hook::libil2cpp::Type > ::class(), "get_mesh", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        0usize,
+                    >("get_mesh")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_mesh", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = unsafe {
             method.invoke_unchecked(self, ())?

@@ -101,14 +101,17 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaException {
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaException as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Schema::JsonSchemaException as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -119,18 +122,21 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaException {
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaException as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Schema::JsonSchemaException as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (message))?
@@ -142,21 +148,26 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaException {
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaException as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<crate::System::Exception>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Schema::JsonSchemaException as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (message, innerException))?
@@ -171,24 +182,31 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaException {
         lineNumber: i32,
         linePosition: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaException as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<crate::System::Exception>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    i32,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Schema::JsonSchemaException as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            i32,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -206,23 +224,26 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaException {
         >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaException as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Runtime::Serialization::SerializationInfo,
-                    >,
-                    crate::System::Runtime::Serialization::StreamingContext,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Schema::JsonSchemaException as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Runtime::Serialization::SerializationInfo,
+                            >,
+                            crate::System::Runtime::Serialization::StreamingContext,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (info, context))?
@@ -230,27 +251,33 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaException {
         Ok(__cordl_ret.into())
     }
     pub fn get_LineNumber(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaException as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("get_LineNumber")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Schema::JsonSchemaException as
-                    quest_hook::libil2cpp::Type > ::class(), "get_LineNumber", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("get_LineNumber")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_LineNumber", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_LinePosition(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaException as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("get_LinePosition")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Schema::JsonSchemaException as
-                    quest_hook::libil2cpp::Type > ::class(), "get_LinePosition", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("get_LinePosition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_LinePosition", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -260,18 +287,21 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaException {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaException as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("get_Path")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Schema::JsonSchemaException as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Path", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("get_Path")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Path", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,

@@ -88,24 +88,27 @@ impl crate::GlobalNamespace::MultiplayerResultsPyramidView {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerResultsPyramidView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IReadOnlyList_1<
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
-                        >,
-                    >,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("PrespawnAvatars")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MultiplayerResultsPyramidView as
-                    quest_hook::libil2cpp::Type > ::class(), "PrespawnAvatars", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::IConnectedPlayer,
+                                >,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("PrespawnAvatars")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PrespawnAvatars", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (activePlayers))?
@@ -124,28 +127,31 @@ impl crate::GlobalNamespace::MultiplayerResultsPyramidView {
         badgeStartTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         badgeMidTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerResultsPyramidView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IReadOnlyList_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerPlayerResultsData,
+                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::MultiplayerPlayerResultsData,
+                                    >,
+                                >,
                             >,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("SetupResults")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MultiplayerResultsPyramidView as
-                    quest_hook::libil2cpp::Type > ::class(), "SetupResults", 3usize
-                )
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("SetupResults")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetupResults", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -159,14 +165,17 @@ impl crate::GlobalNamespace::MultiplayerResultsPyramidView {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerResultsPyramidView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MultiplayerResultsPyramidView as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -182,22 +191,25 @@ impl crate::GlobalNamespace::MultiplayerResultsPyramidView {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerResultsPyramidView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                    >,
-                >,
-                0usize,
-            >("get_badgeTimelines")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MultiplayerResultsPyramidView as
-                    quest_hook::libil2cpp::Type > ::class(), "get_badgeTimelines", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            >,
+                        >,
+                        0usize,
+                    >("get_badgeTimelines")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_badgeTimelines", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -215,23 +227,25 @@ impl crate::GlobalNamespace::MultiplayerResultsPyramidView {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerResultsPyramidView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                    >,
-                >,
-                0usize,
-            >("get_resultAvatarDirectors")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MultiplayerResultsPyramidView as
-                    quest_hook::libil2cpp::Type > ::class(), "get_resultAvatarDirectors",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            >,
+                        >,
+                        0usize,
+                    >("get_resultAvatarDirectors")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_resultAvatarDirectors", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<

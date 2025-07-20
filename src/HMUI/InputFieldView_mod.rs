@@ -70,18 +70,21 @@ impl crate::HMUI::InputFieldView {
         &mut self,
         keyboard: quest_hook::libil2cpp::Gc<crate::HMUI::UIKeyboard>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::HMUI::UIKeyboard>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("ActivateKeyboard")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "ActivateKeyboard", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::HMUI::UIKeyboard>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("ActivateKeyboard")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ActivateKeyboard", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (keyboard))?
@@ -91,14 +94,17 @@ impl crate::HMUI::InputFieldView {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "Awake", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Awake", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -110,18 +116,23 @@ impl crate::HMUI::InputFieldView {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
-                0usize,
-            >("BlinkingCaretCoroutine")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "BlinkingCaretCoroutine", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::IEnumerator,
+                        >,
+                        0usize,
+                    >("BlinkingCaretCoroutine")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BlinkingCaretCoroutine", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
@@ -131,14 +142,17 @@ impl crate::HMUI::InputFieldView {
     pub fn ClearInput(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ClearInput")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "ClearInput", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ClearInput")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ClearInput", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -149,18 +163,21 @@ impl crate::HMUI::InputFieldView {
         &mut self,
         keyboard: quest_hook::libil2cpp::Gc<crate::HMUI::UIKeyboard>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::HMUI::UIKeyboard>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("DeactivateKeyboard")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "DeactivateKeyboard", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::HMUI::UIKeyboard>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("DeactivateKeyboard")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "DeactivateKeyboard", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (keyboard))?
@@ -172,18 +189,21 @@ impl crate::HMUI::InputFieldView {
         state: crate::UnityEngine::UI::Selectable_SelectionState,
         instant: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::UI::Selectable_SelectionState, bool),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("DoStateTransition")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "DoStateTransition", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::UI::Selectable_SelectionState, bool),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("DoStateTransition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "DoStateTransition", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (state, instant))?
@@ -193,18 +213,21 @@ impl crate::HMUI::InputFieldView {
     pub fn KeyboardDeletePressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("KeyboardDeletePressed")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "KeyboardDeletePressed", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("KeyboardDeletePressed")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "KeyboardDeletePressed", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -215,18 +238,21 @@ impl crate::HMUI::InputFieldView {
         &mut self,
         letter: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (char),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("KeyboardKeyPressed")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "KeyboardKeyPressed", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (char),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("KeyboardKeyPressed")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "KeyboardKeyPressed", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (letter))?
@@ -243,14 +269,17 @@ impl crate::HMUI::InputFieldView {
     pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "OnDestroy", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "OnDestroy", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -261,18 +290,21 @@ impl crate::HMUI::InputFieldView {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("SetText")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "SetText", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetText")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetText", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -282,18 +314,21 @@ impl crate::HMUI::InputFieldView {
     pub fn UpdateCaretPosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("UpdateCaretPosition")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "UpdateCaretPosition", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("UpdateCaretPosition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UpdateCaretPosition", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -303,14 +338,21 @@ impl crate::HMUI::InputFieldView {
     pub fn UpdateClearButton(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UpdateClearButton")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "UpdateClearButton", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("UpdateClearButton")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UpdateClearButton", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -320,14 +362,21 @@ impl crate::HMUI::InputFieldView {
     pub fn UpdatePlaceholder(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UpdatePlaceholder")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "UpdatePlaceholder", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("UpdatePlaceholder")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UpdatePlaceholder", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -337,14 +386,21 @@ impl crate::HMUI::InputFieldView {
     pub fn _Awake_b__34_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("<Awake>b__34_0")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "<Awake>b__34_0", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("<Awake>b__34_0")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "<Awake>b__34_0", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -354,14 +410,17 @@ impl crate::HMUI::InputFieldView {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -374,20 +433,25 @@ impl crate::HMUI::InputFieldView {
             crate::System::Action_1<crate::HMUI::InputFieldView_SelectionState>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_1<crate::HMUI::InputFieldView_SelectionState>,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("add_selectionStateDidChangeEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "add_selectionStateDidChangeEvent", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<
+                                crate::HMUI::InputFieldView_SelectionState,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("add_selectionStateDidChangeEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "add_selectionStateDidChangeEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -397,18 +461,21 @@ impl crate::HMUI::InputFieldView {
     pub fn get_keyboardPositionOffset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::Vector3,
-                0usize,
-            >("get_keyboardPositionOffset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "get_keyboardPositionOffset", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Vector3,
+                        0usize,
+                    >("get_keyboardPositionOffset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_keyboardPositionOffset", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
             method.invoke_unchecked(self, ())?
@@ -420,18 +487,23 @@ impl crate::HMUI::InputFieldView {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView_InputFieldChanged>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView_InputFieldChanged>,
-                0usize,
-            >("get_onValueChanged")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "get_onValueChanged", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::HMUI::InputFieldView_InputFieldChanged,
+                        >,
+                        0usize,
+                    >("get_onValueChanged")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_onValueChanged", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HMUI::InputFieldView_InputFieldChanged,
@@ -441,18 +513,21 @@ impl crate::HMUI::InputFieldView {
     pub fn get_selectionState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::HMUI::InputFieldView_SelectionState> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::HMUI::InputFieldView_SelectionState,
-                0usize,
-            >("get_selectionState")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "get_selectionState", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::HMUI::InputFieldView_SelectionState,
+                        0usize,
+                    >("get_selectionState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_selectionState", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::HMUI::InputFieldView_SelectionState = unsafe {
             method.invoke_unchecked(self, ())?
@@ -464,18 +539,21 @@ impl crate::HMUI::InputFieldView {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("get_text")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "get_text", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("get_text")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_text", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -483,14 +561,17 @@ impl crate::HMUI::InputFieldView {
         Ok(__cordl_ret.into())
     }
     pub fn get_useGlobalKeyboard(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_useGlobalKeyboard")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "get_useGlobalKeyboard", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_useGlobalKeyboard")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_useGlobalKeyboard", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -501,20 +582,25 @@ impl crate::HMUI::InputFieldView {
             crate::System::Action_1<crate::HMUI::InputFieldView_SelectionState>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_1<crate::HMUI::InputFieldView_SelectionState>,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("remove_selectionStateDidChangeEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "remove_selectionStateDidChangeEvent", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<
+                                crate::HMUI::InputFieldView_SelectionState,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("remove_selectionStateDidChangeEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "remove_selectionStateDidChangeEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -525,20 +611,23 @@ impl crate::HMUI::InputFieldView {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView_InputFieldChanged>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::HMUI::InputFieldView_InputFieldChanged,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_onValueChanged")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "set_onValueChanged", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::HMUI::InputFieldView_InputFieldChanged,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_onValueChanged")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_onValueChanged", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -549,18 +638,21 @@ impl crate::HMUI::InputFieldView {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_text")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView as quest_hook::libil2cpp::Type >
-                    ::class(), "set_text", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_text")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_text", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -632,14 +724,17 @@ impl crate::HMUI::InputFieldView_InputFieldChanged {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::InputFieldView_InputFieldChanged as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::InputFieldView_InputFieldChanged as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

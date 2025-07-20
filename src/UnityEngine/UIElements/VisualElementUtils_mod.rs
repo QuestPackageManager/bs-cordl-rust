@@ -45,24 +45,28 @@ impl crate::UnityEngine::UIElements::VisualElementUtils {
         >,
         classNameToEnable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementUtils as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::UIElements::VisualElement,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("AssignInspectorStyleIfNecessary")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::VisualElementUtils as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "AssignInspectorStyleIfNecessary", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("AssignInspectorStyleIfNecessary")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AssignInspectorStyleIfNecessary", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (element, classNameToEnable))?
@@ -72,20 +76,23 @@ impl crate::UnityEngine::UIElements::VisualElementUtils {
     pub fn GetFoldoutDepth(
         element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementUtils as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::VisualElement,
-                >),
-                i32,
-                1usize,
-            >("GetFoldoutDepth")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::VisualElementUtils as
-                    quest_hook::libil2cpp::Type > ::class(), "GetFoldoutDepth", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::VisualElement,
+                        >),
+                        i32,
+                        1usize,
+                    >("GetFoldoutDepth")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetFoldoutDepth", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (element))? };
         Ok(__cordl_ret.into())
@@ -95,18 +102,21 @@ impl crate::UnityEngine::UIElements::VisualElementUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementUtils as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                1usize,
-            >("GetUniqueName")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::VisualElementUtils as
-                    quest_hook::libil2cpp::Type > ::class(), "GetUniqueName", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("GetUniqueName")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetUniqueName", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,

@@ -71,14 +71,17 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(), "Awake", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Awake", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -88,19 +91,21 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
     pub fn HandleGameEnergyDidReach0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("HandleGameEnergyDidReach0")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(), "HandleGameEnergyDidReach0",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("HandleGameEnergyDidReach0")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HandleGameEnergyDidReach0", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -110,19 +115,23 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
     pub fn HandleMissionObjectiveCheckersManagerObjectiveDidFail(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("HandleMissionObjectiveCheckersManagerObjectiveDidFail")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "HandleMissionObjectiveCheckersManagerObjectiveDidFail", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("HandleMissionObjectiveCheckersManagerObjectiveDidFail")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "HandleMissionObjectiveCheckersManagerObjectiveDidFail",
+                            0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -133,19 +142,21 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
         &mut self,
         canPause: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("HandlePauseControllerCanPause")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "HandlePauseControllerCanPause", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("HandlePauseControllerCanPause")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HandlePauseControllerCanPause", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (canPause))?
@@ -155,19 +166,21 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
     pub fn HandlePauseControllerDidPause(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("HandlePauseControllerDidPause")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "HandlePauseControllerDidPause", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("HandlePauseControllerDidPause")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HandlePauseControllerDidPause", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -177,19 +190,21 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
     pub fn HandlePauseControllerDidResume(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("HandlePauseControllerDidResume")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "HandlePauseControllerDidResume", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("HandlePauseControllerDidResume")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HandlePauseControllerDidResume", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -199,19 +214,21 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
     pub fn HandlePauseControllerDidStartResume(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("HandlePauseControllerDidStartResume")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "HandlePauseControllerDidStartResume", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("HandlePauseControllerDidStartResume")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HandlePauseControllerDidStartResume", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -221,19 +238,21 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
     pub fn HandleSongDidFinish(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("HandleSongDidFinish")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(), "HandleSongDidFinish",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("HandleSongDidFinish")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HandleSongDidFinish", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -250,14 +269,17 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
     pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(), "OnDestroy", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "OnDestroy", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -269,18 +291,23 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
-                0usize,
-            >("Start")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(), "Start", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::IEnumerator,
+                        >,
+                        0usize,
+                    >("Start")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Start", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
@@ -290,14 +317,17 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -308,19 +338,21 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Action>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("add_levelDidStartEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(), "add_levelDidStartEvent",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Action>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("add_levelDidStartEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "add_levelDidStartEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -331,19 +363,21 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Action>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("add_levelFailedEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(), "add_levelFailedEvent",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Action>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("add_levelFailedEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "add_levelFailedEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -354,19 +388,21 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Action>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("add_levelFinishedEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(), "add_levelFinishedEvent",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Action>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("add_levelFinishedEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "add_levelFinishedEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -377,19 +413,21 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Action>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("add_levelWillStartIntroEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "add_levelWillStartIntroEvent", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Action>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("add_levelWillStartIntroEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "add_levelWillStartIntroEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -401,19 +439,21 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType,
-                0usize,
-            >("get_levelEndStateType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(), "get_levelEndStateType",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType,
+                        0usize,
+                    >("get_levelEndStateType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_levelEndStateType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType = unsafe {
             method.invoke_unchecked(self, ())?
@@ -424,19 +464,21 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Action>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("remove_levelDidStartEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(), "remove_levelDidStartEvent",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Action>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("remove_levelDidStartEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "remove_levelDidStartEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -447,19 +489,21 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Action>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("remove_levelFailedEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(), "remove_levelFailedEvent",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Action>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("remove_levelFailedEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "remove_levelFailedEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -470,19 +514,21 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Action>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("remove_levelFinishedEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(), "remove_levelFinishedEvent",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Action>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("remove_levelFinishedEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "remove_levelFinishedEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -493,19 +539,21 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Action>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("remove_levelWillStartIntroEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "remove_levelWillStartIntroEvent", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Action>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("remove_levelWillStartIntroEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "remove_levelWillStartIntroEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -703,14 +751,17 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager_InitData {
         &mut self,
         failOn0Energy: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionLevelGameplayManager_InitData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MissionLevelGameplayManager_InitData as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (failOn0Energy))?

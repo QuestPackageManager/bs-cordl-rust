@@ -44,22 +44,26 @@ impl crate::System::Net::Http::PlatformHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::Http::StreamContent>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::PlatformHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-                    crate::System::Threading::CancellationToken,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::Net::Http::StreamContent>,
-                2usize,
-            >("CreateStreamContent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::Http::PlatformHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateStreamContent",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                            crate::System::Threading::CancellationToken,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Http::StreamContent,
+                        >,
+                        2usize,
+                    >("CreateStreamContent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateStreamContent", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Http::StreamContent,
@@ -76,28 +80,32 @@ impl crate::System::Net::Http::PlatformHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::PlatformHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IEnumerable_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                        >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                2usize,
-            >("GetSingleHeaderString")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::Http::PlatformHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "GetSingleHeaderString",
-                    2usize
-                )
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        2usize,
+                    >("GetSingleHeaderString")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetSingleHeaderString", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -107,18 +115,21 @@ impl crate::System::Net::Http::PlatformHelper {
     pub fn IsContentHeader(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::PlatformHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                bool,
-                1usize,
-            >("IsContentHeader")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::Http::PlatformHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "IsContentHeader", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        bool,
+                        1usize,
+                    >("IsContentHeader")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsContentHeader", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())

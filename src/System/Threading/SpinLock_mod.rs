@@ -102,18 +102,21 @@ impl crate::System::Threading::SpinLock {
         millisecondsTimeout: i32,
         lockTaken: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::SpinLock as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (i32, quest_hook::libil2cpp::ByRefMut<bool>),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("ContinueTryEnter")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Threading::SpinLock as quest_hook::libil2cpp::Type >
-                    ::class(), "ContinueTryEnter", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i32, quest_hook::libil2cpp::ByRefMut<bool>),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("ContinueTryEnter")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ContinueTryEnter", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (millisecondsTimeout, lockTaken))?
@@ -126,18 +129,21 @@ impl crate::System::Threading::SpinLock {
         startTime: u32,
         lockTaken: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::SpinLock as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (i32, u32, quest_hook::libil2cpp::ByRefMut<bool>),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("ContinueTryEnterWithThreadTracking")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Threading::SpinLock as quest_hook::libil2cpp::Type >
-                    ::class(), "ContinueTryEnterWithThreadTracking", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i32, u32, quest_hook::libil2cpp::ByRefMut<bool>),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("ContinueTryEnterWithThreadTracking")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ContinueTryEnterWithThreadTracking", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (millisecondsTimeout, startTime, lockTaken))?
@@ -147,14 +153,21 @@ impl crate::System::Threading::SpinLock {
     pub fn DecrementWaiters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::SpinLock as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("DecrementWaiters")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Threading::SpinLock as quest_hook::libil2cpp::Type >
-                    ::class(), "DecrementWaiters", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("DecrementWaiters")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "DecrementWaiters", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -165,18 +178,21 @@ impl crate::System::Threading::SpinLock {
         &mut self,
         lockTaken: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::SpinLock as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::ByRefMut<bool>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("Enter")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Threading::SpinLock as quest_hook::libil2cpp::Type >
-                    ::class(), "Enter", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<bool>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Enter")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Enter", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (lockTaken))?
@@ -187,14 +203,17 @@ impl crate::System::Threading::SpinLock {
         &mut self,
         useMemoryBarrier: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::SpinLock as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Exit")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Threading::SpinLock as quest_hook::libil2cpp::Type >
-                    ::class(), "Exit", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Exit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Exit", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (useMemoryBarrier))?
@@ -205,14 +224,21 @@ impl crate::System::Threading::SpinLock {
         &mut self,
         useMemoryBarrier: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::SpinLock as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("ExitSlowPath")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Threading::SpinLock as quest_hook::libil2cpp::Type >
-                    ::class(), "ExitSlowPath", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("ExitSlowPath")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ExitSlowPath", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (useMemoryBarrier))?
@@ -224,18 +250,21 @@ impl crate::System::Threading::SpinLock {
         millisecondsTimeout: i32,
         lockTaken: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::SpinLock as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (i32, quest_hook::libil2cpp::ByRefMut<bool>),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("TryEnter")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Threading::SpinLock as quest_hook::libil2cpp::Type >
-                    ::class(), "TryEnter", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i32, quest_hook::libil2cpp::ByRefMut<bool>),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("TryEnter")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryEnter", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (millisecondsTimeout, lockTaken))?
@@ -246,14 +275,17 @@ impl crate::System::Threading::SpinLock {
         &mut self,
         enableThreadOwnerTracking: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::SpinLock as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Threading::SpinLock as quest_hook::libil2cpp::Type >
-                    ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (enableThreadOwnerTracking))?
@@ -261,14 +293,17 @@ impl crate::System::Threading::SpinLock {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsHeldByCurrentThread(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::SpinLock as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_IsHeldByCurrentThread")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Threading::SpinLock as quest_hook::libil2cpp::Type >
-                    ::class(), "get_IsHeldByCurrentThread", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_IsHeldByCurrentThread")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_IsHeldByCurrentThread", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -276,14 +311,17 @@ impl crate::System::Threading::SpinLock {
     pub fn get_IsThreadOwnerTrackingEnabled(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::SpinLock as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_IsThreadOwnerTrackingEnabled")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Threading::SpinLock as quest_hook::libil2cpp::Type >
-                    ::class(), "get_IsThreadOwnerTrackingEnabled", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_IsThreadOwnerTrackingEnabled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_IsThreadOwnerTrackingEnabled", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

@@ -47,18 +47,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DigitallySigned {
         &mut self,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::DigitallySigned as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("Encode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::DigitallySigned as
-                    quest_hook::libil2cpp::Type > ::class(), "Encode", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Encode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Encode", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (output))?
@@ -85,25 +88,28 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DigitallySigned {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::DigitallySigned>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::DigitallySigned as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
-                    >,
-                    quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Crypto::Tls::DigitallySigned,
-                >,
-                2usize,
-            >("Parse")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::DigitallySigned as
-                    quest_hook::libil2cpp::Type > ::class(), "Parse", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::Tls::DigitallySigned,
+                        >,
+                        2usize,
+                    >("Parse")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Parse", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::DigitallySigned,
@@ -117,23 +123,28 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DigitallySigned {
         >,
         signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::DigitallySigned as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::DigitallySigned as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (algorithm, signature))?
@@ -147,20 +158,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DigitallySigned {
             crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::DigitallySigned as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
-                >,
-                0usize,
-            >("get_Algorithm")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::DigitallySigned as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Algorithm", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
+                        >,
+                        0usize,
+                    >("get_Algorithm")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Algorithm", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
@@ -172,18 +186,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DigitallySigned {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::DigitallySigned as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                0usize,
-            >("get_Signature")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::DigitallySigned as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Signature", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<u8>,
+                        >,
+                        0usize,
+                    >("get_Signature")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Signature", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,

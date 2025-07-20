@@ -54,14 +54,21 @@ impl crate::System::Security::Cryptography::DSACryptoServiceProvider {
         dwKeySize: i32,
         parameters: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::DSACryptoServiceProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(i32, bool), quest_hook::libil2cpp::Void, 2usize>("Common")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Security::Cryptography::DSACryptoServiceProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "Common", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i32, bool),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("Common")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Common", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (dwKeySize, parameters))?
@@ -72,14 +79,21 @@ impl crate::System::Security::Cryptography::DSACryptoServiceProvider {
         &mut self,
         disposing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::DSACryptoServiceProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Dispose")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Security::Cryptography::DSACryptoServiceProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "Dispose", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Dispose")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Dispose", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (disposing))?
@@ -92,18 +106,21 @@ impl crate::System::Security::Cryptography::DSACryptoServiceProvider {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Security::Cryptography::DSAParameters,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::DSACryptoServiceProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (bool),
-                crate::System::Security::Cryptography::DSAParameters,
-                1usize,
-            >("ExportParameters")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Security::Cryptography::DSACryptoServiceProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "ExportParameters", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (bool),
+                        crate::System::Security::Cryptography::DSAParameters,
+                        1usize,
+                    >("ExportParameters")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ExportParameters", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Security::Cryptography::DSAParameters = unsafe {
             method.invoke_unchecked(self, (includePrivateParameters))?
@@ -113,14 +130,17 @@ impl crate::System::Security::Cryptography::DSACryptoServiceProvider {
     pub fn Finalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::DSACryptoServiceProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Security::Cryptography::DSACryptoServiceProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "Finalize", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Finalize", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -131,18 +151,21 @@ impl crate::System::Security::Cryptography::DSACryptoServiceProvider {
         &mut self,
         parameters: crate::System::Security::Cryptography::DSAParameters,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::DSACryptoServiceProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Security::Cryptography::DSAParameters),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("ImportParameters")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Security::Cryptography::DSACryptoServiceProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "ImportParameters", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Security::Cryptography::DSAParameters),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("ImportParameters")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ImportParameters", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (parameters))?
@@ -170,21 +193,26 @@ impl crate::System::Security::Cryptography::DSACryptoServiceProvider {
         sender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         e: quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::DSACryptoServiceProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("OnKeyGenerated")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Security::Cryptography::DSACryptoServiceProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "OnKeyGenerated", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("OnKeyGenerated")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "OnKeyGenerated", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (sender, e))?
@@ -196,21 +224,28 @@ impl crate::System::Security::Cryptography::DSACryptoServiceProvider {
         rgbHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         rgbSignature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::DSACryptoServiceProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                ),
-                bool,
-                2usize,
-            >("VerifySignature")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Security::Cryptography::DSACryptoServiceProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "VerifySignature", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("VerifySignature")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "VerifySignature", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (rgbHash, rgbSignature))?
@@ -220,14 +255,17 @@ impl crate::System::Security::Cryptography::DSACryptoServiceProvider {
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::DSACryptoServiceProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Security::Cryptography::DSACryptoServiceProvider as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -238,14 +276,17 @@ impl crate::System::Security::Cryptography::DSACryptoServiceProvider {
         &mut self,
         dwKeySize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::DSACryptoServiceProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Security::Cryptography::DSACryptoServiceProvider as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (dwKeySize))?
@@ -253,27 +294,33 @@ impl crate::System::Security::Cryptography::DSACryptoServiceProvider {
         Ok(__cordl_ret.into())
     }
     pub fn get_KeySize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::DSACryptoServiceProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("get_KeySize")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Security::Cryptography::DSACryptoServiceProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "get_KeySize", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("get_KeySize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_KeySize", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_PublicOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::DSACryptoServiceProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_PublicOnly")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Security::Cryptography::DSACryptoServiceProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "get_PublicOnly", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_PublicOnly")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_PublicOnly", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

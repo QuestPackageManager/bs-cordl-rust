@@ -52,32 +52,34 @@ impl crate::GlobalNamespace::IBeatmapLightEventConverter {
         value: i32,
         floatValue: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IBeatmapLightEventConverter as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::List_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapEventData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapEventData,
+                                    >,
+                                >,
                             >,
-                        >,
-                    >,
-                    i32,
-                    f32,
-                    crate::GlobalNamespace::BasicBeatmapEventType,
-                    i32,
-                    f32,
-                ),
-                quest_hook::libil2cpp::Void,
-                6usize,
-            >("ConvertBasicBeatmapEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::IBeatmapLightEventConverter as
-                    quest_hook::libil2cpp::Type > ::class(), "ConvertBasicBeatmapEvent",
-                    6usize
-                )
+                            i32,
+                            f32,
+                            crate::GlobalNamespace::BasicBeatmapEventType,
+                            i32,
+                            f32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >("ConvertBasicBeatmapEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConvertBasicBeatmapEvent", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -114,38 +116,40 @@ impl crate::GlobalNamespace::IBeatmapLightEventConverter {
         strobeBrightness: f32,
         strobeFade: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IBeatmapLightEventConverter as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::List_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapEventData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapEventData,
+                                    >,
+                                >,
                             >,
-                        >,
-                    >,
-                    i32,
-                    f32,
-                    i32,
-                    i32,
-                    bool,
-                    crate::GlobalNamespace::EaseType,
-                    crate::GlobalNamespace::EnvironmentColorType,
-                    f32,
-                    i32,
-                    f32,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Void,
-                12usize,
-            >("ConvertLightColorBeatmapEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::IBeatmapLightEventConverter as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "ConvertLightColorBeatmapEvent", 12usize
-                )
+                            i32,
+                            f32,
+                            i32,
+                            i32,
+                            bool,
+                            crate::GlobalNamespace::EaseType,
+                            crate::GlobalNamespace::EnvironmentColorType,
+                            f32,
+                            i32,
+                            f32,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        12usize,
+                    >("ConvertLightColorBeatmapEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConvertLightColorBeatmapEvent", 12usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -187,37 +191,39 @@ impl crate::GlobalNamespace::IBeatmapLightEventConverter {
         loopCount: i32,
         rotationDirection: crate::GlobalNamespace::LightRotationDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IBeatmapLightEventConverter as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::List_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapEventData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapEventData,
+                                    >,
+                                >,
                             >,
-                        >,
-                    >,
-                    i32,
-                    f32,
-                    i32,
-                    i32,
-                    bool,
-                    crate::GlobalNamespace::EaseType,
-                    crate::GlobalNamespace::LightAxis,
-                    f32,
-                    i32,
-                    crate::GlobalNamespace::LightRotationDirection,
-                ),
-                quest_hook::libil2cpp::Void,
-                11usize,
-            >("ConvertLightRotationBeatmapEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::IBeatmapLightEventConverter as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "ConvertLightRotationBeatmapEvent", 11usize
-                )
+                            i32,
+                            f32,
+                            i32,
+                            i32,
+                            bool,
+                            crate::GlobalNamespace::EaseType,
+                            crate::GlobalNamespace::LightAxis,
+                            f32,
+                            i32,
+                            crate::GlobalNamespace::LightRotationDirection,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        11usize,
+                    >("ConvertLightRotationBeatmapEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConvertLightRotationBeatmapEvent", 11usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method

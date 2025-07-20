@@ -96,18 +96,21 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayersTableView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::HMUI::TableView>, i32),
-                quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
-                2usize,
-            >("CellForIdx")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameServerPlayersTableView as
-                    quest_hook::libil2cpp::Type > ::class(), "CellForIdx", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::HMUI::TableView>, i32),
+                        quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
+                        2usize,
+                    >("CellForIdx")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CellForIdx", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::TableCell> = unsafe {
             method.invoke_unchecked(self, (tableView, idx))?
@@ -115,14 +118,17 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
         Ok(__cordl_ret.into())
     }
     pub fn CellSize(&mut self, idx: i32) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayersTableView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(i32), f32, 1usize>("CellSize")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameServerPlayersTableView as
-                    quest_hook::libil2cpp::Type > ::class(), "CellSize", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(i32), f32, 1usize>("CellSize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CellSize", 1usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (idx))? };
         Ok(__cordl_ret.into())
@@ -132,20 +138,23 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameServerPlayerTableCell>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayersTableView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameServerPlayerTableCell,
-                >,
-                0usize,
-            >("GetCurrentPrefab")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameServerPlayersTableView as
-                    quest_hook::libil2cpp::Type > ::class(), "GetCurrentPrefab", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::GameServerPlayerTableCell,
+                        >,
+                        0usize,
+                    >("GetCurrentPrefab")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetCurrentPrefab", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameServerPlayerTableCell,
@@ -156,19 +165,21 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
         &mut self,
         idx: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayersTableView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (i32),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("HandleCellKickPlayer")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameServerPlayersTableView as
-                    quest_hook::libil2cpp::Type > ::class(), "HandleCellKickPlayer",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("HandleCellKickPlayer")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HandleCellKickPlayer", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (idx))?
@@ -179,19 +190,21 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
         &mut self,
         idx: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayersTableView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (i32),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("HandleCellUseBeatmap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameServerPlayersTableView as
-                    quest_hook::libil2cpp::Type > ::class(), "HandleCellUseBeatmap",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("HandleCellUseBeatmap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HandleCellUseBeatmap", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (idx))?
@@ -202,19 +215,21 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
         &mut self,
         idx: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayersTableView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (i32),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("HandleCellUseModifiers")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameServerPlayersTableView as
-                    quest_hook::libil2cpp::Type > ::class(), "HandleCellUseModifiers",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("HandleCellUseModifiers")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HandleCellUseModifiers", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (idx))?
@@ -224,14 +239,17 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayersTableView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameServerPlayersTableView as
-                    quest_hook::libil2cpp::Type > ::class(), "Init", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Init", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -246,14 +264,17 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
         Ok(__cordl_object.into())
     }
     pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayersTableView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("NumberOfCells")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameServerPlayersTableView as
-                    quest_hook::libil2cpp::Type > ::class(), "NumberOfCells", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("NumberOfCells")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NumberOfCells", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -274,34 +295,37 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
         showModifierSelection: bool,
         clearSelection: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayersTableView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::List_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IConnectedPlayer,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::IConnectedPlayer,
+                                    >,
+                                >,
                             >,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::ILobbyPlayersDataModel,
-                    >,
-                    bool,
-                    bool,
-                    bool,
-                    bool,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Void,
-                7usize,
-            >("SetData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameServerPlayersTableView as
-                    quest_hook::libil2cpp::Type > ::class(), "SetData", 7usize
-                )
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ILobbyPlayersDataModel,
+                            >,
+                            bool,
+                            bool,
+                            bool,
+                            bool,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        7usize,
+                    >("SetData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetData", 7usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -330,31 +354,33 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayersTableView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    i32,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::ILobbyPlayerData,
-                        >,
-                    >,
-                ),
-                bool,
-                3usize,
-            >("TryGetLobbyPlayerData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameServerPlayersTableView as
-                    quest_hook::libil2cpp::Type > ::class(), "TryGetLobbyPlayerData",
-                    3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::IConnectedPlayer,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ILobbyPlayerData,
+                                >,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("TryGetLobbyPlayerData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryGetLobbyPlayerData", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (idx, player, playerData))?
@@ -364,14 +390,17 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayersTableView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameServerPlayersTableView as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -386,23 +415,27 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayersTableView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_1<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("add_kickPlayerEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameServerPlayersTableView as
-                    quest_hook::libil2cpp::Type > ::class(), "add_kickPlayerEvent",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("add_kickPlayerEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "add_kickPlayerEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -417,25 +450,28 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayersTableView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_1<
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::GameplayModifiers,
-                        >,
-                    >,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("add_selectSuggestedGameplayModifiersEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameServerPlayersTableView as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "add_selectSuggestedGameplayModifiersEvent", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::GameplayModifiers,
+                                >,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("add_selectSuggestedGameplayModifiersEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "add_selectSuggestedGameplayModifiersEvent",
+                            1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -448,21 +484,23 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
             crate::System::Action_1<crate::GlobalNamespace::BeatmapKey>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayersTableView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_1<crate::GlobalNamespace::BeatmapKey>,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("add_selectSuggestedLevelEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameServerPlayersTableView as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "add_selectSuggestedLevelEvent", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<crate::GlobalNamespace::BeatmapKey>,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("add_selectSuggestedLevelEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "add_selectSuggestedLevelEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -474,18 +512,21 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayersTableView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("get_currentCellId")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameServerPlayersTableView as
-                    quest_hook::libil2cpp::Type > ::class(), "get_currentCellId", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("get_currentCellId")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_currentCellId", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -500,23 +541,27 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayersTableView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_1<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("remove_kickPlayerEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameServerPlayersTableView as
-                    quest_hook::libil2cpp::Type > ::class(), "remove_kickPlayerEvent",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("remove_kickPlayerEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "remove_kickPlayerEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -531,25 +576,28 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayersTableView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_1<
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::GameplayModifiers,
-                        >,
-                    >,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("remove_selectSuggestedGameplayModifiersEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameServerPlayersTableView as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "remove_selectSuggestedGameplayModifiersEvent", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::GameplayModifiers,
+                                >,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("remove_selectSuggestedGameplayModifiersEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "remove_selectSuggestedGameplayModifiersEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -562,21 +610,23 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
             crate::System::Action_1<crate::GlobalNamespace::BeatmapKey>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayersTableView as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_1<crate::GlobalNamespace::BeatmapKey>,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("remove_selectSuggestedLevelEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameServerPlayersTableView as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "remove_selectSuggestedLevelEvent", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<crate::GlobalNamespace::BeatmapKey>,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("remove_selectSuggestedLevelEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "remove_selectSuggestedLevelEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

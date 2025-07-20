@@ -46,22 +46,29 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::RevocationKey as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::Org::BouncyCastle::Bcpg::RevocationKeyTag,
-                    crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                3usize,
-            >("CreateData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Bcpg::RevocationKey as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateData", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::Org::BouncyCastle::Bcpg::RevocationKeyTag,
+                            crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<u8>,
+                        >,
+                        3usize,
+                    >("CreateData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateData", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -75,18 +82,23 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::RevocationKey as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                0usize,
-            >("GetFingerprint")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Bcpg::RevocationKey as
-                    quest_hook::libil2cpp::Type > ::class(), "GetFingerprint", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<u8>,
+                        >,
+                        0usize,
+                    >("GetFingerprint")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetFingerprint", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -126,23 +138,28 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationKey {
         keyAlgorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
         fingerprint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::RevocationKey as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    bool,
-                    crate::Org::BouncyCastle::Bcpg::RevocationKeyTag,
-                    crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Bcpg::RevocationKey as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            bool,
+                            crate::Org::BouncyCastle::Bcpg::RevocationKeyTag,
+                            crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -159,22 +176,27 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationKey {
         isLongLength: bool,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::RevocationKey as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    bool,
-                    bool,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Bcpg::RevocationKey as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            bool,
+                            bool,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (isCritical, isLongLength, data))?
@@ -186,18 +208,21 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationKey {
     ) -> quest_hook::libil2cpp::Result<
         crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::RevocationKey as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
-                0usize,
-            >("get_Algorithm")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Bcpg::RevocationKey as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Algorithm", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
+                        0usize,
+                    >("get_Algorithm")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Algorithm", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag = unsafe {
             method.invoke_unchecked(self, ())?
@@ -209,18 +234,21 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationKey {
     ) -> quest_hook::libil2cpp::Result<
         crate::Org::BouncyCastle::Bcpg::RevocationKeyTag,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::RevocationKey as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::Org::BouncyCastle::Bcpg::RevocationKeyTag,
-                0usize,
-            >("get_SignatureClass")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Bcpg::RevocationKey as
-                    quest_hook::libil2cpp::Type > ::class(), "get_SignatureClass", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::Org::BouncyCastle::Bcpg::RevocationKeyTag,
+                        0usize,
+                    >("get_SignatureClass")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_SignatureClass", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::Org::BouncyCastle::Bcpg::RevocationKeyTag = unsafe {
             method.invoke_unchecked(self, ())?

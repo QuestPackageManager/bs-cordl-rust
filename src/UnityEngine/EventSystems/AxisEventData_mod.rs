@@ -58,20 +58,23 @@ impl crate::UnityEngine::EventSystems::AxisEventData {
             crate::UnityEngine::EventSystems::EventSystem,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::EventSystems::AxisEventData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::EventSystem,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::EventSystems::AxisEventData as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::EventSystem,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (eventSystem))?
@@ -81,18 +84,21 @@ impl crate::UnityEngine::EventSystems::AxisEventData {
     pub fn get_moveDir(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::EventSystems::MoveDirection> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::EventSystems::AxisEventData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::EventSystems::MoveDirection,
-                0usize,
-            >("get_moveDir")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::EventSystems::AxisEventData as
-                    quest_hook::libil2cpp::Type > ::class(), "get_moveDir", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::EventSystems::MoveDirection,
+                        0usize,
+                    >("get_moveDir")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_moveDir", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::EventSystems::MoveDirection = unsafe {
             method.invoke_unchecked(self, ())?
@@ -102,14 +108,21 @@ impl crate::UnityEngine::EventSystems::AxisEventData {
     pub fn get_moveVector(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::EventSystems::AxisEventData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::UnityEngine::Vector2, 0usize>("get_moveVector")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::EventSystems::AxisEventData as
-                    quest_hook::libil2cpp::Type > ::class(), "get_moveVector", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Vector2,
+                        0usize,
+                    >("get_moveVector")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_moveVector", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
             method.invoke_unchecked(self, ())?
@@ -120,18 +133,21 @@ impl crate::UnityEngine::EventSystems::AxisEventData {
         &mut self,
         value: crate::UnityEngine::EventSystems::MoveDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::EventSystems::AxisEventData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::EventSystems::MoveDirection),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_moveDir")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::EventSystems::AxisEventData as
-                    quest_hook::libil2cpp::Type > ::class(), "set_moveDir", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::EventSystems::MoveDirection),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_moveDir")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_moveDir", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -142,18 +158,21 @@ impl crate::UnityEngine::EventSystems::AxisEventData {
         &mut self,
         value: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::EventSystems::AxisEventData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::Vector2),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_moveVector")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::EventSystems::AxisEventData as
-                    quest_hook::libil2cpp::Type > ::class(), "set_moveVector", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::Vector2),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_moveVector")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_moveVector", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

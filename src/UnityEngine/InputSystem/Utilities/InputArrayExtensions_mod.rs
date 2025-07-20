@@ -49,21 +49,26 @@ impl crate::UnityEngine::InputSystem::Utilities::InputArrayExtensions {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::InputArrayExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TValue>,
-                    TValue,
-                ),
-                bool,
-                2usize,
-            >("Contains")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::InputArrayExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "Contains", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
+                                TValue,
+                            >,
+                            TValue,
+                        ),
+                        bool,
+                        2usize,
+                    >("Contains")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Contains", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (array, value))? };
         Ok(__cordl_ret.into())
@@ -76,21 +81,26 @@ impl crate::UnityEngine::InputSystem::Utilities::InputArrayExtensions {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::InputArrayExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TValue>,
-                    TValue,
-                ),
-                bool,
-                2usize,
-            >("ContainsReference")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::InputArrayExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "ContainsReference", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
+                                TValue,
+                            >,
+                            TValue,
+                        ),
+                        bool,
+                        2usize,
+                    >("ContainsReference")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ContainsReference", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (array, value))? };
         Ok(__cordl_ret.into())
@@ -103,21 +113,26 @@ impl crate::UnityEngine::InputSystem::Utilities::InputArrayExtensions {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::InputArrayExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TValue>,
-                    TValue,
-                ),
-                i32,
-                2usize,
-            >("IndexOfReference")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::InputArrayExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "IndexOfReference", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
+                                TValue,
+                            >,
+                            TValue,
+                        ),
+                        i32,
+                        2usize,
+                    >("IndexOfReference")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IndexOfReference", 2usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array, value))? };
         Ok(__cordl_ret.into())

@@ -44,18 +44,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
-                0usize,
-            >("ForkPrfHash")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash as
-                    quest_hook::libil2cpp::Type > ::class(), "ForkPrfHash", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::IDigest,
+                        >,
+                        0usize,
+                    >("ForkPrfHash")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ForkPrfHash", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IDigest,
@@ -68,18 +73,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (u8),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                1usize,
-            >("GetFinalHash")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash as
-                    quest_hook::libil2cpp::Type > ::class(), "GetFinalHash", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (u8),
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<u8>,
+                        >,
+                        1usize,
+                    >("GetFinalHash")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetFinalHash", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -92,20 +102,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash {
             crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("Init")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash as
-                    quest_hook::libil2cpp::Type > ::class(), "Init", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Init")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Init", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (context))?
@@ -119,21 +132,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash {
             crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
-                >,
-                0usize,
-            >("NotifyPrfDetermined")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash as
-                    quest_hook::libil2cpp::Type > ::class(), "NotifyPrfDetermined",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
+                        >,
+                        0usize,
+                    >("NotifyPrfDetermined")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NotifyPrfDetermined", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
@@ -143,14 +158,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash {
     pub fn SealHashAlgorithms(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SealHashAlgorithms")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash as
-                    quest_hook::libil2cpp::Type > ::class(), "SealHashAlgorithms", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("SealHashAlgorithms")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SealHashAlgorithms", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -164,20 +186,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash {
             crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
-                >,
-                0usize,
-            >("StopTracking")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash as
-                    quest_hook::libil2cpp::Type > ::class(), "StopTracking", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
+                        >,
+                        0usize,
+                    >("StopTracking")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "StopTracking", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
@@ -188,18 +213,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash {
         &mut self,
         hashAlgorithm: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (u8),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("TrackHashAlgorithm")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash as
-                    quest_hook::libil2cpp::Type > ::class(), "TrackHashAlgorithm", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (u8),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("TrackHashAlgorithm")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TrackHashAlgorithm", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (hashAlgorithm))?

@@ -43,22 +43,24 @@ impl crate::UnityEngine::ICanvasRaycastFilter {
         sp: crate::UnityEngine::Vector2,
         eventCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ICanvasRaycastFilter as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::UnityEngine::Vector2,
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                ),
-                bool,
-                2usize,
-            >("IsRaycastLocationValid")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ICanvasRaycastFilter as
-                    quest_hook::libil2cpp::Type > ::class(), "IsRaycastLocationValid",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::Vector2,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                        ),
+                        bool,
+                        2usize,
+                    >("IsRaycastLocationValid")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsRaycastLocationValid", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (sp, eventCamera))?

@@ -63,41 +63,44 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPicker as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                    crate::UnityEngine::Rect,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IList_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                            crate::UnityEngine::Rect,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                    >,
+                                >,
+                            >,
+                            crate::UnityEngine::ProBuilder::PickerOptions,
+                            f32,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::HashSet_1<
+                                        crate::UnityEngine::ProBuilder::Edge,
+                                    >,
+                                >,
                             >,
                         >,
-                    >,
-                    crate::UnityEngine::ProBuilder::PickerOptions,
-                    f32,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::Dictionary_2<
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                        >,
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::HashSet_1<
-                                crate::UnityEngine::ProBuilder::Edge,
-                            >,
-                        >,
-                    >,
-                >,
-                5usize,
-            >("PickEdgesInRect")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::SelectionPicker as
-                    quest_hook::libil2cpp::Type > ::class(), "PickEdgesInRect", 5usize
-                )
+                        5usize,
+                    >("PickEdgesInRect")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PickEdgesInRect", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<
@@ -125,24 +128,27 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPicker as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                    crate::UnityEngine::Vector3,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-                3usize,
-            >("PickFace")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::SelectionPicker as
-                    quest_hook::libil2cpp::Type > ::class(), "PickFace", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                            crate::UnityEngine::Vector3,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                        3usize,
+                    >("PickFace")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PickFace", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Face,
@@ -173,43 +179,46 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPicker as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                    crate::UnityEngine::Rect,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IList_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                            crate::UnityEngine::Rect,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                    >,
+                                >,
                             >,
-                        >,
-                    >,
-                    crate::UnityEngine::ProBuilder::PickerOptions,
-                    f32,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::Dictionary_2<
+                            crate::UnityEngine::ProBuilder::PickerOptions,
+                            f32,
+                        ),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                        >,
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::HashSet_1<
+                            crate::System::Collections::Generic::Dictionary_2<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
+                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::HashSet_1<
+                                        quest_hook::libil2cpp::Gc<
+                                            crate::UnityEngine::ProBuilder::Face,
+                                        >,
+                                    >,
                                 >,
                             >,
                         >,
-                    >,
-                >,
-                5usize,
-            >("PickFacesInRect")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::SelectionPicker as
-                    quest_hook::libil2cpp::Type > ::class(), "PickFacesInRect", 5usize
-                )
+                        5usize,
+                    >("PickFacesInRect")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PickFacesInRect", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<
@@ -250,39 +259,42 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPicker as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                    crate::UnityEngine::Rect,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IList_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                            crate::UnityEngine::Rect,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                    >,
+                                >,
+                            >,
+                            crate::UnityEngine::ProBuilder::PickerOptions,
+                            f32,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::HashSet_1<i32>,
+                                >,
                             >,
                         >,
-                    >,
-                    crate::UnityEngine::ProBuilder::PickerOptions,
-                    f32,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::Dictionary_2<
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                        >,
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::HashSet_1<i32>,
-                        >,
-                    >,
-                >,
-                5usize,
-            >("PickVerticesInRect")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::SelectionPicker as
-                    quest_hook::libil2cpp::Type > ::class(), "PickVerticesInRect", 5usize
-                )
+                        5usize,
+                    >("PickVerticesInRect")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PickVerticesInRect", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<

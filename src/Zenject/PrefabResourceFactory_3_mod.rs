@@ -94,22 +94,27 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::PrefabResourceFactory_3<
-            P1,
-            P2,
-            T,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, P1, P2),
-                T,
-                3usize,
-            >("Create")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::PrefabResourceFactory_3 < P1, P2, T > as
-                    quest_hook::libil2cpp::Type > ::class(), "Create", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            P1,
+                            P2,
+                        ),
+                        T,
+                        3usize,
+                    >("Create")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Create", 3usize
+                        )
+                    })
             });
         let __cordl_ret: T = unsafe {
             method.invoke_unchecked(self, (prefabResourceName, param, param2))?
@@ -148,26 +153,27 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::PrefabResourceFactory_3<
-            P1,
-            P2,
-            T,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    >,
-                >),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                1usize,
-            >("__zenCreate")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::PrefabResourceFactory_3 < P1, P2, T > as
-                    quest_hook::libil2cpp::Type > ::class(), "__zenCreate", 1usize
-                )
+                        1usize,
+                    >("__zenCreate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "__zenCreate", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -185,23 +191,21 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::PrefabResourceFactory_3<
-            P1,
-            P2,
-            T,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
-                0usize,
-            >("__zenCreateInjectTypeInfo")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::PrefabResourceFactory_3 < P1, P2, T > as
-                    quest_hook::libil2cpp::Type > ::class(), "__zenCreateInjectTypeInfo",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
+                        0usize,
+                    >("__zenCreateInjectTypeInfo")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "__zenCreateInjectTypeInfo", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo> = unsafe {
             method.invoke_unchecked((), ())?
@@ -220,25 +224,28 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::PrefabResourceFactory_3<
-            P1,
-            P2,
-            T,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("__zenFieldSetter0")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::PrefabResourceFactory_3 < P1, P2, T > as
-                    quest_hook::libil2cpp::Type > ::class(), "__zenFieldSetter0", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("__zenFieldSetter0")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "__zenFieldSetter0", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (P_0, P_1))?
@@ -254,18 +261,17 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::PrefabResourceFactory_3<
-            P1,
-            P2,
-            T,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::PrefabResourceFactory_3 < P1, P2, T > as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -285,22 +291,21 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::PrefabResourceFactory_3<
-            P1,
-            P2,
-            T,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                0usize,
-            >("get_Container")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::PrefabResourceFactory_3 < P1, P2, T > as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Container", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        0usize,
+                    >("get_Container")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Container", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer> = unsafe {
             method.invoke_unchecked(self, ())?

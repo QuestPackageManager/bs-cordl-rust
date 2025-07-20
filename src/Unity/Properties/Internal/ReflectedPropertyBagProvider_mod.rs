@@ -84,25 +84,27 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::Internal::ReflectedPropertyBagProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Unity::Properties::IPropertyBag_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<TElement>,
+                            crate::Unity::Properties::IPropertyBag_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<TElement>,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                0usize,
-            >("CreateArrayPropertyBag")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::Internal::ReflectedPropertyBagProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateArrayPropertyBag",
-                    0usize
-                )
+                        0usize,
+                    >("CreateArrayPropertyBag")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateArrayPropertyBag", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Unity::Properties::IPropertyBag_1<
@@ -128,28 +130,30 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::Internal::ReflectedPropertyBagProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Unity::Properties::IPropertyBag_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                TKey,
-                                TValue,
+                            crate::Unity::Properties::IPropertyBag_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::Dictionary_2<
+                                        TKey,
+                                        TValue,
+                                    >,
+                                >,
                             >,
                         >,
-                    >,
-                >,
-                0usize,
-            >("CreateDictionaryPropertyBag")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::Internal::ReflectedPropertyBagProvider as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "CreateDictionaryPropertyBag", 0usize
-                )
+                        0usize,
+                    >("CreateDictionaryPropertyBag")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateDictionaryPropertyBag", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Unity::Properties::IPropertyBag_1<
@@ -175,25 +179,27 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::Internal::ReflectedPropertyBagProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Unity::Properties::IPropertyBag_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::HashSet_1<TElement>,
+                            crate::Unity::Properties::IPropertyBag_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::HashSet_1<TElement>,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                0usize,
-            >("CreateHashSetPropertyBag")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::Internal::ReflectedPropertyBagProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateHashSetPropertyBag",
-                    0usize
-                )
+                        0usize,
+                    >("CreateHashSetPropertyBag")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateHashSetPropertyBag", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Unity::Properties::IPropertyBag_1<
@@ -215,21 +221,23 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::Internal::ReflectedPropertyBagProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Unity::Properties::IPropertyBag_1<TList>,
-                >,
-                0usize,
-            >("CreateIndexedCollectionPropertyBag")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::Internal::ReflectedPropertyBagProvider as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "CreateIndexedCollectionPropertyBag", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Unity::Properties::IPropertyBag_1<TList>,
+                        >,
+                        0usize,
+                    >("CreateIndexedCollectionPropertyBag")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateIndexedCollectionPropertyBag", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Unity::Properties::IPropertyBag_1<TList>,
@@ -249,21 +257,23 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::Internal::ReflectedPropertyBagProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Unity::Properties::IPropertyBag_1<TDictionary>,
-                >,
-                0usize,
-            >("CreateKeyValueCollectionPropertyBag")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::Internal::ReflectedPropertyBagProvider as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "CreateKeyValueCollectionPropertyBag", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Unity::Properties::IPropertyBag_1<TDictionary>,
+                        >,
+                        0usize,
+                    >("CreateKeyValueCollectionPropertyBag")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateKeyValueCollectionPropertyBag", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Unity::Properties::IPropertyBag_1<TDictionary>,
@@ -285,23 +295,28 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::Internal::ReflectedPropertyBagProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Unity::Properties::IPropertyBag_1<
-                        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-                    >,
-                >,
-                0usize,
-            >("CreateKeyValuePairPropertyBag")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::Internal::ReflectedPropertyBagProvider as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "CreateKeyValuePairPropertyBag", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Unity::Properties::IPropertyBag_1<
+                                crate::System::Collections::Generic::KeyValuePair_2<
+                                    TKey,
+                                    TValue,
+                                >,
+                            >,
+                        >,
+                        0usize,
+                    >("CreateKeyValuePairPropertyBag")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateKeyValuePairPropertyBag", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Unity::Properties::IPropertyBag_1<
@@ -325,25 +340,27 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::Internal::ReflectedPropertyBagProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Unity::Properties::IPropertyBag_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<TElement>,
+                            crate::Unity::Properties::IPropertyBag_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<TElement>,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                0usize,
-            >("CreateListPropertyBag")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::Internal::ReflectedPropertyBagProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateListPropertyBag",
-                    0usize
-                )
+                        0usize,
+                    >("CreateListPropertyBag")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateListPropertyBag", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Unity::Properties::IPropertyBag_1<
@@ -367,25 +384,30 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::Internal::ReflectedPropertyBagProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::Unity::Properties::IMemberInfo>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::Unity::Properties::Internal::ReflectedPropertyBag_1<
-                            TContainer,
-                        >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("CreateProperty")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::Internal::ReflectedPropertyBagProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateProperty", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Unity::Properties::IMemberInfo,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Unity::Properties::Internal::ReflectedPropertyBag_1<
+                                    TContainer,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("CreateProperty")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateProperty", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (member, propertyBag))?
@@ -401,20 +423,23 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::Internal::ReflectedPropertyBagProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Unity::Properties::IPropertyBag_1<TContainer>,
-                >,
-                0usize,
-            >("CreatePropertyBag")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::Internal::ReflectedPropertyBagProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "CreatePropertyBag", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Unity::Properties::IPropertyBag_1<TContainer>,
+                        >,
+                        0usize,
+                    >("CreatePropertyBag")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreatePropertyBag", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Unity::Properties::IPropertyBag_1<TContainer>,
@@ -427,18 +452,23 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::Internal::ReflectedPropertyBagProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Type>),
-                quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag>,
-                1usize,
-            >("CreatePropertyBag")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::Internal::ReflectedPropertyBagProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "CreatePropertyBag", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Unity::Properties::IPropertyBag,
+                        >,
+                        1usize,
+                    >("CreatePropertyBag")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreatePropertyBag", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Unity::Properties::IPropertyBag,
@@ -456,21 +486,23 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::Internal::ReflectedPropertyBagProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Unity::Properties::IPropertyBag_1<TSet>,
-                >,
-                0usize,
-            >("CreateSetPropertyBag")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::Internal::ReflectedPropertyBagProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateSetPropertyBag",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Unity::Properties::IPropertyBag_1<TSet>,
+                        >,
+                        0usize,
+                    >("CreateSetPropertyBag")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateSetPropertyBag", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Unity::Properties::IPropertyBag_1<TSet>,
@@ -486,22 +518,27 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::Internal::ReflectedPropertyBagProvider as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Type>),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IEnumerable_1<
-                        quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
-                    >,
-                >,
-                1usize,
-            >("GetPropertyMembers")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::Internal::ReflectedPropertyBagProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "GetPropertyMembers", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Reflection::MemberInfo,
+                                >,
+                            >,
+                        >,
+                        1usize,
+                    >("GetPropertyMembers")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetPropertyMembers", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
@@ -513,18 +550,23 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
     pub fn IsValidMember(
         memberInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::Internal::ReflectedPropertyBagProvider as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>),
-                bool,
-                1usize,
-            >("IsValidMember")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::Internal::ReflectedPropertyBagProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "IsValidMember", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Reflection::MemberInfo,
+                        >),
+                        bool,
+                        1usize,
+                    >("IsValidMember")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsValidMember", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (memberInfo))? };
         Ok(__cordl_ret.into())
@@ -532,19 +574,21 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
     pub fn IsValidPropertyType(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::Internal::ReflectedPropertyBagProvider as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Type>),
-                bool,
-                1usize,
-            >("IsValidPropertyType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::Internal::ReflectedPropertyBagProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "IsValidPropertyType",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                        bool,
+                        1usize,
+                    >("IsValidPropertyType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsValidPropertyType", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
@@ -559,14 +603,17 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::Internal::ReflectedPropertyBagProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::Internal::ReflectedPropertyBagProvider as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

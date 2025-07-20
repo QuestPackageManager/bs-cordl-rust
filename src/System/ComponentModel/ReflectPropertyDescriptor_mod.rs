@@ -59,18 +59,21 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         &mut self,
         component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                bool,
-                1usize,
-            >("CanResetValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "CanResetValue", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        bool,
+                        1usize,
+                    >("CanResetValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CanResetValue", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (component))? };
         Ok(__cordl_ret.into())
@@ -82,24 +85,28 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         >,
         component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::ComponentModel::IExtenderProvider,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                ),
-                bool,
-                2usize,
-            >("ExtenderCanResetValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "ExtenderCanResetValue",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::ComponentModel::IExtenderProvider,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("ExtenderCanResetValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ExtenderCanResetValue", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (provider, component))?
@@ -109,19 +116,21 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     pub fn ExtenderGetReceiverType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                0usize,
-            >("ExtenderGetReceiverType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "ExtenderGetReceiverType",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        0usize,
+                    >("ExtenderGetReceiverType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ExtenderGetReceiverType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -134,20 +143,23 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             crate::System::ComponentModel::IExtenderProvider,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::IExtenderProvider,
-                >),
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                1usize,
-            >("ExtenderGetType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "ExtenderGetType", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::ComponentModel::IExtenderProvider,
+                        >),
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        1usize,
+                    >("ExtenderGetType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ExtenderGetType", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
             method.invoke_unchecked(self, (provider))?
@@ -163,23 +175,28 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::ComponentModel::IExtenderProvider,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                2usize,
-            >("ExtenderGetValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "ExtenderGetValue", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::ComponentModel::IExtenderProvider,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        2usize,
+                    >("ExtenderGetValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ExtenderGetValue", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -196,26 +213,31 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             crate::System::ComponentModel::PropertyDescriptor,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::ComponentModel::IExtenderProvider,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::ComponentModel::PropertyDescriptor,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("ExtenderResetValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "ExtenderResetValue", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::ComponentModel::IExtenderProvider,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::ComponentModel::PropertyDescriptor,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("ExtenderResetValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ExtenderResetValue", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (provider, component, notifyDesc))?
@@ -233,27 +255,34 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             crate::System::ComponentModel::PropertyDescriptor,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::ComponentModel::IExtenderProvider,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::ComponentModel::PropertyDescriptor,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >("ExtenderSetValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "ExtenderSetValue", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::ComponentModel::IExtenderProvider,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::ComponentModel::PropertyDescriptor,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("ExtenderSetValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ExtenderSetValue", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (provider, component, value, notifyDesc))?
@@ -267,24 +296,28 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         >,
         component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::ComponentModel::IExtenderProvider,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                ),
-                bool,
-                2usize,
-            >("ExtenderShouldSerializeValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "ExtenderShouldSerializeValue", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::ComponentModel::IExtenderProvider,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("ExtenderShouldSerializeValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ExtenderShouldSerializeValue", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (provider, component))?
@@ -295,18 +328,21 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Collections::IList>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("FillAttributes")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "FillAttributes", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Collections::IList>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("FillAttributes")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FillAttributes", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (attributes))?
@@ -319,18 +355,21 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                1usize,
-            >("GetValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "GetValue", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        1usize,
+                    >("GetValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetValue", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -418,21 +457,26 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         e: quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("OnValueChanged")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "OnValueChanged", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("OnValueChanged")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "OnValueChanged", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (component, e))?
@@ -443,18 +487,21 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         &mut self,
         component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("ResetValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "ResetValue", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("ResetValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ResetValue", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (component))?
@@ -466,21 +513,28 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SetValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "SetValue", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetValue", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (component, value))?
@@ -491,19 +545,21 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         &mut self,
         component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                bool,
-                1usize,
-            >("ShouldSerializeValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "ShouldSerializeValue",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        bool,
+                        1usize,
+                    >("ShouldSerializeValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ShouldSerializeValue", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (component))? };
         Ok(__cordl_ret.into())
@@ -519,27 +575,32 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
-                            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-                        >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -561,30 +622,41 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                    quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
-                    quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
-                    quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
-                            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-                        >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                7usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 7usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Reflection::PropertyInfo,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Reflection::MethodInfo,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Reflection::MethodInfo,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        7usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 7usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -617,30 +689,39 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                    quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
-                    quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
-                            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-                        >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                7usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 7usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Reflection::MethodInfo,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Reflection::MethodInfo,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        7usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 7usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -664,18 +745,21 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                0usize,
-            >("get_AmbientValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "get_AmbientValue", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        0usize,
+                    >("get_AmbientValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_AmbientValue", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -685,18 +769,21 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     pub fn get_ComponentType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                0usize,
-            >("get_ComponentType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "get_ComponentType", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        0usize,
+                    >("get_ComponentType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_ComponentType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -708,18 +795,21 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                0usize,
-            >("get_DefaultValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "get_DefaultValue", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        0usize,
+                    >("get_DefaultValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_DefaultValue", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -731,18 +821,21 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
-                0usize,
-            >("get_GetMethodValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "get_GetMethodValue", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+                        0usize,
+                    >("get_GetMethodValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_GetMethodValue", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodInfo,
@@ -750,27 +843,33 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsExtender(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_IsExtender")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "get_IsExtender", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_IsExtender")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_IsExtender", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_IsReadOnly")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "get_IsReadOnly", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_IsReadOnly")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_IsReadOnly", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -778,18 +877,21 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     pub fn get_PropertyType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                0usize,
-            >("get_PropertyType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "get_PropertyType", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        0usize,
+                    >("get_PropertyType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_PropertyType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -801,19 +903,21 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
-                0usize,
-            >("get_ResetMethodValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "get_ResetMethodValue",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+                        0usize,
+                    >("get_ResetMethodValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_ResetMethodValue", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodInfo,
@@ -825,18 +929,21 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
-                0usize,
-            >("get_SetMethodValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(), "get_SetMethodValue", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+                        0usize,
+                    >("get_SetMethodValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_SetMethodValue", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodInfo,
@@ -848,19 +955,21 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
-                0usize,
-            >("get_ShouldSerializeMethodValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_ShouldSerializeMethodValue", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+                        0usize,
+                    >("get_ShouldSerializeMethodValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_ShouldSerializeMethodValue", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodInfo,

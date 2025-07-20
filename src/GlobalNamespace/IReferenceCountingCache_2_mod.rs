@@ -77,17 +77,17 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IReferenceCountingCache_2<
-            TKey,
-            TValue,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(TKey), i32, 1usize>("AddReference")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::IReferenceCountingCache_2 < TKey, TValue >
-                    as quest_hook::libil2cpp::Type > ::class(), "AddReference", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(TKey), i32, 1usize>("AddReference")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddReference", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (key))? };
         Ok(__cordl_ret.into())
@@ -99,18 +99,17 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IReferenceCountingCache_2<
-            TKey,
-            TValue,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(TKey), i32, 1usize>("GetReferenceCount")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::IReferenceCountingCache_2 < TKey, TValue >
-                    as quest_hook::libil2cpp::Type > ::class(), "GetReferenceCount",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(TKey), i32, 1usize>("GetReferenceCount")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetReferenceCount", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (key))? };
         Ok(__cordl_ret.into())
@@ -126,17 +125,17 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IReferenceCountingCache_2<
-            TKey,
-            TValue,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(TKey, TValue), i32, 2usize>("Insert")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::IReferenceCountingCache_2 < TKey, TValue >
-                    as quest_hook::libil2cpp::Type > ::class(), "Insert", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(TKey, TValue), i32, 2usize>("Insert")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Insert", 2usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (key, item))? };
         Ok(__cordl_ret.into())
@@ -148,17 +147,17 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IReferenceCountingCache_2<
-            TKey,
-            TValue,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(TKey), i32, 1usize>("RemoveReference")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::IReferenceCountingCache_2 < TKey, TValue >
-                    as quest_hook::libil2cpp::Type > ::class(), "RemoveReference", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(TKey), i32, 1usize>("RemoveReference")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "RemoveReference", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (key))? };
         Ok(__cordl_ret.into())
@@ -174,21 +173,21 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IReferenceCountingCache_2<
-            TKey,
-            TValue,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (TKey, quest_hook::libil2cpp::ByRefMut<TValue>),
-                bool,
-                2usize,
-            >("TryGet")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::IReferenceCountingCache_2 < TKey, TValue >
-                    as quest_hook::libil2cpp::Type > ::class(), "TryGet", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (TKey, quest_hook::libil2cpp::ByRefMut<TValue>),
+                        bool,
+                        2usize,
+                    >("TryGet")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryGet", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (key, result))? };
         Ok(__cordl_ret.into())

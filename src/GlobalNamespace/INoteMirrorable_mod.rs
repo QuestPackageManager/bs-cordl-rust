@@ -48,18 +48,21 @@ impl crate::GlobalNamespace::INoteMirrorable {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::INoteMirrorable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-                0usize,
-            >("get_noteData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::INoteMirrorable as
-                    quest_hook::libil2cpp::Type > ::class(), "get_noteData", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+                        0usize,
+                    >("get_noteData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_noteData", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -77,25 +80,27 @@ impl crate::GlobalNamespace::INoteMirrorable {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::INoteMirrorable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::ILazyCopyHashSet_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+                            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                0usize,
-            >("get_noteDidStartDissolvingEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::INoteMirrorable as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_noteDidStartDissolvingEvent", 0usize
-                )
+                        0usize,
+                    >("get_noteDidStartDissolvingEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_noteDidStartDissolvingEvent", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ILazyCopyHashSet_1<
@@ -111,18 +116,21 @@ impl crate::GlobalNamespace::INoteMirrorable {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::INoteMirrorable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                0usize,
-            >("get_noteTransform")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::INoteMirrorable as
-                    quest_hook::libil2cpp::Type > ::class(), "get_noteTransform", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                        0usize,
+                    >("get_noteTransform")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_noteTransform", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform> = unsafe {
             method.invoke_unchecked(self, ())?

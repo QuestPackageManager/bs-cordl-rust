@@ -41,18 +41,21 @@ impl crate::System::Net::EndPointManager {
     pub fn AddListener(
         listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::EndPointManager as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("AddListener")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::EndPointManager as quest_hook::libil2cpp::Type >
-                    ::class(), "AddListener", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("AddListener")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddListener", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (listener))?
@@ -63,21 +66,26 @@ impl crate::System::Net::EndPointManager {
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::EndPointManager as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("AddPrefix")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::EndPointManager as quest_hook::libil2cpp::Type >
-                    ::class(), "AddPrefix", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("AddPrefix")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddPrefix", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (prefix, listener))?
@@ -88,21 +96,26 @@ impl crate::System::Net::EndPointManager {
         p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::EndPointManager as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("AddPrefixInternal")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::EndPointManager as quest_hook::libil2cpp::Type >
-                    ::class(), "AddPrefixInternal", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("AddPrefixInternal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddPrefixInternal", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (p, listener))?
@@ -117,23 +130,28 @@ impl crate::System::Net::EndPointManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::EndPointListener>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::EndPointManager as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    i32,
-                    quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::Net::EndPointListener>,
-                4usize,
-            >("GetEPListener")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::EndPointManager as quest_hook::libil2cpp::Type >
-                    ::class(), "GetEPListener", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            i32,
+                            quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::Net::EndPointListener>,
+                        4usize,
+                    >("GetEPListener")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetEPListener", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::EndPointListener,
@@ -144,21 +162,26 @@ impl crate::System::Net::EndPointManager {
         epl: quest_hook::libil2cpp::Gc<crate::System::Net::EndPointListener>,
         ep: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::EndPointManager as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::Net::EndPointListener>,
-                    quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("RemoveEndPoint")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::EndPointManager as quest_hook::libil2cpp::Type >
-                    ::class(), "RemoveEndPoint", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Net::EndPointListener,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("RemoveEndPoint")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "RemoveEndPoint", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (epl, ep))?
@@ -168,18 +191,21 @@ impl crate::System::Net::EndPointManager {
     pub fn RemoveListener(
         listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::EndPointManager as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("RemoveListener")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::EndPointManager as quest_hook::libil2cpp::Type >
-                    ::class(), "RemoveListener", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("RemoveListener")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "RemoveListener", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (listener))?
@@ -190,21 +216,26 @@ impl crate::System::Net::EndPointManager {
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::EndPointManager as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("RemovePrefix")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::EndPointManager as quest_hook::libil2cpp::Type >
-                    ::class(), "RemovePrefix", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("RemovePrefix")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "RemovePrefix", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (prefix, listener))?
@@ -215,21 +246,26 @@ impl crate::System::Net::EndPointManager {
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::EndPointManager as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("RemovePrefixInternal")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::EndPointManager as quest_hook::libil2cpp::Type >
-                    ::class(), "RemovePrefixInternal", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("RemovePrefixInternal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "RemovePrefixInternal", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (prefix, listener))?

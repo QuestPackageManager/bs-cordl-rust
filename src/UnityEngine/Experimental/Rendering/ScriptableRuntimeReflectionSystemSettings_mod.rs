@@ -54,20 +54,22 @@ impl crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSys
     pub fn ScriptingDirtyReflectionSystemInstance() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemSettings as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("ScriptingDirtyReflectionSystemInstance")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemSettings
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "ScriptingDirtyReflectionSystemInstance", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ScriptingDirtyReflectionSystemInstance")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ScriptingDirtyReflectionSystemInstance",
+                            0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), ())?
@@ -79,23 +81,25 @@ impl crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSys
             crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemSettings as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper,
-                >,
-                0usize,
-            >("get_Internal_ScriptableRuntimeReflectionSystemSettings_instance")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemSettings
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "get_Internal_ScriptableRuntimeReflectionSystemSettings_instance",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper,
+                        >,
+                        0usize,
+                    >("get_Internal_ScriptableRuntimeReflectionSystemSettings_instance")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "get_Internal_ScriptableRuntimeReflectionSystemSettings_instance",
+                            0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper,
@@ -107,23 +111,25 @@ impl crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSys
             crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemSettings as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_Internal_ScriptableRuntimeReflectionSystemSettings_system")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemSettings
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "set_Internal_ScriptableRuntimeReflectionSystemSettings_system",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_Internal_ScriptableRuntimeReflectionSystemSettings_system")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "set_Internal_ScriptableRuntimeReflectionSystemSettings_system",
+                            1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (value))?

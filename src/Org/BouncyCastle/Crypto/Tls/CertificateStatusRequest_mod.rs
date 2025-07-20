@@ -47,18 +47,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest {
         &mut self,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("Encode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest as
-                    quest_hook::libil2cpp::Type > ::class(), "Encode", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Encode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Encode", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (output))?
@@ -72,21 +75,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest {
             crate::Org::BouncyCastle::Crypto::Tls::OcspStatusRequest,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Crypto::Tls::OcspStatusRequest,
-                >,
-                0usize,
-            >("GetOcspStatusRequest")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest as
-                    quest_hook::libil2cpp::Type > ::class(), "GetOcspStatusRequest",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::Tls::OcspStatusRequest,
+                        >,
+                        0usize,
+                    >("GetOcspStatusRequest")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetOcspStatusRequest", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::OcspStatusRequest,
@@ -97,18 +102,26 @@ impl crate::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest {
         statusType: u8,
         request: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (u8, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                bool,
-                2usize,
-            >("IsCorrectType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest as
-                    quest_hook::libil2cpp::Type > ::class(), "IsCorrectType", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            u8,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("IsCorrectType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsCorrectType", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (statusType, request))?
@@ -132,20 +145,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest {
             crate::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest,
-                >,
-                1usize,
-            >("Parse")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest as
-                    quest_hook::libil2cpp::Type > ::class(), "Parse", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest,
+                        >,
+                        1usize,
+                    >("Parse")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Parse", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest,
@@ -157,18 +173,26 @@ impl crate::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest {
         statusType: u8,
         request: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (u8, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            u8,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (statusType, request))?
@@ -180,18 +204,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                0usize,
-            >("get_Request")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Request", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        0usize,
+                    >("get_Request")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Request", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -199,14 +226,17 @@ impl crate::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest {
         Ok(__cordl_ret.into())
     }
     pub fn get_StatusType(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), u8, 0usize>("get_StatusType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::CertificateStatusRequest as
-                    quest_hook::libil2cpp::Type > ::class(), "get_StatusType", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), u8, 0usize>("get_StatusType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_StatusType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: u8 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

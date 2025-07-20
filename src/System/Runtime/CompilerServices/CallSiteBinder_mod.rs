@@ -69,36 +69,41 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::CallSiteBinder as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
+                                >,
                             >,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Linq::Expressions::ParameterExpression,
+                                crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Linq::Expressions::ParameterExpression,
+                                    >,
+                                >,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Linq::Expressions::LabelTarget,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Linq::Expressions::Expression,
                         >,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Linq::Expressions::LabelTarget,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-                3usize,
-            >("Bind")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Runtime::CompilerServices::CallSiteBinder as
-                    quest_hook::libil2cpp::Type > ::class(), "Bind", 3usize
-                )
+                        3usize,
+                    >("Bind")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Bind", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Expression,
@@ -120,29 +125,32 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::CallSiteBinder as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Runtime::CompilerServices::CallSite_1<T>,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Runtime::CompilerServices::CallSite_1<T>,
                             >,
-                        >,
-                    >,
-                ),
-                T,
-                2usize,
-            >("BindCore")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Runtime::CompilerServices::CallSiteBinder as
-                    quest_hook::libil2cpp::Type > ::class(), "BindCore", 2usize
-                )
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
+                                >,
+                            >,
+                        ),
+                        T,
+                        2usize,
+                    >("BindCore")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BindCore", 2usize
+                        )
+                    })
             });
         let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (site, args))? };
         Ok(__cordl_ret.into())
@@ -162,29 +170,32 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::CallSiteBinder as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Runtime::CompilerServices::CallSite_1<T>,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Runtime::CompilerServices::CallSite_1<T>,
                             >,
-                        >,
-                    >,
-                ),
-                T,
-                2usize,
-            >("BindDelegate")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Runtime::CompilerServices::CallSiteBinder as
-                    quest_hook::libil2cpp::Type > ::class(), "BindDelegate", 2usize
-                )
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
+                                >,
+                            >,
+                        ),
+                        T,
+                        2usize,
+                    >("BindDelegate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BindDelegate", 2usize
+                        )
+                    })
             });
         let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (site, args))? };
         Ok(__cordl_ret.into())
@@ -197,14 +208,21 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::CallSiteBinder as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(T), quest_hook::libil2cpp::Void, 1usize>("CacheTarget")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Runtime::CompilerServices::CallSiteBinder as
-                    quest_hook::libil2cpp::Type > ::class(), "CacheTarget", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (T),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("CacheTarget")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CacheTarget", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (target))?
@@ -222,20 +240,23 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::CallSiteBinder as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Runtime::CompilerServices::RuleCache_1<T>,
-                >,
-                0usize,
-            >("GetRuleCache")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Runtime::CompilerServices::CallSiteBinder as
-                    quest_hook::libil2cpp::Type > ::class(), "GetRuleCache", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::CompilerServices::RuleCache_1<T>,
+                        >,
+                        0usize,
+                    >("GetRuleCache")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetRuleCache", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::CompilerServices::RuleCache_1<T>,
@@ -261,29 +282,32 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::CallSiteBinder as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Linq::Expressions::Expression,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<
-                            T,
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Linq::Expressions::Expression,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<
+                                    T,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Linq::Expressions::Expression_1<T>,
                         >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::Expression_1<T>,
-                >,
-                2usize,
-            >("Stitch")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Runtime::CompilerServices::CallSiteBinder as
-                    quest_hook::libil2cpp::Type > ::class(), "Stitch", 2usize
-                )
+                        2usize,
+                    >("Stitch")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Stitch", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Expression_1<T>,
@@ -293,14 +317,17 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::CallSiteBinder as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Runtime::CompilerServices::CallSiteBinder as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -310,18 +337,23 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
     pub fn get_UpdateLabel() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::CallSiteBinder as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
-                0usize,
-            >("get_UpdateLabel")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Runtime::CompilerServices::CallSiteBinder as
-                    quest_hook::libil2cpp::Type > ::class(), "get_UpdateLabel", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Linq::Expressions::LabelTarget,
+                        >,
+                        0usize,
+                    >("get_UpdateLabel")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_UpdateLabel", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::LabelTarget,
@@ -427,17 +459,17 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<
-            T,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1
-                    < T > as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -453,26 +485,25 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<
-            T,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<
-                        T,
-                    >,
-                >,
-                0usize,
-            >("get_Instance")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1
-                    < T > as quest_hook::libil2cpp::Type > ::class(), "get_Instance",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<
+                                T,
+                            >,
+                        >,
+                        0usize,
+                    >("get_Instance")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Instance", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T>,

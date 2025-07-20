@@ -75,21 +75,26 @@ impl crate::MS::Internal::Xml::XPath::Axis {
         axisType: crate::MS::Internal::Xml::XPath::Axis_AxisType,
         input: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::MS::Internal::Xml::XPath::Axis_AxisType,
-                    quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type
-                    > ::class(), ".ctor", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::MS::Internal::Xml::XPath::Axis_AxisType,
+                            quest_hook::libil2cpp::Gc<
+                                crate::MS::Internal::Xml::XPath::AstNode,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (axisType, input))?
@@ -104,24 +109,33 @@ impl crate::MS::Internal::Xml::XPath::Axis {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nodetype: crate::System::Xml::XPath::XPathNodeType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::MS::Internal::Xml::XPath::Axis_AxisType,
-                    quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    crate::System::Xml::XPath::XPathNodeType,
-                ),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type
-                    > ::class(), ".ctor", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::MS::Internal::Xml::XPath::Axis_AxisType,
+                            quest_hook::libil2cpp::Gc<
+                                crate::MS::Internal::Xml::XPath::AstNode,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            crate::System::Xml::XPath::XPathNodeType,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (axisType, input, prefix, name, nodetype))?
@@ -129,14 +143,17 @@ impl crate::MS::Internal::Xml::XPath::Axis {
         Ok(__cordl_ret.into())
     }
     pub fn get_AbbrAxis(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_AbbrAxis")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type
-                    > ::class(), "get_AbbrAxis", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_AbbrAxis")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_AbbrAxis", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -146,18 +163,23 @@ impl crate::MS::Internal::Xml::XPath::Axis {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
-                0usize,
-            >("get_Input")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type
-                    > ::class(), "get_Input", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::MS::Internal::Xml::XPath::AstNode,
+                        >,
+                        0usize,
+                    >("get_Input")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Input", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::MS::Internal::Xml::XPath::AstNode,
@@ -169,18 +191,21 @@ impl crate::MS::Internal::Xml::XPath::Axis {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("get_Name")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type
-                    > ::class(), "get_Name", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("get_Name")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Name", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -190,18 +215,21 @@ impl crate::MS::Internal::Xml::XPath::Axis {
     pub fn get_NodeType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XPath::XPathNodeType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Xml::XPath::XPathNodeType,
-                0usize,
-            >("get_NodeType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type
-                    > ::class(), "get_NodeType", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Xml::XPath::XPathNodeType,
+                        0usize,
+                    >("get_NodeType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_NodeType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Xml::XPath::XPathNodeType = unsafe {
             method.invoke_unchecked(self, ())?
@@ -213,18 +241,21 @@ impl crate::MS::Internal::Xml::XPath::Axis {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("get_Prefix")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type
-                    > ::class(), "get_Prefix", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("get_Prefix")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Prefix", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -234,18 +265,21 @@ impl crate::MS::Internal::Xml::XPath::Axis {
     pub fn get_ReturnType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XPath::XPathResultType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Xml::XPath::XPathResultType,
-                0usize,
-            >("get_ReturnType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type
-                    > ::class(), "get_ReturnType", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Xml::XPath::XPathResultType,
+                        0usize,
+                    >("get_ReturnType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_ReturnType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Xml::XPath::XPathResultType = unsafe {
             method.invoke_unchecked(self, ())?
@@ -257,18 +291,21 @@ impl crate::MS::Internal::Xml::XPath::Axis {
     ) -> quest_hook::libil2cpp::Result<
         crate::MS::Internal::Xml::XPath::AstNode_AstType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::MS::Internal::Xml::XPath::AstNode_AstType,
-                0usize,
-            >("get_Type")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type
-                    > ::class(), "get_Type", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::MS::Internal::Xml::XPath::AstNode_AstType,
+                        0usize,
+                    >("get_Type")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Type", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::MS::Internal::Xml::XPath::AstNode_AstType = unsafe {
             method.invoke_unchecked(self, ())?
@@ -278,18 +315,21 @@ impl crate::MS::Internal::Xml::XPath::Axis {
     pub fn get_TypeOfAxis(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::MS::Internal::Xml::XPath::Axis_AxisType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::MS::Internal::Xml::XPath::Axis_AxisType,
-                0usize,
-            >("get_TypeOfAxis")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type
-                    > ::class(), "get_TypeOfAxis", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::MS::Internal::Xml::XPath::Axis_AxisType,
+                        0usize,
+                    >("get_TypeOfAxis")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_TypeOfAxis", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::MS::Internal::Xml::XPath::Axis_AxisType = unsafe {
             method.invoke_unchecked(self, ())?
@@ -301,18 +341,21 @@ impl crate::MS::Internal::Xml::XPath::Axis {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("get_Urn")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type
-                    > ::class(), "get_Urn", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("get_Urn")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Urn", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -323,18 +366,23 @@ impl crate::MS::Internal::Xml::XPath::Axis {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_Input")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type
-                    > ::class(), "set_Input", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::MS::Internal::Xml::XPath::AstNode,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_Input")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_Input", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -345,18 +393,21 @@ impl crate::MS::Internal::Xml::XPath::Axis {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_Urn")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::XPath::Axis as quest_hook::libil2cpp::Type
-                    > ::class(), "set_Urn", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_Urn")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_Urn", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

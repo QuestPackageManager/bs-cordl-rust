@@ -50,14 +50,21 @@ impl crate::UnityEngine::InputSystem::Processors::NormalizeProcessor {
         max: f32,
         zero: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Processors::NormalizeProcessor as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(f32, f32, f32, f32), f32, 4usize>("Denormalize")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Processors::NormalizeProcessor as
-                    quest_hook::libil2cpp::Type > ::class(), "Denormalize", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (f32, f32, f32, f32),
+                        f32,
+                        4usize,
+                    >("Denormalize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Denormalize", 4usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe {
             method.invoke_unchecked((), (value, min, max, zero))?
@@ -77,14 +84,17 @@ impl crate::UnityEngine::InputSystem::Processors::NormalizeProcessor {
         max: f32,
         zero: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Processors::NormalizeProcessor as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(f32, f32, f32, f32), f32, 4usize>("Normalize")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Processors::NormalizeProcessor as
-                    quest_hook::libil2cpp::Type > ::class(), "Normalize", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(f32, f32, f32, f32), f32, 4usize>("Normalize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Normalize", 4usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe {
             method.invoke_unchecked((), (value, min, max, zero))?
@@ -96,23 +106,26 @@ impl crate::UnityEngine::InputSystem::Processors::NormalizeProcessor {
         value: f32,
         control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Processors::NormalizeProcessor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    f32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::InputSystem::InputControl,
-                    >,
-                ),
-                f32,
-                2usize,
-            >("Process")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Processors::NormalizeProcessor as
-                    quest_hook::libil2cpp::Type > ::class(), "Process", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            f32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::InputControl,
+                            >,
+                        ),
+                        f32,
+                        2usize,
+                    >("Process")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Process", 2usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe {
             method.invoke_unchecked(self, (value, control))?
@@ -124,18 +137,21 @@ impl crate::UnityEngine::InputSystem::Processors::NormalizeProcessor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Processors::NormalizeProcessor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("ToString")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Processors::NormalizeProcessor as
-                    quest_hook::libil2cpp::Type > ::class(), "ToString", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("ToString")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToString", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -145,14 +161,17 @@ impl crate::UnityEngine::InputSystem::Processors::NormalizeProcessor {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Processors::NormalizeProcessor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Processors::NormalizeProcessor as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

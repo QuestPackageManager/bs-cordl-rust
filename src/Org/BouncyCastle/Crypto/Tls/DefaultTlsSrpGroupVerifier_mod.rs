@@ -48,20 +48,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier {
             crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
-                >),
-                bool,
-                1usize,
-            >("Accept")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier as
-                    quest_hook::libil2cpp::Type > ::class(), "Accept", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
+                        >),
+                        bool,
+                        1usize,
+                    >("Accept")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Accept", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (group))? };
         Ok(__cordl_ret.into())
@@ -75,25 +78,28 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier {
             crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
-                    >,
-                ),
-                bool,
-                2usize,
-            >("AreGroupsEqual")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier as
-                    quest_hook::libil2cpp::Type > ::class(), "AreGroupsEqual", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("AreGroupsEqual")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AreGroupsEqual", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (a, b))? };
         Ok(__cordl_ret.into())
@@ -103,23 +109,28 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier {
         a: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::Org::BouncyCastle::Math::BigInteger,
-                    >,
-                    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
-                ),
-                bool,
-                2usize,
-            >("AreParametersEqual")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier as
-                    quest_hook::libil2cpp::Type > ::class(), "AreParametersEqual", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Org::BouncyCastle::Math::BigInteger,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Org::BouncyCastle::Math::BigInteger,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("AreParametersEqual")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AreParametersEqual", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (a, b))? };
         Ok(__cordl_ret.into())
@@ -143,14 +154,17 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier {
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -161,18 +175,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier {
         &mut self,
         groups: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Collections::IList>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Collections::IList>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (groups))?

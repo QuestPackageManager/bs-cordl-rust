@@ -46,18 +46,21 @@ impl crate::UnityEngine::SpriteRenderer {
     pub fn GetCurrentMeshData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Mesh_MeshDataArray> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::Mesh_MeshDataArray,
-                0usize,
-            >("GetCurrentMeshData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "GetCurrentMeshData", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Mesh_MeshDataArray,
+                        0usize,
+                    >("GetCurrentMeshData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetCurrentMeshData", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Mesh_MeshDataArray = unsafe {
             method.invoke_unchecked(self, ())?
@@ -67,14 +70,21 @@ impl crate::UnityEngine::SpriteRenderer {
     pub fn GetCurrentMeshDataPtr(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::System::IntPtr, 0usize>("GetCurrentMeshDataPtr")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "GetCurrentMeshDataPtr", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::IntPtr,
+                        0usize,
+                    >("GetCurrentMeshDataPtr")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetCurrentMeshDataPtr", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
             method.invoke_unchecked(self, ())?
@@ -85,18 +95,23 @@ impl crate::UnityEngine::SpriteRenderer {
         &mut self,
         mbp: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("GetSecondaryTextureProperties")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "GetSecondaryTextureProperties", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::MaterialPropertyBlock,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("GetSecondaryTextureProperties")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetSecondaryTextureProperties", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (mbp))?
@@ -106,14 +121,21 @@ impl crate::UnityEngine::SpriteRenderer {
     pub fn GetSpriteBounds(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::UnityEngine::Bounds, 0usize>("GetSpriteBounds")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "GetSpriteBounds", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Bounds,
+                        0usize,
+                    >("GetSpriteBounds")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetSpriteBounds", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Bounds = unsafe {
             method.invoke_unchecked(self, ())?
@@ -124,18 +146,21 @@ impl crate::UnityEngine::SpriteRenderer {
         &mut self,
         mode: crate::UnityEngine::SpriteDrawMode,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::SpriteDrawMode),
-                crate::UnityEngine::Bounds,
-                1usize,
-            >("Internal_GetSpriteBounds")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "Internal_GetSpriteBounds", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::SpriteDrawMode),
+                        crate::UnityEngine::Bounds,
+                        1usize,
+                    >("Internal_GetSpriteBounds")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Internal_GetSpriteBounds", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Bounds = unsafe {
             method.invoke_unchecked(self, (mode))?
@@ -147,21 +172,24 @@ impl crate::UnityEngine::SpriteRenderer {
         mode: crate::UnityEngine::SpriteDrawMode,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::UnityEngine::SpriteDrawMode,
-                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("Internal_GetSpriteBounds_Injected")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "Internal_GetSpriteBounds_Injected", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::SpriteDrawMode,
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("Internal_GetSpriteBounds_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Internal_GetSpriteBounds_Injected", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (mode, ret))?
@@ -171,18 +199,21 @@ impl crate::UnityEngine::SpriteRenderer {
     pub fn InvokeSpriteChanged(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("InvokeSpriteChanged")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "InvokeSpriteChanged", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("InvokeSpriteChanged")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "InvokeSpriteChanged", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -204,22 +235,27 @@ impl crate::UnityEngine::SpriteRenderer {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::Events::UnityAction_1<
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
-                    >,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("RegisterSpriteChangeCallback")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "RegisterSpriteChangeCallback", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Events::UnityAction_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::SpriteRenderer,
+                                >,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("RegisterSpriteChangeCallback")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "RegisterSpriteChangeCallback", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (callback))?
@@ -234,22 +270,27 @@ impl crate::UnityEngine::SpriteRenderer {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::Events::UnityAction_1<
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
-                    >,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("UnregisterSpriteChangeCallback")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "UnregisterSpriteChangeCallback", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Events::UnityAction_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::SpriteRenderer,
+                                >,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("UnregisterSpriteChangeCallback")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UnregisterSpriteChangeCallback", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (callback))?
@@ -259,14 +300,17 @@ impl crate::UnityEngine::SpriteRenderer {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -274,14 +318,17 @@ impl crate::UnityEngine::SpriteRenderer {
         Ok(__cordl_ret.into())
     }
     pub fn get_adaptiveModeThreshold(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_adaptiveModeThreshold")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "get_adaptiveModeThreshold", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_adaptiveModeThreshold")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_adaptiveModeThreshold", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -289,14 +336,17 @@ impl crate::UnityEngine::SpriteRenderer {
     pub fn get_color(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::UnityEngine::Color, 0usize>("get_color")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "get_color", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), crate::UnityEngine::Color, 0usize>("get_color")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_color", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Color = unsafe {
             method.invoke_unchecked(self, ())?
@@ -307,18 +357,21 @@ impl crate::UnityEngine::SpriteRenderer {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("get_color_Injected")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "get_color_Injected", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("get_color_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_color_Injected", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (ret))?
@@ -328,18 +381,21 @@ impl crate::UnityEngine::SpriteRenderer {
     pub fn get_drawMode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SpriteDrawMode> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::SpriteDrawMode,
-                0usize,
-            >("get_drawMode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "get_drawMode", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::SpriteDrawMode,
+                        0usize,
+                    >("get_drawMode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_drawMode", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::SpriteDrawMode = unsafe {
             method.invoke_unchecked(self, ())?
@@ -347,27 +403,33 @@ impl crate::UnityEngine::SpriteRenderer {
         Ok(__cordl_ret.into())
     }
     pub fn get_flipX(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_flipX")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "get_flipX", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_flipX")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_flipX", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_flipY(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_flipY")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "get_flipY", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_flipY")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_flipY", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -375,18 +437,21 @@ impl crate::UnityEngine::SpriteRenderer {
     pub fn get_maskInteraction(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SpriteMaskInteraction> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::SpriteMaskInteraction,
-                0usize,
-            >("get_maskInteraction")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "get_maskInteraction", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::SpriteMaskInteraction,
+                        0usize,
+                    >("get_maskInteraction")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_maskInteraction", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::SpriteMaskInteraction = unsafe {
             method.invoke_unchecked(self, ())?
@@ -394,14 +459,17 @@ impl crate::UnityEngine::SpriteRenderer {
         Ok(__cordl_ret.into())
     }
     pub fn get_shouldSupportTiling(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_shouldSupportTiling")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "get_shouldSupportTiling", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_shouldSupportTiling")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_shouldSupportTiling", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -409,14 +477,17 @@ impl crate::UnityEngine::SpriteRenderer {
     pub fn get_size(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::UnityEngine::Vector2, 0usize>("get_size")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "get_size", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), crate::UnityEngine::Vector2, 0usize>("get_size")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_size", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
             method.invoke_unchecked(self, ())?
@@ -427,18 +498,21 @@ impl crate::UnityEngine::SpriteRenderer {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("get_size_Injected")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "get_size_Injected", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("get_size_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_size_Injected", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (ret))?
@@ -450,18 +524,21 @@ impl crate::UnityEngine::SpriteRenderer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-                0usize,
-            >("get_sprite")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "get_sprite", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+                        0usize,
+                    >("get_sprite")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_sprite", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -471,18 +548,21 @@ impl crate::UnityEngine::SpriteRenderer {
     pub fn get_spriteSortPoint(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SpriteSortPoint> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::SpriteSortPoint,
-                0usize,
-            >("get_spriteSortPoint")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "get_spriteSortPoint", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::SpriteSortPoint,
+                        0usize,
+                    >("get_spriteSortPoint")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_spriteSortPoint", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::SpriteSortPoint = unsafe {
             method.invoke_unchecked(self, ())?
@@ -492,18 +572,21 @@ impl crate::UnityEngine::SpriteRenderer {
     pub fn get_tileMode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SpriteTileMode> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::SpriteTileMode,
-                0usize,
-            >("get_tileMode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "get_tileMode", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::SpriteTileMode,
+                        0usize,
+                    >("get_tileMode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_tileMode", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::SpriteTileMode = unsafe {
             method.invoke_unchecked(self, ())?
@@ -514,18 +597,21 @@ impl crate::UnityEngine::SpriteRenderer {
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (f32),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_adaptiveModeThreshold")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "set_adaptiveModeThreshold", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (f32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_adaptiveModeThreshold")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_adaptiveModeThreshold", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -536,18 +622,21 @@ impl crate::UnityEngine::SpriteRenderer {
         &mut self,
         value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::Color),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_color")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "set_color", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::Color),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_color")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_color", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -558,18 +647,21 @@ impl crate::UnityEngine::SpriteRenderer {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_color_Injected")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "set_color_Injected", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_color_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_color_Injected", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -580,18 +672,21 @@ impl crate::UnityEngine::SpriteRenderer {
         &mut self,
         value: crate::UnityEngine::SpriteDrawMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::SpriteDrawMode),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_drawMode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "set_drawMode", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::SpriteDrawMode),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_drawMode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_drawMode", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -602,14 +697,21 @@ impl crate::UnityEngine::SpriteRenderer {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_flipX")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "set_flipX", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_flipX")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_flipX", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -620,14 +722,21 @@ impl crate::UnityEngine::SpriteRenderer {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_flipY")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "set_flipY", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_flipY")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_flipY", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -638,18 +747,21 @@ impl crate::UnityEngine::SpriteRenderer {
         &mut self,
         value: crate::UnityEngine::SpriteMaskInteraction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::SpriteMaskInteraction),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_maskInteraction")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "set_maskInteraction", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::SpriteMaskInteraction),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_maskInteraction")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_maskInteraction", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -660,18 +772,21 @@ impl crate::UnityEngine::SpriteRenderer {
         &mut self,
         value: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::Vector2),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_size")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "set_size", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::Vector2),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_size")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_size", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -682,18 +797,21 @@ impl crate::UnityEngine::SpriteRenderer {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_size_Injected")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "set_size_Injected", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_size_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_size_Injected", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -704,18 +822,21 @@ impl crate::UnityEngine::SpriteRenderer {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_sprite")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "set_sprite", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_sprite")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_sprite", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -726,18 +847,21 @@ impl crate::UnityEngine::SpriteRenderer {
         &mut self,
         value: crate::UnityEngine::SpriteSortPoint,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::SpriteSortPoint),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_spriteSortPoint")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "set_spriteSortPoint", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::SpriteSortPoint),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_spriteSortPoint")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_spriteSortPoint", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -748,18 +872,21 @@ impl crate::UnityEngine::SpriteRenderer {
         &mut self,
         value: crate::UnityEngine::SpriteTileMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::SpriteTileMode),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_tileMode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpriteRenderer as quest_hook::libil2cpp::Type >
-                    ::class(), "set_tileMode", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::SpriteTileMode),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_tileMode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_tileMode", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

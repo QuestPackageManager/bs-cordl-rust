@@ -44,18 +44,26 @@ impl crate::GlobalNamespace::StringBuilderExtension {
         sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         number: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StringBuilderExtension as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>, i32),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("AppendNumber")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::StringBuilderExtension as
-                    quest_hook::libil2cpp::Type > ::class(), "AppendNumber", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Text::StringBuilder,
+                            >,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("AppendNumber")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AppendNumber", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (sb, number))?
@@ -67,22 +75,27 @@ impl crate::GlobalNamespace::StringBuilderExtension {
         uNumber: u32,
         isNegative: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StringBuilderExtension as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-                    u32,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("AppendNumber")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::StringBuilderExtension as
-                    quest_hook::libil2cpp::Type > ::class(), "AppendNumber", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Text::StringBuilder,
+                            >,
+                            u32,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("AppendNumber")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AppendNumber", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (sb, uNumber, isNegative))?
@@ -94,22 +107,27 @@ impl crate::GlobalNamespace::StringBuilderExtension {
         startIndex: i32,
         endIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StringBuilderExtension as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-                    i32,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("Swap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::StringBuilderExtension as
-                    quest_hook::libil2cpp::Type > ::class(), "Swap", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Text::StringBuilder,
+                            >,
+                            i32,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("Swap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Swap", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (sb, startIndex, endIndex))?

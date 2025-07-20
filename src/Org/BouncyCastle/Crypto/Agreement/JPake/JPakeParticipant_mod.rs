@@ -66,19 +66,23 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
-                0usize,
-            >("CalculateKeyingMaterial")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "CalculateKeyingMaterial", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Math::BigInteger,
+                        >,
+                        0usize,
+                    >("CalculateKeyingMaterial")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CalculateKeyingMaterial", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
@@ -92,21 +96,23 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
             crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload,
-                >,
-                0usize,
-            >("CreateRound1PayloadToSend")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "CreateRound1PayloadToSend", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload,
+                        >,
+                        0usize,
+                    >("CreateRound1PayloadToSend")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateRound1PayloadToSend", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload,
@@ -120,21 +126,23 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
             crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound2Payload,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound2Payload,
-                >,
-                0usize,
-            >("CreateRound2PayloadToSend")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "CreateRound2PayloadToSend", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound2Payload,
+                        >,
+                        0usize,
+                    >("CreateRound2PayloadToSend")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateRound2PayloadToSend", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound2Payload,
@@ -151,21 +159,25 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
             crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound3Payload,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>),
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound3Payload,
-                >,
-                1usize,
-            >("CreateRound3PayloadToSend")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "CreateRound3PayloadToSend", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Math::BigInteger,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound3Payload,
+                        >,
+                        1usize,
+                    >("CreateRound3PayloadToSend")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateRound3PayloadToSend", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound3Payload,
@@ -218,21 +230,23 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
             crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("ValidateRound1PayloadReceived")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "ValidateRound1PayloadReceived", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("ValidateRound1PayloadReceived")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ValidateRound1PayloadReceived", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (round1PayloadReceived))?
@@ -245,21 +259,23 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
             crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound2Payload,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound2Payload,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("ValidateRound2PayloadReceived")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "ValidateRound2PayloadReceived", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound2Payload,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("ValidateRound2PayloadReceived")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ValidateRound2PayloadReceived", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (round2PayloadReceived))?
@@ -275,24 +291,28 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
             crate::Org::BouncyCastle::Math::BigInteger,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound3Payload,
-                    >,
-                    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("ValidateRound3PayloadReceived")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "ValidateRound3PayloadReceived", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound3Payload,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Org::BouncyCastle::Math::BigInteger,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("ValidateRound3PayloadReceived")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ValidateRound3PayloadReceived", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (round3PayloadReceived, keyingMaterial))?
@@ -304,21 +324,28 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
         participantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<char>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (participantId, password))?
@@ -333,24 +360,31 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
             crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroup,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroup,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<char>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroup,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (participantId, password, group))?
@@ -369,28 +403,37 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroup,
-                    >,
-                    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::Org::BouncyCastle::Security::SecureRandom,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<char>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroup,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Org::BouncyCastle::Crypto::IDigest,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Org::BouncyCastle::Security::SecureRandom,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -402,14 +445,17 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
         Ok(__cordl_ret.into())
     }
     pub fn get_State(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("get_State")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant
-                    as quest_hook::libil2cpp::Type > ::class(), "get_State", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("get_State")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_State", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

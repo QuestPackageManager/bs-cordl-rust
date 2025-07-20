@@ -57,38 +57,40 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::NotificationUtilities as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::Playables::PlayableGraph,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IEnumerable_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Playables::PlayableGraph,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Timeline::IMarker,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::Timeline::IMarker,
+                                    >,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Playables::IPlayableAsset,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Playables::PlayableDirector,
+                            >,
+                        ),
+                        crate::UnityEngine::Playables::ScriptPlayable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Timeline::TimeNotificationBehaviour,
                             >,
                         >,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::Playables::IPlayableAsset,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::Playables::PlayableDirector,
-                    >,
-                ),
-                crate::UnityEngine::Playables::ScriptPlayable_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::Timeline::TimeNotificationBehaviour,
-                    >,
-                >,
-                4usize,
-            >("CreateNotificationsPlayable")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::NotificationUtilities as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "CreateNotificationsPlayable", 4usize
-                )
+                        4usize,
+                    >("CreateNotificationsPlayable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateNotificationsPlayable", 4usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
             quest_hook::libil2cpp::Gc<
@@ -114,35 +116,37 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::NotificationUtilities as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::Playables::PlayableGraph,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IEnumerable_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Playables::PlayableGraph,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Timeline::IMarker,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::Timeline::IMarker,
+                                    >,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Playables::PlayableDirector,
+                            >,
+                        ),
+                        crate::UnityEngine::Playables::ScriptPlayable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Timeline::TimeNotificationBehaviour,
                             >,
                         >,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::Playables::PlayableDirector,
-                    >,
-                ),
-                crate::UnityEngine::Playables::ScriptPlayable_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::Timeline::TimeNotificationBehaviour,
-                    >,
-                >,
-                3usize,
-            >("CreateNotificationsPlayable")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::NotificationUtilities as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "CreateNotificationsPlayable", 3usize
-                )
+                        3usize,
+                    >("CreateNotificationsPlayable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateNotificationsPlayable", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
             quest_hook::libil2cpp::Gc<
@@ -168,35 +172,37 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::NotificationUtilities as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::Playables::PlayableGraph,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IEnumerable_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Playables::PlayableGraph,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Timeline::IMarker,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::Timeline::IMarker,
+                                    >,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Timeline::TimelineAsset,
+                            >,
+                        ),
+                        crate::UnityEngine::Playables::ScriptPlayable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Timeline::TimeNotificationBehaviour,
                             >,
                         >,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::Timeline::TimelineAsset,
-                    >,
-                ),
-                crate::UnityEngine::Playables::ScriptPlayable_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::Timeline::TimeNotificationBehaviour,
-                    >,
-                >,
-                3usize,
-            >("CreateNotificationsPlayable")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::NotificationUtilities as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "CreateNotificationsPlayable", 3usize
-                )
+                        3usize,
+                    >("CreateNotificationsPlayable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateNotificationsPlayable", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
             quest_hook::libil2cpp::Gc<
@@ -208,19 +214,21 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
     pub fn TrackTypeSupportsNotifications(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::NotificationUtilities as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Type>),
-                bool,
-                1usize,
-            >("TrackTypeSupportsNotifications")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::NotificationUtilities as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "TrackTypeSupportsNotifications", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                        bool,
+                        1usize,
+                    >("TrackTypeSupportsNotifications")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TrackTypeSupportsNotifications", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())

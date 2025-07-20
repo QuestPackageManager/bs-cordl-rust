@@ -53,23 +53,25 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ISonyPSPremiumHelper as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Threading::CancellationToken),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Threading::Tasks::Task_1<
-                        crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult,
-                    >,
-                >,
-                1usize,
-            >("DisplayJoinPremiumDialogAsync")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::ISonyPSPremiumHelper as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "DisplayJoinPremiumDialogAsync", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Threading::CancellationToken),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<
+                                crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult,
+                            >,
+                        >,
+                        1usize,
+                    >("DisplayJoinPremiumDialogAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "DisplayJoinPremiumDialogAsync", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
@@ -88,23 +90,25 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ISonyPSPremiumHelper as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Threading::CancellationToken),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Threading::Tasks::Task_1<
-                        crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult,
-                    >,
-                >,
-                1usize,
-            >("GetPremiumStatusAsync")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::ISonyPSPremiumHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "GetPremiumStatusAsync",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Threading::CancellationToken),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<
+                                crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult,
+                            >,
+                        >,
+                        1usize,
+                    >("GetPremiumStatusAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetPremiumStatusAsync", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
@@ -117,19 +121,21 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
         &mut self,
         isSpectator: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ISonyPSPremiumHelper as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (bool),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("NotifyPremiumFeature")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::ISonyPSPremiumHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "NotifyPremiumFeature",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("NotifyPremiumFeature")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NotifyPremiumFeature", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (isSpectator))?

@@ -46,20 +46,25 @@ impl crate::Mono::Unity::UnityTlsStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileTlsContext>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Unity::UnityTlsStream as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::Mono::Net::Security::MonoSslAuthenticationOptions,
-                >),
-                quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileTlsContext>,
-                1usize,
-            >("CreateContext")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Unity::UnityTlsStream as quest_hook::libil2cpp::Type >
-                    ::class(), "CreateContext", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Mono::Net::Security::MonoSslAuthenticationOptions,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Mono::Net::Security::MobileTlsContext,
+                        >,
+                        1usize,
+                    >("CreateContext")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateContext", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Net::Security::MobileTlsContext,
@@ -98,28 +103,33 @@ impl crate::Mono::Unity::UnityTlsStream {
             crate::Mono::Net::Security::MobileTlsProvider,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Unity::UnityTlsStream as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-                    bool,
-                    quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::Mono::Security::Interface::MonoTlsSettings,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::Mono::Net::Security::MobileTlsProvider,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Unity::UnityTlsStream as quest_hook::libil2cpp::Type >
-                    ::class(), ".ctor", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                            bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Net::Security::SslStream,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Mono::Security::Interface::MonoTlsSettings,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Mono::Net::Security::MobileTlsProvider,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method

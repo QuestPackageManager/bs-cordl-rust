@@ -67,22 +67,25 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
         destination: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         depth: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::RenderChainCommand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-                    f32,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("Blit")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::UIR::RenderChainCommand as
-                    quest_hook::libil2cpp::Type > ::class(), "Blit", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                            f32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("Blit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Blit", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (source, destination, depth))?
@@ -93,19 +96,21 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
         r0: crate::UnityEngine::Rect,
         r1: crate::UnityEngine::Rect,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::RenderChainCommand as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Rect, crate::UnityEngine::Rect),
-                crate::UnityEngine::Rect,
-                2usize,
-            >("CombineScissorRects")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::UIR::RenderChainCommand as
-                    quest_hook::libil2cpp::Type > ::class(), "CombineScissorRects",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Rect, crate::UnityEngine::Rect),
+                        crate::UnityEngine::Rect,
+                        2usize,
+                    >("CombineScissorRects")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CombineScissorRects", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Rect = unsafe {
             method.invoke_unchecked((), (r0, r1))?
@@ -122,26 +127,29 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
             quest_hook::libil2cpp::Gc<crate::System::Exception>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::RenderChainCommand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::UIElements::UIR::DrawParams,
-                    >,
-                    f32,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<crate::System::Exception>,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("ExecuteNonDrawMesh")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::UIR::RenderChainCommand as
-                    quest_hook::libil2cpp::Type > ::class(), "ExecuteNonDrawMesh", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::UIR::DrawParams,
+                            >,
+                            f32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("ExecuteNonDrawMesh")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ExecuteNonDrawMesh", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -163,19 +171,21 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
         rect: crate::UnityEngine::Rect,
         pixelsPerPoint: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RectInt> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::RenderChainCommand as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Rect, f32),
-                crate::UnityEngine::RectInt,
-                2usize,
-            >("RectPointsToPixelsAndFlipYAxis")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::UIR::RenderChainCommand as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "RectPointsToPixelsAndFlipYAxis", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Rect, f32),
+                        crate::UnityEngine::RectInt,
+                        2usize,
+                    >("RectPointsToPixelsAndFlipYAxis")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "RectPointsToPixelsAndFlipYAxis", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::RectInt = unsafe {
             method.invoke_unchecked((), (rect, pixelsPerPoint))?
@@ -185,14 +195,17 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::RenderChainCommand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::UIR::RenderChainCommand as
-                    quest_hook::libil2cpp::Type > ::class(), "Reset", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Reset", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -202,14 +215,17 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::RenderChainCommand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::UIR::RenderChainCommand as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

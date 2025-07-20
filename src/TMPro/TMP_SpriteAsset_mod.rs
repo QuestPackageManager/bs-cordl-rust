@@ -83,14 +83,17 @@ impl crate::TMPro::TMP_SpriteAsset {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "Awake", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Awake", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -102,18 +105,21 @@ impl crate::TMPro::TMP_SpriteAsset {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                0usize,
-            >("GetDefaultSpriteMaterial")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "GetDefaultSpriteMaterial", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        0usize,
+                    >("GetDefaultSpriteMaterial")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDefaultSpriteMaterial", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -124,14 +130,17 @@ impl crate::TMPro::TMP_SpriteAsset {
         &mut self,
         hashCode: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(i32), i32, 1usize>("GetSpriteIndexFromHashcode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "GetSpriteIndexFromHashcode", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(i32), i32, 1usize>("GetSpriteIndexFromHashcode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetSpriteIndexFromHashcode", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (hashCode))? };
         Ok(__cordl_ret.into())
@@ -140,18 +149,21 @@ impl crate::TMPro::TMP_SpriteAsset {
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                i32,
-                1usize,
-            >("GetSpriteIndexFromName")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "GetSpriteIndexFromName", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        i32,
+                        1usize,
+                    >("GetSpriteIndexFromName")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetSpriteIndexFromName", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
@@ -160,14 +172,17 @@ impl crate::TMPro::TMP_SpriteAsset {
         &mut self,
         unicode: u32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(u32), i32, 1usize>("GetSpriteIndexFromUnicode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "GetSpriteIndexFromUnicode", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(u32), i32, 1usize>("GetSpriteIndexFromUnicode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetSpriteIndexFromUnicode", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (unicode))? };
         Ok(__cordl_ret.into())
@@ -187,23 +202,26 @@ impl crate::TMPro::TMP_SpriteAsset {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
-                    i32,
-                    bool,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
-                4usize,
-            >("SearchForSpriteByHashCode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "SearchForSpriteByHashCode", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+                            i32,
+                            bool,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+                        4usize,
+                    >("SearchForSpriteByHashCode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SearchForSpriteByHashCode", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset> = unsafe {
             method
@@ -226,27 +244,30 @@ impl crate::TMPro::TMP_SpriteAsset {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::List_1<
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
-                        >,
-                    >,
-                    i32,
-                    bool,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
-                4usize,
-            >("SearchForSpriteByHashCodeInternal")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "SearchForSpriteByHashCodeInternal", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+                                >,
+                            >,
+                            i32,
+                            bool,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+                        4usize,
+                    >("SearchForSpriteByHashCodeInternal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SearchForSpriteByHashCodeInternal", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset> = unsafe {
             method
@@ -265,23 +286,26 @@ impl crate::TMPro::TMP_SpriteAsset {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
-                    i32,
-                    bool,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
-                4usize,
-            >("SearchForSpriteByHashCodeInternal")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "SearchForSpriteByHashCodeInternal", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+                            i32,
+                            bool,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+                        4usize,
+                    >("SearchForSpriteByHashCodeInternal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SearchForSpriteByHashCodeInternal", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset> = unsafe {
             method
@@ -300,23 +324,26 @@ impl crate::TMPro::TMP_SpriteAsset {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
-                    u32,
-                    bool,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
-                4usize,
-            >("SearchForSpriteByUnicode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "SearchForSpriteByUnicode", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+                            u32,
+                            bool,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+                        4usize,
+                    >("SearchForSpriteByUnicode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SearchForSpriteByUnicode", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset> = unsafe {
             method
@@ -339,27 +366,30 @@ impl crate::TMPro::TMP_SpriteAsset {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::List_1<
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
-                        >,
-                    >,
-                    u32,
-                    bool,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
-                4usize,
-            >("SearchForSpriteByUnicodeInternal")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "SearchForSpriteByUnicodeInternal", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+                                >,
+                            >,
+                            u32,
+                            bool,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+                        4usize,
+                    >("SearchForSpriteByUnicodeInternal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SearchForSpriteByUnicodeInternal", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset> = unsafe {
             method
@@ -378,23 +408,26 @@ impl crate::TMPro::TMP_SpriteAsset {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
-                    u32,
-                    bool,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
-                4usize,
-            >("SearchForSpriteByUnicodeInternal")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "SearchForSpriteByUnicodeInternal", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+                            u32,
+                            bool,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+                        4usize,
+                    >("SearchForSpriteByUnicodeInternal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SearchForSpriteByUnicodeInternal", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset> = unsafe {
             method
@@ -408,14 +441,21 @@ impl crate::TMPro::TMP_SpriteAsset {
     pub fn SortCharacterTable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SortCharacterTable")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "SortCharacterTable", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("SortCharacterTable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SortCharacterTable", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -425,18 +465,21 @@ impl crate::TMPro::TMP_SpriteAsset {
     pub fn SortGlyphAndCharacterTables(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("SortGlyphAndCharacterTables")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "SortGlyphAndCharacterTables", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("SortGlyphAndCharacterTables")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SortGlyphAndCharacterTables", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -446,14 +489,21 @@ impl crate::TMPro::TMP_SpriteAsset {
     pub fn SortGlyphTable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SortGlyphTable")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "SortGlyphTable", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("SortGlyphTable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SortGlyphTable", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -463,14 +513,21 @@ impl crate::TMPro::TMP_SpriteAsset {
     pub fn UpdateLookupTables(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UpdateLookupTables")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "UpdateLookupTables", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("UpdateLookupTables")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UpdateLookupTables", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -480,14 +537,21 @@ impl crate::TMPro::TMP_SpriteAsset {
     pub fn UpgradeSpriteAsset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UpgradeSpriteAsset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "UpgradeSpriteAsset", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("UpgradeSpriteAsset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UpgradeSpriteAsset", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -497,14 +561,17 @@ impl crate::TMPro::TMP_SpriteAsset {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -514,18 +581,21 @@ impl crate::TMPro::TMP_SpriteAsset {
     pub fn get_faceInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TextCore::FaceInfo> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::TextCore::FaceInfo,
-                0usize,
-            >("get_faceInfo")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "get_faceInfo", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::TextCore::FaceInfo,
+                        0usize,
+                    >("get_faceInfo")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_faceInfo", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::TextCore::FaceInfo = unsafe {
             method.invoke_unchecked(self, ())?
@@ -542,23 +612,26 @@ impl crate::TMPro::TMP_SpriteAsset {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::Dictionary_2<
-                        u32,
-                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
-                    >,
-                >,
-                0usize,
-            >("get_spriteCharacterLookupTable")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "get_spriteCharacterLookupTable", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                u32,
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+                            >,
+                        >,
+                        0usize,
+                    >("get_spriteCharacterLookupTable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_spriteCharacterLookupTable", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<
@@ -577,22 +650,25 @@ impl crate::TMPro::TMP_SpriteAsset {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<
-                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
-                    >,
-                >,
-                0usize,
-            >("get_spriteCharacterTable")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "get_spriteCharacterTable", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+                            >,
+                        >,
+                        0usize,
+                    >("get_spriteCharacterTable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_spriteCharacterTable", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
@@ -610,22 +686,25 @@ impl crate::TMPro::TMP_SpriteAsset {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<
-                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteGlyph>,
-                    >,
-                >,
-                0usize,
-            >("get_spriteGlyphTable")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "get_spriteGlyphTable", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteGlyph>,
+                            >,
+                        >,
+                        0usize,
+                    >("get_spriteGlyphTable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_spriteGlyphTable", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
@@ -639,18 +718,21 @@ impl crate::TMPro::TMP_SpriteAsset {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("get_version")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "get_version", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("get_version")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_version", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -661,18 +743,21 @@ impl crate::TMPro::TMP_SpriteAsset {
         &mut self,
         value: crate::UnityEngine::TextCore::FaceInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::TextCore::FaceInfo),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_faceInfo")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "set_faceInfo", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::TextCore::FaceInfo),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_faceInfo")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_faceInfo", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -688,23 +773,26 @@ impl crate::TMPro::TMP_SpriteAsset {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::Dictionary_2<
-                        u32,
-                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
-                    >,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_spriteCharacterLookupTable")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "set_spriteCharacterLookupTable", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                u32,
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_spriteCharacterLookupTable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_spriteCharacterLookupTable", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -719,22 +807,25 @@ impl crate::TMPro::TMP_SpriteAsset {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<
-                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
-                    >,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_spriteCharacterTable")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "set_spriteCharacterTable", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_spriteCharacterTable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_spriteCharacterTable", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -749,22 +840,25 @@ impl crate::TMPro::TMP_SpriteAsset {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<
-                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteGlyph>,
-                    >,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_spriteGlyphTable")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "set_spriteGlyphTable", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteGlyph>,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_spriteGlyphTable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_spriteGlyphTable", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -775,18 +869,21 @@ impl crate::TMPro::TMP_SpriteAsset {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_version")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_SpriteAsset as quest_hook::libil2cpp::Type >
-                    ::class(), "set_version", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_version")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_version", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

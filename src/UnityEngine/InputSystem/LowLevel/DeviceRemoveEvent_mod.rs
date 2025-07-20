@@ -108,18 +108,21 @@ impl crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i32, f64),
-                crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent,
-                2usize,
-            >("Create")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "Create", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32, f64),
+                        crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent,
+                        2usize,
+                    >("Create")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Create", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent = unsafe {
             method.invoke_unchecked((), (deviceId, _cordl_time))?
@@ -131,18 +134,21 @@ impl crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                0usize,
-            >("ToEventPtr")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "ToEventPtr", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                        0usize,
+                    >("ToEventPtr")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToEventPtr", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr = unsafe {
             method.invoke_unchecked(self, ())?
@@ -154,18 +160,21 @@ impl crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::FourCC,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::InputSystem::Utilities::FourCC,
-                0usize,
-            >("get_typeStatic")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_typeStatic", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::InputSystem::Utilities::FourCC,
+                        0usize,
+                    >("get_typeStatic")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_typeStatic", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
             method.invoke_unchecked(self, ())?

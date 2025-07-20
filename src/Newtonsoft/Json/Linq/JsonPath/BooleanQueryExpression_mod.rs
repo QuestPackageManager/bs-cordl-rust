@@ -47,22 +47,28 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
         value: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
         queryValue: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
-                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
-                ),
-                bool,
-                2usize,
-            >("EqualsWithStrictMatch")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression as
-                    quest_hook::libil2cpp::Type > ::class(), "EqualsWithStrictMatch",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JValue,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JValue,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("EqualsWithStrictMatch")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "EqualsWithStrictMatch", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (value, queryValue))?
@@ -73,22 +79,28 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
         value: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
         queryValue: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
-                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
-                ),
-                bool,
-                2usize,
-            >("EqualsWithStringCoercion")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression as
-                    quest_hook::libil2cpp::Type > ::class(), "EqualsWithStringCoercion",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JValue,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JValue,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("EqualsWithStringCoercion")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "EqualsWithStringCoercion", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (value, queryValue))?
@@ -107,26 +119,37 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
-                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IEnumerable_1<
-                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
-                    >,
-                >,
-                3usize,
-            >("GetResult")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression as
-                    quest_hook::libil2cpp::Type > ::class(), "GetResult", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JToken,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JToken,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Linq::JToken,
+                                >,
+                            >,
+                        >,
+                        3usize,
+                    >("GetResult")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetResult", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
@@ -143,24 +166,31 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
             crate::Newtonsoft::Json::Linq::JsonSelectSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
-                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::Newtonsoft::Json::Linq::JsonSelectSettings,
-                    >,
-                ),
-                bool,
-                3usize,
-            >("IsMatch")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression as
-                    quest_hook::libil2cpp::Type > ::class(), "IsMatch", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JToken,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JToken,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JsonSelectSettings,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("IsMatch")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsMatch", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (root, t, settings))?
@@ -175,24 +205,31 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
             crate::Newtonsoft::Json::Linq::JsonSelectSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
-                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::Newtonsoft::Json::Linq::JsonSelectSettings,
-                    >,
-                ),
-                bool,
-                3usize,
-            >("MatchTokens")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression as
-                    quest_hook::libil2cpp::Type > ::class(), "MatchTokens", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JToken,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JToken,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JsonSelectSettings,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("MatchTokens")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "MatchTokens", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (leftResult, rightResult, settings))?
@@ -217,24 +254,31 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
             crate::Newtonsoft::Json::Linq::JsonSelectSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
-                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::Newtonsoft::Json::Linq::JsonSelectSettings,
-                    >,
-                ),
-                bool,
-                3usize,
-            >("RegexEquals")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression as
-                    quest_hook::libil2cpp::Type > ::class(), "RegexEquals", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JValue,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JValue,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JsonSelectSettings,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("RegexEquals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "RegexEquals", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (input, pattern, settings))?
@@ -247,22 +291,29 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
         left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (_cordl_operator, left, right))?

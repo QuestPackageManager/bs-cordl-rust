@@ -51,30 +51,33 @@ impl crate::System::Net::AutoWebProxyScriptEngine {
         >,
         syncStatus: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::AutoWebProxyScriptEngine as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::Uri>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::System::Uri>,
+                            quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                    crate::System::Collections::Generic::IList_1<
+                                        quest_hook::libil2cpp::Gc<
+                                            quest_hook::libil2cpp::Il2CppString,
+                                        >,
+                                    >,
                                 >,
                             >,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                3usize,
-            >("GetProxies")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::AutoWebProxyScriptEngine as
-                    quest_hook::libil2cpp::Type > ::class(), "GetProxies", 3usize
-                )
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        3usize,
+                    >("GetProxies")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetProxies", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (destination, proxyList, syncStatus))?
@@ -92,29 +95,32 @@ impl crate::System::Net::AutoWebProxyScriptEngine {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::AutoWebProxyScriptEngine as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::Uri>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::System::Uri>,
+                            quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                    crate::System::Collections::Generic::IList_1<
+                                        quest_hook::libil2cpp::Gc<
+                                            quest_hook::libil2cpp::Il2CppString,
+                                        >,
+                                    >,
                                 >,
                             >,
-                        >,
-                    >,
-                ),
-                bool,
-                2usize,
-            >("GetProxies")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::AutoWebProxyScriptEngine as
-                    quest_hook::libil2cpp::Type > ::class(), "GetProxies", 2usize
-                )
+                        ),
+                        bool,
+                        2usize,
+                    >("GetProxies")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetProxies", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (destination, proxyList))?

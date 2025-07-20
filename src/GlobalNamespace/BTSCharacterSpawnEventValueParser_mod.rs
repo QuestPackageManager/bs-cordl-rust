@@ -46,41 +46,53 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventValueParser {
     pub const kPrefabBitOffset: i32 = 0i32;
     pub const kPrefabMask: i32 = 255i32;
     pub fn GetAnimationId(value: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BTSCharacterSpawnEventValueParser as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(i32), i32, 1usize>("GetAnimationId")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BTSCharacterSpawnEventValueParser as
-                    quest_hook::libil2cpp::Type > ::class(), "GetAnimationId", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(i32), i32, 1usize>("GetAnimationId")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetAnimationId", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetIsAlternativeMaterial(value: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BTSCharacterSpawnEventValueParser as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(i32), bool, 1usize>("GetIsAlternativeMaterial")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BTSCharacterSpawnEventValueParser as
-                    quest_hook::libil2cpp::Type > ::class(), "GetIsAlternativeMaterial",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32),
+                        bool,
+                        1usize,
+                    >("GetIsAlternativeMaterial")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetIsAlternativeMaterial", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPrefabId(value: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BTSCharacterSpawnEventValueParser as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(i32), i32, 1usize>("GetPrefabId")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BTSCharacterSpawnEventValueParser as
-                    quest_hook::libil2cpp::Type > ::class(), "GetPrefabId", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(i32), i32, 1usize>("GetPrefabId")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetPrefabId", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
@@ -90,15 +102,21 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventValueParser {
         animationId: i32,
         isAlternativeMaterial: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BTSCharacterSpawnEventValueParser as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(i32, i32, bool), i32, 3usize>("MergeValuesIntoOneInt")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BTSCharacterSpawnEventValueParser as
-                    quest_hook::libil2cpp::Type > ::class(), "MergeValuesIntoOneInt",
-                    3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32, i32, bool),
+                        i32,
+                        3usize,
+                    >("MergeValuesIntoOneInt")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "MergeValuesIntoOneInt", 3usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (prefabId, animationId, isAlternativeMaterial))?

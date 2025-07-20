@@ -90,33 +90,34 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::ArraySortHelper_2<
-            TKey,
-            TValue,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<TValue>,
-                    >,
-                    i32,
-                    i32,
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IComparer_1<TKey>,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                6usize,
-            >("DownHeap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Collections::Generic::ArraySortHelper_2 < TKey,
-                    TValue > as quest_hook::libil2cpp::Type > ::class(), "DownHeap",
-                    6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TKey>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TValue>,
+                            >,
+                            i32,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IComparer_1<TKey>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >("DownHeap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "DownHeap", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (keys, values, i, n, lo, comparer))?
@@ -138,32 +139,33 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::ArraySortHelper_2<
-            TKey,
-            TValue,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<TValue>,
-                    >,
-                    i32,
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IComparer_1<TKey>,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >("Heapsort")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Collections::Generic::ArraySortHelper_2 < TKey,
-                    TValue > as quest_hook::libil2cpp::Type > ::class(), "Heapsort",
-                    5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TKey>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TValue>,
+                            >,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IComparer_1<TKey>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("Heapsort")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Heapsort", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (keys, values, lo, hi, comparer))?
@@ -185,32 +187,33 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::ArraySortHelper_2<
-            TKey,
-            TValue,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<TValue>,
-                    >,
-                    i32,
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IComparer_1<TKey>,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >("InsertionSort")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Collections::Generic::ArraySortHelper_2 < TKey,
-                    TValue > as quest_hook::libil2cpp::Type > ::class(), "InsertionSort",
-                    5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TKey>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TValue>,
+                            >,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IComparer_1<TKey>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("InsertionSort")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "InsertionSort", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (keys, values, lo, hi, comparer))?
@@ -233,33 +236,34 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::ArraySortHelper_2<
-            TKey,
-            TValue,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<TValue>,
-                    >,
-                    i32,
-                    i32,
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IComparer_1<TKey>,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                6usize,
-            >("IntroSort")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Collections::Generic::ArraySortHelper_2 < TKey,
-                    TValue > as quest_hook::libil2cpp::Type > ::class(), "IntroSort",
-                    6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TKey>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TValue>,
+                            >,
+                            i32,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IComparer_1<TKey>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >("IntroSort")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IntroSort", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (keys, values, lo, hi, depthLimit, comparer))?
@@ -281,32 +285,33 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::ArraySortHelper_2<
-            TKey,
-            TValue,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<TValue>,
-                    >,
-                    i32,
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IComparer_1<TKey>,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >("IntrospectiveSort")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Collections::Generic::ArraySortHelper_2 < TKey,
-                    TValue > as quest_hook::libil2cpp::Type > ::class(),
-                    "IntrospectiveSort", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TKey>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TValue>,
+                            >,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IComparer_1<TKey>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("IntrospectiveSort")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IntrospectiveSort", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (keys, values, left, length, comparer))?
@@ -341,32 +346,33 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::ArraySortHelper_2<
-            TKey,
-            TValue,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<TValue>,
-                    >,
-                    i32,
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IComparer_1<TKey>,
-                    >,
-                ),
-                i32,
-                5usize,
-            >("PickPivotAndPartition")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Collections::Generic::ArraySortHelper_2 < TKey,
-                    TValue > as quest_hook::libil2cpp::Type > ::class(),
-                    "PickPivotAndPartition", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TKey>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TValue>,
+                            >,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IComparer_1<TKey>,
+                            >,
+                        ),
+                        i32,
+                        5usize,
+                    >("PickPivotAndPartition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PickPivotAndPartition", 5usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (keys, values, lo, hi, comparer))?
@@ -389,31 +395,33 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::ArraySortHelper_2<
-            TKey,
-            TValue,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<TValue>,
-                    >,
-                    i32,
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IComparer_1<TKey>,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >("Sort")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Collections::Generic::ArraySortHelper_2 < TKey,
-                    TValue > as quest_hook::libil2cpp::Type > ::class(), "Sort", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TKey>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TValue>,
+                            >,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IComparer_1<TKey>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("Sort")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Sort", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (keys, values, index, length, comparer))?
@@ -432,28 +440,30 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::ArraySortHelper_2<
-            TKey,
-            TValue,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<TValue>,
-                    >,
-                    i32,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >("Swap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Collections::Generic::ArraySortHelper_2 < TKey,
-                    TValue > as quest_hook::libil2cpp::Type > ::class(), "Swap", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TKey>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TValue>,
+                            >,
+                            i32,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("Swap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Swap", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (keys, values, i, j))?
@@ -475,32 +485,33 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::ArraySortHelper_2<
-            TKey,
-            TValue,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<TValue>,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IComparer_1<TKey>,
-                    >,
-                    i32,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >("SwapIfGreaterWithItems")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Collections::Generic::ArraySortHelper_2 < TKey,
-                    TValue > as quest_hook::libil2cpp::Type > ::class(),
-                    "SwapIfGreaterWithItems", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TKey>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TValue>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IComparer_1<TKey>,
+                            >,
+                            i32,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("SwapIfGreaterWithItems")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SwapIfGreaterWithItems", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (keys, values, comparer, a, b))?
@@ -514,17 +525,17 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::ArraySortHelper_2<
-            TKey,
-            TValue,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Collections::Generic::ArraySortHelper_2 < TKey,
-                    TValue > as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -542,24 +553,26 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::ArraySortHelper_2<
-            TKey,
-            TValue,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::ArraySortHelper_2<TKey, TValue>,
-                >,
-                0usize,
-            >("get_Default")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Collections::Generic::ArraySortHelper_2 < TKey,
-                    TValue > as quest_hook::libil2cpp::Type > ::class(), "get_Default",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::ArraySortHelper_2<
+                                TKey,
+                                TValue,
+                            >,
+                        >,
+                        0usize,
+                    >("get_Default")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Default", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::ArraySortHelper_2<TKey, TValue>,

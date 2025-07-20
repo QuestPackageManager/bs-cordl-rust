@@ -100,14 +100,17 @@ for crate::UnityEngine::TextCore::LowLevel::FontEngineUtilities {
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+FontEngineUtilities")]
 impl crate::UnityEngine::TextCore::LowLevel::FontEngineUtilities {
     pub fn MaxValue(a: i32, b: i32, c: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::LowLevel::FontEngineUtilities as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(i32, i32, i32), i32, 3usize>("MaxValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::TextCore::LowLevel::FontEngineUtilities as
-                    quest_hook::libil2cpp::Type > ::class(), "MaxValue", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(i32, i32, i32), i32, 3usize>("MaxValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "MaxValue", 3usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b, c))? };
         Ok(__cordl_ret.into())

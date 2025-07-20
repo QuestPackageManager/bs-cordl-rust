@@ -45,18 +45,21 @@ impl crate::GlobalNamespace::OVRTask {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::Guid),
-                crate::GlobalNamespace::OVRTask_1<TResult>,
-                1usize,
-            >("Create")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type >
-                    ::class(), "Create", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::Guid),
+                        crate::GlobalNamespace::OVRTask_1<TResult>,
+                        1usize,
+                    >("Create")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Create", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<TResult> = unsafe {
             method.invoke_unchecked((), (id))?
@@ -70,18 +73,21 @@ impl crate::GlobalNamespace::OVRTask {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::Guid),
-                crate::GlobalNamespace::OVRTask_1<TResult>,
-                1usize,
-            >("FromGuid")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type >
-                    ::class(), "FromGuid", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::Guid),
+                        crate::GlobalNamespace::OVRTask_1<TResult>,
+                        1usize,
+                    >("FromGuid")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromGuid", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<TResult> = unsafe {
             method.invoke_unchecked((), (id))?
@@ -95,18 +101,21 @@ impl crate::GlobalNamespace::OVRTask {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (u64),
-                crate::GlobalNamespace::OVRTask_1<TResult>,
-                1usize,
-            >("FromRequest")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type >
-                    ::class(), "FromRequest", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (u64),
+                        crate::GlobalNamespace::OVRTask_1<TResult>,
+                        1usize,
+                    >("FromRequest")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromRequest", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<TResult> = unsafe {
             method.invoke_unchecked((), (id))?
@@ -120,18 +129,21 @@ impl crate::GlobalNamespace::OVRTask {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (TResult),
-                crate::GlobalNamespace::OVRTask_1<TResult>,
-                1usize,
-            >("FromResult")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type >
-                    ::class(), "FromResult", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (TResult),
+                        crate::GlobalNamespace::OVRTask_1<TResult>,
+                        1usize,
+                    >("FromResult")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromResult", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<TResult> = unsafe {
             method.invoke_unchecked((), (result))?
@@ -145,18 +157,21 @@ impl crate::GlobalNamespace::OVRTask {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::Guid),
-                crate::GlobalNamespace::OVRTask_1<TResult>,
-                1usize,
-            >("Get")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type >
-                    ::class(), "Get", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::Guid),
+                        crate::GlobalNamespace::OVRTask_1<TResult>,
+                        1usize,
+                    >("Get")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Get", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<TResult> = unsafe {
             method.invoke_unchecked((), (id))?
@@ -170,18 +185,21 @@ impl crate::GlobalNamespace::OVRTask {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::Guid),
-                crate::GlobalNamespace::OVRTask_1<TResult>,
-                1usize,
-            >("GetExisting")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type >
-                    ::class(), "GetExisting", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::Guid),
+                        crate::GlobalNamespace::OVRTask_1<TResult>,
+                        1usize,
+                    >("GetExisting")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetExisting", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<TResult> = unsafe {
             method.invoke_unchecked((), (id))?
@@ -195,18 +213,21 @@ impl crate::GlobalNamespace::OVRTask {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (u64),
-                crate::GlobalNamespace::OVRTask_1<TResult>,
-                1usize,
-            >("GetExisting")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type >
-                    ::class(), "GetExisting", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (u64),
+                        crate::GlobalNamespace::OVRTask_1<TResult>,
+                        1usize,
+                    >("GetExisting")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetExisting", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<TResult> = unsafe {
             method.invoke_unchecked((), (id))?
@@ -214,14 +235,17 @@ impl crate::GlobalNamespace::OVRTask {
         Ok(__cordl_ret.into())
     }
     pub fn GetId(value: u64) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(u64), crate::System::Guid, 1usize>("GetId")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type >
-                    ::class(), "GetId", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(u64), crate::System::Guid, 1usize>("GetId")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetId", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Guid = unsafe {
             method.invoke_unchecked((), (value))?
@@ -236,18 +260,21 @@ impl crate::GlobalNamespace::OVRTask {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::Guid, TResult),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SetResult")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type >
-                    ::class(), "SetResult", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::Guid, TResult),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetResult")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetResult", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (id, result))?
@@ -262,18 +289,21 @@ impl crate::GlobalNamespace::OVRTask {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (u64, TResult),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SetResult")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRTask as quest_hook::libil2cpp::Type >
-                    ::class(), "SetResult", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (u64, TResult),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetResult")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetResult", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (id, result))?

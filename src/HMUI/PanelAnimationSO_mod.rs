@@ -56,21 +56,24 @@ impl crate::HMUI::PanelAnimationSO {
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::PanelAnimationSO as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                    quest_hook::libil2cpp::Gc<crate::System::Action>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("ExecuteAnimation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::PanelAnimationSO as quest_hook::libil2cpp::Type >
-                    ::class(), "ExecuteAnimation", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            quest_hook::libil2cpp::Gc<crate::System::Action>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("ExecuteAnimation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ExecuteAnimation", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (go, finishedCallback))?
@@ -83,22 +86,25 @@ impl crate::HMUI::PanelAnimationSO {
         parentCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::PanelAnimationSO as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
-                    quest_hook::libil2cpp::Gc<crate::System::Action>,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("ExecuteAnimation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::PanelAnimationSO as quest_hook::libil2cpp::Type >
-                    ::class(), "ExecuteAnimation", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+                            quest_hook::libil2cpp::Gc<crate::System::Action>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("ExecuteAnimation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ExecuteAnimation", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (go, parentCanvasGroup, finishedCallback))?
@@ -112,23 +118,26 @@ impl crate::HMUI::PanelAnimationSO {
         instant: bool,
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::PanelAnimationSO as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
-                    bool,
-                    quest_hook::libil2cpp::Gc<crate::System::Action>,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >("ExecuteAnimation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::PanelAnimationSO as quest_hook::libil2cpp::Type >
-                    ::class(), "ExecuteAnimation", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+                            bool,
+                            quest_hook::libil2cpp::Gc<crate::System::Action>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("ExecuteAnimation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ExecuteAnimation", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -143,18 +152,21 @@ impl crate::HMUI::PanelAnimationSO {
         &mut self,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::PanelAnimationSO as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("ExecuteAnimation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::PanelAnimationSO as quest_hook::libil2cpp::Type >
-                    ::class(), "ExecuteAnimation", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("ExecuteAnimation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ExecuteAnimation", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (go))?
@@ -171,14 +183,17 @@ impl crate::HMUI::PanelAnimationSO {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::PanelAnimationSO as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HMUI::PanelAnimationSO as quest_hook::libil2cpp::Type >
-                    ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

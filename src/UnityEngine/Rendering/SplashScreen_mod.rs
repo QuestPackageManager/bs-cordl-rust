@@ -39,14 +39,17 @@ impl std::ops::DerefMut for crate::UnityEngine::Rendering::SplashScreen {
 #[cfg(feature = "UnityEngine+Rendering+SplashScreen")]
 impl crate::UnityEngine::Rendering::SplashScreen {
     pub fn get_isFinished() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SplashScreen as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), bool, 0usize>("get_isFinished")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Rendering::SplashScreen as
-                    quest_hook::libil2cpp::Type > ::class(), "get_isFinished", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(), bool, 0usize>("get_isFinished")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_isFinished", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())

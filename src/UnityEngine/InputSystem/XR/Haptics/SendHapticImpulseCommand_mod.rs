@@ -109,19 +109,21 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i32, f32, f32),
-                crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand,
-                3usize,
-            >("Create")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand as
-                    quest_hook::libil2cpp::Type > ::class(), "Create", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32, f32, f32),
+                        crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand,
+                        3usize,
+                    >("Create")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Create", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand = unsafe {
             method.invoke_unchecked((), (motorChannel, motorAmplitude, motorDuration))?
@@ -131,19 +133,21 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand {
     pub fn get_Type() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::FourCC,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                crate::UnityEngine::InputSystem::Utilities::FourCC,
-                0usize,
-            >("get_Type")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Type", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        crate::UnityEngine::InputSystem::Utilities::FourCC,
+                        0usize,
+                    >("get_Type")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Type", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
             method.invoke_unchecked((), ())?
@@ -155,19 +159,21 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::FourCC,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::InputSystem::Utilities::FourCC,
-                0usize,
-            >("get_typeStatic")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand as
-                    quest_hook::libil2cpp::Type > ::class(), "get_typeStatic", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::InputSystem::Utilities::FourCC,
+                        0usize,
+                    >("get_typeStatic")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_typeStatic", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
             method.invoke_unchecked(self, ())?

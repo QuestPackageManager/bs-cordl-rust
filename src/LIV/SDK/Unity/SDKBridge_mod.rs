@@ -48,18 +48,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         objectsize: i32,
         tag: u64,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i32, crate::System::IntPtr, i32, u64),
-                i32,
-                4usize,
-            >("AddObjectToChannel")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "AddObjectToChannel", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32, crate::System::IntPtr, i32, u64),
+                        i32,
+                        4usize,
+                    >("AddObjectToChannel")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddObjectToChannel", 4usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (slot, obj, objectsize, tag))?
@@ -72,18 +75,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         objectsize: i32,
         tag: u64,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i32, crate::System::IntPtr, i32, u64),
-                i32,
-                4usize,
-            >("AddObjectToCompositorChannel")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "AddObjectToCompositorChannel", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32, crate::System::IntPtr, i32, u64),
+                        i32,
+                        4usize,
+                    >("AddObjectToCompositorChannel")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddObjectToCompositorChannel", 4usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (slot, obj, objectsize, tag))?
@@ -95,18 +101,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         objectsize: i32,
         tag: u64,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::IntPtr, i32, u64),
-                i32,
-                3usize,
-            >("AddObjectToFrame")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "AddObjectToFrame", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, i32, u64),
+                        i32,
+                        3usize,
+                    >("AddObjectToFrame")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddObjectToFrame", 3usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (obj, objectsize, tag))?
@@ -118,22 +127,29 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         slot: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("AddString")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "AddString", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("AddString")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddString", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (tag, value, slot))?
@@ -146,18 +162,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         length: i32,
         tag: u64,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i32, crate::System::IntPtr, i32, u64),
-                i32,
-                4usize,
-            >("AddStringToChannel")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "AddStringToChannel", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32, crate::System::IntPtr, i32, u64),
+                        i32,
+                        4usize,
+                    >("AddStringToChannel")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddStringToChannel", 4usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (slot, str, length, tag))?
@@ -172,18 +191,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::ByRefMut<T>, u64),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("AddStructToFrame")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "AddStructToFrame", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<T>, u64),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("AddStructToFrame")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddStructToFrame", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (mystruct, tag))?
@@ -199,18 +221,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::ByRefMut<T>, i32, u64),
-                i32,
-                3usize,
-            >("AddStructToGlobalChannel")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "AddStructToGlobalChannel", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<T>, i32, u64),
+                        i32,
+                        3usize,
+                    >("AddStructToGlobalChannel")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddStructToGlobalChannel", 3usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (mystruct, channel, tag))?
@@ -226,18 +251,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::ByRefMut<T>, i32, u64),
-                i32,
-                3usize,
-            >("AddStructToLocalChannel")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "AddStructToLocalChannel", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<T>, i32, u64),
+                        i32,
+                        3usize,
+                    >("AddStructToLocalChannel")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddStructToLocalChannel", 3usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (mystruct, channel, tag))?
@@ -247,18 +275,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
     pub fn AddTexture_SDKTexture1(
         texture: crate::LIV::SDK::Unity::SDKTexture,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::LIV::SDK::Unity::SDKTexture),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("AddTexture")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "AddTexture", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::LIV::SDK::Unity::SDKTexture),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("AddTexture")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddTexture", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (texture))?
@@ -269,18 +300,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         texture: crate::LIV::SDK::Unity::SDKTexture,
         tag: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::LIV::SDK::Unity::SDKTexture, u64),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("AddTexture")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "AddTexture", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::LIV::SDK::Unity::SDKTexture, u64),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("AddTexture")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddTexture", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (texture, tag))?
@@ -290,18 +324,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
     pub fn CreateFrame(
         frame: crate::LIV::SDK::Unity::SDKOutputFrame,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::LIV::SDK::Unity::SDKOutputFrame),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("CreateFrame")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "CreateFrame", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::LIV::SDK::Unity::SDKOutputFrame),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("CreateFrame")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateFrame", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (frame))?
@@ -313,18 +350,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         tag: u64,
         timestamp: u64,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i32, u64, u64),
-                crate::System::IntPtr,
-                3usize,
-            >("GetChannelObject")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "GetChannelObject", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32, u64, u64),
+                        crate::System::IntPtr,
+                        3usize,
+                    >("GetChannelObject")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetChannelObject", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
             method.invoke_unchecked((), (slot, tag, timestamp))?
@@ -336,18 +376,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         tag: u64,
         timestamp: u64,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i32, u64, u64),
-                crate::System::IntPtr,
-                3usize,
-            >("GetCompositorChannelObject")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "GetCompositorChannelObject", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32, u64, u64),
+                        crate::System::IntPtr,
+                        3usize,
+                    >("GetCompositorChannelObject")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetCompositorChannelObject", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
             method.invoke_unchecked((), (slot, tag, timestamp))?
@@ -355,40 +398,49 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentTime() -> quest_hook::libil2cpp::Result<u64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), u64, 0usize>("GetCurrentTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "GetCurrentTime", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(), u64, 0usize>("GetCurrentTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetCurrentTime", 0usize
+                        )
+                    })
             });
         let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentTimeTicks() -> quest_hook::libil2cpp::Result<u64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), u64, 0usize>("GetCurrentTimeTicks")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "GetCurrentTimeTicks", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(), u64, 0usize>("GetCurrentTimeTicks")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetCurrentTimeTicks", 0usize
+                        )
+                    })
             });
         let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetIsCaptureActive() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), bool, 0usize>("GetIsCaptureActive")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "GetIsCaptureActive", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(), bool, 0usize>("GetIsCaptureActive")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetIsCaptureActive", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -396,14 +448,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
     pub fn GetObjectTime(
         objectptr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(crate::System::IntPtr), u64, 1usize>("GetObjectTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "GetObjectTime", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        u64,
+                        1usize,
+                    >("GetObjectTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetObjectTime", 1usize
+                        )
+                    })
             });
         let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (objectptr))? };
         Ok(__cordl_ret.into())
@@ -411,35 +470,41 @@ impl crate::LIV::SDK::Unity::SDKBridge {
     pub fn GetObjectTimeStamp(
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::IntPtr),
-                u64,
-                1usize,
-            >("GetObjectTimeStamp")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "GetObjectTimeStamp", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        u64,
+                        1usize,
+                    >("GetObjectTimeStamp")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetObjectTimeStamp", 1usize
+                        )
+                    })
             });
         let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRenderEventFunc() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                crate::System::IntPtr,
-                0usize,
-            >("GetRenderEventFunc")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "GetRenderEventFunc", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        crate::System::IntPtr,
+                        0usize,
+                    >("GetRenderEventFunc")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetRenderEventFunc", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
             method.invoke_unchecked((), ())?
@@ -451,18 +516,23 @@ impl crate::LIV::SDK::Unity::SDKBridge {
             crate::LIV::SDK::Unity::SDKResolution,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::ByRefMut<crate::LIV::SDK::Unity::SDKResolution>),
-                bool,
-                1usize,
-            >("GetResolution")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "GetResolution", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::LIV::SDK::Unity::SDKResolution,
+                        >),
+                        bool,
+                        1usize,
+                    >("GetResolution")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetResolution", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (sdkResolution))? };
         Ok(__cordl_ret.into())
@@ -476,18 +546,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::ByRefMut<T>, i32, u64),
-                bool,
-                3usize,
-            >("GetStructFromGlobalChannel")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "GetStructFromGlobalChannel", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<T>, i32, u64),
+                        bool,
+                        3usize,
+                    >("GetStructFromGlobalChannel")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetStructFromGlobalChannel", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (mystruct, channel, tag))?
@@ -503,18 +576,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::ByRefMut<T>, i32, u64),
-                bool,
-                3usize,
-            >("GetStructFromLocalChannel")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "GetStructFromLocalChannel", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<T>, i32, u64),
+                        bool,
+                        3usize,
+                    >("GetStructFromLocalChannel")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetStructFromLocalChannel", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (mystruct, channel, tag))?
@@ -524,18 +600,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
     pub fn GetViewfinderTexture() -> quest_hook::libil2cpp::Result<
         crate::LIV::SDK::Unity::SDKTexture,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                crate::LIV::SDK::Unity::SDKTexture,
-                0usize,
-            >("GetViewfinderTexture")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "GetViewfinderTexture", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        crate::LIV::SDK::Unity::SDKTexture,
+                        0usize,
+                    >("GetViewfinderTexture")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetViewfinderTexture", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKTexture = unsafe {
             method.invoke_unchecked((), ())?
@@ -543,18 +622,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         Ok(__cordl_ret.into())
     }
     pub fn GetViewportTexture() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                crate::System::IntPtr,
-                0usize,
-            >("GetViewportTexture")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "GetViewportTexture", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        crate::System::IntPtr,
+                        0usize,
+                    >("GetViewportTexture")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetViewportTexture", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
             method.invoke_unchecked((), ())?
@@ -564,18 +646,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
     pub fn IssuePluginEvent() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("IssuePluginEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "IssuePluginEvent", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("IssuePluginEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IssuePluginEvent", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), ())?
@@ -585,18 +670,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
     pub fn SetGroundPlane(
         groundPlane: crate::LIV::SDK::Unity::SDKPlane,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::LIV::SDK::Unity::SDKPlane),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("SetGroundPlane")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "SetGroundPlane", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::LIV::SDK::Unity::SDKPlane),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetGroundPlane")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetGroundPlane", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (groundPlane))?
@@ -606,18 +694,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
     pub fn SubmitApplicationOutput(
         applicationOutput: crate::LIV::SDK::Unity::SDKApplicationOutput,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::LIV::SDK::Unity::SDKApplicationOutput),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("SubmitApplicationOutput")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "SubmitApplicationOutput", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::LIV::SDK::Unity::SDKApplicationOutput),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SubmitApplicationOutput")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SubmitApplicationOutput", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (applicationOutput))?
@@ -627,18 +718,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
     pub fn Tag(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                u64,
-                1usize,
-            >("Tag")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "Tag", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        u64,
+                        1usize,
+                    >("Tag")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Tag", 1usize
+                        )
+                    })
             });
         let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (str))? };
         Ok(__cordl_ret.into())
@@ -646,18 +740,23 @@ impl crate::LIV::SDK::Unity::SDKBridge {
     pub fn UpdateInputFrame(
         setframe: quest_hook::libil2cpp::ByRefMut<crate::LIV::SDK::Unity::SDKInputFrame>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::ByRefMut<crate::LIV::SDK::Unity::SDKInputFrame>),
-                bool,
-                1usize,
-            >("UpdateInputFrame")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "UpdateInputFrame", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::LIV::SDK::Unity::SDKInputFrame,
+                        >),
+                        bool,
+                        1usize,
+                    >("UpdateInputFrame")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UpdateInputFrame", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (setframe))? };
         Ok(__cordl_ret.into())
@@ -666,18 +765,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         sourcetexture: crate::System::IntPtr,
         tag: u64,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::IntPtr, u64),
-                i32,
-                2usize,
-            >("addtexture")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "addtexture", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, u64),
+                        i32,
+                        2usize,
+                    >("addtexture")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "addtexture", 2usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (sourcetexture, tag))?
@@ -685,14 +787,17 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsActive() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), bool, 0usize>("get_IsActive")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "get_IsActive", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(), bool, 0usize>("get_IsActive")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_IsActive", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -700,18 +805,21 @@ impl crate::LIV::SDK::Unity::SDKBridge {
     pub fn updatinputframe(
         InputFrame: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::IntPtr),
-                crate::System::IntPtr,
-                1usize,
-            >("updatinputframe")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKBridge as quest_hook::libil2cpp::Type >
-                    ::class(), "updatinputframe", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("updatinputframe")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "updatinputframe", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
             method.invoke_unchecked((), (InputFrame))?

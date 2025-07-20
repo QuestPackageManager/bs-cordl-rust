@@ -42,19 +42,21 @@ impl crate::UnityEngine::Rendering::GraphicsSettings {
     pub fn get_INTERNAL_currentRenderPipeline() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::GraphicsSettings as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
-                0usize,
-            >("get_INTERNAL_currentRenderPipeline")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Rendering::GraphicsSettings as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_INTERNAL_currentRenderPipeline", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+                        0usize,
+                    >("get_INTERNAL_currentRenderPipeline")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_INTERNAL_currentRenderPipeline", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ScriptableObject,
@@ -64,19 +66,21 @@ impl crate::UnityEngine::Rendering::GraphicsSettings {
     pub fn get_INTERNAL_defaultRenderPipeline() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::GraphicsSettings as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
-                0usize,
-            >("get_INTERNAL_defaultRenderPipeline")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Rendering::GraphicsSettings as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_INTERNAL_defaultRenderPipeline", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+                        0usize,
+                    >("get_INTERNAL_defaultRenderPipeline")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_INTERNAL_defaultRenderPipeline", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ScriptableObject,
@@ -86,21 +90,23 @@ impl crate::UnityEngine::Rendering::GraphicsSettings {
     pub fn get_currentRenderPipeline() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RenderPipelineAsset>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::GraphicsSettings as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::Rendering::RenderPipelineAsset,
-                >,
-                0usize,
-            >("get_currentRenderPipeline")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Rendering::GraphicsSettings as
-                    quest_hook::libil2cpp::Type > ::class(), "get_currentRenderPipeline",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::RenderPipelineAsset,
+                        >,
+                        0usize,
+                    >("get_currentRenderPipeline")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_currentRenderPipeline", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Rendering::RenderPipelineAsset,
@@ -110,21 +116,23 @@ impl crate::UnityEngine::Rendering::GraphicsSettings {
     pub fn get_defaultRenderPipeline() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RenderPipelineAsset>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::GraphicsSettings as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::Rendering::RenderPipelineAsset,
-                >,
-                0usize,
-            >("get_defaultRenderPipeline")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Rendering::GraphicsSettings as
-                    quest_hook::libil2cpp::Type > ::class(), "get_defaultRenderPipeline",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::RenderPipelineAsset,
+                        >,
+                        0usize,
+                    >("get_defaultRenderPipeline")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_defaultRenderPipeline", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Rendering::RenderPipelineAsset,
@@ -132,15 +140,21 @@ impl crate::UnityEngine::Rendering::GraphicsSettings {
         Ok(__cordl_ret.into())
     }
     pub fn get_lightsUseLinearIntensity() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::GraphicsSettings as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), bool, 0usize>("get_lightsUseLinearIntensity")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Rendering::GraphicsSettings as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_lightsUseLinearIntensity", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("get_lightsUseLinearIntensity")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_lightsUseLinearIntensity", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -148,21 +162,23 @@ impl crate::UnityEngine::Rendering::GraphicsSettings {
     pub fn get_renderPipelineAsset() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RenderPipelineAsset>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::GraphicsSettings as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::Rendering::RenderPipelineAsset,
-                >,
-                0usize,
-            >("get_renderPipelineAsset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Rendering::GraphicsSettings as
-                    quest_hook::libil2cpp::Type > ::class(), "get_renderPipelineAsset",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::RenderPipelineAsset,
+                        >,
+                        0usize,
+                    >("get_renderPipelineAsset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_renderPipelineAsset", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Rendering::RenderPipelineAsset,
@@ -172,19 +188,23 @@ impl crate::UnityEngine::Rendering::GraphicsSettings {
     pub fn set_INTERNAL_defaultRenderPipeline(
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::GraphicsSettings as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_INTERNAL_defaultRenderPipeline")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Rendering::GraphicsSettings as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "set_INTERNAL_defaultRenderPipeline", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ScriptableObject,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_INTERNAL_defaultRenderPipeline")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_INTERNAL_defaultRenderPipeline", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (value))?
@@ -196,21 +216,23 @@ impl crate::UnityEngine::Rendering::GraphicsSettings {
             crate::UnityEngine::Rendering::RenderPipelineAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::GraphicsSettings as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::Rendering::RenderPipelineAsset,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_defaultRenderPipeline")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Rendering::GraphicsSettings as
-                    quest_hook::libil2cpp::Type > ::class(), "set_defaultRenderPipeline",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::RenderPipelineAsset,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_defaultRenderPipeline")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_defaultRenderPipeline", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (value))?
@@ -222,21 +244,23 @@ impl crate::UnityEngine::Rendering::GraphicsSettings {
             crate::UnityEngine::Rendering::RenderPipelineAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::GraphicsSettings as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::Rendering::RenderPipelineAsset,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_renderPipelineAsset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Rendering::GraphicsSettings as
-                    quest_hook::libil2cpp::Type > ::class(), "set_renderPipelineAsset",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::RenderPipelineAsset,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_renderPipelineAsset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_renderPipelineAsset", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (value))?

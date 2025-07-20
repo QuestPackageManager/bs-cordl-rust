@@ -79,27 +79,29 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
             crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParameters as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    bool,
-                    quest_hook::libil2cpp::Gc<
-                        crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParameters
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -117,22 +119,23 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
             crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParameters as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
-                >,
-                0usize,
-            >("get_EphemeralPrivateKey")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParameters
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "get_EphemeralPrivateKey", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
+                        >,
+                        0usize,
+                    >("get_EphemeralPrivateKey")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_EphemeralPrivateKey", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
@@ -144,20 +147,23 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParameters as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
-                0usize,
-            >("get_EphemeralPublicPoint")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParameters
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "get_EphemeralPublicPoint", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Math::EC::ECPoint,
+                        >,
+                        0usize,
+                    >("get_EphemeralPublicPoint")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_EphemeralPublicPoint", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::ECPoint,
@@ -165,15 +171,17 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
         Ok(__cordl_ret.into())
     }
     pub fn get_IsInitiator(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParameters as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_IsInitiator")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParameters
-                    as quest_hook::libil2cpp::Type > ::class(), "get_IsInitiator", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_IsInitiator")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_IsInitiator", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -185,22 +193,23 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
             crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParameters as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
-                >,
-                0usize,
-            >("get_StaticPrivateKey")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParameters
-                    as quest_hook::libil2cpp::Type > ::class(), "get_StaticPrivateKey",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
+                        >,
+                        0usize,
+                    >("get_StaticPrivateKey")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_StaticPrivateKey", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
@@ -212,20 +221,23 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParameters as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
-                0usize,
-            >("get_StaticPublicPoint")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParameters
-                    as quest_hook::libil2cpp::Type > ::class(), "get_StaticPublicPoint",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Math::EC::ECPoint,
+                        >,
+                        0usize,
+                    >("get_StaticPublicPoint")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_StaticPublicPoint", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::ECPoint,

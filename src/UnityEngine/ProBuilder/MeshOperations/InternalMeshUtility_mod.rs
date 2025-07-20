@@ -48,29 +48,33 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
             crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::SharedVertex,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IList_1<
-                            crate::UnityEngine::Vector3,
-                        >,
-                    >,
-                ),
-                crate::UnityEngine::Vector3,
-                3usize,
-            >("AverageNormalWithIndexes")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "AverageNormalWithIndexes", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::SharedVertex,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<i32>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<
+                                    crate::UnityEngine::Vector3,
+                                >,
+                            >,
+                        ),
+                        crate::UnityEngine::Vector3,
+                        3usize,
+                    >("AverageNormalWithIndexes")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AverageNormalWithIndexes", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
             method.invoke_unchecked((), (shared, all, norm))?
@@ -83,21 +87,23 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>, bool),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                >,
-                2usize,
-            >("CreateMeshWithTransform")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "CreateMeshWithTransform", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>, bool),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        2usize,
+                    >("CreateMeshWithTransform")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateMeshWithTransform", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -107,21 +113,23 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
     pub fn FilterUnusedSubmeshIndexes(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("FilterUnusedSubmeshIndexes")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "FilterUnusedSubmeshIndexes", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("FilterUnusedSubmeshIndexes")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FilterUnusedSubmeshIndexes", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (mesh))?
@@ -132,24 +140,26 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
         pb: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         preserveFaces: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                    >,
-                    bool,
-                ),
-                bool,
-                2usize,
-            >("ResetPbObjectWithMeshFilter")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "ResetPbObjectWithMeshFilter", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                            bool,
+                        ),
+                        bool,
+                        2usize,
+                    >("ResetPbObjectWithMeshFilter")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ResetPbObjectWithMeshFilter", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (pb, preserveFaces))?

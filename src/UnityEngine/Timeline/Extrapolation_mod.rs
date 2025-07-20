@@ -41,19 +41,23 @@ impl crate::UnityEngine::Timeline::Extrapolation {
     pub fn CalculateExtrapolationTimes(
         asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::Extrapolation as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("CalculateExtrapolationTimes")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::Extrapolation as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "CalculateExtrapolationTimes", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Timeline::TrackAsset,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("CalculateExtrapolationTimes")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CalculateExtrapolationTimes", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (asset))?
@@ -73,31 +77,33 @@ impl crate::UnityEngine::Timeline::Extrapolation {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::Extrapolation as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Timeline::TimelineClip,
+                                >,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Timeline::TimelineClip,
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Timeline::TimelineClip,
+                                >,
+                            >,
                         >,
-                    >,
-                >),
-                quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Timeline::TimelineClip,
-                        >,
-                    >,
-                >,
-                1usize,
-            >("SortClipsByStartTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::Extrapolation as
-                    quest_hook::libil2cpp::Type > ::class(), "SortClipsByStartTime",
-                    1usize
-                )
+                        1usize,
+                    >("SortClipsByStartTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SortClipsByStartTime", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<

@@ -49,26 +49,29 @@ impl crate::Oculus::Platform::Avatar {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Avatar as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::AvatarEditorOptions,
-                >),
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Request_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::AvatarEditorOptions,
+                        >),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Models::AvatarEditorResult,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::AvatarEditorResult,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                1usize,
-            >("LaunchAvatarEditor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Oculus::Platform::Avatar as quest_hook::libil2cpp::Type >
-                    ::class(), "LaunchAvatarEditor", 1usize
-                )
+                        1usize,
+                    >("LaunchAvatarEditor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "LaunchAvatarEditor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<

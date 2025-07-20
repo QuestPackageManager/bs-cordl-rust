@@ -39,14 +39,17 @@ impl std::ops::DerefMut for crate::System::EnvironmentHelpers {
 #[cfg(feature = "System+EnvironmentHelpers")]
 impl crate::System::EnvironmentHelpers {
     pub fn IsWindowsVistaOrAbove() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::EnvironmentHelpers as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), bool, 0usize>("IsWindowsVistaOrAbove")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::EnvironmentHelpers as quest_hook::libil2cpp::Type >
-                    ::class(), "IsWindowsVistaOrAbove", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(), bool, 0usize>("IsWindowsVistaOrAbove")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsWindowsVistaOrAbove", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())

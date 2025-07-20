@@ -59,38 +59,41 @@ impl crate::GlobalNamespace::AutoRecord {
             quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::NoteCutDirection>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AutoRecord as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-                    i32,
-                    f32,
-                    f32,
-                    crate::UnityEngine::Quaternion,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+                            i32,
+                            f32,
+                            f32,
+                            crate::UnityEngine::Quaternion,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::BeatSaber::RecPlay::PoseFrame,
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Collections::Generic::List_1<
+                                            crate::BeatSaber::RecPlay::PoseFrame,
+                                        >,
+                                    >,
                                 >,
                             >,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
-                            crate::GlobalNamespace::NoteCutDirection,
-                        >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                7usize,
-            >("AddNoteHandFrames")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::AutoRecord as quest_hook::libil2cpp::Type >
-                    ::class(), "AddNoteHandFrames", 7usize
-                )
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    crate::GlobalNamespace::NoteCutDirection,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        7usize,
+                    >("AddNoteHandFrames")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddNoteHandFrames", 7usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -125,33 +128,38 @@ impl crate::GlobalNamespace::AutoRecord {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AutoRecord as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
-                    i32,
-                    f32,
-                    f32,
-                    crate::UnityEngine::Quaternion,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::BeatSaber::RecPlay::PoseFrame,
+                                crate::GlobalNamespace::SliderData,
+                            >,
+                            i32,
+                            f32,
+                            f32,
+                            crate::UnityEngine::Quaternion,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Collections::Generic::List_1<
+                                            crate::BeatSaber::RecPlay::PoseFrame,
+                                        >,
+                                    >,
                                 >,
                             >,
-                        >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                6usize,
-            >("AddSliderHandFrames")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::AutoRecord as quest_hook::libil2cpp::Type >
-                    ::class(), "AddSliderHandFrames", 6usize
-                )
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >("AddSliderHandFrames")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddSliderHandFrames", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -174,20 +182,23 @@ impl crate::GlobalNamespace::AutoRecord {
             crate::GlobalNamespace::AutoRecord_Beatmap,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::RecPlay::PlayerPoseFrames> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AutoRecord as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::ByRefMut<
-                    crate::GlobalNamespace::AutoRecord_Beatmap,
-                >),
-                crate::BeatSaber::RecPlay::PlayerPoseFrames,
-                1usize,
-            >("CreatePlayerPoseFrames")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::AutoRecord as quest_hook::libil2cpp::Type >
-                    ::class(), "CreatePlayerPoseFrames", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::AutoRecord_Beatmap,
+                        >),
+                        crate::BeatSaber::RecPlay::PlayerPoseFrames,
+                        1usize,
+                    >("CreatePlayerPoseFrames")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreatePlayerPoseFrames", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::BeatSaber::RecPlay::PlayerPoseFrames = unsafe {
             method.invoke_unchecked((), (beatmap))?
@@ -199,18 +210,21 @@ impl crate::GlobalNamespace::AutoRecord {
         line: i32,
         layer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AutoRecord as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i32, i32, crate::GlobalNamespace::NoteLineLayer),
-                crate::UnityEngine::Vector3,
-                3usize,
-            >("LocateCutPosition")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::AutoRecord as quest_hook::libil2cpp::Type >
-                    ::class(), "LocateCutPosition", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32, i32, crate::GlobalNamespace::NoteLineLayer),
+                        crate::UnityEngine::Vector3,
+                        3usize,
+                    >("LocateCutPosition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "LocateCutPosition", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
             method.invoke_unchecked((), (lineCount, line, layer))?
@@ -222,22 +236,26 @@ impl crate::GlobalNamespace::AutoRecord {
             quest_hook::libil2cpp::Il2CppArray<crate::BeatSaber::RecPlay::PoseFrame>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AutoRecord as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<
-                        crate::BeatSaber::RecPlay::PoseFrame,
-                    >,
-                >),
-                i32,
-                1usize,
-            >("<CreatePlayerPoseFrames>g__FixFrames|1_0")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::AutoRecord as quest_hook::libil2cpp::Type >
-                    ::class(), "<CreatePlayerPoseFrames>g__FixFrames|1_0", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::BeatSaber::RecPlay::PoseFrame,
+                            >,
+                        >),
+                        i32,
+                        1usize,
+                    >("<CreatePlayerPoseFrames>g__FixFrames|1_0")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "<CreatePlayerPoseFrames>g__FixFrames|1_0",
+                            1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (frames))? };
         Ok(__cordl_ret.into())

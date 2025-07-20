@@ -81,15 +81,17 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton
-                    as quest_hook::libil2cpp::Type > ::class(), "Awake", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Awake", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -101,20 +103,21 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("GetGameObjectName")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton
-                    as quest_hook::libil2cpp::Type > ::class(), "GetGameObjectName",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("GetGameObjectName")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetGameObjectName", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -132,19 +135,21 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
         &mut self,
         diagnosticEvent: crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("PostEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton
-                    as quest_hook::libil2cpp::Type > ::class(), "PostEvent", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("PostEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PostEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (diagnosticEvent))?
@@ -159,24 +164,25 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_1<
-                        crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
-                    >,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("RegisterEventHandler")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton
-                    as quest_hook::libil2cpp::Type > ::class(), "RegisterEventHandler",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<
+                                crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("RegisterEventHandler")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "RegisterEventHandler", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (handler))?
@@ -192,28 +198,29 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
         _cordl_register: bool,
         create: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Action_1<
-                            crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
-                        >,
-                    >,
-                    bool,
-                    bool,
-                ),
-                bool,
-                3usize,
-            >("RegisterEventHandler")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton
-                    as quest_hook::libil2cpp::Type > ::class(), "RegisterEventHandler",
-                    3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Action_1<
+                                    crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+                                >,
+                            >,
+                            bool,
+                            bool,
+                        ),
+                        bool,
+                        3usize,
+                    >("RegisterEventHandler")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "RegisterEventHandler", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (handler, _cordl_register, create))?
@@ -228,24 +235,25 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_1<
-                        crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
-                    >,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("UnregisterEventHandler")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton
-                    as quest_hook::libil2cpp::Type > ::class(), "UnregisterEventHandler",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<
+                                crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("UnregisterEventHandler")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UnregisterEventHandler", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (handler))?
@@ -255,15 +263,17 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
     pub fn Update(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton
-                    as quest_hook::libil2cpp::Type > ::class(), "Update", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Update", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -273,15 +283,17 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -291,20 +303,21 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
     pub fn get_PlayerConnectionGuid() -> quest_hook::libil2cpp::Result<
         crate::System::Guid,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                crate::System::Guid,
-                0usize,
-            >("get_PlayerConnectionGuid")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "get_PlayerConnectionGuid", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        crate::System::Guid,
+                        0usize,
+                    >("get_PlayerConnectionGuid")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_PlayerConnectionGuid", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Guid = unsafe {
             method.invoke_unchecked((), ())?

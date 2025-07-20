@@ -39,14 +39,17 @@ impl std::ops::DerefMut for crate::TMPro::ITextElement {
 #[cfg(feature = "TMPro+ITextElement")]
 impl crate::TMPro::ITextElement {
     pub fn GetInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::ITextElement as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("GetInstanceID")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::ITextElement as quest_hook::libil2cpp::Type >
-                    ::class(), "GetInstanceID", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("GetInstanceID")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetInstanceID", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -55,18 +58,21 @@ impl crate::TMPro::ITextElement {
         &mut self,
         update: crate::UnityEngine::UI::CanvasUpdate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::ITextElement as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::UI::CanvasUpdate),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("Rebuild")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::ITextElement as quest_hook::libil2cpp::Type >
-                    ::class(), "Rebuild", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::UI::CanvasUpdate),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Rebuild")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Rebuild", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (update))?
@@ -83,18 +89,21 @@ impl crate::TMPro::ITextElement {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::ITextElement as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                0usize,
-            >("get_sharedMaterial")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::ITextElement as quest_hook::libil2cpp::Type >
-                    ::class(), "get_sharedMaterial", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        0usize,
+                    >("get_sharedMaterial")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_sharedMaterial", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
             method.invoke_unchecked(self, ())?

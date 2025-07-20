@@ -54,18 +54,21 @@ impl crate::Mono::Security::Interface::Alert {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::Alert as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("ToString")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Security::Interface::Alert as
-                    quest_hook::libil2cpp::Type > ::class(), "ToString", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("ToString")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToString", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -76,18 +79,21 @@ impl crate::Mono::Security::Interface::Alert {
         &mut self,
         description: crate::Mono::Security::Interface::AlertDescription,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::Alert as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::Mono::Security::Interface::AlertDescription),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Security::Interface::Alert as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::Mono::Security::Interface::AlertDescription),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (description))?
@@ -99,18 +105,21 @@ impl crate::Mono::Security::Interface::Alert {
     ) -> quest_hook::libil2cpp::Result<
         crate::Mono::Security::Interface::AlertDescription,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::Alert as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::Mono::Security::Interface::AlertDescription,
-                0usize,
-            >("get_Description")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Security::Interface::Alert as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Description", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::Mono::Security::Interface::AlertDescription,
+                        0usize,
+                    >("get_Description")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Description", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::Mono::Security::Interface::AlertDescription = unsafe {
             method.invoke_unchecked(self, ())?
@@ -120,18 +129,21 @@ impl crate::Mono::Security::Interface::Alert {
     pub fn get_Level(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Mono::Security::Interface::AlertLevel> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::Alert as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::Mono::Security::Interface::AlertLevel,
-                0usize,
-            >("get_Level")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Security::Interface::Alert as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Level", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::Mono::Security::Interface::AlertLevel,
+                        0usize,
+                    >("get_Level")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Level", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::Mono::Security::Interface::AlertLevel = unsafe {
             method.invoke_unchecked(self, ())?
@@ -141,14 +153,21 @@ impl crate::Mono::Security::Interface::Alert {
     pub fn inferAlertLevel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::Alert as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("inferAlertLevel")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Security::Interface::Alert as
-                    quest_hook::libil2cpp::Type > ::class(), "inferAlertLevel", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("inferAlertLevel")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "inferAlertLevel", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

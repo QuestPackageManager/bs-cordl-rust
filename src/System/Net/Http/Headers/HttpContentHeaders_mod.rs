@@ -53,18 +53,23 @@ impl crate::System::Net::Http::Headers::HttpContentHeaders {
         &mut self,
         content: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpContent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::HttpContentHeaders as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpContent>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::Http::Headers::HttpContentHeaders as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Http::HttpContent,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (content))?
@@ -74,18 +79,21 @@ impl crate::System::Net::Http::Headers::HttpContentHeaders {
     pub fn get_ContentLength(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i64>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::HttpContentHeaders as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Nullable_1<i64>,
-                0usize,
-            >("get_ContentLength")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::Http::Headers::HttpContentHeaders as
-                    quest_hook::libil2cpp::Type > ::class(), "get_ContentLength", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Nullable_1<i64>,
+                        0usize,
+                    >("get_ContentLength")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_ContentLength", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Nullable_1<i64> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -99,20 +107,23 @@ impl crate::System::Net::Http::Headers::HttpContentHeaders {
             crate::System::Net::Http::Headers::MediaTypeHeaderValue,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::HttpContentHeaders as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Net::Http::Headers::MediaTypeHeaderValue,
-                >,
-                0usize,
-            >("get_ContentType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::Http::Headers::HttpContentHeaders as
-                    quest_hook::libil2cpp::Type > ::class(), "get_ContentType", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Http::Headers::MediaTypeHeaderValue,
+                        >,
+                        0usize,
+                    >("get_ContentType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_ContentType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Http::Headers::MediaTypeHeaderValue,
@@ -125,20 +136,23 @@ impl crate::System::Net::Http::Headers::HttpContentHeaders {
             crate::System::Net::Http::Headers::MediaTypeHeaderValue,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::HttpContentHeaders as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Net::Http::Headers::MediaTypeHeaderValue,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_ContentType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::Http::Headers::HttpContentHeaders as
-                    quest_hook::libil2cpp::Type > ::class(), "set_ContentType", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Http::Headers::MediaTypeHeaderValue,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_ContentType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_ContentType", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

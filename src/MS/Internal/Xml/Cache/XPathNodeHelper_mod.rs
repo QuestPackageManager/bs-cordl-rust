@@ -54,33 +54,35 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::Cache::XPathNodeHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
-                            crate::MS::Internal::Xml::Cache::XPathNode,
-                        >,
-                    >,
-                    i32,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::MS::Internal::Xml::Cache::XPathNode,
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    crate::MS::Internal::Xml::Cache::XPathNode,
+                                >,
                             >,
-                        >,
-                    >,
-                ),
-                i32,
-                3usize,
-            >("GetInScopeNamespaces")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::Cache::XPathNodeHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "GetInScopeNamespaces",
-                    3usize
-                )
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<
+                                        crate::MS::Internal::Xml::Cache::XPathNode,
+                                    >,
+                                >,
+                            >,
+                        ),
+                        i32,
+                        3usize,
+                    >("GetInScopeNamespaces")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetInScopeNamespaces", 3usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (pageElem, idxElem, pageNmsp))?
@@ -102,32 +104,35 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::Cache::XPathNodeHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
-                            crate::MS::Internal::Xml::Cache::XPathNode,
-                        >,
-                    >,
-                    i32,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::MS::Internal::Xml::Cache::XPathNode,
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    crate::MS::Internal::Xml::Cache::XPathNode,
+                                >,
                             >,
-                        >,
-                    >,
-                ),
-                i32,
-                3usize,
-            >("GetLocalNamespaces")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::Cache::XPathNodeHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "GetLocalNamespaces", 3usize
-                )
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<
+                                        crate::MS::Internal::Xml::Cache::XPathNode,
+                                    >,
+                                >,
+                            >,
+                        ),
+                        i32,
+                        3usize,
+                    >("GetLocalNamespaces")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetLocalNamespaces", 3usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (pageElem, idxElem, pageNmsp))?
@@ -142,25 +147,28 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
         >,
         idxNode: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::Cache::XPathNodeHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
-                            crate::MS::Internal::Xml::Cache::XPathNode,
-                        >,
-                    >,
-                    i32,
-                ),
-                i32,
-                2usize,
-            >("GetLocation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::Cache::XPathNodeHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "GetLocation", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    crate::MS::Internal::Xml::Cache::XPathNode,
+                                >,
+                            >,
+                            i32,
+                        ),
+                        i32,
+                        2usize,
+                    >("GetLocation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetLocation", 2usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (pageNode, idxNode))?
@@ -177,27 +185,30 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
         >,
         idxNode: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::Cache::XPathNodeHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::MS::Internal::Xml::Cache::XPathNode,
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<
+                                        crate::MS::Internal::Xml::Cache::XPathNode,
+                                    >,
+                                >,
                             >,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                2usize,
-            >("GetNonDescendant")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::Cache::XPathNodeHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "GetNonDescendant", 2usize
-                )
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        2usize,
+                    >("GetNonDescendant")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetNonDescendant", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (pageNode, idxNode))?
@@ -214,27 +225,30 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
         >,
         idxNode: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::Cache::XPathNodeHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::MS::Internal::Xml::Cache::XPathNode,
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<
+                                        crate::MS::Internal::Xml::Cache::XPathNode,
+                                    >,
+                                >,
                             >,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                2usize,
-            >("GetParent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::Cache::XPathNodeHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "GetParent", 2usize
-                )
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        2usize,
+                    >("GetParent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetParent", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (pageNode, idxNode))?
@@ -257,33 +271,36 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
         >,
         idxEnd: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::MS::Internal::Xml::Cache::XPathNodeHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::MS::Internal::Xml::Cache::XPathNode,
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<
+                                        crate::MS::Internal::Xml::Cache::XPathNode,
+                                    >,
+                                >,
                             >,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
-                            crate::MS::Internal::Xml::Cache::XPathNode,
-                        >,
-                    >,
-                    i32,
-                ),
-                bool,
-                4usize,
-            >("GetTextFollowing")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::MS::Internal::Xml::Cache::XPathNodeHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "GetTextFollowing", 4usize
-                )
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    crate::MS::Internal::Xml::Cache::XPathNode,
+                                >,
+                            >,
+                            i32,
+                        ),
+                        bool,
+                        4usize,
+                    >("GetTextFollowing")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetTextFollowing", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (pageCurrent, idxCurrent, pageEnd, idxEnd))?

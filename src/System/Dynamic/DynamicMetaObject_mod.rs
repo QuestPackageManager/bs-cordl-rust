@@ -52,24 +52,30 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Dynamic::BinaryOperationBinder,
-                    >,
-                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-                2usize,
-            >("BindBinaryOperation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "BindBinaryOperation",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Dynamic::BinaryOperationBinder,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Dynamic::DynamicMetaObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Dynamic::DynamicMetaObject,
+                        >,
+                        2usize,
+                    >("BindBinaryOperation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BindBinaryOperation", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
@@ -82,18 +88,25 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Dynamic::ConvertBinder>),
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-                1usize,
-            >("BindConvert")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "BindConvert", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Dynamic::ConvertBinder,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Dynamic::DynamicMetaObject,
+                        >,
+                        1usize,
+                    >("BindConvert")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BindConvert", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
@@ -111,29 +124,34 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Dynamic::CreateInstanceBinder,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Dynamic::DynamicMetaObject,
+                                crate::System::Dynamic::CreateInstanceBinder,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Dynamic::DynamicMetaObject,
+                                    >,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Dynamic::DynamicMetaObject,
                         >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-                2usize,
-            >("BindCreateInstance")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "BindCreateInstance", 2usize
-                )
+                        2usize,
+                    >("BindCreateInstance")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BindCreateInstance", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
@@ -151,27 +169,34 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::DeleteIndexBinder>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Dynamic::DynamicMetaObject,
+                                crate::System::Dynamic::DeleteIndexBinder,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Dynamic::DynamicMetaObject,
+                                    >,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Dynamic::DynamicMetaObject,
                         >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-                2usize,
-            >("BindDeleteIndex")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "BindDeleteIndex", 2usize
-                )
+                        2usize,
+                    >("BindDeleteIndex")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BindDeleteIndex", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
@@ -184,18 +209,25 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Dynamic::DeleteMemberBinder>),
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-                1usize,
-            >("BindDeleteMember")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "BindDeleteMember", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Dynamic::DeleteMemberBinder,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Dynamic::DynamicMetaObject,
+                        >,
+                        1usize,
+                    >("BindDeleteMember")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BindDeleteMember", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
@@ -213,27 +245,34 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::GetIndexBinder>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Dynamic::DynamicMetaObject,
+                                crate::System::Dynamic::GetIndexBinder,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Dynamic::DynamicMetaObject,
+                                    >,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Dynamic::DynamicMetaObject,
                         >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-                2usize,
-            >("BindGetIndex")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "BindGetIndex", 2usize
-                )
+                        2usize,
+                    >("BindGetIndex")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BindGetIndex", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
@@ -246,18 +285,25 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Dynamic::GetMemberBinder>),
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-                1usize,
-            >("BindGetMember")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "BindGetMember", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Dynamic::GetMemberBinder,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Dynamic::DynamicMetaObject,
+                        >,
+                        1usize,
+                    >("BindGetMember")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BindGetMember", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
@@ -275,27 +321,34 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::InvokeBinder>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Dynamic::DynamicMetaObject,
+                                crate::System::Dynamic::InvokeBinder,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Dynamic::DynamicMetaObject,
+                                    >,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Dynamic::DynamicMetaObject,
                         >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-                2usize,
-            >("BindInvoke")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "BindInvoke", 2usize
-                )
+                        2usize,
+                    >("BindInvoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BindInvoke", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
@@ -313,29 +366,34 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Dynamic::InvokeMemberBinder,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Dynamic::DynamicMetaObject,
+                                crate::System::Dynamic::InvokeMemberBinder,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Dynamic::DynamicMetaObject,
+                                    >,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Dynamic::DynamicMetaObject,
                         >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-                2usize,
-            >("BindInvokeMember")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "BindInvokeMember", 2usize
-                )
+                        2usize,
+                    >("BindInvokeMember")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BindInvokeMember", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
@@ -354,28 +412,37 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::SetIndexBinder>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Dynamic::SetIndexBinder,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Dynamic::DynamicMetaObject,
+                                    >,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Dynamic::DynamicMetaObject,
                             >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Dynamic::DynamicMetaObject,
                         >,
-                    >,
-                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-                3usize,
-            >("BindSetIndex")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "BindSetIndex", 3usize
-                )
+                        3usize,
+                    >("BindSetIndex")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BindSetIndex", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
@@ -389,21 +456,30 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::SetMemberBinder>,
-                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-                2usize,
-            >("BindSetMember")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "BindSetMember", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Dynamic::SetMemberBinder,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Dynamic::DynamicMetaObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Dynamic::DynamicMetaObject,
+                        >,
+                        2usize,
+                    >("BindSetMember")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BindSetMember", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
@@ -416,20 +492,25 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Dynamic::UnaryOperationBinder,
-                >),
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-                1usize,
-            >("BindUnaryOperation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "BindUnaryOperation", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Dynamic::UnaryOperationBinder,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Dynamic::DynamicMetaObject,
+                        >,
+                        1usize,
+                    >("BindUnaryOperation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BindUnaryOperation", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
@@ -444,23 +525,30 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Linq::Expressions::Expression,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-                2usize,
-            >("Create")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "Create", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Linq::Expressions::Expression,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Dynamic::DynamicMetaObject,
+                        >,
+                        2usize,
+                    >("Create")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Create", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
@@ -476,23 +564,27 @@ impl crate::System::Dynamic::DynamicMetaObject {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IEnumerable_1<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
-                0usize,
-            >("GetDynamicMemberNames")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "GetDynamicMemberNames",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                        >,
+                        0usize,
+                    >("GetDynamicMemberNames")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDynamicMemberNames", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
@@ -539,25 +631,28 @@ impl crate::System::Dynamic::DynamicMetaObject {
             crate::System::Dynamic::BindingRestrictions,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Linq::Expressions::Expression,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Dynamic::BindingRestrictions,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Linq::Expressions::Expression,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Dynamic::BindingRestrictions,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (expression, restrictions))?
@@ -574,26 +669,31 @@ impl crate::System::Dynamic::DynamicMetaObject {
         >,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Linq::Expressions::Expression,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Dynamic::BindingRestrictions,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Linq::Expressions::Expression,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Dynamic::BindingRestrictions,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (expression, restrictions, value))?
@@ -605,18 +705,23 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-                0usize,
-            >("get_Expression")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Expression", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Linq::Expressions::Expression,
+                        >,
+                        0usize,
+                    >("get_Expression")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Expression", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Expression,
@@ -624,14 +729,17 @@ impl crate::System::Dynamic::DynamicMetaObject {
         Ok(__cordl_ret.into())
     }
     pub fn get_HasValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_HasValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "get_HasValue", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_HasValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_HasValue", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -639,18 +747,21 @@ impl crate::System::Dynamic::DynamicMetaObject {
     pub fn get_LimitType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                0usize,
-            >("get_LimitType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "get_LimitType", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        0usize,
+                    >("get_LimitType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_LimitType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -662,18 +773,23 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
-                0usize,
-            >("get_Restrictions")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Restrictions", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Dynamic::BindingRestrictions,
+                        >,
+                        0usize,
+                    >("get_Restrictions")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Restrictions", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::BindingRestrictions,
@@ -683,18 +799,21 @@ impl crate::System::Dynamic::DynamicMetaObject {
     pub fn get_RuntimeType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                0usize,
-            >("get_RuntimeType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "get_RuntimeType", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        0usize,
+                    >("get_RuntimeType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_RuntimeType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -706,18 +825,21 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::DynamicMetaObject as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                0usize,
-            >("get_Value")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Dynamic::DynamicMetaObject as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Value", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        0usize,
+                    >("get_Value")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Value", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,

@@ -113,20 +113,23 @@ impl crate::GlobalNamespace::StandardScoreSyncState {
             crate::GlobalNamespace::StandardScoreSyncState,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::StandardScoreSyncState> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StandardScoreSyncState as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::ByRefMut<
-                    crate::GlobalNamespace::StandardScoreSyncState,
-                >),
-                crate::GlobalNamespace::StandardScoreSyncState,
-                1usize,
-            >("ApplyDelta")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::StandardScoreSyncState as
-                    quest_hook::libil2cpp::Type > ::class(), "ApplyDelta", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::StandardScoreSyncState,
+                        >),
+                        crate::GlobalNamespace::StandardScoreSyncState,
+                        1usize,
+                    >("ApplyDelta")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ApplyDelta", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::StandardScoreSyncState = unsafe {
             method.invoke_unchecked(self, (delta))?
@@ -137,18 +140,23 @@ impl crate::GlobalNamespace::StandardScoreSyncState {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StandardScoreSyncState as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("Deserialize")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::StandardScoreSyncState as
-                    quest_hook::libil2cpp::Type > ::class(), "Deserialize", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::LiteNetLib::Utils::NetDataReader,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Deserialize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Deserialize", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (reader))?
@@ -161,20 +169,23 @@ impl crate::GlobalNamespace::StandardScoreSyncState {
             crate::GlobalNamespace::StandardScoreSyncState,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StandardScoreSyncState as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::ByRefMut<
-                    crate::GlobalNamespace::StandardScoreSyncState,
-                >),
-                bool,
-                1usize,
-            >("Equals")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::StandardScoreSyncState as
-                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::StandardScoreSyncState,
+                        >),
+                        bool,
+                        1usize,
+                    >("Equals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Equals", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
@@ -185,20 +196,23 @@ impl crate::GlobalNamespace::StandardScoreSyncState {
             crate::GlobalNamespace::StandardScoreSyncState,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::StandardScoreSyncState> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StandardScoreSyncState as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::ByRefMut<
-                    crate::GlobalNamespace::StandardScoreSyncState,
-                >),
-                crate::GlobalNamespace::StandardScoreSyncState,
-                1usize,
-            >("GetDelta")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::StandardScoreSyncState as
-                    quest_hook::libil2cpp::Type > ::class(), "GetDelta", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::StandardScoreSyncState,
+                        >),
+                        crate::GlobalNamespace::StandardScoreSyncState,
+                        1usize,
+                    >("GetDelta")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDelta", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::StandardScoreSyncState = unsafe {
             method.invoke_unchecked(self, (stateTable))?
@@ -206,14 +220,17 @@ impl crate::GlobalNamespace::StandardScoreSyncState {
         Ok(__cordl_ret.into())
     }
     pub fn GetSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StandardScoreSyncState as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("GetSize")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::StandardScoreSyncState as
-                    quest_hook::libil2cpp::Type > ::class(), "GetSize", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("GetSize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetSize", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -222,18 +239,21 @@ impl crate::GlobalNamespace::StandardScoreSyncState {
         &mut self,
         s: crate::GlobalNamespace::StandardScoreSyncState_Score,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StandardScoreSyncState as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::StandardScoreSyncState_Score),
-                i32,
-                1usize,
-            >("GetState")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::StandardScoreSyncState as
-                    quest_hook::libil2cpp::Type > ::class(), "GetState", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::StandardScoreSyncState_Score),
+                        i32,
+                        1usize,
+                    >("GetState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetState", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (s))? };
         Ok(__cordl_ret.into())
@@ -244,21 +264,25 @@ impl crate::GlobalNamespace::StandardScoreSyncState {
             crate::GlobalNamespace::StandardScoreSyncState,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StandardScoreSyncState as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::ByRefMut<
-                    crate::GlobalNamespace::StandardScoreSyncState,
-                >),
-                bool,
-                1usize,
-            >("IEquatableByReference<StandardScoreSyncState>.Equals")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::StandardScoreSyncState as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "IEquatableByReference<StandardScoreSyncState>.Equals", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::StandardScoreSyncState,
+                        >),
+                        bool,
+                        1usize,
+                    >("IEquatableByReference<StandardScoreSyncState>.Equals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "IEquatableByReference<StandardScoreSyncState>.Equals",
+                            1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
@@ -269,24 +293,27 @@ impl crate::GlobalNamespace::StandardScoreSyncState {
             crate::GlobalNamespace::StandardScoreSyncState,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::StandardScoreSyncState> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StandardScoreSyncState as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::ByRefMut<
-                    crate::GlobalNamespace::StandardScoreSyncState,
-                >),
-                crate::GlobalNamespace::StandardScoreSyncState,
-                1usize,
-            >(
-                "IStateTable<StandardScoreSyncState,StandardScoreSyncState.Score,System.Int32>.ApplyDelta",
-            )
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::StandardScoreSyncState as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "IStateTable<StandardScoreSyncState,StandardScoreSyncState.Score,System.Int32>.ApplyDelta",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::StandardScoreSyncState,
+                        >),
+                        crate::GlobalNamespace::StandardScoreSyncState,
+                        1usize,
+                    >(
+                        "IStateTable<StandardScoreSyncState,StandardScoreSyncState.Score,System.Int32>.ApplyDelta",
+                    )
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "IStateTable<StandardScoreSyncState,StandardScoreSyncState.Score,System.Int32>.ApplyDelta",
+                            1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::StandardScoreSyncState = unsafe {
             method.invoke_unchecked(self, (delta))?
@@ -299,24 +326,27 @@ impl crate::GlobalNamespace::StandardScoreSyncState {
             crate::GlobalNamespace::StandardScoreSyncState,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::StandardScoreSyncState> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StandardScoreSyncState as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::ByRefMut<
-                    crate::GlobalNamespace::StandardScoreSyncState,
-                >),
-                crate::GlobalNamespace::StandardScoreSyncState,
-                1usize,
-            >(
-                "IStateTable<StandardScoreSyncState,StandardScoreSyncState.Score,System.Int32>.GetDelta",
-            )
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::StandardScoreSyncState as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "IStateTable<StandardScoreSyncState,StandardScoreSyncState.Score,System.Int32>.GetDelta",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::StandardScoreSyncState,
+                        >),
+                        crate::GlobalNamespace::StandardScoreSyncState,
+                        1usize,
+                    >(
+                        "IStateTable<StandardScoreSyncState,StandardScoreSyncState.Score,System.Int32>.GetDelta",
+                    )
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "IStateTable<StandardScoreSyncState,StandardScoreSyncState.Score,System.Int32>.GetDelta",
+                            1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::StandardScoreSyncState = unsafe {
             method.invoke_unchecked(self, (stateTable))?
@@ -327,18 +357,23 @@ impl crate::GlobalNamespace::StandardScoreSyncState {
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StandardScoreSyncState as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("Serialize")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::StandardScoreSyncState as
-                    quest_hook::libil2cpp::Type > ::class(), "Serialize", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::LiteNetLib::Utils::NetDataWriter,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Serialize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Serialize", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (writer))?
@@ -350,18 +385,21 @@ impl crate::GlobalNamespace::StandardScoreSyncState {
         s: crate::GlobalNamespace::StandardScoreSyncState_Score,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StandardScoreSyncState as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::StandardScoreSyncState_Score, i32),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SetState")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::StandardScoreSyncState as
-                    quest_hook::libil2cpp::Type > ::class(), "SetState", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::StandardScoreSyncState_Score, i32),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetState", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (s, value))?

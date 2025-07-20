@@ -52,14 +52,17 @@ impl crate::Newtonsoft::Json::Linq::JsonLoadSettings {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonLoadSettings as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Linq::JsonLoadSettings as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -69,19 +72,21 @@ impl crate::Newtonsoft::Json::Linq::JsonLoadSettings {
     pub fn get_CommentHandling(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Linq::CommentHandling> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonLoadSettings as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::Newtonsoft::Json::Linq::CommentHandling,
-                0usize,
-            >("get_CommentHandling")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Linq::JsonLoadSettings as
-                    quest_hook::libil2cpp::Type > ::class(), "get_CommentHandling",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::Newtonsoft::Json::Linq::CommentHandling,
+                        0usize,
+                    >("get_CommentHandling")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_CommentHandling", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::Newtonsoft::Json::Linq::CommentHandling = unsafe {
             method.invoke_unchecked(self, ())?
@@ -93,19 +98,21 @@ impl crate::Newtonsoft::Json::Linq::JsonLoadSettings {
     ) -> quest_hook::libil2cpp::Result<
         crate::Newtonsoft::Json::Linq::DuplicatePropertyNameHandling,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonLoadSettings as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::Newtonsoft::Json::Linq::DuplicatePropertyNameHandling,
-                0usize,
-            >("get_DuplicatePropertyNameHandling")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Linq::JsonLoadSettings as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_DuplicatePropertyNameHandling", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::Newtonsoft::Json::Linq::DuplicatePropertyNameHandling,
+                        0usize,
+                    >("get_DuplicatePropertyNameHandling")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_DuplicatePropertyNameHandling", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::Newtonsoft::Json::Linq::DuplicatePropertyNameHandling = unsafe {
             method.invoke_unchecked(self, ())?
@@ -115,19 +122,21 @@ impl crate::Newtonsoft::Json::Linq::JsonLoadSettings {
     pub fn get_LineInfoHandling(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Linq::LineInfoHandling> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonLoadSettings as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::Newtonsoft::Json::Linq::LineInfoHandling,
-                0usize,
-            >("get_LineInfoHandling")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Linq::JsonLoadSettings as
-                    quest_hook::libil2cpp::Type > ::class(), "get_LineInfoHandling",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::Newtonsoft::Json::Linq::LineInfoHandling,
+                        0usize,
+                    >("get_LineInfoHandling")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_LineInfoHandling", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::Newtonsoft::Json::Linq::LineInfoHandling = unsafe {
             method.invoke_unchecked(self, ())?
@@ -138,19 +147,21 @@ impl crate::Newtonsoft::Json::Linq::JsonLoadSettings {
         &mut self,
         value: crate::Newtonsoft::Json::Linq::CommentHandling,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonLoadSettings as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::Newtonsoft::Json::Linq::CommentHandling),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_CommentHandling")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Linq::JsonLoadSettings as
-                    quest_hook::libil2cpp::Type > ::class(), "set_CommentHandling",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::Newtonsoft::Json::Linq::CommentHandling),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_CommentHandling")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_CommentHandling", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -161,19 +172,21 @@ impl crate::Newtonsoft::Json::Linq::JsonLoadSettings {
         &mut self,
         value: crate::Newtonsoft::Json::Linq::DuplicatePropertyNameHandling,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonLoadSettings as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::Newtonsoft::Json::Linq::DuplicatePropertyNameHandling),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_DuplicatePropertyNameHandling")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Linq::JsonLoadSettings as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "set_DuplicatePropertyNameHandling", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::Newtonsoft::Json::Linq::DuplicatePropertyNameHandling),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_DuplicatePropertyNameHandling")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_DuplicatePropertyNameHandling", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -184,19 +197,21 @@ impl crate::Newtonsoft::Json::Linq::JsonLoadSettings {
         &mut self,
         value: crate::Newtonsoft::Json::Linq::LineInfoHandling,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonLoadSettings as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::Newtonsoft::Json::Linq::LineInfoHandling),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_LineInfoHandling")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Linq::JsonLoadSettings as
-                    quest_hook::libil2cpp::Type > ::class(), "set_LineInfoHandling",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::Newtonsoft::Json::Linq::LineInfoHandling),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_LineInfoHandling")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_LineInfoHandling", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

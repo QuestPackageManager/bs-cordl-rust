@@ -43,18 +43,21 @@ impl crate::UnityEngine::XR::InputTracking {
     pub fn GetDeviceIdAtXRNode(
         node: crate::UnityEngine::XR::XRNode,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::InputTracking as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::XR::XRNode),
-                u64,
-                1usize,
-            >("GetDeviceIdAtXRNode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::XR::InputTracking as quest_hook::libil2cpp::Type
-                    > ::class(), "GetDeviceIdAtXRNode", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::XR::XRNode),
+                        u64,
+                        1usize,
+                    >("GetDeviceIdAtXRNode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDeviceIdAtXRNode", 1usize
+                        )
+                    })
             });
         let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (node))? };
         Ok(__cordl_ret.into())
@@ -66,22 +69,25 @@ impl crate::UnityEngine::XR::InputTracking {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::InputTracking as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<
-                        crate::UnityEngine::XR::XRNodeState,
-                    >,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("GetNodeStates")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::XR::InputTracking as quest_hook::libil2cpp::Type
-                    > ::class(), "GetNodeStates", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::XR::XRNodeState,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("GetNodeStates")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetNodeStates", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (nodeStates))?
@@ -95,22 +101,25 @@ impl crate::UnityEngine::XR::InputTracking {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::InputTracking as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<
-                        crate::UnityEngine::XR::XRNodeState,
-                    >,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("GetNodeStates_Internal")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::XR::InputTracking as quest_hook::libil2cpp::Type
-                    > ::class(), "GetNodeStates_Internal", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::XR::XRNodeState,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("GetNodeStates_Internal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetNodeStates_Internal", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (nodeStates))?
@@ -123,23 +132,26 @@ impl crate::UnityEngine::XR::InputTracking {
         uniqueID: i64,
         tracked: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::InputTracking as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::XR::InputTracking_TrackingStateEventType,
-                    crate::UnityEngine::XR::XRNode,
-                    i64,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >("InvokeTrackingEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::XR::InputTracking as quest_hook::libil2cpp::Type
-                    > ::class(), "InvokeTrackingEvent", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::XR::InputTracking_TrackingStateEventType,
+                            crate::UnityEngine::XR::XRNode,
+                            i64,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("InvokeTrackingEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "InvokeTrackingEvent", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (eventType, nodeType, uniqueID, tracked))?
@@ -151,20 +163,23 @@ impl crate::UnityEngine::XR::InputTracking {
             crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::InputTracking as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("add_nodeAdded")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::XR::InputTracking as quest_hook::libil2cpp::Type
-                    > ::class(), "add_nodeAdded", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("add_nodeAdded")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "add_nodeAdded", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (value))?
@@ -176,20 +191,23 @@ impl crate::UnityEngine::XR::InputTracking {
             crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::InputTracking as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("add_nodeRemoved")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::XR::InputTracking as quest_hook::libil2cpp::Type
-                    > ::class(), "add_nodeRemoved", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("add_nodeRemoved")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "add_nodeRemoved", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (value))?
@@ -201,20 +219,23 @@ impl crate::UnityEngine::XR::InputTracking {
             crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::InputTracking as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("remove_nodeAdded")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::XR::InputTracking as quest_hook::libil2cpp::Type
-                    > ::class(), "remove_nodeAdded", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("remove_nodeAdded")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "remove_nodeAdded", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (value))?
@@ -226,20 +247,23 @@ impl crate::UnityEngine::XR::InputTracking {
             crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::InputTracking as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("remove_nodeRemoved")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::XR::InputTracking as quest_hook::libil2cpp::Type
-                    > ::class(), "remove_nodeRemoved", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("remove_nodeRemoved")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "remove_nodeRemoved", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (value))?

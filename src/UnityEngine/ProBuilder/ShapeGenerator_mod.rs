@@ -45,23 +45,26 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeGenerator as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::ProBuilder::ShapeType,
-                    crate::UnityEngine::ProBuilder::PivotLocation,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                >,
-                2usize,
-            >("CreateShape")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::ShapeGenerator as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateShape", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::ProBuilder::ShapeType,
+                            crate::UnityEngine::ProBuilder::PivotLocation,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        2usize,
+                    >("CreateShape")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateShape", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -83,32 +86,35 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeGenerator as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::ProBuilder::PivotLocation,
-                    f32,
-                    f32,
-                    f32,
-                    f32,
-                    i32,
-                    bool,
-                    bool,
-                    bool,
-                    bool,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                >,
-                11usize,
-            >("GenerateArch")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::ShapeGenerator as
-                    quest_hook::libil2cpp::Type > ::class(), "GenerateArch", 11usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::ProBuilder::PivotLocation,
+                            f32,
+                            f32,
+                            f32,
+                            f32,
+                            i32,
+                            bool,
+                            bool,
+                            bool,
+                            bool,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        11usize,
+                    >("GenerateArch")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GenerateArch", 11usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -141,20 +147,23 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeGenerator as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::ProBuilder::PivotLocation, f32, f32, i32),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                >,
-                4usize,
-            >("GenerateCone")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::ShapeGenerator as
-                    quest_hook::libil2cpp::Type > ::class(), "GenerateCone", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::ProBuilder::PivotLocation, f32, f32, i32),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        4usize,
+                    >("GenerateCone")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GenerateCone", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -169,23 +178,26 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeGenerator as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::ProBuilder::PivotLocation,
-                    crate::UnityEngine::Vector3,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                >,
-                2usize,
-            >("GenerateCube")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::ShapeGenerator as
-                    quest_hook::libil2cpp::Type > ::class(), "GenerateCube", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::ProBuilder::PivotLocation,
+                            crate::UnityEngine::Vector3,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        2usize,
+                    >("GenerateCube")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GenerateCube", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -203,29 +215,31 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeGenerator as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::ProBuilder::PivotLocation,
-                    f32,
-                    f32,
-                    f32,
-                    f32,
-                    i32,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                >,
-                7usize,
-            >("GenerateCurvedStair")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::ShapeGenerator as
-                    quest_hook::libil2cpp::Type > ::class(), "GenerateCurvedStair",
-                    7usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::ProBuilder::PivotLocation,
+                            f32,
+                            f32,
+                            f32,
+                            f32,
+                            i32,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        7usize,
+                    >("GenerateCurvedStair")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GenerateCurvedStair", 7usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -256,20 +270,30 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeGenerator as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::ProBuilder::PivotLocation, i32, f32, f32, i32, i32),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                >,
-                6usize,
-            >("GenerateCylinder")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::ShapeGenerator as
-                    quest_hook::libil2cpp::Type > ::class(), "GenerateCylinder", 6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::ProBuilder::PivotLocation,
+                            i32,
+                            f32,
+                            f32,
+                            i32,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        6usize,
+                    >("GenerateCylinder")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GenerateCylinder", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -292,20 +316,30 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeGenerator as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::ProBuilder::PivotLocation, f32, f32, f32, f32, f32),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                >,
-                6usize,
-            >("GenerateDoor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::ShapeGenerator as
-                    quest_hook::libil2cpp::Type > ::class(), "GenerateDoor", 6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::ProBuilder::PivotLocation,
+                            f32,
+                            f32,
+                            f32,
+                            f32,
+                            f32,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        6usize,
+                    >("GenerateDoor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GenerateDoor", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -327,21 +361,29 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeGenerator as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::ProBuilder::PivotLocation, f32, i32, bool, bool),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                >,
-                5usize,
-            >("GenerateIcosahedron")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::ShapeGenerator as
-                    quest_hook::libil2cpp::Type > ::class(), "GenerateIcosahedron",
-                    5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::ProBuilder::PivotLocation,
+                            f32,
+                            i32,
+                            bool,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        5usize,
+                    >("GenerateIcosahedron")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GenerateIcosahedron", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -364,20 +406,30 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeGenerator as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::ProBuilder::PivotLocation, f32, f32, f32, i32, i32),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                >,
-                6usize,
-            >("GeneratePipe")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::ShapeGenerator as
-                    quest_hook::libil2cpp::Type > ::class(), "GeneratePipe", 6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::ProBuilder::PivotLocation,
+                            f32,
+                            f32,
+                            f32,
+                            i32,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        6usize,
+                    >("GeneratePipe")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GeneratePipe", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -400,27 +452,30 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeGenerator as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::ProBuilder::PivotLocation,
-                    f32,
-                    f32,
-                    i32,
-                    i32,
-                    crate::UnityEngine::ProBuilder::Axis,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                >,
-                6usize,
-            >("GeneratePlane")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::ShapeGenerator as
-                    quest_hook::libil2cpp::Type > ::class(), "GeneratePlane", 6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::ProBuilder::PivotLocation,
+                            f32,
+                            f32,
+                            i32,
+                            i32,
+                            crate::UnityEngine::ProBuilder::Axis,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        6usize,
+                    >("GeneratePlane")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GeneratePlane", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -439,23 +494,26 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeGenerator as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::ProBuilder::PivotLocation,
-                    crate::UnityEngine::Vector3,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                >,
-                2usize,
-            >("GeneratePrism")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::ShapeGenerator as
-                    quest_hook::libil2cpp::Type > ::class(), "GeneratePrism", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::ProBuilder::PivotLocation,
+                            crate::UnityEngine::Vector3,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        2usize,
+                    >("GeneratePrism")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GeneratePrism", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -470,25 +528,28 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeGenerator as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::ProBuilder::PivotLocation,
-                    crate::UnityEngine::Vector3,
-                    i32,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                >,
-                4usize,
-            >("GenerateStair")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::ShapeGenerator as
-                    quest_hook::libil2cpp::Type > ::class(), "GenerateStair", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::ProBuilder::PivotLocation,
+                            crate::UnityEngine::Vector3,
+                            i32,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        4usize,
+                    >("GenerateStair")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GenerateStair", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -509,29 +570,32 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeGenerator as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::ProBuilder::PivotLocation,
-                    i32,
-                    f32,
-                    f32,
-                    f32,
-                    bool,
-                    bool,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                >,
-                8usize,
-            >("GenerateStair")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::ShapeGenerator as
-                    quest_hook::libil2cpp::Type > ::class(), "GenerateStair", 8usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::ProBuilder::PivotLocation,
+                            i32,
+                            f32,
+                            f32,
+                            f32,
+                            bool,
+                            bool,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        8usize,
+                    >("GenerateStair")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GenerateStair", 8usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -566,30 +630,33 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeGenerator as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::ProBuilder::PivotLocation,
-                    i32,
-                    i32,
-                    f32,
-                    f32,
-                    bool,
-                    f32,
-                    f32,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                >,
-                9usize,
-            >("GenerateTorus")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::ShapeGenerator as
-                    quest_hook::libil2cpp::Type > ::class(), "GenerateTorus", 9usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::ProBuilder::PivotLocation,
+                            i32,
+                            i32,
+                            f32,
+                            f32,
+                            bool,
+                            f32,
+                            f32,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        9usize,
+                    >("GenerateTorus")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GenerateTorus", 9usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -623,20 +690,25 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeGenerator as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i32, f32, f32, crate::UnityEngine::Quaternion, f32),
-                quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-                >,
-                5usize,
-            >("GetCirclePoints")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::ShapeGenerator as
-                    quest_hook::libil2cpp::Type > ::class(), "GetCirclePoints", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32, f32, f32, crate::UnityEngine::Quaternion, f32),
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::UnityEngine::Vector3,
+                            >,
+                        >,
+                        5usize,
+                    >("GetCirclePoints")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetCirclePoints", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
@@ -659,26 +731,32 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeGenerator as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-                    >,
-                    f32,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-                >,
-                2usize,
-            >("SubdivideIcosahedron")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::ShapeGenerator as
-                    quest_hook::libil2cpp::Type > ::class(), "SubdivideIcosahedron",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    crate::UnityEngine::Vector3,
+                                >,
+                            >,
+                            f32,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::UnityEngine::Vector3,
+                            >,
+                        >,
+                        2usize,
+                    >("SubdivideIcosahedron")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SubdivideIcosahedron", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,

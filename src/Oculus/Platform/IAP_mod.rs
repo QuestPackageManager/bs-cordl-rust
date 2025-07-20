@@ -43,18 +43,21 @@ impl crate::Oculus::Platform::IAP {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::IAP as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
-                1usize,
-            >("ConsumePurchase")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Oculus::Platform::IAP as quest_hook::libil2cpp::Type >
-                    ::class(), "ConsumePurchase", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+                        1usize,
+                    >("ConsumePurchase")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConsumePurchase", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
             method.invoke_unchecked((), (sku))?
@@ -70,26 +73,29 @@ impl crate::Oculus::Platform::IAP {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::IAP as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ProductList,
-                >),
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Request_1<
-                        quest_hook::libil2cpp::Gc<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::Models::ProductList,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::ProductList,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                1usize,
-            >("GetNextProductListPage")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Oculus::Platform::IAP as quest_hook::libil2cpp::Type >
-                    ::class(), "GetNextProductListPage", 1usize
-                )
+                        1usize,
+                    >("GetNextProductListPage")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetNextProductListPage", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
@@ -107,26 +113,29 @@ impl crate::Oculus::Platform::IAP {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::IAP as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::PurchaseList,
-                >),
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Request_1<
-                        quest_hook::libil2cpp::Gc<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::Models::PurchaseList,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::PurchaseList,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                1usize,
-            >("GetNextPurchaseListPage")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Oculus::Platform::IAP as quest_hook::libil2cpp::Type >
-                    ::class(), "GetNextPurchaseListPage", 1usize
-                )
+                        1usize,
+                    >("GetNextPurchaseListPage")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetNextPurchaseListPage", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
@@ -148,28 +157,33 @@ impl crate::Oculus::Platform::IAP {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::IAP as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >),
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Request_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Models::ProductList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::ProductList,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                1usize,
-            >("GetProductsBySKU")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Oculus::Platform::IAP as quest_hook::libil2cpp::Type >
-                    ::class(), "GetProductsBySKU", 1usize
-                )
+                        1usize,
+                    >("GetProductsBySKU")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetProductsBySKU", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
@@ -185,24 +199,27 @@ impl crate::Oculus::Platform::IAP {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::IAP as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Request_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Models::PurchaseList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::PurchaseList,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                0usize,
-            >("GetViewerPurchases")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Oculus::Platform::IAP as quest_hook::libil2cpp::Type >
-                    ::class(), "GetViewerPurchases", 0usize
-                )
+                        0usize,
+                    >("GetViewerPurchases")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetViewerPurchases", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
@@ -218,24 +235,27 @@ impl crate::Oculus::Platform::IAP {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::IAP as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Request_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Models::PurchaseList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::PurchaseList,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                0usize,
-            >("GetViewerPurchasesDurableCache")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Oculus::Platform::IAP as quest_hook::libil2cpp::Type >
-                    ::class(), "GetViewerPurchasesDurableCache", 0usize
-                )
+                        0usize,
+                    >("GetViewerPurchasesDurableCache")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetViewerPurchasesDurableCache", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
@@ -253,24 +273,27 @@ impl crate::Oculus::Platform::IAP {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::IAP as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Request_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Models::Purchase,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::Purchase,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                1usize,
-            >("LaunchCheckoutFlow")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Oculus::Platform::IAP as quest_hook::libil2cpp::Type >
-                    ::class(), "LaunchCheckoutFlow", 1usize
-                )
+                        1usize,
+                    >("LaunchCheckoutFlow")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "LaunchCheckoutFlow", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<

@@ -53,31 +53,34 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationUtil {
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationUtil as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                    >,
-                ),
-                bool,
-                4usize,
-            >("InScanArea")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Poly2Tri::TriangulationUtil as
-                    quest_hook::libil2cpp::Type > ::class(), "InScanArea", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                            >,
+                        ),
+                        bool,
+                        4usize,
+                    >("InScanArea")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "InScanArea", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (pa, pb, pc, pd))?
@@ -104,28 +107,31 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationUtil {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ProBuilder::Poly2Tri::Orientation,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationUtil as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                    >,
-                ),
-                crate::UnityEngine::ProBuilder::Poly2Tri::Orientation,
-                3usize,
-            >("Orient2d")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Poly2Tri::TriangulationUtil as
-                    quest_hook::libil2cpp::Type > ::class(), "Orient2d", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                            >,
+                        ),
+                        crate::UnityEngine::ProBuilder::Poly2Tri::Orientation,
+                        3usize,
+                    >("Orient2d")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Orient2d", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::ProBuilder::Poly2Tri::Orientation = unsafe {
             method.invoke_unchecked((), (pa, pb, pc))?
@@ -146,31 +152,34 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationUtil {
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationUtil as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                    >,
-                ),
-                bool,
-                4usize,
-            >("SmartIncircle")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Poly2Tri::TriangulationUtil as
-                    quest_hook::libil2cpp::Type > ::class(), "SmartIncircle", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                            >,
+                        ),
+                        bool,
+                        4usize,
+                    >("SmartIncircle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SmartIncircle", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (pa, pb, pc, pd))?
@@ -180,14 +189,17 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationUtil {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationUtil as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Poly2Tri::TriangulationUtil as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

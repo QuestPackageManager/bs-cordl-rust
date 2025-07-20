@@ -136,33 +136,38 @@ impl crate::UnityEngine::Rendering::BatchCullingContext {
         inReceiverPlaneOffset: i32,
         inReceiverPlaneCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::BatchCullingContext as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Plane>,
-                    crate::Unity::Collections::NativeArray_1<
-                        crate::UnityEngine::Rendering::CullingSplit,
-                    >,
-                    crate::UnityEngine::Rendering::LODParameters,
-                    crate::UnityEngine::Matrix4x4,
-                    crate::UnityEngine::Rendering::BatchCullingViewType,
-                    crate::UnityEngine::Rendering::BatchCullingProjectionType,
-                    crate::UnityEngine::Rendering::BatchCullingFlags,
-                    u64,
-                    u32,
-                    u64,
-                    i32,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Void,
-                12usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Rendering::BatchCullingContext as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 12usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::Unity::Collections::NativeArray_1<
+                                crate::UnityEngine::Plane,
+                            >,
+                            crate::Unity::Collections::NativeArray_1<
+                                crate::UnityEngine::Rendering::CullingSplit,
+                            >,
+                            crate::UnityEngine::Rendering::LODParameters,
+                            crate::UnityEngine::Matrix4x4,
+                            crate::UnityEngine::Rendering::BatchCullingViewType,
+                            crate::UnityEngine::Rendering::BatchCullingProjectionType,
+                            crate::UnityEngine::Rendering::BatchCullingFlags,
+                            u64,
+                            u32,
+                            u64,
+                            i32,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        12usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 12usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method

@@ -107,18 +107,21 @@ impl crate::UnityEngine::ProBuilder::Vector2Mask {
         v: crate::UnityEngine::Vector3,
         epsilon: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Vector2Mask as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::Vector3, f32),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Vector2Mask as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::Vector3, f32),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (v, epsilon))?
@@ -129,14 +132,17 @@ impl crate::UnityEngine::ProBuilder::Vector2Mask {
         &mut self,
         mask: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Vector2Mask as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(u8), quest_hook::libil2cpp::Void, 1usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Vector2Mask as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(u8), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (mask))?
@@ -144,27 +150,33 @@ impl crate::UnityEngine::ProBuilder::Vector2Mask {
         Ok(__cordl_ret.into())
     }
     pub fn get_x(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Vector2Mask as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_x")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Vector2Mask as
-                    quest_hook::libil2cpp::Type > ::class(), "get_x", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_x")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_x", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_y(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Vector2Mask as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_y")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Vector2Mask as
-                    quest_hook::libil2cpp::Type > ::class(), "get_y", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_y")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_y", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -173,21 +185,24 @@ impl crate::UnityEngine::ProBuilder::Vector2Mask {
         left: crate::UnityEngine::ProBuilder::Vector2Mask,
         right: crate::UnityEngine::ProBuilder::Vector2Mask,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Vector2Mask> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Vector2Mask as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::ProBuilder::Vector2Mask,
-                    crate::UnityEngine::ProBuilder::Vector2Mask,
-                ),
-                crate::UnityEngine::ProBuilder::Vector2Mask,
-                2usize,
-            >("op_BitwiseAnd")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Vector2Mask as
-                    quest_hook::libil2cpp::Type > ::class(), "op_BitwiseAnd", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::ProBuilder::Vector2Mask,
+                            crate::UnityEngine::ProBuilder::Vector2Mask,
+                        ),
+                        crate::UnityEngine::ProBuilder::Vector2Mask,
+                        2usize,
+                    >("op_BitwiseAnd")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_BitwiseAnd", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::ProBuilder::Vector2Mask = unsafe {
             method.invoke_unchecked((), (left, right))?
@@ -198,21 +213,24 @@ impl crate::UnityEngine::ProBuilder::Vector2Mask {
         left: crate::UnityEngine::ProBuilder::Vector2Mask,
         right: crate::UnityEngine::ProBuilder::Vector2Mask,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Vector2Mask> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Vector2Mask as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::ProBuilder::Vector2Mask,
-                    crate::UnityEngine::ProBuilder::Vector2Mask,
-                ),
-                crate::UnityEngine::ProBuilder::Vector2Mask,
-                2usize,
-            >("op_BitwiseOr")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Vector2Mask as
-                    quest_hook::libil2cpp::Type > ::class(), "op_BitwiseOr", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::ProBuilder::Vector2Mask,
+                            crate::UnityEngine::ProBuilder::Vector2Mask,
+                        ),
+                        crate::UnityEngine::ProBuilder::Vector2Mask,
+                        2usize,
+                    >("op_BitwiseOr")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_BitwiseOr", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::ProBuilder::Vector2Mask = unsafe {
             method.invoke_unchecked((), (left, right))?
@@ -223,21 +241,24 @@ impl crate::UnityEngine::ProBuilder::Vector2Mask {
         left: crate::UnityEngine::ProBuilder::Vector2Mask,
         right: crate::UnityEngine::ProBuilder::Vector2Mask,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Vector2Mask> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Vector2Mask as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::ProBuilder::Vector2Mask,
-                    crate::UnityEngine::ProBuilder::Vector2Mask,
-                ),
-                crate::UnityEngine::ProBuilder::Vector2Mask,
-                2usize,
-            >("op_ExclusiveOr")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Vector2Mask as
-                    quest_hook::libil2cpp::Type > ::class(), "op_ExclusiveOr", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::ProBuilder::Vector2Mask,
+                            crate::UnityEngine::ProBuilder::Vector2Mask,
+                        ),
+                        crate::UnityEngine::ProBuilder::Vector2Mask,
+                        2usize,
+                    >("op_ExclusiveOr")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_ExclusiveOr", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::ProBuilder::Vector2Mask = unsafe {
             method.invoke_unchecked((), (left, right))?
@@ -247,18 +268,21 @@ impl crate::UnityEngine::ProBuilder::Vector2Mask {
     pub fn op_Implicit_Vector2Mask0(
         mask: crate::UnityEngine::ProBuilder::Vector2Mask,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Vector2Mask as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::ProBuilder::Vector2Mask),
-                crate::UnityEngine::Vector2,
-                1usize,
-            >("op_Implicit")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Vector2Mask as
-                    quest_hook::libil2cpp::Type > ::class(), "op_Implicit", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::ProBuilder::Vector2Mask),
+                        crate::UnityEngine::Vector2,
+                        1usize,
+                    >("op_Implicit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Implicit", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
             method.invoke_unchecked((), (mask))?
@@ -268,18 +292,21 @@ impl crate::UnityEngine::ProBuilder::Vector2Mask {
     pub fn op_Implicit_Vector2_1(
         v: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Vector2Mask> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Vector2Mask as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Vector2),
-                crate::UnityEngine::ProBuilder::Vector2Mask,
-                1usize,
-            >("op_Implicit")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Vector2Mask as
-                    quest_hook::libil2cpp::Type > ::class(), "op_Implicit", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Vector2),
+                        crate::UnityEngine::ProBuilder::Vector2Mask,
+                        1usize,
+                    >("op_Implicit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Implicit", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::ProBuilder::Vector2Mask = unsafe {
             method.invoke_unchecked((), (v))?
@@ -290,18 +317,21 @@ impl crate::UnityEngine::ProBuilder::Vector2Mask {
         mask: crate::UnityEngine::ProBuilder::Vector2Mask,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Vector2Mask as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::ProBuilder::Vector2Mask, f32),
-                crate::UnityEngine::Vector2,
-                2usize,
-            >("op_Multiply")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Vector2Mask as
-                    quest_hook::libil2cpp::Type > ::class(), "op_Multiply", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::ProBuilder::Vector2Mask, f32),
+                        crate::UnityEngine::Vector2,
+                        2usize,
+                    >("op_Multiply")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Multiply", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
             method.invoke_unchecked((), (mask, value))?

@@ -44,19 +44,21 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing {
         edge: crate::UnityEngine::ProBuilder::EdgeLookup,
         commonIndex: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Edge> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::ProBuilder::EdgeLookup, i32),
-                crate::UnityEngine::ProBuilder::Edge,
-                2usize,
-            >("AlignEdgeWithDirection")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::MeshOperations::VertexEditing as
-                    quest_hook::libil2cpp::Type > ::class(), "AlignEdgeWithDirection",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::ProBuilder::EdgeLookup, i32),
+                        crate::UnityEngine::ProBuilder::Edge,
+                        2usize,
+                    >("AlignEdgeWithDirection")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AlignEdgeWithDirection", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = unsafe {
             method.invoke_unchecked((), (edge, commonIndex))?
@@ -93,49 +95,52 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::FaceRebuildData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IList_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Vertex,
-                            >,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IList_1<
-                            crate::UnityEngine::ProBuilder::SimpleTuple_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::WingedEdge,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Vertex,
+                                    >,
                                 >,
-                                i32,
                             >,
-                        >,
-                    >,
-                    f32,
-                    quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<
+                                    crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                                        quest_hook::libil2cpp::Gc<
+                                            crate::UnityEngine::ProBuilder::WingedEdge,
+                                        >,
+                                        i32,
+                                    >,
+                                >,
+                            >,
+                            f32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::Dictionary_2<
+                                        i32,
+                                        quest_hook::libil2cpp::Gc<
+                                            crate::System::Collections::Generic::List_1<i32>,
+                                        >,
+                                    >,
+                                >,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                i32,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<i32>,
-                                >,
-                            >,
+                            crate::UnityEngine::ProBuilder::FaceRebuildData,
                         >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::FaceRebuildData,
-                >,
-                4usize,
-            >("ExplodeVertex")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::MeshOperations::VertexEditing as
-                    quest_hook::libil2cpp::Type > ::class(), "ExplodeVertex", 4usize
-                )
+                        4usize,
+                    >("ExplodeVertex")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ExplodeVertex", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::FaceRebuildData,
@@ -153,24 +158,29 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing {
         indexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         collapseToFirst: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-                    bool,
-                ),
-                i32,
-                3usize,
-            >("MergeVertices")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::MeshOperations::VertexEditing as
-                    quest_hook::libil2cpp::Type > ::class(), "MergeVertices", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<i32>,
+                            >,
+                            bool,
+                        ),
+                        i32,
+                        3usize,
+                    >("MergeVertices")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "MergeVertices", 3usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (mesh, indexes, collapseToFirst))?
@@ -181,23 +191,26 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing {
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         edge: crate::UnityEngine::ProBuilder::Edge,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                    >,
-                    crate::UnityEngine::ProBuilder::Edge,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SplitVertices")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::MeshOperations::VertexEditing as
-                    quest_hook::libil2cpp::Type > ::class(), "SplitVertices", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                            crate::UnityEngine::ProBuilder::Edge,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SplitVertices")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SplitVertices", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (mesh, edge))?
@@ -210,25 +223,28 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing {
             crate::System::Collections::Generic::IEnumerable_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IEnumerable_1<i32>,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SplitVertices")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::MeshOperations::VertexEditing as
-                    quest_hook::libil2cpp::Type > ::class(), "SplitVertices", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<i32>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SplitVertices")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SplitVertices", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (mesh, vertices))?
@@ -244,26 +260,31 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IEnumerable_1<i32>,
-                    >,
-                    f32,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-                3usize,
-            >("WeldVertices")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::MeshOperations::VertexEditing as
-                    quest_hook::libil2cpp::Type > ::class(), "WeldVertices", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<i32>,
+                            >,
+                            f32,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<i32>,
+                        >,
+                        3usize,
+                    >("WeldVertices")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "WeldVertices", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,

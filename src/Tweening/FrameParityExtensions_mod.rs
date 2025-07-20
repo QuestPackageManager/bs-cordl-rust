@@ -41,18 +41,21 @@ impl crate::Tweening::FrameParityExtensions {
     pub fn GetSwitchedParity(
         frameParity: crate::Tweening::FrameParity,
     ) -> quest_hook::libil2cpp::Result<crate::Tweening::FrameParity> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Tweening::FrameParityExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::Tweening::FrameParity),
-                crate::Tweening::FrameParity,
-                1usize,
-            >("GetSwitchedParity")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Tweening::FrameParityExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetSwitchedParity", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::Tweening::FrameParity),
+                        crate::Tweening::FrameParity,
+                        1usize,
+                    >("GetSwitchedParity")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetSwitchedParity", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::Tweening::FrameParity = unsafe {
             method.invoke_unchecked((), (frameParity))?

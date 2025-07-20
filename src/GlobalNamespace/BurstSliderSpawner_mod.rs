@@ -48,25 +48,28 @@ impl crate::GlobalNamespace::BurstSliderSpawner {
         pos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
         tangent: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BurstSliderSpawner as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::Vector2,
-                    crate::UnityEngine::Vector2,
-                    crate::UnityEngine::Vector2,
-                    f32,
-                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
-                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
-                ),
-                quest_hook::libil2cpp::Void,
-                6usize,
-            >("BezierCurve")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BurstSliderSpawner as
-                    quest_hook::libil2cpp::Type > ::class(), "BezierCurve", 6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Vector2,
+                            crate::UnityEngine::Vector2,
+                            crate::UnityEngine::Vector2,
+                            f32,
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >("BezierCurve")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BezierCurve", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (p0, p1, p2, t, pos, tangent))?
@@ -86,30 +89,35 @@ impl crate::GlobalNamespace::BurstSliderSpawner {
             crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BurstSliderSpawner as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::GlobalNamespace::SliderSpawnData,
-                    >,
-                    bool,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::VariableMovementDataProvider,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >("ProcessSliderData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BurstSliderSpawner as
-                    quest_hook::libil2cpp::Type > ::class(), "ProcessSliderData", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SliderData,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::SliderSpawnData,
+                            >,
+                            bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::VariableMovementDataProvider,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("ProcessSliderData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ProcessSliderData", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -191,26 +199,31 @@ impl crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::GlobalNamespace::NoteSpawnData,
-                    >,
-                    bool,
-                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                5usize,
-            >("BeginInvoke")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate
-                    as quest_hook::libil2cpp::Type > ::class(), "BeginInvoke", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::NoteSpawnData,
+                            >,
+                            bool,
+                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                        5usize,
+                    >("BeginInvoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BeginInvoke", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
             method
@@ -228,23 +241,26 @@ impl crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::GlobalNamespace::NoteSpawnData,
-                    >,
-                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("EndInvoke")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate
-                    as quest_hook::libil2cpp::Type > ::class(), "EndInvoke", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::NoteSpawnData,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("EndInvoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "EndInvoke", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (noteSpawnData, result))?
@@ -259,24 +275,27 @@ impl crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate {
         >,
         forceIsFirstNote: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::GlobalNamespace::NoteSpawnData,
-                    >,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("Invoke")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate
-                    as quest_hook::libil2cpp::Type > ::class(), "Invoke", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::NoteSpawnData,
+                            >,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("Invoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Invoke", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (noteData, noteSpawnData, forceIsFirstNote))?
@@ -298,21 +317,26 @@ impl crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    crate::System::IntPtr,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            crate::System::IntPtr,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (object, method))?

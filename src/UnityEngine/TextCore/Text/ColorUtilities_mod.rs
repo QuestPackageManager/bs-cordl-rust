@@ -43,18 +43,21 @@ impl crate::UnityEngine::TextCore::Text::ColorUtilities {
         a: crate::UnityEngine::Color32,
         b: crate::UnityEngine::Color32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::ColorUtilities as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Color32, crate::UnityEngine::Color32),
-                bool,
-                2usize,
-            >("CompareColors")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::TextCore::Text::ColorUtilities as
-                    quest_hook::libil2cpp::Type > ::class(), "CompareColors", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Color32, crate::UnityEngine::Color32),
+                        bool,
+                        2usize,
+                    >("CompareColors")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CompareColors", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
@@ -63,18 +66,21 @@ impl crate::UnityEngine::TextCore::Text::ColorUtilities {
         c1: crate::UnityEngine::Color32,
         c2: crate::UnityEngine::Color32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::ColorUtilities as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Color32, crate::UnityEngine::Color32),
-                crate::UnityEngine::Color32,
-                2usize,
-            >("MultiplyColors")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::TextCore::Text::ColorUtilities as
-                    quest_hook::libil2cpp::Type > ::class(), "MultiplyColors", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Color32, crate::UnityEngine::Color32),
+                        crate::UnityEngine::Color32,
+                        2usize,
+                    >("MultiplyColors")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "MultiplyColors", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
             method.invoke_unchecked((), (c1, c2))?

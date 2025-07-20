@@ -51,26 +51,28 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
         inputObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         inputNodeID: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::HoudiniEngineUnity::HEU_SessionBase,
-                    >,
-                    i32,
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                4usize,
-            >("CreateInputNodeWithDataUpload")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HoudiniEngineUnity::HEU_InputInterfaceTilemap as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "CreateInputNodeWithDataUpload", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_SessionBase,
+                            >,
+                            i32,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        4usize,
+                    >("CreateInputNodeWithDataUpload")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateInputNodeWithDataUpload", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -89,21 +91,23 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
             crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
-                quest_hook::libil2cpp::Gc<
-                    crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap,
-                >,
-                1usize,
-            >("GenerateTilemapDataFromGameObject")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HoudiniEngineUnity::HEU_InputInterfaceTilemap as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "GenerateTilemapDataFromGameObject", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap,
+                        >,
+                        1usize,
+                    >("GenerateTilemapDataFromGameObject")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GenerateTilemapDataFromGameObject", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap,
@@ -116,20 +120,23 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
             crate::HoudiniEngineUnity::HEU_InputInterfaceTilemapSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::HoudiniEngineUnity::HEU_InputInterfaceTilemapSettings,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("Initialize")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HoudiniEngineUnity::HEU_InputInterfaceTilemap as
-                    quest_hook::libil2cpp::Type > ::class(), "Initialize", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::HoudiniEngineUnity::HEU_InputInterfaceTilemapSettings,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Initialize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Initialize", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (settings))?
@@ -140,19 +147,21 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
         &mut self,
         inputObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
-                bool,
-                1usize,
-            >("IsThisInputObjectSupported")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HoudiniEngineUnity::HEU_InputInterfaceTilemap as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "IsThisInputObjectSupported", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
+                        bool,
+                        1usize,
+                    >("IsThisInputObjectSupported")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsThisInputObjectSupported", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (inputObject))? };
         Ok(__cordl_ret.into())
@@ -170,24 +179,29 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
         inputNodeID: i32,
         inputData: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputData>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::HoudiniEngineUnity::HEU_SessionBase,
-                    >,
-                    i32,
-                    quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputData>,
-                ),
-                bool,
-                3usize,
-            >("UploadData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HoudiniEngineUnity::HEU_InputInterfaceTilemap as
-                    quest_hook::libil2cpp::Type > ::class(), "UploadData", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_SessionBase,
+                            >,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_InputData,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("UploadData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UploadData", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (session, inputNodeID, inputData))?
@@ -197,14 +211,17 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HoudiniEngineUnity::HEU_InputInterfaceTilemap as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -277,15 +294,17 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

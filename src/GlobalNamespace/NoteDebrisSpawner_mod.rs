@@ -74,18 +74,21 @@ impl crate::GlobalNamespace::NoteDebrisSpawner {
         &mut self,
         noteDebris: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteDebrisSpawner as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("DespawnNoteDebris")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteDebrisSpawner as
-                    quest_hook::libil2cpp::Type > ::class(), "DespawnNoteDebris", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("DespawnNoteDebris")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "DespawnNoteDebris", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (noteDebris))?
@@ -96,19 +99,21 @@ impl crate::GlobalNamespace::NoteDebrisSpawner {
         &mut self,
         noteDebris: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteDebrisSpawner as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("HandleNoteDebrisDidFinish")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteDebrisSpawner as
-                    quest_hook::libil2cpp::Type > ::class(), "HandleNoteDebrisDidFinish",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("HandleNoteDebrisDidFinish")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HandleNoteDebrisDidFinish", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (noteDebris))?
@@ -136,30 +141,33 @@ impl crate::GlobalNamespace::NoteDebrisSpawner {
         timeToNextColorNote: f32,
         moveVec: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteDebrisSpawner as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::GlobalNamespace::NoteData_GameplayType,
-                    crate::UnityEngine::Vector3,
-                    crate::UnityEngine::Vector3,
-                    f32,
-                    crate::UnityEngine::Vector3,
-                    crate::UnityEngine::Vector3,
-                    crate::UnityEngine::Quaternion,
-                    crate::UnityEngine::Vector3,
-                    crate::GlobalNamespace::ColorType,
-                    f32,
-                    crate::UnityEngine::Vector3,
-                ),
-                quest_hook::libil2cpp::Void,
-                11usize,
-            >("SpawnDebris")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteDebrisSpawner as
-                    quest_hook::libil2cpp::Type > ::class(), "SpawnDebris", 11usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::GlobalNamespace::NoteData_GameplayType,
+                            crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Vector3,
+                            f32,
+                            crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Quaternion,
+                            crate::UnityEngine::Vector3,
+                            crate::GlobalNamespace::ColorType,
+                            f32,
+                            crate::UnityEngine::Vector3,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        11usize,
+                    >("SpawnDebris")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SpawnDebris", 11usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -192,26 +200,33 @@ impl crate::GlobalNamespace::NoteDebrisSpawner {
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteDebrisSpawner as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::GlobalNamespace::NoteData_GameplayType,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("SpawnNoteDebris")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteDebrisSpawner as
-                    quest_hook::libil2cpp::Type > ::class(), "SpawnNoteDebris", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::GlobalNamespace::NoteData_GameplayType,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::NoteDebris,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::NoteDebris,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("SpawnNoteDebris")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SpawnNoteDebris", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (noteGameplayType, debris0, debris1))?
@@ -221,14 +236,17 @@ impl crate::GlobalNamespace::NoteDebrisSpawner {
     pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteDebrisSpawner as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteDebrisSpawner as
-                    quest_hook::libil2cpp::Type > ::class(), "Start", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Start", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -238,14 +256,17 @@ impl crate::GlobalNamespace::NoteDebrisSpawner {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteDebrisSpawner as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteDebrisSpawner as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

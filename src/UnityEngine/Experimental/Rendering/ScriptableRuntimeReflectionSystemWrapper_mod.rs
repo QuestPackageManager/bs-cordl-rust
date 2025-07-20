@@ -58,21 +58,25 @@ impl crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSys
         &mut self,
         result: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::ByRefMut<bool>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("Internal_ScriptableRuntimeReflectionSystemWrapper_TickRealtimeProbes")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "Internal_ScriptableRuntimeReflectionSystemWrapper_TickRealtimeProbes",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<bool>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(
+                        "Internal_ScriptableRuntimeReflectionSystemWrapper_TickRealtimeProbes",
+                    )
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "Internal_ScriptableRuntimeReflectionSystemWrapper_TickRealtimeProbes",
+                            1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (result))?
@@ -89,15 +93,17 @@ impl crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSys
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -111,22 +117,23 @@ impl crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSys
             crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
-                >,
-                0usize,
-            >("get_implementation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper
-                    as quest_hook::libil2cpp::Type > ::class(), "get_implementation",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
+                        >,
+                        0usize,
+                    >("get_implementation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_implementation", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
@@ -139,22 +146,23 @@ impl crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSys
             crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_implementation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper
-                    as quest_hook::libil2cpp::Type > ::class(), "set_implementation",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_implementation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_implementation", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

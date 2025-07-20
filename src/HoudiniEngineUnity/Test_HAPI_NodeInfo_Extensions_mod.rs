@@ -44,18 +44,23 @@ impl crate::HoudiniEngineUnity::Test_HAPI_NodeInfo_Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_NodeInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::Test_HAPI_NodeInfo_Extensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::HoudiniEngineUnity::HAPI_NodeInfo),
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_NodeInfo>,
-                1usize,
-            >("ToTestObject")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::HoudiniEngineUnity::Test_HAPI_NodeInfo_Extensions as
-                    quest_hook::libil2cpp::Type > ::class(), "ToTestObject", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::HoudiniEngineUnity::HAPI_NodeInfo),
+                        quest_hook::libil2cpp::Gc<
+                            crate::HoudiniEngineUnity::Test_HAPI_NodeInfo,
+                        >,
+                        1usize,
+                    >("ToTestObject")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToTestObject", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::Test_HAPI_NodeInfo,

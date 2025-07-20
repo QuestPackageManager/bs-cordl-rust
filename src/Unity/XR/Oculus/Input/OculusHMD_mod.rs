@@ -110,14 +110,21 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
     pub fn FinishSetup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("FinishSetup")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "FinishSetup", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("FinishSetup")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FinishSetup", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -134,14 +141,17 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -155,21 +165,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >,
-                0usize,
-            >("get_centerEyeAcceleration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "get_centerEyeAcceleration",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >,
+                        0usize,
+                    >("get_centerEyeAcceleration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_centerEyeAcceleration", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -183,21 +195,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >,
-                0usize,
-            >("get_centerEyeAngularAcceleration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_centerEyeAngularAcceleration", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >,
+                        0usize,
+                    >("get_centerEyeAngularAcceleration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_centerEyeAngularAcceleration", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -211,21 +225,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >,
-                0usize,
-            >("get_centerEyeAngularVelocity")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_centerEyeAngularVelocity", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >,
+                        0usize,
+                    >("get_centerEyeAngularVelocity")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_centerEyeAngularVelocity", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -239,21 +255,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >,
-                0usize,
-            >("get_centerEyePosition")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "get_centerEyePosition",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >,
+                        0usize,
+                    >("get_centerEyePosition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_centerEyePosition", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -267,21 +285,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::QuaternionControl,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-                >,
-                0usize,
-            >("get_centerEyeRotation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "get_centerEyeRotation",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+                        >,
+                        0usize,
+                    >("get_centerEyeRotation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_centerEyeRotation", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::QuaternionControl,
@@ -295,21 +315,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >,
-                0usize,
-            >("get_deviceAcceleration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "get_deviceAcceleration",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >,
+                        0usize,
+                    >("get_deviceAcceleration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_deviceAcceleration", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -323,21 +345,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >,
-                0usize,
-            >("get_deviceAngularAcceleration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_deviceAngularAcceleration", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >,
+                        0usize,
+                    >("get_deviceAngularAcceleration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_deviceAngularAcceleration", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -351,21 +375,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >,
-                0usize,
-            >("get_deviceAngularVelocity")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "get_deviceAngularVelocity",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >,
+                        0usize,
+                    >("get_deviceAngularVelocity")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_deviceAngularVelocity", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -379,20 +405,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >,
-                0usize,
-            >("get_devicePosition")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "get_devicePosition", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >,
+                        0usize,
+                    >("get_devicePosition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_devicePosition", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -406,20 +435,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::QuaternionControl,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-                >,
-                0usize,
-            >("get_deviceRotation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "get_deviceRotation", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+                        >,
+                        0usize,
+                    >("get_deviceRotation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_deviceRotation", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::QuaternionControl,
@@ -433,20 +465,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::ButtonControl,
-                >,
-                0usize,
-            >("get_isTracked")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "get_isTracked", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+                        >,
+                        0usize,
+                    >("get_isTracked")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_isTracked", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -460,21 +495,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >,
-                0usize,
-            >("get_leftEyeAcceleration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "get_leftEyeAcceleration",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >,
+                        0usize,
+                    >("get_leftEyeAcceleration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_leftEyeAcceleration", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -488,21 +525,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >,
-                0usize,
-            >("get_leftEyeAngularAcceleration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_leftEyeAngularAcceleration", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >,
+                        0usize,
+                    >("get_leftEyeAngularAcceleration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_leftEyeAngularAcceleration", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -516,21 +555,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >,
-                0usize,
-            >("get_leftEyeAngularVelocity")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_leftEyeAngularVelocity", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >,
+                        0usize,
+                    >("get_leftEyeAngularVelocity")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_leftEyeAngularVelocity", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -544,21 +585,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >,
-                0usize,
-            >("get_leftEyePosition")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "get_leftEyePosition",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >,
+                        0usize,
+                    >("get_leftEyePosition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_leftEyePosition", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -572,21 +615,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::QuaternionControl,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-                >,
-                0usize,
-            >("get_leftEyeRotation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "get_leftEyeRotation",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+                        >,
+                        0usize,
+                    >("get_leftEyeRotation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_leftEyeRotation", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::QuaternionControl,
@@ -600,21 +645,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >,
-                0usize,
-            >("get_rightEyeAcceleration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "get_rightEyeAcceleration",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >,
+                        0usize,
+                    >("get_rightEyeAcceleration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_rightEyeAcceleration", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -628,21 +675,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >,
-                0usize,
-            >("get_rightEyeAngularAcceleration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_rightEyeAngularAcceleration", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >,
+                        0usize,
+                    >("get_rightEyeAngularAcceleration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_rightEyeAngularAcceleration", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -656,21 +705,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >,
-                0usize,
-            >("get_rightEyeAngularVelocity")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_rightEyeAngularVelocity", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >,
+                        0usize,
+                    >("get_rightEyeAngularVelocity")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_rightEyeAngularVelocity", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -684,21 +735,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >,
-                0usize,
-            >("get_rightEyePosition")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "get_rightEyePosition",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >,
+                        0usize,
+                    >("get_rightEyePosition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_rightEyePosition", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -712,21 +765,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::QuaternionControl,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-                >,
-                0usize,
-            >("get_rightEyeRotation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "get_rightEyeRotation",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+                        >,
+                        0usize,
+                    >("get_rightEyeRotation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_rightEyeRotation", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::QuaternionControl,
@@ -740,20 +795,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::IntegerControl,
-                >,
-                0usize,
-            >("get_trackingState")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "get_trackingState", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::IntegerControl,
+                        >,
+                        0usize,
+                    >("get_trackingState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_trackingState", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
@@ -767,20 +825,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::ButtonControl,
-                >,
-                0usize,
-            >("get_userPresence")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "get_userPresence", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+                        >,
+                        0usize,
+                    >("get_userPresence")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_userPresence", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -793,21 +854,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_centerEyeAcceleration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "set_centerEyeAcceleration",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_centerEyeAcceleration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_centerEyeAcceleration", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -820,21 +883,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_centerEyeAngularAcceleration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "set_centerEyeAngularAcceleration", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_centerEyeAngularAcceleration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_centerEyeAngularAcceleration", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -847,21 +912,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_centerEyeAngularVelocity")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "set_centerEyeAngularVelocity", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_centerEyeAngularVelocity")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_centerEyeAngularVelocity", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -874,21 +941,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_centerEyePosition")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "set_centerEyePosition",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_centerEyePosition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_centerEyePosition", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -901,21 +970,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::QuaternionControl,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_centerEyeRotation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "set_centerEyeRotation",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_centerEyeRotation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_centerEyeRotation", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -928,21 +999,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_deviceAcceleration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "set_deviceAcceleration",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_deviceAcceleration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_deviceAcceleration", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -955,21 +1028,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_deviceAngularAcceleration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "set_deviceAngularAcceleration", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_deviceAngularAcceleration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_deviceAngularAcceleration", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -982,21 +1057,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_deviceAngularVelocity")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "set_deviceAngularVelocity",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_deviceAngularVelocity")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_deviceAngularVelocity", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -1009,20 +1086,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_devicePosition")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "set_devicePosition", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_devicePosition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_devicePosition", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -1035,20 +1115,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::QuaternionControl,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_deviceRotation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "set_deviceRotation", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_deviceRotation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_deviceRotation", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -1061,20 +1144,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::ButtonControl,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_isTracked")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "set_isTracked", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_isTracked")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_isTracked", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -1087,21 +1173,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_leftEyeAcceleration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "set_leftEyeAcceleration",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_leftEyeAcceleration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_leftEyeAcceleration", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -1114,21 +1202,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_leftEyeAngularAcceleration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "set_leftEyeAngularAcceleration", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_leftEyeAngularAcceleration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_leftEyeAngularAcceleration", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -1141,21 +1231,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_leftEyeAngularVelocity")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "set_leftEyeAngularVelocity", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_leftEyeAngularVelocity")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_leftEyeAngularVelocity", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -1168,21 +1260,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_leftEyePosition")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "set_leftEyePosition",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_leftEyePosition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_leftEyePosition", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -1195,21 +1289,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::QuaternionControl,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_leftEyeRotation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "set_leftEyeRotation",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_leftEyeRotation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_leftEyeRotation", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -1222,21 +1318,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_rightEyeAcceleration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "set_rightEyeAcceleration",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_rightEyeAcceleration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_rightEyeAcceleration", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -1249,21 +1347,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_rightEyeAngularAcceleration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "set_rightEyeAngularAcceleration", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_rightEyeAngularAcceleration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_rightEyeAngularAcceleration", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -1276,21 +1376,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_rightEyeAngularVelocity")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "set_rightEyeAngularVelocity", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_rightEyeAngularVelocity")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_rightEyeAngularVelocity", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -1303,21 +1405,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::Vector3Control,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_rightEyePosition")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "set_rightEyePosition",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_rightEyePosition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_rightEyePosition", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -1330,21 +1434,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::QuaternionControl,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_rightEyeRotation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "set_rightEyeRotation",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_rightEyeRotation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_rightEyeRotation", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -1357,20 +1463,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::IntegerControl,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_trackingState")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "set_trackingState", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::IntegerControl,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_trackingState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_trackingState", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -1383,20 +1492,23 @@ impl crate::Unity::XR::Oculus::Input::OculusHMD {
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Input::OculusHMD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::ButtonControl,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_userPresence")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::XR::Oculus::Input::OculusHMD as
-                    quest_hook::libil2cpp::Type > ::class(), "set_userPresence", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_userPresence")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_userPresence", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

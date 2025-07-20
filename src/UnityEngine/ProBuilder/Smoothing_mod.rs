@@ -55,34 +55,38 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Smoothing as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IEnumerable_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Face,
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
-                        >,
-                    >,
-                    f32,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >("ApplySmoothingGroups")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Smoothing as
-                    quest_hook::libil2cpp::Type > ::class(), "ApplySmoothingGroups",
-                    4usize
-                )
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Face,
+                                    >,
+                                >,
+                            >,
+                            f32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    crate::UnityEngine::Vector3,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("ApplySmoothingGroups")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ApplySmoothingGroups", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (mesh, faces, angleThreshold, normals))?
@@ -98,31 +102,33 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
         >,
         angleThreshold: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Smoothing as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IEnumerable_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Face,
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
-                        >,
-                    >,
-                    f32,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("ApplySmoothingGroups")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Smoothing as
-                    quest_hook::libil2cpp::Type > ::class(), "ApplySmoothingGroups",
-                    3usize
-                )
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Face,
+                                    >,
+                                >,
+                            >,
+                            f32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("ApplySmoothingGroups")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ApplySmoothingGroups", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (mesh, faces, angleThreshold))?
@@ -141,34 +147,38 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Smoothing as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::WingedEdge,
-                    >,
-                    f32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::HashSet_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Face,
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    crate::UnityEngine::Vector3,
+                                >,
                             >,
-                        >,
-                    >,
-                ),
-                bool,
-                4usize,
-            >("FindSoftEdgesRecursive")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Smoothing as
-                    quest_hook::libil2cpp::Type > ::class(), "FindSoftEdgesRecursive",
-                    4usize
-                )
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::WingedEdge,
+                            >,
+                            f32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::HashSet_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Face,
+                                    >,
+                                >,
+                            >,
+                        ),
+                        bool,
+                        4usize,
+                    >("FindSoftEdgesRecursive")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FindSoftEdgesRecursive", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (normals, wing, angleThreshold, processed))?
@@ -181,24 +191,26 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
             crate::System::Collections::Generic::HashSet_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Smoothing as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::HashSet_1<i32>,
-                    >,
-                ),
-                i32,
-                2usize,
-            >("GetNextUnusedSmoothingGroup")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Smoothing as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "GetNextUnusedSmoothingGroup", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::HashSet_1<i32>,
+                            >,
+                        ),
+                        i32,
+                        2usize,
+                    >("GetNextUnusedSmoothingGroup")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetNextUnusedSmoothingGroup", 2usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (start, used))? };
         Ok(__cordl_ret.into())
@@ -206,34 +218,39 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
     pub fn GetUnusedSmoothingGroup(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Smoothing as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                >),
-                i32,
-                1usize,
-            >("GetUnusedSmoothingGroup")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Smoothing as
-                    quest_hook::libil2cpp::Type > ::class(), "GetUnusedSmoothingGroup",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >),
+                        i32,
+                        1usize,
+                    >("GetUnusedSmoothingGroup")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetUnusedSmoothingGroup", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (mesh))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsSmooth(index: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Smoothing as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(i32), bool, 1usize>("IsSmooth")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Smoothing as
-                    quest_hook::libil2cpp::Type > ::class(), "IsSmooth", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(i32), bool, 1usize>("IsSmooth")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsSmooth", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (index))? };
         Ok(__cordl_ret.into())
@@ -246,25 +263,30 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
         right: crate::UnityEngine::ProBuilder::EdgeLookup,
         threshold: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Smoothing as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-                    >,
-                    crate::UnityEngine::ProBuilder::EdgeLookup,
-                    crate::UnityEngine::ProBuilder::EdgeLookup,
-                    f32,
-                ),
-                bool,
-                4usize,
-            >("IsSoftEdge")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::Smoothing as
-                    quest_hook::libil2cpp::Type > ::class(), "IsSoftEdge", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    crate::UnityEngine::Vector3,
+                                >,
+                            >,
+                            crate::UnityEngine::ProBuilder::EdgeLookup,
+                            crate::UnityEngine::ProBuilder::EdgeLookup,
+                            f32,
+                        ),
+                        bool,
+                        4usize,
+                    >("IsSoftEdge")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsSoftEdge", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (normals, left, right, threshold))?

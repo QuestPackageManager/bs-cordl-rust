@@ -113,28 +113,31 @@ impl crate::UnityEngine::OverlapSphereCommand {
         maxHits: i32,
         dependsOn: crate::Unity::Jobs::JobHandle,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::OverlapSphereCommand as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::Unity::Collections::NativeArray_1<
-                        crate::UnityEngine::OverlapSphereCommand,
-                    >,
-                    crate::Unity::Collections::NativeArray_1<
-                        crate::UnityEngine::ColliderHit,
-                    >,
-                    i32,
-                    i32,
-                    crate::Unity::Jobs::JobHandle,
-                ),
-                crate::Unity::Jobs::JobHandle,
-                5usize,
-            >("ScheduleBatch")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::OverlapSphereCommand as
-                    quest_hook::libil2cpp::Type > ::class(), "ScheduleBatch", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::Unity::Collections::NativeArray_1<
+                                crate::UnityEngine::OverlapSphereCommand,
+                            >,
+                            crate::Unity::Collections::NativeArray_1<
+                                crate::UnityEngine::ColliderHit,
+                            >,
+                            i32,
+                            i32,
+                            crate::Unity::Jobs::JobHandle,
+                        ),
+                        crate::Unity::Jobs::JobHandle,
+                        5usize,
+                    >("ScheduleBatch")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ScheduleBatch", 5usize
+                        )
+                    })
             });
         let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
             method
@@ -156,29 +159,35 @@ impl crate::UnityEngine::OverlapSphereCommand {
         minCommandsPerJob: i32,
         maxHits: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::OverlapSphereCommand as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    i32,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    i32,
-                    i32,
-                    i32,
-                ),
-                crate::Unity::Jobs::JobHandle,
-                7usize,
-            >("ScheduleOverlapSphereBatch")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::OverlapSphereCommand as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "ScheduleOverlapSphereBatch", 7usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                            i32,
+                            i32,
+                        ),
+                        crate::Unity::Jobs::JobHandle,
+                        7usize,
+                    >("ScheduleOverlapSphereBatch")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ScheduleOverlapSphereBatch", 7usize
+                        )
+                    })
             });
         let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
             method
@@ -209,30 +218,38 @@ impl crate::UnityEngine::OverlapSphereCommand {
         maxHits: i32,
         ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::OverlapSphereCommand as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    i32,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    i32,
-                    i32,
-                    i32,
-                    quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
-                ),
-                quest_hook::libil2cpp::Void,
-                8usize,
-            >("ScheduleOverlapSphereBatch_Injected")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::OverlapSphereCommand as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "ScheduleOverlapSphereBatch_Injected", 8usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::Unity::Jobs::JobHandle,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        8usize,
+                    >("ScheduleOverlapSphereBatch_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ScheduleOverlapSphereBatch_Injected", 8usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -259,23 +276,26 @@ impl crate::UnityEngine::OverlapSphereCommand {
         radius: f32,
         queryParameters: crate::UnityEngine::QueryParameters,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::OverlapSphereCommand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::UnityEngine::PhysicsScene,
-                    crate::UnityEngine::Vector3,
-                    f32,
-                    crate::UnityEngine::QueryParameters,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::OverlapSphereCommand as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::PhysicsScene,
+                            crate::UnityEngine::Vector3,
+                            f32,
+                            crate::UnityEngine::QueryParameters,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -289,18 +309,25 @@ impl crate::UnityEngine::OverlapSphereCommand {
         radius: f32,
         queryParameters: crate::UnityEngine::QueryParameters,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::OverlapSphereCommand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::Vector3, f32, crate::UnityEngine::QueryParameters),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::OverlapSphereCommand as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::Vector3,
+                            f32,
+                            crate::UnityEngine::QueryParameters,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (point, radius, queryParameters))?
@@ -310,18 +337,21 @@ impl crate::UnityEngine::OverlapSphereCommand {
     pub fn get_physicsScene(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::PhysicsScene> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::OverlapSphereCommand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::PhysicsScene,
-                0usize,
-            >("get_physicsScene")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::OverlapSphereCommand as
-                    quest_hook::libil2cpp::Type > ::class(), "get_physicsScene", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::PhysicsScene,
+                        0usize,
+                    >("get_physicsScene")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_physicsScene", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::PhysicsScene = unsafe {
             method.invoke_unchecked(self, ())?
@@ -331,14 +361,17 @@ impl crate::UnityEngine::OverlapSphereCommand {
     pub fn get_point(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::OverlapSphereCommand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::UnityEngine::Vector3, 0usize>("get_point")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::OverlapSphereCommand as
-                    quest_hook::libil2cpp::Type > ::class(), "get_point", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), crate::UnityEngine::Vector3, 0usize>("get_point")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_point", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
             method.invoke_unchecked(self, ())?
@@ -346,14 +379,17 @@ impl crate::UnityEngine::OverlapSphereCommand {
         Ok(__cordl_ret.into())
     }
     pub fn get_radius(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::OverlapSphereCommand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_radius")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::OverlapSphereCommand as
-                    quest_hook::libil2cpp::Type > ::class(), "get_radius", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_radius")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_radius", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -362,18 +398,21 @@ impl crate::UnityEngine::OverlapSphereCommand {
         &mut self,
         value: crate::UnityEngine::PhysicsScene,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::OverlapSphereCommand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::PhysicsScene),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_physicsScene")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::OverlapSphereCommand as
-                    quest_hook::libil2cpp::Type > ::class(), "set_physicsScene", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::PhysicsScene),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_physicsScene")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_physicsScene", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -384,18 +423,21 @@ impl crate::UnityEngine::OverlapSphereCommand {
         &mut self,
         value: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::OverlapSphereCommand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::Vector3),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_point")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::OverlapSphereCommand as
-                    quest_hook::libil2cpp::Type > ::class(), "set_point", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::Vector3),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_point")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_point", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -406,14 +448,21 @@ impl crate::UnityEngine::OverlapSphereCommand {
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::OverlapSphereCommand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("set_radius")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::OverlapSphereCommand as
-                    quest_hook::libil2cpp::Type > ::class(), "set_radius", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (f32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_radius")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_radius", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

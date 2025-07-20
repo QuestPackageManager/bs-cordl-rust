@@ -46,20 +46,23 @@ impl crate::Org::BouncyCastle::Asn1::Asn1TaggedObjectParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Asn1::Asn1TaggedObjectParser as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (i32, bool),
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::IAsn1Convertible,
-                >,
-                2usize,
-            >("GetObjectParser")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Asn1::Asn1TaggedObjectParser as
-                    quest_hook::libil2cpp::Type > ::class(), "GetObjectParser", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i32, bool),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::IAsn1Convertible,
+                        >,
+                        2usize,
+                    >("GetObjectParser")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetObjectParser", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::IAsn1Convertible,
@@ -72,14 +75,17 @@ impl crate::Org::BouncyCastle::Asn1::Asn1TaggedObjectParser {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_TagNo(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Asn1::Asn1TaggedObjectParser as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("get_TagNo")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Asn1::Asn1TaggedObjectParser as
-                    quest_hook::libil2cpp::Type > ::class(), "get_TagNo", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("get_TagNo")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_TagNo", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

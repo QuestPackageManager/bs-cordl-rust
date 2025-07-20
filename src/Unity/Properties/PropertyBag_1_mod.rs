@@ -69,20 +69,23 @@ impl<
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::PropertyBag_1<
-            TContainer,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::Unity::Properties::ITypeVisitor>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("Accept")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::PropertyBag_1 < TContainer > as
-                    quest_hook::libil2cpp::Type > ::class(), "Accept", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Unity::Properties::ITypeVisitor,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Accept")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Accept", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (visitor))?
@@ -94,16 +97,17 @@ impl<
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::PropertyBag_1<
-            TContainer,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), TContainer, 0usize>("Instantiate")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::PropertyBag_1 < TContainer > as
-                    quest_hook::libil2cpp::Type > ::class(), "Instantiate", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), TContainer, 0usize>("Instantiate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Instantiate", 0usize
+                        )
+                    })
             });
         let __cordl_ret: TContainer = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -126,21 +130,23 @@ impl<
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::PropertyBag_1<
-            TContainer,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                TContainer,
-                0usize,
-            >("Unity.Properties.IConstructor<TContainer>.Instantiate")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::PropertyBag_1 < TContainer > as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "Unity.Properties.IConstructor<TContainer>.Instantiate", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        TContainer,
+                        0usize,
+                    >("Unity.Properties.IConstructor<TContainer>.Instantiate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "Unity.Properties.IConstructor<TContainer>.Instantiate",
+                            0usize
+                        )
+                    })
             });
         let __cordl_ret: TContainer = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -152,21 +158,22 @@ impl<
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::PropertyBag_1<
-            TContainer,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::Unity::Properties::InstantiationKind,
-                0usize,
-            >("Unity.Properties.IConstructor.get_InstantiationKind")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::PropertyBag_1 < TContainer > as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "Unity.Properties.IConstructor.get_InstantiationKind", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::Unity::Properties::InstantiationKind,
+                        0usize,
+                    >("Unity.Properties.IConstructor.get_InstantiationKind")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "Unity.Properties.IConstructor.get_InstantiationKind", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::Unity::Properties::InstantiationKind = unsafe {
             method.invoke_unchecked(self, ())?
@@ -180,21 +187,23 @@ impl<
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::PropertyBag_1<
-            TContainer,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("Unity.Properties.Internal.IPropertyBagRegister.Register")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::PropertyBag_1 < TContainer > as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "Unity.Properties.Internal.IPropertyBagRegister.Register", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("Unity.Properties.Internal.IPropertyBagRegister.Register")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "Unity.Properties.Internal.IPropertyBagRegister.Register",
+                            0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -206,16 +215,17 @@ impl<
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::PropertyBag_1<
-            TContainer,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::PropertyBag_1 < TContainer > as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -229,21 +239,21 @@ impl<
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::PropertyBag_1<
-            TContainer,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::Unity::Properties::InstantiationKind,
-                0usize,
-            >("get_InstantiationKind")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::PropertyBag_1 < TContainer > as
-                    quest_hook::libil2cpp::Type > ::class(), "get_InstantiationKind",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::Unity::Properties::InstantiationKind,
+                        0usize,
+                    >("get_InstantiationKind")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_InstantiationKind", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::Unity::Properties::InstantiationKind = unsafe {
             method.invoke_unchecked(self, ())?

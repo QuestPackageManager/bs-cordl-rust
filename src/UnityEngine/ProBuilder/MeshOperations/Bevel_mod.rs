@@ -54,32 +54,37 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::Bevel as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IList_1<
-                            crate::UnityEngine::ProBuilder::Edge,
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<
+                                    crate::UnityEngine::ProBuilder::Edge,
+                                >,
+                            >,
+                            f32,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Face,
+                                >,
+                            >,
                         >,
-                    >,
-                    f32,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-                    >,
-                >,
-                3usize,
-            >("BevelEdges")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::MeshOperations::Bevel as
-                    quest_hook::libil2cpp::Type > ::class(), "BevelEdges", 3usize
-                )
+                        3usize,
+                    >("BevelEdges")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BevelEdges", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
@@ -122,55 +127,58 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::Bevel as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IList_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Vertex,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Vertex,
+                                    >,
+                                >,
                             >,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::WingedEdge,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::WingedEdge,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::Dictionary_2<
-                            i32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::ProBuilder::SimpleTuple_2<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::UnityEngine::ProBuilder::FaceRebuildData,
-                                        >,
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::System::Collections::Generic::List_1<i32>,
+                                crate::UnityEngine::ProBuilder::WingedEdge,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::WingedEdge,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    i32,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Collections::Generic::List_1<
+                                            crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                                                quest_hook::libil2cpp::Gc<
+                                                    crate::UnityEngine::ProBuilder::FaceRebuildData,
+                                                >,
+                                                quest_hook::libil2cpp::Gc<
+                                                    crate::System::Collections::Generic::List_1<i32>,
+                                                >,
+                                            >,
                                         >,
                                     >,
                                 >,
                             >,
-                        >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<
+                        ),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ProBuilder::FaceRebuildData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::FaceRebuildData,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                4usize,
-            >("GetBridgeFaces")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::MeshOperations::Bevel as
-                    quest_hook::libil2cpp::Type > ::class(), "GetBridgeFaces", 4usize
-                )
+                        4usize,
+                    >("GetBridgeFaces")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetBridgeFaces", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
@@ -185,23 +193,26 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
         wing: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         common: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Edge> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::Bevel as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::WingedEdge,
-                    >,
-                    i32,
-                ),
-                crate::UnityEngine::ProBuilder::Edge,
-                2usize,
-            >("GetLeadingEdge")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::MeshOperations::Bevel as
-                    quest_hook::libil2cpp::Type > ::class(), "GetLeadingEdge", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::WingedEdge,
+                            >,
+                            i32,
+                        ),
+                        crate::UnityEngine::ProBuilder::Edge,
+                        2usize,
+                    >("GetLeadingEdge")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetLeadingEdge", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = unsafe {
             method.invoke_unchecked((), (wing, common))?
@@ -217,30 +228,33 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
         we: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         amount: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::Bevel as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IList_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Vertex,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Vertex,
+                                    >,
+                                >,
                             >,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::WingedEdge,
-                    >,
-                    f32,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("SlideEdge")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ProBuilder::MeshOperations::Bevel as
-                    quest_hook::libil2cpp::Type > ::class(), "SlideEdge", 3usize
-                )
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::WingedEdge,
+                            >,
+                            f32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("SlideEdge")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SlideEdge", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (vertices, we, amount))?

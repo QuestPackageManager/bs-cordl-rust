@@ -63,41 +63,46 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper {
             crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IDictionary_2<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IDictionary_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::UIElements::StyleComplexSelector,
+                                    >,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::StyleMatchingContext,
+                            >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleComplexSelector,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
                             >,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::List_1<
-                            crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::UIElements::StyleMatchingContext,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >("FastLookup")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "FastLookup", 5usize
-                )
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("FastLookup")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FastLookup", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -116,28 +121,31 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper {
         >,
         parentSheetIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::UIElements::StyleMatchingContext,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::List_1<
-                            crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
-                        >,
-                    >,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("FindMatches")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "FindMatches", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::StyleMatchingContext,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
+                                >,
+                            >,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("FindMatches")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FindMatches", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (context, matchedSelectors, parentSheetIndex))?
@@ -158,33 +166,36 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::UIElements::VisualElement,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::UIElements::StyleComplexSelector,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Action_2<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::UIElements::VisualElement,
                             >,
-                            crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
-                        >,
-                    >,
-                ),
-                bool,
-                3usize,
-            >("MatchRightToLeft")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "MatchRightToLeft", 3usize
-                )
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::StyleComplexSelector,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Action_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::UIElements::VisualElement,
+                                    >,
+                                    crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
+                                >,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("MatchRightToLeft")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "MatchRightToLeft", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (element, complexSelector, processResult))?
@@ -201,25 +212,28 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::UIElements::VisualElement,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::UIElements::StyleSelector,
-                    >,
-                ),
-                crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
-                2usize,
-            >("MatchesSelector")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "MatchesSelector", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::StyleSelector,
+                            >,
+                        ),
+                        crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
+                        2usize,
+                    >("MatchesSelector")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "MatchesSelector", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo = unsafe {
             method.invoke_unchecked((), (element, selector))?

@@ -77,27 +77,30 @@ impl crate::System::Security::AccessControl::FileSystemAccessRule {
         propagationFlags: crate::System::Security::AccessControl::PropagationFlags,
         _cordl_type: crate::System::Security::AccessControl::AccessControlType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::FileSystemAccessRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Security::Principal::IdentityReference,
-                    >,
-                    crate::System::Security::AccessControl::FileSystemRights,
-                    bool,
-                    crate::System::Security::AccessControl::InheritanceFlags,
-                    crate::System::Security::AccessControl::PropagationFlags,
-                    crate::System::Security::AccessControl::AccessControlType,
-                ),
-                quest_hook::libil2cpp::Void,
-                6usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Security::AccessControl::FileSystemAccessRule as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Security::Principal::IdentityReference,
+                            >,
+                            crate::System::Security::AccessControl::FileSystemRights,
+                            bool,
+                            crate::System::Security::AccessControl::InheritanceFlags,
+                            crate::System::Security::AccessControl::PropagationFlags,
+                            crate::System::Security::AccessControl::AccessControlType,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -120,19 +123,21 @@ impl crate::System::Security::AccessControl::FileSystemAccessRule {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Security::AccessControl::FileSystemRights,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::FileSystemAccessRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Security::AccessControl::FileSystemRights,
-                0usize,
-            >("get_FileSystemRights")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Security::AccessControl::FileSystemAccessRule as
-                    quest_hook::libil2cpp::Type > ::class(), "get_FileSystemRights",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Security::AccessControl::FileSystemRights,
+                        0usize,
+                    >("get_FileSystemRights")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_FileSystemRights", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Security::AccessControl::FileSystemRights = unsafe {
             method.invoke_unchecked(self, ())?

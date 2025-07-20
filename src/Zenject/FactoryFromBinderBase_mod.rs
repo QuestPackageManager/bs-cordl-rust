@@ -55,18 +55,23 @@ impl crate::Zenject::FactoryFromBinderBase {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::ByRefMut<crate::System::Guid>),
-                quest_hook::libil2cpp::Gc<crate::Zenject::ConcreteBinderGeneric_1<T>>,
-                1usize,
-            >("CreateIFactoryBinder")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "CreateIFactoryBinder", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<crate::System::Guid>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConcreteBinderGeneric_1<T>,
+                        >,
+                        1usize,
+                    >("CreateIFactoryBinder")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateIFactoryBinder", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConcreteBinderGeneric_1<T>,
@@ -81,20 +86,23 @@ impl crate::Zenject::FactoryFromBinderBase {
             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
-                quest_hook::libil2cpp::Gc<
-                    crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
-                >,
-                1usize,
-            >("FromComponentInNewPrefab")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "FromComponentInNewPrefab", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+                        >,
+                        1usize,
+                    >("FromComponentInNewPrefab")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromComponentInNewPrefab", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -109,20 +117,23 @@ impl crate::Zenject::FactoryFromBinderBase {
             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Gc<
-                    crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
-                >,
-                1usize,
-            >("FromComponentInNewPrefabResource")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "FromComponentInNewPrefabResource", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+                        >,
+                        1usize,
+                    >("FromComponentInNewPrefabResource")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromComponentInNewPrefabResource", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -134,18 +145,23 @@ impl crate::Zenject::FactoryFromBinderBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
-                0usize,
-            >("FromComponentOnRoot")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "FromComponentOnRoot", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConditionCopyNonLazyBinder,
+                        >,
+                        0usize,
+                    >("FromComponentOnRoot")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromComponentOnRoot", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
@@ -163,23 +179,28 @@ impl crate::Zenject::FactoryFromBinderBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Func_2<
-                        quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                    >,
-                >),
-                quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
-                1usize,
-            >("FromComponentOn")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "FromComponentOn", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConditionCopyNonLazyBinder,
+                        >,
+                        1usize,
+                    >("FromComponentOn")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromComponentOn", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
@@ -192,18 +213,23 @@ impl crate::Zenject::FactoryFromBinderBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
-                quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
-                1usize,
-            >("FromComponentOn")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "FromComponentOn", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConditionCopyNonLazyBinder,
+                        >,
+                        1usize,
+                    >("FromComponentOn")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromComponentOn", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
@@ -216,18 +242,23 @@ impl crate::Zenject::FactoryFromBinderBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
-                1usize,
-            >("FromInstance")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "FromInstance", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConditionCopyNonLazyBinder,
+                        >,
+                        1usize,
+                    >("FromInstance")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromInstance", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
@@ -239,18 +270,23 @@ impl crate::Zenject::FactoryFromBinderBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
-                0usize,
-            >("FromNew")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "FromNew", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConditionCopyNonLazyBinder,
+                        >,
+                        0usize,
+                    >("FromNew")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromNew", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
@@ -265,20 +301,23 @@ impl crate::Zenject::FactoryFromBinderBase {
             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
-                quest_hook::libil2cpp::Gc<
-                    crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
-                >,
-                1usize,
-            >("FromNewComponentOnNewPrefab")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "FromNewComponentOnNewPrefab", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+                        >,
+                        1usize,
+                    >("FromNewComponentOnNewPrefab")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromNewComponentOnNewPrefab", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -293,20 +332,23 @@ impl crate::Zenject::FactoryFromBinderBase {
             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Gc<
-                    crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
-                >,
-                1usize,
-            >("FromNewComponentOnNewPrefabResource")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "FromNewComponentOnNewPrefabResource", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+                        >,
+                        1usize,
+                    >("FromNewComponentOnNewPrefabResource")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromNewComponentOnNewPrefabResource", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -324,23 +366,28 @@ impl crate::Zenject::FactoryFromBinderBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Func_2<
-                        quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                    >,
-                >),
-                quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
-                1usize,
-            >("FromNewComponentOn")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "FromNewComponentOn", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConditionCopyNonLazyBinder,
+                        >,
+                        1usize,
+                    >("FromNewComponentOn")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromNewComponentOn", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
@@ -353,18 +400,23 @@ impl crate::Zenject::FactoryFromBinderBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
-                quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
-                1usize,
-            >("FromNewComponentOn")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "FromNewComponentOn", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConditionCopyNonLazyBinder,
+                        >,
+                        1usize,
+                    >("FromNewComponentOn")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromNewComponentOn", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
@@ -377,18 +429,23 @@ impl crate::Zenject::FactoryFromBinderBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
-                1usize,
-            >("FromNewScriptableObjectResource")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "FromNewScriptableObjectResource", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConditionCopyNonLazyBinder,
+                        >,
+                        1usize,
+                    >("FromNewScriptableObjectResource")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromNewScriptableObjectResource", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
@@ -400,18 +457,23 @@ impl crate::Zenject::FactoryFromBinderBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
-                0usize,
-            >("FromResolve")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "FromResolve", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConditionCopyNonLazyBinder,
+                        >,
+                        0usize,
+                    >("FromResolve")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromResolve", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
@@ -424,18 +486,23 @@ impl crate::Zenject::FactoryFromBinderBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
-                1usize,
-            >("FromResolve")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "FromResolve", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConditionCopyNonLazyBinder,
+                        >,
+                        1usize,
+                    >("FromResolve")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromResolve", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
@@ -448,18 +515,23 @@ impl crate::Zenject::FactoryFromBinderBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
-                1usize,
-            >("FromResource")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "FromResource", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConditionCopyNonLazyBinder,
+                        >,
+                        1usize,
+                    >("FromResource")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromResource", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
@@ -472,18 +544,23 @@ impl crate::Zenject::FactoryFromBinderBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
-                1usize,
-            >("FromScriptableObjectResource")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "FromScriptableObjectResource", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConditionCopyNonLazyBinder,
+                        >,
+                        1usize,
+                    >("FromScriptableObjectResource")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FromScriptableObjectResource", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
@@ -511,18 +588,21 @@ impl crate::Zenject::FactoryFromBinderBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>),
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                1usize,
-            >("<FromComponentOnRoot>b__25_0")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "<FromComponentOnRoot>b__25_0", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>),
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                        1usize,
+                    >("<FromComponentOnRoot>b__25_0")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "<FromComponentOnRoot>b__25_0", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
             method.invoke_unchecked(self, (ctx))?
@@ -535,18 +615,21 @@ impl crate::Zenject::FactoryFromBinderBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
-                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-                1usize,
-            >("<.ctor>b__0_0")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "<.ctor>b__0_0", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
+                        quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+                        1usize,
+                    >("<.ctor>b__0_0")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "<.ctor>b__0_0", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider> = unsafe {
             method.invoke_unchecked(self, (container))?
@@ -560,23 +643,26 @@ impl crate::Zenject::FactoryFromBinderBase {
         bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
         factoryBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                    quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
-                    quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), ".ctor", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -596,22 +682,25 @@ impl crate::Zenject::FactoryFromBinderBase {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IEnumerable_1<
-                        quest_hook::libil2cpp::Gc<crate::System::Type>,
-                    >,
-                >,
-                0usize,
-            >("get_AllParentTypes")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "get_AllParentTypes", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
+                        >,
+                        0usize,
+                    >("get_AllParentTypes")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_AllParentTypes", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
@@ -625,18 +714,21 @@ impl crate::Zenject::FactoryFromBinderBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                0usize,
-            >("get_BindContainer")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "get_BindContainer", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        0usize,
+                    >("get_BindContainer")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_BindContainer", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -646,18 +738,21 @@ impl crate::Zenject::FactoryFromBinderBase {
     pub fn get_ContractType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                0usize,
-            >("get_ContractType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "get_ContractType", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        0usize,
+                    >("get_ContractType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_ContractType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -669,18 +764,21 @@ impl crate::Zenject::FactoryFromBinderBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
-                0usize,
-            >("get_FactoryBindInfo")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "get_FactoryBindInfo", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
+                        0usize,
+                    >("get_FactoryBindInfo")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_FactoryBindInfo", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -697,23 +795,26 @@ impl crate::Zenject::FactoryFromBinderBase {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Func_2<
-                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                        quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-                    >,
-                >,
-                0usize,
-            >("get_ProviderFunc")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "get_ProviderFunc", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+                            >,
+                        >,
+                        0usize,
+                    >("get_ProviderFunc")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_ProviderFunc", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Func_2<
@@ -727,18 +828,21 @@ impl crate::Zenject::FactoryFromBinderBase {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_BindContainer")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "set_BindContainer", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_BindContainer")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_BindContainer", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -749,18 +853,21 @@ impl crate::Zenject::FactoryFromBinderBase {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Type>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_ContractType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "set_ContractType", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_ContractType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_ContractType", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -771,18 +878,21 @@ impl crate::Zenject::FactoryFromBinderBase {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_FactoryBindInfo")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "set_FactoryBindInfo", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_FactoryBindInfo")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_FactoryBindInfo", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -798,23 +908,26 @@ impl crate::Zenject::FactoryFromBinderBase {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Func_2<
-                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                        quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-                    >,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_ProviderFunc")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryFromBinderBase as quest_hook::libil2cpp::Type
-                    > ::class(), "set_ProviderFunc", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_ProviderFunc")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_ProviderFunc", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

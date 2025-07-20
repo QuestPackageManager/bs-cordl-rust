@@ -67,33 +67,46 @@ impl crate::GlobalNamespace::PerformanceToolLauncher {
             crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PerformanceToolLauncher as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsManager>,
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainCamera>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::RecPlayBehaviour_State,
-                    >,
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongController>,
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::GameplayCoreSceneSetupData,
-                    >,
-                    crate::System::Nullable_1<
-                        crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                8usize,
-            >("Initialize")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::PerformanceToolLauncher as
-                    quest_hook::libil2cpp::Type > ::class(), "Initialize", 8usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SettingsManager,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::PlayerDataModel,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MainCamera,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::RecPlayBehaviour_State,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SongController,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IGamePause,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::GameplayCoreSceneSetupData,
+                            >,
+                            crate::System::Nullable_1<
+                                crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        8usize,
+                    >("Initialize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Initialize", 8usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -124,23 +137,28 @@ impl crate::GlobalNamespace::PerformanceToolLauncher {
         recorder: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PerformanceRecorder>,
         songController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PerformanceToolLauncher as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::PerformanceRecorder,
-                    >,
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongController>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("Run")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::PerformanceToolLauncher as
-                    quest_hook::libil2cpp::Type > ::class(), "Run", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::PerformanceRecorder,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SongController,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("Run")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Run", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (recorder, songController))?
@@ -150,14 +168,17 @@ impl crate::GlobalNamespace::PerformanceToolLauncher {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PerformanceToolLauncher as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::PerformanceToolLauncher as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

@@ -56,27 +56,30 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DirectorControlPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::Playables::PlayableGraph,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::Playables::PlayableDirector,
-                    >,
-                ),
-                crate::UnityEngine::Playables::ScriptPlayable_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::Timeline::DirectorControlPlayable,
-                    >,
-                >,
-                2usize,
-            >("Create")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::DirectorControlPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "Create", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Playables::PlayableGraph,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Playables::PlayableDirector,
+                            >,
+                        ),
+                        crate::UnityEngine::Playables::ScriptPlayable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Timeline::DirectorControlPlayable,
+                            >,
+                        >,
+                        2usize,
+                    >("Create")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Create", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
             quest_hook::libil2cpp::Gc<
@@ -90,22 +93,24 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         playable: crate::UnityEngine::Playables::Playable,
         info: crate::UnityEngine::Playables::FrameData,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DirectorControlPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::UnityEngine::Playables::Playable,
-                    crate::UnityEngine::Playables::FrameData,
-                ),
-                bool,
-                2usize,
-            >("DetectDiscontinuity")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::DirectorControlPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "DetectDiscontinuity",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::Playables::Playable,
+                            crate::UnityEngine::Playables::FrameData,
+                        ),
+                        bool,
+                        2usize,
+                    >("DetectDiscontinuity")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "DetectDiscontinuity", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (playable, info))?
@@ -116,18 +121,21 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         &mut self,
         playable: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DirectorControlPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::Playables::Playable),
-                bool,
-                1usize,
-            >("DetectOutOfSync")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::DirectorControlPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "DetectOutOfSync", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::Playables::Playable),
+                        bool,
+                        1usize,
+                    >("DetectOutOfSync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "DetectOutOfSync", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (playable))? };
         Ok(__cordl_ret.into())
@@ -144,21 +152,24 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         playable: crate::UnityEngine::Playables::Playable,
         info: crate::UnityEngine::Playables::FrameData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DirectorControlPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::UnityEngine::Playables::Playable,
-                    crate::UnityEngine::Playables::FrameData,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("OnBehaviourPause")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::DirectorControlPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "OnBehaviourPause", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::Playables::Playable,
+                            crate::UnityEngine::Playables::FrameData,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("OnBehaviourPause")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "OnBehaviourPause", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (playable, info))?
@@ -170,21 +181,24 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         playable: crate::UnityEngine::Playables::Playable,
         info: crate::UnityEngine::Playables::FrameData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DirectorControlPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::UnityEngine::Playables::Playable,
-                    crate::UnityEngine::Playables::FrameData,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("OnBehaviourPlay")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::DirectorControlPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "OnBehaviourPlay", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::Playables::Playable,
+                            crate::UnityEngine::Playables::FrameData,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("OnBehaviourPlay")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "OnBehaviourPlay", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (playable, info))?
@@ -195,18 +209,21 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         &mut self,
         playable: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DirectorControlPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::Playables::Playable),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("OnPlayableDestroy")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::DirectorControlPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "OnPlayableDestroy", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::Playables::Playable),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("OnPlayableDestroy")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "OnPlayableDestroy", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (playable))?
@@ -218,21 +235,24 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         playable: crate::UnityEngine::Playables::Playable,
         info: crate::UnityEngine::Playables::FrameData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DirectorControlPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::UnityEngine::Playables::Playable,
-                    crate::UnityEngine::Playables::FrameData,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("PrepareFrame")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::DirectorControlPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "PrepareFrame", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::Playables::Playable,
+                            crate::UnityEngine::Playables::FrameData,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("PrepareFrame")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PrepareFrame", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (playable, info))?
@@ -245,22 +265,27 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         info: crate::UnityEngine::Playables::FrameData,
         playerData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DirectorControlPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::UnityEngine::Playables::Playable,
-                    crate::UnityEngine::Playables::FrameData,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("ProcessFrame")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::DirectorControlPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "ProcessFrame", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::Playables::Playable,
+                            crate::UnityEngine::Playables::FrameData,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("ProcessFrame")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ProcessFrame", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (playable, info, playerData))?
@@ -271,14 +296,21 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         &mut self,
         speed: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DirectorControlPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>("SyncSpeed")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::DirectorControlPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "SyncSpeed", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (f64),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SyncSpeed")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SyncSpeed", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (speed))?
@@ -290,18 +322,21 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         graph: crate::UnityEngine::Playables::PlayableGraph,
         _cordl_time: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DirectorControlPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::Playables::PlayableGraph, f64),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SyncStart")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::DirectorControlPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "SyncStart", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::Playables::PlayableGraph, f64),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SyncStart")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SyncStart", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (graph, _cordl_time))?
@@ -313,18 +348,21 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         graph: crate::UnityEngine::Playables::PlayableGraph,
         _cordl_time: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DirectorControlPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::Playables::PlayableGraph, f64),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SyncStop")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::DirectorControlPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "SyncStop", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::Playables::PlayableGraph, f64),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SyncStop")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SyncStop", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (graph, _cordl_time))?
@@ -335,18 +373,21 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         &mut self,
         playable: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DirectorControlPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::Playables::Playable),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("UpdateTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::DirectorControlPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "UpdateTime", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::Playables::Playable),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("UpdateTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UpdateTime", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (playable))?
@@ -356,14 +397,17 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DirectorControlPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::DirectorControlPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

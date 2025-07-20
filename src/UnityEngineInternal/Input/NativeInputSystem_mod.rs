@@ -40,14 +40,17 @@ impl std::ops::DerefMut for crate::UnityEngineInternal::Input::NativeInputSystem
 #[cfg(feature = "UnityEngineInternal+Input+NativeInputSystem")]
 impl crate::UnityEngineInternal::Input::NativeInputSystem {
     pub fn AllocateDeviceId() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngineInternal::Input::NativeInputSystem as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), i32, 0usize>("AllocateDeviceId")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngineInternal::Input::NativeInputSystem as
-                    quest_hook::libil2cpp::Type > ::class(), "AllocateDeviceId", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(), i32, 0usize>("AllocateDeviceId")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AllocateDeviceId", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -58,18 +61,21 @@ impl crate::UnityEngineInternal::Input::NativeInputSystem {
         data: crate::System::IntPtr,
         sizeInBytes: i32,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngineInternal::Input::NativeInputSystem as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i32, i32, crate::System::IntPtr, i32),
-                i64,
-                4usize,
-            >("IOCTL")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngineInternal::Input::NativeInputSystem as
-                    quest_hook::libil2cpp::Type > ::class(), "IOCTL", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32, i32, crate::System::IntPtr, i32),
+                        i64,
+                        4usize,
+                    >("IOCTL")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IOCTL", 4usize
+                        )
+                    })
             });
         let __cordl_ret: i64 = unsafe {
             method.invoke_unchecked((), (deviceId, code, data, sizeInBytes))?
@@ -79,18 +85,21 @@ impl crate::UnityEngineInternal::Input::NativeInputSystem {
     pub fn NotifyBeforeUpdate(
         updateType: crate::UnityEngineInternal::Input::NativeInputUpdateType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngineInternal::Input::NativeInputSystem as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngineInternal::Input::NativeInputUpdateType),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("NotifyBeforeUpdate")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngineInternal::Input::NativeInputSystem as
-                    quest_hook::libil2cpp::Type > ::class(), "NotifyBeforeUpdate", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngineInternal::Input::NativeInputUpdateType),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("NotifyBeforeUpdate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NotifyBeforeUpdate", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (updateType))?
@@ -101,19 +110,26 @@ impl crate::UnityEngineInternal::Input::NativeInputSystem {
         deviceId: i32,
         deviceDescriptor: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngineInternal::Input::NativeInputSystem as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i32, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("NotifyDeviceDiscovered")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngineInternal::Input::NativeInputSystem as
-                    quest_hook::libil2cpp::Type > ::class(), "NotifyDeviceDiscovered",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("NotifyDeviceDiscovered")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NotifyDeviceDiscovered", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (deviceId, deviceDescriptor))?
@@ -124,21 +140,24 @@ impl crate::UnityEngineInternal::Input::NativeInputSystem {
         updateType: crate::UnityEngineInternal::Input::NativeInputUpdateType,
         eventBuffer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngineInternal::Input::NativeInputSystem as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngineInternal::Input::NativeInputUpdateType,
-                    crate::System::IntPtr,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("NotifyUpdate")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngineInternal::Input::NativeInputSystem as
-                    quest_hook::libil2cpp::Type > ::class(), "NotifyUpdate", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngineInternal::Input::NativeInputUpdateType,
+                            crate::System::IntPtr,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("NotifyUpdate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NotifyUpdate", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (updateType, eventBuffer))?
@@ -148,18 +167,21 @@ impl crate::UnityEngineInternal::Input::NativeInputSystem {
     pub fn QueueInputEvent(
         inputEvent: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngineInternal::Input::NativeInputSystem as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::IntPtr),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("QueueInputEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngineInternal::Input::NativeInputSystem as
-                    quest_hook::libil2cpp::Type > ::class(), "QueueInputEvent", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("QueueInputEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "QueueInputEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (inputEvent))?
@@ -169,19 +191,21 @@ impl crate::UnityEngineInternal::Input::NativeInputSystem {
     pub fn SetPollingFrequency(
         hertz: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngineInternal::Input::NativeInputSystem as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (f32),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("SetPollingFrequency")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngineInternal::Input::NativeInputSystem as
-                    quest_hook::libil2cpp::Type > ::class(), "SetPollingFrequency",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (f32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetPollingFrequency")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetPollingFrequency", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (hertz))?
@@ -192,21 +216,24 @@ impl crate::UnityEngineInternal::Input::NativeInputSystem {
         updateType: crate::UnityEngineInternal::Input::NativeInputUpdateType,
         retval: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngineInternal::Input::NativeInputSystem as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngineInternal::Input::NativeInputUpdateType,
-                    quest_hook::libil2cpp::ByRefMut<bool>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("ShouldRunUpdate")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngineInternal::Input::NativeInputSystem as
-                    quest_hook::libil2cpp::Type > ::class(), "ShouldRunUpdate", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngineInternal::Input::NativeInputUpdateType,
+                            quest_hook::libil2cpp::ByRefMut<bool>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("ShouldRunUpdate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ShouldRunUpdate", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (updateType, retval))?
@@ -216,18 +243,21 @@ impl crate::UnityEngineInternal::Input::NativeInputSystem {
     pub fn Update(
         updateType: crate::UnityEngineInternal::Input::NativeInputUpdateType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngineInternal::Input::NativeInputSystem as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngineInternal::Input::NativeInputUpdateType),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("Update")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngineInternal::Input::NativeInputSystem as
-                    quest_hook::libil2cpp::Type > ::class(), "Update", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngineInternal::Input::NativeInputUpdateType),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Update")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Update", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (updateType))?
@@ -235,14 +265,17 @@ impl crate::UnityEngineInternal::Input::NativeInputSystem {
         Ok(__cordl_ret.into())
     }
     pub fn get_currentTime() -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngineInternal::Input::NativeInputSystem as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), f64, 0usize>("get_currentTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngineInternal::Input::NativeInputSystem as
-                    quest_hook::libil2cpp::Type > ::class(), "get_currentTime", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(), f64, 0usize>("get_currentTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_currentTime", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -250,19 +283,22 @@ impl crate::UnityEngineInternal::Input::NativeInputSystem {
     pub fn get_currentTimeOffsetToRealtimeSinceStartup() -> quest_hook::libil2cpp::Result<
         f64,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngineInternal::Input::NativeInputSystem as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                f64,
-                0usize,
-            >("get_currentTimeOffsetToRealtimeSinceStartup")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngineInternal::Input::NativeInputSystem as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_currentTimeOffsetToRealtimeSinceStartup", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        f64,
+                        0usize,
+                    >("get_currentTimeOffsetToRealtimeSinceStartup")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_currentTimeOffsetToRealtimeSinceStartup",
+                            0usize
+                        )
+                    })
             });
         let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -275,24 +311,28 @@ impl crate::UnityEngineInternal::Input::NativeInputSystem {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngineInternal::Input::NativeInputSystem as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Action_2<
-                        i32,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
-                0usize,
-            >("get_onDeviceDiscovered")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngineInternal::Input::NativeInputSystem as
-                    quest_hook::libil2cpp::Type > ::class(), "get_onDeviceDiscovered",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Action_2<
+                                i32,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                        >,
+                        0usize,
+                    >("get_onDeviceDiscovered")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_onDeviceDiscovered", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Action_2<
@@ -305,19 +345,21 @@ impl crate::UnityEngineInternal::Input::NativeInputSystem {
     pub fn set_hasDeviceDiscoveredCallback(
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngineInternal::Input::NativeInputSystem as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (bool),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_hasDeviceDiscoveredCallback")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngineInternal::Input::NativeInputSystem as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "set_hasDeviceDiscoveredCallback", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_hasDeviceDiscoveredCallback")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_hasDeviceDiscoveredCallback", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (value))?
@@ -332,24 +374,28 @@ impl crate::UnityEngineInternal::Input::NativeInputSystem {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngineInternal::Input::NativeInputSystem as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_2<
-                        i32,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_onDeviceDiscovered")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngineInternal::Input::NativeInputSystem as
-                    quest_hook::libil2cpp::Type > ::class(), "set_onDeviceDiscovered",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_2<
+                                i32,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_onDeviceDiscovered")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_onDeviceDiscovered", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (value))?

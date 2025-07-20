@@ -62,18 +62,21 @@ impl crate::UnityEngine::UIElements::TextureRegistry {
         &mut self,
         tex: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TextureId> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::TextureRegistry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>),
-                crate::UnityEngine::UIElements::TextureId,
-                1usize,
-            >("Acquire")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::TextureRegistry as
-                    quest_hook::libil2cpp::Type > ::class(), "Acquire", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>),
+                        crate::UnityEngine::UIElements::TextureId,
+                        1usize,
+                    >("Acquire")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Acquire", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::TextureId = unsafe {
             method.invoke_unchecked(self, (tex))?
@@ -85,18 +88,21 @@ impl crate::UnityEngine::UIElements::TextureRegistry {
         texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         dynamic: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TextureId> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::TextureRegistry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>, bool),
-                crate::UnityEngine::UIElements::TextureId,
-                2usize,
-            >("AllocAndAcquire")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::TextureRegistry as
-                    quest_hook::libil2cpp::Type > ::class(), "AllocAndAcquire", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>, bool),
+                        crate::UnityEngine::UIElements::TextureId,
+                        2usize,
+                    >("AllocAndAcquire")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AllocAndAcquire", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::TextureId = unsafe {
             method.invoke_unchecked(self, (texture, dynamic))?
@@ -106,19 +112,21 @@ impl crate::UnityEngine::UIElements::TextureRegistry {
     pub fn AllocAndAcquireDynamic(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TextureId> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::TextureRegistry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::UIElements::TextureId,
-                0usize,
-            >("AllocAndAcquireDynamic")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::TextureRegistry as
-                    quest_hook::libil2cpp::Type > ::class(), "AllocAndAcquireDynamic",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::UIElements::TextureId,
+                        0usize,
+                    >("AllocAndAcquireDynamic")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AllocAndAcquireDynamic", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::TextureId = unsafe {
             method.invoke_unchecked(self, ())?
@@ -131,18 +139,21 @@ impl crate::UnityEngine::UIElements::TextureRegistry {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::TextureRegistry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::UIElements::TextureId),
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                1usize,
-            >("GetTexture")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::TextureRegistry as
-                    quest_hook::libil2cpp::Type > ::class(), "GetTexture", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::UIElements::TextureId),
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                        1usize,
+                    >("GetTexture")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetTexture", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> = unsafe {
             method.invoke_unchecked(self, (id))?
@@ -160,18 +171,21 @@ impl crate::UnityEngine::UIElements::TextureRegistry {
         &mut self,
         id: crate::UnityEngine::UIElements::TextureId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::TextureRegistry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::UIElements::TextureId),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("Release")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::TextureRegistry as
-                    quest_hook::libil2cpp::Type > ::class(), "Release", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::UIElements::TextureId),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Release")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Release", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (id))?
@@ -183,21 +197,24 @@ impl crate::UnityEngine::UIElements::TextureRegistry {
         id: crate::UnityEngine::UIElements::TextureId,
         texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::TextureRegistry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::UnityEngine::UIElements::TextureId,
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("UpdateDynamic")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::TextureRegistry as
-                    quest_hook::libil2cpp::Type > ::class(), "UpdateDynamic", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::UIElements::TextureId,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("UpdateDynamic")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UpdateDynamic", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (id, texture))?
@@ -207,14 +224,17 @@ impl crate::UnityEngine::UIElements::TextureRegistry {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::TextureRegistry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::TextureRegistry as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -224,20 +244,23 @@ impl crate::UnityEngine::UIElements::TextureRegistry {
     pub fn get_instance() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextureRegistry>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::TextureRegistry as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::TextureRegistry,
-                >,
-                0usize,
-            >("get_instance")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::TextureRegistry as
-                    quest_hook::libil2cpp::Type > ::class(), "get_instance", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::TextureRegistry,
+                        >,
+                        0usize,
+                    >("get_instance")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_instance", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::TextureRegistry,

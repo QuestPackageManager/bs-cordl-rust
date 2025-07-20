@@ -104,19 +104,17 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LocalMultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(TType), TState, 1usize>("GetState")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::LocalMultiplayerSyncState_3 < TStateTable,
-                    TType, TState > as quest_hook::libil2cpp::Type > ::class(),
-                    "GetState", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(TType), TState, 1usize>("GetState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetState", 1usize
+                        )
+                    })
             });
         let __cordl_ret: TState = unsafe {
             method.invoke_unchecked(self, (_cordl_type))?
@@ -179,19 +177,21 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LocalMultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>("SetCurrentTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::LocalMultiplayerSyncState_3 < TStateTable,
-                    TType, TState > as quest_hook::libil2cpp::Type > ::class(),
-                    "SetCurrentTime", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i64),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetCurrentTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetCurrentTime", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (_cordl_time))?
@@ -209,19 +209,17 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LocalMultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SetDirty")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::LocalMultiplayerSyncState_3 < TStateTable,
-                    TType, TState > as quest_hook::libil2cpp::Type > ::class(),
-                    "SetDirty", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SetDirty")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetDirty", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -241,23 +239,21 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LocalMultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (TType, TState),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SetState")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::LocalMultiplayerSyncState_3 < TStateTable,
-                    TType, TState > as quest_hook::libil2cpp::Type > ::class(),
-                    "SetState", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (TType, TState),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetState", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (_cordl_type, state))?
@@ -279,26 +275,26 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LocalMultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPacketPool_1<T>>,
-                    quest_hook::libil2cpp::ByRefMut<T>,
-                ),
-                bool,
-                2usize,
-            >("TryGetSerializedState")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::LocalMultiplayerSyncState_3 < TStateTable,
-                    TType, TState > as quest_hook::libil2cpp::Type > ::class(),
-                    "TryGetSerializedState", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IPacketPool_1<T>,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<T>,
+                        ),
+                        bool,
+                        2usize,
+                    >("TryGetSerializedState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryGetSerializedState", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (pool, serializable))?
@@ -320,26 +316,26 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LocalMultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPacketPool_1<T>>,
-                    quest_hook::libil2cpp::ByRefMut<T>,
-                ),
-                bool,
-                2usize,
-            >("TryGetSerializedStateDelta")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::LocalMultiplayerSyncState_3 < TStateTable,
-                    TType, TState > as quest_hook::libil2cpp::Type > ::class(),
-                    "TryGetSerializedStateDelta", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IPacketPool_1<T>,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<T>,
+                        ),
+                        bool,
+                        2usize,
+                    >("TryGetSerializedStateDelta")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryGetSerializedStateDelta", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (pool, serializable))?
@@ -375,42 +371,42 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LocalMultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-                    i64,
-                    i64,
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
-                            TStateTable,
-                            TType,
-                            TState,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
-                            TStateTable,
-                            TType,
-                            TState,
-                        >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                6usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::LocalMultiplayerSyncState_3 < TStateTable,
-                    TType, TState > as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                    6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
+                            >,
+                            i64,
+                            i64,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
+                                    TStateTable,
+                                    TType,
+                                    TState,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
+                                    TStateTable,
+                                    TType,
+                                    TState,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -437,19 +433,17 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LocalMultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(TType), TState, 1usize>("get_Item")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::LocalMultiplayerSyncState_3 < TStateTable,
-                    TType, TState > as quest_hook::libil2cpp::Type > ::class(),
-                    "get_Item", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(TType), TState, 1usize>("get_Item")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Item", 1usize
+                        )
+                    })
             });
         let __cordl_ret: TState = unsafe { method.invoke_unchecked(self, (t))? };
         Ok(__cordl_ret.into())
@@ -467,23 +461,23 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LocalMultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-                0usize,
-            >("get_player")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::LocalMultiplayerSyncState_3 < TStateTable,
-                    TType, TState > as quest_hook::libil2cpp::Type > ::class(),
-                    "get_player", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::IConnectedPlayer,
+                        >,
+                        0usize,
+                    >("get_player")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_player", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IConnectedPlayer,
@@ -505,25 +499,27 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LocalMultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState>,
-                >,
-                0usize,
-            >("get_stateBuffer")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::LocalMultiplayerSyncState_3 < TStateTable,
-                    TType, TState > as quest_hook::libil2cpp::Type > ::class(),
-                    "get_stateBuffer", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::StateBuffer_3<
+                                TStateTable,
+                                TType,
+                                TState,
+                            >,
+                        >,
+                        0usize,
+                    >("get_stateBuffer")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_stateBuffer", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState>,
@@ -543,23 +539,21 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LocalMultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (TType, TState),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("set_Item")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::LocalMultiplayerSyncState_3 < TStateTable,
-                    TType, TState > as quest_hook::libil2cpp::Type > ::class(),
-                    "set_Item", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (TType, TState),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("set_Item")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_Item", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (t, value))?

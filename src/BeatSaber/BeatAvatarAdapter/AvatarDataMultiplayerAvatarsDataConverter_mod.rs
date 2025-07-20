@@ -46,20 +46,23 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConver
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConverter as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::MultiplayerAvatarData),
-                quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
-                1usize,
-            >("CreateAvatarData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConverter
-                    as quest_hook::libil2cpp::Type > ::class(), "CreateAvatarData",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::MultiplayerAvatarData),
+                        quest_hook::libil2cpp::Gc<
+                            crate::BeatSaber::BeatAvatarSDK::AvatarData,
+                        >,
+                        1usize,
+                    >("CreateAvatarData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateAvatarData", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::BeatSaber::BeatAvatarSDK::AvatarData,
@@ -71,20 +74,23 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConver
             crate::BeatSaber::BeatAvatarSDK::AvatarData,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::MultiplayerAvatarData> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConverter as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>),
-                crate::GlobalNamespace::MultiplayerAvatarData,
-                1usize,
-            >("CreateMultiplayerAvatarsData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConverter
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "CreateMultiplayerAvatarsData", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::BeatSaber::BeatAvatarSDK::AvatarData,
+                        >),
+                        crate::GlobalNamespace::MultiplayerAvatarData,
+                        1usize,
+                    >("CreateMultiplayerAvatarsData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateMultiplayerAvatarsData", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::MultiplayerAvatarData = unsafe {
             method.invoke_unchecked((), (avatarData))?

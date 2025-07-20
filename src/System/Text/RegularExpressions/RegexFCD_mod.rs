@@ -110,14 +110,17 @@ for crate::System::Text::RegularExpressions::RegexFCD {
 #[cfg(feature = "System+Text+RegularExpressions+RegexFCD")]
 impl crate::System::Text::RegularExpressions::RegexFCD {
     pub fn AnchorFromType(_cordl_type: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexFCD as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(i32), i32, 1usize>("AnchorFromType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Text::RegularExpressions::RegexFCD as
-                    quest_hook::libil2cpp::Type > ::class(), "AnchorFromType", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(i32), i32, 1usize>("AnchorFromType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AnchorFromType", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
@@ -127,20 +130,23 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
             crate::System::Text::RegularExpressions::RegexTree,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexFCD as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Text::RegularExpressions::RegexTree,
-                >),
-                i32,
-                1usize,
-            >("Anchors")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Text::RegularExpressions::RegexFCD as
-                    quest_hook::libil2cpp::Type > ::class(), "Anchors", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Text::RegularExpressions::RegexTree,
+                        >),
+                        i32,
+                        1usize,
+                    >("Anchors")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Anchors", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (tree))? };
         Ok(__cordl_ret.into())
@@ -153,24 +159,27 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         >,
         CurIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexFCD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Text::RegularExpressions::RegexNode,
-                    >,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("CalculateFC")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Text::RegularExpressions::RegexFCD as
-                    quest_hook::libil2cpp::Type > ::class(), "CalculateFC", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Text::RegularExpressions::RegexNode,
+                            >,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("CalculateFC")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CalculateFC", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (NodeType, node, CurIndex))?
@@ -180,14 +189,17 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexFCD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Text::RegularExpressions::RegexFCD as
-                    quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Dispose", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -195,14 +207,17 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         Ok(__cordl_ret.into())
     }
     pub fn FCIsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexFCD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("FCIsEmpty")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Text::RegularExpressions::RegexFCD as
-                    quest_hook::libil2cpp::Type > ::class(), "FCIsEmpty", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("FCIsEmpty")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FCIsEmpty", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -212,22 +227,25 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<crate::System::Text::RegularExpressions::RegexPrefix>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexFCD as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Text::RegularExpressions::RegexTree,
-                >),
-                crate::System::Nullable_1<
-                    crate::System::Text::RegularExpressions::RegexPrefix,
-                >,
-                1usize,
-            >("FirstChars")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Text::RegularExpressions::RegexFCD as
-                    quest_hook::libil2cpp::Type > ::class(), "FirstChars", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Text::RegularExpressions::RegexTree,
+                        >),
+                        crate::System::Nullable_1<
+                            crate::System::Text::RegularExpressions::RegexPrefix,
+                        >,
+                        1usize,
+                    >("FirstChars")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FirstChars", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Nullable_1<
             crate::System::Text::RegularExpressions::RegexPrefix,
@@ -235,14 +253,17 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         Ok(__cordl_ret.into())
     }
     pub fn IntIsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexFCD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("IntIsEmpty")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Text::RegularExpressions::RegexFCD as
-                    quest_hook::libil2cpp::Type > ::class(), "IntIsEmpty", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("IntIsEmpty")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IntIsEmpty", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -252,20 +273,23 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexFC>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexFCD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Text::RegularExpressions::RegexFC,
-                >,
-                0usize,
-            >("PopFC")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Text::RegularExpressions::RegexFCD as
-                    quest_hook::libil2cpp::Type > ::class(), "PopFC", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Text::RegularExpressions::RegexFC,
+                        >,
+                        0usize,
+                    >("PopFC")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PopFC", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Text::RegularExpressions::RegexFC,
@@ -273,14 +297,17 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         Ok(__cordl_ret.into())
     }
     pub fn PopInt(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexFCD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("PopInt")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Text::RegularExpressions::RegexFCD as
-                    quest_hook::libil2cpp::Type > ::class(), "PopInt", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("PopInt")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PopInt", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -292,20 +319,23 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Text::RegularExpressions::RegexPrefix,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexFCD as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Text::RegularExpressions::RegexTree,
-                >),
-                crate::System::Text::RegularExpressions::RegexPrefix,
-                1usize,
-            >("Prefix")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Text::RegularExpressions::RegexFCD as
-                    quest_hook::libil2cpp::Type > ::class(), "Prefix", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Text::RegularExpressions::RegexTree,
+                        >),
+                        crate::System::Text::RegularExpressions::RegexPrefix,
+                        1usize,
+                    >("Prefix")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Prefix", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Text::RegularExpressions::RegexPrefix = unsafe {
             method.invoke_unchecked((), (tree))?
@@ -316,20 +346,23 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         &mut self,
         fc: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexFC>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexFCD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Text::RegularExpressions::RegexFC,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("PushFC")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Text::RegularExpressions::RegexFCD as
-                    quest_hook::libil2cpp::Type > ::class(), "PushFC", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Text::RegularExpressions::RegexFC,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("PushFC")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PushFC", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (fc))?
@@ -340,14 +373,17 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         &mut self,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexFCD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("PushInt")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Text::RegularExpressions::RegexFCD as
-                    quest_hook::libil2cpp::Type > ::class(), "PushInt", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("PushInt")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PushInt", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (i))?
@@ -362,23 +398,25 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexFC>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexFCD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Text::RegularExpressions::RegexTree,
-                >),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Text::RegularExpressions::RegexFC,
-                >,
-                1usize,
-            >("RegexFCFromRegexTree")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Text::RegularExpressions::RegexFCD as
-                    quest_hook::libil2cpp::Type > ::class(), "RegexFCFromRegexTree",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Text::RegularExpressions::RegexTree,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Text::RegularExpressions::RegexFC,
+                        >,
+                        1usize,
+                    >("RegexFCFromRegexTree")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "RegexFCFromRegexTree", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Text::RegularExpressions::RegexFC,
@@ -388,14 +426,17 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
     pub fn SkipChild(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexFCD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SkipChild")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Text::RegularExpressions::RegexFCD as
-                    quest_hook::libil2cpp::Type > ::class(), "SkipChild", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SkipChild")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SkipChild", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -407,20 +448,23 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexFC>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexFCD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Text::RegularExpressions::RegexFC,
-                >,
-                0usize,
-            >("TopFC")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Text::RegularExpressions::RegexFCD as
-                    quest_hook::libil2cpp::Type > ::class(), "TopFC", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Text::RegularExpressions::RegexFC,
+                        >,
+                        0usize,
+                    >("TopFC")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TopFC", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Text::RegularExpressions::RegexFC,
@@ -431,18 +475,21 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         &mut self,
         intStack: crate::System::Span_1<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexFCD as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Span_1<i32>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Text::RegularExpressions::RegexFCD as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Span_1<i32>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (intStack))?

@@ -42,19 +42,21 @@ impl crate::UnityEngine::Rendering::OnDemandRendering {
     pub fn GetRenderFrameInterval(
         frameInterval: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::OnDemandRendering as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::ByRefMut<i32>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("GetRenderFrameInterval")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Rendering::OnDemandRendering as
-                    quest_hook::libil2cpp::Type > ::class(), "GetRenderFrameInterval",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<i32>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("GetRenderFrameInterval")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetRenderFrameInterval", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (frameInterval))?
@@ -62,15 +64,17 @@ impl crate::UnityEngine::Rendering::OnDemandRendering {
         Ok(__cordl_ret.into())
     }
     pub fn get_renderFrameInterval() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::OnDemandRendering as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), i32, 0usize>("get_renderFrameInterval")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Rendering::OnDemandRendering as
-                    quest_hook::libil2cpp::Type > ::class(), "get_renderFrameInterval",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(), i32, 0usize>("get_renderFrameInterval")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_renderFrameInterval", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())

@@ -53,18 +53,25 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         z: i32,
         terrain: quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TerrainUtils::TerrainMap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (i32, i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("AddTerrainInternal")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::TerrainUtils::TerrainMap as
-                    quest_hook::libil2cpp::Type > ::class(), "AddTerrainInternal", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("AddTerrainInternal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddTerrainInternal", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (x, z, terrain))?
@@ -82,27 +89,31 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainUtils::TerrainMap>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TerrainUtils::TerrainMap as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Predicate_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Predicate_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
+                                >,
+                            >,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::TerrainUtils::TerrainMap,
                         >,
-                    >,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainUtils::TerrainMap>,
-                3usize,
-            >("CreateFromPlacement")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::TerrainUtils::TerrainMap as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateFromPlacement",
-                    3usize
-                )
+                        3usize,
+                    >("CreateFromPlacement")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateFromPlacement", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TerrainUtils::TerrainMap,
@@ -123,28 +134,32 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainUtils::TerrainMap>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TerrainUtils::TerrainMap as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::Vector2,
-                    crate::UnityEngine::Vector2,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Predicate_1<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Vector2,
+                            crate::UnityEngine::Vector2,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Predicate_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
+                                >,
+                            >,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::TerrainUtils::TerrainMap,
                         >,
-                    >,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainUtils::TerrainMap>,
-                4usize,
-            >("CreateFromPlacement")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::TerrainUtils::TerrainMap as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateFromPlacement",
-                    4usize
-                )
+                        4usize,
+                    >("CreateFromPlacement")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateFromPlacement", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TerrainUtils::TerrainMap,
@@ -160,18 +175,21 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TerrainUtils::TerrainMap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (i32, i32),
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
-                2usize,
-            >("GetTerrain")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::TerrainUtils::TerrainMap as
-                    quest_hook::libil2cpp::Type > ::class(), "GetTerrain", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i32, i32),
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
+                        2usize,
+                    >("GetTerrain")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetTerrain", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain> = unsafe {
             method.invoke_unchecked(self, (tileX, tileZ))?
@@ -191,18 +209,25 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         tileZ: i32,
         terrain: quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TerrainUtils::TerrainMap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (i32, i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>),
-                bool,
-                3usize,
-            >("TryToAddTerrain")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::TerrainUtils::TerrainMap as
-                    quest_hook::libil2cpp::Type > ::class(), "TryToAddTerrain", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
+                        ),
+                        bool,
+                        3usize,
+                    >("TryToAddTerrain")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryToAddTerrain", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (tileX, tileZ, terrain))?
@@ -214,18 +239,21 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::TerrainUtils::TerrainMapStatusCode,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TerrainUtils::TerrainMap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::TerrainUtils::TerrainMapStatusCode,
-                0usize,
-            >("Validate")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::TerrainUtils::TerrainMap as
-                    quest_hook::libil2cpp::Type > ::class(), "Validate", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::TerrainUtils::TerrainMapStatusCode,
+                        0usize,
+                    >("Validate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Validate", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::TerrainUtils::TerrainMapStatusCode = unsafe {
             method.invoke_unchecked(self, ())?
@@ -237,18 +265,21 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         tileX: i32,
         tileZ: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TerrainUtils::TerrainMap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (i32, i32),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("ValidateTerrain")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::TerrainUtils::TerrainMap as
-                    quest_hook::libil2cpp::Type > ::class(), "ValidateTerrain", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i32, i32),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("ValidateTerrain")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ValidateTerrain", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (tileX, tileZ))?
@@ -258,14 +289,17 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TerrainUtils::TerrainMap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::TerrainUtils::TerrainMap as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -282,23 +316,26 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TerrainUtils::TerrainMap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::Dictionary_2<
-                        crate::UnityEngine::TerrainUtils::TerrainTileCoord,
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
-                    >,
-                >,
-                0usize,
-            >("get_terrainTiles")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::TerrainUtils::TerrainMap as
-                    quest_hook::libil2cpp::Type > ::class(), "get_terrainTiles", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                crate::UnityEngine::TerrainUtils::TerrainTileCoord,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
+                            >,
+                        >,
+                        0usize,
+                    >("get_terrainTiles")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_terrainTiles", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<

@@ -47,20 +47,23 @@ impl crate::BeatmapDataLoaderVersion4::LightTranslationBaseDataConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightTranslationBaseData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapDataLoaderVersion4::LightTranslationBaseDataConverter as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (f32, crate::BeatmapSaveDataVersion4::LightTranslationEvent),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::LightTranslationBaseData,
-                >,
-                2usize,
-            >("Convert")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapDataLoaderVersion4::LightTranslationBaseDataConverter
-                    as quest_hook::libil2cpp::Type > ::class(), "Convert", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (f32, crate::BeatmapSaveDataVersion4::LightTranslationEvent),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::LightTranslationBaseData,
+                        >,
+                        2usize,
+                    >("Convert")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Convert", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LightTranslationBaseData,

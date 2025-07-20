@@ -44,14 +44,17 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(U), f64, 1usize>("GetDuration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetDuration", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(U), f64, 1usize>("GetDuration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDuration", 1usize
+                        )
+                    })
             });
         let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (playable))? };
         Ok(__cordl_ret.into())
@@ -63,18 +66,21 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (U),
-                crate::UnityEngine::Playables::PlayableGraph,
-                1usize,
-            >("GetGraph")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetGraph", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (U),
+                        crate::UnityEngine::Playables::PlayableGraph,
+                        1usize,
+                    >("GetGraph")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetGraph", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Playables::PlayableGraph = unsafe {
             method.invoke_unchecked((), (playable))?
@@ -89,18 +95,21 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (U, i32),
-                crate::UnityEngine::Playables::Playable,
-                2usize,
-            >("GetInput")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetInput", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (U, i32),
+                        crate::UnityEngine::Playables::Playable,
+                        2usize,
+                    >("GetInput")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetInput", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Playables::Playable = unsafe {
             method.invoke_unchecked((), (playable, inputPort))?
@@ -112,14 +121,17 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(U), i32, 1usize>("GetInputCount")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetInputCount", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(U), i32, 1usize>("GetInputCount")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetInputCount", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (playable))? };
         Ok(__cordl_ret.into())
@@ -132,14 +144,17 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(U, i32), f32, 2usize>("GetInputWeight")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetInputWeight", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(U, i32), f32, 2usize>("GetInputWeight")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetInputWeight", 2usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe {
             method.invoke_unchecked((), (playable, inputIndex))?
@@ -153,18 +168,21 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (U),
-                crate::UnityEngine::Playables::PlayState,
-                1usize,
-            >("GetPlayState")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetPlayState", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (U),
+                        crate::UnityEngine::Playables::PlayState,
+                        1usize,
+                    >("GetPlayState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetPlayState", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Playables::PlayState = unsafe {
             method.invoke_unchecked((), (playable))?
@@ -176,14 +194,17 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(U), f64, 1usize>("GetPreviousTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetPreviousTime", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(U), f64, 1usize>("GetPreviousTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetPreviousTime", 1usize
+                        )
+                    })
             });
         let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (playable))? };
         Ok(__cordl_ret.into())
@@ -193,14 +214,17 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(U), f64, 1usize>("GetTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetTime", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(U), f64, 1usize>("GetTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetTime", 1usize
+                        )
+                    })
             });
         let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (playable))? };
         Ok(__cordl_ret.into())
@@ -212,18 +236,21 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (U),
-                crate::UnityEngine::Playables::DirectorWrapMode,
-                1usize,
-            >("GetTimeWrapMode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetTimeWrapMode", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (U),
+                        crate::UnityEngine::Playables::DirectorWrapMode,
+                        1usize,
+                    >("GetTimeWrapMode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetTimeWrapMode", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Playables::DirectorWrapMode = unsafe {
             method.invoke_unchecked((), (playable))?
@@ -235,14 +262,17 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(U), bool, 1usize>("IsDone")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "IsDone", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(U), bool, 1usize>("IsDone")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsDone", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (playable))? };
         Ok(__cordl_ret.into())
@@ -252,14 +282,17 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(U), bool, 1usize>("IsValid")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "IsValid", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(U), bool, 1usize>("IsValid")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsValid", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (playable))? };
         Ok(__cordl_ret.into())
@@ -271,14 +304,21 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(U), quest_hook::libil2cpp::Void, 1usize>("Pause")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "Pause", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (U),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Pause")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Pause", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (playable))?
@@ -292,14 +332,21 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(U), quest_hook::libil2cpp::Void, 1usize>("Play")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "Play", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (U),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Play")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Play", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (playable))?
@@ -314,18 +361,21 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (U, f64),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SetDuration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "SetDuration", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (U, f64),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetDuration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetDuration", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (playable, value))?
@@ -340,18 +390,21 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (U, i32),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SetInputCount")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "SetInputCount", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (U, i32),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetInputCount")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetInputCount", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (playable, value))?
@@ -369,18 +422,21 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         V: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (U, V, f32),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("SetInputWeight")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "SetInputWeight", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (U, V, f32),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("SetInputWeight")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetInputWeight", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (playable, input, weight))?
@@ -396,18 +452,21 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (U, i32, f32),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("SetInputWeight")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "SetInputWeight", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (U, i32, f32),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("SetInputWeight")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetInputWeight", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (playable, inputIndex, weight))?
@@ -422,19 +481,21 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (U, bool),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SetPropagateSetTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "SetPropagateSetTime",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (U, bool),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetPropagateSetTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetPropagateSetTime", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (playable, value))?
@@ -449,18 +510,21 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (U, f64),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SetSpeed")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "SetSpeed", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (U, f64),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetSpeed")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetSpeed", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (playable, value))?
@@ -475,18 +539,21 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (U, f64),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SetTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "SetTime", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (U, f64),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetTime", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (playable, value))?
@@ -501,18 +568,21 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (U, crate::UnityEngine::Playables::DirectorWrapMode),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SetTimeWrapMode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "SetTimeWrapMode", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (U, crate::UnityEngine::Playables::DirectorWrapMode),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetTimeWrapMode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetTimeWrapMode", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (playable, value))?
@@ -527,18 +597,21 @@ impl crate::UnityEngine::Playables::PlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::PlayableExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (U, crate::UnityEngine::Playables::PlayableTraversalMode),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SetTraversalMode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Playables::PlayableExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "SetTraversalMode", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (U, crate::UnityEngine::Playables::PlayableTraversalMode),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetTraversalMode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetTraversalMode", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (playable, mode))?

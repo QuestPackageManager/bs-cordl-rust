@@ -51,26 +51,29 @@ impl crate::System::Collections::Generic::CollectionExtensions {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::CollectionExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IReadOnlyDictionary_2<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IReadOnlyDictionary_2<
+                                    TKey,
+                                    TValue,
+                                >,
+                            >,
                             TKey,
-                            TValue,
-                        >,
-                    >,
-                    TKey,
-                ),
-                TValue,
-                2usize,
-            >("GetValueOrDefault")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Collections::Generic::CollectionExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetValueOrDefault", 2usize
-                )
+                        ),
+                        TValue,
+                        2usize,
+                    >("GetValueOrDefault")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetValueOrDefault", 2usize
+                        )
+                    })
             });
         let __cordl_ret: TValue = unsafe {
             method.invoke_unchecked((), (dictionary, key))?
@@ -90,27 +93,30 @@ impl crate::System::Collections::Generic::CollectionExtensions {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::CollectionExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IReadOnlyDictionary_2<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IReadOnlyDictionary_2<
+                                    TKey,
+                                    TValue,
+                                >,
+                            >,
                             TKey,
                             TValue,
-                        >,
-                    >,
-                    TKey,
-                    TValue,
-                ),
-                TValue,
-                3usize,
-            >("GetValueOrDefault")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Collections::Generic::CollectionExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetValueOrDefault", 3usize
-                )
+                        ),
+                        TValue,
+                        3usize,
+                    >("GetValueOrDefault")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetValueOrDefault", 3usize
+                        )
+                    })
             });
         let __cordl_ret: TValue = unsafe {
             method.invoke_unchecked((), (dictionary, key, defaultValue))?

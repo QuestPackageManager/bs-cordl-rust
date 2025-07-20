@@ -60,43 +60,46 @@ impl crate::GlobalNamespace::IServerBeatmapProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IServerBeatmapProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::Dictionary_2<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            i32,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapKeyNetSerializable,
+                                    >,
+                                >,
                             >,
+                            crate::GlobalNamespace::BeatmapLevelSelectionMask,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapKeyNetSerializable,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
+                                    crate::GlobalNamespace::SongPackMask,
+                                >,
                             >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::BeatmapKeyNetSerializable,
                         >,
-                    >,
-                    crate::GlobalNamespace::BeatmapLevelSelectionMask,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::Dictionary_2<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::GlobalNamespace::SongPackMask,
-                        >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapKeyNetSerializable,
-                >,
-                4usize,
-            >("SelectBeatmapFromSuggestionsWithSelectionMaskAndOwnedSongPacks")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::IServerBeatmapProvider as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "SelectBeatmapFromSuggestionsWithSelectionMaskAndOwnedSongPacks",
-                    4usize
-                )
+                        4usize,
+                    >("SelectBeatmapFromSuggestionsWithSelectionMaskAndOwnedSongPacks")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "SelectBeatmapFromSuggestionsWithSelectionMaskAndOwnedSongPacks",
+                            4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapKeyNetSerializable,
@@ -121,24 +124,26 @@ impl crate::GlobalNamespace::IServerBeatmapProvider {
         >,
         selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IServerBeatmapProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::BeatmapKeyNetSerializable,
-                    >,
-                    crate::GlobalNamespace::BeatmapLevelSelectionMask,
-                ),
-                bool,
-                2usize,
-            >("VerifyBeatmapForSelectionMask")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::IServerBeatmapProvider as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "VerifyBeatmapForSelectionMask", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapKeyNetSerializable,
+                            >,
+                            crate::GlobalNamespace::BeatmapLevelSelectionMask,
+                        ),
+                        bool,
+                        2usize,
+                    >("VerifyBeatmapForSelectionMask")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "VerifyBeatmapForSelectionMask", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (beatmapKeySerializable, selectionMask))?

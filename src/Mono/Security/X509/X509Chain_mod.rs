@@ -53,20 +53,23 @@ impl crate::Mono::Security::X509::X509Chain {
         &mut self,
         leaf: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::X509::X509Chain as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::Mono::Security::X509::X509Certificate,
-                >),
-                bool,
-                1usize,
-            >("Build")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Security::X509::X509Chain as
-                    quest_hook::libil2cpp::Type > ::class(), "Build", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Mono::Security::X509::X509Certificate,
+                        >),
+                        bool,
+                        1usize,
+                    >("Build")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Build", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (leaf))? };
         Ok(__cordl_ret.into())
@@ -77,21 +80,25 @@ impl crate::Mono::Security::X509::X509Chain {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::X509::X509Chain as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::Mono::Security::X509::X509Certificate,
-                >),
-                quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
-                1usize,
-            >("FindCertificateParent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Security::X509::X509Chain as
-                    quest_hook::libil2cpp::Type > ::class(), "FindCertificateParent",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Mono::Security::X509::X509Certificate,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Mono::Security::X509::X509Certificate,
+                        >,
+                        1usize,
+                    >("FindCertificateParent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FindCertificateParent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::X509::X509Certificate,
@@ -106,21 +113,25 @@ impl crate::Mono::Security::X509::X509Chain {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::X509::X509Chain as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::Mono::Security::X509::X509Certificate,
-                >),
-                quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
-                1usize,
-            >("FindCertificateRoot")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Security::X509::X509Chain as
-                    quest_hook::libil2cpp::Type > ::class(), "FindCertificateRoot",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Mono::Security::X509::X509Certificate,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Mono::Security::X509::X509Certificate,
+                        >,
+                        1usize,
+                    >("FindCertificateRoot")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FindCertificateRoot", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::X509::X509Certificate,
@@ -132,25 +143,28 @@ impl crate::Mono::Security::X509::X509Chain {
         child: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
         parent: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::X509::X509Chain as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::Mono::Security::X509::X509Certificate,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::Mono::Security::X509::X509Certificate,
-                    >,
-                ),
-                bool,
-                2usize,
-            >("IsParent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Security::X509::X509Chain as
-                    quest_hook::libil2cpp::Type > ::class(), "IsParent", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Mono::Security::X509::X509Certificate,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Mono::Security::X509::X509Certificate,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("IsParent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsParent", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (child, parent))?
@@ -163,20 +177,23 @@ impl crate::Mono::Security::X509::X509Chain {
             crate::Mono::Security::X509::X509Certificate,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::X509::X509Chain as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::Mono::Security::X509::X509Certificate,
-                >),
-                bool,
-                1usize,
-            >("IsTrusted")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Security::X509::X509Chain as
-                    quest_hook::libil2cpp::Type > ::class(), "IsTrusted", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Mono::Security::X509::X509Certificate,
+                        >),
+                        bool,
+                        1usize,
+                    >("IsTrusted")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsTrusted", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (potentialTrusted))?
@@ -187,20 +204,23 @@ impl crate::Mono::Security::X509::X509Chain {
         &mut self,
         cert: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::X509::X509Chain as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::Mono::Security::X509::X509Certificate,
-                >),
-                bool,
-                1usize,
-            >("IsValid")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Security::X509::X509Chain as
-                    quest_hook::libil2cpp::Type > ::class(), "IsValid", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Mono::Security::X509::X509Certificate,
+                        >),
+                        bool,
+                        1usize,
+                    >("IsValid")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsValid", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (cert))? };
         Ok(__cordl_ret.into())
@@ -211,20 +231,23 @@ impl crate::Mono::Security::X509::X509Chain {
             crate::Mono::Security::X509::X509CertificateCollection,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::X509::X509Chain as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::Mono::Security::X509::X509CertificateCollection,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("LoadCertificates")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Security::X509::X509Chain as
-                    quest_hook::libil2cpp::Type > ::class(), "LoadCertificates", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Mono::Security::X509::X509CertificateCollection,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("LoadCertificates")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "LoadCertificates", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (collection))?
@@ -241,14 +264,17 @@ impl crate::Mono::Security::X509::X509Chain {
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::X509::X509Chain as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Security::X509::X509Chain as
-                    quest_hook::libil2cpp::Type > ::class(), "Reset", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Reset", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -258,14 +284,17 @@ impl crate::Mono::Security::X509::X509Chain {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::X509::X509Chain as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Security::X509::X509Chain as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -277,20 +306,23 @@ impl crate::Mono::Security::X509::X509Chain {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509CertificateCollection>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::X509::X509Chain as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::Mono::Security::X509::X509CertificateCollection,
-                >,
-                0usize,
-            >("get_TrustAnchors")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Security::X509::X509Chain as
-                    quest_hook::libil2cpp::Type > ::class(), "get_TrustAnchors", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Mono::Security::X509::X509CertificateCollection,
+                        >,
+                        0usize,
+                    >("get_TrustAnchors")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_TrustAnchors", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::X509::X509CertificateCollection,

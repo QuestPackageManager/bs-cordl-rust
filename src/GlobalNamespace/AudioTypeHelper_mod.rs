@@ -41,19 +41,21 @@ impl crate::GlobalNamespace::AudioTypeHelper {
     pub fn GetAudioTypeFromPath(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::AudioType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AudioTypeHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                crate::UnityEngine::AudioType,
-                1usize,
-            >("GetAudioTypeFromPath")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::AudioTypeHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "GetAudioTypeFromPath",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        crate::UnityEngine::AudioType,
+                        1usize,
+                    >("GetAudioTypeFromPath")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetAudioTypeFromPath", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::AudioType = unsafe {
             method.invoke_unchecked((), (path))?

@@ -44,21 +44,26 @@ impl crate::System::Number {
         value: crate::System::Decimal,
         number: quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::Decimal,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("DecimalToNumber")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "DecimalToNumber", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::Decimal,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("DecimalToNumber")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "DecimalToNumber", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (value, number))?
@@ -69,18 +74,26 @@ impl crate::System::Number {
         p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
-                u32,
-                2usize,
-            >("DigitsToInt")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "DigitsToInt", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                        ),
+                        u32,
+                        2usize,
+                    >("DigitsToInt")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "DigitsToInt", 2usize
+                        )
+                    })
             });
         let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (p, count))? };
         Ok(__cordl_ret.into())
@@ -90,22 +103,27 @@ impl crate::System::Number {
         precision: i32,
         number: quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    f64,
-                    i32,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("DoubleToNumber")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "DoubleToNumber", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            f64,
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("DoubleToNumber")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "DoubleToNumber", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (value, precision, number))?
@@ -116,18 +134,21 @@ impl crate::System::Number {
         format: crate::System::ReadOnlySpan_1<char>,
         section: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::ReadOnlySpan_1<char>, i32),
-                i32,
-                2usize,
-            >("FindSection")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "FindSection", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::ReadOnlySpan_1<char>, i32),
+                        i32,
+                        2usize,
+                    >("FindSection")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FindSection", 2usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (format, section))?
@@ -141,28 +162,33 @@ impl crate::System::Number {
         nMaxDigits: i32,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Text::ValueStringBuilder,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                    i32,
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >("FormatCurrency")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "FormatCurrency", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Text::ValueStringBuilder,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("FormatCurrency")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FormatCurrency", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (sb, number, nMinDigits, nMaxDigits, info))?
@@ -176,24 +202,27 @@ impl crate::System::Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::Decimal,
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                3usize,
-            >("FormatDecimal")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "FormatDecimal", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::Decimal,
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        3usize,
+                    >("FormatDecimal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FormatDecimal", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -208,27 +237,30 @@ impl crate::System::Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Text::ValueStringBuilder,
-                    >,
-                    f64,
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                4usize,
-            >("FormatDouble")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "FormatDouble", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Text::ValueStringBuilder,
+                            >,
+                            f64,
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        4usize,
+                    >("FormatDouble")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FormatDouble", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -242,24 +274,29 @@ impl crate::System::Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    f64,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                3usize,
-            >("FormatDouble")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "FormatDouble", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            f64,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        3usize,
+                    >("FormatDouble")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FormatDouble", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -274,29 +311,32 @@ impl crate::System::Number {
         minDigits: i32,
         positiveSign: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Text::ValueStringBuilder,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    i32,
-                    char,
-                    i32,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Void,
-                6usize,
-            >("FormatExponent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "FormatExponent", 6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Text::ValueStringBuilder,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            i32,
+                            char,
+                            i32,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >("FormatExponent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FormatExponent", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -317,31 +357,42 @@ impl crate::System::Number {
         sDecimal: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sGroup: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Text::ValueStringBuilder,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                    i32,
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                ),
-                quest_hook::libil2cpp::Void,
-                8usize,
-            >("FormatFixed")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "FormatFixed", 8usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Text::ValueStringBuilder,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<i32>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        8usize,
+                    >("FormatFixed")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FormatFixed", 8usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -370,30 +421,35 @@ impl crate::System::Number {
         expChar: char,
         bSuppressScientific: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Text::ValueStringBuilder,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                    i32,
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    char,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Void,
-                7usize,
-            >("FormatGeneral")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "FormatGeneral", 7usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Text::ValueStringBuilder,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            char,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        7usize,
+                    >("FormatGeneral")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FormatGeneral", 7usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -419,22 +475,25 @@ impl crate::System::Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    i32,
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                3usize,
-            >("FormatInt32")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "FormatInt32", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        3usize,
+                    >("FormatInt32")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FormatInt32", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -448,22 +507,25 @@ impl crate::System::Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    i64,
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                3usize,
-            >("FormatInt64")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "FormatInt64", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            i64,
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        3usize,
+                    >("FormatInt64")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FormatInt64", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -477,28 +539,33 @@ impl crate::System::Number {
         nMaxDigits: i32,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Text::ValueStringBuilder,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                    i32,
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >("FormatNumber")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "FormatNumber", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Text::ValueStringBuilder,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("FormatNumber")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FormatNumber", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (sb, number, nMinDigits, nMaxDigits, info))?
@@ -512,28 +579,33 @@ impl crate::System::Number {
         nMaxDigits: i32,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Text::ValueStringBuilder,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                    i32,
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >("FormatPercent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "FormatPercent", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Text::ValueStringBuilder,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("FormatPercent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FormatPercent", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (sb, number, nMinDigits, nMaxDigits, info))?
@@ -548,29 +620,34 @@ impl crate::System::Number {
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
         expChar: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Text::ValueStringBuilder,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                    i32,
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    char,
-                ),
-                quest_hook::libil2cpp::Void,
-                6usize,
-            >("FormatScientific")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "FormatScientific", 6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Text::ValueStringBuilder,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            char,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >("FormatScientific")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FormatScientific", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -589,27 +666,30 @@ impl crate::System::Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Text::ValueStringBuilder,
-                    >,
-                    f32,
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                4usize,
-            >("FormatSingle")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "FormatSingle", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Text::ValueStringBuilder,
+                            >,
+                            f32,
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        4usize,
+                    >("FormatSingle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FormatSingle", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -623,24 +703,29 @@ impl crate::System::Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    f32,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                3usize,
-            >("FormatSingle")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "FormatSingle", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            f32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        3usize,
+                    >("FormatSingle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FormatSingle", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -654,22 +739,25 @@ impl crate::System::Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    u32,
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                3usize,
-            >("FormatUInt32")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "FormatUInt32", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            u32,
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        3usize,
+                    >("FormatUInt32")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FormatUInt32", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -683,22 +771,25 @@ impl crate::System::Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    u64,
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                3usize,
-            >("FormatUInt64")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "FormatUInt64", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            u64,
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        3usize,
+                    >("FormatUInt64")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FormatUInt64", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -706,14 +797,17 @@ impl crate::System::Number {
         Ok(__cordl_ret.into())
     }
     pub fn High32(value: u64) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(u64), u32, 1usize>("High32")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "High32", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(u64), u32, 1usize>("High32")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "High32", 1usize
+                        )
+                    })
             });
         let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
@@ -726,23 +820,28 @@ impl crate::System::Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    u32,
-                    i32,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                4usize,
-            >("Int32ToHexChars")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "Int32ToHexChars", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            u32,
+                            i32,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        4usize,
+                    >("Int32ToHexChars")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Int32ToHexChars", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -756,18 +855,21 @@ impl crate::System::Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i32, char, i32),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                3usize,
-            >("Int32ToHexStr")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "Int32ToHexStr", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32, char, i32),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        3usize,
+                    >("Int32ToHexStr")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Int32ToHexStr", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -778,21 +880,26 @@ impl crate::System::Number {
         value: i32,
         number: quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    i32,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("Int32ToNumber")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "Int32ToNumber", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("Int32ToNumber")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Int32ToNumber", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (value, number))?
@@ -802,18 +909,21 @@ impl crate::System::Number {
     pub fn Int64DivMod1E9(
         value: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::ByRefMut<u64>),
-                u32,
-                1usize,
-            >("Int64DivMod1E9")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "Int64DivMod1E9", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<u64>),
+                        u32,
+                        1usize,
+                    >("Int64DivMod1E9")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Int64DivMod1E9", 1usize
+                        )
+                    })
             });
         let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
@@ -825,18 +935,21 @@ impl crate::System::Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i64, char, i32),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                3usize,
-            >("Int64ToHexStr")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "Int64ToHexStr", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i64, char, i32),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        3usize,
+                    >("Int64ToHexStr")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Int64ToHexStr", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -847,21 +960,26 @@ impl crate::System::Number {
         input: i64,
         number: quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    i64,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("Int64ToNumber")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "Int64ToNumber", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            i64,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("Int64ToNumber")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Int64ToNumber", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (input, number))?
@@ -869,40 +987,49 @@ impl crate::System::Number {
         Ok(__cordl_ret.into())
     }
     pub fn IsDigit(ch: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(i32), bool, 1usize>("IsDigit")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "IsDigit", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(i32), bool, 1usize>("IsDigit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsDigit", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ch))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsWhite(ch: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(i32), bool, 1usize>("IsWhite")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "IsWhite", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(i32), bool, 1usize>("IsWhite")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsWhite", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ch))? };
         Ok(__cordl_ret.into())
     }
     pub fn Low32(value: u64) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(u64), u32, 1usize>("Low32")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "Low32", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(u64), u32, 1usize>("Low32")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Low32", 1usize
+                        )
+                    })
             });
         let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
@@ -914,22 +1041,31 @@ impl crate::System::Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                3usize,
-            >("MatchChars")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "MatchChars", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        3usize,
+                    >("MatchChars")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "MatchChars", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -937,14 +1073,17 @@ impl crate::System::Number {
         Ok(__cordl_ret.into())
     }
     pub fn Mul32x32To64(a: u32, b: u32) -> quest_hook::libil2cpp::Result<u64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(u32, u32), u64, 2usize>("Mul32x32To64")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "Mul32x32To64", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(u32, u32), u64, 2usize>("Mul32x32To64")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Mul32x32To64", 2usize
+                        )
+                    })
             });
         let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
@@ -954,18 +1093,21 @@ impl crate::System::Number {
         b: u64,
         pexp: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (u64, u64, quest_hook::libil2cpp::ByRefMut<i32>),
-                u64,
-                3usize,
-            >("Mul64Lossy")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "Mul64Lossy", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (u64, u64, quest_hook::libil2cpp::ByRefMut<i32>),
+                        u64,
+                        3usize,
+                    >("Mul64Lossy")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Mul64Lossy", 3usize
+                        )
+                    })
             });
         let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (a, b, pexp))? };
         Ok(__cordl_ret.into())
@@ -977,22 +1119,27 @@ impl crate::System::Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    i32,
-                    i32,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                3usize,
-            >("NegativeInt32ToDecStr")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "NegativeInt32ToDecStr", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        3usize,
+                    >("NegativeInt32ToDecStr")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NegativeInt32ToDecStr", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -1006,22 +1153,27 @@ impl crate::System::Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    i64,
-                    i32,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                3usize,
-            >("NegativeInt64ToDecStr")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "NegativeInt64ToDecStr", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            i64,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        3usize,
+                    >("NegativeInt64ToDecStr")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NegativeInt64ToDecStr", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -1032,21 +1184,26 @@ impl crate::System::Number {
         number: quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
         value: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
-                ),
-                bool,
-                2usize,
-            >("NumberBufferToDecimal")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "NumberBufferToDecimal", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+                        ),
+                        bool,
+                        2usize,
+                    >("NumberBufferToDecimal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NumberBufferToDecimal", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (number, value))? };
         Ok(__cordl_ret.into())
@@ -1055,21 +1212,26 @@ impl crate::System::Number {
         number: quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
         value: quest_hook::libil2cpp::ByRefMut<f64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                    quest_hook::libil2cpp::ByRefMut<f64>,
-                ),
-                bool,
-                2usize,
-            >("NumberBufferToDouble")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "NumberBufferToDouble", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<f64>,
+                        ),
+                        bool,
+                        2usize,
+                    >("NumberBufferToDouble")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NumberBufferToDouble", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (number, value))? };
         Ok(__cordl_ret.into())
@@ -1077,18 +1239,23 @@ impl crate::System::Number {
     pub fn NumberToDouble(
         number: quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>),
-                f64,
-                1usize,
-            >("NumberToDouble")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "NumberToDouble", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Number_NumberBuffer,
+                        >),
+                        f64,
+                        1usize,
+                    >("NumberToDouble")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NumberToDouble", 1usize
+                        )
+                    })
             });
         let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (number))? };
         Ok(__cordl_ret.into())
@@ -1097,21 +1264,26 @@ impl crate::System::Number {
         number: quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
         value: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                2usize,
-            >("NumberToInt32")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "NumberToInt32", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        2usize,
+                    >("NumberToInt32")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NumberToInt32", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (number, value))? };
         Ok(__cordl_ret.into())
@@ -1120,21 +1292,26 @@ impl crate::System::Number {
         number: quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
         value: quest_hook::libil2cpp::ByRefMut<i64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                    quest_hook::libil2cpp::ByRefMut<i64>,
-                ),
-                bool,
-                2usize,
-            >("NumberToInt64")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "NumberToInt64", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i64>,
+                        ),
+                        bool,
+                        2usize,
+                    >("NumberToInt64")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NumberToInt64", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (number, value))? };
         Ok(__cordl_ret.into())
@@ -1147,29 +1324,34 @@ impl crate::System::Number {
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
         isDecimal: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Text::ValueStringBuilder,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                    char,
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Void,
-                6usize,
-            >("NumberToString")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "NumberToString", 6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Text::ValueStringBuilder,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                            char,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >("NumberToString")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NumberToString", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -1183,27 +1365,32 @@ impl crate::System::Number {
         format: crate::System::ReadOnlySpan_1<char>,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Text::ValueStringBuilder,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >("NumberToStringFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "NumberToStringFormat", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Text::ValueStringBuilder,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("NumberToStringFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NumberToStringFormat", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (sb, number, format, info))?
@@ -1214,21 +1401,26 @@ impl crate::System::Number {
         number: quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
         value: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                    quest_hook::libil2cpp::ByRefMut<u32>,
-                ),
-                bool,
-                2usize,
-            >("NumberToUInt32")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "NumberToUInt32", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u32>,
+                        ),
+                        bool,
+                        2usize,
+                    >("NumberToUInt32")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NumberToUInt32", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (number, value))? };
         Ok(__cordl_ret.into())
@@ -1237,21 +1429,26 @@ impl crate::System::Number {
         number: quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
         value: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                    quest_hook::libil2cpp::ByRefMut<u64>,
-                ),
-                bool,
-                2usize,
-            >("NumberToUInt64")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "NumberToUInt64", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                        ),
+                        bool,
+                        2usize,
+                    >("NumberToUInt64")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NumberToUInt64", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (number, value))? };
         Ok(__cordl_ret.into())
@@ -1261,24 +1458,27 @@ impl crate::System::Number {
         styles: crate::System::Globalization::NumberStyles,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                ),
-                crate::System::Decimal,
-                3usize,
-            >("ParseDecimal")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "ParseDecimal", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                        ),
+                        crate::System::Decimal,
+                        3usize,
+                    >("ParseDecimal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ParseDecimal", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Decimal = unsafe {
             method.invoke_unchecked((), (value, styles, info))?
@@ -1290,24 +1490,27 @@ impl crate::System::Number {
         styles: crate::System::Globalization::NumberStyles,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                ),
-                f64,
-                3usize,
-            >("ParseDouble")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "ParseDouble", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                        ),
+                        f64,
+                        3usize,
+                    >("ParseDouble")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ParseDouble", 3usize
+                        )
+                    })
             });
         let __cordl_ret: f64 = unsafe {
             method.invoke_unchecked((), (value, styles, info))?
@@ -1318,21 +1521,24 @@ impl crate::System::Number {
         format: crate::System::ReadOnlySpan_1<char>,
         digits: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<char> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                char,
-                2usize,
-            >("ParseFormatSpecifier")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "ParseFormatSpecifier", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        char,
+                        2usize,
+                    >("ParseFormatSpecifier")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ParseFormatSpecifier", 2usize
+                        )
+                    })
             });
         let __cordl_ret: char = unsafe {
             method.invoke_unchecked((), (format, digits))?
@@ -1344,24 +1550,27 @@ impl crate::System::Number {
         styles: crate::System::Globalization::NumberStyles,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                ),
-                i32,
-                3usize,
-            >("ParseInt32")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "ParseInt32", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                        ),
+                        i32,
+                        3usize,
+                    >("ParseInt32")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ParseInt32", 3usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (value, styles, info))?
@@ -1373,24 +1582,27 @@ impl crate::System::Number {
         styles: crate::System::Globalization::NumberStyles,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                ),
-                i64,
-                3usize,
-            >("ParseInt64")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "ParseInt64", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                        ),
+                        i64,
+                        3usize,
+                    >("ParseInt64")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ParseInt64", 3usize
+                        )
+                    })
             });
         let __cordl_ret: i64 = unsafe {
             method.invoke_unchecked((), (value, styles, info))?
@@ -1407,29 +1619,38 @@ impl crate::System::Number {
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
         parseDecimal: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    bool,
-                ),
-                bool,
-                6usize,
-            >("ParseNumber")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "ParseNumber", 6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            bool,
+                        ),
+                        bool,
+                        6usize,
+                    >("ParseNumber")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ParseNumber", 6usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -1442,24 +1663,27 @@ impl crate::System::Number {
         styles: crate::System::Globalization::NumberStyles,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                ),
-                f32,
-                3usize,
-            >("ParseSingle")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "ParseSingle", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                        ),
+                        f32,
+                        3usize,
+                    >("ParseSingle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ParseSingle", 3usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe {
             method.invoke_unchecked((), (value, styles, info))?
@@ -1471,24 +1695,27 @@ impl crate::System::Number {
         styles: crate::System::Globalization::NumberStyles,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                ),
-                u32,
-                3usize,
-            >("ParseUInt32")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "ParseUInt32", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                        ),
+                        u32,
+                        3usize,
+                    >("ParseUInt32")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ParseUInt32", 3usize
+                        )
+                    })
             });
         let __cordl_ret: u32 = unsafe {
             method.invoke_unchecked((), (value, styles, info))?
@@ -1500,24 +1727,27 @@ impl crate::System::Number {
         styles: crate::System::Globalization::NumberStyles,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                ),
-                u64,
-                3usize,
-            >("ParseUInt64")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "ParseUInt64", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                        ),
+                        u64,
+                        3usize,
+                    >("ParseUInt64")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ParseUInt64", 3usize
+                        )
+                    })
             });
         let __cordl_ret: u64 = unsafe {
             method.invoke_unchecked((), (value, styles, info))?
@@ -1528,21 +1758,26 @@ impl crate::System::Number {
         number: quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
         pos: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("RoundNumber")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "RoundNumber", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("RoundNumber")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "RoundNumber", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (number, pos))?
@@ -1556,26 +1791,31 @@ impl crate::System::Number {
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
         parseDecimal: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >("StringToNumber")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "StringToNumber", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("StringToNumber")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "StringToNumber", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (value, styles, number, info, parseDecimal))?
@@ -1588,18 +1828,26 @@ impl crate::System::Number {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (bool, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("ThrowOverflowOrFormatException")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "ThrowOverflowOrFormatException", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            bool,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("ThrowOverflowOrFormatException")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ThrowOverflowOrFormatException", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (overflow, overflowResourceKey))?
@@ -1610,18 +1858,21 @@ impl crate::System::Number {
         value: crate::System::ReadOnlySpan_1<char>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::ReadOnlySpan_1<char>, i32),
-                bool,
-                2usize,
-            >("TrailingZeros")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TrailingZeros", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::ReadOnlySpan_1<char>, i32),
+                        bool,
+                        2usize,
+                    >("TrailingZeros")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TrailingZeros", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value, index))? };
         Ok(__cordl_ret.into())
@@ -1631,22 +1882,27 @@ impl crate::System::Number {
         destination: crate::System::Span_1<char>,
         charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    crate::System::Span_1<char>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                3usize,
-            >("TryCopyTo")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryCopyTo", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            crate::System::Span_1<char>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        3usize,
+                    >("TryCopyTo")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryCopyTo", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (source, destination, charsWritten))?
@@ -1660,26 +1916,29 @@ impl crate::System::Number {
         destination: crate::System::Span_1<char>,
         charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::Decimal,
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    crate::System::Span_1<char>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                5usize,
-            >("TryFormatDecimal")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryFormatDecimal", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::Decimal,
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            crate::System::Span_1<char>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryFormatDecimal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryFormatDecimal", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -1694,26 +1953,29 @@ impl crate::System::Number {
         destination: crate::System::Span_1<char>,
         charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    f64,
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    crate::System::Span_1<char>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                5usize,
-            >("TryFormatDouble")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryFormatDouble", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            f64,
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            crate::System::Span_1<char>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryFormatDouble")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryFormatDouble", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -1728,24 +1990,27 @@ impl crate::System::Number {
         destination: crate::System::Span_1<char>,
         charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    i32,
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-                    crate::System::Span_1<char>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                5usize,
-            >("TryFormatInt32")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryFormatInt32", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                            crate::System::Span_1<char>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryFormatInt32")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryFormatInt32", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -1763,24 +2028,27 @@ impl crate::System::Number {
         destination: crate::System::Span_1<char>,
         charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    i64,
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-                    crate::System::Span_1<char>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                5usize,
-            >("TryFormatInt64")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryFormatInt64", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            i64,
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                            crate::System::Span_1<char>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryFormatInt64")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryFormatInt64", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -1798,26 +2066,29 @@ impl crate::System::Number {
         destination: crate::System::Span_1<char>,
         charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    f32,
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    crate::System::Span_1<char>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                5usize,
-            >("TryFormatSingle")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryFormatSingle", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            f32,
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            crate::System::Span_1<char>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryFormatSingle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryFormatSingle", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -1832,24 +2103,27 @@ impl crate::System::Number {
         destination: crate::System::Span_1<char>,
         charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    u32,
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-                    crate::System::Span_1<char>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                5usize,
-            >("TryFormatUInt32")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryFormatUInt32", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            u32,
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                            crate::System::Span_1<char>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryFormatUInt32")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryFormatUInt32", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -1867,24 +2141,27 @@ impl crate::System::Number {
         destination: crate::System::Span_1<char>,
         charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    u64,
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-                    crate::System::Span_1<char>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                5usize,
-            >("TryFormatUInt64")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryFormatUInt64", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            u64,
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                            crate::System::Span_1<char>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryFormatUInt64")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryFormatUInt64", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -1902,24 +2179,27 @@ impl crate::System::Number {
         destination: crate::System::Span_1<char>,
         charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    i32,
-                    char,
-                    i32,
-                    crate::System::Span_1<char>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                5usize,
-            >("TryInt32ToHexStr")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryInt32ToHexStr", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            char,
+                            i32,
+                            crate::System::Span_1<char>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryInt32ToHexStr")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryInt32ToHexStr", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -1937,24 +2217,27 @@ impl crate::System::Number {
         destination: crate::System::Span_1<char>,
         charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    i64,
-                    char,
-                    i32,
-                    crate::System::Span_1<char>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                5usize,
-            >("TryInt64ToHexStr")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryInt64ToHexStr", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            i64,
+                            char,
+                            i32,
+                            crate::System::Span_1<char>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryInt64ToHexStr")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryInt64ToHexStr", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -1972,24 +2255,29 @@ impl crate::System::Number {
         destination: crate::System::Span_1<char>,
         charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    i32,
-                    i32,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    crate::System::Span_1<char>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                5usize,
-            >("TryNegativeInt32ToDecStr")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryNegativeInt32ToDecStr", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            crate::System::Span_1<char>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryNegativeInt32ToDecStr")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryNegativeInt32ToDecStr", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -2007,24 +2295,29 @@ impl crate::System::Number {
         destination: crate::System::Span_1<char>,
         charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    i64,
-                    i32,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    crate::System::Span_1<char>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                5usize,
-            >("TryNegativeInt64ToDecStr")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryNegativeInt64ToDecStr", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            i64,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            crate::System::Span_1<char>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryNegativeInt64ToDecStr")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryNegativeInt64ToDecStr", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -2041,25 +2334,28 @@ impl crate::System::Number {
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
         result: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
-                ),
-                bool,
-                4usize,
-            >("TryParseDecimal")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryParseDecimal", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+                        ),
+                        bool,
+                        4usize,
+                    >("TryParseDecimal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParseDecimal", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (value, styles, info, result))?
@@ -2072,25 +2368,28 @@ impl crate::System::Number {
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
         result: quest_hook::libil2cpp::ByRefMut<f64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<f64>,
-                ),
-                bool,
-                4usize,
-            >("TryParseDouble")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryParseDouble", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<f64>,
+                        ),
+                        bool,
+                        4usize,
+                    >("TryParseDouble")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParseDouble", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (value, styles, info, result))?
@@ -2103,25 +2402,28 @@ impl crate::System::Number {
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
         result: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                4usize,
-            >("TryParseInt32")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryParseInt32", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        4usize,
+                    >("TryParseInt32")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParseInt32", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (value, styles, info, result))?
@@ -2135,26 +2437,29 @@ impl crate::System::Number {
         result: quest_hook::libil2cpp::ByRefMut<i32>,
         failureIsOverflow: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                    quest_hook::libil2cpp::ByRefMut<bool>,
-                ),
-                bool,
-                5usize,
-            >("TryParseInt32IntegerStyle")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryParseInt32IntegerStyle", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                            quest_hook::libil2cpp::ByRefMut<bool>,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryParseInt32IntegerStyle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParseInt32IntegerStyle", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -2168,25 +2473,28 @@ impl crate::System::Number {
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
         result: quest_hook::libil2cpp::ByRefMut<i64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<i64>,
-                ),
-                bool,
-                4usize,
-            >("TryParseInt64")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryParseInt64", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i64>,
+                        ),
+                        bool,
+                        4usize,
+                    >("TryParseInt64")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParseInt64", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (value, styles, info, result))?
@@ -2200,26 +2508,29 @@ impl crate::System::Number {
         result: quest_hook::libil2cpp::ByRefMut<i64>,
         failureIsOverflow: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<i64>,
-                    quest_hook::libil2cpp::ByRefMut<bool>,
-                ),
-                bool,
-                5usize,
-            >("TryParseInt64IntegerStyle")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryParseInt64IntegerStyle", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i64>,
+                            quest_hook::libil2cpp::ByRefMut<bool>,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryParseInt64IntegerStyle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParseInt64IntegerStyle", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -2233,25 +2544,28 @@ impl crate::System::Number {
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
         result: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<f32>,
-                ),
-                bool,
-                4usize,
-            >("TryParseSingle")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryParseSingle", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<f32>,
+                        ),
+                        bool,
+                        4usize,
+                    >("TryParseSingle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParseSingle", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (value, styles, info, result))?
@@ -2264,25 +2578,28 @@ impl crate::System::Number {
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
         result: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<u32>,
-                ),
-                bool,
-                4usize,
-            >("TryParseUInt32")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryParseUInt32", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u32>,
+                        ),
+                        bool,
+                        4usize,
+                    >("TryParseUInt32")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParseUInt32", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (value, styles, info, result))?
@@ -2296,26 +2613,29 @@ impl crate::System::Number {
         result: quest_hook::libil2cpp::ByRefMut<u32>,
         failureIsOverflow: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<u32>,
-                    quest_hook::libil2cpp::ByRefMut<bool>,
-                ),
-                bool,
-                5usize,
-            >("TryParseUInt32HexNumberStyle")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryParseUInt32HexNumberStyle", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u32>,
+                            quest_hook::libil2cpp::ByRefMut<bool>,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryParseUInt32HexNumberStyle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParseUInt32HexNumberStyle", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -2330,26 +2650,29 @@ impl crate::System::Number {
         result: quest_hook::libil2cpp::ByRefMut<u32>,
         failureIsOverflow: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<u32>,
-                    quest_hook::libil2cpp::ByRefMut<bool>,
-                ),
-                bool,
-                5usize,
-            >("TryParseUInt32IntegerStyle")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryParseUInt32IntegerStyle", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u32>,
+                            quest_hook::libil2cpp::ByRefMut<bool>,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryParseUInt32IntegerStyle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParseUInt32IntegerStyle", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -2363,25 +2686,28 @@ impl crate::System::Number {
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
         result: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<u64>,
-                ),
-                bool,
-                4usize,
-            >("TryParseUInt64")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryParseUInt64", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                        ),
+                        bool,
+                        4usize,
+                    >("TryParseUInt64")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParseUInt64", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (value, styles, info, result))?
@@ -2395,26 +2721,29 @@ impl crate::System::Number {
         result: quest_hook::libil2cpp::ByRefMut<u64>,
         failureIsOverflow: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<u64>,
-                    quest_hook::libil2cpp::ByRefMut<bool>,
-                ),
-                bool,
-                5usize,
-            >("TryParseUInt64HexNumberStyle")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryParseUInt64HexNumberStyle", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                            quest_hook::libil2cpp::ByRefMut<bool>,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryParseUInt64HexNumberStyle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParseUInt64HexNumberStyle", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -2429,26 +2758,29 @@ impl crate::System::Number {
         result: quest_hook::libil2cpp::ByRefMut<u64>,
         failureIsOverflow: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<u64>,
-                    quest_hook::libil2cpp::ByRefMut<bool>,
-                ),
-                bool,
-                5usize,
-            >("TryParseUInt64IntegerStyle")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryParseUInt64IntegerStyle", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                            quest_hook::libil2cpp::ByRefMut<bool>,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryParseUInt64IntegerStyle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParseUInt64IntegerStyle", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -2463,26 +2795,31 @@ impl crate::System::Number {
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
         parseDecimal: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::NumberStyles,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Globalization::NumberFormatInfo,
-                    >,
-                    bool,
-                ),
-                bool,
-                5usize,
-            >("TryStringToNumber")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryStringToNumber", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::NumberStyles,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Globalization::NumberFormatInfo,
+                            >,
+                            bool,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryStringToNumber")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryStringToNumber", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (value, styles, number, info, parseDecimal))?
@@ -2495,23 +2832,26 @@ impl crate::System::Number {
         destination: crate::System::Span_1<char>,
         charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    u32,
-                    i32,
-                    crate::System::Span_1<char>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                4usize,
-            >("TryUInt32ToDecStr")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryUInt32ToDecStr", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            u32,
+                            i32,
+                            crate::System::Span_1<char>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        4usize,
+                    >("TryUInt32ToDecStr")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryUInt32ToDecStr", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (value, digits, destination, charsWritten))?
@@ -2524,23 +2864,26 @@ impl crate::System::Number {
         destination: crate::System::Span_1<char>,
         charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    u64,
-                    i32,
-                    crate::System::Span_1<char>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                4usize,
-            >("TryUInt64ToDecStr")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "TryUInt64ToDecStr", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            u64,
+                            i32,
+                            crate::System::Span_1<char>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        4usize,
+                    >("TryUInt64ToDecStr")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryUInt64ToDecStr", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (value, digits, destination, charsWritten))?
@@ -2554,22 +2897,27 @@ impl crate::System::Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    u32,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                3usize,
-            >("UInt32ToDecChars")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "UInt32ToDecChars", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            u32,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        3usize,
+                    >("UInt32ToDecChars")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UInt32ToDecChars", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -2582,18 +2930,21 @@ impl crate::System::Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (u32, i32),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                2usize,
-            >("UInt32ToDecStr")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "UInt32ToDecStr", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (u32, i32),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        2usize,
+                    >("UInt32ToDecStr")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UInt32ToDecStr", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -2604,21 +2955,26 @@ impl crate::System::Number {
         value: u32,
         number: quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    u32,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("UInt32ToNumber")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "UInt32ToNumber", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            u32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("UInt32ToNumber")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UInt32ToNumber", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (value, number))?
@@ -2631,18 +2987,21 @@ impl crate::System::Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (u64, i32),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                2usize,
-            >("UInt64ToDecStr")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "UInt64ToDecStr", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (u64, i32),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        2usize,
+                    >("UInt64ToDecStr")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UInt64ToDecStr", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -2653,21 +3012,26 @@ impl crate::System::Number {
         value: u64,
         number: quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    u64,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("UInt64ToNumber")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "UInt64ToNumber", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            u64,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Number_NumberBuffer,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("UInt64ToNumber")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UInt64ToNumber", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (value, number))?
@@ -2675,14 +3039,17 @@ impl crate::System::Number {
         Ok(__cordl_ret.into())
     }
     pub fn abs(value: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(i32), i32, 1usize>("abs")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number as quest_hook::libil2cpp::Type > ::class(),
-                    "abs", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(i32), i32, 1usize>("abs")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "abs", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
@@ -2906,18 +3273,21 @@ impl crate::System::Number_NumberBuffer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number_NumberBuffer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                0usize,
-            >("get_digits")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number_NumberBuffer as quest_hook::libil2cpp::Type >
-                    ::class(), "get_digits", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        0usize,
+                    >("get_digits")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_digits", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -2925,14 +3295,17 @@ impl crate::System::Number_NumberBuffer {
         Ok(__cordl_ret.into())
     }
     pub fn get_sign(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number_NumberBuffer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_sign")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number_NumberBuffer as quest_hook::libil2cpp::Type >
-                    ::class(), "get_sign", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_sign")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_sign", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -2941,14 +3314,21 @@ impl crate::System::Number_NumberBuffer {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Number_NumberBuffer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_sign")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Number_NumberBuffer as quest_hook::libil2cpp::Type >
-                    ::class(), "set_sign", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_sign")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_sign", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

@@ -141,38 +141,43 @@ impl crate::GlobalNamespace::NoteCutInfo {
             crate::GlobalNamespace::ISaberMovementData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteCutInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-                    bool,
-                    bool,
-                    bool,
-                    bool,
-                    f32,
-                    crate::UnityEngine::Vector3,
-                    crate::GlobalNamespace::SaberType,
-                    f32,
-                    f32,
-                    crate::UnityEngine::Vector3,
-                    crate::UnityEngine::Vector3,
-                    f32,
-                    f32,
-                    crate::UnityEngine::Quaternion,
-                    crate::UnityEngine::Quaternion,
-                    crate::UnityEngine::Quaternion,
-                    crate::UnityEngine::Vector3,
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISaberMovementData>,
-                ),
-                quest_hook::libil2cpp::Void,
-                19usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteCutInfo as quest_hook::libil2cpp::Type >
-                    ::class(), ".ctor", 19usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+                            bool,
+                            bool,
+                            bool,
+                            bool,
+                            f32,
+                            crate::UnityEngine::Vector3,
+                            crate::GlobalNamespace::SaberType,
+                            f32,
+                            f32,
+                            crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Vector3,
+                            f32,
+                            f32,
+                            crate::UnityEngine::Quaternion,
+                            crate::UnityEngine::Quaternion,
+                            crate::UnityEngine::Quaternion,
+                            crate::UnityEngine::Vector3,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ISaberMovementData,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        19usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 19usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -204,27 +209,33 @@ impl crate::GlobalNamespace::NoteCutInfo {
         Ok(__cordl_ret.into())
     }
     pub fn get_allExceptSaberTypeIsOK(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteCutInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_allExceptSaberTypeIsOK")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteCutInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "get_allExceptSaberTypeIsOK", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_allExceptSaberTypeIsOK")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_allExceptSaberTypeIsOK", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_allIsOK(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteCutInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_allIsOK")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteCutInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "get_allIsOK", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_allIsOK")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_allIsOK", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -232,18 +243,21 @@ impl crate::GlobalNamespace::NoteCutInfo {
     pub fn get_failReason(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutInfo_FailReason> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteCutInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::GlobalNamespace::NoteCutInfo_FailReason,
-                0usize,
-            >("get_failReason")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteCutInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "get_failReason", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::GlobalNamespace::NoteCutInfo_FailReason,
+                        0usize,
+                    >("get_failReason")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_failReason", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::NoteCutInfo_FailReason = unsafe {
             method.invoke_unchecked(self, ())?

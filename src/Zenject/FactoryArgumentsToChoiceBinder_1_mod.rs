@@ -89,27 +89,27 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryArgumentsToChoiceBinder_1<
-            TContract,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IEnumerable_1<
-                        crate::Zenject::TypeValuePair,
-                    >,
-                >),
-                quest_hook::libil2cpp::Gc<
-                    crate::Zenject::FactoryToChoiceBinder_1<TContract>,
-                >,
-                1usize,
-            >("WithFactoryArgumentsExplicit")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryArgumentsToChoiceBinder_1 < TContract > as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "WithFactoryArgumentsExplicit", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                crate::Zenject::TypeValuePair,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceBinder_1<TContract>,
+                        >,
+                        1usize,
+                    >("WithFactoryArgumentsExplicit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "WithFactoryArgumentsExplicit", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::FactoryToChoiceBinder_1<TContract>,
@@ -130,27 +130,29 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryArgumentsToChoiceBinder_1<
-            TContract,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    >,
-                >),
-                quest_hook::libil2cpp::Gc<
-                    crate::Zenject::FactoryToChoiceBinder_1<TContract>,
-                >,
-                1usize,
-            >("WithFactoryArguments")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryArgumentsToChoiceBinder_1 < TContract > as
-                    quest_hook::libil2cpp::Type > ::class(), "WithFactoryArguments",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceBinder_1<TContract>,
+                        >,
+                        1usize,
+                    >("WithFactoryArguments")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "WithFactoryArguments", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::FactoryToChoiceBinder_1<TContract>,
@@ -169,23 +171,23 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryArgumentsToChoiceBinder_1<
-            TContract,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (T),
-                quest_hook::libil2cpp::Gc<
-                    crate::Zenject::FactoryToChoiceBinder_1<TContract>,
-                >,
-                1usize,
-            >("WithFactoryArguments")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryArgumentsToChoiceBinder_1 < TContract > as
-                    quest_hook::libil2cpp::Type > ::class(), "WithFactoryArguments",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (T),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceBinder_1<TContract>,
+                        >,
+                        1usize,
+                    >("WithFactoryArguments")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "WithFactoryArguments", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::FactoryToChoiceBinder_1<TContract>,
@@ -207,23 +209,23 @@ impl<
         TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryArgumentsToChoiceBinder_1<
-            TContract,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (TParam1, TParam2),
-                quest_hook::libil2cpp::Gc<
-                    crate::Zenject::FactoryToChoiceBinder_1<TContract>,
-                >,
-                2usize,
-            >("WithFactoryArguments")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryArgumentsToChoiceBinder_1 < TContract > as
-                    quest_hook::libil2cpp::Type > ::class(), "WithFactoryArguments",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (TParam1, TParam2),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceBinder_1<TContract>,
+                        >,
+                        2usize,
+                    >("WithFactoryArguments")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "WithFactoryArguments", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::FactoryToChoiceBinder_1<TContract>,
@@ -248,23 +250,23 @@ impl<
         TParam3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryArgumentsToChoiceBinder_1<
-            TContract,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (TParam1, TParam2, TParam3),
-                quest_hook::libil2cpp::Gc<
-                    crate::Zenject::FactoryToChoiceBinder_1<TContract>,
-                >,
-                3usize,
-            >("WithFactoryArguments")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryArgumentsToChoiceBinder_1 < TContract > as
-                    quest_hook::libil2cpp::Type > ::class(), "WithFactoryArguments",
-                    3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (TParam1, TParam2, TParam3),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceBinder_1<TContract>,
+                        >,
+                        3usize,
+                    >("WithFactoryArguments")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "WithFactoryArguments", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::FactoryToChoiceBinder_1<TContract>,
@@ -297,23 +299,23 @@ impl<
         TParam4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryArgumentsToChoiceBinder_1<
-            TContract,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (TParam1, TParam2, TParam3, TParam4),
-                quest_hook::libil2cpp::Gc<
-                    crate::Zenject::FactoryToChoiceBinder_1<TContract>,
-                >,
-                4usize,
-            >("WithFactoryArguments")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryArgumentsToChoiceBinder_1 < TContract > as
-                    quest_hook::libil2cpp::Type > ::class(), "WithFactoryArguments",
-                    4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (TParam1, TParam2, TParam3, TParam4),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceBinder_1<TContract>,
+                        >,
+                        4usize,
+                    >("WithFactoryArguments")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "WithFactoryArguments", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::FactoryToChoiceBinder_1<TContract>,
@@ -350,23 +352,23 @@ impl<
         TParam5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryArgumentsToChoiceBinder_1<
-            TContract,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (TParam1, TParam2, TParam3, TParam4, TParam5),
-                quest_hook::libil2cpp::Gc<
-                    crate::Zenject::FactoryToChoiceBinder_1<TContract>,
-                >,
-                5usize,
-            >("WithFactoryArguments")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryArgumentsToChoiceBinder_1 < TContract > as
-                    quest_hook::libil2cpp::Type > ::class(), "WithFactoryArguments",
-                    5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (TParam1, TParam2, TParam3, TParam4, TParam5),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceBinder_1<TContract>,
+                        >,
+                        5usize,
+                    >("WithFactoryArguments")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "WithFactoryArguments", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::FactoryToChoiceBinder_1<TContract>,
@@ -409,23 +411,23 @@ impl<
         TParam6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryArgumentsToChoiceBinder_1<
-            TContract,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (TParam1, TParam2, TParam3, TParam4, TParam5, TParam6),
-                quest_hook::libil2cpp::Gc<
-                    crate::Zenject::FactoryToChoiceBinder_1<TContract>,
-                >,
-                6usize,
-            >("WithFactoryArguments")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryArgumentsToChoiceBinder_1 < TContract > as
-                    quest_hook::libil2cpp::Type > ::class(), "WithFactoryArguments",
-                    6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (TParam1, TParam2, TParam3, TParam4, TParam5, TParam6),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceBinder_1<TContract>,
+                        >,
+                        6usize,
+                    >("WithFactoryArguments")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "WithFactoryArguments", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::FactoryToChoiceBinder_1<TContract>,
@@ -448,24 +450,25 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryArgumentsToChoiceBinder_1<
-            TContract,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                    quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
-                    quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactoryArgumentsToChoiceBinder_1 < TContract > as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (bindContainer, bindInfo, factoryBindInfo))?

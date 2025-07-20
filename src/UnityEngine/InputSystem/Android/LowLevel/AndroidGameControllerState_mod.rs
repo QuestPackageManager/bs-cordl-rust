@@ -124,19 +124,24 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::InputSystem::Android::LowLevel::AndroidAxis, f32),
-                crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState,
-                2usize,
-            >("WithAxis")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState
-                    as quest_hook::libil2cpp::Type > ::class(), "WithAxis", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::InputSystem::Android::LowLevel::AndroidAxis,
+                            f32,
+                        ),
+                        crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState,
+                        2usize,
+                    >("WithAxis")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "WithAxis", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState = unsafe {
             method.invoke_unchecked(self, (axis, value))?
@@ -150,22 +155,24 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::UnityEngine::InputSystem::Android::LowLevel::AndroidKeyCode,
-                    bool,
-                ),
-                crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState,
-                2usize,
-            >("WithButton")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState
-                    as quest_hook::libil2cpp::Type > ::class(), "WithButton", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::InputSystem::Android::LowLevel::AndroidKeyCode,
+                            bool,
+                        ),
+                        crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState,
+                        2usize,
+                    >("WithButton")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "WithButton", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState = unsafe {
             method.invoke_unchecked(self, (code, value))?
@@ -177,19 +184,21 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::FourCC,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::InputSystem::Utilities::FourCC,
-                0usize,
-            >("get_format")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState
-                    as quest_hook::libil2cpp::Type > ::class(), "get_format", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::InputSystem::Utilities::FourCC,
+                        0usize,
+                    >("get_format")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_format", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
             method.invoke_unchecked(self, ())?
@@ -280,15 +289,17 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

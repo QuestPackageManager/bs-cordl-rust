@@ -42,18 +42,21 @@ impl crate::UnityEngine::InputSystem::InputExtensions {
     pub fn IsActive(
         phase: crate::UnityEngine::InputSystem::TouchPhase,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::InputExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::InputSystem::TouchPhase),
-                bool,
-                1usize,
-            >("IsActive")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::InputExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "IsActive", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::InputSystem::TouchPhase),
+                        bool,
+                        1usize,
+                    >("IsActive")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsActive", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (phase))? };
         Ok(__cordl_ret.into())
@@ -61,18 +64,21 @@ impl crate::UnityEngine::InputSystem::InputExtensions {
     pub fn IsEndedOrCanceled(
         phase: crate::UnityEngine::InputSystem::TouchPhase,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::InputExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::InputSystem::TouchPhase),
-                bool,
-                1usize,
-            >("IsEndedOrCanceled")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::InputExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "IsEndedOrCanceled", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::InputSystem::TouchPhase),
+                        bool,
+                        1usize,
+                    >("IsEndedOrCanceled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsEndedOrCanceled", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (phase))? };
         Ok(__cordl_ret.into())
@@ -80,18 +86,21 @@ impl crate::UnityEngine::InputSystem::InputExtensions {
     pub fn IsInProgress(
         phase: crate::UnityEngine::InputSystem::InputActionPhase,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::InputExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::InputSystem::InputActionPhase),
-                bool,
-                1usize,
-            >("IsInProgress")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::InputExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "IsInProgress", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::InputSystem::InputActionPhase),
+                        bool,
+                        1usize,
+                    >("IsInProgress")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsInProgress", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (phase))? };
         Ok(__cordl_ret.into())
@@ -99,18 +108,21 @@ impl crate::UnityEngine::InputSystem::InputExtensions {
     pub fn IsModifierKey(
         key: crate::UnityEngine::InputSystem::Key,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::InputExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::InputSystem::Key),
-                bool,
-                1usize,
-            >("IsModifierKey")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::InputExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "IsModifierKey", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::InputSystem::Key),
+                        bool,
+                        1usize,
+                    >("IsModifierKey")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsModifierKey", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (key))? };
         Ok(__cordl_ret.into())
@@ -118,18 +130,21 @@ impl crate::UnityEngine::InputSystem::InputExtensions {
     pub fn IsTextInputKey(
         key: crate::UnityEngine::InputSystem::Key,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::InputExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::InputSystem::Key),
-                bool,
-                1usize,
-            >("IsTextInputKey")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::InputExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "IsTextInputKey", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::InputSystem::Key),
+                        bool,
+                        1usize,
+                    >("IsTextInputKey")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsTextInputKey", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (key))? };
         Ok(__cordl_ret.into())

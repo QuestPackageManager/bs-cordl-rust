@@ -67,18 +67,21 @@ impl crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap {
         &mut self,
         virtualMask: crate::GlobalNamespace::OVRInput_Axis1D,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawAxis1D> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::OVRInput_Axis1D),
-                crate::GlobalNamespace::OVRInput_RawAxis1D,
-                1usize,
-            >("ToRawMask")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap
-                    as quest_hook::libil2cpp::Type > ::class(), "ToRawMask", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::OVRInput_Axis1D),
+                        crate::GlobalNamespace::OVRInput_RawAxis1D,
+                        1usize,
+                    >("ToRawMask")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToRawMask", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRInput_RawAxis1D = unsafe {
             method.invoke_unchecked(self, (virtualMask))?
@@ -88,14 +91,17 @@ impl crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -172,18 +178,21 @@ impl crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap {
         &mut self,
         virtualMask: crate::GlobalNamespace::OVRInput_Axis2D,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawAxis2D> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::OVRInput_Axis2D),
-                crate::GlobalNamespace::OVRInput_RawAxis2D,
-                1usize,
-            >("ToRawMask")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap
-                    as quest_hook::libil2cpp::Type > ::class(), "ToRawMask", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::OVRInput_Axis2D),
+                        crate::GlobalNamespace::OVRInput_RawAxis2D,
+                        1usize,
+                    >("ToRawMask")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToRawMask", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRInput_RawAxis2D = unsafe {
             method.invoke_unchecked(self, (virtualMask))?
@@ -193,14 +202,17 @@ impl crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -305,18 +317,21 @@ impl crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap {
         &mut self,
         virtualMask: crate::GlobalNamespace::OVRInput_Button,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawButton> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::OVRInput_Button),
-                crate::GlobalNamespace::OVRInput_RawButton,
-                1usize,
-            >("ToRawMask")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap
-                    as quest_hook::libil2cpp::Type > ::class(), "ToRawMask", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::OVRInput_Button),
+                        crate::GlobalNamespace::OVRInput_RawButton,
+                        1usize,
+                    >("ToRawMask")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToRawMask", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRInput_RawButton = unsafe {
             method.invoke_unchecked(self, (virtualMask))?
@@ -326,14 +341,17 @@ impl crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -410,19 +428,21 @@ impl crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap {
         &mut self,
         virtualMask: crate::GlobalNamespace::OVRInput_NearTouch,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawNearTouch> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::OVRInput_NearTouch),
-                crate::GlobalNamespace::OVRInput_RawNearTouch,
-                1usize,
-            >("ToRawMask")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap as
-                    quest_hook::libil2cpp::Type > ::class(), "ToRawMask", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::OVRInput_NearTouch),
+                        crate::GlobalNamespace::OVRInput_RawNearTouch,
+                        1usize,
+                    >("ToRawMask")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToRawMask", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRInput_RawNearTouch = unsafe {
             method.invoke_unchecked(self, (virtualMask))?
@@ -432,15 +452,17 @@ impl crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -525,18 +547,21 @@ impl crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap {
         &mut self,
         virtualMask: crate::GlobalNamespace::OVRInput_Touch,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawTouch> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::OVRInput_Touch),
-                crate::GlobalNamespace::OVRInput_RawTouch,
-                1usize,
-            >("ToRawMask")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap
-                    as quest_hook::libil2cpp::Type > ::class(), "ToRawMask", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::OVRInput_Touch),
+                        crate::GlobalNamespace::OVRInput_RawTouch,
+                        1usize,
+                    >("ToRawMask")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToRawMask", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRInput_RawTouch = unsafe {
             method.invoke_unchecked(self, (virtualMask))?
@@ -546,14 +571,17 @@ impl crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -681,21 +709,25 @@ impl crate::GlobalNamespace::OVRInput {
         stepId: crate::GlobalNamespace::OVRPlugin_Step,
         hand: crate::GlobalNamespace::OVRInput_Hand,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRPlugin_Step,
-                    crate::GlobalNamespace::OVRInput_Hand,
-                ),
-                bool,
-                2usize,
-            >("AreHandPosesGeneratedByControllerData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "AreHandPosesGeneratedByControllerData", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRPlugin_Step,
+                            crate::GlobalNamespace::OVRInput_Hand,
+                        ),
+                        bool,
+                        2usize,
+                    >("AreHandPosesGeneratedByControllerData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AreHandPosesGeneratedByControllerData",
+                            2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (stepId, hand))? };
         Ok(__cordl_ret.into())
@@ -704,18 +736,21 @@ impl crate::GlobalNamespace::OVRInput {
         a: crate::UnityEngine::Vector2,
         b: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Vector2, crate::UnityEngine::Vector2),
-                crate::UnityEngine::Vector2,
-                2usize,
-            >("CalculateAbsMax")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "CalculateAbsMax", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Vector2, crate::UnityEngine::Vector2),
+                        crate::UnityEngine::Vector2,
+                        2usize,
+                    >("CalculateAbsMax")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CalculateAbsMax", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
             method.invoke_unchecked((), (a, b))?
@@ -726,14 +761,17 @@ impl crate::GlobalNamespace::OVRInput {
         a: f32,
         b: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(f32, f32), f32, 2usize>("CalculateAbsMax")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "CalculateAbsMax", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(f32, f32), f32, 2usize>("CalculateAbsMax")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CalculateAbsMax", 2usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
@@ -742,18 +780,21 @@ impl crate::GlobalNamespace::OVRInput {
         a: crate::UnityEngine::Vector2,
         deadzone: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Vector2, f32),
-                crate::UnityEngine::Vector2,
-                2usize,
-            >("CalculateDeadzone")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "CalculateDeadzone", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Vector2, f32),
+                        crate::UnityEngine::Vector2,
+                        2usize,
+                    >("CalculateDeadzone")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CalculateDeadzone", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
             method.invoke_unchecked((), (a, deadzone))?
@@ -764,14 +805,17 @@ impl crate::GlobalNamespace::OVRInput {
         a: f32,
         deadzone: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(f32, f32), f32, 2usize>("CalculateDeadzone")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "CalculateDeadzone", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(f32, f32), f32, 2usize>("CalculateDeadzone")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CalculateDeadzone", 2usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (a, deadzone))? };
         Ok(__cordl_ret.into())
@@ -779,18 +823,22 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn DisableSimultaneousHandsAndControllers() -> quest_hook::libil2cpp::Result<
         bool,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                bool,
-                0usize,
-            >("DisableSimultaneousHandsAndControllers")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "DisableSimultaneousHandsAndControllers", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("DisableSimultaneousHandsAndControllers")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "DisableSimultaneousHandsAndControllers",
+                            0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -798,31 +846,42 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn EnableSimultaneousHandsAndControllers() -> quest_hook::libil2cpp::Result<
         bool,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                bool,
-                0usize,
-            >("EnableSimultaneousHandsAndControllers")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "EnableSimultaneousHandsAndControllers", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("EnableSimultaneousHandsAndControllers")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "EnableSimultaneousHandsAndControllers",
+                            0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn FixedUpdate() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("FixedUpdate")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "FixedUpdate", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("FixedUpdate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FixedUpdate", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), ())?
@@ -832,18 +891,21 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn GetActiveController() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRInput_Controller,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                crate::GlobalNamespace::OVRInput_Controller,
-                0usize,
-            >("GetActiveController")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetActiveController", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        crate::GlobalNamespace::OVRInput_Controller,
+                        0usize,
+                    >("GetActiveController")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetActiveController", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRInput_Controller = unsafe {
             method.invoke_unchecked((), ())?
@@ -853,18 +915,21 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn GetActiveControllerForHand(
         handedness: crate::GlobalNamespace::OVRInput_Handedness,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_Controller> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRInput_Handedness),
-                crate::GlobalNamespace::OVRInput_Controller,
-                1usize,
-            >("GetActiveControllerForHand")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetActiveControllerForHand", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRInput_Handedness),
+                        crate::GlobalNamespace::OVRInput_Controller,
+                        1usize,
+                    >("GetActiveControllerForHand")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetActiveControllerForHand", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRInput_Controller = unsafe {
             method.invoke_unchecked((), (handedness))?
@@ -874,18 +939,21 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn GetConnectedControllers() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRInput_Controller,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                crate::GlobalNamespace::OVRInput_Controller,
-                0usize,
-            >("GetConnectedControllers")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetConnectedControllers", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        crate::GlobalNamespace::OVRInput_Controller,
+                        0usize,
+                    >("GetConnectedControllers")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetConnectedControllers", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRInput_Controller = unsafe {
             method.invoke_unchecked((), ())?
@@ -895,18 +963,21 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn GetControllerBatteryPercentRemaining(
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRInput_Controller),
-                u8,
-                1usize,
-            >("GetControllerBatteryPercentRemaining")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetControllerBatteryPercentRemaining", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRInput_Controller),
+                        u8,
+                        1usize,
+                    >("GetControllerBatteryPercentRemaining")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetControllerBatteryPercentRemaining", 1usize
+                        )
+                    })
             });
         let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (controllerMask))? };
         Ok(__cordl_ret.into())
@@ -916,18 +987,21 @@ impl crate::GlobalNamespace::OVRInput {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRInput_ControllerInHandState,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRInput_Hand),
-                crate::GlobalNamespace::OVRInput_ControllerInHandState,
-                1usize,
-            >("GetControllerIsInHandState")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetControllerIsInHandState", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRInput_Hand),
+                        crate::GlobalNamespace::OVRInput_ControllerInHandState,
+                        1usize,
+                    >("GetControllerIsInHandState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetControllerIsInHandState", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRInput_ControllerInHandState = unsafe {
             method.invoke_unchecked((), (hand))?
@@ -937,18 +1011,21 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn GetControllerOrientationTracked(
         controllerType: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRInput_Controller),
-                bool,
-                1usize,
-            >("GetControllerOrientationTracked")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetControllerOrientationTracked", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRInput_Controller),
+                        bool,
+                        1usize,
+                    >("GetControllerOrientationTracked")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetControllerOrientationTracked", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (controllerType))?
@@ -958,18 +1035,21 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn GetControllerOrientationValid(
         controllerType: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRInput_Controller),
-                bool,
-                1usize,
-            >("GetControllerOrientationValid")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetControllerOrientationValid", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRInput_Controller),
+                        bool,
+                        1usize,
+                    >("GetControllerOrientationValid")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetControllerOrientationValid", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (controllerType))?
@@ -979,18 +1059,21 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn GetControllerPositionTracked(
         controllerType: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRInput_Controller),
-                bool,
-                1usize,
-            >("GetControllerPositionTracked")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetControllerPositionTracked", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRInput_Controller),
+                        bool,
+                        1usize,
+                    >("GetControllerPositionTracked")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetControllerPositionTracked", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (controllerType))?
@@ -1000,18 +1083,21 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn GetControllerPositionValid(
         controllerType: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRInput_Controller),
-                bool,
-                1usize,
-            >("GetControllerPositionValid")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetControllerPositionValid", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRInput_Controller),
+                        bool,
+                        1usize,
+                    >("GetControllerPositionValid")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetControllerPositionValid", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (controllerType))?
@@ -1021,18 +1107,21 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn GetControllerSampleRateHz(
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRInput_Controller),
-                f32,
-                1usize,
-            >("GetControllerSampleRateHz")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetControllerSampleRateHz", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRInput_Controller),
+                        f32,
+                        1usize,
+                    >("GetControllerSampleRateHz")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetControllerSampleRateHz", 1usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (controllerMask))? };
         Ok(__cordl_ret.into())
@@ -1042,18 +1131,21 @@ impl crate::GlobalNamespace::OVRInput {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRInput_InteractionProfile,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRInput_Hand),
-                crate::GlobalNamespace::OVRInput_InteractionProfile,
-                1usize,
-            >("GetCurrentInteractionProfile")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetCurrentInteractionProfile", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRInput_Hand),
+                        crate::GlobalNamespace::OVRInput_InteractionProfile,
+                        1usize,
+                    >("GetCurrentInteractionProfile")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetCurrentInteractionProfile", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRInput_InteractionProfile = unsafe {
             method.invoke_unchecked((), (hand))?
@@ -1063,18 +1155,21 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn GetDominantHand() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRInput_Handedness,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                crate::GlobalNamespace::OVRInput_Handedness,
-                0usize,
-            >("GetDominantHand")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetDominantHand", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        crate::GlobalNamespace::OVRInput_Handedness,
+                        0usize,
+                    >("GetDominantHand")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDominantHand", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRInput_Handedness = unsafe {
             method.invoke_unchecked((), ())?
@@ -1085,21 +1180,24 @@ impl crate::GlobalNamespace::OVRInput {
         virtualMask: crate::GlobalNamespace::OVRInput_Button,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_Button,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("GetDown")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetDown", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_Button,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("GetDown")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDown", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (virtualMask, controllerMask))?
@@ -1110,21 +1208,24 @@ impl crate::GlobalNamespace::OVRInput {
         virtualMask: crate::GlobalNamespace::OVRInput_NearTouch,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_NearTouch,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("GetDown")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetDown", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_NearTouch,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("GetDown")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDown", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (virtualMask, controllerMask))?
@@ -1135,21 +1236,24 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawButton,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_RawButton,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("GetDown")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetDown", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_RawButton,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("GetDown")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDown", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (rawMask, controllerMask))?
@@ -1160,21 +1264,24 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawNearTouch,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_RawNearTouch,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("GetDown")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetDown", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_RawNearTouch,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("GetDown")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDown", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (rawMask, controllerMask))?
@@ -1185,21 +1292,24 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawTouch,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_RawTouch,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("GetDown")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetDown", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_RawTouch,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("GetDown")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDown", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (rawMask, controllerMask))?
@@ -1210,21 +1320,24 @@ impl crate::GlobalNamespace::OVRInput {
         virtualMask: crate::GlobalNamespace::OVRInput_Touch,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_Touch,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("GetDown")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetDown", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_Touch,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("GetDown")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDown", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (virtualMask, controllerMask))?
@@ -1234,18 +1347,21 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn GetLocalControllerAcceleration(
         controllerType: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRInput_Controller),
-                crate::UnityEngine::Vector3,
-                1usize,
-            >("GetLocalControllerAcceleration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetLocalControllerAcceleration", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRInput_Controller),
+                        crate::UnityEngine::Vector3,
+                        1usize,
+                    >("GetLocalControllerAcceleration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetLocalControllerAcceleration", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
             method.invoke_unchecked((), (controllerType))?
@@ -1255,18 +1371,22 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn GetLocalControllerAngularAcceleration(
         controllerType: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRInput_Controller),
-                crate::UnityEngine::Vector3,
-                1usize,
-            >("GetLocalControllerAngularAcceleration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetLocalControllerAngularAcceleration", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRInput_Controller),
+                        crate::UnityEngine::Vector3,
+                        1usize,
+                    >("GetLocalControllerAngularAcceleration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetLocalControllerAngularAcceleration",
+                            1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
             method.invoke_unchecked((), (controllerType))?
@@ -1276,18 +1396,21 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn GetLocalControllerAngularVelocity(
         controllerType: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRInput_Controller),
-                crate::UnityEngine::Vector3,
-                1usize,
-            >("GetLocalControllerAngularVelocity")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetLocalControllerAngularVelocity", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRInput_Controller),
+                        crate::UnityEngine::Vector3,
+                        1usize,
+                    >("GetLocalControllerAngularVelocity")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetLocalControllerAngularVelocity", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
             method.invoke_unchecked((), (controllerType))?
@@ -1297,18 +1420,21 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn GetLocalControllerPosition(
         controllerType: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRInput_Controller),
-                crate::UnityEngine::Vector3,
-                1usize,
-            >("GetLocalControllerPosition")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetLocalControllerPosition", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRInput_Controller),
+                        crate::UnityEngine::Vector3,
+                        1usize,
+                    >("GetLocalControllerPosition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetLocalControllerPosition", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
             method.invoke_unchecked((), (controllerType))?
@@ -1318,18 +1444,21 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn GetLocalControllerRotation(
         controllerType: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRInput_Controller),
-                crate::UnityEngine::Quaternion,
-                1usize,
-            >("GetLocalControllerRotation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetLocalControllerRotation", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRInput_Controller),
+                        crate::UnityEngine::Quaternion,
+                        1usize,
+                    >("GetLocalControllerRotation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetLocalControllerRotation", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
             method.invoke_unchecked((), (controllerType))?
@@ -1343,24 +1472,30 @@ impl crate::GlobalNamespace::OVRInput {
         velocity: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         angularVelocity: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_Controller,
-                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
-                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                ),
-                bool,
-                5usize,
-            >("GetLocalControllerStatesWithoutPrediction")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetLocalControllerStatesWithoutPrediction", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_Controller,
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Quaternion,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        ),
+                        bool,
+                        5usize,
+                    >("GetLocalControllerStatesWithoutPrediction")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetLocalControllerStatesWithoutPrediction",
+                            5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -1374,18 +1509,21 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn GetLocalControllerVelocity(
         controllerType: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRInput_Controller),
-                crate::UnityEngine::Vector3,
-                1usize,
-            >("GetLocalControllerVelocity")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetLocalControllerVelocity", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRInput_Controller),
+                        crate::UnityEngine::Vector3,
+                        1usize,
+                    >("GetLocalControllerVelocity")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetLocalControllerVelocity", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
             method.invoke_unchecked((), (controllerType))?
@@ -1398,18 +1536,21 @@ impl crate::GlobalNamespace::OVRInput {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::OVR::OpenVR::ETrackedDeviceProperty, u32),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                2usize,
-            >("GetOpenVRStringProperty")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetOpenVRStringProperty", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::OVR::OpenVR::ETrackedDeviceProperty, u32),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        2usize,
+                    >("GetOpenVRStringProperty")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetOpenVRStringProperty", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -1421,22 +1562,25 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawAxis1D,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_Axis1D,
-                    crate::GlobalNamespace::OVRInput_RawAxis1D,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                f32,
-                3usize,
-            >("GetResolvedAxis1D")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetResolvedAxis1D", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_Axis1D,
+                            crate::GlobalNamespace::OVRInput_RawAxis1D,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        f32,
+                        3usize,
+                    >("GetResolvedAxis1D")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetResolvedAxis1D", 3usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe {
             method.invoke_unchecked((), (virtualMask, rawMask, controllerMask))?
@@ -1448,22 +1592,25 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawAxis2D,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_Axis2D,
-                    crate::GlobalNamespace::OVRInput_RawAxis2D,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                crate::UnityEngine::Vector2,
-                3usize,
-            >("GetResolvedAxis2D")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetResolvedAxis2D", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_Axis2D,
+                            crate::GlobalNamespace::OVRInput_RawAxis2D,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        crate::UnityEngine::Vector2,
+                        3usize,
+                    >("GetResolvedAxis2D")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetResolvedAxis2D", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
             method.invoke_unchecked((), (virtualMask, rawMask, controllerMask))?
@@ -1475,22 +1622,25 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawButton,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_Button,
-                    crate::GlobalNamespace::OVRInput_RawButton,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                3usize,
-            >("GetResolvedButton")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetResolvedButton", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_Button,
+                            crate::GlobalNamespace::OVRInput_RawButton,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        3usize,
+                    >("GetResolvedButton")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetResolvedButton", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (virtualMask, rawMask, controllerMask))?
@@ -1502,22 +1652,25 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawButton,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_Button,
-                    crate::GlobalNamespace::OVRInput_RawButton,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                3usize,
-            >("GetResolvedButtonDown")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetResolvedButtonDown", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_Button,
+                            crate::GlobalNamespace::OVRInput_RawButton,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        3usize,
+                    >("GetResolvedButtonDown")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetResolvedButtonDown", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (virtualMask, rawMask, controllerMask))?
@@ -1529,22 +1682,25 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawButton,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_Button,
-                    crate::GlobalNamespace::OVRInput_RawButton,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                3usize,
-            >("GetResolvedButtonUp")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetResolvedButtonUp", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_Button,
+                            crate::GlobalNamespace::OVRInput_RawButton,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        3usize,
+                    >("GetResolvedButtonUp")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetResolvedButtonUp", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (virtualMask, rawMask, controllerMask))?
@@ -1556,22 +1712,25 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawNearTouch,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_NearTouch,
-                    crate::GlobalNamespace::OVRInput_RawNearTouch,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                3usize,
-            >("GetResolvedNearTouch")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetResolvedNearTouch", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_NearTouch,
+                            crate::GlobalNamespace::OVRInput_RawNearTouch,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        3usize,
+                    >("GetResolvedNearTouch")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetResolvedNearTouch", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (virtualMask, rawMask, controllerMask))?
@@ -1583,22 +1742,25 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawNearTouch,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_NearTouch,
-                    crate::GlobalNamespace::OVRInput_RawNearTouch,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                3usize,
-            >("GetResolvedNearTouchDown")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetResolvedNearTouchDown", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_NearTouch,
+                            crate::GlobalNamespace::OVRInput_RawNearTouch,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        3usize,
+                    >("GetResolvedNearTouchDown")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetResolvedNearTouchDown", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (virtualMask, rawMask, controllerMask))?
@@ -1610,22 +1772,25 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawNearTouch,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_NearTouch,
-                    crate::GlobalNamespace::OVRInput_RawNearTouch,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                3usize,
-            >("GetResolvedNearTouchUp")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetResolvedNearTouchUp", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_NearTouch,
+                            crate::GlobalNamespace::OVRInput_RawNearTouch,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        3usize,
+                    >("GetResolvedNearTouchUp")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetResolvedNearTouchUp", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (virtualMask, rawMask, controllerMask))?
@@ -1637,22 +1802,25 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawTouch,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_Touch,
-                    crate::GlobalNamespace::OVRInput_RawTouch,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                3usize,
-            >("GetResolvedTouch")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetResolvedTouch", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_Touch,
+                            crate::GlobalNamespace::OVRInput_RawTouch,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        3usize,
+                    >("GetResolvedTouch")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetResolvedTouch", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (virtualMask, rawMask, controllerMask))?
@@ -1664,22 +1832,25 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawTouch,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_Touch,
-                    crate::GlobalNamespace::OVRInput_RawTouch,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                3usize,
-            >("GetResolvedTouchDown")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetResolvedTouchDown", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_Touch,
+                            crate::GlobalNamespace::OVRInput_RawTouch,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        3usize,
+                    >("GetResolvedTouchDown")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetResolvedTouchDown", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (virtualMask, rawMask, controllerMask))?
@@ -1691,22 +1862,25 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawTouch,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_Touch,
-                    crate::GlobalNamespace::OVRInput_RawTouch,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                3usize,
-            >("GetResolvedTouchUp")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetResolvedTouchUp", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_Touch,
+                            crate::GlobalNamespace::OVRInput_RawTouch,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        3usize,
+                    >("GetResolvedTouchUp")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetResolvedTouchUp", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (virtualMask, rawMask, controllerMask))?
@@ -1717,21 +1891,24 @@ impl crate::GlobalNamespace::OVRInput {
         virtualMask: crate::GlobalNamespace::OVRInput_Button,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_Button,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("GetUp")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetUp", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_Button,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("GetUp")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetUp", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (virtualMask, controllerMask))?
@@ -1742,21 +1919,24 @@ impl crate::GlobalNamespace::OVRInput {
         virtualMask: crate::GlobalNamespace::OVRInput_NearTouch,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_NearTouch,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("GetUp")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetUp", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_NearTouch,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("GetUp")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetUp", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (virtualMask, controllerMask))?
@@ -1767,21 +1947,24 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawButton,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_RawButton,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("GetUp")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetUp", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_RawButton,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("GetUp")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetUp", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (rawMask, controllerMask))?
@@ -1792,21 +1975,24 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawNearTouch,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_RawNearTouch,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("GetUp")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetUp", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_RawNearTouch,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("GetUp")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetUp", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (rawMask, controllerMask))?
@@ -1817,21 +2003,24 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawTouch,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_RawTouch,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("GetUp")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetUp", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_RawTouch,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("GetUp")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetUp", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (rawMask, controllerMask))?
@@ -1842,21 +2031,24 @@ impl crate::GlobalNamespace::OVRInput {
         virtualMask: crate::GlobalNamespace::OVRInput_Touch,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_Touch,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("GetUp")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "GetUp", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_Touch,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("GetUp")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetUp", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (virtualMask, controllerMask))?
@@ -1867,21 +2059,24 @@ impl crate::GlobalNamespace::OVRInput {
         virtualMask: crate::GlobalNamespace::OVRInput_Axis1D,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_Axis1D,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                f32,
-                2usize,
-            >("Get")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "Get", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_Axis1D,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        f32,
+                        2usize,
+                    >("Get")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Get", 2usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe {
             method.invoke_unchecked((), (virtualMask, controllerMask))?
@@ -1892,21 +2087,24 @@ impl crate::GlobalNamespace::OVRInput {
         virtualMask: crate::GlobalNamespace::OVRInput_Axis2D,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_Axis2D,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                crate::UnityEngine::Vector2,
-                2usize,
-            >("Get")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "Get", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_Axis2D,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        crate::UnityEngine::Vector2,
+                        2usize,
+                    >("Get")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Get", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
             method.invoke_unchecked((), (virtualMask, controllerMask))?
@@ -1917,21 +2115,24 @@ impl crate::GlobalNamespace::OVRInput {
         virtualMask: crate::GlobalNamespace::OVRInput_Button,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_Button,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("Get")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "Get", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_Button,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("Get")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Get", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (virtualMask, controllerMask))?
@@ -1942,21 +2143,24 @@ impl crate::GlobalNamespace::OVRInput {
         virtualMask: crate::GlobalNamespace::OVRInput_NearTouch,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_NearTouch,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("Get")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "Get", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_NearTouch,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("Get")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Get", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (virtualMask, controllerMask))?
@@ -1967,21 +2171,24 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawAxis1D,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_RawAxis1D,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                f32,
-                2usize,
-            >("Get")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "Get", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_RawAxis1D,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        f32,
+                        2usize,
+                    >("Get")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Get", 2usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe {
             method.invoke_unchecked((), (rawMask, controllerMask))?
@@ -1992,21 +2199,24 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawAxis2D,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_RawAxis2D,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                crate::UnityEngine::Vector2,
-                2usize,
-            >("Get")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "Get", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_RawAxis2D,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        crate::UnityEngine::Vector2,
+                        2usize,
+                    >("Get")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Get", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
             method.invoke_unchecked((), (rawMask, controllerMask))?
@@ -2017,21 +2227,24 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawButton,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_RawButton,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("Get")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "Get", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_RawButton,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("Get")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Get", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (rawMask, controllerMask))?
@@ -2042,21 +2255,24 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawNearTouch,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_RawNearTouch,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("Get")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "Get", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_RawNearTouch,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("Get")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Get", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (rawMask, controllerMask))?
@@ -2067,21 +2283,24 @@ impl crate::GlobalNamespace::OVRInput {
         rawMask: crate::GlobalNamespace::OVRInput_RawTouch,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_RawTouch,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("Get")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "Get", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_RawTouch,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("Get")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Get", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (rawMask, controllerMask))?
@@ -2092,21 +2311,24 @@ impl crate::GlobalNamespace::OVRInput {
         virtualMask: crate::GlobalNamespace::OVRInput_Touch,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_Touch,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("Get")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "Get", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_Touch,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("Get")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Get", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (virtualMask, controllerMask))?
@@ -2116,18 +2338,21 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn InitHapticInfo() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("InitHapticInfo")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "InitHapticInfo", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("InitHapticInfo")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "InitHapticInfo", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), ())?
@@ -2137,31 +2362,37 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn IsControllerConnected(
         controller: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRInput_Controller),
-                bool,
-                1usize,
-            >("IsControllerConnected")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "IsControllerConnected", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRInput_Controller),
+                        bool,
+                        1usize,
+                    >("IsControllerConnected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsControllerConnected", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (controller))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidOpenVRDevice(deviceId: u32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(u32), bool, 1usize>("IsValidOpenVRDevice")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "IsValidOpenVRDevice", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(u32), bool, 1usize>("IsValidOpenVRDevice")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsValidOpenVRDevice", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (deviceId))? };
         Ok(__cordl_ret.into())
@@ -2170,18 +2401,21 @@ impl crate::GlobalNamespace::OVRInput {
         amplitude: f32,
         deviceNode: crate::UnityEngine::XR::XRNode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (f32, crate::UnityEngine::XR::XRNode),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("PlayHapticImpulse")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "PlayHapticImpulse", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (f32, crate::UnityEngine::XR::XRNode),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("PlayHapticImpulse")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PlayHapticImpulse", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (amplitude, deviceNode))?
@@ -2192,21 +2426,25 @@ impl crate::GlobalNamespace::OVRInput {
         hapticsVibration: crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SetControllerHapticsAmplitudeEnvelope")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "SetControllerHapticsAmplitudeEnvelope", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetControllerHapticsAmplitudeEnvelope")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetControllerHapticsAmplitudeEnvelope",
+                            2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (hapticsVibration, controllerMask))?
@@ -2217,21 +2455,24 @@ impl crate::GlobalNamespace::OVRInput {
         hapticsVibration: crate::GlobalNamespace::OVRInput_HapticsPcmVibration,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_HapticsPcmVibration,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                i32,
-                2usize,
-            >("SetControllerHapticsPcm")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "SetControllerHapticsPcm", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_HapticsPcmVibration,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        i32,
+                        2usize,
+                    >("SetControllerHapticsPcm")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetControllerHapticsPcm", 2usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (hapticsVibration, controllerMask))?
@@ -2244,23 +2485,26 @@ impl crate::GlobalNamespace::OVRInput {
         amplitude: f32,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_HapticsLocation,
-                    f32,
-                    f32,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >("SetControllerLocalizedVibration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "SetControllerLocalizedVibration", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_HapticsLocation,
+                            f32,
+                            f32,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("SetControllerLocalizedVibration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetControllerLocalizedVibration", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -2276,18 +2520,21 @@ impl crate::GlobalNamespace::OVRInput {
         amplitude: f32,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (f32, f32, crate::GlobalNamespace::OVRInput_Controller),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("SetControllerVibration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "SetControllerVibration", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (f32, f32, crate::GlobalNamespace::OVRInput_Controller),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("SetControllerVibration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetControllerVibration", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (frequency, amplitude, controllerMask))?
@@ -2300,23 +2547,26 @@ impl crate::GlobalNamespace::OVRInput {
         leftRot: crate::UnityEngine::Quaternion,
         rightRot: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::Vector3,
-                    crate::UnityEngine::Vector3,
-                    crate::UnityEngine::Quaternion,
-                    crate::UnityEngine::Quaternion,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >("SetOpenVRLocalPose")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "SetOpenVRLocalPose", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Quaternion,
+                            crate::UnityEngine::Quaternion,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("SetOpenVRLocalPose")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetOpenVRLocalPose", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (leftPos, rightPos, leftRot, rightRot))?
@@ -2327,21 +2577,24 @@ impl crate::GlobalNamespace::OVRInput {
         controllerType: crate::GlobalNamespace::OVRInput_Controller,
         controllerMask: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRInput_Controller,
-                    crate::GlobalNamespace::OVRInput_Controller,
-                ),
-                bool,
-                2usize,
-            >("ShouldResolveController")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "ShouldResolveController", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRInput_Controller,
+                            crate::GlobalNamespace::OVRInput_Controller,
+                        ),
+                        bool,
+                        2usize,
+                    >("ShouldResolveController")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ShouldResolveController", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (controllerType, controllerMask))?
@@ -2353,18 +2606,21 @@ impl crate::GlobalNamespace::OVRInput {
         duration: f32,
         controllerNode: crate::UnityEngine::XR::XRNode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (f32, f32, crate::UnityEngine::XR::XRNode),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("StartVibration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "StartVibration", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (f32, f32, crate::UnityEngine::XR::XRNode),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("StartVibration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "StartVibration", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (amplitude, duration, controllerNode))?
@@ -2372,14 +2628,21 @@ impl crate::GlobalNamespace::OVRInput {
         Ok(__cordl_ret.into())
     }
     pub fn Update() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "Update", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("Update")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Update", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), ())?
@@ -2389,18 +2652,21 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn UpdateXRControllerHaptics() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("UpdateXRControllerHaptics")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "UpdateXRControllerHaptics", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("UpdateXRControllerHaptics")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UpdateXRControllerHaptics", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), ())?
@@ -2410,18 +2676,21 @@ impl crate::GlobalNamespace::OVRInput {
     pub fn UpdateXRControllerNodeIds() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("UpdateXRControllerNodeIds")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "UpdateXRControllerNodeIds", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("UpdateXRControllerNodeIds")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UpdateXRControllerNodeIds", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), ())?
@@ -2429,14 +2698,21 @@ impl crate::GlobalNamespace::OVRInput {
         Ok(__cordl_ret.into())
     }
     pub fn get_pluginSupportsActiveController() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), bool, 0usize>("get_pluginSupportsActiveController")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput as quest_hook::libil2cpp::Type >
-                    ::class(), "get_pluginSupportsActiveController", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("get_pluginSupportsActiveController")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_pluginSupportsActiveController", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -3193,14 +3469,17 @@ impl crate::GlobalNamespace::OVRInput_HapticInfo {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_HapticInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_HapticInfo as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -3882,14 +4161,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
     pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis1DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis1DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis1DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis1DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -3899,14 +4185,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
     pub fn ConfigureAxis2DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis2DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis2DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis2DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis2DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -3916,14 +4209,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
     pub fn ConfigureButtonMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureButtonMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureButtonMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureButtonMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureButtonMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -3933,19 +4233,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
     pub fn ConfigureNearTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("ConfigureNearTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureNearTouchMap",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureNearTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureNearTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -3955,14 +4257,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
     pub fn ConfigureTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureTouchMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -3970,29 +4279,33 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
         Ok(__cordl_ret.into())
     }
     pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), u8, 0usize>("GetBatteryPercentRemaining")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "GetBatteryPercentRemaining", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), u8, 0usize>("GetBatteryPercentRemaining")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetBatteryPercentRemaining", 0usize
+                        )
+                    })
             });
         let __cordl_ret: u8 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetControllerSampleRateHz(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("GetControllerSampleRateHz")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(), "GetControllerSampleRateHz",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("GetControllerSampleRateHz")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetControllerSampleRateHz", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -4003,19 +4316,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_ControllerState6,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::OVRInput_Controller),
-                crate::GlobalNamespace::OVRPlugin_ControllerState6,
-                1usize,
-            >("GetOpenVRControllerState")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(), "GetOpenVRControllerState",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::OVRInput_Controller),
+                        crate::GlobalNamespace::OVRPlugin_ControllerState6,
+                        1usize,
+                    >("GetOpenVRControllerState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetOpenVRControllerState", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_ControllerState6 = unsafe {
             method.invoke_unchecked(self, (controllerType))?
@@ -4033,18 +4348,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
         &mut self,
         virtualMask: crate::GlobalNamespace::OVRInput_Axis1D,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawAxis1D> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::OVRInput_Axis1D),
-                crate::GlobalNamespace::OVRInput_RawAxis1D,
-                1usize,
-            >("ResolveToRawMask")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(), "ResolveToRawMask", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::OVRInput_Axis1D),
+                        crate::GlobalNamespace::OVRInput_RawAxis1D,
+                        1usize,
+                    >("ResolveToRawMask")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ResolveToRawMask", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRInput_RawAxis1D = unsafe {
             method.invoke_unchecked(self, (virtualMask))?
@@ -4055,18 +4373,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
         &mut self,
         virtualMask: crate::GlobalNamespace::OVRInput_Axis2D,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawAxis2D> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::OVRInput_Axis2D),
-                crate::GlobalNamespace::OVRInput_RawAxis2D,
-                1usize,
-            >("ResolveToRawMask")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(), "ResolveToRawMask", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::OVRInput_Axis2D),
+                        crate::GlobalNamespace::OVRInput_RawAxis2D,
+                        1usize,
+                    >("ResolveToRawMask")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ResolveToRawMask", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRInput_RawAxis2D = unsafe {
             method.invoke_unchecked(self, (virtualMask))?
@@ -4077,18 +4398,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
         &mut self,
         virtualMask: crate::GlobalNamespace::OVRInput_Button,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawButton> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::OVRInput_Button),
-                crate::GlobalNamespace::OVRInput_RawButton,
-                1usize,
-            >("ResolveToRawMask")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(), "ResolveToRawMask", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::OVRInput_Button),
+                        crate::GlobalNamespace::OVRInput_RawButton,
+                        1usize,
+                    >("ResolveToRawMask")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ResolveToRawMask", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRInput_RawButton = unsafe {
             method.invoke_unchecked(self, (virtualMask))?
@@ -4099,18 +4423,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
         &mut self,
         virtualMask: crate::GlobalNamespace::OVRInput_NearTouch,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawNearTouch> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::OVRInput_NearTouch),
-                crate::GlobalNamespace::OVRInput_RawNearTouch,
-                1usize,
-            >("ResolveToRawMask")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(), "ResolveToRawMask", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::OVRInput_NearTouch),
+                        crate::GlobalNamespace::OVRInput_RawNearTouch,
+                        1usize,
+                    >("ResolveToRawMask")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ResolveToRawMask", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRInput_RawNearTouch = unsafe {
             method.invoke_unchecked(self, (virtualMask))?
@@ -4121,18 +4448,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
         &mut self,
         virtualMask: crate::GlobalNamespace::OVRInput_Touch,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawTouch> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::OVRInput_Touch),
-                crate::GlobalNamespace::OVRInput_RawTouch,
-                1usize,
-            >("ResolveToRawMask")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(), "ResolveToRawMask", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::OVRInput_Touch),
+                        crate::GlobalNamespace::OVRInput_RawTouch,
+                        1usize,
+                    >("ResolveToRawMask")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ResolveToRawMask", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRInput_RawTouch = unsafe {
             method.invoke_unchecked(self, (virtualMask))?
@@ -4143,19 +4473,22 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
         &mut self,
         hapticsVibration: crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("SetControllerHapticsAmplitudeEnvelope")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "SetControllerHapticsAmplitudeEnvelope", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetControllerHapticsAmplitudeEnvelope")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetControllerHapticsAmplitudeEnvelope",
+                            1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (hapticsVibration))?
@@ -4166,19 +4499,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
         &mut self,
         hapticsVibration: crate::GlobalNamespace::OVRInput_HapticsPcmVibration,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::OVRInput_HapticsPcmVibration),
-                i32,
-                1usize,
-            >("SetControllerHapticsPcm")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(), "SetControllerHapticsPcm",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::OVRInput_HapticsPcmVibration),
+                        i32,
+                        1usize,
+                    >("SetControllerHapticsPcm")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetControllerHapticsPcm", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked(self, (hapticsVibration))?
@@ -4191,19 +4526,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
         frequency: f32,
         amplitude: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::OVRInput_HapticsLocation, f32, f32),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("SetControllerLocalizedVibration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "SetControllerLocalizedVibration", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::OVRInput_HapticsLocation, f32, f32),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("SetControllerLocalizedVibration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetControllerLocalizedVibration", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (hapticsLocationMask, frequency, amplitude))?
@@ -4215,19 +4552,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
         frequency: f32,
         amplitude: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (f32, f32),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SetControllerVibration")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(), "SetControllerVibration",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (f32, f32),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetControllerVibration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetControllerVibration", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (frequency, amplitude))?
@@ -4237,18 +4576,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
     pub fn Update(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_Controller> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::GlobalNamespace::OVRInput_Controller,
-                0usize,
-            >("Update")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(), "Update", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::GlobalNamespace::OVRInput_Controller,
+                        0usize,
+                    >("Update")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Update", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRInput_Controller = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4258,14 +4600,17 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerBase as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4328,14 +4673,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid {
     pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis1DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis1DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis1DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis1DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4345,14 +4697,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid {
     pub fn ConfigureAxis2DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis2DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis2DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis2DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis2DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4362,14 +4721,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid {
     pub fn ConfigureButtonMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureButtonMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureButtonMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureButtonMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureButtonMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4379,19 +4745,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid {
     pub fn ConfigureNearTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("ConfigureNearTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureNearTouchMap",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureNearTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureNearTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4401,14 +4769,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid {
     pub fn ConfigureTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureTouchMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4425,14 +4800,17 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4494,14 +4872,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC {
     pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis1DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerGamepadPC as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis1DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis1DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis1DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4511,14 +4896,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC {
     pub fn ConfigureAxis2DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis2DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerGamepadPC as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis2DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis2DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis2DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4528,14 +4920,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC {
     pub fn ConfigureButtonMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureButtonMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerGamepadPC as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureButtonMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureButtonMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureButtonMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4545,19 +4944,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC {
     pub fn ConfigureNearTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("ConfigureNearTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerGamepadPC as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureNearTouchMap",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureNearTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureNearTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4567,14 +4968,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC {
     pub fn ConfigureTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerGamepadPC as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureTouchMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4591,14 +4999,17 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerGamepadPC as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4660,14 +5071,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerHands {
     pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerHands as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis1DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerHands as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis1DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis1DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis1DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4677,14 +5095,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerHands {
     pub fn ConfigureAxis2DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerHands as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis2DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerHands as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis2DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis2DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis2DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4694,14 +5119,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerHands {
     pub fn ConfigureButtonMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerHands as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureButtonMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerHands as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureButtonMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureButtonMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureButtonMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4711,19 +5143,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerHands {
     pub fn ConfigureNearTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerHands as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("ConfigureNearTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerHands as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureNearTouchMap",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureNearTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureNearTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4733,14 +5167,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerHands {
     pub fn ConfigureTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerHands as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerHands as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureTouchMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4748,15 +5189,17 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerHands {
         Ok(__cordl_ret.into())
     }
     pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerHands as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), u8, 0usize>("GetBatteryPercentRemaining")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerHands as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "GetBatteryPercentRemaining", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), u8, 0usize>("GetBatteryPercentRemaining")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetBatteryPercentRemaining", 0usize
+                        )
+                    })
             });
         let __cordl_ret: u8 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -4771,14 +5214,17 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerHands {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerHands as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerHands as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4840,14 +5286,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLHand {
     pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerLHand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis1DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerLHand as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis1DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis1DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis1DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4857,14 +5310,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLHand {
     pub fn ConfigureAxis2DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerLHand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis2DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerLHand as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis2DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis2DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis2DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4874,14 +5334,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLHand {
     pub fn ConfigureButtonMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerLHand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureButtonMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerLHand as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureButtonMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureButtonMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureButtonMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4891,19 +5358,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLHand {
     pub fn ConfigureNearTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerLHand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("ConfigureNearTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerLHand as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureNearTouchMap",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureNearTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureNearTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4913,14 +5382,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLHand {
     pub fn ConfigureTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerLHand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerLHand as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureTouchMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4928,15 +5404,17 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLHand {
         Ok(__cordl_ret.into())
     }
     pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerLHand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), u8, 0usize>("GetBatteryPercentRemaining")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerLHand as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "GetBatteryPercentRemaining", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), u8, 0usize>("GetBatteryPercentRemaining")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetBatteryPercentRemaining", 0usize
+                        )
+                    })
             });
         let __cordl_ret: u8 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -4951,14 +5429,17 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLHand {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerLHand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerLHand as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5020,14 +5501,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLTouch {
     pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerLTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis1DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerLTouch as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis1DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis1DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis1DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5037,14 +5525,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLTouch {
     pub fn ConfigureAxis2DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerLTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis2DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerLTouch as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis2DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis2DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis2DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5054,14 +5549,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLTouch {
     pub fn ConfigureButtonMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerLTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureButtonMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerLTouch as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureButtonMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureButtonMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureButtonMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5071,19 +5573,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLTouch {
     pub fn ConfigureNearTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerLTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("ConfigureNearTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerLTouch as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureNearTouchMap",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureNearTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureNearTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5093,14 +5597,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLTouch {
     pub fn ConfigureTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerLTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerLTouch as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureTouchMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5108,15 +5619,17 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLTouch {
         Ok(__cordl_ret.into())
     }
     pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerLTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), u8, 0usize>("GetBatteryPercentRemaining")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerLTouch as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "GetBatteryPercentRemaining", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), u8, 0usize>("GetBatteryPercentRemaining")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetBatteryPercentRemaining", 0usize
+                        )
+                    })
             });
         let __cordl_ret: u8 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -5131,14 +5644,17 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerLTouch {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerLTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerLTouch as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5200,14 +5716,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRHand {
     pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRHand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis1DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRHand as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis1DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis1DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis1DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5217,14 +5740,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRHand {
     pub fn ConfigureAxis2DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRHand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis2DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRHand as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis2DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis2DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis2DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5234,14 +5764,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRHand {
     pub fn ConfigureButtonMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRHand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureButtonMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRHand as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureButtonMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureButtonMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureButtonMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5251,19 +5788,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRHand {
     pub fn ConfigureNearTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRHand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("ConfigureNearTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRHand as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureNearTouchMap",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureNearTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureNearTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5273,14 +5812,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRHand {
     pub fn ConfigureTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRHand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRHand as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureTouchMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5288,15 +5834,17 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRHand {
         Ok(__cordl_ret.into())
     }
     pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRHand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), u8, 0usize>("GetBatteryPercentRemaining")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRHand as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "GetBatteryPercentRemaining", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), u8, 0usize>("GetBatteryPercentRemaining")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetBatteryPercentRemaining", 0usize
+                        )
+                    })
             });
         let __cordl_ret: u8 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -5311,14 +5859,17 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRHand {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRHand as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRHand as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5380,14 +5931,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRTouch {
     pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis1DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRTouch as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis1DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis1DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis1DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5397,14 +5955,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRTouch {
     pub fn ConfigureAxis2DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis2DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRTouch as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis2DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis2DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis2DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5414,14 +5979,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRTouch {
     pub fn ConfigureButtonMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureButtonMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRTouch as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureButtonMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureButtonMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureButtonMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5431,19 +6003,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRTouch {
     pub fn ConfigureNearTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("ConfigureNearTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRTouch as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureNearTouchMap",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureNearTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureNearTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5453,14 +6027,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRTouch {
     pub fn ConfigureTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRTouch as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureTouchMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5468,15 +6049,17 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRTouch {
         Ok(__cordl_ret.into())
     }
     pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), u8, 0usize>("GetBatteryPercentRemaining")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRTouch as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "GetBatteryPercentRemaining", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), u8, 0usize>("GetBatteryPercentRemaining")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetBatteryPercentRemaining", 0usize
+                        )
+                    })
             });
         let __cordl_ret: u8 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -5491,14 +6074,17 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRTouch {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRTouch as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5560,14 +6146,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRemote {
     pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRemote as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis1DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRemote as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis1DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis1DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis1DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5577,14 +6170,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRemote {
     pub fn ConfigureAxis2DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRemote as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis2DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRemote as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis2DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis2DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis2DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5594,14 +6194,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRemote {
     pub fn ConfigureButtonMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRemote as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureButtonMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRemote as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureButtonMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureButtonMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureButtonMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5611,19 +6218,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRemote {
     pub fn ConfigureNearTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRemote as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("ConfigureNearTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRemote as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureNearTouchMap",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureNearTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureNearTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5633,14 +6242,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRemote {
     pub fn ConfigureTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRemote as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRemote as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureTouchMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5657,14 +6273,17 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerRemote {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerRemote as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerRemote as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5726,14 +6345,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerTouch {
     pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis1DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerTouch as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis1DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis1DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis1DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5743,14 +6369,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerTouch {
     pub fn ConfigureAxis2DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureAxis2DMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerTouch as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureAxis2DMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureAxis2DMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureAxis2DMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5760,14 +6393,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerTouch {
     pub fn ConfigureButtonMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureButtonMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerTouch as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureButtonMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureButtonMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureButtonMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5777,19 +6417,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerTouch {
     pub fn ConfigureNearTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Void,
-                0usize,
-            >("ConfigureNearTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerTouch as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureNearTouchMap",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureNearTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureNearTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5799,14 +6441,21 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerTouch {
     pub fn ConfigureTouchMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConfigureTouchMap")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerTouch as
-                    quest_hook::libil2cpp::Type > ::class(), "ConfigureTouchMap", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConfigureTouchMap")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConfigureTouchMap", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -5814,15 +6463,17 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerTouch {
         Ok(__cordl_ret.into())
     }
     pub fn GetBatteryPercentRemaining(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), u8, 0usize>("GetBatteryPercentRemaining")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerTouch as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "GetBatteryPercentRemaining", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), u8, 0usize>("GetBatteryPercentRemaining")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetBatteryPercentRemaining", 0usize
+                        )
+                    })
             });
         let __cordl_ret: u8 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -5837,14 +6488,17 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerTouch {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRInput_OVRControllerTouch as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRInput_OVRControllerTouch as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

@@ -105,18 +105,21 @@ impl crate::UnityEngine::Experimental::Playables::TextureMixerPlayable {
         &mut self,
         other: crate::UnityEngine::Experimental::Playables::TextureMixerPlayable,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Playables::TextureMixerPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::Experimental::Playables::TextureMixerPlayable),
-                bool,
-                1usize,
-            >("Equals")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Playables::TextureMixerPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::Experimental::Playables::TextureMixerPlayable),
+                        bool,
+                        1usize,
+                    >("Equals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Equals", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
@@ -124,18 +127,21 @@ impl crate::UnityEngine::Experimental::Playables::TextureMixerPlayable {
     pub fn GetHandle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Playables::TextureMixerPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::Playables::PlayableHandle,
-                0usize,
-            >("GetHandle")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Playables::TextureMixerPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "GetHandle", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Playables::PlayableHandle,
+                        0usize,
+                    >("GetHandle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetHandle", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = unsafe {
             method.invoke_unchecked(self, ())?

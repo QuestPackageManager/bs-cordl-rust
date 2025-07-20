@@ -47,21 +47,25 @@ impl crate::GlobalNamespace::BeatmapDataAddTestSlidersTransform {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDataAddTestSlidersTransform as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::IReadonlyBeatmapData,
-                >),
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
-                1usize,
-            >("CreateTransformedData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapDataAddTestSlidersTransform as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateTransformedData",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::IReadonlyBeatmapData,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::IReadonlyBeatmapData,
+                        >,
+                        1usize,
+                    >("CreateTransformedData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateTransformedData", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IReadonlyBeatmapData,
@@ -79,29 +83,31 @@ impl crate::GlobalNamespace::BeatmapDataAddTestSlidersTransform {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDataAddTestSlidersTransform as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IReadOnlyList_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapDataItem,
+                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapDataItem,
+                                    >,
+                                >,
                             >,
-                        >,
-                    >,
-                    i32,
-                    crate::GlobalNamespace::ColorType,
-                ),
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-                3usize,
-            >("FindNextSameColorTypeNote")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapDataAddTestSlidersTransform as
-                    quest_hook::libil2cpp::Type > ::class(), "FindNextSameColorTypeNote",
-                    3usize
-                )
+                            i32,
+                            crate::GlobalNamespace::ColorType,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+                        3usize,
+                    >("FindNextSameColorTypeNote")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FindNextSameColorTypeNote", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData> = unsafe {
             method.invoke_unchecked((), (beatmapDataItems, startIndex, colorType))?
@@ -118,14 +124,17 @@ impl crate::GlobalNamespace::BeatmapDataAddTestSlidersTransform {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDataAddTestSlidersTransform as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapDataAddTestSlidersTransform as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

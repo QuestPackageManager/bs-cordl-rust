@@ -39,27 +39,33 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BitMaskUtil {
 #[cfg(feature = "BitMaskUtil")]
 impl crate::GlobalNamespace::BitMaskUtil {
     pub fn NumberOfSetBits_u32_1(i: u32) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMaskUtil as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(u32), u32, 1usize>("NumberOfSetBits")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BitMaskUtil as quest_hook::libil2cpp::Type >
-                    ::class(), "NumberOfSetBits", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(u32), u32, 1usize>("NumberOfSetBits")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NumberOfSetBits", 1usize
+                        )
+                    })
             });
         let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn NumberOfSetBits_u64_0(i: u64) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMaskUtil as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(u64), u32, 1usize>("NumberOfSetBits")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BitMaskUtil as quest_hook::libil2cpp::Type >
-                    ::class(), "NumberOfSetBits", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(u64), u32, 1usize>("NumberOfSetBits")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NumberOfSetBits", 1usize
+                        )
+                    })
             });
         let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (i))? };
         Ok(__cordl_ret.into())
@@ -68,21 +74,24 @@ impl crate::GlobalNamespace::BitMaskUtil {
         value: quest_hook::libil2cpp::ByRefMut<u64>,
         shift: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMaskUtil as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<u64>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                u64,
-                2usize,
-            >("ShiftLeft")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BitMaskUtil as quest_hook::libil2cpp::Type >
-                    ::class(), "ShiftLeft", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        u64,
+                        2usize,
+                    >("ShiftLeft")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ShiftLeft", 2usize
+                        )
+                    })
             });
         let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (value, shift))? };
         Ok(__cordl_ret.into())
@@ -91,21 +100,24 @@ impl crate::GlobalNamespace::BitMaskUtil {
         value: quest_hook::libil2cpp::ByRefMut<u64>,
         shift: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMaskUtil as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<u64>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                u64,
-                2usize,
-            >("ShiftRight")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BitMaskUtil as quest_hook::libil2cpp::Type >
-                    ::class(), "ShiftRight", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        u64,
+                        2usize,
+                    >("ShiftRight")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ShiftRight", 2usize
+                        )
+                    })
             });
         let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (value, shift))? };
         Ok(__cordl_ret.into())

@@ -40,14 +40,17 @@ impl std::ops::DerefMut for crate::System::Numerics::Hashing::HashHelpers {
 #[cfg(feature = "System+Numerics+Hashing+HashHelpers")]
 impl crate::System::Numerics::Hashing::HashHelpers {
     pub fn Combine(h1: i32, h2: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Numerics::Hashing::HashHelpers as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(i32, i32), i32, 2usize>("Combine")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Numerics::Hashing::HashHelpers as
-                    quest_hook::libil2cpp::Type > ::class(), "Combine", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(i32, i32), i32, 2usize>("Combine")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Combine", 2usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (h1, h2))? };
         Ok(__cordl_ret.into())

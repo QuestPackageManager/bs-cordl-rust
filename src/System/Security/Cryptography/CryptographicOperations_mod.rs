@@ -43,18 +43,21 @@ impl crate::System::Security::Cryptography::CryptographicOperations {
     pub fn ZeroMemory(
         buffer: crate::System::Span_1<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::CryptographicOperations as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::Span_1<u8>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("ZeroMemory")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Security::Cryptography::CryptographicOperations as
-                    quest_hook::libil2cpp::Type > ::class(), "ZeroMemory", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::Span_1<u8>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("ZeroMemory")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ZeroMemory", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (buffer))?

@@ -100,14 +100,21 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::TMP_Vertex {
 #[cfg(feature = "TMPro+TMP_Vertex")]
 impl crate::TMPro::TMP_Vertex {
     pub fn get_zero() -> quest_hook::libil2cpp::Result<crate::TMPro::TMP_Vertex> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_Vertex as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), crate::TMPro::TMP_Vertex, 0usize>("get_zero")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::TMPro::TMP_Vertex as quest_hook::libil2cpp::Type > ::class(),
-                    "get_zero", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        crate::TMPro::TMP_Vertex,
+                        0usize,
+                    >("get_zero")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_zero", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::TMPro::TMP_Vertex = unsafe {
             method.invoke_unchecked((), ())?

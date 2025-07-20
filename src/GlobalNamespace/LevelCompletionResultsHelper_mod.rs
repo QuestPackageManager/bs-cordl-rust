@@ -77,49 +77,58 @@ impl crate::GlobalNamespace::LevelCompletionResultsHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelCompletionResultsHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::IReadonlyBeatmapData,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapObjectExecutionRating,
+                                crate::GlobalNamespace::IReadonlyBeatmapData,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapObjectExecutionRating,
+                                    >,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::GameplayModifiers,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::GameplayModifiersModelSO,
+                            >,
+                            i32,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<f32>,
+                            >,
+                            f32,
+                            f32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<f32>,
+                            >,
+                            f32,
+                            f32,
+                            crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType,
+                            crate::GlobalNamespace::LevelCompletionResults_LevelEndAction,
+                            f32,
+                            f32,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::LevelCompletionResults,
                         >,
-                    >,
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::GameplayModifiersModelSO,
-                    >,
-                    i32,
-                    i32,
-                    i32,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
-                    f32,
-                    f32,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
-                    f32,
-                    f32,
-                    crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType,
-                    crate::GlobalNamespace::LevelCompletionResults_LevelEndAction,
-                    f32,
-                    f32,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::LevelCompletionResults,
-                >,
-                18usize,
-            >("Create")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::LevelCompletionResultsHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "Create", 18usize
-                )
+                        18usize,
+                    >("Create")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Create", 18usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LevelCompletionResults,
@@ -167,33 +176,40 @@ impl crate::GlobalNamespace::LevelCompletionResultsHelper {
             crate::GlobalNamespace::PlatformLeaderboardsModel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelCompletionResultsHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::PlayerLevelStatsData,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::LevelCompletionResults,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::IReadonlyBeatmapData,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::PlatformLeaderboardsModel,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                6usize,
-            >("ProcessScore")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::LevelCompletionResultsHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "ProcessScore", 6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::BeatmapKey,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::PlayerData,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::PlayerLevelStatsData,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::LevelCompletionResults,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IReadonlyBeatmapData,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::PlatformLeaderboardsModel,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >("ProcessScore")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ProcessScore", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method

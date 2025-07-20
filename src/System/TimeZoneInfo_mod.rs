@@ -72,24 +72,29 @@ impl crate::System::TimeZoneInfo {
         ignoreYearAdjustment: bool,
         rule: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::DateTime,
-                    crate::System::DateTime,
-                    crate::System::DateTime,
-                    bool,
-                    quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
-                ),
-                bool,
-                5usize,
-            >("CheckIsDst")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "CheckIsDst", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::DateTime,
+                            crate::System::DateTime,
+                            crate::System::DateTime,
+                            bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::TimeZoneInfo_AdjustmentRule,
+                            >,
+                        ),
+                        bool,
+                        5usize,
+                    >("CheckIsDst")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CheckIsDst", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -110,28 +115,31 @@ impl crate::System::TimeZoneInfo {
         dateOnly: crate::System::DateTime,
         dateTimeisUtc: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::TimeZoneInfo_AdjustmentRule,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::TimeZoneInfo_AdjustmentRule,
-                    >,
-                    crate::System::DateTime,
-                    crate::System::DateTime,
-                    bool,
-                ),
-                i32,
-                5usize,
-            >("CompareAdjustmentRuleToDateTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "CompareAdjustmentRuleToDateTime", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::TimeZoneInfo_AdjustmentRule,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::TimeZoneInfo_AdjustmentRule,
+                            >,
+                            crate::System::DateTime,
+                            crate::System::DateTime,
+                            bool,
+                        ),
+                        i32,
+                        5usize,
+                    >("CompareAdjustmentRuleToDateTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CompareAdjustmentRuleToDateTime", 5usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method
@@ -147,22 +155,31 @@ impl crate::System::TimeZoneInfo {
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                ),
-                bool,
-                3usize,
-            >("CompareTimeZoneFile")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "CompareTimeZoneFile", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("CompareTimeZoneFile")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CompareTimeZoneFile", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (filePath, buffer, rawData))?
@@ -175,22 +192,25 @@ impl crate::System::TimeZoneInfo {
         daylightDelta: crate::System::TimeSpan,
         baseUtcOffsetDelta: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::DateTime,
-                    crate::System::TimeSpan,
-                    crate::System::TimeSpan,
-                ),
-                crate::System::DateTime,
-                3usize,
-            >("ConvertFromUtc")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "ConvertFromUtc", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::DateTime,
+                            crate::System::TimeSpan,
+                            crate::System::TimeSpan,
+                        ),
+                        crate::System::DateTime,
+                        3usize,
+                    >("ConvertFromUtc")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConvertFromUtc", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
             method.invoke_unchecked(self, (dateTime, daylightDelta, baseUtcOffsetDelta))?
@@ -201,18 +221,21 @@ impl crate::System::TimeZoneInfo {
         dateTime: crate::System::DateTime,
         flags: crate::System::TimeZoneInfoOptions,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::DateTime, crate::System::TimeZoneInfoOptions),
-                crate::System::DateTime,
-                2usize,
-            >("ConvertTimeToUtc")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "ConvertTimeToUtc", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::DateTime, crate::System::TimeZoneInfoOptions),
+                        crate::System::DateTime,
+                        2usize,
+                    >("ConvertTimeToUtc")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConvertTimeToUtc", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
             method.invoke_unchecked((), (dateTime, flags))?
@@ -225,23 +248,26 @@ impl crate::System::TimeZoneInfo {
         destinationTimeZone: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
         flags: crate::System::TimeZoneInfoOptions,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::DateTime,
-                    quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                    quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                    crate::System::TimeZoneInfoOptions,
-                ),
-                crate::System::DateTime,
-                4usize,
-            >("ConvertTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "ConvertTime", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::DateTime,
+                            quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                            quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                            crate::System::TimeZoneInfoOptions,
+                        ),
+                        crate::System::DateTime,
+                        4usize,
+                    >("ConvertTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConvertTime", 4usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
             method
@@ -259,24 +285,29 @@ impl crate::System::TimeZoneInfo {
         flags: crate::System::TimeZoneInfoOptions,
         cachedData: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_CachedData>,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::DateTime,
-                    quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                    quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                    crate::System::TimeZoneInfoOptions,
-                    quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_CachedData>,
-                ),
-                crate::System::DateTime,
-                5usize,
-            >("ConvertTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "ConvertTime", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::DateTime,
+                            quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                            quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                            crate::System::TimeZoneInfoOptions,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::TimeZoneInfo_CachedData,
+                            >,
+                        ),
+                        crate::System::DateTime,
+                        5usize,
+                    >("ConvertTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConvertTime", 5usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
             method
@@ -294,23 +325,26 @@ impl crate::System::TimeZoneInfo {
         baseUtcOffsetDelta: crate::System::TimeSpan,
         convertToUtc: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::DateTime,
-                    crate::System::TimeSpan,
-                    crate::System::TimeSpan,
-                    bool,
-                ),
-                crate::System::DateTime,
-                4usize,
-            >("ConvertToFromUtc")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "ConvertToFromUtc", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::DateTime,
+                            crate::System::TimeSpan,
+                            crate::System::TimeSpan,
+                            bool,
+                        ),
+                        crate::System::DateTime,
+                        4usize,
+                    >("ConvertToFromUtc")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConvertToFromUtc", 4usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
             method
@@ -327,22 +361,25 @@ impl crate::System::TimeZoneInfo {
         daylightDelta: crate::System::TimeSpan,
         baseUtcOffsetDelta: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::DateTime,
-                    crate::System::TimeSpan,
-                    crate::System::TimeSpan,
-                ),
-                crate::System::DateTime,
-                3usize,
-            >("ConvertToUtc")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "ConvertToUtc", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::DateTime,
+                            crate::System::TimeSpan,
+                            crate::System::TimeSpan,
+                        ),
+                        crate::System::DateTime,
+                        3usize,
+                    >("ConvertToUtc")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConvertToUtc", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
             method.invoke_unchecked(self, (dateTime, daylightDelta, baseUtcOffsetDelta))?
@@ -354,22 +391,25 @@ impl crate::System::TimeZoneInfo {
         destinationTimeZone: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
         isAmbiguousLocalDst: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    i64,
-                    quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                    quest_hook::libil2cpp::ByRefMut<bool>,
-                ),
-                crate::System::DateTime,
-                3usize,
-            >("ConvertUtcToTimeZone")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "ConvertUtcToTimeZone", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            i64,
+                            quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                            quest_hook::libil2cpp::ByRefMut<bool>,
+                        ),
+                        crate::System::DateTime,
+                        3usize,
+                    >("ConvertUtcToTimeZone")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConvertUtcToTimeZone", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
             method
@@ -396,40 +436,43 @@ impl crate::System::TimeZoneInfo {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    i32,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<i64>,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                    quest_hook::libil2cpp::Il2CppArray<i64>,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<
+                                        quest_hook::libil2cpp::Gc<
+                                            quest_hook::libil2cpp::Il2CppString,
+                                        >,
+                                    >,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::TimeZoneInfo_AdjustmentRule,
                                 >,
                             >,
                         >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::TimeZoneInfo_AdjustmentRule,
-                        >,
-                    >,
-                >,
-                3usize,
-            >("CreateAdjustmentRule")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "CreateAdjustmentRule", 3usize
-                )
+                        3usize,
+                    >("CreateAdjustmentRule")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateAdjustmentRule", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
@@ -457,32 +500,43 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    crate::System::TimeSpan,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::TimeZoneInfo_AdjustmentRule,
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
-                        >,
-                    >,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                7usize,
-            >("CreateCustomTimeZone")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "CreateCustomTimeZone", 7usize
-                )
+                            crate::System::TimeSpan,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::TimeZoneInfo_AdjustmentRule,
+                                    >,
+                                >,
+                            >,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                        7usize,
+                    >("CreateCustomTimeZone")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateCustomTimeZone", 7usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo> = unsafe {
             method
@@ -511,23 +565,32 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    crate::System::TimeSpan,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                4usize,
-            >("CreateCustomTimeZone")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "CreateCustomTimeZone", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            crate::System::TimeSpan,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                        4usize,
+                    >("CreateCustomTimeZone")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateCustomTimeZone", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo> = unsafe {
             method
@@ -541,18 +604,21 @@ impl crate::System::TimeZoneInfo {
     pub fn CreateLocalUnity() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                0usize,
-            >("CreateLocalUnity")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "CreateLocalUnity", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                        0usize,
+                    >("CreateLocalUnity")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateLocalUnity", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo> = unsafe {
             method.invoke_unchecked((), ())?
@@ -567,27 +633,32 @@ impl crate::System::TimeZoneInfo {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Predicate_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                        >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("EnumerateFilesRecursively")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "EnumerateFilesRecursively", 2usize
-                )
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Predicate_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("EnumerateFilesRecursively")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "EnumerateFilesRecursively", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (path, condition))?
@@ -598,18 +669,21 @@ impl crate::System::TimeZoneInfo {
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                bool,
-                1usize,
-            >("Equals")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "Equals", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        bool,
+                        1usize,
+                    >("Equals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Equals", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
@@ -618,18 +692,21 @@ impl crate::System::TimeZoneInfo {
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>),
-                bool,
-                1usize,
-            >("Equals")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "Equals", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>),
+                        bool,
+                        1usize,
+                    >("Equals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Equals", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
@@ -639,18 +716,23 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                1usize,
-            >("FindTimeZoneId")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "FindTimeZoneId", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<u8>,
+                        >),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("FindTimeZoneId")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FindTimeZoneId", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -662,18 +744,21 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                1usize,
-            >("FindTimeZoneIdUsingReadLink")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "FindTimeZoneIdUsingReadLink", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("FindTimeZoneIdUsingReadLink")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FindTimeZoneIdUsingReadLink", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -687,21 +772,28 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::DateTime,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Nullable_1<i32>>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
-                2usize,
-            >("GetAdjustmentRuleForTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetAdjustmentRuleForTime", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::DateTime,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Nullable_1<i32>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::TimeZoneInfo_AdjustmentRule,
+                        >,
+                        2usize,
+                    >("GetAdjustmentRuleForTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetAdjustmentRuleForTime", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::TimeZoneInfo_AdjustmentRule,
@@ -716,22 +808,29 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::DateTime,
-                    bool,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::Nullable_1<i32>>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
-                3usize,
-            >("GetAdjustmentRuleForTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetAdjustmentRuleForTime", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::DateTime,
+                            bool,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Nullable_1<i32>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::TimeZoneInfo_AdjustmentRule,
+                        >,
+                        3usize,
+                    >("GetAdjustmentRuleForTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetAdjustmentRuleForTime", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::TimeZoneInfo_AdjustmentRule,
@@ -749,24 +848,27 @@ impl crate::System::TimeZoneInfo {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::TimeZoneInfo_AdjustmentRule,
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::TimeZoneInfo_AdjustmentRule,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                0usize,
-            >("GetAdjustmentRules")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetAdjustmentRules", 0usize
-                )
+                        0usize,
+                    >("GetAdjustmentRules")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetAdjustmentRules", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -779,18 +881,21 @@ impl crate::System::TimeZoneInfo {
         _cordl_time: crate::System::DateTime,
         isAmbiguousLocalDst: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::DateTime, quest_hook::libil2cpp::ByRefMut<bool>),
-                crate::System::TimeSpan,
-                2usize,
-            >("GetDateTimeNowUtcOffsetFromUtc")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetDateTimeNowUtcOffsetFromUtc", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::DateTime, quest_hook::libil2cpp::ByRefMut<bool>),
+                        crate::System::TimeSpan,
+                        2usize,
+                    >("GetDateTimeNowUtcOffsetFromUtc")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDateTimeNowUtcOffsetFromUtc", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
             method.invoke_unchecked((), (_cordl_time, isAmbiguousLocalDst))?
@@ -802,21 +907,26 @@ impl crate::System::TimeZoneInfo {
         baseUtcOffset: crate::System::TimeSpan,
         rule: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::TimeSpan,
-                    quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
-                ),
-                crate::System::TimeSpan,
-                2usize,
-            >("GetDaylightSavingsEndOffsetFromUtc")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetDaylightSavingsEndOffsetFromUtc", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::TimeSpan,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::TimeZoneInfo_AdjustmentRule,
+                            >,
+                        ),
+                        crate::System::TimeSpan,
+                        2usize,
+                    >("GetDaylightSavingsEndOffsetFromUtc")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDaylightSavingsEndOffsetFromUtc", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
             method.invoke_unchecked(self, (baseUtcOffset, rule))?
@@ -829,24 +939,27 @@ impl crate::System::TimeZoneInfo {
         rule: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
         ruleIndex: crate::System::Nullable_1<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::TimeSpan,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::TimeZoneInfo_AdjustmentRule,
-                    >,
-                    crate::System::Nullable_1<i32>,
-                ),
-                crate::System::TimeSpan,
-                3usize,
-            >("GetDaylightSavingsStartOffsetFromUtc")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetDaylightSavingsStartOffsetFromUtc", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::TimeSpan,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::TimeZoneInfo_AdjustmentRule,
+                            >,
+                            crate::System::Nullable_1<i32>,
+                        ),
+                        crate::System::TimeSpan,
+                        3usize,
+                    >("GetDaylightSavingsStartOffsetFromUtc")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDaylightSavingsStartOffsetFromUtc", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
             method.invoke_unchecked(self, (baseUtcOffset, rule, ruleIndex))?
@@ -861,24 +974,27 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Globalization::DaylightTimeStruct,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::TimeZoneInfo_AdjustmentRule,
-                    >,
-                    crate::System::Nullable_1<i32>,
-                ),
-                crate::System::Globalization::DaylightTimeStruct,
-                3usize,
-            >("GetDaylightTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetDaylightTime", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::TimeZoneInfo_AdjustmentRule,
+                            >,
+                            crate::System::Nullable_1<i32>,
+                        ),
+                        crate::System::Globalization::DaylightTimeStruct,
+                        3usize,
+                    >("GetDaylightTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDaylightTime", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Globalization::DaylightTimeStruct = unsafe {
             method.invoke_unchecked(self, (year, rule, ruleIndex))?
@@ -893,23 +1009,28 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::GlobalNamespace::Sys_Interop_DirectoryEntry,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                2usize,
-            >("GetDirectoryEntryFullPath")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetDirectoryEntryFullPath", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::Sys_Interop_DirectoryEntry,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        2usize,
+                    >("GetDirectoryEntryFullPath")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDirectoryEntryFullPath", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -917,14 +1038,17 @@ impl crate::System::TimeZoneInfo {
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("GetHashCode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetHashCode", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("GetHashCode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetHashCode", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -934,24 +1058,27 @@ impl crate::System::TimeZoneInfo {
         rule: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
         daylightTime: crate::System::Globalization::DaylightTimeStruct,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::DateTime,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::TimeZoneInfo_AdjustmentRule,
-                    >,
-                    crate::System::Globalization::DaylightTimeStruct,
-                ),
-                bool,
-                3usize,
-            >("GetIsAmbiguousTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetIsAmbiguousTime", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::DateTime,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::TimeZoneInfo_AdjustmentRule,
+                            >,
+                            crate::System::Globalization::DaylightTimeStruct,
+                        ),
+                        bool,
+                        3usize,
+                    >("GetIsAmbiguousTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetIsAmbiguousTime", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (_cordl_time, rule, daylightTime))?
@@ -964,25 +1091,28 @@ impl crate::System::TimeZoneInfo {
         daylightTime: crate::System::Globalization::DaylightTimeStruct,
         flags: crate::System::TimeZoneInfoOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::DateTime,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::TimeZoneInfo_AdjustmentRule,
-                    >,
-                    crate::System::Globalization::DaylightTimeStruct,
-                    crate::System::TimeZoneInfoOptions,
-                ),
-                bool,
-                4usize,
-            >("GetIsDaylightSavings")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetIsDaylightSavings", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::DateTime,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::TimeZoneInfo_AdjustmentRule,
+                            >,
+                            crate::System::Globalization::DaylightTimeStruct,
+                            crate::System::TimeZoneInfoOptions,
+                        ),
+                        bool,
+                        4usize,
+                    >("GetIsDaylightSavings")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetIsDaylightSavings", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (_cordl_time, rule, daylightTime, flags))?
@@ -998,28 +1128,31 @@ impl crate::System::TimeZoneInfo {
         isAmbiguousLocalDst: quest_hook::libil2cpp::ByRefMut<bool>,
         zone: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::DateTime,
-                    i32,
-                    crate::System::TimeSpan,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::TimeZoneInfo_AdjustmentRule,
-                    >,
-                    crate::System::Nullable_1<i32>,
-                    quest_hook::libil2cpp::ByRefMut<bool>,
-                    quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                ),
-                bool,
-                7usize,
-            >("GetIsDaylightSavingsFromUtc")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetIsDaylightSavingsFromUtc", 7usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::DateTime,
+                            i32,
+                            crate::System::TimeSpan,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::TimeZoneInfo_AdjustmentRule,
+                            >,
+                            crate::System::Nullable_1<i32>,
+                            quest_hook::libil2cpp::ByRefMut<bool>,
+                            quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                        ),
+                        bool,
+                        7usize,
+                    >("GetIsDaylightSavingsFromUtc")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetIsDaylightSavingsFromUtc", 7usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -1035,24 +1168,27 @@ impl crate::System::TimeZoneInfo {
         rule: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
         daylightTime: crate::System::Globalization::DaylightTimeStruct,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::DateTime,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::TimeZoneInfo_AdjustmentRule,
-                    >,
-                    crate::System::Globalization::DaylightTimeStruct,
-                ),
-                bool,
-                3usize,
-            >("GetIsInvalidTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetIsInvalidTime", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::DateTime,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::TimeZoneInfo_AdjustmentRule,
+                            >,
+                            crate::System::Globalization::DaylightTimeStruct,
+                        ),
+                        bool,
+                        3usize,
+                    >("GetIsInvalidTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetIsInvalidTime", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (_cordl_time, rule, daylightTime))?
@@ -1064,18 +1200,23 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_CachedData>),
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                1usize,
-            >("GetLocalTimeZone")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetLocalTimeZone", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::TimeZoneInfo_CachedData,
+                        >),
+                        quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                        1usize,
+                    >("GetLocalTimeZone")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetLocalTimeZone", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo> = unsafe {
             method.invoke_unchecked((), (cachedData))?
@@ -1085,18 +1226,21 @@ impl crate::System::TimeZoneInfo {
     pub fn GetLocalTimeZoneFromTzFile() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                0usize,
-            >("GetLocalTimeZoneFromTzFile")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetLocalTimeZoneFromTzFile", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                        0usize,
+                    >("GetLocalTimeZoneFromTzFile")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetLocalTimeZoneFromTzFile", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo> = unsafe {
             method.invoke_unchecked((), ())?
@@ -1107,18 +1251,21 @@ impl crate::System::TimeZoneInfo {
         dateTime: crate::System::DateTime,
         flags: crate::System::TimeZoneInfoOptions,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::DateTime, crate::System::TimeZoneInfoOptions),
-                crate::System::TimeSpan,
-                2usize,
-            >("GetLocalUtcOffset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetLocalUtcOffset", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::DateTime, crate::System::TimeZoneInfoOptions),
+                        crate::System::TimeSpan,
+                        2usize,
+                    >("GetLocalUtcOffset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetLocalUtcOffset", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
             method.invoke_unchecked((), (dateTime, flags))?
@@ -1132,23 +1279,28 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::TimeZoneInfo_AdjustmentRule,
-                    >,
-                    crate::System::Nullable_1<i32>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
-                2usize,
-            >("GetPreviousAdjustmentRule")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetPreviousAdjustmentRule", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::TimeZoneInfo_AdjustmentRule,
+                            >,
+                            crate::System::Nullable_1<i32>,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::TimeZoneInfo_AdjustmentRule,
+                        >,
+                        2usize,
+                    >("GetPreviousAdjustmentRule")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetPreviousAdjustmentRule", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::TimeZoneInfo_AdjustmentRule,
@@ -1158,18 +1310,21 @@ impl crate::System::TimeZoneInfo {
     pub fn GetTimeZoneDirectory() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("GetTimeZoneDirectory")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetTimeZoneDirectory", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("GetTimeZoneDirectory")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetTimeZoneDirectory", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -1179,18 +1334,21 @@ impl crate::System::TimeZoneInfo {
     pub fn GetTimeZoneDirectoryUnity() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("GetTimeZoneDirectoryUnity")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetTimeZoneDirectoryUnity", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("GetTimeZoneDirectoryUnity")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetTimeZoneDirectoryUnity", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -1203,21 +1361,28 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                2usize,
-            >("GetTimeZoneFromTzData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetTimeZoneFromTzData", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                        2usize,
+                    >("GetTimeZoneFromTzData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetTimeZoneFromTzData", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo> = unsafe {
             method.invoke_unchecked((), (rawData, id))?
@@ -1227,18 +1392,21 @@ impl crate::System::TimeZoneInfo {
     pub fn GetTzEnvironmentVariable() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("GetTzEnvironmentVariable")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetTzEnvironmentVariable", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("GetTzEnvironmentVariable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetTzEnvironmentVariable", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -1250,22 +1418,25 @@ impl crate::System::TimeZoneInfo {
         zone: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
         isDaylightSavings: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::DateTime,
-                    quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                    quest_hook::libil2cpp::ByRefMut<bool>,
-                ),
-                crate::System::TimeSpan,
-                3usize,
-            >("GetUtcOffsetFromUtc")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetUtcOffsetFromUtc", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::DateTime,
+                            quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                            quest_hook::libil2cpp::ByRefMut<bool>,
+                        ),
+                        crate::System::TimeSpan,
+                        3usize,
+                    >("GetUtcOffsetFromUtc")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetUtcOffsetFromUtc", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
             method.invoke_unchecked((), (_cordl_time, zone, isDaylightSavings))?
@@ -1278,23 +1449,26 @@ impl crate::System::TimeZoneInfo {
         isDaylightSavings: quest_hook::libil2cpp::ByRefMut<bool>,
         isAmbiguousLocalDst: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::DateTime,
-                    quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                    quest_hook::libil2cpp::ByRefMut<bool>,
-                    quest_hook::libil2cpp::ByRefMut<bool>,
-                ),
-                crate::System::TimeSpan,
-                4usize,
-            >("GetUtcOffsetFromUtc")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetUtcOffsetFromUtc", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::DateTime,
+                            quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                            quest_hook::libil2cpp::ByRefMut<bool>,
+                            quest_hook::libil2cpp::ByRefMut<bool>,
+                        ),
+                        crate::System::TimeSpan,
+                        4usize,
+                    >("GetUtcOffsetFromUtc")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetUtcOffsetFromUtc", 4usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
             method
@@ -1309,21 +1483,24 @@ impl crate::System::TimeZoneInfo {
         _cordl_time: crate::System::DateTime,
         zone: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::DateTime,
-                    quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                ),
-                crate::System::TimeSpan,
-                2usize,
-            >("GetUtcOffsetFromUtc")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetUtcOffsetFromUtc", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::DateTime,
+                            quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                        ),
+                        crate::System::TimeSpan,
+                        2usize,
+                    >("GetUtcOffsetFromUtc")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetUtcOffsetFromUtc", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
             method.invoke_unchecked((), (_cordl_time, zone))?
@@ -1334,18 +1511,21 @@ impl crate::System::TimeZoneInfo {
         &mut self,
         dateTime: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::DateTime),
-                crate::System::TimeSpan,
-                1usize,
-            >("GetUtcOffset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetUtcOffset", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::DateTime),
+                        crate::System::TimeSpan,
+                        1usize,
+                    >("GetUtcOffset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetUtcOffset", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
             method.invoke_unchecked(self, (dateTime))?
@@ -1357,18 +1537,21 @@ impl crate::System::TimeZoneInfo {
         dateTime: crate::System::DateTime,
         flags: crate::System::TimeZoneInfoOptions,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::DateTime, crate::System::TimeZoneInfoOptions),
-                crate::System::TimeSpan,
-                2usize,
-            >("GetUtcOffset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetUtcOffset", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::DateTime, crate::System::TimeZoneInfoOptions),
+                        crate::System::TimeSpan,
+                        2usize,
+                    >("GetUtcOffset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetUtcOffset", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
             method.invoke_unchecked(self, (dateTime, flags))?
@@ -1381,22 +1564,27 @@ impl crate::System::TimeZoneInfo {
         flags: crate::System::TimeZoneInfoOptions,
         cachedData: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_CachedData>,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::DateTime,
-                    crate::System::TimeZoneInfoOptions,
-                    quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_CachedData>,
-                ),
-                crate::System::TimeSpan,
-                3usize,
-            >("GetUtcOffset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetUtcOffset", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::DateTime,
+                            crate::System::TimeZoneInfoOptions,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::TimeZoneInfo_CachedData,
+                            >,
+                        ),
+                        crate::System::TimeSpan,
+                        3usize,
+                    >("GetUtcOffset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetUtcOffset", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
             method.invoke_unchecked(self, (dateTime, flags, cachedData))?
@@ -1408,22 +1596,25 @@ impl crate::System::TimeZoneInfo {
         zone: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
         flags: crate::System::TimeZoneInfoOptions,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::DateTime,
-                    quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                    crate::System::TimeZoneInfoOptions,
-                ),
-                crate::System::TimeSpan,
-                3usize,
-            >("GetUtcOffset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetUtcOffset", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::DateTime,
+                            quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                            crate::System::TimeZoneInfoOptions,
+                        ),
+                        crate::System::TimeSpan,
+                        3usize,
+                    >("GetUtcOffset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetUtcOffset", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
             method.invoke_unchecked((), (_cordl_time, zone, flags))?
@@ -1436,21 +1627,26 @@ impl crate::System::TimeZoneInfo {
             crate::System::TimeZoneInfo_AdjustmentRule,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::TimeSpan,
-                    quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
-                ),
-                crate::System::TimeSpan,
-                2usize,
-            >("GetUtcOffset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "GetUtcOffset", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::TimeSpan,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::TimeZoneInfo_AdjustmentRule,
+                            >,
+                        ),
+                        crate::System::TimeSpan,
+                        2usize,
+                    >("GetUtcOffset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetUtcOffset", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
             method.invoke_unchecked((), (baseUtcOffset, adjustmentRule))?
@@ -1461,18 +1657,21 @@ impl crate::System::TimeZoneInfo {
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>),
-                bool,
-                1usize,
-            >("HasSameRules")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "HasSameRules", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>),
+                        bool,
+                        1usize,
+                    >("HasSameRules")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HasSameRules", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
@@ -1483,21 +1682,26 @@ impl crate::System::TimeZoneInfo {
             crate::System::TimeZoneInfo_AdjustmentRule,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::TimeSpan,
-                    quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
-                ),
-                bool,
-                2usize,
-            >("IsValidAdjustmentRuleOffest")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "IsValidAdjustmentRuleOffest", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::TimeSpan,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::TimeZoneInfo_AdjustmentRule,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("IsValidAdjustmentRuleOffest")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsValidAdjustmentRuleOffest", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (baseUtcOffset, adjustmentRule))?
@@ -1574,25 +1778,28 @@ impl crate::System::TimeZoneInfo {
             quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::TimeSpan,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::TimeZoneInfo_AdjustmentRule,
-                        >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("NormalizeAdjustmentRuleOffset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "NormalizeAdjustmentRuleOffset", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::TimeSpan,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::TimeZoneInfo_AdjustmentRule,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("NormalizeAdjustmentRuleOffset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NormalizeAdjustmentRuleOffset", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (baseUtcOffset, adjustmentRule))?
@@ -1602,18 +1809,21 @@ impl crate::System::TimeZoneInfo {
     pub fn ParseTimeOfDay(
         _cordl_time: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                crate::System::DateTime,
-                1usize,
-            >("ParseTimeOfDay")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "ParseTimeOfDay", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        crate::System::DateTime,
+                        1usize,
+                    >("ParseTimeOfDay")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ParseTimeOfDay", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
             method.invoke_unchecked((), (_cordl_time))?
@@ -1624,20 +1834,25 @@ impl crate::System::TimeZoneInfo {
         &mut self,
         sender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("System.Runtime.Serialization.IDeserializationCallback.OnDeserialization")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(),
-                    "System.Runtime.Serialization.IDeserializationCallback.OnDeserialization",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(
+                        "System.Runtime.Serialization.IDeserializationCallback.OnDeserialization",
+                    )
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "System.Runtime.Serialization.IDeserializationCallback.OnDeserialization",
+                            1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (sender))?
@@ -1651,24 +1866,28 @@ impl crate::System::TimeZoneInfo {
         >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Runtime::Serialization::SerializationInfo,
-                    >,
-                    crate::System::Runtime::Serialization::StreamingContext,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("System.Runtime.Serialization.ISerializable.GetObjectData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(),
-                    "System.Runtime.Serialization.ISerializable.GetObjectData", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Runtime::Serialization::SerializationInfo,
+                            >,
+                            crate::System::Runtime::Serialization::StreamingContext,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("System.Runtime.Serialization.ISerializable.GetObjectData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "System.Runtime.Serialization.ISerializable.GetObjectData",
+                            2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (info, context))?
@@ -1679,18 +1898,22 @@ impl crate::System::TimeZoneInfo {
         transitionOffset: crate::System::TimeSpan,
         timeZoneBaseUtcOffset: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::TimeSpan, crate::System::TimeSpan),
-                crate::System::TimeSpan,
-                2usize,
-            >("TZif_CalculateTransitionOffsetFromBase")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_CalculateTransitionOffsetFromBase", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::TimeSpan, crate::System::TimeSpan),
+                        crate::System::TimeSpan,
+                        2usize,
+                    >("TZif_CalculateTransitionOffsetFromBase")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_CalculateTransitionOffsetFromBase",
+                            2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
             method.invoke_unchecked((), (transitionOffset, timeZoneBaseUtcOffset))?
@@ -1704,22 +1927,30 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    crate::System::DateTime,
-                    crate::System::TimeSpan,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
-                3usize,
-            >("TZif_CreateAdjustmentRuleForPosixFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_CreateAdjustmentRuleForPosixFormat", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            crate::System::DateTime,
+                            crate::System::TimeSpan,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::TimeZoneInfo_AdjustmentRule,
+                        >,
+                        3usize,
+                    >("TZif_CreateAdjustmentRuleForPosixFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_CreateAdjustmentRuleForPosixFormat",
+                            3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::TimeZoneInfo_AdjustmentRule,
@@ -1736,21 +1967,29 @@ impl crate::System::TimeZoneInfo {
         date: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_time: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeZoneInfo_TransitionTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                ),
-                crate::System::TimeZoneInfo_TransitionTime,
-                2usize,
-            >("TZif_CreateTransitionTimeFromPosixRule")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_CreateTransitionTimeFromPosixRule", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        crate::System::TimeZoneInfo_TransitionTime,
+                        2usize,
+                    >("TZif_CreateTransitionTimeFromPosixRule")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_CreateTransitionTimeFromPosixRule",
+                            2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeZoneInfo_TransitionTime = unsafe {
             method.invoke_unchecked((), (date, _cordl_time))?
@@ -1782,40 +2021,51 @@ impl crate::System::TimeZoneInfo {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                    crate::System::TimeSpan,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::List_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                            crate::System::TimeSpan,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::TimeZoneInfo_AdjustmentRule,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::TimeZoneInfo_AdjustmentRule,
+                                    >,
+                                >,
                             >,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<crate::System::DateTime>,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
-                            crate::System::TimeZoneInfo_TZifType,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                ),
-                quest_hook::libil2cpp::Void,
-                9usize,
-            >("TZif_GenerateAdjustmentRule")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_GenerateAdjustmentRule", 9usize
-                )
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<crate::System::DateTime>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    crate::System::TimeZoneInfo_TZifType,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<bool>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<bool>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        9usize,
+                    >("TZif_GenerateAdjustmentRule")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_GenerateAdjustmentRule", 9usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -1862,41 +2112,52 @@ impl crate::System::TimeZoneInfo {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::TimeZoneInfo_AdjustmentRule,
+                                    quest_hook::libil2cpp::Il2CppArray<
+                                        quest_hook::libil2cpp::Gc<
+                                            crate::System::TimeZoneInfo_AdjustmentRule,
+                                        >,
+                                    >,
                                 >,
                             >,
-                        >,
-                    >,
-                    crate::System::TimeSpan,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<crate::System::DateTime>,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
-                            crate::System::TimeZoneInfo_TZifType,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                ),
-                quest_hook::libil2cpp::Void,
-                8usize,
-            >("TZif_GenerateAdjustmentRules")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_GenerateAdjustmentRules", 8usize
-                )
+                            crate::System::TimeSpan,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<crate::System::DateTime>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    crate::System::TimeZoneInfo_TZifType,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<bool>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<bool>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        8usize,
+                    >("TZif_GenerateAdjustmentRules")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_GenerateAdjustmentRules", 8usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -1921,22 +2182,25 @@ impl crate::System::TimeZoneInfo {
             quest_hook::libil2cpp::Il2CppArray<crate::System::TimeZoneInfo_TZifType>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeZoneInfo_TZifType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::System::TimeZoneInfo_TZifType,
+                            >,
+                        >),
                         crate::System::TimeZoneInfo_TZifType,
-                    >,
-                >),
-                crate::System::TimeZoneInfo_TZifType,
-                1usize,
-            >("TZif_GetEarlyDateTransitionType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_GetEarlyDateTransitionType", 1usize
-                )
+                        1usize,
+                    >("TZif_GetEarlyDateTransitionType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_GetEarlyDateTransitionType", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeZoneInfo_TZifType = unsafe {
             method.invoke_unchecked((), (transitionTypes))?
@@ -1951,18 +2215,26 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                2usize,
-            >("TZif_GetZoneAbbreviation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_GetZoneAbbreviation", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        2usize,
+                    >("TZif_GetZoneAbbreviation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_GetZoneAbbreviation", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -1974,22 +2246,27 @@ impl crate::System::TimeZoneInfo {
         month: quest_hook::libil2cpp::ByRefMut<i32>,
         day: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("TZif_ParseJulianDay")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_ParseJulianDay", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("TZif_ParseJulianDay")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_ParseJulianDay", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (date, month, day))?
@@ -2002,23 +2279,28 @@ impl crate::System::TimeZoneInfo {
         week: quest_hook::libil2cpp::ByRefMut<i32>,
         dayOfWeek: quest_hook::libil2cpp::ByRefMut<crate::System::DayOfWeek>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::DayOfWeek>,
-                ),
-                bool,
-                4usize,
-            >("TZif_ParseMDateRule")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_ParseMDateRule", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                            quest_hook::libil2cpp::ByRefMut<crate::System::DayOfWeek>,
+                        ),
+                        bool,
+                        4usize,
+                    >("TZif_ParseMDateRule")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_ParseMDateRule", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (dateRule, month, week, dayOfWeek))?
@@ -2030,18 +2312,21 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<crate::System::TimeSpan>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                crate::System::Nullable_1<crate::System::TimeSpan>,
-                1usize,
-            >("TZif_ParseOffsetString")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_ParseOffsetString", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        crate::System::Nullable_1<crate::System::TimeSpan>,
+                        1usize,
+                    >("TZif_ParseOffsetString")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_ParseOffsetString", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Nullable_1<crate::System::TimeSpan> = unsafe {
             method.invoke_unchecked((), (offset))?
@@ -2054,21 +2339,26 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                2usize,
-            >("TZif_ParsePosixDate")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_ParsePosixDate", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        2usize,
+                    >("TZif_ParsePosixDate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_ParsePosixDate", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -2085,27 +2375,36 @@ impl crate::System::TimeZoneInfo {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >("TZif_ParsePosixDateTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_ParsePosixDateTime", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("TZif_ParsePosixDateTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_ParsePosixDateTime", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (posixFormat, index, date, _cordl_time))?
@@ -2139,44 +2438,65 @@ impl crate::System::TimeZoneInfo {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                ),
-                bool,
-                9usize,
-            >("TZif_ParsePosixFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_ParsePosixFormat", 9usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                        ),
+                        bool,
+                        9usize,
+                    >("TZif_ParsePosixFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_ParsePosixFormat", 9usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -2203,21 +2523,26 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                2usize,
-            >("TZif_ParsePosixName")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_ParsePosixName", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        2usize,
+                    >("TZif_ParsePosixName")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_ParsePosixName", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -2230,21 +2555,26 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                2usize,
-            >("TZif_ParsePosixOffset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_ParsePosixOffset", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        2usize,
+                    >("TZif_ParsePosixOffset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_ParsePosixOffset", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -2258,22 +2588,27 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                    quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>>,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                3usize,
-            >("TZif_ParsePosixString")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_ParsePosixString", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>>,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        3usize,
+                    >("TZif_ParsePosixString")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_ParsePosixString", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -2288,21 +2623,26 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                2usize,
-            >("TZif_ParsePosixTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_ParsePosixTime", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        2usize,
+                    >("TZif_ParsePosixTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_ParsePosixTime", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -2338,54 +2678,65 @@ impl crate::System::TimeZoneInfo {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::TimeZoneInfo_TZifHead,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<crate::System::DateTime>,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::System::TimeZoneInfo_TZifType,
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
                             >,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<bool>,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<bool>,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                9usize,
-            >("TZif_ParseRaw")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_ParseRaw", 9usize
-                )
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::TimeZoneInfo_TZifHead,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<crate::System::DateTime>,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<u8>,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<
+                                        crate::System::TimeZoneInfo_TZifType,
+                                    >,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<bool>,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<bool>,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        9usize,
+                    >("TZif_ParseRaw")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_ParseRaw", 9usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -2410,18 +2761,26 @@ impl crate::System::TimeZoneInfo {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
-                i32,
-                2usize,
-            >("TZif_ToInt32")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_ToInt32", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                            i32,
+                        ),
+                        i32,
+                        2usize,
+                    >("TZif_ToInt32")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_ToInt32", 2usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (value, startIndex))?
@@ -2432,18 +2791,26 @@ impl crate::System::TimeZoneInfo {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
-                i64,
-                2usize,
-            >("TZif_ToInt64")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_ToInt64", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                            i32,
+                        ),
+                        i64,
+                        2usize,
+                    >("TZif_ToInt64")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_ToInt64", 2usize
+                        )
+                    })
             });
         let __cordl_ret: i64 = unsafe {
             method.invoke_unchecked((), (value, startIndex))?
@@ -2455,22 +2822,27 @@ impl crate::System::TimeZoneInfo {
         startIndex: i32,
         version: crate::System::TimeZoneInfo_TZVersion,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                    i32,
-                    crate::System::TimeZoneInfo_TZVersion,
-                ),
-                i64,
-                3usize,
-            >("TZif_ToUnixTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_ToUnixTime", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                            i32,
+                            crate::System::TimeZoneInfo_TZVersion,
+                        ),
+                        i64,
+                        3usize,
+                    >("TZif_ToUnixTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_ToUnixTime", 3usize
+                        )
+                    })
             });
         let __cordl_ret: i64 = unsafe {
             method.invoke_unchecked((), (value, startIndex, version))?
@@ -2480,18 +2852,21 @@ impl crate::System::TimeZoneInfo {
     pub fn TZif_UnixTimeToDateTime(
         unixTime: i64,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i64),
-                crate::System::DateTime,
-                1usize,
-            >("TZif_UnixTimeToDateTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TZif_UnixTimeToDateTime", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i64),
+                        crate::System::DateTime,
+                        1usize,
+                    >("TZif_UnixTimeToDateTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TZif_UnixTimeToDateTime", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
             method.invoke_unchecked((), (unixTime))?
@@ -2503,18 +2878,21 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("ToString")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "ToString", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("ToString")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToString", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -2525,18 +2903,21 @@ impl crate::System::TimeZoneInfo {
         year: i32,
         transitionTime: crate::System::TimeZoneInfo_TransitionTime,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i32, crate::System::TimeZoneInfo_TransitionTime),
-                crate::System::DateTime,
-                2usize,
-            >("TransitionTimeToDateTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TransitionTimeToDateTime", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32, crate::System::TimeZoneInfo_TransitionTime),
+                        crate::System::DateTime,
+                        2usize,
+                    >("TransitionTimeToDateTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TransitionTimeToDateTime", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
             method.invoke_unchecked((), (year, transitionTime))?
@@ -2551,25 +2932,32 @@ impl crate::System::TimeZoneInfo {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                ),
-                bool,
-                2usize,
-            >("TryGetLocalTzFile")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TryGetLocalTzFile", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<u8>,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("TryGetLocalTzFile")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryGetLocalTzFile", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (rawData, id))? };
         Ok(__cordl_ret.into())
@@ -2583,26 +2971,35 @@ impl crate::System::TimeZoneInfo {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                ),
-                bool,
-                3usize,
-            >("TryLoadTzFile")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "TryLoadTzFile", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<u8>,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("TryLoadTzFile")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryLoadTzFile", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (tzFilePath, rawData, id))?
@@ -2612,18 +3009,21 @@ impl crate::System::TimeZoneInfo {
     pub fn UtcOffsetOutOfRange(
         offset: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::TimeSpan),
-                bool,
-                1usize,
-            >("UtcOffsetOutOfRange")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "UtcOffsetOutOfRange", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::TimeSpan),
+                        bool,
+                        1usize,
+                    >("UtcOffsetOutOfRange")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UtcOffsetOutOfRange", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (offset))? };
         Ok(__cordl_ret.into())
@@ -2638,29 +3038,34 @@ impl crate::System::TimeZoneInfo {
         >,
         adjustmentRulesSupportDst: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    crate::System::TimeSpan,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::TimeZoneInfo_AdjustmentRule,
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<bool>,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >("ValidateTimeZoneInfo")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "ValidateTimeZoneInfo", 4usize
-                )
+                            crate::System::TimeSpan,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::TimeZoneInfo_AdjustmentRule,
+                                    >,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<bool>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("ValidateTimeZoneInfo")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ValidateTimeZoneInfo", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -2674,14 +3079,17 @@ impl crate::System::TimeZoneInfo {
     pub fn _ctor_3(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -2694,22 +3102,29 @@ impl crate::System::TimeZoneInfo {
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         dstDisabled: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), ".ctor", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (data, id, dstDisabled))?
@@ -2734,32 +3149,43 @@ impl crate::System::TimeZoneInfo {
         >,
         disableDaylightSavingTime: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    crate::System::TimeSpan,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::TimeZoneInfo_AdjustmentRule,
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
-                        >,
-                    >,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Void,
-                7usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), ".ctor", 7usize
-                )
+                            crate::System::TimeSpan,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::TimeZoneInfo_AdjustmentRule,
+                                    >,
+                                >,
+                            >,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        7usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 7usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -2785,23 +3211,26 @@ impl crate::System::TimeZoneInfo {
         >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Runtime::Serialization::SerializationInfo,
-                    >,
-                    crate::System::Runtime::Serialization::StreamingContext,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), ".ctor", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Runtime::Serialization::SerializationInfo,
+                            >,
+                            crate::System::Runtime::Serialization::StreamingContext,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (info, context))?
@@ -2811,14 +3240,21 @@ impl crate::System::TimeZoneInfo {
     pub fn get_BaseUtcOffset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::System::TimeSpan, 0usize>("get_BaseUtcOffset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "get_BaseUtcOffset", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::TimeSpan,
+                        0usize,
+                    >("get_BaseUtcOffset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_BaseUtcOffset", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
             method.invoke_unchecked(self, ())?
@@ -2830,18 +3266,21 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("get_DaylightName")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "get_DaylightName", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("get_DaylightName")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_DaylightName", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -2853,18 +3292,21 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("get_DisplayName")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "get_DisplayName", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("get_DisplayName")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_DisplayName", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -2874,18 +3316,21 @@ impl crate::System::TimeZoneInfo {
     pub fn get_Local() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                0usize,
-            >("get_Local")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "get_Local", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                        0usize,
+                    >("get_Local")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Local", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo> = unsafe {
             method.invoke_unchecked((), ())?
@@ -2897,18 +3342,21 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("get_StandardName")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "get_StandardName", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("get_StandardName")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_StandardName", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -2918,14 +3366,17 @@ impl crate::System::TimeZoneInfo {
     pub fn get_SupportsDaylightSavingTime(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_SupportsDaylightSavingTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "get_SupportsDaylightSavingTime", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_SupportsDaylightSavingTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_SupportsDaylightSavingTime", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -2933,18 +3384,21 @@ impl crate::System::TimeZoneInfo {
     pub fn get_Utc() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                0usize,
-            >("get_Utc")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo as quest_hook::libil2cpp::Type >
-                    ::class(), "get_Utc", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                        0usize,
+                    >("get_Utc")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Utc", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo> = unsafe {
             method.invoke_unchecked((), ())?
@@ -3073,25 +3527,29 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::DateTime,
-                    crate::System::DateTime,
-                    crate::System::TimeSpan,
-                    crate::System::TimeZoneInfo_TransitionTime,
-                    crate::System::TimeZoneInfo_TransitionTime,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
-                5usize,
-            >("CreateAdjustmentRule")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateAdjustmentRule",
-                    5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::DateTime,
+                            crate::System::DateTime,
+                            crate::System::TimeSpan,
+                            crate::System::TimeZoneInfo_TransitionTime,
+                            crate::System::TimeZoneInfo_TransitionTime,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::TimeZoneInfo_AdjustmentRule,
+                        >,
+                        5usize,
+                    >("CreateAdjustmentRule")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateAdjustmentRule", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::TimeZoneInfo_AdjustmentRule,
@@ -3121,27 +3579,31 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::DateTime,
-                    crate::System::DateTime,
-                    crate::System::TimeSpan,
-                    crate::System::TimeZoneInfo_TransitionTime,
-                    crate::System::TimeZoneInfo_TransitionTime,
-                    crate::System::TimeSpan,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
-                7usize,
-            >("CreateAdjustmentRule")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateAdjustmentRule",
-                    7usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::DateTime,
+                            crate::System::DateTime,
+                            crate::System::TimeSpan,
+                            crate::System::TimeZoneInfo_TransitionTime,
+                            crate::System::TimeZoneInfo_TransitionTime,
+                            crate::System::TimeSpan,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::TimeZoneInfo_AdjustmentRule,
+                        >,
+                        7usize,
+                    >("CreateAdjustmentRule")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateAdjustmentRule", 7usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::TimeZoneInfo_AdjustmentRule,
@@ -3166,31 +3628,39 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>),
-                bool,
-                1usize,
-            >("Equals")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::TimeZoneInfo_AdjustmentRule,
+                        >),
+                        bool,
+                        1usize,
+                    >("Equals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Equals", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("GetHashCode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(), "GetHashCode", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("GetHashCode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetHashCode", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -3198,15 +3668,17 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
     pub fn IsEndDateMarkerForEndOfYear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("IsEndDateMarkerForEndOfYear")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "IsEndDateMarkerForEndOfYear", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("IsEndDateMarkerForEndOfYear")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsEndDateMarkerForEndOfYear", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -3214,15 +3686,21 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
     pub fn IsStartDateMarkerForBeginningOfYear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("IsStartDateMarkerForBeginningOfYear")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "IsStartDateMarkerForBeginningOfYear", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("IsStartDateMarkerForBeginningOfYear")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsStartDateMarkerForBeginningOfYear", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -3276,20 +3754,25 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
         &mut self,
         sender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("System.Runtime.Serialization.IDeserializationCallback.OnDeserialization")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "System.Runtime.Serialization.IDeserializationCallback.OnDeserialization",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(
+                        "System.Runtime.Serialization.IDeserializationCallback.OnDeserialization",
+                    )
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "System.Runtime.Serialization.IDeserializationCallback.OnDeserialization",
+                            1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (sender))?
@@ -3303,24 +3786,28 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
         >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Runtime::Serialization::SerializationInfo,
-                    >,
-                    crate::System::Runtime::Serialization::StreamingContext,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("System.Runtime.Serialization.ISerializable.GetObjectData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "System.Runtime.Serialization.ISerializable.GetObjectData", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Runtime::Serialization::SerializationInfo,
+                            >,
+                            crate::System::Runtime::Serialization::StreamingContext,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("System.Runtime.Serialization.ISerializable.GetObjectData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "System.Runtime.Serialization.ISerializable.GetObjectData",
+                            2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (info, context))?
@@ -3335,26 +3822,28 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
         daylightTransitionEnd: crate::System::TimeZoneInfo_TransitionTime,
         noDaylightTransitions: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::DateTime,
-                    crate::System::DateTime,
-                    crate::System::TimeSpan,
-                    crate::System::TimeZoneInfo_TransitionTime,
-                    crate::System::TimeZoneInfo_TransitionTime,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Void,
-                6usize,
-            >("ValidateAdjustmentRule")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(), "ValidateAdjustmentRule",
-                    6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::DateTime,
+                            crate::System::DateTime,
+                            crate::System::TimeSpan,
+                            crate::System::TimeZoneInfo_TransitionTime,
+                            crate::System::TimeZoneInfo_TransitionTime,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >("ValidateAdjustmentRule")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ValidateAdjustmentRule", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -3375,14 +3864,17 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
     pub fn _ctor_2(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -3399,26 +3891,29 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
         baseUtcOffsetDelta: crate::System::TimeSpan,
         noDaylightTransitions: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::DateTime,
-                    crate::System::DateTime,
-                    crate::System::TimeSpan,
-                    crate::System::TimeZoneInfo_TransitionTime,
-                    crate::System::TimeZoneInfo_TransitionTime,
-                    crate::System::TimeSpan,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Void,
-                7usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 7usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::DateTime,
+                            crate::System::DateTime,
+                            crate::System::TimeSpan,
+                            crate::System::TimeZoneInfo_TransitionTime,
+                            crate::System::TimeZoneInfo_TransitionTime,
+                            crate::System::TimeSpan,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        7usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 7usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -3444,23 +3939,26 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
         >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Runtime::Serialization::SerializationInfo,
-                    >,
-                    crate::System::Runtime::Serialization::StreamingContext,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Runtime::Serialization::SerializationInfo,
+                            >,
+                            crate::System::Runtime::Serialization::StreamingContext,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (info, context))?
@@ -3470,15 +3968,21 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
     pub fn get_BaseUtcOffsetDelta(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::System::TimeSpan, 0usize>("get_BaseUtcOffsetDelta")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(), "get_BaseUtcOffsetDelta",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::TimeSpan,
+                        0usize,
+                    >("get_BaseUtcOffsetDelta")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_BaseUtcOffsetDelta", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
             method.invoke_unchecked(self, ())?
@@ -3488,14 +3992,17 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
     pub fn get_DateEnd(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::System::DateTime, 0usize>("get_DateEnd")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(), "get_DateEnd", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), crate::System::DateTime, 0usize>("get_DateEnd")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_DateEnd", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
             method.invoke_unchecked(self, ())?
@@ -3505,14 +4012,17 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
     pub fn get_DateStart(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::System::DateTime, 0usize>("get_DateStart")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(), "get_DateStart", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), crate::System::DateTime, 0usize>("get_DateStart")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_DateStart", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
             method.invoke_unchecked(self, ())?
@@ -3522,14 +4032,21 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
     pub fn get_DaylightDelta(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::System::TimeSpan, 0usize>("get_DaylightDelta")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(), "get_DaylightDelta", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::TimeSpan,
+                        0usize,
+                    >("get_DaylightDelta")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_DaylightDelta", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
             method.invoke_unchecked(self, ())?
@@ -3539,19 +4056,21 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
     pub fn get_DaylightTransitionEnd(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeZoneInfo_TransitionTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::TimeZoneInfo_TransitionTime,
-                0usize,
-            >("get_DaylightTransitionEnd")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(), "get_DaylightTransitionEnd",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::TimeZoneInfo_TransitionTime,
+                        0usize,
+                    >("get_DaylightTransitionEnd")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_DaylightTransitionEnd", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeZoneInfo_TransitionTime = unsafe {
             method.invoke_unchecked(self, ())?
@@ -3561,19 +4080,21 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
     pub fn get_DaylightTransitionStart(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeZoneInfo_TransitionTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::TimeZoneInfo_TransitionTime,
-                0usize,
-            >("get_DaylightTransitionStart")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_DaylightTransitionStart", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::TimeZoneInfo_TransitionTime,
+                        0usize,
+                    >("get_DaylightTransitionStart")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_DaylightTransitionStart", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeZoneInfo_TransitionTime = unsafe {
             method.invoke_unchecked(self, ())?
@@ -3581,29 +4102,33 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
         Ok(__cordl_ret.into())
     }
     pub fn get_HasDaylightSaving(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_HasDaylightSaving")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(), "get_HasDaylightSaving",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_HasDaylightSaving")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_HasDaylightSaving", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_NoDaylightTransitions(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_AdjustmentRule as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_NoDaylightTransitions")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_AdjustmentRule as
-                    quest_hook::libil2cpp::Type > ::class(), "get_NoDaylightTransitions",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_NoDaylightTransitions")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_NoDaylightTransitions", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -3724,18 +4249,21 @@ impl crate::System::TimeZoneInfo_CachedData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_CachedData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                0usize,
-            >("CreateLocal")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_CachedData as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateLocal", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                        0usize,
+                    >("CreateLocal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateLocal", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -3746,19 +4274,21 @@ impl crate::System::TimeZoneInfo_CachedData {
         &mut self,
         timeZone: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeKind> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_CachedData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>),
-                crate::System::DateTimeKind,
-                1usize,
-            >("GetCorrespondingKind")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_CachedData as
-                    quest_hook::libil2cpp::Type > ::class(), "GetCorrespondingKind",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>),
+                        crate::System::DateTimeKind,
+                        1usize,
+                    >("GetCorrespondingKind")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetCorrespondingKind", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::DateTimeKind = unsafe {
             method.invoke_unchecked(self, (timeZone))?
@@ -3775,14 +4305,17 @@ impl crate::System::TimeZoneInfo_CachedData {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_CachedData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_CachedData as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -3794,18 +4327,21 @@ impl crate::System::TimeZoneInfo_CachedData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_CachedData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-                0usize,
-            >("get_Local")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_CachedData as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Local", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+                        0usize,
+                    >("get_Local")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Local", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4020,18 +4556,26 @@ impl crate::System::TimeZoneInfo_TZifHead {
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TZifHead as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TZifHead as quest_hook::libil2cpp::Type
-                    > ::class(), ".ctor", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (data, index))?
@@ -4144,18 +4688,26 @@ impl crate::System::TimeZoneInfo_TZifType {
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TZifType as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TZifType as quest_hook::libil2cpp::Type
-                    > ::class(), ".ctor", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (data, index))?
@@ -4275,19 +4827,21 @@ impl crate::System::TimeZoneInfo_TransitionTime {
         month: i32,
         day: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeZoneInfo_TransitionTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TransitionTime as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::DateTime, i32, i32),
-                crate::System::TimeZoneInfo_TransitionTime,
-                3usize,
-            >("CreateFixedDateRule")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TransitionTime as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateFixedDateRule",
-                    3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::DateTime, i32, i32),
+                        crate::System::TimeZoneInfo_TransitionTime,
+                        3usize,
+                    >("CreateFixedDateRule")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateFixedDateRule", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeZoneInfo_TransitionTime = unsafe {
             method.invoke_unchecked((), (timeOfDay, month, day))?
@@ -4300,19 +4854,21 @@ impl crate::System::TimeZoneInfo_TransitionTime {
         week: i32,
         dayOfWeek: crate::System::DayOfWeek,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeZoneInfo_TransitionTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TransitionTime as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::DateTime, i32, i32, crate::System::DayOfWeek),
-                crate::System::TimeZoneInfo_TransitionTime,
-                4usize,
-            >("CreateFloatingDateRule")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TransitionTime as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateFloatingDateRule",
-                    4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::DateTime, i32, i32, crate::System::DayOfWeek),
+                        crate::System::TimeZoneInfo_TransitionTime,
+                        4usize,
+                    >("CreateFloatingDateRule")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateFloatingDateRule", 4usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeZoneInfo_TransitionTime = unsafe {
             method.invoke_unchecked((), (timeOfDay, month, week, dayOfWeek))?
@@ -4323,18 +4879,21 @@ impl crate::System::TimeZoneInfo_TransitionTime {
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TransitionTime as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                bool,
-                1usize,
-            >("Equals")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TransitionTime as
-                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        bool,
+                        1usize,
+                    >("Equals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Equals", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
@@ -4343,31 +4902,37 @@ impl crate::System::TimeZoneInfo_TransitionTime {
         &mut self,
         other: crate::System::TimeZoneInfo_TransitionTime,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TransitionTime as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::TimeZoneInfo_TransitionTime),
-                bool,
-                1usize,
-            >("Equals")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TransitionTime as
-                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::TimeZoneInfo_TransitionTime),
+                        bool,
+                        1usize,
+                    >("Equals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Equals", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TransitionTime as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("GetHashCode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TransitionTime as
-                    quest_hook::libil2cpp::Type > ::class(), "GetHashCode", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("GetHashCode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetHashCode", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -4376,20 +4941,25 @@ impl crate::System::TimeZoneInfo_TransitionTime {
         &mut self,
         sender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TransitionTime as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("System.Runtime.Serialization.IDeserializationCallback.OnDeserialization")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TransitionTime as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "System.Runtime.Serialization.IDeserializationCallback.OnDeserialization",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(
+                        "System.Runtime.Serialization.IDeserializationCallback.OnDeserialization",
+                    )
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "System.Runtime.Serialization.IDeserializationCallback.OnDeserialization",
+                            1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (sender))?
@@ -4403,24 +4973,28 @@ impl crate::System::TimeZoneInfo_TransitionTime {
         >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TransitionTime as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Runtime::Serialization::SerializationInfo,
-                    >,
-                    crate::System::Runtime::Serialization::StreamingContext,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("System.Runtime.Serialization.ISerializable.GetObjectData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TransitionTime as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "System.Runtime.Serialization.ISerializable.GetObjectData", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Runtime::Serialization::SerializationInfo,
+                            >,
+                            crate::System::Runtime::Serialization::StreamingContext,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("System.Runtime.Serialization.ISerializable.GetObjectData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "System.Runtime.Serialization.ISerializable.GetObjectData",
+                            2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (info, context))?
@@ -4434,19 +5008,27 @@ impl crate::System::TimeZoneInfo_TransitionTime {
         day: i32,
         dayOfWeek: crate::System::DayOfWeek,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TransitionTime as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::DateTime, i32, i32, i32, crate::System::DayOfWeek),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >("ValidateTransitionTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TransitionTime as
-                    quest_hook::libil2cpp::Type > ::class(), "ValidateTransitionTime",
-                    5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::DateTime,
+                            i32,
+                            i32,
+                            i32,
+                            crate::System::DayOfWeek,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("ValidateTransitionTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ValidateTransitionTime", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (timeOfDay, month, week, day, dayOfWeek))?
@@ -4462,18 +5044,28 @@ impl crate::System::TimeZoneInfo_TransitionTime {
         dayOfWeek: crate::System::DayOfWeek,
         isFixedDateRule: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TransitionTime as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::DateTime, i32, i32, i32, crate::System::DayOfWeek, bool),
-                quest_hook::libil2cpp::Void,
-                6usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TransitionTime as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::DateTime,
+                            i32,
+                            i32,
+                            i32,
+                            crate::System::DayOfWeek,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -4491,23 +5083,26 @@ impl crate::System::TimeZoneInfo_TransitionTime {
         >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TransitionTime as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Runtime::Serialization::SerializationInfo,
-                    >,
-                    crate::System::Runtime::Serialization::StreamingContext,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TransitionTime as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Runtime::Serialization::SerializationInfo,
+                            >,
+                            crate::System::Runtime::Serialization::StreamingContext,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (info, context))?
@@ -4515,14 +5110,17 @@ impl crate::System::TimeZoneInfo_TransitionTime {
         Ok(__cordl_ret.into())
     }
     pub fn get_Day(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TransitionTime as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("get_Day")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TransitionTime as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Day", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("get_Day")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Day", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -4530,14 +5128,17 @@ impl crate::System::TimeZoneInfo_TransitionTime {
     pub fn get_DayOfWeek(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::DayOfWeek> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TransitionTime as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::System::DayOfWeek, 0usize>("get_DayOfWeek")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TransitionTime as
-                    quest_hook::libil2cpp::Type > ::class(), "get_DayOfWeek", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), crate::System::DayOfWeek, 0usize>("get_DayOfWeek")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_DayOfWeek", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::DayOfWeek = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4545,28 +5146,33 @@ impl crate::System::TimeZoneInfo_TransitionTime {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsFixedDateRule(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TransitionTime as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_IsFixedDateRule")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TransitionTime as
-                    quest_hook::libil2cpp::Type > ::class(), "get_IsFixedDateRule",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_IsFixedDateRule")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_IsFixedDateRule", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Month(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TransitionTime as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("get_Month")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TransitionTime as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Month", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("get_Month")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Month", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -4574,14 +5180,17 @@ impl crate::System::TimeZoneInfo_TransitionTime {
     pub fn get_TimeOfDay(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TransitionTime as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::System::DateTime, 0usize>("get_TimeOfDay")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TransitionTime as
-                    quest_hook::libil2cpp::Type > ::class(), "get_TimeOfDay", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), crate::System::DateTime, 0usize>("get_TimeOfDay")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_TimeOfDay", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
             method.invoke_unchecked(self, ())?
@@ -4589,14 +5198,17 @@ impl crate::System::TimeZoneInfo_TransitionTime {
         Ok(__cordl_ret.into())
     }
     pub fn get_Week(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TransitionTime as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("get_Week")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TransitionTime as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Week", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("get_Week")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Week", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -4605,21 +5217,24 @@ impl crate::System::TimeZoneInfo_TransitionTime {
         t1: crate::System::TimeZoneInfo_TransitionTime,
         t2: crate::System::TimeZoneInfo_TransitionTime,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeZoneInfo_TransitionTime as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::TimeZoneInfo_TransitionTime,
-                    crate::System::TimeZoneInfo_TransitionTime,
-                ),
-                bool,
-                2usize,
-            >("op_Inequality")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::TimeZoneInfo_TransitionTime as
-                    quest_hook::libil2cpp::Type > ::class(), "op_Inequality", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::TimeZoneInfo_TransitionTime,
+                            crate::System::TimeZoneInfo_TransitionTime,
+                        ),
+                        bool,
+                        2usize,
+                    >("op_Inequality")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Inequality", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (t1, t2))? };
         Ok(__cordl_ret.into())

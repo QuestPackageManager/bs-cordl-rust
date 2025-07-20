@@ -109,23 +109,26 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Animations::AnimationOffsetPlayable,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::AnimationOffsetPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::Playables::PlayableGraph,
-                    crate::UnityEngine::Vector3,
-                    crate::UnityEngine::Quaternion,
-                    i32,
-                ),
-                crate::UnityEngine::Animations::AnimationOffsetPlayable,
-                4usize,
-            >("Create")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Animations::AnimationOffsetPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "Create", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Playables::PlayableGraph,
+                            crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Quaternion,
+                            i32,
+                        ),
+                        crate::UnityEngine::Animations::AnimationOffsetPlayable,
+                        4usize,
+                    >("Create")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Create", 4usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Animations::AnimationOffsetPlayable = unsafe {
             method.invoke_unchecked((), (graph, position, rotation, inputCount))?
@@ -138,23 +141,26 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
         rotation: crate::UnityEngine::Quaternion,
         inputCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::AnimationOffsetPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::Playables::PlayableGraph,
-                    crate::UnityEngine::Vector3,
-                    crate::UnityEngine::Quaternion,
-                    i32,
-                ),
-                crate::UnityEngine::Playables::PlayableHandle,
-                4usize,
-            >("CreateHandle")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Animations::AnimationOffsetPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateHandle", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Playables::PlayableGraph,
+                            crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Quaternion,
+                            i32,
+                        ),
+                        crate::UnityEngine::Playables::PlayableHandle,
+                        4usize,
+                    >("CreateHandle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateHandle", 4usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = unsafe {
             method.invoke_unchecked((), (graph, position, rotation, inputCount))?
@@ -169,26 +175,28 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
             crate::UnityEngine::Playables::PlayableHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::AnimationOffsetPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::Playables::PlayableGraph,
-                    crate::UnityEngine::Vector3,
-                    crate::UnityEngine::Quaternion,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::UnityEngine::Playables::PlayableHandle,
-                    >,
-                ),
-                bool,
-                4usize,
-            >("CreateHandleInternal")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Animations::AnimationOffsetPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateHandleInternal",
-                    4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Playables::PlayableGraph,
+                            crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Quaternion,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Playables::PlayableHandle,
+                            >,
+                        ),
+                        bool,
+                        4usize,
+                    >("CreateHandleInternal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateHandleInternal", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (graph, position, rotation, handle))?
@@ -205,28 +213,32 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
             crate::UnityEngine::Playables::PlayableHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::AnimationOffsetPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::UnityEngine::Playables::PlayableGraph,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::UnityEngine::Playables::PlayableHandle,
-                    >,
-                ),
-                bool,
-                4usize,
-            >("CreateHandleInternal_Injected")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Animations::AnimationOffsetPlayable as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "CreateHandleInternal_Injected", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Playables::PlayableGraph,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Quaternion,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Playables::PlayableHandle,
+                            >,
+                        ),
+                        bool,
+                        4usize,
+                    >("CreateHandleInternal_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateHandleInternal_Injected", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (graph, position, rotation, handle))?
@@ -237,18 +249,21 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
         &mut self,
         other: crate::UnityEngine::Animations::AnimationOffsetPlayable,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::AnimationOffsetPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::Animations::AnimationOffsetPlayable),
-                bool,
-                1usize,
-            >("Equals")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Animations::AnimationOffsetPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::Animations::AnimationOffsetPlayable),
+                        bool,
+                        1usize,
+                    >("Equals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Equals", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
@@ -256,18 +271,21 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
     pub fn GetHandle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::AnimationOffsetPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::Playables::PlayableHandle,
-                0usize,
-            >("GetHandle")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Animations::AnimationOffsetPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "GetHandle", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Playables::PlayableHandle,
+                        0usize,
+                    >("GetHandle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetHandle", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = unsafe {
             method.invoke_unchecked(self, ())?
@@ -278,18 +296,21 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
         &mut self,
         handle: crate::UnityEngine::Playables::PlayableHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::AnimationOffsetPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::Playables::PlayableHandle),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Animations::AnimationOffsetPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::Playables::PlayableHandle),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (handle))?
@@ -299,18 +320,21 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
     pub fn op_Implicit(
         playable: crate::UnityEngine::Animations::AnimationOffsetPlayable,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::AnimationOffsetPlayable as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Animations::AnimationOffsetPlayable),
-                crate::UnityEngine::Playables::Playable,
-                1usize,
-            >("op_Implicit")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Animations::AnimationOffsetPlayable as
-                    quest_hook::libil2cpp::Type > ::class(), "op_Implicit", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Animations::AnimationOffsetPlayable),
+                        crate::UnityEngine::Playables::Playable,
+                        1usize,
+                    >("op_Implicit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Implicit", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Playables::Playable = unsafe {
             method.invoke_unchecked((), (playable))?

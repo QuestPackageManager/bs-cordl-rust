@@ -52,24 +52,27 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions {
         TCommand: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::InputSystem::LowLevel::IInputRuntime,
-                    >,
-                    i32,
-                    quest_hook::libil2cpp::ByRefMut<TCommand>,
-                ),
-                i64,
-                3usize,
-            >("DeviceCommand")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "DeviceCommand", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::LowLevel::IInputRuntime,
+                            >,
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<TCommand>,
+                        ),
+                        i64,
+                        3usize,
+                    >("DeviceCommand")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "DeviceCommand", 3usize
+                        )
+                    })
             });
         let __cordl_ret: i64 = unsafe {
             method.invoke_unchecked((), (runtime, deviceId, command))?

@@ -44,21 +44,26 @@ impl crate::Newtonsoft::Json::Utilities::StringReferenceExtensions {
         s: crate::Newtonsoft::Json::Utilities::StringReference,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringReferenceExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::Newtonsoft::Json::Utilities::StringReference,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                ),
-                bool,
-                2usize,
-            >("EndsWith")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Utilities::StringReferenceExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "EndsWith", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::Newtonsoft::Json::Utilities::StringReference,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("EndsWith")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "EndsWith", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (s, text))? };
         Ok(__cordl_ret.into())
@@ -69,18 +74,26 @@ impl crate::Newtonsoft::Json::Utilities::StringReferenceExtensions {
         startIndex: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringReferenceExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::Newtonsoft::Json::Utilities::StringReference, char, i32, i32),
-                i32,
-                4usize,
-            >("IndexOf")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Utilities::StringReferenceExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "IndexOf", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::Newtonsoft::Json::Utilities::StringReference,
+                            char,
+                            i32,
+                            i32,
+                        ),
+                        i32,
+                        4usize,
+                    >("IndexOf")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IndexOf", 4usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (s, c, startIndex, length))?
@@ -91,21 +104,26 @@ impl crate::Newtonsoft::Json::Utilities::StringReferenceExtensions {
         s: crate::Newtonsoft::Json::Utilities::StringReference,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringReferenceExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::Newtonsoft::Json::Utilities::StringReference,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                ),
-                bool,
-                2usize,
-            >("StartsWith")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Utilities::StringReferenceExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "StartsWith", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::Newtonsoft::Json::Utilities::StringReference,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("StartsWith")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "StartsWith", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (s, text))? };
         Ok(__cordl_ret.into())

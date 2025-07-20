@@ -42,19 +42,21 @@ impl crate::GlobalNamespace::BeatmapEventTypeExtensions {
     pub fn IsCoreLightIntensityChangeEvent(
         basicBeatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapEventTypeExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::BasicBeatmapEventType),
-                bool,
-                1usize,
-            >("IsCoreLightIntensityChangeEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapEventTypeExtensions as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "IsCoreLightIntensityChangeEvent", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::BasicBeatmapEventType),
+                        bool,
+                        1usize,
+                    >("IsCoreLightIntensityChangeEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsCoreLightIntensityChangeEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (basicBeatmapEventType))?

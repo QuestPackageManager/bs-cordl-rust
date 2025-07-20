@@ -44,21 +44,24 @@ impl crate::UnityEngine::InputSystem::LowLevel::IEventMerger {
         currentEventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         nextEventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::IEventMerger as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                    crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                ),
-                bool,
-                2usize,
-            >("MergeForward")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::LowLevel::IEventMerger as
-                    quest_hook::libil2cpp::Type > ::class(), "MergeForward", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                        ),
+                        bool,
+                        2usize,
+                    >("MergeForward")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "MergeForward", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (currentEventPtr, nextEventPtr))?

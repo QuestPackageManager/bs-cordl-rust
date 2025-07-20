@@ -48,20 +48,23 @@ impl crate::System::Runtime::Remoting::Contexts::IContributeDynamicSink {
             crate::System::Runtime::Remoting::Contexts::IDynamicMessageSink,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Contexts::IContributeDynamicSink as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Runtime::Remoting::Contexts::IDynamicMessageSink,
-                >,
-                0usize,
-            >("GetDynamicSink")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Runtime::Remoting::Contexts::IContributeDynamicSink
-                    as quest_hook::libil2cpp::Type > ::class(), "GetDynamicSink", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::Remoting::Contexts::IDynamicMessageSink,
+                        >,
+                        0usize,
+                    >("GetDynamicSink")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDynamicSink", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Contexts::IDynamicMessageSink,

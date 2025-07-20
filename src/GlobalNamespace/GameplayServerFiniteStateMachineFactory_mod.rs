@@ -48,20 +48,23 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachineFactory {
             crate::GlobalNamespace::GameplayServerFiniteStateMachine,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachineFactory as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayServerFiniteStateMachine,
-                >,
-                1usize,
-            >("Create")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::GameplayServerFiniteStateMachineFactory as
-                    quest_hook::libil2cpp::Type > ::class(), "Create", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::GameplayServerFiniteStateMachine,
+                        >,
+                        1usize,
+                    >("Create")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Create", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayServerFiniteStateMachine,

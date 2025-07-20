@@ -63,24 +63,26 @@ impl crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
         >,
         node: crate::UnityEngine::XR::XRNode,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PS5AdvancedHapticsPlayerController as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-                    >,
-                    crate::UnityEngine::XR::XRNode,
-                ),
-                bool,
-                2usize,
-            >("CanPlayHapticPreset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::PS5AdvancedHapticsPlayerController as
-                    quest_hook::libil2cpp::Type > ::class(), "CanPlayHapticPreset",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+                            >,
+                            crate::UnityEngine::XR::XRNode,
+                        ),
+                        bool,
+                        2usize,
+                    >("CanPlayHapticPreset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CanPlayHapticPreset", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (hapticPreset, node))?
@@ -90,14 +92,17 @@ impl crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
     pub fn Initialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PS5AdvancedHapticsPlayerController as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::PS5AdvancedHapticsPlayerController as
-                    quest_hook::libil2cpp::Type > ::class(), "Initialize", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Initialize", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -115,21 +120,23 @@ impl crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
         &mut self,
         player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PS5AdvancedHapticsPlayerController as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::HapticsAudioClipPlayer,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("OnHapticPlayFinishedCallback")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::PS5AdvancedHapticsPlayerController as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "OnHapticPlayFinishedCallback", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::HapticsAudioClipPlayer,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("OnHapticPlayFinishedCallback")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "OnHapticPlayFinishedCallback", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (player))?
@@ -143,24 +150,26 @@ impl crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
             crate::Libraries::HM::HMLib::VR::HapticPresetSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PS5AdvancedHapticsPlayerController as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::UnityEngine::XR::XRNode,
-                    quest_hook::libil2cpp::Gc<
-                        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("PlayContinuousHapticPreset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::PS5AdvancedHapticsPlayerController as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "PlayContinuousHapticPreset", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::XR::XRNode,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("PlayContinuousHapticPreset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PlayContinuousHapticPreset", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (node, hapticPreset))?
@@ -174,23 +183,26 @@ impl crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
             crate::Libraries::HM::HMLib::VR::HapticPresetSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PS5AdvancedHapticsPlayerController as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::UnityEngine::XR::XRNode,
-                    quest_hook::libil2cpp::Gc<
-                        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("PlayHapticFeedback")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::PS5AdvancedHapticsPlayerController as
-                    quest_hook::libil2cpp::Type > ::class(), "PlayHapticFeedback", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::XR::XRNode,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("PlayHapticFeedback")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PlayHapticFeedback", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (node, hapticPreset))?
@@ -204,24 +216,26 @@ impl crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
             crate::Libraries::HM::HMLib::VR::HapticPresetSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PS5AdvancedHapticsPlayerController as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::UnityEngine::XR::XRNode,
-                    quest_hook::libil2cpp::Gc<
-                        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("PlayOneShotHapticPreset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::PS5AdvancedHapticsPlayerController as
-                    quest_hook::libil2cpp::Type > ::class(), "PlayOneShotHapticPreset",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::XR::XRNode,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("PlayOneShotHapticPreset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PlayOneShotHapticPreset", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (node, hapticPreset))?
@@ -231,14 +245,17 @@ impl crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PS5AdvancedHapticsPlayerController as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::PS5AdvancedHapticsPlayerController as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

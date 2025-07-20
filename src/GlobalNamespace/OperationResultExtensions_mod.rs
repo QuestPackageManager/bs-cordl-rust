@@ -42,18 +42,21 @@ impl crate::GlobalNamespace::OperationResultExtensions {
     pub fn IsError(
         res: crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OperationResultExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRSpatialAnchor_OperationResult),
-                bool,
-                1usize,
-            >("IsError")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OperationResultExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "IsError", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRSpatialAnchor_OperationResult),
+                        bool,
+                        1usize,
+                    >("IsError")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsError", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (res))? };
         Ok(__cordl_ret.into())
@@ -61,18 +64,21 @@ impl crate::GlobalNamespace::OperationResultExtensions {
     pub fn IsSuccess(
         res: crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OperationResultExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRSpatialAnchor_OperationResult),
-                bool,
-                1usize,
-            >("IsSuccess")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OperationResultExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "IsSuccess", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRSpatialAnchor_OperationResult),
+                        bool,
+                        1usize,
+                    >("IsSuccess")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsSuccess", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (res))? };
         Ok(__cordl_ret.into())
@@ -80,18 +86,21 @@ impl crate::GlobalNamespace::OperationResultExtensions {
     pub fn IsWarning(
         res: crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OperationResultExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRSpatialAnchor_OperationResult),
-                bool,
-                1usize,
-            >("IsWarning")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OperationResultExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "IsWarning", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRSpatialAnchor_OperationResult),
+                        bool,
+                        1usize,
+                    >("IsWarning")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsWarning", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (res))? };
         Ok(__cordl_ret.into())

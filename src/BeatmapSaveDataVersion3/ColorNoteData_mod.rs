@@ -70,25 +70,28 @@ impl crate::BeatmapSaveDataVersion3::ColorNoteData {
         cutDirection: crate::BeatmapSaveDataCommon::NoteCutDirection,
         angleOffset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::ColorNoteData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    f32,
-                    i32,
-                    i32,
-                    crate::BeatmapSaveDataCommon::NoteColorType,
-                    crate::BeatmapSaveDataCommon::NoteCutDirection,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Void,
-                6usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::ColorNoteData as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            f32,
+                            i32,
+                            i32,
+                            crate::BeatmapSaveDataCommon::NoteColorType,
+                            crate::BeatmapSaveDataCommon::NoteCutDirection,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -100,14 +103,17 @@ impl crate::BeatmapSaveDataVersion3::ColorNoteData {
         Ok(__cordl_ret.into())
     }
     pub fn get_angleOffset(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::ColorNoteData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("get_angleOffset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::ColorNoteData as
-                    quest_hook::libil2cpp::Type > ::class(), "get_angleOffset", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("get_angleOffset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_angleOffset", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -115,18 +121,21 @@ impl crate::BeatmapSaveDataVersion3::ColorNoteData {
     pub fn get_color(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::NoteColorType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::ColorNoteData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::BeatmapSaveDataCommon::NoteColorType,
-                0usize,
-            >("get_color")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::ColorNoteData as
-                    quest_hook::libil2cpp::Type > ::class(), "get_color", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::BeatmapSaveDataCommon::NoteColorType,
+                        0usize,
+                    >("get_color")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_color", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::BeatmapSaveDataCommon::NoteColorType = unsafe {
             method.invoke_unchecked(self, ())?
@@ -136,18 +145,21 @@ impl crate::BeatmapSaveDataVersion3::ColorNoteData {
     pub fn get_cutDirection(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::NoteCutDirection> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::ColorNoteData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::BeatmapSaveDataCommon::NoteCutDirection,
-                0usize,
-            >("get_cutDirection")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::ColorNoteData as
-                    quest_hook::libil2cpp::Type > ::class(), "get_cutDirection", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::BeatmapSaveDataCommon::NoteCutDirection,
+                        0usize,
+                    >("get_cutDirection")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_cutDirection", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::BeatmapSaveDataCommon::NoteCutDirection = unsafe {
             method.invoke_unchecked(self, ())?
@@ -155,27 +167,33 @@ impl crate::BeatmapSaveDataVersion3::ColorNoteData {
         Ok(__cordl_ret.into())
     }
     pub fn get_layer(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::ColorNoteData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("get_layer")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::ColorNoteData as
-                    quest_hook::libil2cpp::Type > ::class(), "get_layer", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("get_layer")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_layer", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_line(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::ColorNoteData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("get_line")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::ColorNoteData as
-                    quest_hook::libil2cpp::Type > ::class(), "get_line", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("get_line")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_line", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

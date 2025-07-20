@@ -71,27 +71,30 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
         >,
         finishAction: crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                    >,
-                    crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("HandleAvatarEditorFlowCoordinatorDidFinish")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::EditAvatarFlowCoordinatorHelper as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "HandleAvatarEditorFlowCoordinatorDidFinish", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+                            >,
+                            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("HandleAvatarEditorFlowCoordinatorDidFinish")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HandleAvatarEditorFlowCoordinatorDidFinish",
+                            3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (flowCoordinator, avatarSystem, finishAction))?
@@ -105,24 +108,27 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
         >,
         finishAction: crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
-                    >,
-                    crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("HandleAvatarSystemSelectionFlowCoordinatorDidFinish")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::EditAvatarFlowCoordinatorHelper as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "HandleAvatarSystemSelectionFlowCoordinatorDidFinish", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
+                            >,
+                            crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("HandleAvatarSystemSelectionFlowCoordinatorDidFinish")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "HandleAvatarSystemSelectionFlowCoordinatorDidFinish", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (flowCoordinator, finishAction))?
@@ -132,14 +138,17 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
     pub fn Initialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::EditAvatarFlowCoordinatorHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "Initialize", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Initialize", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -163,27 +172,29 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
         immediately: bool,
         replaceTopViewController: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-                    >,
-                    crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
-                    quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
-                    bool,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >("PresentAvatarEditorFlowCoordinator")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::EditAvatarFlowCoordinatorHelper as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "PresentAvatarEditorFlowCoordinator", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+                            >,
+                            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                            bool,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("PresentAvatarEditorFlowCoordinator")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PresentAvatarEditorFlowCoordinator", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -207,23 +218,26 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
         immediately: bool,
         replaceTopViewController: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
-                    bool,
-                    bool,
-                    bool,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >("Show")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::EditAvatarFlowCoordinatorHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "Show", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                            bool,
+                            bool,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("Show")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Show", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -242,14 +256,17 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::EditAvatarFlowCoordinatorHelper as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -265,23 +282,26 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_2<
-                        quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
-                        crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
-                    >,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("add_didFinishEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::EditAvatarFlowCoordinatorHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "add_didFinishEvent", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                                crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("add_didFinishEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "add_didFinishEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -291,15 +311,17 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
     pub fn get__hasOnlyOneAvatarSystem(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get__hasOnlyOneAvatarSystem")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::EditAvatarFlowCoordinatorHelper as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get__hasOnlyOneAvatarSystem", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get__hasOnlyOneAvatarSystem")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get__hasOnlyOneAvatarSystem", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -313,24 +335,26 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_2<
-                        quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
-                        crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
-                    >,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("remove_didFinishEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::EditAvatarFlowCoordinatorHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "remove_didFinishEvent",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                                crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("remove_didFinishEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "remove_didFinishEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

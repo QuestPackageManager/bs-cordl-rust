@@ -42,18 +42,21 @@ impl crate::GlobalNamespace::OffsetDirectionExtensions {
     pub fn OppositeDirection(
         offsetDirection: crate::GlobalNamespace::OffsetDirection,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OffsetDirection> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OffsetDirectionExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OffsetDirection),
-                crate::GlobalNamespace::OffsetDirection,
-                1usize,
-            >("OppositeDirection")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OffsetDirectionExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "OppositeDirection", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OffsetDirection),
+                        crate::GlobalNamespace::OffsetDirection,
+                        1usize,
+                    >("OppositeDirection")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "OppositeDirection", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OffsetDirection = unsafe {
             method.invoke_unchecked((), (offsetDirection))?

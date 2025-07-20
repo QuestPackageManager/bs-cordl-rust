@@ -61,18 +61,21 @@ impl crate::BeatmapSaveDataVersion3::WaypointData {
         layer: i32,
         offsetDirection: crate::BeatmapSaveDataCommon::OffsetDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::WaypointData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (f32, i32, i32, crate::BeatmapSaveDataCommon::OffsetDirection),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::WaypointData as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (f32, i32, i32, crate::BeatmapSaveDataCommon::OffsetDirection),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (beat, line, layer, offsetDirection))?
@@ -80,27 +83,33 @@ impl crate::BeatmapSaveDataVersion3::WaypointData {
         Ok(__cordl_ret.into())
     }
     pub fn get_layer(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::WaypointData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("get_layer")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::WaypointData as
-                    quest_hook::libil2cpp::Type > ::class(), "get_layer", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("get_layer")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_layer", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_line(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::WaypointData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("get_line")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::WaypointData as
-                    quest_hook::libil2cpp::Type > ::class(), "get_line", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("get_line")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_line", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -108,19 +117,21 @@ impl crate::BeatmapSaveDataVersion3::WaypointData {
     pub fn get_offsetDirection(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::OffsetDirection> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::WaypointData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::BeatmapSaveDataCommon::OffsetDirection,
-                0usize,
-            >("get_offsetDirection")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::WaypointData as
-                    quest_hook::libil2cpp::Type > ::class(), "get_offsetDirection",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::BeatmapSaveDataCommon::OffsetDirection,
+                        0usize,
+                    >("get_offsetDirection")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_offsetDirection", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::BeatmapSaveDataCommon::OffsetDirection = unsafe {
             method.invoke_unchecked(self, ())?

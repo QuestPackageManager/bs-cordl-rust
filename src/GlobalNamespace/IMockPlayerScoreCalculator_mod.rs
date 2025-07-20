@@ -43,18 +43,23 @@ impl crate::GlobalNamespace::IMockPlayerScoreCalculator {
         &mut self,
         noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IMockPlayerScoreCalculator as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>),
-                i32,
-                1usize,
-            >("GetScoreForNote")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::IMockPlayerScoreCalculator as
-                    quest_hook::libil2cpp::Type > ::class(), "GetScoreForNote", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::MockNoteData,
+                        >),
+                        i32,
+                        1usize,
+                    >("GetScoreForNote")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetScoreForNote", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (noteData))? };
         Ok(__cordl_ret.into())

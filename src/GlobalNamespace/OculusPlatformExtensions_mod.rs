@@ -46,20 +46,23 @@ impl crate::GlobalNamespace::OculusPlatformExtensions {
             quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusPlatformExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>),
-                crate::System::Runtime::CompilerServices::TaskAwaiter_1<
-                    quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
-                >,
-                1usize,
-            >("GetAwaiter")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OculusPlatformExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetAwaiter", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>),
+                        crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+                            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
+                        >,
+                        1usize,
+                    >("GetAwaiter")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetAwaiter", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
             quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
@@ -77,20 +80,27 @@ impl crate::GlobalNamespace::OculusPlatformExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusPlatformExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request_1<T>>),
-                crate::System::Runtime::CompilerServices::TaskAwaiter_1<
-                    quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message_1<T>>,
-                >,
-                1usize,
-            >("GetAwaiter")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OculusPlatformExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetAwaiter", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Request_1<T>,
+                        >),
+                        crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Message_1<T>,
+                            >,
+                        >,
+                        1usize,
+                    >("GetAwaiter")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetAwaiter", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
             quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message_1<T>>,

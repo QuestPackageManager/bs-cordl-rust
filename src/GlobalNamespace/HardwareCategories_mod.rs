@@ -41,19 +41,21 @@ impl crate::GlobalNamespace::HardwareCategories {
     pub fn GetHardwareCategory() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::HardwareCategory,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::HardwareCategories as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                crate::GlobalNamespace::HardwareCategory,
-                0usize,
-            >("GetHardwareCategory")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::HardwareCategories as
-                    quest_hook::libil2cpp::Type > ::class(), "GetHardwareCategory",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        crate::GlobalNamespace::HardwareCategory,
+                        0usize,
+                    >("GetHardwareCategory")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetHardwareCategory", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::HardwareCategory = unsafe {
             method.invoke_unchecked((), ())?
@@ -63,19 +65,22 @@ impl crate::GlobalNamespace::HardwareCategories {
     pub fn GetHardwareCategoryWithEditorOverride() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::HardwareCategory,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::HardwareCategories as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                crate::GlobalNamespace::HardwareCategory,
-                0usize,
-            >("GetHardwareCategoryWithEditorOverride")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::HardwareCategories as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "GetHardwareCategoryWithEditorOverride", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        crate::GlobalNamespace::HardwareCategory,
+                        0usize,
+                    >("GetHardwareCategoryWithEditorOverride")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetHardwareCategoryWithEditorOverride",
+                            0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::HardwareCategory = unsafe {
             method.invoke_unchecked((), ())?

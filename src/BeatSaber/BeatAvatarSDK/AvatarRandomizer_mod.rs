@@ -47,25 +47,28 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarRandomizer {
             crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarSDK::AvatarRandomizer as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::BeatSaber::BeatAvatarSDK::AvatarData,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("RandomizeAll")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatSaber::BeatAvatarSDK::AvatarRandomizer as
-                    quest_hook::libil2cpp::Type > ::class(), "RandomizeAll", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::BeatAvatarSDK::AvatarData,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("RandomizeAll")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "RandomizeAll", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (avatarData, avatarPartsModel))?
@@ -77,18 +80,23 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarRandomizer {
             crate::BeatSaber::BeatAvatarSDK::AvatarData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarSDK::AvatarRandomizer as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("RandomizeColors")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatSaber::BeatAvatarSDK::AvatarRandomizer as
-                    quest_hook::libil2cpp::Type > ::class(), "RandomizeColors", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::BeatSaber::BeatAvatarSDK::AvatarData,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("RandomizeColors")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "RandomizeColors", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (avatarData))?
@@ -103,25 +111,28 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarRandomizer {
             crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarSDK::AvatarRandomizer as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::BeatSaber::BeatAvatarSDK::AvatarData,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("RandomizeModels")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatSaber::BeatAvatarSDK::AvatarRandomizer as
-                    quest_hook::libil2cpp::Type > ::class(), "RandomizeModels", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::BeatAvatarSDK::AvatarData,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("RandomizeModels")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "RandomizeModels", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (avatarData, avatarPartsModel))?

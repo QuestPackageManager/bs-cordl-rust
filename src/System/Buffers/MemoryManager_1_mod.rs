@@ -63,16 +63,17 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Buffers::MemoryManager_1<T> 
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Buffers::MemoryManager_1<
-            T,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::System::Span_1<T>, 0usize>("GetSpan")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Buffers::MemoryManager_1 < T > as
-                    quest_hook::libil2cpp::Type > ::class(), "GetSpan", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), crate::System::Span_1<T>, 0usize>("GetSpan")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetSpan", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Span_1<T> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -87,16 +88,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Buffers::MemoryManager_1<T> 
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Buffers::MemoryManager_1<
-            T,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(i32), crate::System::Buffers::MemoryHandle, 1usize>("Pin")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Buffers::MemoryManager_1 < T > as
-                    quest_hook::libil2cpp::Type > ::class(), "Pin", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i32),
+                        crate::System::Buffers::MemoryHandle,
+                        1usize,
+                    >("Pin")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Pin", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Buffers::MemoryHandle = unsafe {
             method.invoke_unchecked(self, (elementIndex))?
@@ -111,20 +117,23 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Buffers::MemoryManager_1<T> 
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Buffers::MemoryManager_1<
-            T,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::ByRefMut<crate::System::ArraySegment_1<T>>),
-                bool,
-                1usize,
-            >("TryGetArray")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Buffers::MemoryManager_1 < T > as
-                    quest_hook::libil2cpp::Type > ::class(), "TryGetArray", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::System::ArraySegment_1<T>,
+                        >),
+                        bool,
+                        1usize,
+                    >("TryGetArray")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryGetArray", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (segment))? };
         Ok(__cordl_ret.into())

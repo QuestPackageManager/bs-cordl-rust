@@ -41,19 +41,21 @@ impl crate::Mono::Unity::UnityTlsConversions {
     pub fn ConvertProtocolVersion(
         protocol: crate::Mono::Unity::UnityTls_unitytls_protocol,
     ) -> quest_hook::libil2cpp::Result<crate::Mono::Security::Interface::TlsProtocols> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Unity::UnityTlsConversions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::Mono::Unity::UnityTls_unitytls_protocol),
-                crate::Mono::Security::Interface::TlsProtocols,
-                1usize,
-            >("ConvertProtocolVersion")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Unity::UnityTlsConversions as
-                    quest_hook::libil2cpp::Type > ::class(), "ConvertProtocolVersion",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::Mono::Unity::UnityTls_unitytls_protocol),
+                        crate::Mono::Security::Interface::TlsProtocols,
+                        1usize,
+                    >("ConvertProtocolVersion")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ConvertProtocolVersion", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::Mono::Security::Interface::TlsProtocols = unsafe {
             method.invoke_unchecked((), (protocol))?
@@ -63,18 +65,21 @@ impl crate::Mono::Unity::UnityTlsConversions {
     pub fn GetMaxProtocol(
         protocols: crate::System::Security::Authentication::SslProtocols,
     ) -> quest_hook::libil2cpp::Result<crate::Mono::Unity::UnityTls_unitytls_protocol> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Unity::UnityTlsConversions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::Security::Authentication::SslProtocols),
-                crate::Mono::Unity::UnityTls_unitytls_protocol,
-                1usize,
-            >("GetMaxProtocol")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Unity::UnityTlsConversions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetMaxProtocol", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::Security::Authentication::SslProtocols),
+                        crate::Mono::Unity::UnityTls_unitytls_protocol,
+                        1usize,
+                    >("GetMaxProtocol")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetMaxProtocol", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::Mono::Unity::UnityTls_unitytls_protocol = unsafe {
             method.invoke_unchecked((), (protocols))?
@@ -84,18 +89,21 @@ impl crate::Mono::Unity::UnityTlsConversions {
     pub fn GetMinProtocol(
         protocols: crate::System::Security::Authentication::SslProtocols,
     ) -> quest_hook::libil2cpp::Result<crate::Mono::Unity::UnityTls_unitytls_protocol> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Unity::UnityTlsConversions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::Security::Authentication::SslProtocols),
-                crate::Mono::Unity::UnityTls_unitytls_protocol,
-                1usize,
-            >("GetMinProtocol")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Unity::UnityTlsConversions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetMinProtocol", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::Security::Authentication::SslProtocols),
+                        crate::Mono::Unity::UnityTls_unitytls_protocol,
+                        1usize,
+                    >("GetMinProtocol")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetMinProtocol", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::Mono::Unity::UnityTls_unitytls_protocol = unsafe {
             method.invoke_unchecked((), (protocols))?
@@ -108,22 +116,24 @@ impl crate::Mono::Unity::UnityTlsConversions {
     ) -> quest_hook::libil2cpp::Result<
         crate::Mono::Security::Interface::AlertDescription,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Unity::UnityTlsConversions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::Mono::Unity::UnityTls_unitytls_x509verify_result,
-                    crate::Mono::Security::Interface::AlertDescription,
-                ),
-                crate::Mono::Security::Interface::AlertDescription,
-                2usize,
-            >("VerifyResultToAlertDescription")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Unity::UnityTlsConversions as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "VerifyResultToAlertDescription", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::Mono::Unity::UnityTls_unitytls_x509verify_result,
+                            crate::Mono::Security::Interface::AlertDescription,
+                        ),
+                        crate::Mono::Security::Interface::AlertDescription,
+                        2usize,
+                    >("VerifyResultToAlertDescription")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "VerifyResultToAlertDescription", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::Mono::Security::Interface::AlertDescription = unsafe {
             method.invoke_unchecked((), (verifyResult, defaultAlert))?
@@ -135,19 +145,21 @@ impl crate::Mono::Unity::UnityTlsConversions {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Unity::UnityTlsConversions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::Mono::Unity::UnityTls_unitytls_x509verify_result),
-                crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
-                1usize,
-            >("VerifyResultToChainStatus")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Unity::UnityTlsConversions as
-                    quest_hook::libil2cpp::Type > ::class(), "VerifyResultToChainStatus",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::Mono::Unity::UnityTls_unitytls_x509verify_result),
+                        crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
+                        1usize,
+                    >("VerifyResultToChainStatus")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "VerifyResultToChainStatus", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags = unsafe {
             method.invoke_unchecked((), (verifyResult))?
@@ -157,19 +169,21 @@ impl crate::Mono::Unity::UnityTlsConversions {
     pub fn VerifyResultToPolicyErrror(
         verifyResult: crate::Mono::Unity::UnityTls_unitytls_x509verify_result,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::Security::SslPolicyErrors> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Unity::UnityTlsConversions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::Mono::Unity::UnityTls_unitytls_x509verify_result),
-                crate::System::Net::Security::SslPolicyErrors,
-                1usize,
-            >("VerifyResultToPolicyErrror")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Unity::UnityTlsConversions as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "VerifyResultToPolicyErrror", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::Mono::Unity::UnityTls_unitytls_x509verify_result),
+                        crate::System::Net::Security::SslPolicyErrors,
+                        1usize,
+                    >("VerifyResultToPolicyErrror")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "VerifyResultToPolicyErrror", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Net::Security::SslPolicyErrors = unsafe {
             method.invoke_unchecked((), (verifyResult))?

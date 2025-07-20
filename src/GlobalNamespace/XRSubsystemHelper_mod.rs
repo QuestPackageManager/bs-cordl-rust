@@ -39,15 +39,21 @@ impl std::ops::DerefMut for crate::GlobalNamespace::XRSubsystemHelper {
 #[cfg(feature = "XRSubsystemHelper")]
 impl crate::GlobalNamespace::XRSubsystemHelper {
     pub fn GetCurrentDisplaySubsystem() -> quest_hook::libil2cpp::Result<Blacklisted> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::XRSubsystemHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), Blacklisted, 0usize>("GetCurrentDisplaySubsystem")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::XRSubsystemHelper as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "GetCurrentDisplaySubsystem", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        Blacklisted,
+                        0usize,
+                    >("GetCurrentDisplaySubsystem")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetCurrentDisplaySubsystem", 0usize
+                        )
+                    })
             });
         let __cordl_ret: Blacklisted = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -55,21 +61,23 @@ impl crate::GlobalNamespace::XRSubsystemHelper {
     pub fn GetCurrentDisplaySubsystemDescriptor() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRDisplaySubsystemDescriptor>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::XRSubsystemHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::XR::XRDisplaySubsystemDescriptor,
-                >,
-                0usize,
-            >("GetCurrentDisplaySubsystemDescriptor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::XRSubsystemHelper as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "GetCurrentDisplaySubsystemDescriptor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::XR::XRDisplaySubsystemDescriptor,
+                        >,
+                        0usize,
+                    >("GetCurrentDisplaySubsystemDescriptor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetCurrentDisplaySubsystemDescriptor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::XR::XRDisplaySubsystemDescriptor,
@@ -79,19 +87,23 @@ impl crate::GlobalNamespace::XRSubsystemHelper {
     pub fn GetCurrentInputSubsystem() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::XRSubsystemHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
-                0usize,
-            >("GetCurrentInputSubsystem")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::XRSubsystemHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "GetCurrentInputSubsystem",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::XR::XRInputSubsystem,
+                        >,
+                        0usize,
+                    >("GetCurrentInputSubsystem")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetCurrentInputSubsystem", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::XR::XRInputSubsystem,

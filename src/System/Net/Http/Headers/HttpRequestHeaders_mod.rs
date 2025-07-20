@@ -46,20 +46,23 @@ impl crate::System::Net::Http::Headers::HttpRequestHeaders {
             crate::System::Net::Http::Headers::HttpRequestHeaders,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::HttpRequestHeaders as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Net::Http::Headers::HttpRequestHeaders,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("AddHeaders")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::Http::Headers::HttpRequestHeaders as
-                    quest_hook::libil2cpp::Type > ::class(), "AddHeaders", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Http::Headers::HttpRequestHeaders,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("AddHeaders")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddHeaders", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (headers))?
@@ -76,14 +79,17 @@ impl crate::System::Net::Http::Headers::HttpRequestHeaders {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::HttpRequestHeaders as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::Http::Headers::HttpRequestHeaders as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -99,22 +105,27 @@ impl crate::System::Net::Http::Headers::HttpRequestHeaders {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::HttpRequestHeaders as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
-                0usize,
-            >("get_Connection")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::Http::Headers::HttpRequestHeaders as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Connection", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                        >,
+                        0usize,
+                    >("get_Connection")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Connection", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
@@ -126,19 +137,21 @@ impl crate::System::Net::Http::Headers::HttpRequestHeaders {
     pub fn get_ConnectionClose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<bool>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::HttpRequestHeaders as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Nullable_1<bool>,
-                0usize,
-            >("get_ConnectionClose")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::Http::Headers::HttpRequestHeaders as
-                    quest_hook::libil2cpp::Type > ::class(), "get_ConnectionClose",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Nullable_1<bool>,
+                        0usize,
+                    >("get_ConnectionClose")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_ConnectionClose", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Nullable_1<bool> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -148,18 +161,21 @@ impl crate::System::Net::Http::Headers::HttpRequestHeaders {
     pub fn get_ExpectContinue(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<bool>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::HttpRequestHeaders as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Nullable_1<bool>,
-                0usize,
-            >("get_ExpectContinue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::Http::Headers::HttpRequestHeaders as
-                    quest_hook::libil2cpp::Type > ::class(), "get_ExpectContinue", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Nullable_1<bool>,
+                        0usize,
+                    >("get_ExpectContinue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_ExpectContinue", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Nullable_1<bool> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -171,18 +187,21 @@ impl crate::System::Net::Http::Headers::HttpRequestHeaders {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::HttpRequestHeaders as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("get_Host")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::Http::Headers::HttpRequestHeaders as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Host", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("get_Host")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Host", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -200,25 +219,27 @@ impl crate::System::Net::Http::Headers::HttpRequestHeaders {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::HttpRequestHeaders as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Net::Http::Headers::TransferCodingHeaderValue,
+                            crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Net::Http::Headers::TransferCodingHeaderValue,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                0usize,
-            >("get_TransferEncoding")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::Http::Headers::HttpRequestHeaders as
-                    quest_hook::libil2cpp::Type > ::class(), "get_TransferEncoding",
-                    0usize
-                )
+                        0usize,
+                    >("get_TransferEncoding")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_TransferEncoding", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
@@ -232,19 +253,21 @@ impl crate::System::Net::Http::Headers::HttpRequestHeaders {
     pub fn get_TransferEncodingChunked(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<bool>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::HttpRequestHeaders as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Nullable_1<bool>,
-                0usize,
-            >("get_TransferEncodingChunked")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::Http::Headers::HttpRequestHeaders as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_TransferEncodingChunked", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Nullable_1<bool>,
+                        0usize,
+                    >("get_TransferEncodingChunked")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_TransferEncodingChunked", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Nullable_1<bool> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -257,20 +280,23 @@ impl crate::System::Net::Http::Headers::HttpRequestHeaders {
             crate::System::Net::Http::Headers::AuthenticationHeaderValue,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::HttpRequestHeaders as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Net::Http::Headers::AuthenticationHeaderValue,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_Authorization")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::Http::Headers::HttpRequestHeaders as
-                    quest_hook::libil2cpp::Type > ::class(), "set_Authorization", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Http::Headers::AuthenticationHeaderValue,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_Authorization")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_Authorization", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

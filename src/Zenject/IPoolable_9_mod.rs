@@ -188,25 +188,21 @@ impl<
         TParam9: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IPoolable_9<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TParam7,
-            TParam8,
-            TParam9,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDespawned")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::IPoolable_9 < TParam1, TParam2, TParam3, TParam4,
-                    TParam5, TParam6, TParam7, TParam8, TParam9 > as
-                    quest_hook::libil2cpp::Type > ::class(), "OnDespawned", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("OnDespawned")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "OnDespawned", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -245,39 +241,31 @@ impl<
         TParam9: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IPoolable_9<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TParam7,
-            TParam8,
-            TParam9,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    TParam1,
-                    TParam2,
-                    TParam3,
-                    TParam4,
-                    TParam5,
-                    TParam6,
-                    TParam7,
-                    TParam8,
-                    TParam9,
-                ),
-                quest_hook::libil2cpp::Void,
-                9usize,
-            >("OnSpawned")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::IPoolable_9 < TParam1, TParam2, TParam3, TParam4,
-                    TParam5, TParam6, TParam7, TParam8, TParam9 > as
-                    quest_hook::libil2cpp::Type > ::class(), "OnSpawned", 9usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            TParam1,
+                            TParam2,
+                            TParam3,
+                            TParam4,
+                            TParam5,
+                            TParam6,
+                            TParam7,
+                            TParam8,
+                            TParam9,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        9usize,
+                    >("OnSpawned")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "OnSpawned", 9usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (p1, p2, p3, p4, p5, p6, p7, p8, p9))?

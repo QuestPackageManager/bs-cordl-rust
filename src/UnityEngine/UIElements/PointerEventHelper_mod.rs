@@ -49,25 +49,30 @@ impl crate::UnityEngine::UIElements::PointerEventHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::PointerEventHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::EventType,
-                    crate::UnityEngine::Vector3,
-                    crate::UnityEngine::Vector2,
-                    i32,
-                    i32,
-                    crate::UnityEngine::EventModifiers,
-                ),
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
-                6usize,
-            >("GetPooled")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::PointerEventHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "GetPooled", 6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::EventType,
+                            crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Vector2,
+                            i32,
+                            i32,
+                            crate::UnityEngine::EventModifiers,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::EventBase,
+                        >,
+                        6usize,
+                    >("GetPooled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetPooled", 6usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::EventBase,

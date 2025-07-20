@@ -108,14 +108,21 @@ impl crate::UnityEngine::ContactFilter2D {
     pub fn CheckConsistency(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ContactFilter2D as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("CheckConsistency")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ContactFilter2D as quest_hook::libil2cpp::Type >
-                    ::class(), "CheckConsistency", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("CheckConsistency")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CheckConsistency", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -125,18 +132,23 @@ impl crate::UnityEngine::ContactFilter2D {
     pub fn CheckConsistency_Injected(
         _unity_self: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::ContactFilter2D>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ContactFilter2D as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::ContactFilter2D>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("CheckConsistency_Injected")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ContactFilter2D as quest_hook::libil2cpp::Type >
-                    ::class(), "CheckConsistency_Injected", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::ContactFilter2D,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("CheckConsistency_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CheckConsistency_Injected", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (_unity_self))?
@@ -148,18 +160,21 @@ impl crate::UnityEngine::ContactFilter2D {
         minDepth: f32,
         maxDepth: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ContactFilter2D> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ContactFilter2D as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i32, f32, f32),
-                crate::UnityEngine::ContactFilter2D,
-                3usize,
-            >("CreateLegacyFilter")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ContactFilter2D as quest_hook::libil2cpp::Type >
-                    ::class(), "CreateLegacyFilter", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32, f32, f32),
+                        crate::UnityEngine::ContactFilter2D,
+                        3usize,
+                    >("CreateLegacyFilter")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateLegacyFilter", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::ContactFilter2D = unsafe {
             method.invoke_unchecked((), (layerMask, minDepth, maxDepth))?
@@ -171,14 +186,21 @@ impl crate::UnityEngine::ContactFilter2D {
         minDepth: f32,
         maxDepth: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ContactFilter2D as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(f32, f32), quest_hook::libil2cpp::Void, 2usize>("SetDepth")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ContactFilter2D as quest_hook::libil2cpp::Type >
-                    ::class(), "SetDepth", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (f32, f32),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetDepth")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetDepth", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (minDepth, maxDepth))?
@@ -189,18 +211,21 @@ impl crate::UnityEngine::ContactFilter2D {
         &mut self,
         layerMask: crate::UnityEngine::LayerMask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ContactFilter2D as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::UnityEngine::LayerMask),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("SetLayerMask")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ContactFilter2D as quest_hook::libil2cpp::Type >
-                    ::class(), "SetLayerMask", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::UnityEngine::LayerMask),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetLayerMask")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetLayerMask", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (layerMask))?

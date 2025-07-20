@@ -124,27 +124,30 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
         originalRootDirectory: crate::System::ReadOnlySpan_1<char>,
         pathBuffer: crate::System::Span_1<char>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IO::FileAttributes> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEntry as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::IO::Enumeration::FileSystemEntry,
-                    >,
-                    crate::GlobalNamespace::Sys_Interop_DirectoryEntry,
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Span_1<char>,
-                ),
-                crate::System::IO::FileAttributes,
-                6usize,
-            >("Initialize")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IO::Enumeration::FileSystemEntry as
-                    quest_hook::libil2cpp::Type > ::class(), "Initialize", 6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::IO::Enumeration::FileSystemEntry,
+                            >,
+                            crate::GlobalNamespace::Sys_Interop_DirectoryEntry,
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Span_1<char>,
+                        ),
+                        crate::System::IO::FileAttributes,
+                        6usize,
+                    >("Initialize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Initialize", 6usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::IO::FileAttributes = unsafe {
             method
@@ -167,18 +170,21 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEntry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
-                0usize,
-            >("ToFileSystemInfo")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IO::Enumeration::FileSystemEntry as
-                    quest_hook::libil2cpp::Type > ::class(), "ToFileSystemInfo", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
+                        0usize,
+                    >("ToFileSystemInfo")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToFileSystemInfo", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -190,18 +196,21 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEntry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("ToFullPath")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IO::Enumeration::FileSystemEntry as
-                    quest_hook::libil2cpp::Type > ::class(), "ToFullPath", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("ToFullPath")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToFullPath", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -213,19 +222,21 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEntry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("ToSpecifiedFullPath")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IO::Enumeration::FileSystemEntry as
-                    quest_hook::libil2cpp::Type > ::class(), "ToSpecifiedFullPath",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("ToSpecifiedFullPath")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToSpecifiedFullPath", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -235,18 +246,21 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
     pub fn get_Attributes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::IO::FileAttributes> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEntry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::IO::FileAttributes,
-                0usize,
-            >("get_Attributes")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IO::Enumeration::FileSystemEntry as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Attributes", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::IO::FileAttributes,
+                        0usize,
+                    >("get_Attributes")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Attributes", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::IO::FileAttributes = unsafe {
             method.invoke_unchecked(self, ())?
@@ -256,18 +270,21 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
     pub fn get_Directory(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEntry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::ReadOnlySpan_1<char>,
-                0usize,
-            >("get_Directory")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IO::Enumeration::FileSystemEntry as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Directory", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::ReadOnlySpan_1<char>,
+                        0usize,
+                    >("get_Directory")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Directory", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -277,18 +294,21 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
     pub fn get_FileName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEntry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::ReadOnlySpan_1<char>,
-                0usize,
-            >("get_FileName")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IO::Enumeration::FileSystemEntry as
-                    quest_hook::libil2cpp::Type > ::class(), "get_FileName", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::ReadOnlySpan_1<char>,
+                        0usize,
+                    >("get_FileName")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_FileName", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -298,18 +318,21 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
     pub fn get_FullPath(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEntry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::ReadOnlySpan_1<char>,
-                0usize,
-            >("get_FullPath")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IO::Enumeration::FileSystemEntry as
-                    quest_hook::libil2cpp::Type > ::class(), "get_FullPath", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::ReadOnlySpan_1<char>,
+                        0usize,
+                    >("get_FullPath")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_FullPath", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -317,14 +340,17 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsDirectory(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEntry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_IsDirectory")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IO::Enumeration::FileSystemEntry as
-                    quest_hook::libil2cpp::Type > ::class(), "get_IsDirectory", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_IsDirectory")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_IsDirectory", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -332,19 +358,21 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
     pub fn get_OriginalRootDirectory(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEntry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::ReadOnlySpan_1<char>,
-                0usize,
-            >("get_OriginalRootDirectory")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IO::Enumeration::FileSystemEntry as
-                    quest_hook::libil2cpp::Type > ::class(), "get_OriginalRootDirectory",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::ReadOnlySpan_1<char>,
+                        0usize,
+                    >("get_OriginalRootDirectory")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_OriginalRootDirectory", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -354,18 +382,21 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
     pub fn get_RootDirectory(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEntry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::ReadOnlySpan_1<char>,
-                0usize,
-            >("get_RootDirectory")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IO::Enumeration::FileSystemEntry as
-                    quest_hook::libil2cpp::Type > ::class(), "get_RootDirectory", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::ReadOnlySpan_1<char>,
+                        0usize,
+                    >("get_RootDirectory")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_RootDirectory", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
             method.invoke_unchecked(self, ())?
@@ -376,18 +407,21 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
         &mut self,
         value: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEntry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::ReadOnlySpan_1<char>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_Directory")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IO::Enumeration::FileSystemEntry as
-                    quest_hook::libil2cpp::Type > ::class(), "set_Directory", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::ReadOnlySpan_1<char>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_Directory")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_Directory", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -398,19 +432,21 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
         &mut self,
         value: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEntry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::ReadOnlySpan_1<char>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_OriginalRootDirectory")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IO::Enumeration::FileSystemEntry as
-                    quest_hook::libil2cpp::Type > ::class(), "set_OriginalRootDirectory",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::ReadOnlySpan_1<char>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_OriginalRootDirectory")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_OriginalRootDirectory", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -421,18 +457,21 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
         &mut self,
         value: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEntry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::ReadOnlySpan_1<char>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_RootDirectory")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IO::Enumeration::FileSystemEntry as
-                    quest_hook::libil2cpp::Type > ::class(), "set_RootDirectory", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::ReadOnlySpan_1<char>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_RootDirectory")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_RootDirectory", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

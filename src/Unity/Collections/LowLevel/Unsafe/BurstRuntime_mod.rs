@@ -48,14 +48,17 @@ impl crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), i64, 0usize>("GetHashCode64")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Collections::LowLevel::Unsafe::BurstRuntime as
-                    quest_hook::libil2cpp::Type > ::class(), "GetHashCode64", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(), i64, 0usize>("GetHashCode64")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetHashCode64", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -63,19 +66,21 @@ impl crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime {
     pub fn HashStringWithFNV1A64(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                i64,
-                1usize,
-            >("HashStringWithFNV1A64")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Collections::LowLevel::Unsafe::BurstRuntime as
-                    quest_hook::libil2cpp::Type > ::class(), "HashStringWithFNV1A64",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        i64,
+                        1usize,
+                    >("HashStringWithFNV1A64")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HashStringWithFNV1A64", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (text))? };
         Ok(__cordl_ret.into())

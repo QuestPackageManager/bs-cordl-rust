@@ -43,21 +43,24 @@ impl crate::UnityEngine::Timeline::TimelineClipCapsExtensions {
         caps: crate::UnityEngine::Timeline::ClipCaps,
         flags: crate::UnityEngine::Timeline::ClipCaps,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelineClipCapsExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::Timeline::ClipCaps,
-                    crate::UnityEngine::Timeline::ClipCaps,
-                ),
-                bool,
-                2usize,
-            >("HasAll")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::TimelineClipCapsExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "HasAll", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Timeline::ClipCaps,
+                            crate::UnityEngine::Timeline::ClipCaps,
+                        ),
+                        bool,
+                        2usize,
+                    >("HasAll")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HasAll", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (caps, flags))? };
         Ok(__cordl_ret.into())
@@ -66,21 +69,24 @@ impl crate::UnityEngine::Timeline::TimelineClipCapsExtensions {
         caps: crate::UnityEngine::Timeline::ClipCaps,
         flags: crate::UnityEngine::Timeline::ClipCaps,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelineClipCapsExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::Timeline::ClipCaps,
-                    crate::UnityEngine::Timeline::ClipCaps,
-                ),
-                bool,
-                2usize,
-            >("HasAny")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::TimelineClipCapsExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "HasAny", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Timeline::ClipCaps,
+                            crate::UnityEngine::Timeline::ClipCaps,
+                        ),
+                        bool,
+                        2usize,
+                    >("HasAny")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HasAny", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (caps, flags))? };
         Ok(__cordl_ret.into())
@@ -88,18 +94,23 @@ impl crate::UnityEngine::Timeline::TimelineClipCapsExtensions {
     pub fn SupportsBlending(
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelineClipCapsExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>),
-                bool,
-                1usize,
-            >("SupportsBlending")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::TimelineClipCapsExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "SupportsBlending", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Timeline::TimelineClip,
+                        >),
+                        bool,
+                        1usize,
+                    >("SupportsBlending")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SupportsBlending", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (clip))? };
         Ok(__cordl_ret.into())
@@ -107,18 +118,23 @@ impl crate::UnityEngine::Timeline::TimelineClipCapsExtensions {
     pub fn SupportsClipIn(
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelineClipCapsExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>),
-                bool,
-                1usize,
-            >("SupportsClipIn")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::TimelineClipCapsExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "SupportsClipIn", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Timeline::TimelineClip,
+                        >),
+                        bool,
+                        1usize,
+                    >("SupportsClipIn")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SupportsClipIn", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (clip))? };
         Ok(__cordl_ret.into())
@@ -126,19 +142,23 @@ impl crate::UnityEngine::Timeline::TimelineClipCapsExtensions {
     pub fn SupportsExtrapolation(
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelineClipCapsExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>),
-                bool,
-                1usize,
-            >("SupportsExtrapolation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::TimelineClipCapsExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "SupportsExtrapolation",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Timeline::TimelineClip,
+                        >),
+                        bool,
+                        1usize,
+                    >("SupportsExtrapolation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SupportsExtrapolation", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (clip))? };
         Ok(__cordl_ret.into())
@@ -146,18 +166,23 @@ impl crate::UnityEngine::Timeline::TimelineClipCapsExtensions {
     pub fn SupportsLooping(
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelineClipCapsExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>),
-                bool,
-                1usize,
-            >("SupportsLooping")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::TimelineClipCapsExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "SupportsLooping", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Timeline::TimelineClip,
+                        >),
+                        bool,
+                        1usize,
+                    >("SupportsLooping")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SupportsLooping", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (clip))? };
         Ok(__cordl_ret.into())
@@ -165,19 +190,23 @@ impl crate::UnityEngine::Timeline::TimelineClipCapsExtensions {
     pub fn SupportsSpeedMultiplier(
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelineClipCapsExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>),
-                bool,
-                1usize,
-            >("SupportsSpeedMultiplier")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Timeline::TimelineClipCapsExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "SupportsSpeedMultiplier",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Timeline::TimelineClip,
+                        >),
+                        bool,
+                        1usize,
+                    >("SupportsSpeedMultiplier")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SupportsSpeedMultiplier", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (clip))? };
         Ok(__cordl_ret.into())

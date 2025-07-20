@@ -103,18 +103,21 @@ impl crate::LIV::SDK::Unity::SDKTransform {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKTransform as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("ToString")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKTransform as quest_hook::libil2cpp::Type
-                    > ::class(), "ToString", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("ToString")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToString", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -124,18 +127,21 @@ impl crate::LIV::SDK::Unity::SDKTransform {
     pub fn get_empty() -> quest_hook::libil2cpp::Result<
         crate::LIV::SDK::Unity::SDKTransform,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKTransform as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                crate::LIV::SDK::Unity::SDKTransform,
-                0usize,
-            >("get_empty")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKTransform as quest_hook::libil2cpp::Type
-                    > ::class(), "get_empty", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        crate::LIV::SDK::Unity::SDKTransform,
+                        0usize,
+                    >("get_empty")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_empty", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKTransform = unsafe {
             method.invoke_unchecked((), ())?

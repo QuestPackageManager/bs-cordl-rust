@@ -48,22 +48,25 @@ impl crate::Mono::Net::Security::Private::CallbackHelpers {
             crate::System::Net::Security::LocalCertSelectionCallback,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Net::Security::Private::CallbackHelpers as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback,
-                >),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Net::Security::LocalCertSelectionCallback,
-                >,
-                1usize,
-            >("MonoToInternal")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Net::Security::Private::CallbackHelpers as
-                    quest_hook::libil2cpp::Type > ::class(), "MonoToInternal", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Security::LocalCertSelectionCallback,
+                        >,
+                        1usize,
+                    >("MonoToInternal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "MonoToInternal", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Security::LocalCertSelectionCallback,
@@ -79,22 +82,25 @@ impl crate::Mono::Net::Security::Private::CallbackHelpers {
             crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Net::Security::Private::CallbackHelpers as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Net::Security::RemoteCertificateValidationCallback,
-                >),
-                quest_hook::libil2cpp::Gc<
-                    crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
-                >,
-                1usize,
-            >("PublicToMono")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Net::Security::Private::CallbackHelpers as
-                    quest_hook::libil2cpp::Type > ::class(), "PublicToMono", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Security::RemoteCertificateValidationCallback,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
+                        >,
+                        1usize,
+                    >("PublicToMono")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PublicToMono", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,

@@ -48,24 +48,26 @@ impl crate::BGLib::AppFlow::Initialization::AsyncInstaller {
         >,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::AppFlow::Initialization::AsyncInstaller as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
-                    >,
-                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("LoadResourcesBeforeInstall")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BGLib::AppFlow::Initialization::AsyncInstaller as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "LoadResourcesBeforeInstall", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("LoadResourcesBeforeInstall")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "LoadResourcesBeforeInstall", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (registry, container))?
@@ -81,24 +83,26 @@ impl crate::BGLib::AppFlow::Initialization::AsyncInstaller {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::AppFlow::Initialization::AsyncInstaller as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
-                    >,
-                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-                2usize,
-            >("LoadResourcesBeforeInstallAsync")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BGLib::AppFlow::Initialization::AsyncInstaller as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "LoadResourcesBeforeInstallAsync", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                        2usize,
+                    >("LoadResourcesBeforeInstallAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "LoadResourcesBeforeInstallAsync", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
@@ -115,14 +119,17 @@ impl crate::BGLib::AppFlow::Initialization::AsyncInstaller {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::AppFlow::Initialization::AsyncInstaller as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BGLib::AppFlow::Initialization::AsyncInstaller as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -187,20 +194,21 @@ impl crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {
         &mut self,
         newMonoInstaller: quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("AddMonoInstaller")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry
-                    as quest_hook::libil2cpp::Type > ::class(), "AddMonoInstaller",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("AddMonoInstaller")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddMonoInstaller", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (newMonoInstaller))?
@@ -213,20 +221,23 @@ impl crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {
             crate::Zenject::ScriptableObjectInstaller,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("AddScriptableObjectInstaller")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "AddScriptableObjectInstaller", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ScriptableObjectInstaller,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("AddScriptableObjectInstaller")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddScriptableObjectInstaller", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (newScriptableObjectInstaller))?

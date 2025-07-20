@@ -93,31 +93,34 @@ impl crate::BeatmapSaveDataVersion3::SliderData {
         tailCutDirection: crate::BeatmapSaveDataCommon::NoteCutDirection,
         sliderMidAnchorMode: crate::BeatmapSaveDataCommon::SliderMidAnchorMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::SliderData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::BeatmapSaveDataCommon::NoteColorType,
-                    f32,
-                    i32,
-                    i32,
-                    f32,
-                    crate::BeatmapSaveDataCommon::NoteCutDirection,
-                    f32,
-                    i32,
-                    i32,
-                    f32,
-                    crate::BeatmapSaveDataCommon::NoteCutDirection,
-                    crate::BeatmapSaveDataCommon::SliderMidAnchorMode,
-                ),
-                quest_hook::libil2cpp::Void,
-                12usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::SliderData as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 12usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::BeatmapSaveDataCommon::NoteColorType,
+                            f32,
+                            i32,
+                            i32,
+                            f32,
+                            crate::BeatmapSaveDataCommon::NoteCutDirection,
+                            f32,
+                            i32,
+                            i32,
+                            f32,
+                            crate::BeatmapSaveDataCommon::NoteCutDirection,
+                            crate::BeatmapSaveDataCommon::SliderMidAnchorMode,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        12usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 12usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -144,15 +147,21 @@ impl crate::BeatmapSaveDataVersion3::SliderData {
     pub fn get_headControlPointLengthMultiplier(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::SliderData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_headControlPointLengthMultiplier")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::SliderData as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_headControlPointLengthMultiplier", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        f32,
+                        0usize,
+                    >("get_headControlPointLengthMultiplier")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_headControlPointLengthMultiplier", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -162,19 +171,21 @@ impl crate::BeatmapSaveDataVersion3::SliderData {
     ) -> quest_hook::libil2cpp::Result<
         crate::BeatmapSaveDataCommon::SliderMidAnchorMode,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::SliderData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::BeatmapSaveDataCommon::SliderMidAnchorMode,
-                0usize,
-            >("get_sliderMidAnchorMode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::SliderData as
-                    quest_hook::libil2cpp::Type > ::class(), "get_sliderMidAnchorMode",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::BeatmapSaveDataCommon::SliderMidAnchorMode,
+                        0usize,
+                    >("get_sliderMidAnchorMode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_sliderMidAnchorMode", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::BeatmapSaveDataCommon::SliderMidAnchorMode = unsafe {
             method.invoke_unchecked(self, ())?
@@ -184,15 +195,21 @@ impl crate::BeatmapSaveDataVersion3::SliderData {
     pub fn get_tailControlPointLengthMultiplier(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::SliderData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_tailControlPointLengthMultiplier")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::SliderData as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_tailControlPointLengthMultiplier", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        f32,
+                        0usize,
+                    >("get_tailControlPointLengthMultiplier")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_tailControlPointLengthMultiplier", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -200,19 +217,21 @@ impl crate::BeatmapSaveDataVersion3::SliderData {
     pub fn get_tailCutDirection(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::NoteCutDirection> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::SliderData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::BeatmapSaveDataCommon::NoteCutDirection,
-                0usize,
-            >("get_tailCutDirection")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::SliderData as
-                    quest_hook::libil2cpp::Type > ::class(), "get_tailCutDirection",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::BeatmapSaveDataCommon::NoteCutDirection,
+                        0usize,
+                    >("get_tailCutDirection")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_tailCutDirection", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::BeatmapSaveDataCommon::NoteCutDirection = unsafe {
             method.invoke_unchecked(self, ())?

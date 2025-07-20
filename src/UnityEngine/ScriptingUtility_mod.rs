@@ -41,14 +41,17 @@ impl crate::UnityEngine::ScriptingUtility {
     #[cfg(feature = "UnityEngine+ScriptingUtility+TestClass")]
     pub type TestClass = crate::UnityEngine::ScriptingUtility_TestClass;
     pub fn IsManagedCodeWorking() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ScriptingUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), bool, 0usize>("IsManagedCodeWorking")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::ScriptingUtility as quest_hook::libil2cpp::Type
-                    > ::class(), "IsManagedCodeWorking", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(), bool, 0usize>("IsManagedCodeWorking")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsManagedCodeWorking", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())

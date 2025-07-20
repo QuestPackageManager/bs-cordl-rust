@@ -48,22 +48,25 @@ impl crate::BGLib::UnityExtension::AssetBundleExtensions {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::UnityExtension::AssetBundleExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::AssetBundleCreateRequest,
-                >),
-                crate::System::Runtime::CompilerServices::TaskAwaiter_1<
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
-                >,
-                1usize,
-            >("GetAwaiter")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BGLib::UnityExtension::AssetBundleExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetAwaiter", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::AssetBundleCreateRequest,
+                        >),
+                        crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
+                        >,
+                        1usize,
+                    >("GetAwaiter")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetAwaiter", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
@@ -77,20 +80,23 @@ impl crate::BGLib::UnityExtension::AssetBundleExtensions {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::UnityExtension::AssetBundleExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceRequest>),
-                crate::System::Runtime::CompilerServices::TaskAwaiter_1<
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-                >,
-                1usize,
-            >("GetAwaiter")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BGLib::UnityExtension::AssetBundleExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetAwaiter", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceRequest>),
+                        crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                        >,
+                        1usize,
+                    >("GetAwaiter")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetAwaiter", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,

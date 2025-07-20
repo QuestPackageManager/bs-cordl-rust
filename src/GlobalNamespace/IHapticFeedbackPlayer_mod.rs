@@ -46,24 +46,26 @@ impl crate::GlobalNamespace::IHapticFeedbackPlayer {
         >,
         node: crate::UnityEngine::XR::XRNode,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IHapticFeedbackPlayer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-                    >,
-                    crate::UnityEngine::XR::XRNode,
-                ),
-                bool,
-                2usize,
-            >("CanPlayHapticPreset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::IHapticFeedbackPlayer as
-                    quest_hook::libil2cpp::Type > ::class(), "CanPlayHapticPreset",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+                            >,
+                            crate::UnityEngine::XR::XRNode,
+                        ),
+                        bool,
+                        2usize,
+                    >("CanPlayHapticPreset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CanPlayHapticPreset", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (hapticPreset, node))?
@@ -77,23 +79,26 @@ impl crate::GlobalNamespace::IHapticFeedbackPlayer {
             crate::Libraries::HM::HMLib::VR::HapticPresetSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IHapticFeedbackPlayer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::UnityEngine::XR::XRNode,
-                    quest_hook::libil2cpp::Gc<
-                        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("PlayHapticFeedback")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::IHapticFeedbackPlayer as
-                    quest_hook::libil2cpp::Type > ::class(), "PlayHapticFeedback", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::XR::XRNode,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("PlayHapticFeedback")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PlayHapticFeedback", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (node, hapticPreset))?

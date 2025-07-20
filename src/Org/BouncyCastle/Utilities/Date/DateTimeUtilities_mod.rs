@@ -41,14 +41,17 @@ for crate::Org::BouncyCastle::Utilities::Date::DateTimeUtilities {
 #[cfg(feature = "Org+BouncyCastle+Utilities+Date+DateTimeUtilities")]
 impl crate::Org::BouncyCastle::Utilities::Date::DateTimeUtilities {
     pub fn CurrentUnixMs() -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::Date::DateTimeUtilities as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), i64, 0usize>("CurrentUnixMs")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Utilities::Date::DateTimeUtilities as
-                    quest_hook::libil2cpp::Type > ::class(), "CurrentUnixMs", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(), i64, 0usize>("CurrentUnixMs")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CurrentUnixMs", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -56,18 +59,21 @@ impl crate::Org::BouncyCastle::Utilities::Date::DateTimeUtilities {
     pub fn DateTimeToUnixMs(
         dateTime: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::Date::DateTimeUtilities as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::DateTime),
-                i64,
-                1usize,
-            >("DateTimeToUnixMs")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Utilities::Date::DateTimeUtilities as
-                    quest_hook::libil2cpp::Type > ::class(), "DateTimeToUnixMs", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::DateTime),
+                        i64,
+                        1usize,
+                    >("DateTimeToUnixMs")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "DateTimeToUnixMs", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (dateTime))? };
         Ok(__cordl_ret.into())
@@ -82,18 +88,21 @@ impl crate::Org::BouncyCastle::Utilities::Date::DateTimeUtilities {
     pub fn UnixMsToDateTime(
         unixMs: i64,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::Date::DateTimeUtilities as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i64),
-                crate::System::DateTime,
-                1usize,
-            >("UnixMsToDateTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Utilities::Date::DateTimeUtilities as
-                    quest_hook::libil2cpp::Type > ::class(), "UnixMsToDateTime", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i64),
+                        crate::System::DateTime,
+                        1usize,
+                    >("UnixMsToDateTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UnixMsToDateTime", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
             method.invoke_unchecked((), (unixMs))?
@@ -103,14 +112,17 @@ impl crate::Org::BouncyCastle::Utilities::Date::DateTimeUtilities {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::Date::DateTimeUtilities as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Org::BouncyCastle::Utilities::Date::DateTimeUtilities as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

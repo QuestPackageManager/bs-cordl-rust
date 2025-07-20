@@ -46,20 +46,25 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockBeatmapData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MockBeatmapDataConverter as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::IReadonlyBeatmapData,
-                >),
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockBeatmapData>,
-                1usize,
-            >("ToMockBeatmapData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MockBeatmapDataConverter as
-                    quest_hook::libil2cpp::Type > ::class(), "ToMockBeatmapData", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::IReadonlyBeatmapData,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::MockBeatmapData,
+                        >,
+                        1usize,
+                    >("ToMockBeatmapData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToMockBeatmapData", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MockBeatmapData,
@@ -71,18 +76,21 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MockBeatmapDataConverter as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>),
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
-                1usize,
-            >("ToMockNoteData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MockBeatmapDataConverter as
-                    quest_hook::libil2cpp::Type > ::class(), "ToMockNoteData", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>),
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
+                        1usize,
+                    >("ToMockNoteData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToMockNoteData", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MockNoteData,
@@ -94,18 +102,25 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockObstacleData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MockBeatmapDataConverter as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>),
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockObstacleData>,
-                1usize,
-            >("ToMockObstacleData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::MockBeatmapDataConverter as
-                    quest_hook::libil2cpp::Type > ::class(), "ToMockObstacleData", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::ObstacleData,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::MockObstacleData,
+                        >,
+                        1usize,
+                    >("ToMockObstacleData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToMockObstacleData", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MockObstacleData,

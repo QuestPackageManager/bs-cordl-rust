@@ -45,18 +45,21 @@ impl crate::GlobalNamespace::OVRKeyboard {
     pub fn GetKeyboardState() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRKeyboard as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState,
-                0usize,
-            >("GetKeyboardState")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRKeyboard as quest_hook::libil2cpp::Type >
-                    ::class(), "GetKeyboardState", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState,
+                        0usize,
+                    >("GetKeyboardState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetKeyboardState", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState = unsafe {
             method.invoke_unchecked((), ())?
@@ -69,23 +72,26 @@ impl crate::GlobalNamespace::OVRKeyboard {
             crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRKeyboard as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::OVRPlugin_TrackedKeyboardQueryFlags,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo,
-                    >,
-                ),
-                bool,
-                2usize,
-            >("GetSystemKeyboardInfo")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRKeyboard as quest_hook::libil2cpp::Type >
-                    ::class(), "GetSystemKeyboardInfo", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRPlugin_TrackedKeyboardQueryFlags,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("GetSystemKeyboardInfo")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetSystemKeyboardInfo", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (keyboardQueryFlags, keyboardInfo))?
@@ -95,18 +101,21 @@ impl crate::GlobalNamespace::OVRKeyboard {
     pub fn StopKeyboardTracking(
         keyboardInfo: crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRKeyboard as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo),
-                bool,
-                1usize,
-            >("StopKeyboardTracking")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::OVRKeyboard as quest_hook::libil2cpp::Type >
-                    ::class(), "StopKeyboardTracking", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo),
+                        bool,
+                        1usize,
+                    >("StopKeyboardTracking")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "StopKeyboardTracking", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (keyboardInfo))? };
         Ok(__cordl_ret.into())

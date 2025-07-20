@@ -49,25 +49,27 @@ impl crate::System::Net::NetworkInformation::SystemNetworkInterface {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::NetworkInformation::SystemNetworkInterface as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Net::NetworkInformation::NetworkInterface,
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Net::NetworkInformation::NetworkInterface,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                0usize,
-            >("GetNetworkInterfaces")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Net::NetworkInformation::SystemNetworkInterface as
-                    quest_hook::libil2cpp::Type > ::class(), "GetNetworkInterfaces",
-                    0usize
-                )
+                        0usize,
+                    >("GetNetworkInterfaces")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetNetworkInterfaces", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<

@@ -48,14 +48,17 @@ impl crate::GlobalNamespace::SaberSwingRating {
         angleDiff: f32,
         normalDiff: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SaberSwingRating as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(f32, f32), f32, 2usize>("AfterCutStepRating")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::SaberSwingRating as
-                    quest_hook::libil2cpp::Type > ::class(), "AfterCutStepRating", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(f32, f32), f32, 2usize>("AfterCutStepRating")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AfterCutStepRating", 2usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe {
             method.invoke_unchecked((), (angleDiff, normalDiff))?
@@ -66,15 +69,17 @@ impl crate::GlobalNamespace::SaberSwingRating {
         angleDiff: f32,
         normalDiff: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SaberSwingRating as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(f32, f32), f32, 2usize>("BeforeCutStepRating")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::SaberSwingRating as
-                    quest_hook::libil2cpp::Type > ::class(), "BeforeCutStepRating",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(f32, f32), f32, 2usize>("BeforeCutStepRating")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BeforeCutStepRating", 2usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe {
             method.invoke_unchecked((), (angleDiff, normalDiff))?
@@ -82,14 +87,17 @@ impl crate::GlobalNamespace::SaberSwingRating {
         Ok(__cordl_ret.into())
     }
     pub fn NormalRating(normalDiff: f32) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SaberSwingRating as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(f32), f32, 1usize>("NormalRating")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::SaberSwingRating as
-                    quest_hook::libil2cpp::Type > ::class(), "NormalRating", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(f32), f32, 1usize>("NormalRating")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NormalRating", 1usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (normalDiff))? };
         Ok(__cordl_ret.into())

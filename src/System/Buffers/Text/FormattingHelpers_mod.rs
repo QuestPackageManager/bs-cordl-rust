@@ -40,40 +40,49 @@ impl std::ops::DerefMut for crate::System::Buffers::Text::FormattingHelpers {
 #[cfg(feature = "System+Buffers+Text+FormattingHelpers")]
 impl crate::System::Buffers::Text::FormattingHelpers {
     pub fn CountDigits_u32_1(value: u32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Buffers::Text::FormattingHelpers as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(u32), i32, 1usize>("CountDigits")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Buffers::Text::FormattingHelpers as
-                    quest_hook::libil2cpp::Type > ::class(), "CountDigits", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(u32), i32, 1usize>("CountDigits")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CountDigits", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn CountDigits_u64_0(value: u64) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Buffers::Text::FormattingHelpers as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(u64), i32, 1usize>("CountDigits")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Buffers::Text::FormattingHelpers as
-                    quest_hook::libil2cpp::Type > ::class(), "CountDigits", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(u64), i32, 1usize>("CountDigits")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CountDigits", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn CountHexDigits(value: u64) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Buffers::Text::FormattingHelpers as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(u64), i32, 1usize>("CountHexDigits")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Buffers::Text::FormattingHelpers as
-                    quest_hook::libil2cpp::Type > ::class(), "CountHexDigits", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(u64), i32, 1usize>("CountHexDigits")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CountHexDigits", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())

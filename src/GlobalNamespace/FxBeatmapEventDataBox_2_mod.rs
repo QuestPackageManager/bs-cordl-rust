@@ -85,22 +85,21 @@ impl<
         TOut: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FxBeatmapEventDataBox_2<
-            TIn,
-            TOut,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (TIn, f32, i32, i32, f32),
-                TOut,
-                5usize,
-            >("CreateVfxBeatmapEventData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::FxBeatmapEventDataBox_2 < TIn, TOut > as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateVfxBeatmapEventData",
-                    5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (TIn, f32, i32, i32, f32),
+                        TOut,
+                        5usize,
+                    >("CreateVfxBeatmapEventData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateVfxBeatmapEventData", 5usize
+                        )
+                    })
             });
         let __cordl_ret: TOut = unsafe {
             method
@@ -173,41 +172,41 @@ impl<
         TOut: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FxBeatmapEventDataBox_2<
-            TIn,
-            TOut,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    f32,
-                    i32,
-                    i32,
-                    i32,
-                    i32,
-                    f32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::IBeatToTimeConverter,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::IBeatmapLightEventConverter,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::List_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            f32,
+                            i32,
+                            i32,
+                            i32,
+                            i32,
+                            f32,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapEventData,
+                                crate::GlobalNamespace::IBeatToTimeConverter,
                             >,
-                        >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                9usize,
-            >("Unpack")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::FxBeatmapEventDataBox_2 < TIn, TOut > as
-                    quest_hook::libil2cpp::Type > ::class(), "Unpack", 9usize
-                )
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IBeatmapLightEventConverter,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapEventData,
+                                    >,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        9usize,
+                    >("Unpack")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Unpack", 9usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -247,32 +246,34 @@ impl<
         TOut: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FxBeatmapEventDataBox_2<
-            TIn,
-            TOut,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
-                    crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
-                    f32,
-                    crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
-                    f32,
-                    bool,
-                    crate::GlobalNamespace::EaseType,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IReadOnlyList_1<TIn>,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                8usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::FxBeatmapEventDataBox_2 < TIn, TOut > as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 8usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IndexFilter,
+                            >,
+                            crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
+                            f32,
+                            crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
+                            f32,
+                            bool,
+                            crate::GlobalNamespace::EaseType,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IReadOnlyList_1<TIn>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        8usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 8usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method

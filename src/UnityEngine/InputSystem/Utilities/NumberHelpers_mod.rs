@@ -43,14 +43,17 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         number: i32,
         alignment: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::NumberHelpers as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(i32, i32), i32, 2usize>("AlignToMultipleOf")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::NumberHelpers as
-                    quest_hook::libil2cpp::Type > ::class(), "AlignToMultipleOf", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(i32, i32), i32, 2usize>("AlignToMultipleOf")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AlignToMultipleOf", 2usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (number, alignment))?
@@ -61,14 +64,17 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         number: i64,
         alignment: i64,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::NumberHelpers as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(i64, i64), i64, 2usize>("AlignToMultipleOf")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::NumberHelpers as
-                    quest_hook::libil2cpp::Type > ::class(), "AlignToMultipleOf", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(i64, i64), i64, 2usize>("AlignToMultipleOf")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AlignToMultipleOf", 2usize
+                        )
+                    })
             });
         let __cordl_ret: i64 = unsafe {
             method.invoke_unchecked((), (number, alignment))?
@@ -79,14 +85,17 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         number: u32,
         alignment: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::NumberHelpers as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(u32, u32), u32, 2usize>("AlignToMultipleOf")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::NumberHelpers as
-                    quest_hook::libil2cpp::Type > ::class(), "AlignToMultipleOf", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(u32, u32), u32, 2usize>("AlignToMultipleOf")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AlignToMultipleOf", 2usize
+                        )
+                    })
             });
         let __cordl_ret: u32 = unsafe {
             method.invoke_unchecked((), (number, alignment))?
@@ -94,14 +103,17 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         Ok(__cordl_ret.into())
     }
     pub fn Approximately(a: f64, b: f64) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::NumberHelpers as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(f64, f64), bool, 2usize>("Approximately")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::NumberHelpers as
-                    quest_hook::libil2cpp::Type > ::class(), "Approximately", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(f64, f64), bool, 2usize>("Approximately")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Approximately", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
@@ -111,15 +123,21 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         minValue: i32,
         maxValue: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::NumberHelpers as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(i32, i32, i32), f32, 3usize>("IntToNormalizedFloat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::NumberHelpers as
-                    quest_hook::libil2cpp::Type > ::class(), "IntToNormalizedFloat",
-                    3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32, i32, i32),
+                        f32,
+                        3usize,
+                    >("IntToNormalizedFloat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IntToNormalizedFloat", 3usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe {
             method.invoke_unchecked((), (value, minValue, maxValue))?
@@ -131,15 +149,21 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         intMinValue: i32,
         intMaxValue: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::NumberHelpers as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(f32, i32, i32), i32, 3usize>("NormalizedFloatToInt")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::NumberHelpers as
-                    quest_hook::libil2cpp::Type > ::class(), "NormalizedFloatToInt",
-                    3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (f32, i32, i32),
+                        i32,
+                        3usize,
+                    >("NormalizedFloatToInt")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NormalizedFloatToInt", 3usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method.invoke_unchecked((), (value, intMinValue, intMaxValue))?
@@ -151,15 +175,21 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         uintMinValue: u32,
         uintMaxValue: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::NumberHelpers as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(f32, u32, u32), u32, 3usize>("NormalizedFloatToUInt")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::NumberHelpers as
-                    quest_hook::libil2cpp::Type > ::class(), "NormalizedFloatToUInt",
-                    3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (f32, u32, u32),
+                        u32,
+                        3usize,
+                    >("NormalizedFloatToUInt")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NormalizedFloatToUInt", 3usize
+                        )
+                    })
             });
         let __cordl_ret: u32 = unsafe {
             method.invoke_unchecked((), (value, uintMinValue, uintMaxValue))?
@@ -171,19 +201,22 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         inBitSize: u32,
         outBitSize: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::NumberHelpers as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (u32, u32, u32),
-                u32,
-                3usize,
-            >("RemapUIntBitsToNormalizeFloatToUIntBits")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::NumberHelpers as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "RemapUIntBitsToNormalizeFloatToUIntBits", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (u32, u32, u32),
+                        u32,
+                        3usize,
+                    >("RemapUIntBitsToNormalizeFloatToUIntBits")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "RemapUIntBitsToNormalizeFloatToUIntBits",
+                            3usize
+                        )
+                    })
             });
         let __cordl_ret: u32 = unsafe {
             method.invoke_unchecked((), (value, inBitSize, outBitSize))?
@@ -195,15 +228,21 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         minValue: u32,
         maxValue: u32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::NumberHelpers as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(u32, u32, u32), f32, 3usize>("UIntToNormalizedFloat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::NumberHelpers as
-                    quest_hook::libil2cpp::Type > ::class(), "UIntToNormalizedFloat",
-                    3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (u32, u32, u32),
+                        f32,
+                        3usize,
+                    >("UIntToNormalizedFloat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UIntToNormalizedFloat", 3usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe {
             method.invoke_unchecked((), (value, minValue, maxValue))?

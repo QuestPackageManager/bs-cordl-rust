@@ -46,14 +46,17 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::AppInitScenesTransitionSetupDataSO as
-                    quest_hook::libil2cpp::Type > ::class(), "Init", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Init", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -63,14 +66,21 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
     pub fn InitAsAppStart(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("InitAsAppStart")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::AppInitScenesTransitionSetupDataSO as
-                    quest_hook::libil2cpp::Type > ::class(), "InitAsAppStart", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("InitAsAppStart")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "InitAsAppStart", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -88,18 +98,21 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
         &mut self,
         appInitOverrideStartType: crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("__Init")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::AppInitScenesTransitionSetupDataSO as
-                    quest_hook::libil2cpp::Type > ::class(), "__Init", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("__Init")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "__Init", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (appInitOverrideStartType))?
@@ -109,14 +122,17 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::AppInitScenesTransitionSetupDataSO as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -285,19 +301,21 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetu
         &mut self,
         appInitOverrideStartType: crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (appInitOverrideStartType))?
@@ -309,20 +327,21 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetu
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
-                0usize,
-            >("get_appInitOverrideStartType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "get_appInitOverrideStartType", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
+                        0usize,
+                    >("get_appInitOverrideStartType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_appInitOverrideStartType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType = unsafe {
             method.invoke_unchecked(self, ())?
@@ -333,20 +352,21 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetu
         &mut self,
         value: crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_appInitOverrideStartType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "set_appInitOverrideStartType", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_appInitOverrideStartType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_appInitOverrideStartType", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

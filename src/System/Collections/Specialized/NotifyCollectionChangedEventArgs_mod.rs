@@ -52,23 +52,25 @@ impl crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
         newItems: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         newStartingIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::Collections::Specialized::NotifyCollectionChangedAction,
-                    quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("InitializeAdd")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::System::Collections::Specialized::NotifyCollectionChangedEventArgs
-                    as quest_hook::libil2cpp::Type > ::class(), "InitializeAdd", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::Collections::Specialized::NotifyCollectionChangedAction,
+                            quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("InitializeAdd")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "InitializeAdd", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (action, newItems, newStartingIndex))?
@@ -81,24 +83,25 @@ impl crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
         changedItems: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         startingIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::Collections::Specialized::NotifyCollectionChangedAction,
-                    quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("InitializeAddOrRemove")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::System::Collections::Specialized::NotifyCollectionChangedEventArgs
-                    as quest_hook::libil2cpp::Type > ::class(), "InitializeAddOrRemove",
-                    3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::Collections::Specialized::NotifyCollectionChangedAction,
+                            quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("InitializeAddOrRemove")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "InitializeAddOrRemove", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (action, changedItems, startingIndex))?
@@ -113,26 +116,27 @@ impl crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
         startingIndex: i32,
         oldStartingIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::Collections::Specialized::NotifyCollectionChangedAction,
-                    quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-                    quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-                    i32,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Void,
-                5usize,
-            >("InitializeMoveOrReplace")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::System::Collections::Specialized::NotifyCollectionChangedEventArgs
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "InitializeMoveOrReplace", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::Collections::Specialized::NotifyCollectionChangedAction,
+                            quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                            quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                            i32,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("InitializeMoveOrReplace")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "InitializeMoveOrReplace", 5usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -149,24 +153,25 @@ impl crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
         oldItems: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         oldStartingIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::Collections::Specialized::NotifyCollectionChangedAction,
-                    quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("InitializeRemove")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::System::Collections::Specialized::NotifyCollectionChangedEventArgs
-                    as quest_hook::libil2cpp::Type > ::class(), "InitializeRemove",
-                    3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::Collections::Specialized::NotifyCollectionChangedAction,
+                            quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("InitializeRemove")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "InitializeRemove", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (action, oldItems, oldStartingIndex))?
@@ -224,24 +229,26 @@ impl crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
         oldItems: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         startingIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::Collections::Specialized::NotifyCollectionChangedAction,
-                    quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-                    quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::System::Collections::Specialized::NotifyCollectionChangedEventArgs
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::Collections::Specialized::NotifyCollectionChangedAction,
+                            quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                            quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (action, newItems, oldItems, startingIndex))?
@@ -255,24 +262,30 @@ impl crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
         oldItem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::Collections::Specialized::NotifyCollectionChangedAction,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::System::Collections::Specialized::NotifyCollectionChangedEventArgs
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::Collections::Specialized::NotifyCollectionChangedAction,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (action, newItem, oldItem, index))?
@@ -285,23 +298,27 @@ impl crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
         changedItem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::Collections::Specialized::NotifyCollectionChangedAction,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    i32,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::System::Collections::Specialized::NotifyCollectionChangedEventArgs
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::Collections::Specialized::NotifyCollectionChangedAction,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (action, changedItem, index))?
@@ -312,19 +329,21 @@ impl crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
         &mut self,
         action: crate::System::Collections::Specialized::NotifyCollectionChangedAction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Collections::Specialized::NotifyCollectionChangedAction),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::System::Collections::Specialized::NotifyCollectionChangedEventArgs
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Collections::Specialized::NotifyCollectionChangedAction),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (action))?

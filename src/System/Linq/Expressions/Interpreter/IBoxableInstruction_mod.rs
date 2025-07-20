@@ -49,21 +49,23 @@ impl crate::System::Linq::Expressions::Interpreter::IBoxableInstruction {
             crate::System::Linq::Expressions::Interpreter::Instruction,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::IBoxableInstruction as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (i32),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::Interpreter::Instruction,
-                >,
-                1usize,
-            >("BoxIfIndexMatches")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Linq::Expressions::Interpreter::IBoxableInstruction
-                    as quest_hook::libil2cpp::Type > ::class(), "BoxIfIndexMatches",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i32),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Linq::Expressions::Interpreter::Instruction,
+                        >,
+                        1usize,
+                    >("BoxIfIndexMatches")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BoxIfIndexMatches", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Interpreter::Instruction,

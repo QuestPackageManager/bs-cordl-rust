@@ -49,21 +49,26 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::Observable as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
-                    quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
-                2usize,
-            >("Call")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::Observable as
-                    quest_hook::libil2cpp::Type > ::class(), "Call", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::IObservable_1<TValue>,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+                        2usize,
+                    >("Call")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Call", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> = unsafe {
             method.invoke_unchecked((), (source, action))?
@@ -80,21 +85,26 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::Observable as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
-                    quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
-                2usize,
-            >("CallOnce")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::Observable as
-                    quest_hook::libil2cpp::Type > ::class(), "CallOnce", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::IObservable_1<TValue>,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+                        2usize,
+                    >("CallOnce")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CallOnce", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> = unsafe {
             method.invoke_unchecked((), (source, action))?
@@ -118,26 +128,29 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
         TDevice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::Observable as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::IObservable_1<
-                        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                    >,
-                >),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::IObservable_1<
-                        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                    >,
-                >,
-                1usize,
-            >("ForDevice")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::Observable as
-                    quest_hook::libil2cpp::Type > ::class(), "ForDevice", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::IObservable_1<
+                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::IObservable_1<
+                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                            >,
+                        >,
+                        1usize,
+                    >("ForDevice")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ForDevice", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::IObservable_1<
@@ -160,31 +173,34 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::Observable as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::IObservable_1<
-                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::IObservable_1<
+                                    crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::InputDevice,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::IObservable_1<
+                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                            >,
                         >,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::InputSystem::InputDevice,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::IObservable_1<
-                        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                    >,
-                >,
-                2usize,
-            >("ForDevice")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::Observable as
-                    quest_hook::libil2cpp::Type > ::class(), "ForDevice", 2usize
-                )
+                        2usize,
+                    >("ForDevice")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ForDevice", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::IObservable_1<
@@ -205,21 +221,28 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::Observable as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TSource>>,
-                    quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TResult>>,
-                2usize,
-            >("Select")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::Observable as
-                    quest_hook::libil2cpp::Type > ::class(), "Select", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::IObservable_1<TSource>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Func_2<TSource, TResult>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TResult>>,
+                        2usize,
+                    >("Select")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Select", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::IObservable_1<TResult>,
@@ -245,28 +268,33 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::Observable as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TSource>>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Func_2<
-                            TSource,
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<TResult>,
+                                crate::System::IObservable_1<TSource>,
                             >,
-                        >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TResult>>,
-                2usize,
-            >("SelectMany")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::Observable as
-                    quest_hook::libil2cpp::Type > ::class(), "SelectMany", 2usize
-                )
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Func_2<
+                                    TSource,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Collections::Generic::IEnumerable_1<TResult>,
+                                    >,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TResult>>,
+                        2usize,
+                    >("SelectMany")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SelectMany", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::IObservable_1<TResult>,
@@ -283,18 +311,26 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::Observable as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>, i32),
-                quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
-                2usize,
-            >("Take")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::Observable as
-                    quest_hook::libil2cpp::Type > ::class(), "Take", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::IObservable_1<TValue>,
+                            >,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
+                        2usize,
+                    >("Take")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Take", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::IObservable_1<TValue>,
@@ -311,21 +347,28 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::Observable as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
-                    quest_hook::libil2cpp::Gc<crate::System::Func_2<TValue, bool>>,
-                ),
-                quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
-                2usize,
-            >("Where")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::InputSystem::Utilities::Observable as
-                    quest_hook::libil2cpp::Type > ::class(), "Where", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::IObservable_1<TValue>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Func_2<TValue, bool>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
+                        2usize,
+                    >("Where")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Where", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::IObservable_1<TValue>,

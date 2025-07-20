@@ -42,18 +42,21 @@ impl crate::GlobalNamespace::Interpolation {
         t: f32,
         easeType: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::Interpolation as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (f32, crate::GlobalNamespace::EaseType),
-                f32,
-                2usize,
-            >("Interpolate")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::Interpolation as quest_hook::libil2cpp::Type
-                    > ::class(), "Interpolate", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (f32, crate::GlobalNamespace::EaseType),
+                        f32,
+                        2usize,
+                    >("Interpolate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Interpolate", 2usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (t, easeType))? };
         Ok(__cordl_ret.into())

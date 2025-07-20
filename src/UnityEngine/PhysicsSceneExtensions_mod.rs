@@ -41,18 +41,21 @@ impl crate::UnityEngine::PhysicsSceneExtensions {
     pub fn GetPhysicsScene(
         scene: crate::UnityEngine::SceneManagement::Scene,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::PhysicsScene> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::PhysicsSceneExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::SceneManagement::Scene),
-                crate::UnityEngine::PhysicsScene,
-                1usize,
-            >("GetPhysicsScene")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::PhysicsSceneExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetPhysicsScene", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::SceneManagement::Scene),
+                        crate::UnityEngine::PhysicsScene,
+                        1usize,
+                    >("GetPhysicsScene")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetPhysicsScene", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::PhysicsScene = unsafe {
             method.invoke_unchecked((), (scene))?
@@ -62,19 +65,21 @@ impl crate::UnityEngine::PhysicsSceneExtensions {
     pub fn GetPhysicsScene_Internal(
         scene: crate::UnityEngine::SceneManagement::Scene,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::PhysicsScene> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::PhysicsSceneExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::SceneManagement::Scene),
-                crate::UnityEngine::PhysicsScene,
-                1usize,
-            >("GetPhysicsScene_Internal")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::PhysicsSceneExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetPhysicsScene_Internal",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::SceneManagement::Scene),
+                        crate::UnityEngine::PhysicsScene,
+                        1usize,
+                    >("GetPhysicsScene_Internal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetPhysicsScene_Internal", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::PhysicsScene = unsafe {
             method.invoke_unchecked((), (scene))?
@@ -87,24 +92,28 @@ impl crate::UnityEngine::PhysicsSceneExtensions {
         >,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::PhysicsSceneExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::UnityEngine::SceneManagement::Scene,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("GetPhysicsScene_Internal_Injected")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::PhysicsSceneExtensions as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "GetPhysicsScene_Internal_Injected", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::SceneManagement::Scene,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::PhysicsScene,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("GetPhysicsScene_Internal_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetPhysicsScene_Internal_Injected", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (scene, ret))?

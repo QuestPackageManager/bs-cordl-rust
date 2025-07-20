@@ -45,14 +45,17 @@ impl crate::GlobalNamespace::IJumpOffsetYProvider {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_jumpOffsetY(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IJumpOffsetYProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_jumpOffsetY")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::IJumpOffsetYProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "get_jumpOffsetY", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_jumpOffsetY")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_jumpOffsetY", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

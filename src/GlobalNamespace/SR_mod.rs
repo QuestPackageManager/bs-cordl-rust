@@ -38,31 +38,144 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SR {
 }
 #[cfg(feature = "SR")]
 impl crate::GlobalNamespace::SR {
-    pub fn Format(
+    pub fn Format_Il2CppObject1(
+        resourceFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        p2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        3usize,
+                    >("Format")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Format", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { method.invoke_unchecked((), (resourceFormat, p1, p2))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Format_Il2CppObject_Il2CppObject2(
+        resourceFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        p2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        p3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        4usize,
+                    >("Format")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Format", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { method.invoke_unchecked((), (resourceFormat, p1, p2, p3))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Format_Il2CppString_Il2CppObject0(
         resourceFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SR as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                2usize,
-            >("Format")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::SR as quest_hook::libil2cpp::Type >
-                    ::class(), "Format", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        2usize,
+                    >("Format")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Format", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe { method.invoke_unchecked((), (resourceFormat, p1))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetString(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("GetString")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetString", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
 }

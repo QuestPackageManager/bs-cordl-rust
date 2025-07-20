@@ -46,21 +46,23 @@ impl crate::AddressablesInternalBridge::Runtime::Extensions {
             crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::AddressablesInternalBridge::Runtime::Extensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                quest_hook::libil2cpp::Gc<
-                    crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
-                >,
-                1usize,
-            >("GetCatalogLocationData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::AddressablesInternalBridge::Runtime::Extensions as
-                    quest_hook::libil2cpp::Type > ::class(), "GetCatalogLocationData",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
+                        >,
+                        1usize,
+                    >("GetCatalogLocationData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetCatalogLocationData", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
@@ -76,25 +78,27 @@ impl crate::AddressablesInternalBridge::Runtime::Extensions {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::AddressablesInternalBridge::Runtime::Extensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IEnumerable_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
                         quest_hook::libil2cpp::Gc<
-                            crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                0usize,
-            >("GetUpdateableCatalogLocationDatas")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::AddressablesInternalBridge::Runtime::Extensions as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "GetUpdateableCatalogLocationDatas", 0usize
-                )
+                        0usize,
+                    >("GetUpdateableCatalogLocationDatas")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetUpdateableCatalogLocationDatas", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<

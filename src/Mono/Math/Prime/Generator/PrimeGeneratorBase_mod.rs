@@ -45,18 +45,21 @@ impl crate::Mono::Math::Prime::Generator::PrimeGeneratorBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::Prime::Generator::PrimeGeneratorBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (i32),
-                quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
-                1usize,
-            >("GenerateNewPrime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Math::Prime::Generator::PrimeGeneratorBase as
-                    quest_hook::libil2cpp::Type > ::class(), "GenerateNewPrime", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i32),
+                        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+                        1usize,
+                    >("GenerateNewPrime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GenerateNewPrime", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
             method.invoke_unchecked(self, (bits))?
@@ -73,14 +76,17 @@ impl crate::Mono::Math::Prime::Generator::PrimeGeneratorBase {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::Prime::Generator::PrimeGeneratorBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Math::Prime::Generator::PrimeGeneratorBase as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -90,18 +96,21 @@ impl crate::Mono::Math::Prime::Generator::PrimeGeneratorBase {
     pub fn get_Confidence(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Mono::Math::Prime::ConfidenceFactor> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::Prime::Generator::PrimeGeneratorBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::Mono::Math::Prime::ConfidenceFactor,
-                0usize,
-            >("get_Confidence")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Math::Prime::Generator::PrimeGeneratorBase as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Confidence", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::Mono::Math::Prime::ConfidenceFactor,
+                        0usize,
+                    >("get_Confidence")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Confidence", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::Mono::Math::Prime::ConfidenceFactor = unsafe {
             method.invoke_unchecked(self, ())?
@@ -113,18 +122,23 @@ impl crate::Mono::Math::Prime::Generator::PrimeGeneratorBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::Prime::PrimalityTest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::Prime::Generator::PrimeGeneratorBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::Mono::Math::Prime::PrimalityTest>,
-                0usize,
-            >("get_PrimalityTest")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Math::Prime::Generator::PrimeGeneratorBase as
-                    quest_hook::libil2cpp::Type > ::class(), "get_PrimalityTest", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Mono::Math::Prime::PrimalityTest,
+                        >,
+                        0usize,
+                    >("get_PrimalityTest")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_PrimalityTest", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Math::Prime::PrimalityTest,
@@ -132,15 +146,17 @@ impl crate::Mono::Math::Prime::Generator::PrimeGeneratorBase {
         Ok(__cordl_ret.into())
     }
     pub fn get_TrialDivisionBounds(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::Prime::Generator::PrimeGeneratorBase as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("get_TrialDivisionBounds")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Mono::Math::Prime::Generator::PrimeGeneratorBase as
-                    quest_hook::libil2cpp::Type > ::class(), "get_TrialDivisionBounds",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("get_TrialDivisionBounds")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_TrialDivisionBounds", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

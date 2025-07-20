@@ -102,18 +102,21 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                i32,
-                1usize,
-            >("CompareTo")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "CompareTo", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        i32,
+                        1usize,
+                    >("CompareTo")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CompareTo", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
@@ -122,18 +125,21 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         &mut self,
         value: crate::System::Data::SqlTypes::SqlInt64,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Data::SqlTypes::SqlInt64),
-                i32,
-                1usize,
-            >("CompareTo")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "CompareTo", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Data::SqlTypes::SqlInt64),
+                        i32,
+                        1usize,
+                    >("CompareTo")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CompareTo", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
@@ -142,31 +148,37 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                bool,
-                1usize,
-            >("Equals")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        bool,
+                        1usize,
+                    >("Equals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Equals", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("GetHashCode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "GetHashCode", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("GetHashCode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetHashCode", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -176,18 +188,23 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>),
-                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-                1usize,
-            >("GetXsdType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "GetXsdType", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaSet,
+                        >),
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                        1usize,
+                    >("GetXsdType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetXsdType", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::XmlQualifiedName,
@@ -198,21 +215,24 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         x: crate::System::Data::SqlTypes::SqlInt64,
         y: crate::System::Data::SqlTypes::SqlInt64,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::Data::SqlTypes::SqlInt64,
-                    crate::System::Data::SqlTypes::SqlInt64,
-                ),
-                crate::System::Data::SqlTypes::SqlBoolean,
-                2usize,
-            >("GreaterThan")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "GreaterThan", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::Data::SqlTypes::SqlInt64,
+                            crate::System::Data::SqlTypes::SqlInt64,
+                        ),
+                        crate::System::Data::SqlTypes::SqlBoolean,
+                        2usize,
+                    >("GreaterThan")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GreaterThan", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = unsafe {
             method.invoke_unchecked((), (x, y))?
@@ -223,21 +243,24 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         x: crate::System::Data::SqlTypes::SqlInt64,
         y: crate::System::Data::SqlTypes::SqlInt64,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::Data::SqlTypes::SqlInt64,
-                    crate::System::Data::SqlTypes::SqlInt64,
-                ),
-                crate::System::Data::SqlTypes::SqlBoolean,
-                2usize,
-            >("LessThan")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "LessThan", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::Data::SqlTypes::SqlInt64,
+                            crate::System::Data::SqlTypes::SqlInt64,
+                        ),
+                        crate::System::Data::SqlTypes::SqlBoolean,
+                        2usize,
+                    >("LessThan")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "LessThan", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = unsafe {
             method.invoke_unchecked((), (x, y))?
@@ -245,14 +268,17 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         Ok(__cordl_ret.into())
     }
     pub fn SameSignLong(x: i64, y: i64) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(i64, i64), bool, 2usize>("SameSignLong")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "SameSignLong", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(i64, i64), bool, 2usize>("SameSignLong")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SameSignLong", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (x, y))? };
         Ok(__cordl_ret.into())
@@ -262,19 +288,22 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
-                0usize,
-            >("System.Xml.Serialization.IXmlSerializable.GetSchema")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "System.Xml.Serialization.IXmlSerializable.GetSchema", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+                        0usize,
+                    >("System.Xml.Serialization.IXmlSerializable.GetSchema")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "System.Xml.Serialization.IXmlSerializable.GetSchema", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchema,
@@ -285,19 +314,22 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("System.Xml.Serialization.IXmlSerializable.ReadXml")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "System.Xml.Serialization.IXmlSerializable.ReadXml", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("System.Xml.Serialization.IXmlSerializable.ReadXml")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "System.Xml.Serialization.IXmlSerializable.ReadXml", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (reader))?
@@ -308,19 +340,22 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("System.Xml.Serialization.IXmlSerializable.WriteXml")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "System.Xml.Serialization.IXmlSerializable.WriteXml", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("System.Xml.Serialization.IXmlSerializable.WriteXml")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "System.Xml.Serialization.IXmlSerializable.WriteXml", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (writer))?
@@ -330,18 +365,21 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
     pub fn ToSqlByte(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlByte> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Data::SqlTypes::SqlByte,
-                0usize,
-            >("ToSqlByte")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "ToSqlByte", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Data::SqlTypes::SqlByte,
+                        0usize,
+                    >("ToSqlByte")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToSqlByte", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlByte = unsafe {
             method.invoke_unchecked(self, ())?
@@ -351,18 +389,21 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
     pub fn ToSqlDecimal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDecimal> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Data::SqlTypes::SqlDecimal,
-                0usize,
-            >("ToSqlDecimal")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "ToSqlDecimal", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Data::SqlTypes::SqlDecimal,
+                        0usize,
+                    >("ToSqlDecimal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToSqlDecimal", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlDecimal = unsafe {
             method.invoke_unchecked(self, ())?
@@ -372,18 +413,21 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
     pub fn ToSqlDouble(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDouble> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Data::SqlTypes::SqlDouble,
-                0usize,
-            >("ToSqlDouble")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "ToSqlDouble", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Data::SqlTypes::SqlDouble,
+                        0usize,
+                    >("ToSqlDouble")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToSqlDouble", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlDouble = unsafe {
             method.invoke_unchecked(self, ())?
@@ -393,18 +437,21 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
     pub fn ToSqlInt16(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt16> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Data::SqlTypes::SqlInt16,
-                0usize,
-            >("ToSqlInt16")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "ToSqlInt16", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Data::SqlTypes::SqlInt16,
+                        0usize,
+                    >("ToSqlInt16")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToSqlInt16", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt16 = unsafe {
             method.invoke_unchecked(self, ())?
@@ -414,18 +461,21 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
     pub fn ToSqlInt32(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Data::SqlTypes::SqlInt32,
-                0usize,
-            >("ToSqlInt32")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "ToSqlInt32", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Data::SqlTypes::SqlInt32,
+                        0usize,
+                    >("ToSqlInt32")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToSqlInt32", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt32 = unsafe {
             method.invoke_unchecked(self, ())?
@@ -437,18 +487,21 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("ToString")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "ToString", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("ToString")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToString", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -459,14 +512,17 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         &mut self,
         fNull: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (fNull))?
@@ -477,14 +533,17 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         &mut self,
         value: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -492,27 +551,33 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_IsNull")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "get_IsNull", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_IsNull")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_IsNull", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i64, 0usize>("get_Value")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "get_Value", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i64, 0usize>("get_Value")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Value", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -521,21 +586,24 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         x: crate::System::Data::SqlTypes::SqlInt64,
         y: crate::System::Data::SqlTypes::SqlInt64,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::Data::SqlTypes::SqlInt64,
-                    crate::System::Data::SqlTypes::SqlInt64,
-                ),
-                crate::System::Data::SqlTypes::SqlInt64,
-                2usize,
-            >("op_Addition")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "op_Addition", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::Data::SqlTypes::SqlInt64,
+                            crate::System::Data::SqlTypes::SqlInt64,
+                        ),
+                        crate::System::Data::SqlTypes::SqlInt64,
+                        2usize,
+                    >("op_Addition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Addition", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt64 = unsafe {
             method.invoke_unchecked((), (x, y))?
@@ -546,21 +614,24 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         x: crate::System::Data::SqlTypes::SqlInt64,
         y: crate::System::Data::SqlTypes::SqlInt64,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::Data::SqlTypes::SqlInt64,
-                    crate::System::Data::SqlTypes::SqlInt64,
-                ),
-                crate::System::Data::SqlTypes::SqlInt64,
-                2usize,
-            >("op_Division")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "op_Division", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::Data::SqlTypes::SqlInt64,
+                            crate::System::Data::SqlTypes::SqlInt64,
+                        ),
+                        crate::System::Data::SqlTypes::SqlInt64,
+                        2usize,
+                    >("op_Division")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Division", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt64 = unsafe {
             method.invoke_unchecked((), (x, y))?
@@ -571,21 +642,24 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         x: crate::System::Data::SqlTypes::SqlInt64,
         y: crate::System::Data::SqlTypes::SqlInt64,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::Data::SqlTypes::SqlInt64,
-                    crate::System::Data::SqlTypes::SqlInt64,
-                ),
-                crate::System::Data::SqlTypes::SqlBoolean,
-                2usize,
-            >("op_Equality")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "op_Equality", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::Data::SqlTypes::SqlInt64,
+                            crate::System::Data::SqlTypes::SqlInt64,
+                        ),
+                        crate::System::Data::SqlTypes::SqlBoolean,
+                        2usize,
+                    >("op_Equality")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Equality", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = unsafe {
             method.invoke_unchecked((), (x, y))?
@@ -595,18 +669,21 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
     pub fn op_Explicit(
         x: crate::System::Data::SqlTypes::SqlDecimal,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::Data::SqlTypes::SqlDecimal),
-                crate::System::Data::SqlTypes::SqlInt64,
-                1usize,
-            >("op_Explicit")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "op_Explicit", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::Data::SqlTypes::SqlDecimal),
+                        crate::System::Data::SqlTypes::SqlInt64,
+                        1usize,
+                    >("op_Explicit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Explicit", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt64 = unsafe {
             method.invoke_unchecked((), (x))?
@@ -617,21 +694,24 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         x: crate::System::Data::SqlTypes::SqlInt64,
         y: crate::System::Data::SqlTypes::SqlInt64,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::Data::SqlTypes::SqlInt64,
-                    crate::System::Data::SqlTypes::SqlInt64,
-                ),
-                crate::System::Data::SqlTypes::SqlBoolean,
-                2usize,
-            >("op_GreaterThan")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "op_GreaterThan", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::Data::SqlTypes::SqlInt64,
+                            crate::System::Data::SqlTypes::SqlInt64,
+                        ),
+                        crate::System::Data::SqlTypes::SqlBoolean,
+                        2usize,
+                    >("op_GreaterThan")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_GreaterThan", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = unsafe {
             method.invoke_unchecked((), (x, y))?
@@ -641,18 +721,21 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
     pub fn op_Implicit_SqlByte1(
         x: crate::System::Data::SqlTypes::SqlByte,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::Data::SqlTypes::SqlByte),
-                crate::System::Data::SqlTypes::SqlInt64,
-                1usize,
-            >("op_Implicit")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "op_Implicit", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::Data::SqlTypes::SqlByte),
+                        crate::System::Data::SqlTypes::SqlInt64,
+                        1usize,
+                    >("op_Implicit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Implicit", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt64 = unsafe {
             method.invoke_unchecked((), (x))?
@@ -662,18 +745,21 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
     pub fn op_Implicit_SqlInt16_2(
         x: crate::System::Data::SqlTypes::SqlInt16,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::Data::SqlTypes::SqlInt16),
-                crate::System::Data::SqlTypes::SqlInt64,
-                1usize,
-            >("op_Implicit")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "op_Implicit", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::Data::SqlTypes::SqlInt16),
+                        crate::System::Data::SqlTypes::SqlInt64,
+                        1usize,
+                    >("op_Implicit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Implicit", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt64 = unsafe {
             method.invoke_unchecked((), (x))?
@@ -683,18 +769,21 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
     pub fn op_Implicit_SqlInt32_3(
         x: crate::System::Data::SqlTypes::SqlInt32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::Data::SqlTypes::SqlInt32),
-                crate::System::Data::SqlTypes::SqlInt64,
-                1usize,
-            >("op_Implicit")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "op_Implicit", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::Data::SqlTypes::SqlInt32),
+                        crate::System::Data::SqlTypes::SqlInt64,
+                        1usize,
+                    >("op_Implicit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Implicit", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt64 = unsafe {
             method.invoke_unchecked((), (x))?
@@ -704,18 +793,21 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
     pub fn op_Implicit_i64_0(
         x: i64,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i64),
-                crate::System::Data::SqlTypes::SqlInt64,
-                1usize,
-            >("op_Implicit")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "op_Implicit", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i64),
+                        crate::System::Data::SqlTypes::SqlInt64,
+                        1usize,
+                    >("op_Implicit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Implicit", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt64 = unsafe {
             method.invoke_unchecked((), (x))?
@@ -726,21 +818,24 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         x: crate::System::Data::SqlTypes::SqlInt64,
         y: crate::System::Data::SqlTypes::SqlInt64,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::Data::SqlTypes::SqlInt64,
-                    crate::System::Data::SqlTypes::SqlInt64,
-                ),
-                crate::System::Data::SqlTypes::SqlBoolean,
-                2usize,
-            >("op_LessThan")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "op_LessThan", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::Data::SqlTypes::SqlInt64,
+                            crate::System::Data::SqlTypes::SqlInt64,
+                        ),
+                        crate::System::Data::SqlTypes::SqlBoolean,
+                        2usize,
+                    >("op_LessThan")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_LessThan", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = unsafe {
             method.invoke_unchecked((), (x, y))?
@@ -751,21 +846,24 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         x: crate::System::Data::SqlTypes::SqlInt64,
         y: crate::System::Data::SqlTypes::SqlInt64,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::Data::SqlTypes::SqlInt64,
-                    crate::System::Data::SqlTypes::SqlInt64,
-                ),
-                crate::System::Data::SqlTypes::SqlInt64,
-                2usize,
-            >("op_Modulus")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "op_Modulus", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::Data::SqlTypes::SqlInt64,
+                            crate::System::Data::SqlTypes::SqlInt64,
+                        ),
+                        crate::System::Data::SqlTypes::SqlInt64,
+                        2usize,
+                    >("op_Modulus")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Modulus", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt64 = unsafe {
             method.invoke_unchecked((), (x, y))?
@@ -776,21 +874,24 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         x: crate::System::Data::SqlTypes::SqlInt64,
         y: crate::System::Data::SqlTypes::SqlInt64,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::Data::SqlTypes::SqlInt64,
-                    crate::System::Data::SqlTypes::SqlInt64,
-                ),
-                crate::System::Data::SqlTypes::SqlInt64,
-                2usize,
-            >("op_Multiply")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "op_Multiply", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::Data::SqlTypes::SqlInt64,
+                            crate::System::Data::SqlTypes::SqlInt64,
+                        ),
+                        crate::System::Data::SqlTypes::SqlInt64,
+                        2usize,
+                    >("op_Multiply")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Multiply", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt64 = unsafe {
             method.invoke_unchecked((), (x, y))?
@@ -801,21 +902,24 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
         x: crate::System::Data::SqlTypes::SqlInt64,
         y: crate::System::Data::SqlTypes::SqlInt64,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::Data::SqlTypes::SqlInt64,
-                    crate::System::Data::SqlTypes::SqlInt64,
-                ),
-                crate::System::Data::SqlTypes::SqlInt64,
-                2usize,
-            >("op_Subtraction")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "op_Subtraction", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::Data::SqlTypes::SqlInt64,
+                            crate::System::Data::SqlTypes::SqlInt64,
+                        ),
+                        crate::System::Data::SqlTypes::SqlInt64,
+                        2usize,
+                    >("op_Subtraction")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Subtraction", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt64 = unsafe {
             method.invoke_unchecked((), (x, y))?
@@ -825,18 +929,21 @@ impl crate::System::Data::SqlTypes::SqlInt64 {
     pub fn op_UnaryNegation(
         x: crate::System::Data::SqlTypes::SqlInt64,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::SqlTypes::SqlInt64 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::Data::SqlTypes::SqlInt64),
-                crate::System::Data::SqlTypes::SqlInt64,
-                1usize,
-            >("op_UnaryNegation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Data::SqlTypes::SqlInt64 as
-                    quest_hook::libil2cpp::Type > ::class(), "op_UnaryNegation", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::Data::SqlTypes::SqlInt64),
+                        crate::System::Data::SqlTypes::SqlInt64,
+                        1usize,
+                    >("op_UnaryNegation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_UnaryNegation", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt64 = unsafe {
             method.invoke_unchecked((), (x))?

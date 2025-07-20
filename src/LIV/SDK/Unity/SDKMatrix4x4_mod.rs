@@ -117,18 +117,21 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
         zNear: f32,
         zFar: f32,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKMatrix4x4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (f32, f32, f32, f32),
-                crate::LIV::SDK::Unity::SDKMatrix4x4,
-                4usize,
-            >("Perspective")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type
-                    > ::class(), "Perspective", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (f32, f32, f32, f32),
+                        crate::LIV::SDK::Unity::SDKMatrix4x4,
+                        4usize,
+                    >("Perspective")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Perspective", 4usize
+                        )
+                    })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKMatrix4x4 = unsafe {
             method.invoke_unchecked((), (vFov, aspect, zNear, zFar))?
@@ -138,18 +141,21 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
     pub fn Rotate(
         value: crate::LIV::SDK::Unity::SDKQuaternion,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKMatrix4x4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::LIV::SDK::Unity::SDKQuaternion),
-                crate::LIV::SDK::Unity::SDKMatrix4x4,
-                1usize,
-            >("Rotate")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type
-                    > ::class(), "Rotate", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::LIV::SDK::Unity::SDKQuaternion),
+                        crate::LIV::SDK::Unity::SDKMatrix4x4,
+                        1usize,
+                    >("Rotate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Rotate", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKMatrix4x4 = unsafe {
             method.invoke_unchecked((), (value))?
@@ -159,18 +165,21 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
     pub fn Scale(
         value: crate::LIV::SDK::Unity::SDKVector3,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKMatrix4x4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::LIV::SDK::Unity::SDKVector3),
-                crate::LIV::SDK::Unity::SDKMatrix4x4,
-                1usize,
-            >("Scale")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type
-                    > ::class(), "Scale", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::LIV::SDK::Unity::SDKVector3),
+                        crate::LIV::SDK::Unity::SDKMatrix4x4,
+                        1usize,
+                    >("Scale")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Scale", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKMatrix4x4 = unsafe {
             method.invoke_unchecked((), (value))?
@@ -182,22 +191,25 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
         rotation: crate::LIV::SDK::Unity::SDKQuaternion,
         scale: crate::LIV::SDK::Unity::SDKVector3,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKMatrix4x4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::LIV::SDK::Unity::SDKVector3,
-                    crate::LIV::SDK::Unity::SDKQuaternion,
-                    crate::LIV::SDK::Unity::SDKVector3,
-                ),
-                crate::LIV::SDK::Unity::SDKMatrix4x4,
-                3usize,
-            >("TRS")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type
-                    > ::class(), "TRS", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::LIV::SDK::Unity::SDKVector3,
+                            crate::LIV::SDK::Unity::SDKQuaternion,
+                            crate::LIV::SDK::Unity::SDKVector3,
+                        ),
+                        crate::LIV::SDK::Unity::SDKMatrix4x4,
+                        3usize,
+                    >("TRS")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TRS", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKMatrix4x4 = unsafe {
             method.invoke_unchecked((), (translation, rotation, scale))?
@@ -209,18 +221,21 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                0usize,
-            >("ToString")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type
-                    > ::class(), "ToString", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("ToString")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ToString", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -230,18 +245,21 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
     pub fn Translate(
         value: crate::LIV::SDK::Unity::SDKVector3,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKMatrix4x4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::LIV::SDK::Unity::SDKVector3),
-                crate::LIV::SDK::Unity::SDKMatrix4x4,
-                1usize,
-            >("Translate")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type
-                    > ::class(), "Translate", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::LIV::SDK::Unity::SDKVector3),
+                        crate::LIV::SDK::Unity::SDKMatrix4x4,
+                        1usize,
+                    >("Translate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Translate", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKMatrix4x4 = unsafe {
             method.invoke_unchecked((), (value))?
@@ -251,18 +269,21 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
     pub fn get_identity() -> quest_hook::libil2cpp::Result<
         crate::LIV::SDK::Unity::SDKMatrix4x4,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                crate::LIV::SDK::Unity::SDKMatrix4x4,
-                0usize,
-            >("get_identity")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type
-                    > ::class(), "get_identity", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        crate::LIV::SDK::Unity::SDKMatrix4x4,
+                        0usize,
+                    >("get_identity")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_identity", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKMatrix4x4 = unsafe {
             method.invoke_unchecked((), ())?
@@ -272,18 +293,21 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
     pub fn op_Implicit_Matrix4x4_1(
         v: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKMatrix4x4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Matrix4x4),
-                crate::LIV::SDK::Unity::SDKMatrix4x4,
-                1usize,
-            >("op_Implicit")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type
-                    > ::class(), "op_Implicit", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Matrix4x4),
+                        crate::LIV::SDK::Unity::SDKMatrix4x4,
+                        1usize,
+                    >("op_Implicit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Implicit", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKMatrix4x4 = unsafe {
             method.invoke_unchecked((), (v))?
@@ -293,18 +317,21 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
     pub fn op_Implicit_SDKMatrix4x4_0(
         v: crate::LIV::SDK::Unity::SDKMatrix4x4,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::LIV::SDK::Unity::SDKMatrix4x4),
-                crate::UnityEngine::Matrix4x4,
-                1usize,
-            >("op_Implicit")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type
-                    > ::class(), "op_Implicit", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::LIV::SDK::Unity::SDKMatrix4x4),
+                        crate::UnityEngine::Matrix4x4,
+                        1usize,
+                    >("op_Implicit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Implicit", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
             method.invoke_unchecked((), (v))?
@@ -315,21 +342,24 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
         lhs: crate::LIV::SDK::Unity::SDKMatrix4x4,
         rhs: crate::LIV::SDK::Unity::SDKMatrix4x4,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKMatrix4x4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::LIV::SDK::Unity::SDKMatrix4x4,
-                    crate::LIV::SDK::Unity::SDKMatrix4x4,
-                ),
-                crate::LIV::SDK::Unity::SDKMatrix4x4,
-                2usize,
-            >("op_Multiply")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type
-                    > ::class(), "op_Multiply", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::LIV::SDK::Unity::SDKMatrix4x4,
+                            crate::LIV::SDK::Unity::SDKMatrix4x4,
+                        ),
+                        crate::LIV::SDK::Unity::SDKMatrix4x4,
+                        2usize,
+                    >("op_Multiply")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Multiply", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKMatrix4x4 = unsafe {
             method.invoke_unchecked((), (lhs, rhs))?
@@ -340,21 +370,24 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
         lhs: crate::LIV::SDK::Unity::SDKMatrix4x4,
         rhs: crate::LIV::SDK::Unity::SDKVector3,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::LIV::SDK::Unity::SDKMatrix4x4,
-                    crate::LIV::SDK::Unity::SDKVector3,
-                ),
-                crate::LIV::SDK::Unity::SDKVector3,
-                2usize,
-            >("op_Multiply")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LIV::SDK::Unity::SDKMatrix4x4 as quest_hook::libil2cpp::Type
-                    > ::class(), "op_Multiply", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::LIV::SDK::Unity::SDKMatrix4x4,
+                            crate::LIV::SDK::Unity::SDKVector3,
+                        ),
+                        crate::LIV::SDK::Unity::SDKVector3,
+                        2usize,
+                    >("op_Multiply")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Multiply", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = unsafe {
             method.invoke_unchecked((), (lhs, rhs))?

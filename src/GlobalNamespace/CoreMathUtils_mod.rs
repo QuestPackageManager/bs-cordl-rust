@@ -46,18 +46,21 @@ impl crate::GlobalNamespace::CoreMathUtils {
         oneBeatDuration: f32,
         noteJumpStartBeatOffset: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::CoreMathUtils as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (f32, f32, f32, f32, f32),
-                f32,
-                5usize,
-            >("CalculateHalfJumpDurationInBeats")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::CoreMathUtils as quest_hook::libil2cpp::Type
-                    > ::class(), "CalculateHalfJumpDurationInBeats", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (f32, f32, f32, f32, f32),
+                        f32,
+                        5usize,
+                    >("CalculateHalfJumpDurationInBeats")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CalculateHalfJumpDurationInBeats", 5usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe {
             method
@@ -88,18 +91,21 @@ impl crate::GlobalNamespace::CoreMathUtils {
         oneBeatDuration: f32,
         minHalfJumpDistance: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::CoreMathUtils as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (f32, f32, f32, f32, f32),
-                i32,
-                5usize,
-            >("__CalculateHalfJumpDurationInBeatsV1")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::CoreMathUtils as quest_hook::libil2cpp::Type
-                    > ::class(), "__CalculateHalfJumpDurationInBeatsV1", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (f32, f32, f32, f32, f32),
+                        i32,
+                        5usize,
+                    >("__CalculateHalfJumpDurationInBeatsV1")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "__CalculateHalfJumpDurationInBeatsV1", 5usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe {
             method
@@ -123,18 +129,21 @@ impl crate::GlobalNamespace::CoreMathUtils {
         oneBeatDuration: f32,
         noteJumpStartBeatOffset: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::CoreMathUtils as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (f32, f32, f32, f32, f32),
-                f32,
-                5usize,
-            >("__CalculateHalfJumpDurationInBeatsV2")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::CoreMathUtils as quest_hook::libil2cpp::Type
-                    > ::class(), "__CalculateHalfJumpDurationInBeatsV2", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (f32, f32, f32, f32, f32),
+                        f32,
+                        5usize,
+                    >("__CalculateHalfJumpDurationInBeatsV2")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "__CalculateHalfJumpDurationInBeatsV2", 5usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe {
             method
@@ -154,14 +163,17 @@ impl crate::GlobalNamespace::CoreMathUtils {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::CoreMathUtils as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::CoreMathUtils as quest_hook::libil2cpp::Type
-                    > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

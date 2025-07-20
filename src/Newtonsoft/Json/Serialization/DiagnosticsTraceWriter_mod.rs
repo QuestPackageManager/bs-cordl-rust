@@ -45,18 +45,21 @@ impl crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter {
         &mut self,
         level: crate::System::Diagnostics::TraceLevel,
     ) -> quest_hook::libil2cpp::Result<crate::System::Diagnostics::TraceEventType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Diagnostics::TraceLevel),
-                crate::System::Diagnostics::TraceEventType,
-                1usize,
-            >("GetTraceEventType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter as
-                    quest_hook::libil2cpp::Type > ::class(), "GetTraceEventType", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Diagnostics::TraceLevel),
+                        crate::System::Diagnostics::TraceEventType,
+                        1usize,
+                    >("GetTraceEventType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetTraceEventType", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Diagnostics::TraceEventType = unsafe {
             method.invoke_unchecked(self, (level))?
@@ -76,22 +79,27 @@ impl crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter {
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ex: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::Diagnostics::TraceLevel,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<crate::System::Exception>,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("Trace")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter as
-                    quest_hook::libil2cpp::Type > ::class(), "Trace", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::Diagnostics::TraceLevel,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("Trace")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Trace", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (level, message, ex))?
@@ -101,14 +109,17 @@ impl crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -118,18 +129,21 @@ impl crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter {
     pub fn get_LevelFilter(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Diagnostics::TraceLevel> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Diagnostics::TraceLevel,
-                0usize,
-            >("get_LevelFilter")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter as
-                    quest_hook::libil2cpp::Type > ::class(), "get_LevelFilter", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Diagnostics::TraceLevel,
+                        0usize,
+                    >("get_LevelFilter")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_LevelFilter", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Diagnostics::TraceLevel = unsafe {
             method.invoke_unchecked(self, ())?
@@ -140,18 +154,21 @@ impl crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter {
         &mut self,
         value: crate::System::Diagnostics::TraceLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Diagnostics::TraceLevel),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_LevelFilter")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter as
-                    quest_hook::libil2cpp::Type > ::class(), "set_LevelFilter", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Diagnostics::TraceLevel),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_LevelFilter")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_LevelFilter", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

@@ -68,42 +68,45 @@ impl crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::IReadOnlyList_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevel,
+                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapLevel,
+                                    >,
+                                >,
                             >,
-                        >,
-                    >,
-                    bool,
-                    quest_hook::libil2cpp::ByRefMut<
+                            bool,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::IReadOnlyList_1<
+                                        quest_hook::libil2cpp::Gc<
+                                            crate::GlobalNamespace::BeatmapLevel,
+                                        >,
+                                    >,
+                                >,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IReadOnlyList_1<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapLevel,
+                                    crate::GlobalNamespace::AlphabetScrollInfo_Data,
                                 >,
                             >,
                         >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IReadOnlyList_1<
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::AlphabetScrollInfo_Data,
-                        >,
-                    >,
-                >,
-                3usize,
-            >("CreateData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateData", 3usize
-                )
+                        3usize,
+                    >("CreateData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateData", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
@@ -123,18 +126,21 @@ impl crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
     pub fn IsNumericOrSpecial(
         comparedChar: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                bool,
-                1usize,
-            >("IsNumericOrSpecial")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "IsNumericOrSpecial", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        bool,
+                        1usize,
+                    >("IsNumericOrSpecial")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsNumericOrSpecial", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (comparedChar))? };
         Ok(__cordl_ret.into())

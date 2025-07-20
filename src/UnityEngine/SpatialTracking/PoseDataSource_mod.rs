@@ -45,21 +45,24 @@ impl crate::UnityEngine::SpatialTracking::PoseDataSource {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::SpatialTracking::PoseDataFlags,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::PoseDataSource as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
-                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
-                ),
-                crate::UnityEngine::SpatialTracking::PoseDataFlags,
-                2usize,
-            >("GetDataFromSource")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpatialTracking::PoseDataSource as
-                    quest_hook::libil2cpp::Type > ::class(), "GetDataFromSource", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+                        ),
+                        crate::UnityEngine::SpatialTracking::PoseDataFlags,
+                        2usize,
+                    >("GetDataFromSource")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDataFromSource", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::SpatialTracking::PoseDataFlags = unsafe {
             method.invoke_unchecked((), (poseSource, resultPose))?
@@ -72,21 +75,24 @@ impl crate::UnityEngine::SpatialTracking::PoseDataSource {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::SpatialTracking::PoseDataFlags,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::PoseDataSource as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::XR::XRNode,
-                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
-                ),
-                crate::UnityEngine::SpatialTracking::PoseDataFlags,
-                2usize,
-            >("GetNodePoseData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpatialTracking::PoseDataSource as
-                    quest_hook::libil2cpp::Type > ::class(), "GetNodePoseData", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::XR::XRNode,
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+                        ),
+                        crate::UnityEngine::SpatialTracking::PoseDataFlags,
+                        2usize,
+                    >("GetNodePoseData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetNodePoseData", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::SpatialTracking::PoseDataFlags = unsafe {
             method.invoke_unchecked((), (node, resultPose))?
@@ -97,22 +103,24 @@ impl crate::UnityEngine::SpatialTracking::PoseDataSource {
         poseSource: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
         resultPose: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::PoseDataSource as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
-                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
-                ),
-                bool,
-                2usize,
-            >("TryGetDataFromSource")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::SpatialTracking::PoseDataSource as
-                    quest_hook::libil2cpp::Type > ::class(), "TryGetDataFromSource",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+                        ),
+                        bool,
+                        2usize,
+                    >("TryGetDataFromSource")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryGetDataFromSource", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (poseSource, resultPose))?

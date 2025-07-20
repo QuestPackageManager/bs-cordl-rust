@@ -39,14 +39,17 @@ impl std::ops::DerefMut for crate::System::Threading::PlatformHelper {
 #[cfg(feature = "System+Threading+PlatformHelper")]
 impl crate::System::Threading::PlatformHelper {
     pub fn get_ProcessorCount() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::PlatformHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), i32, 0usize>("get_ProcessorCount")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Threading::PlatformHelper as
-                    quest_hook::libil2cpp::Type > ::class(), "get_ProcessorCount", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(), i32, 0usize>("get_ProcessorCount")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_ProcessorCount", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())

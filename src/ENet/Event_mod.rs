@@ -99,18 +99,21 @@ impl crate::ENet::Event {
         &mut self,
         event: crate::ENet::ENetEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ENet::Event as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::ENet::ENetEvent),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::ENet::Event as quest_hook::libil2cpp::Type > ::class(),
-                    ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::ENet::ENetEvent),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (event))?
@@ -118,27 +121,33 @@ impl crate::ENet::Event {
         Ok(__cordl_ret.into())
     }
     pub fn get_ChannelID(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ENet::Event as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), u8, 0usize>("get_ChannelID")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::ENet::Event as quest_hook::libil2cpp::Type > ::class(),
-                    "get_ChannelID", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), u8, 0usize>("get_ChannelID")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_ChannelID", 0usize
+                        )
+                    })
             });
         let __cordl_ret: u8 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Data(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ENet::Event as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), u32, 0usize>("get_Data")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::ENet::Event as quest_hook::libil2cpp::Type > ::class(),
-                    "get_Data", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), u32, 0usize>("get_Data")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Data", 0usize
+                        )
+                    })
             });
         let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -146,14 +155,17 @@ impl crate::ENet::Event {
     pub fn get_NativeData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::ENet::ENetEvent> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ENet::Event as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::ENet::ENetEvent, 0usize>("get_NativeData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::ENet::Event as quest_hook::libil2cpp::Type > ::class(),
-                    "get_NativeData", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), crate::ENet::ENetEvent, 0usize>("get_NativeData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_NativeData", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::ENet::ENetEvent = unsafe {
             method.invoke_unchecked(self, ())?
@@ -161,14 +173,17 @@ impl crate::ENet::Event {
         Ok(__cordl_ret.into())
     }
     pub fn get_Packet(&mut self) -> quest_hook::libil2cpp::Result<crate::ENet::Packet> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ENet::Event as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::ENet::Packet, 0usize>("get_Packet")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::ENet::Event as quest_hook::libil2cpp::Type > ::class(),
-                    "get_Packet", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), crate::ENet::Packet, 0usize>("get_Packet")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Packet", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::ENet::Packet = unsafe {
             method.invoke_unchecked(self, ())?
@@ -176,14 +191,17 @@ impl crate::ENet::Event {
         Ok(__cordl_ret.into())
     }
     pub fn get_Peer(&mut self) -> quest_hook::libil2cpp::Result<crate::ENet::Peer> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ENet::Event as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::ENet::Peer, 0usize>("get_Peer")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::ENet::Event as quest_hook::libil2cpp::Type > ::class(),
-                    "get_Peer", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), crate::ENet::Peer, 0usize>("get_Peer")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Peer", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::ENet::Peer = unsafe {
             method.invoke_unchecked(self, ())?
@@ -191,14 +209,17 @@ impl crate::ENet::Event {
         Ok(__cordl_ret.into())
     }
     pub fn get_Type(&mut self) -> quest_hook::libil2cpp::Result<crate::ENet::EventType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ENet::Event as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::ENet::EventType, 0usize>("get_Type")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::ENet::Event as quest_hook::libil2cpp::Type > ::class(),
-                    "get_Type", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), crate::ENet::EventType, 0usize>("get_Type")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_Type", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::ENet::EventType = unsafe {
             method.invoke_unchecked(self, ())?
@@ -209,18 +230,21 @@ impl crate::ENet::Event {
         &mut self,
         value: crate::ENet::ENetEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ENet::Event as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::ENet::ENetEvent),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("set_NativeData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::ENet::Event as quest_hook::libil2cpp::Type > ::class(),
-                    "set_NativeData", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::ENet::ENetEvent),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_NativeData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "set_NativeData", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

@@ -71,14 +71,17 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -96,25 +99,27 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                0usize,
-            >("get_basicBeatmapEvents")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents as
-                    quest_hook::libil2cpp::Type > ::class(), "get_basicBeatmapEvents",
-                    0usize
-                )
+                        0usize,
+                    >("get_basicBeatmapEvents")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_basicBeatmapEvents", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -126,14 +131,17 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents {
         Ok(__cordl_ret.into())
     }
     pub fn get_isEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_isEmpty")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents as
-                    quest_hook::libil2cpp::Type > ::class(), "get_isEmpty", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_isEmpty")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_isEmpty", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -149,25 +157,27 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                0usize,
-            >("get_lightGroupEvents")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents as
-                    quest_hook::libil2cpp::Type > ::class(), "get_lightGroupEvents",
-                    0usize
-                )
+                        0usize,
+                    >("get_lightGroupEvents")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_lightGroupEvents", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -245,14 +255,17 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -262,18 +275,21 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent {
     pub fn get_eventType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BasicBeatmapEventType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::GlobalNamespace::BasicBeatmapEventType,
-                0usize,
-            >("get_eventType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent
-                    as quest_hook::libil2cpp::Type > ::class(), "get_eventType", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::GlobalNamespace::BasicBeatmapEventType,
+                        0usize,
+                    >("get_eventType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_eventType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::BasicBeatmapEventType = unsafe {
             method.invoke_unchecked(self, ())?
@@ -281,27 +297,33 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent {
         Ok(__cordl_ret.into())
     }
     pub fn get_floatValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_floatValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent
-                    as quest_hook::libil2cpp::Type > ::class(), "get_floatValue", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_floatValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_floatValue", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("get_value")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent
-                    as quest_hook::libil2cpp::Type > ::class(), "get_value", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("get_value")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_value", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -373,15 +395,17 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -389,16 +413,17 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution {
         Ok(__cordl_ret.into())
     }
     pub fn get_distributionParam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_distributionParam")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution as
-                    quest_hook::libil2cpp::Type > ::class(), "get_distributionParam",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_distributionParam")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_distributionParam", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -408,20 +433,21 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
-                0usize,
-            >("get_distributionParamType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution as
-                    quest_hook::libil2cpp::Type > ::class(), "get_distributionParamType",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
+                        0usize,
+                    >("get_distributionParamType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_distributionParamType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType = unsafe {
             method.invoke_unchecked(self, ())?
@@ -429,16 +455,17 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution {
         Ok(__cordl_ret.into())
     }
     pub fn get_useDistribution(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_useDistribution")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution as
-                    quest_hook::libil2cpp::Type > ::class(), "get_useDistribution",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_useDistribution")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_useDistribution", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -553,14 +580,17 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -568,14 +598,17 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
         Ok(__cordl_ret.into())
     }
     pub fn get_brightness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_brightness")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_brightness", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_brightness")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_brightness", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -587,21 +620,23 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
-                >,
-                0usize,
-            >("get_brightnessDistribution")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_brightnessDistribution", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+                        >,
+                        0usize,
+                    >("get_brightnessDistribution")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_brightnessDistribution", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
@@ -615,21 +650,23 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
-                >,
-                0usize,
-            >("get_brightnessFiltering")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_brightnessFiltering",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+                        >,
+                        0usize,
+                    >("get_brightnessFiltering")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_brightnessFiltering", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
@@ -639,19 +676,21 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
     pub fn get_environmentColorType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EnvironmentColorType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::GlobalNamespace::EnvironmentColorType,
-                0usize,
-            >("get_environmentColorType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_environmentColorType",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::GlobalNamespace::EnvironmentColorType,
+                        0usize,
+                    >("get_environmentColorType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_environmentColorType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::EnvironmentColorType = unsafe {
             method.invoke_unchecked(self, ())?
@@ -665,21 +704,23 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
-                >,
-                0usize,
-            >("get_floatFxDistribution")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_floatFxDistribution",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+                        >,
+                        0usize,
+                    >("get_floatFxDistribution")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_floatFxDistribution", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
@@ -693,21 +734,23 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
-                >,
-                0usize,
-            >("get_floatFxFiltering")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_floatFxFiltering",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+                        >,
+                        0usize,
+                    >("get_floatFxFiltering")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_floatFxFiltering", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
@@ -715,14 +758,17 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
         Ok(__cordl_ret.into())
     }
     pub fn get_floatFxValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_floatFxValue")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_floatFxValue", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_floatFxValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_floatFxValue", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -732,18 +778,21 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
-                0usize,
-            >("get_lightGroup")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_lightGroup", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
+                        0usize,
+                    >("get_lightGroup")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_lightGroup", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LightGroupSO,
@@ -757,21 +806,23 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
-                >,
-                0usize,
-            >("get_rotationFiltering")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_rotationFiltering",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+                        >,
+                        0usize,
+                    >("get_rotationFiltering")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_rotationFiltering", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
@@ -779,14 +830,17 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
         Ok(__cordl_ret.into())
     }
     pub fn get_rotationX(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_rotationX")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_rotationX", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_rotationX")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_rotationX", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -798,21 +852,23 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
-                >,
-                0usize,
-            >("get_rotationXDistribution")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_rotationXDistribution",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+                        >,
+                        0usize,
+                    >("get_rotationXDistribution")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_rotationXDistribution", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
@@ -820,14 +876,17 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
         Ok(__cordl_ret.into())
     }
     pub fn get_rotationY(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_rotationY")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_rotationY", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_rotationY")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_rotationY", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -839,21 +898,23 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
-                >,
-                0usize,
-            >("get_rotationYDistribution")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_rotationYDistribution",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+                        >,
+                        0usize,
+                    >("get_rotationYDistribution")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_rotationYDistribution", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
@@ -861,14 +922,17 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
         Ok(__cordl_ret.into())
     }
     pub fn get_rotationZ(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_rotationZ")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_rotationZ", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_rotationZ")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_rotationZ", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -880,21 +944,23 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
-                >,
-                0usize,
-            >("get_rotationZDistribution")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_rotationZDistribution",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+                        >,
+                        0usize,
+                    >("get_rotationZDistribution")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_rotationZDistribution", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
@@ -908,21 +974,23 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
-                >,
-                0usize,
-            >("get_translationFiltering")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_translationFiltering",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+                        >,
+                        0usize,
+                    >("get_translationFiltering")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_translationFiltering", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
@@ -930,14 +998,17 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
         Ok(__cordl_ret.into())
     }
     pub fn get_translationX(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_translationX")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_translationX", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_translationX")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_translationX", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -949,21 +1020,23 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
-                >,
-                0usize,
-            >("get_translationXDistribution")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_translationXDistribution", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+                        >,
+                        0usize,
+                    >("get_translationXDistribution")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_translationXDistribution", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
@@ -971,14 +1044,17 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
         Ok(__cordl_ret.into())
     }
     pub fn get_translationY(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_translationY")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_translationY", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_translationY")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_translationY", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -990,21 +1066,23 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
-                >,
-                0usize,
-            >("get_translationYDistribution")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_translationYDistribution", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+                        >,
+                        0usize,
+                    >("get_translationYDistribution")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_translationYDistribution", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
@@ -1012,14 +1090,17 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
         Ok(__cordl_ret.into())
     }
     pub fn get_translationZ(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_translationZ")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_translationZ", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_translationZ")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_translationZ", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -1031,21 +1112,23 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
-                >,
-                0usize,
-            >("get_translationZDistribution")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_translationZDistribution", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+                        >,
+                        0usize,
+                    >("get_translationZDistribution")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_translationZDistribution", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
@@ -1122,14 +1205,17 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering
-                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -1141,19 +1227,21 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType,
-                0usize,
-            >("get_alsoAffectType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering
-                    as quest_hook::libil2cpp::Type > ::class(), "get_alsoAffectType",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType,
+                        0usize,
+                    >("get_alsoAffectType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_alsoAffectType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType = unsafe {
             method.invoke_unchecked(self, ())?
@@ -1161,27 +1249,33 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering {
         Ok(__cordl_ret.into())
     }
     pub fn get_chunks(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("get_chunks")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering
-                    as quest_hook::libil2cpp::Type > ::class(), "get_chunks", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("get_chunks")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_chunks", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_limit(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_limit")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering
-                    as quest_hook::libil2cpp::Type > ::class(), "get_limit", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_limit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_limit", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -1191,18 +1285,21 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::IndexFilter_IndexFilterRandomType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::GlobalNamespace::IndexFilter_IndexFilterRandomType,
-                0usize,
-            >("get_randomType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering
-                    as quest_hook::libil2cpp::Type > ::class(), "get_randomType", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::GlobalNamespace::IndexFilter_IndexFilterRandomType,
+                        0usize,
+                    >("get_randomType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_randomType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::IndexFilter_IndexFilterRandomType = unsafe {
             method.invoke_unchecked(self, ())?
@@ -1210,28 +1307,33 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering {
         Ok(__cordl_ret.into())
     }
     pub fn get_seed(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("get_seed")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering
-                    as quest_hook::libil2cpp::Type > ::class(), "get_seed", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("get_seed")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_seed", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_useFiltering(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_useFiltering")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering
-                    as quest_hook::libil2cpp::Type > ::class(), "get_useFiltering",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_useFiltering")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_useFiltering", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

@@ -49,18 +49,21 @@ impl crate::BeatSaber::RecPlay::PlayerPoseCapturer {
         _cordl_time: f32,
         pose: crate::BeatSaber::RecPlay::PlayerPose,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::RecPlay::PlayerPoseCapturer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (f32, crate::BeatSaber::RecPlay::PlayerPose),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("Capture")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatSaber::RecPlay::PlayerPoseCapturer as
-                    quest_hook::libil2cpp::Type > ::class(), "Capture", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (f32, crate::BeatSaber::RecPlay::PlayerPose),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("Capture")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Capture", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (_cordl_time, pose))?
@@ -70,19 +73,21 @@ impl crate::BeatSaber::RecPlay::PlayerPoseCapturer {
     pub fn CreatePlayerPoseFrames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::RecPlay::PlayerPoseFrames> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::RecPlay::PlayerPoseCapturer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::BeatSaber::RecPlay::PlayerPoseFrames,
-                0usize,
-            >("CreatePlayerPoseFrames")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatSaber::RecPlay::PlayerPoseCapturer as
-                    quest_hook::libil2cpp::Type > ::class(), "CreatePlayerPoseFrames",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::BeatSaber::RecPlay::PlayerPoseFrames,
+                        0usize,
+                    >("CreatePlayerPoseFrames")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreatePlayerPoseFrames", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::BeatSaber::RecPlay::PlayerPoseFrames = unsafe {
             method.invoke_unchecked(self, ())?
@@ -102,14 +107,17 @@ impl crate::BeatSaber::RecPlay::PlayerPoseCapturer {
         &mut self,
         capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::RecPlay::PlayerPoseCapturer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatSaber::RecPlay::PlayerPoseCapturer as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (capacity))?

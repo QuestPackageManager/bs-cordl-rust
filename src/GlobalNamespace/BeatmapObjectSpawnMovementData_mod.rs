@@ -61,18 +61,21 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnMovementData {
         noteLineIndex: i32,
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (i32, crate::GlobalNamespace::NoteLineLayer),
-                crate::UnityEngine::Vector2,
-                2usize,
-            >("Get2DNoteOffset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(), "Get2DNoteOffset", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i32, crate::GlobalNamespace::NoteLineLayer),
+                        crate::UnityEngine::Vector2,
+                        2usize,
+                    >("Get2DNoteOffset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Get2DNoteOffset", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
             method.invoke_unchecked(self, (noteLineIndex, noteLineLayer))?
@@ -84,21 +87,24 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnMovementData {
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
         beforeJumpLineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::GlobalNamespace::NoteLineLayer,
-                    crate::GlobalNamespace::NoteLineLayer,
-                ),
-                f32,
-                2usize,
-            >("GetGravityBase")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(), "GetGravityBase", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::GlobalNamespace::NoteLineLayer,
+                            crate::GlobalNamespace::NoteLineLayer,
+                        ),
+                        f32,
+                        2usize,
+                    >("GetGravityBase")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetGravityBase", 2usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe {
             method.invoke_unchecked(self, (noteLineLayer, beforeJumpLineLayer))?
@@ -109,19 +115,21 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnMovementData {
         &mut self,
         noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteSpawnData> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>),
-                crate::GlobalNamespace::NoteSpawnData,
-                1usize,
-            >("GetJumpingNoteSpawnData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(), "GetJumpingNoteSpawnData",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>),
+                        crate::GlobalNamespace::NoteSpawnData,
+                        1usize,
+                    >("GetJumpingNoteSpawnData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetJumpingNoteSpawnData", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::NoteSpawnData = unsafe {
             method.invoke_unchecked(self, (noteData))?
@@ -133,18 +141,21 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnMovementData {
         noteLineIndex: i32,
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (i32, crate::GlobalNamespace::NoteLineLayer),
-                crate::UnityEngine::Vector3,
-                2usize,
-            >("GetNoteOffset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(), "GetNoteOffset", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i32, crate::GlobalNamespace::NoteLineLayer),
+                        crate::UnityEngine::Vector3,
+                        2usize,
+                    >("GetNoteOffset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetNoteOffset", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
             method.invoke_unchecked(self, (noteLineIndex, noteLineLayer))?
@@ -156,18 +167,21 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnMovementData {
         noteLineIndex: i32,
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (i32, crate::GlobalNamespace::NoteLineLayer),
-                crate::UnityEngine::Vector3,
-                2usize,
-            >("GetObstacleOffset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(), "GetObstacleOffset", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i32, crate::GlobalNamespace::NoteLineLayer),
+                        crate::UnityEngine::Vector3,
+                        2usize,
+                    >("GetObstacleOffset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetObstacleOffset", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
             method.invoke_unchecked(self, (noteLineIndex, noteLineLayer))?
@@ -178,19 +192,23 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnMovementData {
         &mut self,
         obstacleData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ObstacleSpawnData> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>),
-                crate::GlobalNamespace::ObstacleSpawnData,
-                1usize,
-            >("GetObstacleSpawnData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(), "GetObstacleSpawnData",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::ObstacleData,
+                        >),
+                        crate::GlobalNamespace::ObstacleSpawnData,
+                        1usize,
+                    >("GetObstacleSpawnData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetObstacleSpawnData", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::ObstacleSpawnData = unsafe {
             method.invoke_unchecked(self, (obstacleData))?
@@ -201,18 +219,21 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnMovementData {
         &mut self,
         sliderData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SliderSpawnData> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>),
-                crate::GlobalNamespace::SliderSpawnData,
-                1usize,
-            >("GetSliderSpawnData")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(), "GetSliderSpawnData", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>),
+                        crate::GlobalNamespace::SliderSpawnData,
+                        1usize,
+                    >("GetSliderSpawnData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetSliderSpawnData", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::SliderSpawnData = unsafe {
             method.invoke_unchecked(self, (sliderData))?
@@ -223,19 +244,21 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnMovementData {
         &mut self,
         lineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::NoteLineLayer),
-                f32,
-                1usize,
-            >("HighestJumpPosYForLineLayer")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "HighestJumpPosYForLineLayer", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::NoteLineLayer),
+                        f32,
+                        1usize,
+                    >("HighestJumpPosYForLineLayer")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HighestJumpPosYForLineLayer", 1usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (lineLayer))? };
         Ok(__cordl_ret.into())
@@ -244,19 +267,22 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnMovementData {
         &mut self,
         lineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::GlobalNamespace::NoteLineLayer),
-                f32,
-                1usize,
-            >("HighestJumpPosYForLineLayerWithoutJumpOffset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "HighestJumpPosYForLineLayerWithoutJumpOffset", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::NoteLineLayer),
+                        f32,
+                        1usize,
+                    >("HighestJumpPosYForLineLayerWithoutJumpOffset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "HighestJumpPosYForLineLayerWithoutJumpOffset", 1usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (lineLayer))? };
         Ok(__cordl_ret.into())
@@ -269,24 +295,27 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnMovementData {
         >,
         rightVec: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::IJumpOffsetYProvider,
-                    >,
-                    crate::UnityEngine::Vector3,
-                ),
-                quest_hook::libil2cpp::Void,
-                3usize,
-            >("Init")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(), "Init", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IJumpOffsetYProvider,
+                            >,
+                            crate::UnityEngine::Vector3,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("Init")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Init", 3usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -304,14 +333,17 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnMovementData {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -321,14 +353,21 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnMovementData {
     pub fn get_centerPos(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::UnityEngine::Vector3, 0usize>("get_centerPos")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(), "get_centerPos", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Vector3,
+                        0usize,
+                    >("get_centerPos")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_centerPos", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
             method.invoke_unchecked(self, ())?
@@ -336,42 +375,49 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnMovementData {
         Ok(__cordl_ret.into())
     }
     pub fn get_maxHalfJumpDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_maxHalfJumpDistance")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(), "get_maxHalfJumpDistance",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_maxHalfJumpDistance")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_maxHalfJumpDistance", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_noteLinesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), i32, 0usize>("get_noteLinesCount")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(), "get_noteLinesCount", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), i32, 0usize>("get_noteLinesCount")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_noteLinesCount", 0usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_noteLinesDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_noteLinesDistance")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(), "get_noteLinesDistance",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_noteLinesDistance")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_noteLinesDistance", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -379,29 +425,33 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnMovementData {
     pub fn get_startHalfJumpDurationInBeats(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_startHalfJumpDurationInBeats")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_startHalfJumpDurationInBeats", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_startHalfJumpDurationInBeats")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_startHalfJumpDurationInBeats", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_verticalLayersDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_verticalLayersDistance")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_verticalLayersDistance", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_verticalLayersDistance")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_verticalLayersDistance", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

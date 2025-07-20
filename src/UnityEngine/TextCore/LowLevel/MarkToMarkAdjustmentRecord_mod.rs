@@ -109,19 +109,21 @@ impl crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::TextCore::LowLevel::GlyphAnchorPoint,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::TextCore::LowLevel::GlyphAnchorPoint,
-                0usize,
-            >("get_baseMarkGlyphAnchorPoint")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "get_baseMarkGlyphAnchorPoint", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::TextCore::LowLevel::GlyphAnchorPoint,
+                        0usize,
+                    >("get_baseMarkGlyphAnchorPoint")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_baseMarkGlyphAnchorPoint", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::GlyphAnchorPoint = unsafe {
             method.invoke_unchecked(self, ())?
@@ -129,29 +131,33 @@ impl crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord {
         Ok(__cordl_ret.into())
     }
     pub fn get_baseMarkGlyphID(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), u32, 0usize>("get_baseMarkGlyphID")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord
-                    as quest_hook::libil2cpp::Type > ::class(), "get_baseMarkGlyphID",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), u32, 0usize>("get_baseMarkGlyphID")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_baseMarkGlyphID", 0usize
+                        )
+                    })
             });
         let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_combiningMarkGlyphID(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), u32, 0usize>("get_combiningMarkGlyphID")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "get_combiningMarkGlyphID", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), u32, 0usize>("get_combiningMarkGlyphID")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_combiningMarkGlyphID", 0usize
+                        )
+                    })
             });
         let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -161,19 +167,21 @@ impl crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment,
-                0usize,
-            >("get_combiningMarkPositionAdjustment")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "get_combiningMarkPositionAdjustment", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment,
+                        0usize,
+                    >("get_combiningMarkPositionAdjustment")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_combiningMarkPositionAdjustment", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment = unsafe {
             method.invoke_unchecked(self, ())?

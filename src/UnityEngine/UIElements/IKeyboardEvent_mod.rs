@@ -45,14 +45,17 @@ impl crate::UnityEngine::UIElements::IKeyboardEvent {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_character(&mut self) -> quest_hook::libil2cpp::Result<char> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IKeyboardEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), char, 0usize>("get_character")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::IKeyboardEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_character", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), char, 0usize>("get_character")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_character", 0usize
+                        )
+                    })
             });
         let __cordl_ret: char = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -60,14 +63,21 @@ impl crate::UnityEngine::UIElements::IKeyboardEvent {
     pub fn get_keyCode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::KeyCode> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IKeyboardEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::UnityEngine::KeyCode, 0usize>("get_keyCode")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::IKeyboardEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_keyCode", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::KeyCode,
+                        0usize,
+                    >("get_keyCode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_keyCode", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::KeyCode = unsafe {
             method.invoke_unchecked(self, ())?
@@ -77,18 +87,21 @@ impl crate::UnityEngine::UIElements::IKeyboardEvent {
     pub fn get_modifiers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::EventModifiers> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IKeyboardEvent as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::UnityEngine::EventModifiers,
-                0usize,
-            >("get_modifiers")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::UIElements::IKeyboardEvent as
-                    quest_hook::libil2cpp::Type > ::class(), "get_modifiers", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::EventModifiers,
+                        0usize,
+                    >("get_modifiers")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_modifiers", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::EventModifiers = unsafe {
             method.invoke_unchecked(self, ())?

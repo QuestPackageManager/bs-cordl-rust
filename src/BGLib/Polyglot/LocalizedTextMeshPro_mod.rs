@@ -46,18 +46,21 @@ impl crate::BGLib::Polyglot::LocalizedTextMeshPro {
     pub fn IsAlignmentLeft(
         alignment: crate::TMPro::TextAlignmentOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::Polyglot::LocalizedTextMeshPro as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::TMPro::TextAlignmentOptions),
-                bool,
-                1usize,
-            >("IsAlignmentLeft")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BGLib::Polyglot::LocalizedTextMeshPro as
-                    quest_hook::libil2cpp::Type > ::class(), "IsAlignmentLeft", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::TMPro::TextAlignmentOptions),
+                        bool,
+                        1usize,
+                    >("IsAlignmentLeft")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsAlignmentLeft", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (alignment))? };
         Ok(__cordl_ret.into())
@@ -65,18 +68,21 @@ impl crate::BGLib::Polyglot::LocalizedTextMeshPro {
     pub fn IsAlignmentRight(
         alignment: crate::TMPro::TextAlignmentOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::Polyglot::LocalizedTextMeshPro as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::TMPro::TextAlignmentOptions),
-                bool,
-                1usize,
-            >("IsAlignmentRight")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BGLib::Polyglot::LocalizedTextMeshPro as
-                    quest_hook::libil2cpp::Type > ::class(), "IsAlignmentRight", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::TMPro::TextAlignmentOptions),
+                        bool,
+                        1usize,
+                    >("IsAlignmentRight")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsAlignmentRight", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (alignment))? };
         Ok(__cordl_ret.into())
@@ -85,22 +91,24 @@ impl crate::BGLib::Polyglot::LocalizedTextMeshPro {
         alignment: crate::TMPro::TextAlignmentOptions,
         direction: crate::BGLib::Polyglot::LanguageDirection,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::Polyglot::LocalizedTextMeshPro as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::TMPro::TextAlignmentOptions,
-                    crate::BGLib::Polyglot::LanguageDirection,
-                ),
-                bool,
-                2usize,
-            >("IsOppositeDirection")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BGLib::Polyglot::LocalizedTextMeshPro as
-                    quest_hook::libil2cpp::Type > ::class(), "IsOppositeDirection",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::TMPro::TextAlignmentOptions,
+                            crate::BGLib::Polyglot::LanguageDirection,
+                        ),
+                        bool,
+                        2usize,
+                    >("IsOppositeDirection")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsOppositeDirection", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (alignment, direction))?
@@ -119,21 +127,26 @@ impl crate::BGLib::Polyglot::LocalizedTextMeshPro {
         text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::Polyglot::LocalizedTextMeshPro as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("SetText")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BGLib::Polyglot::LocalizedTextMeshPro as
-                    quest_hook::libil2cpp::Type > ::class(), "SetText", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetText")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetText", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (text, value))?
@@ -145,21 +158,24 @@ impl crate::BGLib::Polyglot::LocalizedTextMeshPro {
         text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
         direction: crate::BGLib::Polyglot::LanguageDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::Polyglot::LocalizedTextMeshPro as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
-                    crate::BGLib::Polyglot::LanguageDirection,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("UpdateAlignment")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BGLib::Polyglot::LocalizedTextMeshPro as
-                    quest_hook::libil2cpp::Type > ::class(), "UpdateAlignment", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
+                            crate::BGLib::Polyglot::LanguageDirection,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("UpdateAlignment")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "UpdateAlignment", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (text, direction))?
@@ -169,14 +185,17 @@ impl crate::BGLib::Polyglot::LocalizedTextMeshPro {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::Polyglot::LocalizedTextMeshPro as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BGLib::Polyglot::LocalizedTextMeshPro as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?

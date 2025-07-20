@@ -113,37 +113,40 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::LightRotationEventBox as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::BeatmapSaveDataVersion3::IndexFilter,
-                    >,
-                    f32,
-                    crate::BeatmapSaveDataCommon::DistributionParamType,
-                    f32,
-                    crate::BeatmapSaveDataCommon::DistributionParamType,
-                    bool,
-                    crate::BeatmapSaveDataCommon::EaseType,
-                    crate::BeatmapSaveDataCommon::Axis,
-                    bool,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::List_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
                             quest_hook::libil2cpp::Gc<
-                                crate::BeatmapSaveDataVersion3::LightRotationBaseData,
+                                crate::BeatmapSaveDataVersion3::IndexFilter,
                             >,
-                        >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                10usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::LightRotationEventBox as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 10usize
-                )
+                            f32,
+                            crate::BeatmapSaveDataCommon::DistributionParamType,
+                            f32,
+                            crate::BeatmapSaveDataCommon::DistributionParamType,
+                            bool,
+                            crate::BeatmapSaveDataCommon::EaseType,
+                            crate::BeatmapSaveDataCommon::Axis,
+                            bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::BeatmapSaveDataVersion3::LightRotationBaseData,
+                                    >,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        10usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 10usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -168,14 +171,21 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
     pub fn get_axis(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::Axis> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::LightRotationEventBox as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), crate::BeatmapSaveDataCommon::Axis, 0usize>("get_axis")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::LightRotationEventBox as
-                    quest_hook::libil2cpp::Type > ::class(), "get_axis", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::BeatmapSaveDataCommon::Axis,
+                        0usize,
+                    >("get_axis")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_axis", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::BeatmapSaveDataCommon::Axis = unsafe {
             method.invoke_unchecked(self, ())?
@@ -183,14 +193,17 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
         Ok(__cordl_ret.into())
     }
     pub fn get_flipRotation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::LightRotationEventBox as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_flipRotation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::LightRotationEventBox as
-                    quest_hook::libil2cpp::Type > ::class(), "get_flipRotation", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_flipRotation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_flipRotation", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -206,25 +219,27 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::LightRotationEventBox as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IReadOnlyList_1<
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
                         quest_hook::libil2cpp::Gc<
-                            crate::BeatmapSaveDataVersion3::LightRotationBaseData,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::LightRotationBaseData,
+                                >,
+                            >,
                         >,
-                    >,
-                >,
-                0usize,
-            >("get_lightRotationBaseDataList")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::LightRotationEventBox as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_lightRotationBaseDataList", 0usize
-                )
+                        0usize,
+                    >("get_lightRotationBaseDataList")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_lightRotationBaseDataList", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
@@ -238,19 +253,21 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
     pub fn get_rotationDistributionEaseType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::EaseType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::LightRotationEventBox as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::BeatmapSaveDataCommon::EaseType,
-                0usize,
-            >("get_rotationDistributionEaseType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::LightRotationEventBox as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_rotationDistributionEaseType", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::BeatmapSaveDataCommon::EaseType,
+                        0usize,
+                    >("get_rotationDistributionEaseType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_rotationDistributionEaseType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::BeatmapSaveDataCommon::EaseType = unsafe {
             method.invoke_unchecked(self, ())?
@@ -260,15 +277,17 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
     pub fn get_rotationDistributionParam(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::LightRotationEventBox as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), f32, 0usize>("get_rotationDistributionParam")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::LightRotationEventBox as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_rotationDistributionParam", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), f32, 0usize>("get_rotationDistributionParam")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_rotationDistributionParam", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -278,19 +297,21 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
     ) -> quest_hook::libil2cpp::Result<
         crate::BeatmapSaveDataCommon::DistributionParamType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::LightRotationEventBox as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::BeatmapSaveDataCommon::DistributionParamType,
-                0usize,
-            >("get_rotationDistributionParamType")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::LightRotationEventBox as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_rotationDistributionParamType", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::BeatmapSaveDataCommon::DistributionParamType,
+                        0usize,
+                    >("get_rotationDistributionParamType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_rotationDistributionParamType", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::BeatmapSaveDataCommon::DistributionParamType = unsafe {
             method.invoke_unchecked(self, ())?
@@ -300,19 +321,22 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
     pub fn get_rotationDistributionShouldAffectFirstBaseEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::LightRotationEventBox as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                bool,
-                0usize,
-            >("get_rotationDistributionShouldAffectFirstBaseEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatmapSaveDataVersion3::LightRotationEventBox as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_rotationDistributionShouldAffectFirstBaseEvent", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("get_rotationDistributionShouldAffectFirstBaseEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "get_rotationDistributionShouldAffectFirstBaseEvent", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

@@ -49,26 +49,28 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureConfigurationExtensions {
             crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRMixedRealityCaptureConfigurationExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("ApplyTo")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::OVRMixedRealityCaptureConfigurationExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "ApplyTo", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("ApplyTo")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ApplyTo", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (dest, source))?
@@ -83,26 +85,28 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureConfigurationExtensions {
             crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRMixedRealityCaptureConfigurationExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
-                    >,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
-                    >,
-                ),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >("ReadFrom")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate
-                    ::GlobalNamespace::OVRMixedRealityCaptureConfigurationExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "ReadFrom", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("ReadFrom")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ReadFrom", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked((), (dest, source))?

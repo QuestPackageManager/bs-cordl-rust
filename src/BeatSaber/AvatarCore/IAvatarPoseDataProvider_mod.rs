@@ -45,21 +45,25 @@ impl crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
             crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("add_poseDidChangeEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatSaber::AvatarCore::IAvatarPoseDataProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "add_poseDidChangeEvent",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<
+                                crate::BeatSaber::AvatarCore::AvatarPoseData,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("add_poseDidChangeEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "add_poseDidChangeEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?
@@ -74,18 +78,21 @@ impl crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
     pub fn get_currentPose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::AvatarCore::AvatarPoseData> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::BeatSaber::AvatarCore::AvatarPoseData,
-                0usize,
-            >("get_currentPose")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatSaber::AvatarCore::IAvatarPoseDataProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "get_currentPose", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::BeatSaber::AvatarCore::AvatarPoseData,
+                        0usize,
+                    >("get_currentPose")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_currentPose", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::BeatSaber::AvatarCore::AvatarPoseData = unsafe {
             method.invoke_unchecked(self, ())?
@@ -98,21 +105,25 @@ impl crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
             crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("remove_poseDidChangeEvent")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatSaber::AvatarCore::IAvatarPoseDataProvider as
-                    quest_hook::libil2cpp::Type > ::class(), "remove_poseDidChangeEvent",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<
+                                crate::BeatSaber::AvatarCore::AvatarPoseData,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("remove_poseDidChangeEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "remove_poseDidChangeEvent", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (value))?

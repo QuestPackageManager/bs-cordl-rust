@@ -45,26 +45,29 @@ impl crate::BeatSaber::RecPlay::PoseSampler {
         _cordl_time: f32,
         nearest: i32,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::RecPlay::FrameSample> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::RecPlay::PoseSampler as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
-                            crate::BeatSaber::RecPlay::PoseFrame,
-                        >,
-                    >,
-                    f32,
-                    i32,
-                ),
-                crate::BeatSaber::RecPlay::FrameSample,
-                3usize,
-            >("FindPoseSample")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatSaber::RecPlay::PoseSampler as
-                    quest_hook::libil2cpp::Type > ::class(), "FindPoseSample", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    crate::BeatSaber::RecPlay::PoseFrame,
+                                >,
+                            >,
+                            f32,
+                            i32,
+                        ),
+                        crate::BeatSaber::RecPlay::FrameSample,
+                        3usize,
+                    >("FindPoseSample")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FindPoseSample", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::BeatSaber::RecPlay::FrameSample = unsafe {
             method.invoke_unchecked((), (frames, _cordl_time, nearest))?
@@ -77,28 +80,30 @@ impl crate::BeatSaber::RecPlay::PoseSampler {
         >,
         sample: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::RecPlay::FrameSample>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::RecPlay::PoseSampler as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
-                            crate::BeatSaber::RecPlay::PoseFrame,
-                        >,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::BeatSaber::RecPlay::FrameSample,
-                    >,
-                ),
-                crate::UnityEngine::Pose,
-                2usize,
-            >("InterpolatePoseSample")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatSaber::RecPlay::PoseSampler as
-                    quest_hook::libil2cpp::Type > ::class(), "InterpolatePoseSample",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    crate::BeatSaber::RecPlay::PoseFrame,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::BeatSaber::RecPlay::FrameSample,
+                            >,
+                        ),
+                        crate::UnityEngine::Pose,
+                        2usize,
+                    >("InterpolatePoseSample")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "InterpolatePoseSample", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Pose = unsafe {
             method.invoke_unchecked((), (frames, sample))?
@@ -112,26 +117,29 @@ impl crate::BeatSaber::RecPlay::PoseSampler {
         _cordl_time: f32,
         nearest: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::RecPlay::PoseSampler as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        quest_hook::libil2cpp::Il2CppArray<
-                            crate::BeatSaber::RecPlay::PoseFrame,
-                        >,
-                    >,
-                    f32,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                crate::UnityEngine::Pose,
-                3usize,
-            >("SamplePose")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::BeatSaber::RecPlay::PoseSampler as
-                    quest_hook::libil2cpp::Type > ::class(), "SamplePose", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    crate::BeatSaber::RecPlay::PoseFrame,
+                                >,
+                            >,
+                            f32,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        crate::UnityEngine::Pose,
+                        3usize,
+                    >("SamplePose")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SamplePose", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Pose = unsafe {
             method.invoke_unchecked((), (frames, _cordl_time, nearest))?

@@ -224,42 +224,32 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IFactory_11<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TParam7,
-            TParam8,
-            TParam9,
-            TParam10,
-            TValue,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    TParam1,
-                    TParam2,
-                    TParam3,
-                    TParam4,
-                    TParam5,
-                    TParam6,
-                    TParam7,
-                    TParam8,
-                    TParam9,
-                    TParam10,
-                ),
-                TValue,
-                10usize,
-            >("Create")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::IFactory_11 < TParam1, TParam2, TParam3, TParam4,
-                    TParam5, TParam6, TParam7, TParam8, TParam9, TParam10, TValue > as
-                    quest_hook::libil2cpp::Type > ::class(), "Create", 10usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            TParam1,
+                            TParam2,
+                            TParam3,
+                            TParam4,
+                            TParam5,
+                            TParam6,
+                            TParam7,
+                            TParam8,
+                            TParam9,
+                            TParam10,
+                        ),
+                        TValue,
+                        10usize,
+                    >("Create")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Create", 10usize
+                        )
+                    })
             });
         let __cordl_ret: TValue = unsafe {
             method

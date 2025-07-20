@@ -144,35 +144,31 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactorySubContainerBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_5<
-                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                        TParam1,
-                        TParam2,
-                        TParam3,
-                        TParam4,
-                    >,
-                >),
-                quest_hook::libil2cpp::Gc<
-                    crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-                >,
-                1usize,
-            >("ByMethod")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactorySubContainerBinder_5 < TParam1, TParam2,
-                    TParam3, TParam4, TContract > as quest_hook::libil2cpp::Type >
-                    ::class(), "ByMethod", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_5<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+                        >,
+                        1usize,
+                    >("ByMethod")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ByMethod", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -207,35 +203,31 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactorySubContainerBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Action_5<
-                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                        TParam1,
-                        TParam2,
-                        TParam3,
-                        TParam4,
-                    >,
-                >),
-                quest_hook::libil2cpp::Gc<
-                    crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
-                >,
-                1usize,
-            >("ByNewGameObjectMethod")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactorySubContainerBinder_5 < TParam1, TParam2,
-                    TParam3, TParam4, TContract > as quest_hook::libil2cpp::Type >
-                    ::class(), "ByNewGameObjectMethod", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_5<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+                        >,
+                        1usize,
+                    >("ByNewGameObjectMethod")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ByNewGameObjectMethod", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -271,38 +263,34 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactorySubContainerBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Action_5<
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Action_5<
+                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                                    TParam1,
+                                    TParam2,
+                                    TParam3,
+                                    TParam4,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
                         >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
-                >,
-                2usize,
-            >("ByNewPrefabMethod")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactorySubContainerBinder_5 < TParam1, TParam2,
-                    TParam3, TParam4, TContract > as quest_hook::libil2cpp::Type >
-                    ::class(), "ByNewPrefabMethod", 2usize
-                )
+                        2usize,
+                    >("ByNewPrefabMethod")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ByNewPrefabMethod", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -338,38 +326,36 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactorySubContainerBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Action_5<
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Action_5<
+                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                                    TParam1,
+                                    TParam2,
+                                    TParam3,
+                                    TParam4,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
                         >,
-                    >,
-                ),
-                quest_hook::libil2cpp::Gc<
-                    crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
-                >,
-                2usize,
-            >("ByNewPrefabResourceMethod")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactorySubContainerBinder_5 < TParam1, TParam2,
-                    TParam3, TParam4, TContract > as quest_hook::libil2cpp::Type >
-                    ::class(), "ByNewPrefabResourceMethod", 2usize
-                )
+                        2usize,
+                    >("ByNewPrefabResourceMethod")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ByNewPrefabResourceMethod", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -422,30 +408,28 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactorySubContainerBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
-        > as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                    quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
-                    quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Zenject::FactorySubContainerBinder_5 < TParam1, TParam2,
-                    TParam3, TParam4, TContract > as quest_hook::libil2cpp::Type >
-                    ::class(), ".ctor", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method

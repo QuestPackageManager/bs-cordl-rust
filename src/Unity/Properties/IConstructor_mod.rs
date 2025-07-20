@@ -46,19 +46,21 @@ impl crate::Unity::Properties::IConstructor {
     pub fn get_InstantiationKind(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Properties::InstantiationKind> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::IConstructor as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::Unity::Properties::InstantiationKind,
-                0usize,
-            >("get_InstantiationKind")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::Unity::Properties::IConstructor as
-                    quest_hook::libil2cpp::Type > ::class(), "get_InstantiationKind",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::Unity::Properties::InstantiationKind,
+                        0usize,
+                    >("get_InstantiationKind")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_InstantiationKind", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::Unity::Properties::InstantiationKind = unsafe {
             method.invoke_unchecked(self, ())?

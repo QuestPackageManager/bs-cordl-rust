@@ -42,18 +42,21 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
     pub fn Direction(
         cutDirection: crate::GlobalNamespace::NoteCutDirection,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteCutDirectionExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::NoteCutDirection),
-                crate::UnityEngine::Vector2,
-                1usize,
-            >("Direction")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteCutDirectionExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "Direction", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::NoteCutDirection),
+                        crate::UnityEngine::Vector2,
+                        1usize,
+                    >("Direction")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Direction", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
             method.invoke_unchecked((), (cutDirection))?
@@ -63,18 +66,21 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
     pub fn IsMainDirection(
         cutDirection: crate::GlobalNamespace::NoteCutDirection,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteCutDirectionExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::NoteCutDirection),
-                bool,
-                1usize,
-            >("IsMainDirection")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteCutDirectionExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "IsMainDirection", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::NoteCutDirection),
+                        bool,
+                        1usize,
+                    >("IsMainDirection")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsMainDirection", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (cutDirection))? };
         Ok(__cordl_ret.into())
@@ -83,21 +89,24 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
         noteCutDirection1: crate::GlobalNamespace::NoteCutDirection,
         noteCutDirection2: crate::GlobalNamespace::NoteCutDirection,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteCutDirectionExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::GlobalNamespace::NoteCutDirection,
-                    crate::GlobalNamespace::NoteCutDirection,
-                ),
-                bool,
-                2usize,
-            >("IsOnSamePlane")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteCutDirectionExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "IsOnSamePlane", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::NoteCutDirection,
+                            crate::GlobalNamespace::NoteCutDirection,
+                        ),
+                        bool,
+                        2usize,
+                    >("IsOnSamePlane")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsOnSamePlane", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (noteCutDirection1, noteCutDirection2))?
@@ -107,19 +116,21 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
     pub fn MainNoteCutDirectionFromCutDirAngle(
         angle: f32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutDirection> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteCutDirectionExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (f32),
-                crate::GlobalNamespace::NoteCutDirection,
-                1usize,
-            >("MainNoteCutDirectionFromCutDirAngle")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteCutDirectionExtensions as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "MainNoteCutDirectionFromCutDirAngle", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (f32),
+                        crate::GlobalNamespace::NoteCutDirection,
+                        1usize,
+                    >("MainNoteCutDirectionFromCutDirAngle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "MainNoteCutDirectionFromCutDirAngle", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = unsafe {
             method.invoke_unchecked((), (angle))?
@@ -129,18 +140,21 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
     pub fn Mirrored(
         cutDirection: crate::GlobalNamespace::NoteCutDirection,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutDirection> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteCutDirectionExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::NoteCutDirection),
-                crate::GlobalNamespace::NoteCutDirection,
-                1usize,
-            >("Mirrored")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteCutDirectionExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "Mirrored", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::NoteCutDirection),
+                        crate::GlobalNamespace::NoteCutDirection,
+                        1usize,
+                    >("Mirrored")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Mirrored", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = unsafe {
             method.invoke_unchecked((), (cutDirection))?
@@ -150,19 +164,21 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
     pub fn NoteCutDirectionFromDirection(
         direction: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutDirection> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteCutDirectionExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Vector3),
-                crate::GlobalNamespace::NoteCutDirection,
-                1usize,
-            >("NoteCutDirectionFromDirection")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteCutDirectionExtensions as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "NoteCutDirectionFromDirection", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Vector3),
+                        crate::GlobalNamespace::NoteCutDirection,
+                        1usize,
+                    >("NoteCutDirectionFromDirection")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NoteCutDirectionFromDirection", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = unsafe {
             method.invoke_unchecked((), (direction))?
@@ -172,18 +188,21 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
     pub fn Opposite(
         cutDirection: crate::GlobalNamespace::NoteCutDirection,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutDirection> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteCutDirectionExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::NoteCutDirection),
-                crate::GlobalNamespace::NoteCutDirection,
-                1usize,
-            >("Opposite")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteCutDirectionExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "Opposite", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::NoteCutDirection),
+                        crate::GlobalNamespace::NoteCutDirection,
+                        1usize,
+                    >("Opposite")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Opposite", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = unsafe {
             method.invoke_unchecked((), (cutDirection))?
@@ -194,18 +213,21 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
         cutDirection: crate::GlobalNamespace::NoteCutDirection,
         offset: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteCutDirectionExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::NoteCutDirection, f32),
-                crate::UnityEngine::Quaternion,
-                2usize,
-            >("Rotation")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteCutDirectionExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "Rotation", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::NoteCutDirection, f32),
+                        crate::UnityEngine::Quaternion,
+                        2usize,
+                    >("Rotation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Rotation", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
             method.invoke_unchecked((), (cutDirection, offset))?
@@ -215,18 +237,21 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
     pub fn RotationAngle(
         cutDirection: crate::GlobalNamespace::NoteCutDirection,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteCutDirectionExtensions as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::NoteCutDirection),
-                f32,
-                1usize,
-            >("RotationAngle")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::NoteCutDirectionExtensions as
-                    quest_hook::libil2cpp::Type > ::class(), "RotationAngle", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::NoteCutDirection),
+                        f32,
+                        1usize,
+                    >("RotationAngle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "RotationAngle", 1usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (cutDirection))? };
         Ok(__cordl_ret.into())

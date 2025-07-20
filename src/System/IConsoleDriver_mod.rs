@@ -42,14 +42,21 @@ impl crate::System::IConsoleDriver {
         &mut self,
         intercept: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::ConsoleKeyInfo> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IConsoleDriver as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(bool), crate::System::ConsoleKeyInfo, 1usize>("ReadKey")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IConsoleDriver as quest_hook::libil2cpp::Type >
-                    ::class(), "ReadKey", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (bool),
+                        crate::System::ConsoleKeyInfo,
+                        1usize,
+                    >("ReadKey")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ReadKey", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::ConsoleKeyInfo = unsafe {
             method.invoke_unchecked(self, (intercept))?

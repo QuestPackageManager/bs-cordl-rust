@@ -43,18 +43,21 @@ impl crate::LufsMetering::AudioJobHelpers {
         frequency: f32,
         rate: f32,
     ) -> quest_hook::libil2cpp::Result<crate::LufsMetering::FilterCoefficients> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LufsMetering::AudioJobHelpers as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (f32, f32, f32),
-                crate::LufsMetering::FilterCoefficients,
-                3usize,
-            >("GetHighPassDeManCoefficients")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LufsMetering::AudioJobHelpers as quest_hook::libil2cpp::Type
-                    > ::class(), "GetHighPassDeManCoefficients", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (f32, f32, f32),
+                        crate::LufsMetering::FilterCoefficients,
+                        3usize,
+                    >("GetHighPassDeManCoefficients")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetHighPassDeManCoefficients", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::LufsMetering::FilterCoefficients = unsafe {
             method.invoke_unchecked((), (quality, frequency, rate))?
@@ -67,18 +70,21 @@ impl crate::LufsMetering::AudioJobHelpers {
         frequency: f32,
         rate: f32,
     ) -> quest_hook::libil2cpp::Result<crate::LufsMetering::FilterCoefficients> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LufsMetering::AudioJobHelpers as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (f32, f32, f32, f32),
-                crate::LufsMetering::FilterCoefficients,
-                4usize,
-            >("GetHighShelfDeManCoefficients")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::LufsMetering::AudioJobHelpers as quest_hook::libil2cpp::Type
-                    > ::class(), "GetHighShelfDeManCoefficients", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (f32, f32, f32, f32),
+                        crate::LufsMetering::FilterCoefficients,
+                        4usize,
+                    >("GetHighShelfDeManCoefficients")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetHighShelfDeManCoefficients", 4usize
+                        )
+                    })
             });
         let __cordl_ret: crate::LufsMetering::FilterCoefficients = unsafe {
             method.invoke_unchecked((), (gain, quality, frequency, rate))?

@@ -39,15 +39,21 @@ impl std::ops::DerefMut for crate::System::Xml::BinaryCompatibility {
 #[cfg(feature = "System+Xml+BinaryCompatibility")]
 impl crate::System::Xml::BinaryCompatibility {
     pub fn get_TargetsAtLeast_Desktop_V4_5_2() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::BinaryCompatibility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), bool, 0usize>("get_TargetsAtLeast_Desktop_V4_5_2")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Xml::BinaryCompatibility as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_TargetsAtLeast_Desktop_V4_5_2", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("get_TargetsAtLeast_Desktop_V4_5_2")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_TargetsAtLeast_Desktop_V4_5_2", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())

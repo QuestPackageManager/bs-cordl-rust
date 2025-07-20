@@ -45,23 +45,26 @@ impl crate::System::Linq::Expressions::ConstantCheck {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Linq::Expressions::AnalyzeTypeIsResult,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::ConstantCheck as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Linq::Expressions::Expression,
-                    >,
-                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                ),
-                crate::System::Linq::Expressions::AnalyzeTypeIsResult,
-                2usize,
-            >("AnalyzeTypeIs")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Linq::Expressions::ConstantCheck as
-                    quest_hook::libil2cpp::Type > ::class(), "AnalyzeTypeIs", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Linq::Expressions::Expression,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        ),
+                        crate::System::Linq::Expressions::AnalyzeTypeIsResult,
+                        2usize,
+                    >("AnalyzeTypeIs")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AnalyzeTypeIs", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Linq::Expressions::AnalyzeTypeIsResult = unsafe {
             method.invoke_unchecked((), (operand, testType))?
@@ -75,20 +78,23 @@ impl crate::System::Linq::Expressions::ConstantCheck {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Linq::Expressions::AnalyzeTypeIsResult,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::ConstantCheck as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::TypeBinaryExpression,
-                >),
-                crate::System::Linq::Expressions::AnalyzeTypeIsResult,
-                1usize,
-            >("AnalyzeTypeIs")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Linq::Expressions::ConstantCheck as
-                    quest_hook::libil2cpp::Type > ::class(), "AnalyzeTypeIs", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Linq::Expressions::TypeBinaryExpression,
+                        >),
+                        crate::System::Linq::Expressions::AnalyzeTypeIsResult,
+                        1usize,
+                    >("AnalyzeTypeIs")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AnalyzeTypeIs", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Linq::Expressions::AnalyzeTypeIsResult = unsafe {
             method.invoke_unchecked((), (typeIs))?

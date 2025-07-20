@@ -46,18 +46,21 @@ impl crate::System::Runtime::InteropServices::MemoryMarshal {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::InteropServices::MemoryMarshal as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::ReadOnlySpan_1<T>),
-                crate::System::ReadOnlySpan_1<u8>,
-                1usize,
-            >("AsBytes")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Runtime::InteropServices::MemoryMarshal as
-                    quest_hook::libil2cpp::Type > ::class(), "AsBytes", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::ReadOnlySpan_1<T>),
+                        crate::System::ReadOnlySpan_1<u8>,
+                        1usize,
+                    >("AsBytes")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AsBytes", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<u8> = unsafe {
             method.invoke_unchecked((), (span))?
@@ -71,18 +74,21 @@ impl crate::System::Runtime::InteropServices::MemoryMarshal {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::InteropServices::MemoryMarshal as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::Span_1<T>),
-                crate::System::Span_1<u8>,
-                1usize,
-            >("AsBytes")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Runtime::InteropServices::MemoryMarshal as
-                    quest_hook::libil2cpp::Type > ::class(), "AsBytes", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::Span_1<T>),
+                        crate::System::Span_1<u8>,
+                        1usize,
+                    >("AsBytes")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AsBytes", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Span_1<u8> = unsafe {
             method.invoke_unchecked((), (span))?
@@ -96,18 +102,21 @@ impl crate::System::Runtime::InteropServices::MemoryMarshal {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::InteropServices::MemoryMarshal as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::ReadOnlyMemory_1<T>),
-                crate::System::Memory_1<T>,
-                1usize,
-            >("AsMemory")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Runtime::InteropServices::MemoryMarshal as
-                    quest_hook::libil2cpp::Type > ::class(), "AsMemory", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::ReadOnlyMemory_1<T>),
+                        crate::System::Memory_1<T>,
+                        1usize,
+                    >("AsMemory")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AsMemory", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Memory_1<T> = unsafe {
             method.invoke_unchecked((), (memory))?
@@ -122,18 +131,21 @@ impl crate::System::Runtime::InteropServices::MemoryMarshal {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::InteropServices::MemoryMarshal as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (quest_hook::libil2cpp::ByRefMut<T>, i32),
-                crate::System::ReadOnlySpan_1<T>,
-                2usize,
-            >("CreateReadOnlySpan")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Runtime::InteropServices::MemoryMarshal as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateReadOnlySpan", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<T>, i32),
+                        crate::System::ReadOnlySpan_1<T>,
+                        2usize,
+                    >("CreateReadOnlySpan")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateReadOnlySpan", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<T> = unsafe {
             method.invoke_unchecked((), (reference, length))?
@@ -147,19 +159,21 @@ impl crate::System::Runtime::InteropServices::MemoryMarshal {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::InteropServices::MemoryMarshal as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::ReadOnlySpan_1<T>),
-                quest_hook::libil2cpp::ByRefMut<T>,
-                1usize,
-            >("GetNonNullPinnableReference")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Runtime::InteropServices::MemoryMarshal as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "GetNonNullPinnableReference", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::ReadOnlySpan_1<T>),
+                        quest_hook::libil2cpp::ByRefMut<T>,
+                        1usize,
+                    >("GetNonNullPinnableReference")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetNonNullPinnableReference", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
             method.invoke_unchecked((), (span))?
@@ -173,19 +187,21 @@ impl crate::System::Runtime::InteropServices::MemoryMarshal {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::InteropServices::MemoryMarshal as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::Span_1<T>),
-                quest_hook::libil2cpp::ByRefMut<T>,
-                1usize,
-            >("GetNonNullPinnableReference")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Runtime::InteropServices::MemoryMarshal as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "GetNonNullPinnableReference", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::Span_1<T>),
+                        quest_hook::libil2cpp::ByRefMut<T>,
+                        1usize,
+                    >("GetNonNullPinnableReference")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetNonNullPinnableReference", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
             method.invoke_unchecked((), (span))?
@@ -199,18 +215,21 @@ impl crate::System::Runtime::InteropServices::MemoryMarshal {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::InteropServices::MemoryMarshal as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::ReadOnlySpan_1<T>),
-                quest_hook::libil2cpp::ByRefMut<T>,
-                1usize,
-            >("GetReference")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Runtime::InteropServices::MemoryMarshal as
-                    quest_hook::libil2cpp::Type > ::class(), "GetReference", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::ReadOnlySpan_1<T>),
+                        quest_hook::libil2cpp::ByRefMut<T>,
+                        1usize,
+                    >("GetReference")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetReference", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
             method.invoke_unchecked((), (span))?
@@ -224,18 +243,21 @@ impl crate::System::Runtime::InteropServices::MemoryMarshal {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::InteropServices::MemoryMarshal as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::System::Span_1<T>),
-                quest_hook::libil2cpp::ByRefMut<T>,
-                1usize,
-            >("GetReference")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Runtime::InteropServices::MemoryMarshal as
-                    quest_hook::libil2cpp::Type > ::class(), "GetReference", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::System::Span_1<T>),
+                        quest_hook::libil2cpp::ByRefMut<T>,
+                        1usize,
+                    >("GetReference")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetReference", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
             method.invoke_unchecked((), (span))?
@@ -250,21 +272,26 @@ impl crate::System::Runtime::InteropServices::MemoryMarshal {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::InteropServices::MemoryMarshal as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlyMemory_1<T>,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::ArraySegment_1<T>>,
-                ),
-                bool,
-                2usize,
-            >("TryGetArray")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Runtime::InteropServices::MemoryMarshal as
-                    quest_hook::libil2cpp::Type > ::class(), "TryGetArray", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlyMemory_1<T>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::ArraySegment_1<T>,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("TryGetArray")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryGetArray", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (memory, segment))?

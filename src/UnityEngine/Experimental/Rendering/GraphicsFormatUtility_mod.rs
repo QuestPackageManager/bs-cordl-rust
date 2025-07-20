@@ -44,19 +44,21 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     pub fn CanDecompressFormat_GraphicsFormat1(
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
-                bool,
-                1usize,
-            >("CanDecompressFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(), "CanDecompressFormat",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
+                        bool,
+                        1usize,
+                    >("CanDecompressFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CanDecompressFormat", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
         Ok(__cordl_ret.into())
@@ -65,19 +67,24 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
         wholeImage: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Experimental::Rendering::GraphicsFormat, bool),
-                bool,
-                2usize,
-            >("CanDecompressFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(), "CanDecompressFormat",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                            bool,
+                        ),
+                        bool,
+                        2usize,
+                    >("CanDecompressFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CanDecompressFormat", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (format, wholeImage))?
@@ -87,18 +94,21 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     pub fn GetDepthBits(
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
-                i32,
-                1usize,
-            >("GetDepthBits")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(), "GetDepthBits", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
+                        i32,
+                        1usize,
+                    >("GetDepthBits")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDepthBits", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (format))? };
         Ok(__cordl_ret.into())
@@ -108,19 +118,22 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i32),
-                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                1usize,
-            >("GetDepthStencilFormatFromBitsLegacy_Native")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "GetDepthStencilFormatFromBitsLegacy_Native", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32),
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        1usize,
+                    >("GetDepthStencilFormatFromBitsLegacy_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDepthStencilFormatFromBitsLegacy_Native",
+                            1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
             method.invoke_unchecked((), (minimumDepthBits))?
@@ -132,19 +145,21 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i32),
-                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                1usize,
-            >("GetDepthStencilFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(), "GetDepthStencilFormat",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32),
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        1usize,
+                    >("GetDepthStencilFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDepthStencilFormat", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
             method.invoke_unchecked((), (minimumDepthBits))?
@@ -157,19 +172,21 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i32, i32),
-                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                2usize,
-            >("GetDepthStencilFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(), "GetDepthStencilFormat",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32, i32),
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        2usize,
+                    >("GetDepthStencilFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetDepthStencilFormat", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
             method.invoke_unchecked((), (minimumDepthBits, minimumStencilBits))?
@@ -182,19 +199,22 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::RenderTextureFormat, bool),
-                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                2usize,
-            >("GetGraphicsFormat_Native_RenderTextureFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "GetGraphicsFormat_Native_RenderTextureFormat", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::RenderTextureFormat, bool),
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        2usize,
+                    >("GetGraphicsFormat_Native_RenderTextureFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(),
+                            "GetGraphicsFormat_Native_RenderTextureFormat", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
             method.invoke_unchecked((), (format, isSRGB))?
@@ -207,19 +227,22 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::TextureFormat, bool),
-                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                2usize,
-            >("GetGraphicsFormat_Native_TextureFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "GetGraphicsFormat_Native_TextureFormat", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::TextureFormat, bool),
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        2usize,
+                    >("GetGraphicsFormat_Native_TextureFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetGraphicsFormat_Native_TextureFormat",
+                            2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
             method.invoke_unchecked((), (format, isSRGB))?
@@ -232,22 +255,24 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::UnityEngine::RenderTextureFormat,
-                    crate::UnityEngine::RenderTextureReadWrite,
-                ),
-                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                2usize,
-            >("GetGraphicsFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(), "GetGraphicsFormat",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::RenderTextureFormat,
+                            crate::UnityEngine::RenderTextureReadWrite,
+                        ),
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        2usize,
+                    >("GetGraphicsFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetGraphicsFormat", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
             method.invoke_unchecked((), (format, readWrite))?
@@ -260,19 +285,21 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::RenderTextureFormat, bool),
-                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                2usize,
-            >("GetGraphicsFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(), "GetGraphicsFormat",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::RenderTextureFormat, bool),
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        2usize,
+                    >("GetGraphicsFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetGraphicsFormat", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
             method.invoke_unchecked((), (format, isSRGB))?
@@ -285,19 +312,21 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::TextureFormat, bool),
-                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                2usize,
-            >("GetGraphicsFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(), "GetGraphicsFormat",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::TextureFormat, bool),
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        2usize,
+                    >("GetGraphicsFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetGraphicsFormat", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
             method.invoke_unchecked((), (format, isSRGB))?
@@ -309,18 +338,21 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
-                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                1usize,
-            >("GetLinearFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(), "GetLinearFormat", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        1usize,
+                    >("GetLinearFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetLinearFormat", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
             method.invoke_unchecked((), (format))?
@@ -330,19 +362,21 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     pub fn GetRenderTextureFormat(
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RenderTextureFormat> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
-                crate::UnityEngine::RenderTextureFormat,
-                1usize,
-            >("GetRenderTextureFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(), "GetRenderTextureFormat",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
+                        crate::UnityEngine::RenderTextureFormat,
+                        1usize,
+                    >("GetRenderTextureFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetRenderTextureFormat", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::RenderTextureFormat = unsafe {
             method.invoke_unchecked((), (format))?
@@ -354,18 +388,21 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
-                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                1usize,
-            >("GetSRGBFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(), "GetSRGBFormat", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        1usize,
+                    >("GetSRGBFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetSRGBFormat", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
             method.invoke_unchecked((), (format))?
@@ -375,19 +412,21 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     pub fn IsCompressedFormat(
         format: crate::UnityEngine::TextureFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::TextureFormat),
-                bool,
-                1usize,
-            >("IsCompressedFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(), "IsCompressedFormat",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::TextureFormat),
+                        bool,
+                        1usize,
+                    >("IsCompressedFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsCompressedFormat", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
         Ok(__cordl_ret.into())
@@ -395,19 +434,22 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     pub fn IsCompressedFormat_Native_TextureFormat(
         format: crate::UnityEngine::TextureFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::TextureFormat),
-                bool,
-                1usize,
-            >("IsCompressedFormat_Native_TextureFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(),
-                    "IsCompressedFormat_Native_TextureFormat", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::TextureFormat),
+                        bool,
+                        1usize,
+                    >("IsCompressedFormat_Native_TextureFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsCompressedFormat_Native_TextureFormat",
+                            1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
         Ok(__cordl_ret.into())
@@ -415,18 +457,21 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     pub fn IsCrunchFormat(
         format: crate::UnityEngine::TextureFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::TextureFormat),
-                bool,
-                1usize,
-            >("IsCrunchFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(), "IsCrunchFormat", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::TextureFormat),
+                        bool,
+                        1usize,
+                    >("IsCrunchFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsCrunchFormat", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
         Ok(__cordl_ret.into())
@@ -434,19 +479,21 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     pub fn IsDepthStencilFormat(
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
-                bool,
-                1usize,
-            >("IsDepthStencilFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(), "IsDepthStencilFormat",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
+                        bool,
+                        1usize,
+                    >("IsDepthStencilFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsDepthStencilFormat", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
         Ok(__cordl_ret.into())
@@ -454,18 +501,21 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     pub fn IsPVRTCFormat(
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
-                bool,
-                1usize,
-            >("IsPVRTCFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(), "IsPVRTCFormat", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
+                        bool,
+                        1usize,
+                    >("IsPVRTCFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsPVRTCFormat", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
         Ok(__cordl_ret.into())
@@ -473,18 +523,21 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     pub fn IsSRGBFormat(
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
-                bool,
-                1usize,
-            >("IsSRGBFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::UnityEngine::Experimental::Rendering::GraphicsFormatUtility
-                    as quest_hook::libil2cpp::Type > ::class(), "IsSRGBFormat", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
+                        bool,
+                        1usize,
+                    >("IsSRGBFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsSRGBFormat", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
         Ok(__cordl_ret.into())

@@ -42,14 +42,21 @@ impl crate::System::IriHelper {
         unicode: char,
         isQuery: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IriHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(char, bool), bool, 2usize>("CheckIriUnicodeRange")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IriHelper as quest_hook::libil2cpp::Type > ::class(),
-                    "CheckIriUnicodeRange", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (char, bool),
+                        bool,
+                        2usize,
+                    >("CheckIriUnicodeRange")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CheckIriUnicodeRange", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (unicode, isQuery))?
@@ -62,18 +69,21 @@ impl crate::System::IriHelper {
         surrogatePair: quest_hook::libil2cpp::ByRefMut<bool>,
         isQuery: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IriHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (char, char, quest_hook::libil2cpp::ByRefMut<bool>, bool),
-                bool,
-                4usize,
-            >("CheckIriUnicodeRange")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IriHelper as quest_hook::libil2cpp::Type > ::class(),
-                    "CheckIriUnicodeRange", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (char, char, quest_hook::libil2cpp::ByRefMut<bool>, bool),
+                        bool,
+                        4usize,
+                    >("CheckIriUnicodeRange")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CheckIriUnicodeRange", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (highSurr, lowSurr, surrogatePair, isQuery))?
@@ -84,18 +94,21 @@ impl crate::System::IriHelper {
         ch: char,
         component: crate::System::UriComponents,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IriHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (char, crate::System::UriComponents),
-                bool,
-                2usize,
-            >("CheckIsReserved")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IriHelper as quest_hook::libil2cpp::Type > ::class(),
-                    "CheckIsReserved", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (char, crate::System::UriComponents),
+                        bool,
+                        2usize,
+                    >("CheckIsReserved")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CheckIsReserved", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ch, component))? };
         Ok(__cordl_ret.into())
@@ -108,23 +121,28 @@ impl crate::System::IriHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IriHelper as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    i32,
-                    i32,
-                    crate::System::UriComponents,
-                ),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                4usize,
-            >("EscapeUnescapeIri")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::IriHelper as quest_hook::libil2cpp::Type > ::class(),
-                    "EscapeUnescapeIri", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                            i32,
+                            crate::System::UriComponents,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        4usize,
+                    >("EscapeUnescapeIri")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "EscapeUnescapeIri", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,

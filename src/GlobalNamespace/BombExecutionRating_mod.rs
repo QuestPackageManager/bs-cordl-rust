@@ -56,18 +56,21 @@ impl crate::GlobalNamespace::BombExecutionRating {
         _cordl_time: f32,
         rating: crate::GlobalNamespace::BombExecutionRating_Rating,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BombExecutionRating as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (f32, crate::GlobalNamespace::BombExecutionRating_Rating),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BombExecutionRating as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (f32, crate::GlobalNamespace::BombExecutionRating_Rating),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (_cordl_time, rating))?
@@ -79,18 +82,21 @@ impl crate::GlobalNamespace::BombExecutionRating {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::BombExecutionRating_Rating,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BombExecutionRating as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::GlobalNamespace::BombExecutionRating_Rating,
-                0usize,
-            >("get_rating")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::BombExecutionRating as
-                    quest_hook::libil2cpp::Type > ::class(), "get_rating", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::GlobalNamespace::BombExecutionRating_Rating,
+                        0usize,
+                    >("get_rating")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_rating", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::GlobalNamespace::BombExecutionRating_Rating = unsafe {
             method.invoke_unchecked(self, ())?

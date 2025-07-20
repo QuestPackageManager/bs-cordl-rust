@@ -44,18 +44,21 @@ impl crate::OVR::OpenVR::CVRTrackedCamera {
         nDeviceIndex: u32,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRTrackedCameraError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (u32, quest_hook::libil2cpp::ByRefMut<u64>),
-                crate::OVR::OpenVR::EVRTrackedCameraError,
-                2usize,
-            >("AcquireVideoStreamingService")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type
-                    > ::class(), "AcquireVideoStreamingService", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (u32, quest_hook::libil2cpp::ByRefMut<u64>),
+                        crate::OVR::OpenVR::EVRTrackedCameraError,
+                        2usize,
+                    >("AcquireVideoStreamingService")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AcquireVideoStreamingService", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRTrackedCameraError = unsafe {
             method.invoke_unchecked(self, (nDeviceIndex, pHandle))?
@@ -68,18 +71,21 @@ impl crate::OVR::OpenVR::CVRTrackedCamera {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::OVR::OpenVR::EVRTrackedCameraError),
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                1usize,
-            >("GetCameraErrorNameFromEnum")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type
-                    > ::class(), "GetCameraErrorNameFromEnum", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::OVR::OpenVR::EVRTrackedCameraError),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("GetCameraErrorNameFromEnum")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetCameraErrorNameFromEnum", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -94,24 +100,27 @@ impl crate::OVR::OpenVR::CVRTrackedCamera {
         pnHeight: quest_hook::libil2cpp::ByRefMut<u32>,
         pnFrameBufferSize: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRTrackedCameraError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    u32,
-                    crate::OVR::OpenVR::EVRTrackedCameraFrameType,
-                    quest_hook::libil2cpp::ByRefMut<u32>,
-                    quest_hook::libil2cpp::ByRefMut<u32>,
-                    quest_hook::libil2cpp::ByRefMut<u32>,
-                ),
-                crate::OVR::OpenVR::EVRTrackedCameraError,
-                5usize,
-            >("GetCameraFrameSize")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type
-                    > ::class(), "GetCameraFrameSize", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            u32,
+                            crate::OVR::OpenVR::EVRTrackedCameraFrameType,
+                            quest_hook::libil2cpp::ByRefMut<u32>,
+                            quest_hook::libil2cpp::ByRefMut<u32>,
+                            quest_hook::libil2cpp::ByRefMut<u32>,
+                        ),
+                        crate::OVR::OpenVR::EVRTrackedCameraError,
+                        5usize,
+                    >("GetCameraFrameSize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetCameraFrameSize", 5usize
+                        )
+                    })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRTrackedCameraError = unsafe {
             method
@@ -129,23 +138,30 @@ impl crate::OVR::OpenVR::CVRTrackedCamera {
         pFocalLength: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
         pCenter: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRTrackedCameraError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    u32,
-                    crate::OVR::OpenVR::EVRTrackedCameraFrameType,
-                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
-                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
-                ),
-                crate::OVR::OpenVR::EVRTrackedCameraError,
-                4usize,
-            >("GetCameraIntrinsics")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type
-                    > ::class(), "GetCameraIntrinsics", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            u32,
+                            crate::OVR::OpenVR::EVRTrackedCameraFrameType,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::OVR::OpenVR::HmdVector2_t,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::OVR::OpenVR::HmdVector2_t,
+                            >,
+                        ),
+                        crate::OVR::OpenVR::EVRTrackedCameraError,
+                        4usize,
+                    >("GetCameraIntrinsics")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetCameraIntrinsics", 4usize
+                        )
+                    })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRTrackedCameraError = unsafe {
             method
@@ -164,24 +180,29 @@ impl crate::OVR::OpenVR::CVRTrackedCamera {
         flZFar: f32,
         pProjection: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix44_t>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRTrackedCameraError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    u32,
-                    crate::OVR::OpenVR::EVRTrackedCameraFrameType,
-                    f32,
-                    f32,
-                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix44_t>,
-                ),
-                crate::OVR::OpenVR::EVRTrackedCameraError,
-                5usize,
-            >("GetCameraProjection")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type
-                    > ::class(), "GetCameraProjection", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            u32,
+                            crate::OVR::OpenVR::EVRTrackedCameraFrameType,
+                            f32,
+                            f32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::OVR::OpenVR::HmdMatrix44_t,
+                            >,
+                        ),
+                        crate::OVR::OpenVR::EVRTrackedCameraError,
+                        5usize,
+                    >("GetCameraProjection")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetCameraProjection", 5usize
+                        )
+                    })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRTrackedCameraError = unsafe {
             method
@@ -203,27 +224,30 @@ impl crate::OVR::OpenVR::CVRTrackedCamera {
         >,
         nFrameHeaderSize: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRTrackedCameraError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    u64,
-                    crate::OVR::OpenVR::EVRTrackedCameraFrameType,
-                    crate::System::IntPtr,
-                    u32,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::OVR::OpenVR::CameraVideoStreamFrameHeader_t,
-                    >,
-                    u32,
-                ),
-                crate::OVR::OpenVR::EVRTrackedCameraError,
-                6usize,
-            >("GetVideoStreamFrameBuffer")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type
-                    > ::class(), "GetVideoStreamFrameBuffer", 6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            u64,
+                            crate::OVR::OpenVR::EVRTrackedCameraFrameType,
+                            crate::System::IntPtr,
+                            u32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::OVR::OpenVR::CameraVideoStreamFrameHeader_t,
+                            >,
+                            u32,
+                        ),
+                        crate::OVR::OpenVR::EVRTrackedCameraError,
+                        6usize,
+                    >("GetVideoStreamFrameBuffer")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetVideoStreamFrameBuffer", 6usize
+                        )
+                    })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRTrackedCameraError = unsafe {
             method
@@ -254,27 +278,30 @@ impl crate::OVR::OpenVR::CVRTrackedCamera {
         >,
         nFrameHeaderSize: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRTrackedCameraError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    u64,
-                    crate::OVR::OpenVR::EVRTrackedCameraFrameType,
-                    crate::System::IntPtr,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::OVR::OpenVR::CameraVideoStreamFrameHeader_t,
-                    >,
-                    u32,
-                ),
-                crate::OVR::OpenVR::EVRTrackedCameraError,
-                6usize,
-            >("GetVideoStreamTextureD3D11")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type
-                    > ::class(), "GetVideoStreamTextureD3D11", 6usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            u64,
+                            crate::OVR::OpenVR::EVRTrackedCameraFrameType,
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::OVR::OpenVR::CameraVideoStreamFrameHeader_t,
+                            >,
+                            u32,
+                        ),
+                        crate::OVR::OpenVR::EVRTrackedCameraError,
+                        6usize,
+                    >("GetVideoStreamTextureD3D11")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetVideoStreamTextureD3D11", 6usize
+                        )
+                    })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRTrackedCameraError = unsafe {
             method
@@ -302,26 +329,29 @@ impl crate::OVR::OpenVR::CVRTrackedCamera {
         >,
         nFrameHeaderSize: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRTrackedCameraError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    u64,
-                    crate::OVR::OpenVR::EVRTrackedCameraFrameType,
-                    quest_hook::libil2cpp::ByRefMut<u32>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::OVR::OpenVR::CameraVideoStreamFrameHeader_t,
-                    >,
-                    u32,
-                ),
-                crate::OVR::OpenVR::EVRTrackedCameraError,
-                5usize,
-            >("GetVideoStreamTextureGL")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type
-                    > ::class(), "GetVideoStreamTextureGL", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            u64,
+                            crate::OVR::OpenVR::EVRTrackedCameraFrameType,
+                            quest_hook::libil2cpp::ByRefMut<u32>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::OVR::OpenVR::CameraVideoStreamFrameHeader_t,
+                            >,
+                            u32,
+                        ),
+                        crate::OVR::OpenVR::EVRTrackedCameraError,
+                        5usize,
+                    >("GetVideoStreamTextureGL")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetVideoStreamTextureGL", 5usize
+                        )
+                    })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRTrackedCameraError = unsafe {
             method
@@ -348,26 +378,29 @@ impl crate::OVR::OpenVR::CVRTrackedCamera {
         pnWidth: quest_hook::libil2cpp::ByRefMut<u32>,
         pnHeight: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRTrackedCameraError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    u32,
-                    crate::OVR::OpenVR::EVRTrackedCameraFrameType,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::OVR::OpenVR::VRTextureBounds_t,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<u32>,
-                    quest_hook::libil2cpp::ByRefMut<u32>,
-                ),
-                crate::OVR::OpenVR::EVRTrackedCameraError,
-                5usize,
-            >("GetVideoStreamTextureSize")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type
-                    > ::class(), "GetVideoStreamTextureSize", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            u32,
+                            crate::OVR::OpenVR::EVRTrackedCameraFrameType,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::OVR::OpenVR::VRTextureBounds_t,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u32>,
+                            quest_hook::libil2cpp::ByRefMut<u32>,
+                        ),
+                        crate::OVR::OpenVR::EVRTrackedCameraError,
+                        5usize,
+                    >("GetVideoStreamTextureSize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetVideoStreamTextureSize", 5usize
+                        )
+                    })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRTrackedCameraError = unsafe {
             method
@@ -383,18 +416,21 @@ impl crate::OVR::OpenVR::CVRTrackedCamera {
         nDeviceIndex: u32,
         pHasCamera: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRTrackedCameraError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (u32, quest_hook::libil2cpp::ByRefMut<bool>),
-                crate::OVR::OpenVR::EVRTrackedCameraError,
-                2usize,
-            >("HasCamera")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type
-                    > ::class(), "HasCamera", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (u32, quest_hook::libil2cpp::ByRefMut<bool>),
+                        crate::OVR::OpenVR::EVRTrackedCameraError,
+                        2usize,
+                    >("HasCamera")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "HasCamera", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRTrackedCameraError = unsafe {
             method.invoke_unchecked(self, (nDeviceIndex, pHasCamera))?
@@ -415,18 +451,21 @@ impl crate::OVR::OpenVR::CVRTrackedCamera {
         hTrackedCamera: u64,
         glTextureId: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRTrackedCameraError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (u64, u32),
-                crate::OVR::OpenVR::EVRTrackedCameraError,
-                2usize,
-            >("ReleaseVideoStreamTextureGL")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type
-                    > ::class(), "ReleaseVideoStreamTextureGL", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (u64, u32),
+                        crate::OVR::OpenVR::EVRTrackedCameraError,
+                        2usize,
+                    >("ReleaseVideoStreamTextureGL")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ReleaseVideoStreamTextureGL", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRTrackedCameraError = unsafe {
             method.invoke_unchecked(self, (hTrackedCamera, glTextureId))?
@@ -437,18 +476,21 @@ impl crate::OVR::OpenVR::CVRTrackedCamera {
         &mut self,
         hTrackedCamera: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRTrackedCameraError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (u64),
-                crate::OVR::OpenVR::EVRTrackedCameraError,
-                1usize,
-            >("ReleaseVideoStreamingService")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type
-                    > ::class(), "ReleaseVideoStreamingService", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (u64),
+                        crate::OVR::OpenVR::EVRTrackedCameraError,
+                        1usize,
+                    >("ReleaseVideoStreamingService")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ReleaseVideoStreamingService", 1usize
+                        )
+                    })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRTrackedCameraError = unsafe {
             method.invoke_unchecked(self, (hTrackedCamera))?
@@ -459,18 +501,21 @@ impl crate::OVR::OpenVR::CVRTrackedCamera {
         &mut self,
         pInterface: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::IntPtr),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::OVR::OpenVR::CVRTrackedCamera as quest_hook::libil2cpp::Type
-                    > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (pInterface))?

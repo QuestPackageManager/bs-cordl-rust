@@ -58,21 +58,24 @@ impl crate::System::Globalization::TimeSpanParse {
         input: crate::System::ReadOnlySpan_1<char>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-                ),
-                crate::System::TimeSpan,
-                2usize,
-            >("Parse")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse as
-                    quest_hook::libil2cpp::Type > ::class(), "Parse", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                        ),
+                        crate::System::TimeSpan,
+                        2usize,
+                    >("Parse")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Parse", 2usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
             method.invoke_unchecked((), (input, formatProvider))?
@@ -86,24 +89,27 @@ impl crate::System::Globalization::TimeSpanParse {
         minDigitLength: i32,
         result: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer,
-                    >,
-                    i32,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                3usize,
-            >("ParseExactDigits")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse as
-                    quest_hook::libil2cpp::Type > ::class(), "ParseExactDigits", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer,
+                            >,
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        3usize,
+                    >("ParseExactDigits")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ParseExactDigits", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (tokenizer, minDigitLength, result))?
@@ -119,26 +125,29 @@ impl crate::System::Globalization::TimeSpanParse {
         zeroes: quest_hook::libil2cpp::ByRefMut<i32>,
         result: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer,
-                    >,
-                    i32,
-                    i32,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                ),
-                bool,
-                5usize,
-            >("ParseExactDigits")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse as
-                    quest_hook::libil2cpp::Type > ::class(), "ParseExactDigits", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer,
+                            >,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        5usize,
+                    >("ParseExactDigits")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ParseExactDigits", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -155,23 +164,26 @@ impl crate::System::Globalization::TimeSpanParse {
         >,
         enquotedString: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer,
-                    >,
-                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-                ),
-                bool,
-                2usize,
-            >("ParseExactLiteral")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse as
-                    quest_hook::libil2cpp::Type > ::class(), "ParseExactLiteral", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                        ),
+                        bool,
+                        2usize,
+                    >("ParseExactLiteral")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ParseExactLiteral", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (tokenizer, enquotedString))?
@@ -179,14 +191,17 @@ impl crate::System::Globalization::TimeSpanParse {
         Ok(__cordl_ret.into())
     }
     pub fn Pow10(pow: i32) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(i32), i64, 1usize>("Pow10")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse as
-                    quest_hook::libil2cpp::Type > ::class(), "Pow10", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(i32), i64, 1usize>("Pow10")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Pow10", 1usize
+                        )
+                    })
             });
         let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (pow))? };
         Ok(__cordl_ret.into())
@@ -200,27 +215,29 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
-                    >,
-                    crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                    >,
-                ),
-                bool,
-                3usize,
-            >("ProcessTerminalState")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse as
-                    quest_hook::libil2cpp::Type > ::class(), "ProcessTerminalState",
-                    3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
+                            >,
+                            crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("ProcessTerminalState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ProcessTerminalState", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (raw, style, result))?
@@ -236,26 +253,29 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
-                    >,
-                    crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                    >,
-                ),
-                bool,
-                3usize,
-            >("ProcessTerminal_D")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse as
-                    quest_hook::libil2cpp::Type > ::class(), "ProcessTerminal_D", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
+                            >,
+                            crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("ProcessTerminal_D")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ProcessTerminal_D", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (raw, style, result))?
@@ -271,27 +291,29 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
-                    >,
-                    crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                    >,
-                ),
-                bool,
-                3usize,
-            >("ProcessTerminal_DHMSF")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse as
-                    quest_hook::libil2cpp::Type > ::class(), "ProcessTerminal_DHMSF",
-                    3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
+                            >,
+                            crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("ProcessTerminal_DHMSF")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ProcessTerminal_DHMSF", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (raw, style, result))?
@@ -307,26 +329,29 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
-                    >,
-                    crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                    >,
-                ),
-                bool,
-                3usize,
-            >("ProcessTerminal_HM")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse as
-                    quest_hook::libil2cpp::Type > ::class(), "ProcessTerminal_HM", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
+                            >,
+                            crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("ProcessTerminal_HM")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ProcessTerminal_HM", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (raw, style, result))?
@@ -342,27 +367,29 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
-                    >,
-                    crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                    >,
-                ),
-                bool,
-                3usize,
-            >("ProcessTerminal_HMS_F_D")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse as
-                    quest_hook::libil2cpp::Type > ::class(), "ProcessTerminal_HMS_F_D",
-                    3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
+                            >,
+                            crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("ProcessTerminal_HMS_F_D")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ProcessTerminal_HMS_F_D", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (raw, style, result))?
@@ -378,27 +405,29 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
-                    >,
-                    crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                    >,
-                ),
-                bool,
-                3usize,
-            >("ProcessTerminal_HM_S_D")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse as
-                    quest_hook::libil2cpp::Type > ::class(), "ProcessTerminal_HM_S_D",
-                    3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
+                            >,
+                            crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("ProcessTerminal_HM_S_D")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ProcessTerminal_HM_S_D", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (raw, style, result))?
@@ -413,25 +442,28 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::TimeSpanStyles,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                    >,
-                ),
-                bool,
-                4usize,
-            >("TryParseByFormat")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse as
-                    quest_hook::libil2cpp::Type > ::class(), "TryParseByFormat", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::TimeSpanStyles,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                            >,
+                        ),
+                        bool,
+                        4usize,
+                    >("TryParseByFormat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParseByFormat", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (input, format, styles, result))?
@@ -445,24 +477,27 @@ impl crate::System::Globalization::TimeSpanParse {
         styles: crate::System::Globalization::TimeSpanStyles,
         result: quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-                    crate::System::Globalization::TimeSpanStyles,
-                    quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,
-                ),
-                bool,
-                5usize,
-            >("TryParseExact")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse as
-                    quest_hook::libil2cpp::Type > ::class(), "TryParseExact", 5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                            crate::System::Globalization::TimeSpanStyles,
+                            quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryParseExact")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParseExact", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (input, format, formatProvider, styles, result))?
@@ -478,27 +513,29 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-                    crate::System::Globalization::TimeSpanStyles,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                    >,
-                ),
-                bool,
-                5usize,
-            >("TryParseExactTimeSpan")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse as
-                    quest_hook::libil2cpp::Type > ::class(), "TryParseExactTimeSpan",
-                    5usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                            crate::System::Globalization::TimeSpanStyles,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                            >,
+                        ),
+                        bool,
+                        5usize,
+                    >("TryParseExactTimeSpan")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParseExactTimeSpan", 5usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (input, format, formatProvider, styles, result))?
@@ -513,25 +550,28 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
-                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                    >,
-                ),
-                bool,
-                4usize,
-            >("TryParseTimeSpan")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse as
-                    quest_hook::libil2cpp::Type > ::class(), "TryParseTimeSpan", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+                            quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                            >,
+                        ),
+                        bool,
+                        4usize,
+                    >("TryParseTimeSpan")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParseTimeSpan", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked((), (input, style, formatProvider, result))?
@@ -544,24 +584,26 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                    >,
-                ),
-                bool,
-                2usize,
-            >("TryParseTimeSpanConstant")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse as
-                    quest_hook::libil2cpp::Type > ::class(), "TryParseTimeSpanConstant",
-                    2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("TryParseTimeSpanConstant")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParseTimeSpanConstant", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (input, result))? };
         Ok(__cordl_ret.into())
@@ -575,26 +617,29 @@ impl crate::System::Globalization::TimeSpanParse {
         fraction: crate::System::Globalization::TimeSpanParse_TimeSpanToken,
         result: quest_hook::libil2cpp::ByRefMut<i64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (
-                    bool,
-                    crate::System::Globalization::TimeSpanParse_TimeSpanToken,
-                    crate::System::Globalization::TimeSpanParse_TimeSpanToken,
-                    crate::System::Globalization::TimeSpanParse_TimeSpanToken,
-                    crate::System::Globalization::TimeSpanParse_TimeSpanToken,
-                    crate::System::Globalization::TimeSpanParse_TimeSpanToken,
-                    quest_hook::libil2cpp::ByRefMut<i64>,
-                ),
-                bool,
-                7usize,
-            >("TryTimeToTicks")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse as
-                    quest_hook::libil2cpp::Type > ::class(), "TryTimeToTicks", 7usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (
+                            bool,
+                            crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+                            crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+                            crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+                            crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+                            crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+                            quest_hook::libil2cpp::ByRefMut<i64>,
+                        ),
+                        bool,
+                        7usize,
+                    >("TryTimeToTicks")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryTimeToTicks", 7usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -819,14 +864,17 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
     pub fn NextChar(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_StringParser as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("NextChar")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_StringParser as
-                    quest_hook::libil2cpp::Type > ::class(), "NextChar", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("NextChar")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NextChar", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -834,14 +882,17 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
         Ok(__cordl_ret.into())
     }
     pub fn NextNonDigit(&mut self) -> quest_hook::libil2cpp::Result<char> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_StringParser as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), char, 0usize>("NextNonDigit")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_StringParser as
-                    quest_hook::libil2cpp::Type > ::class(), "NextNonDigit", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), char, 0usize>("NextNonDigit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "NextNonDigit", 0usize
+                        )
+                    })
             });
         let __cordl_ret: char = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -854,24 +905,27 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_StringParser as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    i32,
-                    quest_hook::libil2cpp::ByRefMut<i32>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                    >,
-                ),
-                bool,
-                3usize,
-            >("ParseInt")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_StringParser as
-                    quest_hook::libil2cpp::Type > ::class(), "ParseInt", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("ParseInt")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ParseInt", 3usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (max, i, result))?
@@ -885,23 +939,26 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_StringParser as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<i64>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                    >,
-                ),
-                bool,
-                2usize,
-            >("ParseTime")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_StringParser as
-                    quest_hook::libil2cpp::Type > ::class(), "ParseTime", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<i64>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("ParseTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ParseTime", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (_cordl_time, result))?
@@ -911,14 +968,17 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
     pub fn SkipBlanks(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_StringParser as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SkipBlanks")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_StringParser as
-                    quest_hook::libil2cpp::Type > ::class(), "SkipBlanks", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SkipBlanks")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SkipBlanks", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -932,23 +992,26 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_StringParser as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                    >,
-                ),
-                bool,
-                2usize,
-            >("TryParse")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_StringParser as
-                    quest_hook::libil2cpp::Type > ::class(), "TryParse", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("TryParse")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TryParse", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method.invoke_unchecked(self, (input, result))?
@@ -1181,23 +1244,26 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::Globalization::TimeSpanParse_TimeSpanToken,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                    >,
-                ),
-                bool,
-                2usize,
-            >("AddNum")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanRawInfo as
-                    quest_hook::libil2cpp::Type > ::class(), "AddNum", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("AddNum")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddNum", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (num, result))? };
         Ok(__cordl_ret.into())
@@ -1209,23 +1275,26 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::ReadOnlySpan_1<char>,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                    >,
-                ),
-                bool,
-                2usize,
-            >("AddSep")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanRawInfo as
-                    quest_hook::libil2cpp::Type > ::class(), "AddSep", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::ReadOnlySpan_1<char>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("AddSep")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "AddSep", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (sep, result))? };
         Ok(__cordl_ret.into())
@@ -1234,18 +1303,21 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
-                bool,
-                1usize,
-            >("FullAppCompatMatch")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanRawInfo as
-                    quest_hook::libil2cpp::Type > ::class(), "FullAppCompatMatch", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
+                        bool,
+                        1usize,
+                    >("FullAppCompatMatch")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FullAppCompatMatch", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
@@ -1254,18 +1326,21 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
-                bool,
-                1usize,
-            >("FullDHMMatch")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanRawInfo as
-                    quest_hook::libil2cpp::Type > ::class(), "FullDHMMatch", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
+                        bool,
+                        1usize,
+                    >("FullDHMMatch")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FullDHMMatch", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
@@ -1274,18 +1349,21 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
-                bool,
-                1usize,
-            >("FullDHMSMatch")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanRawInfo as
-                    quest_hook::libil2cpp::Type > ::class(), "FullDHMSMatch", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
+                        bool,
+                        1usize,
+                    >("FullDHMSMatch")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FullDHMSMatch", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
@@ -1294,18 +1372,21 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
-                bool,
-                1usize,
-            >("FullDMatch")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanRawInfo as
-                    quest_hook::libil2cpp::Type > ::class(), "FullDMatch", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
+                        bool,
+                        1usize,
+                    >("FullDMatch")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FullDMatch", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
@@ -1314,18 +1395,21 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
-                bool,
-                1usize,
-            >("FullHMMatch")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanRawInfo as
-                    quest_hook::libil2cpp::Type > ::class(), "FullHMMatch", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
+                        bool,
+                        1usize,
+                    >("FullHMMatch")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FullHMMatch", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
@@ -1334,18 +1418,21 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
-                bool,
-                1usize,
-            >("FullHMSFMatch")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanRawInfo as
-                    quest_hook::libil2cpp::Type > ::class(), "FullHMSFMatch", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
+                        bool,
+                        1usize,
+                    >("FullHMSFMatch")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FullHMSFMatch", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
@@ -1354,18 +1441,21 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
-                bool,
-                1usize,
-            >("FullHMSMatch")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanRawInfo as
-                    quest_hook::libil2cpp::Type > ::class(), "FullHMSMatch", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
+                        bool,
+                        1usize,
+                    >("FullHMSMatch")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FullHMSMatch", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
@@ -1374,18 +1464,21 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
-                bool,
-                1usize,
-            >("FullMatch")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanRawInfo as
-                    quest_hook::libil2cpp::Type > ::class(), "FullMatch", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
+                        bool,
+                        1usize,
+                    >("FullMatch")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "FullMatch", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
@@ -1394,20 +1487,23 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         &mut self,
         dtfi: quest_hook::libil2cpp::Gc<crate::System::Globalization::DateTimeFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (quest_hook::libil2cpp::Gc<
-                    crate::System::Globalization::DateTimeFormatInfo,
-                >),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >("Init")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanRawInfo as
-                    quest_hook::libil2cpp::Type > ::class(), "Init", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Globalization::DateTimeFormatInfo,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Init")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Init", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (dtfi))?
@@ -1418,19 +1514,21 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
-                bool,
-                1usize,
-            >("PartialAppCompatMatch")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanRawInfo as
-                    quest_hook::libil2cpp::Type > ::class(), "PartialAppCompatMatch",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
+                        bool,
+                        1usize,
+                    >("PartialAppCompatMatch")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "PartialAppCompatMatch", 1usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
@@ -1444,25 +1542,28 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanToken,
-                    >,
-                    quest_hook::libil2cpp::ByRefMut<
-                        crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                    >,
-                ),
-                bool,
-                2usize,
-            >("ProcessToken")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanRawInfo as
-                    quest_hook::libil2cpp::Type > ::class(), "ProcessToken", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("ProcessToken")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "ProcessToken", 2usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (tok, result))? };
         Ok(__cordl_ret.into())
@@ -1472,19 +1573,21 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Globalization::TimeSpanFormat_FormatLiterals,
-                0usize,
-            >("get_NegativeInvariant")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanRawInfo as
-                    quest_hook::libil2cpp::Type > ::class(), "get_NegativeInvariant",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Globalization::TimeSpanFormat_FormatLiterals,
+                        0usize,
+                    >("get_NegativeInvariant")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_NegativeInvariant", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = unsafe {
             method.invoke_unchecked(self, ())?
@@ -1496,19 +1599,21 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Globalization::TimeSpanFormat_FormatLiterals,
-                0usize,
-            >("get_NegativeLocalized")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanRawInfo as
-                    quest_hook::libil2cpp::Type > ::class(), "get_NegativeLocalized",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Globalization::TimeSpanFormat_FormatLiterals,
+                        0usize,
+                    >("get_NegativeLocalized")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_NegativeLocalized", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = unsafe {
             method.invoke_unchecked(self, ())?
@@ -1520,19 +1625,21 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Globalization::TimeSpanFormat_FormatLiterals,
-                0usize,
-            >("get_PositiveInvariant")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanRawInfo as
-                    quest_hook::libil2cpp::Type > ::class(), "get_PositiveInvariant",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Globalization::TimeSpanFormat_FormatLiterals,
+                        0usize,
+                    >("get_PositiveInvariant")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_PositiveInvariant", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = unsafe {
             method.invoke_unchecked(self, ())?
@@ -1544,19 +1651,21 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Globalization::TimeSpanFormat_FormatLiterals,
-                0usize,
-            >("get_PositiveLocalized")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanRawInfo as
-                    quest_hook::libil2cpp::Type > ::class(), "get_PositiveLocalized",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Globalization::TimeSpanFormat_FormatLiterals,
+                        0usize,
+                    >("get_PositiveLocalized")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_PositiveLocalized", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = unsafe {
             method.invoke_unchecked(self, ())?
@@ -1675,23 +1784,32 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanResult {
         messageArgument: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         argumentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanResult as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::Globalization::TimeSpanParse_ParseFailureKind,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                ),
-                bool,
-                4usize,
-            >("SetFailure")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanResult as
-                    quest_hook::libil2cpp::Type > ::class(), "SetFailure", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::Globalization::TimeSpanParse_ParseFailureKind,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        bool,
+                        4usize,
+                    >("SetFailure")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "SetFailure", 4usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe {
             method
@@ -1706,14 +1824,17 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanResult {
         &mut self,
         throwOnFailure: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanResult as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanResult as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (throwOnFailure))?
@@ -1923,14 +2044,17 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
 #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanToken")]
 impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
     pub fn IsInvalidFraction(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanToken as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("IsInvalidFraction")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanToken as
-                    quest_hook::libil2cpp::Type > ::class(), "IsInvalidFraction", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("IsInvalidFraction")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsInvalidFraction", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -1939,18 +2063,21 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
         &mut self,
         _cordl_type: crate::System::Globalization::TimeSpanParse_TTT,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanToken as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::Globalization::TimeSpanParse_TTT),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanToken as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::Globalization::TimeSpanParse_TTT),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (_cordl_type))?
@@ -1964,23 +2091,26 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
         leadingZeroes: i32,
         separator: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanToken as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (
-                    crate::System::Globalization::TimeSpanParse_TTT,
-                    i32,
-                    i32,
-                    crate::System::ReadOnlySpan_1<char>,
-                ),
-                quest_hook::libil2cpp::Void,
-                4usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanToken as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (
+                            crate::System::Globalization::TimeSpanParse_TTT,
+                            i32,
+                            i32,
+                            crate::System::ReadOnlySpan_1<char>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 4usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
@@ -1992,14 +2122,17 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
         &mut self,
         number: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanToken as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanToken as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (number))?
@@ -2011,14 +2144,21 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
         number: i32,
         leadingZeroes: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanToken as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(i32, i32), quest_hook::libil2cpp::Void, 2usize>(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanToken as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (i32, i32),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (number, leadingZeroes))?
@@ -2133,14 +2273,17 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
     pub fn BackOne(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("BackOne")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanTokenizer as
-                    quest_hook::libil2cpp::Type > ::class(), "BackOne", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("BackOne")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "BackOne", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, ())?
@@ -2152,18 +2295,21 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Globalization::TimeSpanParse_TimeSpanToken,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (),
-                crate::System::Globalization::TimeSpanParse_TimeSpanToken,
-                0usize,
-            >("GetNextToken")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanTokenizer as
-                    quest_hook::libil2cpp::Type > ::class(), "GetNextToken", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (),
+                        crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+                        0usize,
+                    >("GetNextToken")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "GetNextToken", 0usize
+                        )
+                    })
             });
         let __cordl_ret: crate::System::Globalization::TimeSpanParse_TimeSpanToken = unsafe {
             method.invoke_unchecked(self, ())?
@@ -2174,18 +2320,21 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
         &mut self,
         input: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::ReadOnlySpan_1<char>),
-                quest_hook::libil2cpp::Void,
-                1usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanTokenizer as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::ReadOnlySpan_1<char>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 1usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (input))?
@@ -2197,18 +2346,21 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
         input: crate::System::ReadOnlySpan_1<char>,
         startPosition: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<
-                (crate::System::ReadOnlySpan_1<char>, i32),
-                quest_hook::libil2cpp::Void,
-                2usize,
-            >(".ctor")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanTokenizer as
-                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (crate::System::ReadOnlySpan_1<char>, i32),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), ".ctor", 2usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method.invoke_unchecked(self, (input, startPosition))?
@@ -2216,27 +2368,33 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
         Ok(__cordl_ret.into())
     }
     pub fn get_EOL(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), bool, 0usize>("get_EOL")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanTokenizer as
-                    quest_hook::libil2cpp::Type > ::class(), "get_EOL", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("get_EOL")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_EOL", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_NextChar(&mut self) -> quest_hook::libil2cpp::Result<char> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer as quest_hook::libil2cpp::Type>::class()
-            .find_method::<(), char, 0usize>("get_NextChar")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Globalization::TimeSpanParse_TimeSpanTokenizer as
-                    quest_hook::libil2cpp::Type > ::class(), "get_NextChar", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), char, 0usize>("get_NextChar")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_NextChar", 0usize
+                        )
+                    })
             });
         let __cordl_ret: char = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

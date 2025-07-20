@@ -50,18 +50,21 @@ impl crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData {
         noteLinesCount: i32,
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (i32, i32, crate::GlobalNamespace::NoteLineLayer),
-                crate::UnityEngine::Vector2,
-                3usize,
-            >("Get2DNoteOffset")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::StaticBeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(), "Get2DNoteOffset", 3usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (i32, i32, crate::GlobalNamespace::NoteLineLayer),
+                        crate::UnityEngine::Vector2,
+                        3usize,
+                    >("Get2DNoteOffset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Get2DNoteOffset", 3usize
+                        )
+                    })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
             method.invoke_unchecked((), (noteLineIndex, noteLinesCount, noteLineLayer))?
@@ -71,32 +74,37 @@ impl crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData {
     pub fn LineYPosForLineLayer(
         lineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (crate::GlobalNamespace::NoteLineLayer),
-                f32,
-                1usize,
-            >("LineYPosForLineLayer")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::StaticBeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(), "LineYPosForLineLayer",
-                    1usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::NoteLineLayer),
+                        f32,
+                        1usize,
+                    >("LineYPosForLineLayer")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "LineYPosForLineLayer", 1usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (lineLayer))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_layerHeight() -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), f32, 0usize>("get_layerHeight")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::GlobalNamespace::StaticBeatmapObjectSpawnMovementData as
-                    quest_hook::libil2cpp::Type > ::class(), "get_layerHeight", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<(), f32, 0usize>("get_layerHeight")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_layerHeight", 0usize
+                        )
+                    })
             });
         let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())

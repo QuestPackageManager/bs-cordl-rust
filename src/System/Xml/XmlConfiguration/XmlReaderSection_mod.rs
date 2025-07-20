@@ -42,19 +42,21 @@ impl crate::System::Xml::XmlConfiguration::XmlReaderSection {
     pub fn CreateDefaultResolver() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlConfiguration::XmlReaderSection as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
-                0usize,
-            >("CreateDefaultResolver")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Xml::XmlConfiguration::XmlReaderSection as
-                    quest_hook::libil2cpp::Type > ::class(), "CreateDefaultResolver",
-                    0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
+                        0usize,
+                    >("CreateDefaultResolver")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "CreateDefaultResolver", 0usize
+                        )
+                    })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver> = unsafe {
             method.invoke_unchecked((), ())?
@@ -64,33 +66,42 @@ impl crate::System::Xml::XmlConfiguration::XmlReaderSection {
     pub fn get_CollapseWhiteSpaceIntoEmptyString() -> quest_hook::libil2cpp::Result<
         bool,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlConfiguration::XmlReaderSection as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<
-                (),
-                bool,
-                0usize,
-            >("get_CollapseWhiteSpaceIntoEmptyString")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Xml::XmlConfiguration::XmlReaderSection as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_CollapseWhiteSpaceIntoEmptyString", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("get_CollapseWhiteSpaceIntoEmptyString")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_CollapseWhiteSpaceIntoEmptyString",
+                            0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ProhibitDefaultUrlResolver() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlConfiguration::XmlReaderSection as quest_hook::libil2cpp::Type>::class()
-            .find_static_method::<(), bool, 0usize>("get_ProhibitDefaultUrlResolver")
-            .unwrap_or_else(|e| {
-                panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
-                    crate ::System::Xml::XmlConfiguration::XmlReaderSection as
-                    quest_hook::libil2cpp::Type > ::class(),
-                    "get_ProhibitDefaultUrlResolver", 0usize
-                )
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("get_ProhibitDefaultUrlResolver")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_ProhibitDefaultUrlResolver", 0usize
+                        )
+                    })
             });
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
