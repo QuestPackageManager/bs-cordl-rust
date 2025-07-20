@@ -52,7 +52,7 @@ impl crate::System::Data::BinaryNode {
         comparer: quest_hook::libil2cpp::Gc<crate::System::Globalization::CompareInfo>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -81,7 +81,8 @@ impl crate::System::Data::BinaryNode {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (vLeft, vRight, resultType, op, comparer))?
+            cordl_method_info
+                .invoke_unchecked(self, (vLeft, vRight, resultType, op, comparer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -93,7 +94,7 @@ impl crate::System::Data::BinaryNode {
         op: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -119,7 +120,7 @@ impl crate::System::Data::BinaryNode {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (vLeft, vRight, resultType, op))?
+            cordl_method_info.invoke_unchecked(self, (vLeft, vRight, resultType, op))?
         };
         Ok(__cordl_ret.into())
     }
@@ -133,7 +134,7 @@ impl crate::System::Data::BinaryNode {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -157,7 +158,7 @@ impl crate::System::Data::BinaryNode {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (table, list))?
+            cordl_method_info.invoke_unchecked(self, (table, list))?
         };
         Ok(__cordl_ret.into())
     }
@@ -166,7 +167,7 @@ impl crate::System::Data::BinaryNode {
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -182,7 +183,9 @@ impl crate::System::Data::BinaryNode {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (column))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (column))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EvalBinaryOp(
@@ -197,7 +200,7 @@ impl crate::System::Data::BinaryNode {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -229,7 +232,8 @@ impl crate::System::Data::BinaryNode {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = unsafe {
-            method.invoke_unchecked(self, (op, left, right, row, version, recordNos))?
+            cordl_method_info
+                .invoke_unchecked(self, (op, left, right, row, version, recordNos))?
         };
         Ok(__cordl_ret.into())
     }
@@ -239,7 +243,7 @@ impl crate::System::Data::BinaryNode {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -257,7 +261,7 @@ impl crate::System::Data::BinaryNode {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Eval_DataRow_DataRowVersion1(
@@ -268,7 +272,7 @@ impl crate::System::Data::BinaryNode {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -289,7 +293,7 @@ impl crate::System::Data::BinaryNode {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (row, version))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (row, version))? };
         Ok(__cordl_ret.into())
     }
     pub fn Eval_ExpressionNode_DataRow_DataRowVersion_Il2CppArray3(
@@ -301,7 +305,7 @@ impl crate::System::Data::BinaryNode {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -328,7 +332,9 @@ impl crate::System::Data::BinaryNode {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (expr, row, version, recordNos))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (expr, row, version, recordNos))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Eval_Il2CppArray2(
@@ -338,7 +344,7 @@ impl crate::System::Data::BinaryNode {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -358,7 +364,7 @@ impl crate::System::Data::BinaryNode {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (recordNos))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (recordNos))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPrecedence(
@@ -368,7 +374,7 @@ impl crate::System::Data::BinaryNode {
         crate::System::Data::BinaryNode_DataTypePrecedence,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -385,7 +391,7 @@ impl crate::System::Data::BinaryNode {
                     })
             });
         let __cordl_ret: crate::System::Data::BinaryNode_DataTypePrecedence = unsafe {
-            method.invoke_unchecked(self, (storageType))?
+            cordl_method_info.invoke_unchecked(self, (storageType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -393,7 +399,7 @@ impl crate::System::Data::BinaryNode {
         code: crate::System::Data::BinaryNode_DataTypePrecedence,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::Common::StorageType> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -410,13 +416,13 @@ impl crate::System::Data::BinaryNode {
                     })
             });
         let __cordl_ret: crate::System::Data::Common::StorageType = unsafe {
-            method.invoke_unchecked((), (code))?
+            cordl_method_info.invoke_unchecked((), (code))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HasLocalAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("HasLocalAggregate")
@@ -428,12 +434,12 @@ impl crate::System::Data::BinaryNode {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HasRemoteAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("HasRemoteAggregate")
@@ -445,12 +451,12 @@ impl crate::System::Data::BinaryNode {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsConstant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsConstant")
@@ -462,7 +468,7 @@ impl crate::System::Data::BinaryNode {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsMixed(
@@ -471,7 +477,7 @@ impl crate::System::Data::BinaryNode {
         right: crate::System::Data::Common::StorageType,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -490,7 +496,9 @@ impl crate::System::Data::BinaryNode {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (left, right))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (left, right))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsMixedSql(
@@ -499,7 +507,7 @@ impl crate::System::Data::BinaryNode {
         right: crate::System::Data::Common::StorageType,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -518,12 +526,14 @@ impl crate::System::Data::BinaryNode {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (left, right))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (left, right))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsTableConstant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsTableConstant")
@@ -535,7 +545,7 @@ impl crate::System::Data::BinaryNode {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -556,7 +566,7 @@ impl crate::System::Data::BinaryNode {
         quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -574,7 +584,7 @@ impl crate::System::Data::BinaryNode {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Data::ExpressionNode,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ResultSqlType(
@@ -586,7 +596,7 @@ impl crate::System::Data::BinaryNode {
         op: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::Common::StorageType> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -609,7 +619,7 @@ impl crate::System::Data::BinaryNode {
                     })
             });
         let __cordl_ret: crate::System::Data::Common::StorageType = unsafe {
-            method.invoke_unchecked(self, (left, right, lc, rc, op))?
+            cordl_method_info.invoke_unchecked(self, (left, right, lc, rc, op))?
         };
         Ok(__cordl_ret.into())
     }
@@ -622,7 +632,7 @@ impl crate::System::Data::BinaryNode {
         op: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::Common::StorageType> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -645,7 +655,7 @@ impl crate::System::Data::BinaryNode {
                     })
             });
         let __cordl_ret: crate::System::Data::Common::StorageType = unsafe {
-            method.invoke_unchecked(self, (left, right, lc, rc, op))?
+            cordl_method_info.invoke_unchecked(self, (left, right, lc, rc, op))?
         };
         Ok(__cordl_ret.into())
     }
@@ -656,7 +666,7 @@ impl crate::System::Data::BinaryNode {
         right: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -677,7 +687,7 @@ impl crate::System::Data::BinaryNode {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (op, left, right))?
+            cordl_method_info.invoke_unchecked(self, (op, left, right))?
         };
         Ok(__cordl_ret.into())
     }
@@ -686,7 +696,7 @@ impl crate::System::Data::BinaryNode {
         typeCode: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("SqlResultType")
@@ -698,7 +708,9 @@ impl crate::System::Data::BinaryNode {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (typeCode))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (typeCode))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -709,7 +721,7 @@ impl crate::System::Data::BinaryNode {
         right: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -735,7 +747,7 @@ impl crate::System::Data::BinaryNode {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (table, op, left, right))?
+            cordl_method_info.invoke_unchecked(self, (table, op, left, right))?
         };
         Ok(__cordl_ret.into())
     }

@@ -59,7 +59,7 @@ impl crate::System::Globalization::TimeSpanParse {
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -79,7 +79,7 @@ impl crate::System::Globalization::TimeSpanParse {
                     })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked((), (input, formatProvider))?
+            cordl_method_info.invoke_unchecked((), (input, formatProvider))?
         };
         Ok(__cordl_ret.into())
     }
@@ -91,7 +91,7 @@ impl crate::System::Globalization::TimeSpanParse {
         result: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -114,7 +114,7 @@ impl crate::System::Globalization::TimeSpanParse {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (tokenizer, minDigitLength, result))?
+            cordl_method_info.invoke_unchecked((), (tokenizer, minDigitLength, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -128,7 +128,7 @@ impl crate::System::Globalization::TimeSpanParse {
         result: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -153,7 +153,7 @@ impl crate::System::Globalization::TimeSpanParse {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (tokenizer, minDigitLength, maxDigitLength, zeroes, result),
@@ -168,7 +168,7 @@ impl crate::System::Globalization::TimeSpanParse {
         enquotedString: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -190,13 +190,13 @@ impl crate::System::Globalization::TimeSpanParse {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (tokenizer, enquotedString))?
+            cordl_method_info.invoke_unchecked((), (tokenizer, enquotedString))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Pow10(pow: i32) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i64, 1usize>("Pow10")
@@ -208,7 +208,7 @@ impl crate::System::Globalization::TimeSpanParse {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (pow))? };
+        let __cordl_ret: i64 = unsafe { cordl_method_info.invoke_unchecked((), (pow))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessTerminalState(
@@ -221,7 +221,7 @@ impl crate::System::Globalization::TimeSpanParse {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -246,7 +246,7 @@ impl crate::System::Globalization::TimeSpanParse {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (raw, style, result))?
+            cordl_method_info.invoke_unchecked((), (raw, style, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -260,7 +260,7 @@ impl crate::System::Globalization::TimeSpanParse {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -285,7 +285,7 @@ impl crate::System::Globalization::TimeSpanParse {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (raw, style, result))?
+            cordl_method_info.invoke_unchecked((), (raw, style, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -299,7 +299,7 @@ impl crate::System::Globalization::TimeSpanParse {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -324,7 +324,7 @@ impl crate::System::Globalization::TimeSpanParse {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (raw, style, result))?
+            cordl_method_info.invoke_unchecked((), (raw, style, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -338,7 +338,7 @@ impl crate::System::Globalization::TimeSpanParse {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -363,7 +363,7 @@ impl crate::System::Globalization::TimeSpanParse {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (raw, style, result))?
+            cordl_method_info.invoke_unchecked((), (raw, style, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -377,7 +377,7 @@ impl crate::System::Globalization::TimeSpanParse {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -402,7 +402,7 @@ impl crate::System::Globalization::TimeSpanParse {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (raw, style, result))?
+            cordl_method_info.invoke_unchecked((), (raw, style, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -416,7 +416,7 @@ impl crate::System::Globalization::TimeSpanParse {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -441,7 +441,7 @@ impl crate::System::Globalization::TimeSpanParse {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (raw, style, result))?
+            cordl_method_info.invoke_unchecked((), (raw, style, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -454,7 +454,7 @@ impl crate::System::Globalization::TimeSpanParse {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -478,7 +478,7 @@ impl crate::System::Globalization::TimeSpanParse {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (input, format, styles, result))?
+            cordl_method_info.invoke_unchecked((), (input, format, styles, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -490,7 +490,7 @@ impl crate::System::Globalization::TimeSpanParse {
         result: quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -513,7 +513,8 @@ impl crate::System::Globalization::TimeSpanParse {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (input, format, formatProvider, styles, result))?
+            cordl_method_info
+                .invoke_unchecked((), (input, format, formatProvider, styles, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -527,7 +528,7 @@ impl crate::System::Globalization::TimeSpanParse {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -552,7 +553,8 @@ impl crate::System::Globalization::TimeSpanParse {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (input, format, formatProvider, styles, result))?
+            cordl_method_info
+                .invoke_unchecked((), (input, format, formatProvider, styles, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -565,7 +567,7 @@ impl crate::System::Globalization::TimeSpanParse {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -589,7 +591,8 @@ impl crate::System::Globalization::TimeSpanParse {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (input, style, formatProvider, result))?
+            cordl_method_info
+                .invoke_unchecked((), (input, style, formatProvider, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -600,7 +603,7 @@ impl crate::System::Globalization::TimeSpanParse {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -621,7 +624,9 @@ impl crate::System::Globalization::TimeSpanParse {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (input, result))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (input, result))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryTimeToTicks(
@@ -634,7 +639,7 @@ impl crate::System::Globalization::TimeSpanParse {
         result: quest_hook::libil2cpp::ByRefMut<i64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -659,7 +664,7 @@ impl crate::System::Globalization::TimeSpanParse {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (positive, days, hours, minutes, seconds, fraction, result),
@@ -882,7 +887,7 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("NextChar")
@@ -895,13 +900,13 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn NextNonDigit(&mut self) -> quest_hook::libil2cpp::Result<char> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), char, 0usize>("NextNonDigit")
@@ -913,7 +918,7 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
                         )
                     })
             });
-        let __cordl_ret: char = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: char = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseInt(
@@ -925,7 +930,7 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -948,7 +953,7 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (max, i, result))?
+            cordl_method_info.invoke_unchecked(self, (max, i, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -960,7 +965,7 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -982,7 +987,7 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (_cordl_time, result))?
+            cordl_method_info.invoke_unchecked(self, (_cordl_time, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -990,7 +995,7 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SkipBlanks")
@@ -1003,7 +1008,7 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1015,7 +1020,7 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1037,7 +1042,7 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (input, result))?
+            cordl_method_info.invoke_unchecked(self, (input, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1268,7 +1273,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1289,7 +1294,9 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (num, result))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (num, result))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddSep(
@@ -1300,7 +1307,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1321,7 +1328,9 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (sep, result))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (sep, result))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FullAppCompatMatch(
@@ -1329,7 +1338,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1345,7 +1354,9 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pattern))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (pattern))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FullDHMMatch(
@@ -1353,7 +1364,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1369,7 +1380,9 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pattern))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (pattern))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FullDHMSMatch(
@@ -1377,7 +1390,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1393,7 +1406,9 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pattern))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (pattern))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FullDMatch(
@@ -1401,7 +1416,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1417,7 +1432,9 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pattern))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (pattern))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FullHMMatch(
@@ -1425,7 +1442,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1441,7 +1458,9 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pattern))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (pattern))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FullHMSFMatch(
@@ -1449,7 +1468,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1465,7 +1484,9 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pattern))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (pattern))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FullHMSMatch(
@@ -1473,7 +1494,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1489,7 +1510,9 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pattern))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (pattern))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FullMatch(
@@ -1497,7 +1520,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1513,7 +1536,9 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pattern))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (pattern))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
@@ -1521,7 +1546,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         dtfi: quest_hook::libil2cpp::Gc<crate::System::Globalization::DateTimeFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1540,7 +1565,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dtfi))?
+            cordl_method_info.invoke_unchecked(self, (dtfi))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1549,7 +1574,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1565,7 +1590,9 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pattern))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (pattern))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessToken(
@@ -1578,7 +1605,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1601,7 +1628,9 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (tok, result))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (tok, result))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_NegativeInvariant(
@@ -1610,7 +1639,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1627,7 +1656,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                     })
             });
         let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1637,7 +1666,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1654,7 +1683,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                     })
             });
         let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1664,7 +1693,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1681,7 +1710,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                     })
             });
         let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1691,7 +1720,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1708,7 +1737,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                     })
             });
         let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1825,7 +1854,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanResult {
         argumentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1853,7 +1882,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanResult {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (kind, resourceKey, messageArgument, argumentName),
@@ -1866,7 +1895,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanResult {
         throwOnFailure: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
@@ -1879,7 +1908,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanResult {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (throwOnFailure))?
+            cordl_method_info.invoke_unchecked(self, (throwOnFailure))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2087,7 +2116,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
 impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
     pub fn IsInvalidFraction(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsInvalidFraction")
@@ -2099,7 +2128,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_TimeSpanParse_TTT0(
@@ -2107,7 +2136,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
         _cordl_type: crate::System::Globalization::TimeSpanParse_TTT,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2124,7 +2153,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_type))?
+            cordl_method_info.invoke_unchecked(self, (_cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2136,7 +2165,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
         separator: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2158,7 +2187,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(self, (_cordl_type, number, leadingZeroes, separator))?
         };
         Ok(__cordl_ret.into())
@@ -2168,7 +2197,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
         number: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
@@ -2181,7 +2210,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (number))?
+            cordl_method_info.invoke_unchecked(self, (number))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2191,7 +2220,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
         leadingZeroes: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2208,7 +2237,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (number, leadingZeroes))?
+            cordl_method_info.invoke_unchecked(self, (number, leadingZeroes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2321,7 +2350,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("BackOne")
@@ -2334,7 +2363,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2344,7 +2373,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
         crate::System::Globalization::TimeSpanParse_TimeSpanToken,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2361,7 +2390,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
                     })
             });
         let __cordl_ret: crate::System::Globalization::TimeSpanParse_TimeSpanToken = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2370,7 +2399,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
         input: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2387,7 +2416,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (input))?
+            cordl_method_info.invoke_unchecked(self, (input))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2397,7 +2426,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
         startPosition: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2414,13 +2443,13 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (input, startPosition))?
+            cordl_method_info.invoke_unchecked(self, (input, startPosition))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_EOL(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_EOL")
@@ -2432,12 +2461,12 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_NextChar(&mut self) -> quest_hook::libil2cpp::Result<char> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), char, 0usize>("get_NextChar")
@@ -2449,7 +2478,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
                         )
                     })
             });
-        let __cordl_ret: char = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: char = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

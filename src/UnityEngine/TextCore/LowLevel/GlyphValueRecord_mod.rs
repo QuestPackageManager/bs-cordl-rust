@@ -109,7 +109,7 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
         other: crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -125,7 +125,9 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject0(
@@ -133,7 +135,7 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -149,12 +151,14 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (obj))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
@@ -166,12 +170,12 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_xAdvance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_xAdvance")
@@ -183,12 +187,12 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_xPlacement(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_xPlacement")
@@ -200,12 +204,12 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_yAdvance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_yAdvance")
@@ -217,12 +221,12 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_yPlacement(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_yPlacement")
@@ -234,7 +238,7 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Addition(
@@ -244,7 +248,7 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
         crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -264,7 +268,7 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
                     })
             });
         let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -273,7 +277,7 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -290,7 +294,7 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -299,7 +303,7 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -316,7 +320,7 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
         noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -63,7 +63,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (noteController))?
+            cordl_method_info.invoke_unchecked(self, (noteController))?
         };
         Ok(__cordl_ret.into())
     }
@@ -74,7 +74,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -93,7 +93,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (obstacleController))?
+            cordl_method_info.invoke_unchecked(self, (obstacleController))?
         };
         Ok(__cordl_ret.into())
     }
@@ -104,7 +104,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -123,7 +123,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sliderNoteController))?
+            cordl_method_info.invoke_unchecked(self, (sliderNoteController))?
         };
         Ok(__cordl_ret.into())
     }
@@ -143,7 +143,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
         forceIsFirstNoteBehaviour: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -166,7 +166,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (noteData, noteSpawnData, forceIsFirstNoteBehaviour),
@@ -182,7 +182,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -206,7 +206,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (obstacleData, obstacleSpawnData))?
+            cordl_method_info.invoke_unchecked(self, (obstacleData, obstacleSpawnData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -218,7 +218,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -242,7 +242,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sliderData, sliderSpawnData))?
+            cordl_method_info.invoke_unchecked(self, (sliderData, sliderSpawnData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -250,7 +250,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -263,7 +263,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -277,7 +277,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -303,7 +303,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

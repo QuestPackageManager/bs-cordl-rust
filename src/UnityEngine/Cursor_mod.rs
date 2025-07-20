@@ -44,7 +44,7 @@ impl crate::UnityEngine::Cursor {
         cursorMode: crate::UnityEngine::CursorMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -65,7 +65,7 @@ impl crate::UnityEngine::Cursor {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (texture, hotspot, cursorMode))?
+            cordl_method_info.invoke_unchecked((), (texture, hotspot, cursorMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -75,7 +75,7 @@ impl crate::UnityEngine::Cursor {
         cursorMode: crate::UnityEngine::CursorMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -96,7 +96,7 @@ impl crate::UnityEngine::Cursor {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (texture, hotspot, cursorMode))?
+            cordl_method_info.invoke_unchecked((), (texture, hotspot, cursorMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -104,7 +104,7 @@ impl crate::UnityEngine::Cursor {
         crate::UnityEngine::CursorLockMode,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -121,7 +121,7 @@ impl crate::UnityEngine::Cursor {
                     })
             });
         let __cordl_ret: crate::UnityEngine::CursorLockMode = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -129,7 +129,7 @@ impl crate::UnityEngine::Cursor {
         value: crate::UnityEngine::CursorLockMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -146,7 +146,7 @@ impl crate::UnityEngine::Cursor {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -154,7 +154,7 @@ impl crate::UnityEngine::Cursor {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -171,7 +171,7 @@ impl crate::UnityEngine::Cursor {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }

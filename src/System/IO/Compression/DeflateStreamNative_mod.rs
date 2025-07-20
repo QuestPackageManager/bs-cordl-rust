@@ -60,7 +60,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         _cordl_where: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -82,7 +82,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (result, _cordl_where))?
+            cordl_method_info.invoke_unchecked(self, (result, _cordl_where))?
         };
         Ok(__cordl_ret.into())
     }
@@ -90,7 +90,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         stream: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -106,7 +106,9 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (stream))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (stream))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Create(
@@ -117,7 +119,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         quest_hook::libil2cpp::Gc<crate::System::IO::Compression::DeflateStreamNative>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -141,7 +143,9 @@ impl crate::System::IO::Compression::DeflateStreamNative {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::IO::Compression::DeflateStreamNative,
-        > = unsafe { method.invoke_unchecked((), (compressedStream, mode, gzip))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (compressedStream, mode, gzip))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateZStream(
@@ -157,7 +161,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -184,7 +188,9 @@ impl crate::System::IO::Compression::DeflateStreamNative {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle,
-        > = unsafe { method.invoke_unchecked((), (compress, gzip, feeder, data))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (compress, gzip, feeder, data))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
@@ -192,7 +198,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         disposing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -209,7 +215,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (disposing))?
+            cordl_method_info.invoke_unchecked(self, (disposing))?
         };
         Ok(__cordl_ret.into())
     }
@@ -217,7 +223,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
@@ -230,7 +236,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -238,7 +244,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Flush")
@@ -251,7 +257,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -261,7 +267,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -279,7 +285,9 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (stream))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (stream))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -297,7 +305,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         length: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -320,7 +328,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (stream, buffer, length))?
+            cordl_method_info.invoke_unchecked((), (stream, buffer, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -330,7 +338,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         length: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -347,7 +355,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (buffer, length))?
+            cordl_method_info.invoke_unchecked(self, (buffer, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -357,7 +365,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         data: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -374,7 +382,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (buffer, length, data))?
+            cordl_method_info.invoke_unchecked((), (buffer, length, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -384,7 +392,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         length: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -401,7 +409,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (buffer, length))?
+            cordl_method_info.invoke_unchecked(self, (buffer, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -411,7 +419,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         data: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -428,7 +436,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (buffer, length, data))?
+            cordl_method_info.invoke_unchecked((), (buffer, length, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -438,7 +446,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         length: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -455,7 +463,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (buffer, length))?
+            cordl_method_info.invoke_unchecked(self, (buffer, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -467,7 +475,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         length: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -490,7 +498,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (stream, buffer, length))?
+            cordl_method_info.invoke_unchecked((), (stream, buffer, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -500,7 +508,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -517,7 +525,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (buffer, length))?
+            cordl_method_info.invoke_unchecked(self, (buffer, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -525,7 +533,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -538,7 +546,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -605,7 +613,7 @@ impl crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle
     }
     pub fn ReleaseHandle(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("ReleaseHandle")
@@ -617,14 +625,14 @@ impl crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -637,13 +645,13 @@ impl crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsInvalid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsInvalid")
@@ -655,7 +663,7 @@ impl crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -719,7 +727,7 @@ impl crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite {
         data: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -736,7 +744,7 @@ impl crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (buffer, length, data))?
+            cordl_method_info.invoke_unchecked(self, (buffer, length, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -756,7 +764,7 @@ impl crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite {
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -778,7 +786,7 @@ impl crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))?
+            cordl_method_info.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }

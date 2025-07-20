@@ -69,7 +69,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -82,7 +82,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -101,7 +101,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
         v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -146,7 +146,8 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (b, bindex, n, s, d, e, t, m, hp, hn, v))?
+            cordl_method_info
+                .invoke_unchecked(self, (b, bindex, n, s, d, e, t, m, hp, hn, v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -159,7 +160,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
         z: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Zlib::ZStream>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -192,7 +193,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (c, bb, tb, hp, z))?
+            cordl_method_info.invoke_unchecked(self, (c, bb, tb, hp, z))?
         };
         Ok(__cordl_ret.into())
     }
@@ -209,7 +210,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
         z: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Zlib::ZStream>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -250,7 +251,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (nl, nd, c, bl, bd, tl, td, hp, z))?
+            cordl_method_info.invoke_unchecked(self, (nl, nd, c, bl, bd, tl, td, hp, z))?
         };
         Ok(__cordl_ret.into())
     }
@@ -270,7 +271,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
         z: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Zlib::ZStream>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -311,7 +312,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (bl, bd, tl, td, z))?
+            cordl_method_info.invoke_unchecked((), (bl, bd, tl, td, z))?
         };
         Ok(__cordl_ret.into())
     }
@@ -320,7 +321,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
         vsize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -337,7 +338,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (vsize))?
+            cordl_method_info.invoke_unchecked(self, (vsize))?
         };
         Ok(__cordl_ret.into())
     }

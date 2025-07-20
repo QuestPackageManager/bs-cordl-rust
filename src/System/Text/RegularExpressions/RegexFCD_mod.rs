@@ -111,7 +111,7 @@ for crate::System::Text::RegularExpressions::RegexFCD {
 impl crate::System::Text::RegularExpressions::RegexFCD {
     pub fn AnchorFromType(_cordl_type: i32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("AnchorFromType")
@@ -123,7 +123,9 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_type))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_type))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Anchors(
@@ -132,7 +134,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -150,7 +152,9 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (tree))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (tree))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateFC(
@@ -162,7 +166,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         CurIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -185,7 +189,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (NodeType, node, CurIndex))?
+            cordl_method_info.invoke_unchecked(self, (NodeType, node, CurIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -193,7 +197,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
@@ -206,13 +210,13 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn FCIsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("FCIsEmpty")
@@ -224,7 +228,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn FirstChars(
@@ -233,7 +237,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         crate::System::Nullable_1<crate::System::Text::RegularExpressions::RegexPrefix>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -255,12 +259,12 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
             });
         let __cordl_ret: crate::System::Nullable_1<
             crate::System::Text::RegularExpressions::RegexPrefix,
-        > = unsafe { method.invoke_unchecked((), (t))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (t))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntIsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IntIsEmpty")
@@ -272,7 +276,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn PopFC(
@@ -281,7 +285,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexFC>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -301,12 +305,12 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Text::RegularExpressions::RegexFC,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn PopInt(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("PopInt")
@@ -318,7 +322,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Prefix(
@@ -329,7 +333,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         crate::System::Text::RegularExpressions::RegexPrefix,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -348,7 +352,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
                     })
             });
         let __cordl_ret: crate::System::Text::RegularExpressions::RegexPrefix = unsafe {
-            method.invoke_unchecked((), (tree))?
+            cordl_method_info.invoke_unchecked((), (tree))?
         };
         Ok(__cordl_ret.into())
     }
@@ -357,7 +361,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         fc: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexFC>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -376,7 +380,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (fc))?
+            cordl_method_info.invoke_unchecked(self, (fc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -385,7 +389,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         i: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("PushInt")
@@ -398,7 +402,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (i))?
+            cordl_method_info.invoke_unchecked(self, (i))?
         };
         Ok(__cordl_ret.into())
     }
@@ -411,7 +415,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexFC>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -433,14 +437,14 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Text::RegularExpressions::RegexFC,
-        > = unsafe { method.invoke_unchecked(self, (tree))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (tree))? };
         Ok(__cordl_ret.into())
     }
     pub fn SkipChild(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SkipChild")
@@ -453,7 +457,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -463,7 +467,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexFC>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -483,7 +487,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Text::RegularExpressions::RegexFC,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -491,7 +495,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         intStack: crate::System::Span_1<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -508,7 +512,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (intStack))?
+            cordl_method_info.invoke_unchecked(self, (intStack))?
         };
         Ok(__cordl_ret.into())
     }

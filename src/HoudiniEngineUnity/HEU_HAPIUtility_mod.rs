@@ -45,7 +45,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         unityTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -67,7 +67,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hapiTransform, unityTransform))?
+            cordl_method_info.invoke_unchecked((), (hapiTransform, unityTransform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -78,7 +78,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         unityTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -100,7 +100,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hapiTransform, unityTransform))?
+            cordl_method_info.invoke_unchecked((), (hapiTransform, unityTransform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -109,7 +109,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -131,7 +131,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (matrix, transform))?
+            cordl_method_info.invoke_unchecked((), (matrix, transform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -142,7 +142,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         unityTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -164,7 +164,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hapiTransform, unityTransform))?
+            cordl_method_info.invoke_unchecked((), (hapiTransform, unityTransform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -175,7 +175,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         assetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -201,7 +201,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (session, nodeID, bCookTemplatedGeos, assetName))?
         };
         Ok(__cordl_ret.into())
@@ -213,7 +213,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         assetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -239,7 +239,8 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (session, nodeID, options, assetName))?
+            cordl_method_info
+                .invoke_unchecked((), (session, nodeID, options, assetName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -250,7 +251,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         newAssetID: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -276,7 +277,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (session, assetName, bCookTemplatedGeos, newAssetID),
@@ -291,7 +292,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         newAssetID: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -317,7 +318,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (session, assetName, bCookTemplatedGeos, newAssetID),
@@ -332,7 +333,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         newAssetID: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -358,7 +359,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (session, assetName, bCookTemplatedGeos, newAssetID),
@@ -377,7 +378,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -405,7 +406,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (assetType, rootName, parentTransform, session, bBuildAsync, rootGO),
@@ -423,7 +424,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -450,7 +451,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (name, parentTransform, session, bBuildAsync, rootGO),
@@ -468,7 +469,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -495,7 +496,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (name, parentTransform, session, bBuildAsync, rootGO),
@@ -507,7 +508,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         inTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -524,7 +525,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (inTransform))?
+            cordl_method_info.invoke_unchecked((), (inTransform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -536,7 +537,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -553,7 +554,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (gameObject))?
+            cordl_method_info.invoke_unchecked((), (gameObject))?
         };
         Ok(__cordl_ret.into())
     }
@@ -562,7 +563,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         bRegisterUndo: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -582,7 +583,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (gameObect, bRegisterUndo))?
+            cordl_method_info.invoke_unchecked((), (gameObect, bRegisterUndo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -597,7 +598,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -627,7 +628,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (session, geoID, partID, attrName, owner, attributeInfo),
@@ -639,7 +640,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         inPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -655,7 +656,9 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (inPath))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (inPath))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FindHoudiniAssetFileInPathWithExt(
@@ -664,7 +667,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -682,7 +685,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (filePath))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (filePath))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAssetInScene(
@@ -691,7 +694,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -711,14 +714,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
-        > = unsafe { method.invoke_unchecked((), (assetID))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (assetID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDefaultCookOptions(
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
     ) -> quest_hook::libil2cpp::Result<crate::HoudiniEngineUnity::HAPI_CookOptions> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -737,7 +740,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: crate::HoudiniEngineUnity::HAPI_CookOptions = unsafe {
-            method.invoke_unchecked((), (session))?
+            cordl_method_info.invoke_unchecked((), (session))?
         };
         Ok(__cordl_ret.into())
     }
@@ -745,7 +748,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -763,7 +766,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHAPITransform(
@@ -772,7 +775,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         s: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<crate::HoudiniEngineUnity::HAPI_TransformEuler> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -793,7 +796,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: crate::HoudiniEngineUnity::HAPI_TransformEuler = unsafe {
-            method.invoke_unchecked((), (p, r, s))?
+            cordl_method_info.invoke_unchecked((), (p, r, s))?
         };
         Ok(__cordl_ret.into())
     }
@@ -801,7 +804,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         mat: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<crate::HoudiniEngineUnity::HAPI_TransformEuler> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -818,7 +821,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: crate::HoudiniEngineUnity::HAPI_TransformEuler = unsafe {
-            method.invoke_unchecked((), (mat))?
+            cordl_method_info.invoke_unchecked((), (mat))?
         };
         Ok(__cordl_ret.into())
     }
@@ -826,7 +829,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         mat: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<crate::HoudiniEngineUnity::HAPI_Transform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -843,7 +846,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: crate::HoudiniEngineUnity::HAPI_Transform = unsafe {
-            method.invoke_unchecked((), (mat))?
+            cordl_method_info.invoke_unchecked((), (mat))?
         };
         Ok(__cordl_ret.into())
     }
@@ -851,7 +854,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -869,7 +872,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMatrix4x4(
@@ -878,7 +881,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         s: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -899,7 +902,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            method.invoke_unchecked((), (p, r, s))?
+            cordl_method_info.invoke_unchecked((), (p, r, s))?
         };
         Ok(__cordl_ret.into())
     }
@@ -910,7 +913,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         bConvertToUnity: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -932,7 +935,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            method.invoke_unchecked((), (hapiTransform, bConvertToUnity))?
+            cordl_method_info.invoke_unchecked((), (hapiTransform, bConvertToUnity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -958,7 +961,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -997,7 +1000,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (session, assetID, nodeInfo, objectInfos, objectTransforms),
@@ -1010,7 +1013,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         nodeID: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1032,7 +1035,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (session, nodeID))?
+            cordl_method_info.invoke_unchecked((), (session, nodeID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1040,7 +1043,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         m: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1057,7 +1060,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (m))?
+            cordl_method_info.invoke_unchecked((), (m))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1065,7 +1068,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         m: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1082,7 +1085,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
-            method.invoke_unchecked((), (m))?
+            cordl_method_info.invoke_unchecked((), (m))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1092,7 +1095,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1110,14 +1113,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (inPath))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (inPath))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetScale(
         m: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1134,7 +1137,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (m))?
+            cordl_method_info.invoke_unchecked((), (m))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1150,7 +1153,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1179,7 +1182,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -1197,7 +1200,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
     }
     pub fn IsEqualTol(a: f32, b: f32, t: f32) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32, f32), bool, 3usize>("IsEqualTol")
@@ -1209,14 +1212,16 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b, t))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b, t))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsHoudiniAssetFile(
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1232,7 +1237,9 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (filePath))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (filePath))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsNodeValidInHoudini(
@@ -1240,7 +1247,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         nodeID: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1262,7 +1269,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (session, nodeID))?
+            cordl_method_info.invoke_unchecked((), (session, nodeID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1273,7 +1280,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         s: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1297,7 +1304,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (transformMatrix, p, r, s))?
+            cordl_method_info.invoke_unchecked((), (transformMatrix, p, r, s))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1310,7 +1317,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1333,14 +1340,16 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (syncA, syncB))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (syncA, syncB))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsSupportedPolygonType(
         partType: crate::HoudiniEngineUnity::HAPI_PartType,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1356,7 +1365,9 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (partType))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (partType))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsTransformEqual(
@@ -1368,7 +1379,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1392,7 +1403,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (transA, transB))?
+            cordl_method_info.invoke_unchecked((), (transA, transB))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1401,7 +1412,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         viewB: quest_hook::libil2cpp::ByRefMut<crate::HoudiniEngineUnity::HAPI_Viewport>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1424,7 +1435,9 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (viewA, viewB))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (viewA, viewB))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadGeoWithNewGeoSync(
@@ -1433,7 +1446,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1452,7 +1465,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked((), (session))?
+            cordl_method_info.invoke_unchecked((), (session))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1469,7 +1482,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1503,7 +1516,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (session, assetPath, assetLibraryID, assetNames))?
         };
         Ok(__cordl_ret.into())
@@ -1515,7 +1528,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1540,7 +1553,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (assetName, inFilePath))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (assetName, inFilePath))? };
         Ok(__cordl_ret.into())
     }
     pub fn LocateValidFilePath_Object0(
@@ -1549,7 +1562,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1567,14 +1580,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (inObject))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (inObject))? };
         Ok(__cordl_ret.into())
     }
     pub fn Log(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1591,7 +1604,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (message))?
+            cordl_method_info.invoke_unchecked((), (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1599,7 +1612,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1616,7 +1629,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (message))?
+            cordl_method_info.invoke_unchecked((), (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1624,7 +1637,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1641,7 +1654,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (message))?
+            cordl_method_info.invoke_unchecked((), (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1650,7 +1663,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         assetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1674,7 +1687,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (session, assetName))?
+            cordl_method_info.invoke_unchecked((), (session, assetName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1685,7 +1698,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1709,7 +1722,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (animCurve, tangentValues))?
+            cordl_method_info.invoke_unchecked((), (animCurve, tangentValues))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1718,7 +1731,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1740,7 +1753,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (m, position))?
+            cordl_method_info.invoke_unchecked((), (m, position))?
         };
         Ok(__cordl_ret.into())
     }

@@ -43,7 +43,7 @@ impl crate::GlobalNamespace::UnitySpecificRandomExtensions {
         random: quest_hook::libil2cpp::Gc<crate::System::Random>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -60,7 +60,7 @@ impl crate::GlobalNamespace::UnitySpecificRandomExtensions {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (random))?
+            cordl_method_info.invoke_unchecked((), (random))?
         };
         Ok(__cordl_ret.into())
     }
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::UnitySpecificRandomExtensions {
         random: quest_hook::libil2cpp::Gc<crate::System::Random>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -85,7 +85,7 @@ impl crate::GlobalNamespace::UnitySpecificRandomExtensions {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (random))?
+            cordl_method_info.invoke_unchecked((), (random))?
         };
         Ok(__cordl_ret.into())
     }

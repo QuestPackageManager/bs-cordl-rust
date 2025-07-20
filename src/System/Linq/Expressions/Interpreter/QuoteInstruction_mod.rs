@@ -84,7 +84,7 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction {
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -102,7 +102,9 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (frame))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (frame))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -120,7 +122,7 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -151,7 +153,7 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (operand, hoistedVariables))?
+            cordl_method_info.invoke_unchecked(self, (operand, hoistedVariables))?
         };
         Ok(__cordl_ret.into())
     }
@@ -161,7 +163,7 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -179,12 +181,12 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ProducedStack(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_ProducedStack")
@@ -196,7 +198,7 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -286,7 +288,7 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
         quest_hook::libil2cpp::Gc<crate::System::Runtime::CompilerServices::IStrongBox>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -308,7 +310,7 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::CompilerServices::IStrongBox,
-        > = unsafe { method.invoke_unchecked(self, (variable))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (variable))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -341,7 +343,7 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -363,7 +365,7 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Expression,
-        > = unsafe { method.invoke_unchecked(self, (node))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn VisitCatchBlock(
@@ -373,7 +375,7 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::CatchBlock>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -395,7 +397,7 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::CatchBlock,
-        > = unsafe { method.invoke_unchecked(self, (node))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn VisitLambda<T>(
@@ -411,7 +413,7 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -433,7 +435,7 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Expression,
-        > = unsafe { method.invoke_unchecked(self, (node))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn VisitParameter(
@@ -445,7 +447,7 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -467,7 +469,7 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Expression,
-        > = unsafe { method.invoke_unchecked(self, (node))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -487,7 +489,7 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -518,7 +520,7 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (hoistedVariables, frame))?
+            cordl_method_info.invoke_unchecked(self, (hoistedVariables, frame))?
         };
         Ok(__cordl_ret.into())
     }

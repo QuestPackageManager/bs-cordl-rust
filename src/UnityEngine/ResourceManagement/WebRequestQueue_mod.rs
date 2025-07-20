@@ -45,7 +45,7 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -64,7 +64,7 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (queueOperation))?
+            cordl_method_info.invoke_unchecked((), (queueOperation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -74,7 +74,7 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -93,7 +93,7 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (operation))?
+            cordl_method_info.invoke_unchecked((), (operation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -101,7 +101,7 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
         operation: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -118,7 +118,7 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (operation))?
+            cordl_method_info.invoke_unchecked((), (operation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -128,7 +128,7 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -147,7 +147,7 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (operation))?
+            cordl_method_info.invoke_unchecked((), (operation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -161,7 +161,7 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -183,14 +183,14 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
-        > = unsafe { method.invoke_unchecked((), (request))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (request))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetMaxConcurrentRequests(
         maxRequests: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -207,7 +207,7 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (maxRequests))?
+            cordl_method_info.invoke_unchecked((), (maxRequests))?
         };
         Ok(__cordl_ret.into())
     }
@@ -218,7 +218,7 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
         millisecondsTimeout: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -240,7 +240,7 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (request, millisecondsTimeout))?
+            cordl_method_info.invoke_unchecked((), (request, millisecondsTimeout))?
         };
         Ok(__cordl_ret.into())
     }

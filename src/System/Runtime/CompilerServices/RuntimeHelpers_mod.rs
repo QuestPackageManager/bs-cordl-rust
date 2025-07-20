@@ -43,7 +43,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -59,7 +59,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (o))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (o))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetObjectValue(
@@ -68,7 +68,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -86,7 +86,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (obj))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn InitializeArray_IntPtr0(
@@ -94,7 +94,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
         fldHandle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -114,7 +114,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, fldHandle))?
+            cordl_method_info.invoke_unchecked((), (array, fldHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -123,7 +123,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
         fldHandle: crate::System::RuntimeFieldHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -143,7 +143,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, fldHandle))?
+            cordl_method_info.invoke_unchecked((), (array, fldHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -153,7 +153,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -169,14 +169,14 @@ impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn PrepareConstrainedRegions() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -193,7 +193,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -201,7 +201,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
         _cordl_type: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -218,7 +218,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (_cordl_type))?
+            cordl_method_info.invoke_unchecked((), (_cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -226,7 +226,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
         _cordl_type: crate::System::RuntimeTypeHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -243,13 +243,13 @@ impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (_cordl_type))?
+            cordl_method_info.invoke_unchecked((), (_cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SufficientExecutionStack() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("SufficientExecutionStack")
@@ -261,12 +261,12 @@ impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn TryEnsureSufficientExecutionStack() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -282,12 +282,12 @@ impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_OffsetToStringData() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_OffsetToStringData")
@@ -299,7 +299,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -47,7 +47,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Shelf>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -72,12 +72,12 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_Shelf,
-        > = unsafe { method.invoke_unchecked((), (shelfName, shelfPath))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (shelfName, shelfPath))? };
         Ok(__cordl_ret.into())
     }
     pub fn AreShelvesLoaded() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("AreShelvesLoaded")
@@ -89,12 +89,12 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ClearShelves() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -111,7 +111,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -119,7 +119,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         toolSlot: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -136,7 +136,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (toolSlot))?
+            cordl_method_info.invoke_unchecked((), (toolSlot))?
         };
         Ok(__cordl_ret.into())
     }
@@ -150,7 +150,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -179,7 +179,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (toolName, toolPath, batchObjects))?
+            cordl_method_info.invoke_unchecked((), (toolName, toolPath, batchObjects))?
         };
         Ok(__cordl_ret.into())
     }
@@ -191,7 +191,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         targetScale: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -218,7 +218,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (toolName, toolPath, targetPosition, targetRotation, targetScale),
@@ -231,7 +231,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         toolPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -255,7 +255,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (toolName, toolPath))?
+            cordl_method_info.invoke_unchecked((), (toolName, toolPath))?
         };
         Ok(__cordl_ret.into())
     }
@@ -269,7 +269,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -298,7 +298,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (toolName, toolPath, inputObjects))?
+            cordl_method_info.invoke_unchecked((), (toolName, toolPath, inputObjects))?
         };
         Ok(__cordl_ret.into())
     }
@@ -312,7 +312,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -341,13 +341,13 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (toolName, toolPath, inputObjects))?
+            cordl_method_info.invoke_unchecked((), (toolName, toolPath, inputObjects))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentShelfIndex() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("GetCurrentShelfIndex")
@@ -359,12 +359,12 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNumShelves() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("GetNumShelves")
@@ -376,7 +376,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetShelfStorageEntry(
@@ -386,7 +386,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -411,7 +411,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (shelfName, shelfPath))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (shelfName, shelfPath))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetShelf_Il2CppString1(
@@ -420,7 +420,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Shelf>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -438,7 +438,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_Shelf,
-        > = unsafe { method.invoke_unchecked((), (shelfName))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (shelfName))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetShelf_i32_0(
@@ -447,7 +447,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Shelf>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -465,7 +465,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_Shelf,
-        > = unsafe { method.invoke_unchecked((), (index))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSplitShelfEntry(
@@ -478,7 +478,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -509,7 +509,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (shelfEntry, shelfName, shelfPath))?
+            cordl_method_info.invoke_unchecked((), (shelfEntry, shelfName, shelfPath))?
         };
         Ok(__cordl_ret.into())
     }
@@ -520,7 +520,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -545,7 +545,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (tool, inPath))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (tool, inPath))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetToolIconPath(
@@ -555,7 +555,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -580,7 +580,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (tool, inPath))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (tool, inPath))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetToolResourcePath(
@@ -591,7 +591,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -619,14 +619,14 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (tool, inPath, ext))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (tool, inPath, ext))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidInput(
         gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -642,12 +642,14 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (gameObject))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (gameObject))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadShelves() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -664,7 +666,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -674,7 +676,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ShelfToolData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -694,7 +696,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_ShelfToolData,
-        > = unsafe { method.invoke_unchecked((), (jsonFilePath))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (jsonFilePath))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadToolFromJsonString(
@@ -704,7 +706,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ShelfToolData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -731,7 +733,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_ShelfToolData,
-        > = unsafe { method.invoke_unchecked((), (json, jsonFilePath))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (json, jsonFilePath))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadToolsFromDirectory(
@@ -747,7 +749,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -777,7 +779,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (folderPath, tools))?
+            cordl_method_info.invoke_unchecked((), (folderPath, tools))?
         };
         Ok(__cordl_ret.into())
     }
@@ -792,7 +794,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         shelfIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -809,13 +811,13 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (shelfIndex))?
+            cordl_method_info.invoke_unchecked((), (shelfIndex))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SaveShelf() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -832,7 +834,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -840,7 +842,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -857,7 +859,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (index))?
+            cordl_method_info.invoke_unchecked((), (index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -865,7 +867,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         quest_hook::libil2cpp::Void,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -882,7 +884,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -890,7 +892,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -903,7 +905,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

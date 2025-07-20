@@ -62,7 +62,7 @@ impl crate::System::Net::EndPointListener {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -91,7 +91,7 @@ impl crate::System::Net::EndPointListener {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (socket, e, accepted))?
+            cordl_method_info.invoke_unchecked((), (socket, e, accepted))?
         };
         Ok(__cordl_ret.into())
     }
@@ -101,7 +101,7 @@ impl crate::System::Net::EndPointListener {
         listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -123,7 +123,7 @@ impl crate::System::Net::EndPointListener {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (prefix, listener))?
+            cordl_method_info.invoke_unchecked(self, (prefix, listener))?
         };
         Ok(__cordl_ret.into())
     }
@@ -133,7 +133,7 @@ impl crate::System::Net::EndPointListener {
         prefix: quest_hook::libil2cpp::Gc<crate::System::Net::ListenerPrefix>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -155,7 +155,7 @@ impl crate::System::Net::EndPointListener {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (coll, prefix))?
+            cordl_method_info.invoke_unchecked(self, (coll, prefix))?
         };
         Ok(__cordl_ret.into())
     }
@@ -164,7 +164,7 @@ impl crate::System::Net::EndPointListener {
         context: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListenerContext>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -182,14 +182,16 @@ impl crate::System::Net::EndPointListener {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (context))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (context))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CheckIfRemove(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -206,7 +208,7 @@ impl crate::System::Net::EndPointListener {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -214,7 +216,7 @@ impl crate::System::Net::EndPointListener {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Close")
@@ -227,7 +229,7 @@ impl crate::System::Net::EndPointListener {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -243,7 +245,7 @@ impl crate::System::Net::EndPointListener {
         quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -275,7 +277,7 @@ impl crate::System::Net::EndPointListener {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener> = unsafe {
-            method.invoke_unchecked(self, (host, path, list, prefix))?
+            cordl_method_info.invoke_unchecked(self, (host, path, list, prefix))?
         };
         Ok(__cordl_ret.into())
     }
@@ -296,7 +298,7 @@ impl crate::System::Net::EndPointListener {
         e: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncEventArgs>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -320,7 +322,7 @@ impl crate::System::Net::EndPointListener {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sender, e))?
+            cordl_method_info.invoke_unchecked((), (sender, e))?
         };
         Ok(__cordl_ret.into())
     }
@@ -330,7 +332,7 @@ impl crate::System::Net::EndPointListener {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -349,7 +351,7 @@ impl crate::System::Net::EndPointListener {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (args))?
+            cordl_method_info.invoke_unchecked((), (args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -358,7 +360,7 @@ impl crate::System::Net::EndPointListener {
         conn: quest_hook::libil2cpp::Gc<crate::System::Net::HttpConnection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -375,7 +377,7 @@ impl crate::System::Net::EndPointListener {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (conn))?
+            cordl_method_info.invoke_unchecked(self, (conn))?
         };
         Ok(__cordl_ret.into())
     }
@@ -385,7 +387,7 @@ impl crate::System::Net::EndPointListener {
         listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -407,7 +409,7 @@ impl crate::System::Net::EndPointListener {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (prefix, listener))?
+            cordl_method_info.invoke_unchecked(self, (prefix, listener))?
         };
         Ok(__cordl_ret.into())
     }
@@ -417,7 +419,7 @@ impl crate::System::Net::EndPointListener {
         prefix: quest_hook::libil2cpp::Gc<crate::System::Net::ListenerPrefix>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -439,7 +441,7 @@ impl crate::System::Net::EndPointListener {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (coll, prefix))?
+            cordl_method_info.invoke_unchecked(self, (coll, prefix))?
         };
         Ok(__cordl_ret.into())
     }
@@ -453,7 +455,7 @@ impl crate::System::Net::EndPointListener {
         quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -477,7 +479,7 @@ impl crate::System::Net::EndPointListener {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener> = unsafe {
-            method.invoke_unchecked(self, (uri, prefix))?
+            cordl_method_info.invoke_unchecked(self, (uri, prefix))?
         };
         Ok(__cordl_ret.into())
     }
@@ -486,7 +488,7 @@ impl crate::System::Net::EndPointListener {
         context: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListenerContext>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -505,7 +507,7 @@ impl crate::System::Net::EndPointListener {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (context))?
+            cordl_method_info.invoke_unchecked(self, (context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -517,7 +519,7 @@ impl crate::System::Net::EndPointListener {
         secure: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -539,7 +541,7 @@ impl crate::System::Net::EndPointListener {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (listener, addr, port, secure))?
+            cordl_method_info.invoke_unchecked(self, (listener, addr, port, secure))?
         };
         Ok(__cordl_ret.into())
     }
@@ -549,7 +551,7 @@ impl crate::System::Net::EndPointListener {
         quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -566,7 +568,7 @@ impl crate::System::Net::EndPointListener {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener> = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

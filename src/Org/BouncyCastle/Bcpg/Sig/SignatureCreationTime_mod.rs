@@ -41,7 +41,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::Sig::SignatureCreati
 impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureCreationTime {
     pub fn GetTime(&mut self) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::System::DateTime, 0usize>("GetTime")
@@ -54,7 +54,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureCreationTime {
                     })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -85,7 +85,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureCreationTime {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -105,7 +105,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureCreationTime {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (_cordl_time))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_DateTime1(
@@ -114,7 +114,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureCreationTime {
         date: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -131,7 +131,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureCreationTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (critical, date))?
+            cordl_method_info.invoke_unchecked(self, (critical, date))?
         };
         Ok(__cordl_ret.into())
     }
@@ -142,7 +142,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureCreationTime {
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -165,7 +165,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureCreationTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (critical, isLongLength, data))?
+            cordl_method_info.invoke_unchecked(self, (critical, isLongLength, data))?
         };
         Ok(__cordl_ret.into())
     }

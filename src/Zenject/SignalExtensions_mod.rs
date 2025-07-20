@@ -48,7 +48,7 @@ impl crate::Zenject::SignalExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -68,7 +68,7 @@ impl crate::Zenject::SignalExtensions {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::BindSignalIdToBinder_1<TSignal>,
-        > = unsafe { method.invoke_unchecked((), (container))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (container))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateDefaultSignalDeclarationBindInfo(
@@ -78,7 +78,7 @@ impl crate::Zenject::SignalExtensions {
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclarationBindInfo>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -101,7 +101,7 @@ impl crate::Zenject::SignalExtensions {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::SignalDeclarationBindInfo,
-        > = unsafe { method.invoke_unchecked((), (container, signalType))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (container, signalType))? };
         Ok(__cordl_ret.into())
     }
     pub fn DeclareSignal<TSignal>(
@@ -116,7 +116,7 @@ impl crate::Zenject::SignalExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -136,7 +136,7 @@ impl crate::Zenject::SignalExtensions {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder,
-        > = unsafe { method.invoke_unchecked((), (container))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (container))? };
         Ok(__cordl_ret.into())
     }
 }

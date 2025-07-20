@@ -45,7 +45,7 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -63,7 +63,7 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (expected))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (expected))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEqualityMessage(
@@ -74,7 +74,7 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -100,7 +100,9 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (actual, expected, expectEqual))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (actual, expected, expectEqual))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetMessage_Il2CppString0(
@@ -109,7 +111,7 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -127,7 +129,7 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (failureMessage))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (failureMessage))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMessage_Il2CppString1(
@@ -137,7 +139,7 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -162,7 +164,9 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (failureMessage, expected))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (failureMessage, expected))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NullFailureMessage(
@@ -172,7 +176,7 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -195,7 +199,7 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (value, expectNull))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (value, expectNull))? };
         Ok(__cordl_ret.into())
     }
 }

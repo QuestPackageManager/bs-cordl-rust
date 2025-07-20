@@ -40,7 +40,7 @@ impl std::ops::DerefMut for crate::System::Buffers::Utilities {
 impl crate::System::Buffers::Utilities {
     pub fn GetMaxSizeForBucket(binIndex: i32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("GetMaxSizeForBucket")
@@ -52,12 +52,14 @@ impl crate::System::Buffers::Utilities {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (binIndex))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (binIndex))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SelectBucketIndex(bufferSize: i32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("SelectBucketIndex")
@@ -69,7 +71,9 @@ impl crate::System::Buffers::Utilities {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (bufferSize))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (bufferSize))?
+        };
         Ok(__cordl_ret.into())
     }
 }

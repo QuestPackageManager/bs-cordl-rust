@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdown {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
@@ -84,7 +84,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdown {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -97,7 +97,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdown {
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -118,7 +118,8 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdown {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
         > = unsafe {
-            method.invoke_unchecked(self, (seconds, delay, durationMultiplier))?
+            cordl_method_info
+                .invoke_unchecked(self, (seconds, delay, durationMultiplier))?
         };
         Ok(__cordl_ret.into())
     }
@@ -133,7 +134,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdown {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
@@ -146,7 +147,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdown {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -159,7 +160,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdown {
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -186,7 +187,8 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdown {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
         > = unsafe {
-            method.invoke_unchecked(self, (text, appearDuration, disappearDuration))?
+            cordl_method_info
+                .invoke_unchecked(self, (text, appearDuration, disappearDuration))?
         };
         Ok(__cordl_ret.into())
     }
@@ -198,7 +200,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdown {
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -218,7 +220,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdown {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
-        > = unsafe { method.invoke_unchecked(self, (audioClip, delay))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (audioClip, delay))? };
         Ok(__cordl_ret.into())
     }
     pub fn StartCountdown(
@@ -228,7 +230,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdown {
         durationMultiplier: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -245,7 +247,8 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdown {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (seconds, delay, durationMultiplier))?
+            cordl_method_info
+                .invoke_unchecked(self, (seconds, delay, durationMultiplier))?
         };
         Ok(__cordl_ret.into())
     }
@@ -253,7 +256,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdown {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -266,13 +269,13 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdown {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_textAppearDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_textAppearDuration")
@@ -284,7 +287,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdown {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

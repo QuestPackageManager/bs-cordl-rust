@@ -46,7 +46,7 @@ impl crate::ENet::Native {
         settings: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -62,7 +62,9 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (opts, settings))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (opts, settings))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OPENSSL_init_ssl(
@@ -70,7 +72,7 @@ impl crate::ENet::Native {
         settings: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -86,7 +88,9 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (opts, settings))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (opts, settings))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_address_get_hostname(
@@ -95,7 +99,7 @@ impl crate::ENet::Native {
         nameLength: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -118,7 +122,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (address, hostName, nameLength))?
+            cordl_method_info.invoke_unchecked((), (address, hostName, nameLength))?
         };
         Ok(__cordl_ret.into())
     }
@@ -128,7 +132,7 @@ impl crate::ENet::Native {
         ipLength: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -151,7 +155,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (address, ip, ipLength))?
+            cordl_method_info.invoke_unchecked((), (address, ip, ipLength))?
         };
         Ok(__cordl_ret.into())
     }
@@ -160,7 +164,7 @@ impl crate::ENet::Native {
         hostName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -182,7 +186,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (address, hostName))?
+            cordl_method_info.invoke_unchecked((), (address, hostName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -191,7 +195,7 @@ impl crate::ENet::Native {
         ip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -212,7 +216,9 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (address, ip))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (address, ip))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_crc64(
@@ -220,7 +226,7 @@ impl crate::ENet::Native {
         bufferCount: i32,
     ) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -237,7 +243,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: u64 = unsafe {
-            method.invoke_unchecked((), (buffers, bufferCount))?
+            cordl_method_info.invoke_unchecked((), (buffers, bufferCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -245,7 +251,7 @@ impl crate::ENet::Native {
         quest_hook::libil2cpp::Void,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -262,7 +268,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -272,7 +278,7 @@ impl crate::ENet::Native {
         outgoingBandwidth: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -289,7 +295,8 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (host, incomingBandwidth, outgoingBandwidth))?
+            cordl_method_info
+                .invoke_unchecked((), (host, incomingBandwidth, outgoingBandwidth))?
         };
         Ok(__cordl_ret.into())
     }
@@ -299,7 +306,7 @@ impl crate::ENet::Native {
         packet: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -316,7 +323,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (host, channelID, packet))?
+            cordl_method_info.invoke_unchecked((), (host, channelID, packet))?
         };
         Ok(__cordl_ret.into())
     }
@@ -327,7 +334,7 @@ impl crate::ENet::Native {
         excludedPeer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -349,7 +356,8 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (host, channelID, packet, excludedPeer))?
+            cordl_method_info
+                .invoke_unchecked((), (host, channelID, packet, excludedPeer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -363,7 +371,7 @@ impl crate::ENet::Native {
         peersLength: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -388,7 +396,8 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (host, channelID, packet, peers, peersLength))?
+            cordl_method_info
+                .invoke_unchecked((), (host, channelID, packet, peers, peersLength))?
         };
         Ok(__cordl_ret.into())
     }
@@ -397,7 +406,7 @@ impl crate::ENet::Native {
         channelLimit: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -414,7 +423,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (host, channelLimit))?
+            cordl_method_info.invoke_unchecked((), (host, channelLimit))?
         };
         Ok(__cordl_ret.into())
     }
@@ -423,7 +432,7 @@ impl crate::ENet::Native {
         event: quest_hook::libil2cpp::ByRefMut<crate::ENet::ENetEvent>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -442,7 +451,9 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (host, event))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (host, event))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_host_connect(
@@ -452,7 +463,7 @@ impl crate::ENet::Native {
         data: u32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -474,7 +485,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (host, address, channelCount, data))?
+            cordl_method_info.invoke_unchecked((), (host, address, channelCount, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -487,7 +498,7 @@ impl crate::ENet::Native {
         bufferSize: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -511,7 +522,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -535,7 +546,7 @@ impl crate::ENet::Native {
         bufferSize: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -559,7 +570,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -586,7 +597,7 @@ impl crate::ENet::Native {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -613,7 +624,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -641,7 +652,7 @@ impl crate::ENet::Native {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -668,7 +679,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -688,7 +699,7 @@ impl crate::ENet::Native {
         host: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -705,7 +716,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (host))?
+            cordl_method_info.invoke_unchecked((), (host))?
         };
         Ok(__cordl_ret.into())
     }
@@ -713,7 +724,7 @@ impl crate::ENet::Native {
         host: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -730,7 +741,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (host))?
+            cordl_method_info.invoke_unchecked((), (host))?
         };
         Ok(__cordl_ret.into())
     }
@@ -738,7 +749,7 @@ impl crate::ENet::Native {
         host: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -754,14 +765,16 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (host))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (host))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_host_get_bytes_sent(
         host: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -777,14 +790,16 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (host))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (host))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_host_get_packets_received(
         host: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -800,14 +815,16 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (host))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (host))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_host_get_packets_sent(
         host: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -823,14 +840,16 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (host))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (host))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_host_get_peers_count(
         host: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -846,7 +865,9 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (host))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (host))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_host_prevent_connections(
@@ -854,7 +875,7 @@ impl crate::ENet::Native {
         state: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -871,7 +892,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (host, state))?
+            cordl_method_info.invoke_unchecked((), (host, state))?
         };
         Ok(__cordl_ret.into())
     }
@@ -881,7 +902,7 @@ impl crate::ENet::Native {
         timeout: u32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -902,7 +923,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (host, event, timeout))?
+            cordl_method_info.invoke_unchecked((), (host, event, timeout))?
         };
         Ok(__cordl_ret.into())
     }
@@ -911,7 +932,7 @@ impl crate::ENet::Native {
         callback: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -928,7 +949,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (host, callback))?
+            cordl_method_info.invoke_unchecked((), (host, callback))?
         };
         Ok(__cordl_ret.into())
     }
@@ -937,7 +958,7 @@ impl crate::ENet::Native {
         callback: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -954,7 +975,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (host, callback))?
+            cordl_method_info.invoke_unchecked((), (host, callback))?
         };
         Ok(__cordl_ret.into())
     }
@@ -963,7 +984,7 @@ impl crate::ENet::Native {
         number: u16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -980,13 +1001,13 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (host, number))?
+            cordl_method_info.invoke_unchecked((), (host, number))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn enet_initialize() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("enet_initialize")
@@ -998,7 +1019,7 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn enet_initialize_with_callbacks(
@@ -1006,7 +1027,7 @@ impl crate::ENet::Native {
         inits: quest_hook::libil2cpp::ByRefMut<crate::ENet::ENetCallbacks>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1025,12 +1046,14 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (version, inits))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (version, inits))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_linked_version() -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u32, 0usize>("enet_linked_version")
@@ -1042,14 +1065,14 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn enet_packet_check_references(
         packet: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1065,7 +1088,9 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (packet))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (packet))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_packet_create_Il2CppArray0(
@@ -1074,7 +1099,7 @@ impl crate::ENet::Native {
         flags: crate::ENet::PacketFlags,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1097,7 +1122,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (data, dataLength, flags))?
+            cordl_method_info.invoke_unchecked((), (data, dataLength, flags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1107,7 +1132,7 @@ impl crate::ENet::Native {
         flags: crate::ENet::PacketFlags,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1128,7 +1153,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (data, dataLength, flags))?
+            cordl_method_info.invoke_unchecked((), (data, dataLength, flags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1139,7 +1164,7 @@ impl crate::ENet::Native {
         flags: crate::ENet::PacketFlags,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1163,7 +1188,8 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (data, dataLength, dataOffset, flags))?
+            cordl_method_info
+                .invoke_unchecked((), (data, dataLength, dataOffset, flags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1174,7 +1200,7 @@ impl crate::ENet::Native {
         flags: crate::ENet::PacketFlags,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1196,7 +1222,8 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (data, dataLength, dataOffset, flags))?
+            cordl_method_info
+                .invoke_unchecked((), (data, dataLength, dataOffset, flags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1204,7 +1231,7 @@ impl crate::ENet::Native {
         packet: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1221,7 +1248,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (packet))?
+            cordl_method_info.invoke_unchecked((), (packet))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1229,7 +1256,7 @@ impl crate::ENet::Native {
         packet: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1246,7 +1273,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (packet))?
+            cordl_method_info.invoke_unchecked((), (packet))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1254,7 +1281,7 @@ impl crate::ENet::Native {
         packet: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1270,14 +1297,16 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (packet))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (packet))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_packet_get_user_data(
         packet: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1294,7 +1323,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (packet))?
+            cordl_method_info.invoke_unchecked((), (packet))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1303,7 +1332,7 @@ impl crate::ENet::Native {
         callback: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1320,7 +1349,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (packet, callback))?
+            cordl_method_info.invoke_unchecked((), (packet, callback))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1329,7 +1358,7 @@ impl crate::ENet::Native {
         userData: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1346,7 +1375,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (packet, userData))?
+            cordl_method_info.invoke_unchecked((), (packet, userData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1355,7 +1384,7 @@ impl crate::ENet::Native {
         data: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1372,7 +1401,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (peer, data))?
+            cordl_method_info.invoke_unchecked((), (peer, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1381,7 +1410,7 @@ impl crate::ENet::Native {
         data: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1398,7 +1427,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (peer, data))?
+            cordl_method_info.invoke_unchecked((), (peer, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1407,7 +1436,7 @@ impl crate::ENet::Native {
         data: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1424,7 +1453,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (peer, data))?
+            cordl_method_info.invoke_unchecked((), (peer, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1432,7 +1461,7 @@ impl crate::ENet::Native {
         peer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1448,14 +1477,16 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (peer))? };
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (peer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_peer_get_bytes_sent(
         peer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1471,14 +1502,16 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (peer))? };
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (peer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_peer_get_data(
         peer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1495,7 +1528,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (peer))?
+            cordl_method_info.invoke_unchecked((), (peer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1503,7 +1536,7 @@ impl crate::ENet::Native {
         peer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1519,7 +1552,9 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (peer))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (peer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_peer_get_ip(
@@ -1528,7 +1563,7 @@ impl crate::ENet::Native {
         ipLength: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1551,7 +1586,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (peer, ip, ipLength))?
+            cordl_method_info.invoke_unchecked((), (peer, ip, ipLength))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1559,7 +1594,7 @@ impl crate::ENet::Native {
         peer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1575,14 +1610,16 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (peer))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (peer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_peer_get_lastreceivetime(
         peer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1598,14 +1635,16 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (peer))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (peer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_peer_get_lastsendtime(
         peer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1621,14 +1660,16 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (peer))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (peer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_peer_get_mtu(
         peer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1644,14 +1685,16 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (peer))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (peer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_peer_get_packets_lost(
         peer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1667,14 +1710,16 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (peer))? };
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (peer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_peer_get_packets_sent(
         peer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1690,14 +1735,16 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (peer))? };
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (peer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_peer_get_packets_throttle(
         peer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1713,14 +1760,16 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (peer))? };
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (peer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_peer_get_port(
         peer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u16> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1736,14 +1785,16 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: u16 = unsafe { method.invoke_unchecked((), (peer))? };
+        let __cordl_ret: u16 = unsafe {
+            cordl_method_info.invoke_unchecked((), (peer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_peer_get_rtt(
         peer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1759,14 +1810,16 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (peer))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (peer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn enet_peer_get_state(
         peer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::ENet::PeerState> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1783,7 +1836,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: crate::ENet::PeerState = unsafe {
-            method.invoke_unchecked((), (peer))?
+            cordl_method_info.invoke_unchecked((), (peer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1791,7 +1844,7 @@ impl crate::ENet::Native {
         peer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1808,7 +1861,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (peer))?
+            cordl_method_info.invoke_unchecked((), (peer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1817,7 +1870,7 @@ impl crate::ENet::Native {
         pingInterval: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1834,7 +1887,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (peer, pingInterval))?
+            cordl_method_info.invoke_unchecked((), (peer, pingInterval))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1843,7 +1896,7 @@ impl crate::ENet::Native {
         channelID: quest_hook::libil2cpp::ByRefMut<u8>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1860,7 +1913,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (peer, channelID))?
+            cordl_method_info.invoke_unchecked((), (peer, channelID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1868,7 +1921,7 @@ impl crate::ENet::Native {
         peer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1885,7 +1938,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (peer))?
+            cordl_method_info.invoke_unchecked((), (peer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1895,7 +1948,7 @@ impl crate::ENet::Native {
         packet: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1912,7 +1965,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (peer, channelID, packet))?
+            cordl_method_info.invoke_unchecked((), (peer, channelID, packet))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1921,7 +1974,7 @@ impl crate::ENet::Native {
         data: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1938,7 +1991,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (peer, data))?
+            cordl_method_info.invoke_unchecked((), (peer, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1950,7 +2003,7 @@ impl crate::ENet::Native {
         threshold: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1967,7 +2020,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (peer, interval, acceleration, deceleration, threshold),
@@ -1982,7 +2035,7 @@ impl crate::ENet::Native {
         timeoutMaximum: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1999,7 +2052,7 @@ impl crate::ENet::Native {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (peer, timeoutLimit, timeoutMinimum, timeoutMaximum),
@@ -2009,7 +2062,7 @@ impl crate::ENet::Native {
     }
     pub fn enet_time_get() -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u32, 0usize>("enet_time_get")
@@ -2021,7 +2074,7 @@ impl crate::ENet::Native {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

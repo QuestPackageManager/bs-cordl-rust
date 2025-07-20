@@ -48,7 +48,7 @@ impl crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -70,7 +70,7 @@ impl crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IDigest,
-        > = unsafe { method.invoke_unchecked(self, (digestAlg))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (digestAlg))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateMac(
@@ -82,7 +82,7 @@ impl crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -104,7 +104,7 @@ impl crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IMac,
-        > = unsafe { method.invoke_unchecked(self, (macAlg))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (macAlg))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

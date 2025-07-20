@@ -58,7 +58,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HMAsyncRequest>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -80,14 +80,14 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::HMAsyncRequest,
-        > = unsafe { method.invoke_unchecked(self, (completionHandler))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (completionHandler))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
@@ -100,7 +100,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -114,7 +114,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HMAsyncRequest>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -142,7 +142,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::HMAsyncRequest,
         > = unsafe {
-            method.invoke_unchecked(self, (achievementId, completionHandler))?
+            cordl_method_info.invoke_unchecked(self, (achievementId, completionHandler))?
         };
         Ok(__cordl_ret.into())
     }
@@ -219,7 +219,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievement
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -249,7 +249,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievement
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (result, unlockedAchievementsIds, callback, object),
@@ -262,7 +262,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievement
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -279,7 +279,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievement
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (result))?
+            cordl_method_info.invoke_unchecked(self, (result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -293,7 +293,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievement
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -319,7 +319,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievement
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (result, unlockedAchievementsIds))?
+            cordl_method_info.invoke_unchecked(self, (result, unlockedAchievementsIds))?
         };
         Ok(__cordl_ret.into())
     }
@@ -339,7 +339,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievement
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -361,7 +361,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievement
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))?
+            cordl_method_info.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -520,7 +520,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompl
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -543,7 +543,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompl
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method.invoke_unchecked(self, (result, callback, object))?
+            cordl_method_info.invoke_unchecked(self, (result, callback, object))?
         };
         Ok(__cordl_ret.into())
     }
@@ -552,7 +552,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompl
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -569,7 +569,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompl
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (result))?
+            cordl_method_info.invoke_unchecked(self, (result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -578,7 +578,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompl
         result: crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -595,7 +595,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompl
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (result))?
+            cordl_method_info.invoke_unchecked(self, (result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -615,7 +615,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompl
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -637,7 +637,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompl
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))?
+            cordl_method_info.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }

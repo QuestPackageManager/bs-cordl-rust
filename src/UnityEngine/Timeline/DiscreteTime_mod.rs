@@ -106,7 +106,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -122,12 +122,14 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (obj))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (obj))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DoubleToDiscreteTime(_cordl_time: f64) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64), i64, 1usize>("DoubleToDiscreteTime")
@@ -139,7 +141,9 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
+        let __cordl_ret: i64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_time))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_DiscreteTime0(
@@ -147,7 +151,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         other: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -163,7 +167,9 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject1(
@@ -171,7 +177,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -187,12 +193,14 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (obj))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FloatToDiscreteTime(_cordl_time: f32) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), i64, 1usize>("FloatToDiscreteTime")
@@ -204,14 +212,16 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
+        let __cordl_ret: i64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_time))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FromTicks(
         ticks: i64,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -228,13 +238,13 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked((), (ticks))?
+            cordl_method_info.invoke_unchecked((), (ticks))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
@@ -246,12 +256,12 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNearestTick(_cordl_time: f64) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64), i64, 1usize>("GetNearestTick")
@@ -263,12 +273,14 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
+        let __cordl_ret: i64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_time))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTick(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("GetTick")
@@ -280,12 +292,12 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i64 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IntToDiscreteTime(_cordl_time: i32) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i64, 1usize>("IntToDiscreteTime")
@@ -297,7 +309,9 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
+        let __cordl_ret: i64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_time))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Max(
@@ -305,7 +319,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -325,7 +339,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -334,7 +348,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -354,7 +368,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -362,7 +376,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -379,7 +393,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -387,7 +401,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -404,7 +418,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -412,7 +426,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), f32, 1usize>("SnapToNearestTick")
@@ -424,14 +438,16 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_time))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SnapToNearestTick_f64_0(
         _cordl_time: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64), f64, 1usize>("SnapToNearestTick")
@@ -443,12 +459,14 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
+        let __cordl_ret: f64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_time))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToDouble(_cordl_time: i64) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i64), f64, 1usize>("ToDouble")
@@ -460,12 +478,14 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
+        let __cordl_ret: f64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_time))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToFloat(_cordl_time: i64) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i64), f32, 1usize>("ToFloat")
@@ -477,7 +497,9 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_time))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -486,7 +508,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -504,7 +526,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_DiscreteTime0(
@@ -512,7 +534,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         _cordl_time: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -529,7 +551,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_time))?
+            cordl_method_info.invoke_unchecked(self, (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -538,7 +560,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
@@ -551,7 +573,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_time))?
+            cordl_method_info.invoke_unchecked(self, (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -560,7 +582,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         _cordl_time: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
@@ -573,7 +595,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_time))?
+            cordl_method_info.invoke_unchecked(self, (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -582,7 +604,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         _cordl_time: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
@@ -595,7 +617,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_time))?
+            cordl_method_info.invoke_unchecked(self, (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -605,7 +627,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         fps: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -622,7 +644,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (frame, fps))?
+            cordl_method_info.invoke_unchecked(self, (frame, fps))?
         };
         Ok(__cordl_ret.into())
     }
@@ -631,7 +653,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         _cordl_time: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
@@ -644,13 +666,13 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_time))?
+            cordl_method_info.invoke_unchecked(self, (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_tickValue() -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f64, 0usize>("get_tickValue")
@@ -662,7 +684,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Addition(
@@ -670,7 +692,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -690,7 +712,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -699,7 +721,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -718,14 +740,16 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit_DiscreteTime0(
         b: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -741,14 +765,14 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (b))? };
+        let __cordl_ret: f64 = unsafe { cordl_method_info.invoke_unchecked((), (b))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit_DiscreteTime1(
         b: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -764,14 +788,14 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (b))? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), (b))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit_DiscreteTime2(
         b: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -787,14 +811,14 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (b))? };
+        let __cordl_ret: i64 = unsafe { cordl_method_info.invoke_unchecked((), (b))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit_f32_4(
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -811,7 +835,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked((), (_cordl_time))?
+            cordl_method_info.invoke_unchecked((), (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -819,7 +843,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         _cordl_time: f64,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -836,7 +860,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked((), (_cordl_time))?
+            cordl_method_info.invoke_unchecked((), (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -844,7 +868,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         _cordl_time: i64,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -861,7 +885,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked((), (_cordl_time))?
+            cordl_method_info.invoke_unchecked((), (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -870,7 +894,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -889,7 +913,9 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_GreaterThanOrEqual(
@@ -897,7 +923,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -916,14 +942,16 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit(
         _cordl_time: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -940,7 +968,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked((), (_cordl_time))?
+            cordl_method_info.invoke_unchecked((), (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -949,7 +977,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -968,7 +996,9 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_LessThan(
@@ -976,7 +1006,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -995,7 +1025,9 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_LessThanOrEqual(
@@ -1003,7 +1035,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1022,7 +1054,9 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Subtraction(
@@ -1030,7 +1064,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1050,7 +1084,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }

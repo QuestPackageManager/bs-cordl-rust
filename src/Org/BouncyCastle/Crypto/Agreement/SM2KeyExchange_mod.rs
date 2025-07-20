@@ -64,7 +64,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
         v: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -88,7 +88,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (digest, v))?
+            cordl_method_info.invoke_unchecked(self, (digest, v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -98,7 +98,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
         userID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -122,7 +122,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (digest, userID))?
+            cordl_method_info.invoke_unchecked(self, (digest, userID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -138,7 +138,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -177,7 +177,9 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (digest, u, za, zb, p1, p2))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (digest, u, za, zb, p1, p2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateKey(
@@ -190,7 +192,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -215,7 +217,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (kLen, pubParam))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kLen, pubParam))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateKeyWithConfirmation(
@@ -235,7 +237,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -269,7 +271,9 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (kLen, confirmationTag, pubParam))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kLen, confirmationTag, pubParam))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateU(
@@ -281,7 +285,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -303,7 +307,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::ECPoint,
-        > = unsafe { method.invoke_unchecked(self, (otherPub))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (otherPub))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetZ(
@@ -315,7 +319,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -345,7 +349,9 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (digest, userID, pubPoint))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (digest, userID, pubPoint))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
@@ -355,7 +361,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -374,7 +380,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (privParam))?
+            cordl_method_info.invoke_unchecked(self, (privParam))?
         };
         Ok(__cordl_ret.into())
     }
@@ -388,7 +394,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -419,7 +425,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (u, za, zb, klen))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (u, za, zb, klen))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -445,7 +451,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -467,7 +473,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked(self, (x))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (x))? };
         Ok(__cordl_ret.into())
     }
     pub fn S1(
@@ -479,7 +485,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -509,7 +515,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (digest, u, inner))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (digest, u, inner))? };
         Ok(__cordl_ret.into())
     }
     pub fn S2(
@@ -521,7 +527,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -551,14 +557,14 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (digest, u, inner))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (digest, u, inner))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -571,7 +577,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -580,7 +586,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -599,7 +605,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (digest))?
+            cordl_method_info.invoke_unchecked(self, (digest))?
         };
         Ok(__cordl_ret.into())
     }

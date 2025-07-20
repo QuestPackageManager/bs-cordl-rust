@@ -44,7 +44,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
         altPressed: bool,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(bool, bool), f32, 2usize>("Acceleration")
@@ -57,7 +57,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (shiftPressed, altPressed))?
+            cordl_method_info.invoke_unchecked((), (shiftPressed, altPressed))?
         };
         Ok(__cordl_ret.into())
     }
@@ -65,7 +65,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
         value: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -81,7 +81,9 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (value))? };
+        let __cordl_ret: f64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateFloatDragSensitivity_f64_f64_1(
@@ -90,7 +92,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
         maxValue: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -107,7 +109,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
                     })
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (value, minValue, maxValue))?
+            cordl_method_info.invoke_unchecked((), (value, minValue, maxValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -115,7 +117,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
         value: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -131,14 +133,16 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (value))? };
+        let __cordl_ret: f64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateIntDragSensitivity_i64_0(
         value: i64,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -154,7 +158,9 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (value))? };
+        let __cordl_ret: i64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateIntDragSensitivity_i64_i64_i64_3(
@@ -163,7 +169,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
         maxValue: i64,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -180,7 +186,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
                     })
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked((), (value, minValue, maxValue))?
+            cordl_method_info.invoke_unchecked((), (value, minValue, maxValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -188,7 +194,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
         value: u64,
     ) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -204,7 +210,9 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (value))? };
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NiceDelta(
@@ -212,7 +220,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
         acceleration: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -229,7 +237,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (deviceDelta, acceleration))?
+            cordl_method_info.invoke_unchecked((), (deviceDelta, acceleration))?
         };
         Ok(__cordl_ret.into())
     }

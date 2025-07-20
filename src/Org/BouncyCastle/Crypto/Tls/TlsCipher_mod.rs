@@ -50,7 +50,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsCipher {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -79,7 +79,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsCipher {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         > = unsafe {
-            method.invoke_unchecked(self, (seqNo, _cordl_type, ciphertext, offset, len))?
+            cordl_method_info
+                .invoke_unchecked(self, (seqNo, _cordl_type, ciphertext, offset, len))?
         };
         Ok(__cordl_ret.into())
     }
@@ -94,7 +95,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsCipher {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -123,7 +124,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsCipher {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         > = unsafe {
-            method.invoke_unchecked(self, (seqNo, _cordl_type, plaintext, offset, len))?
+            cordl_method_info
+                .invoke_unchecked(self, (seqNo, _cordl_type, plaintext, offset, len))?
         };
         Ok(__cordl_ret.into())
     }
@@ -132,7 +134,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsCipher {
         ciphertextLimit: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("GetPlaintextLimit")
@@ -145,7 +147,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsCipher {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (ciphertextLimit))?
+            cordl_method_info.invoke_unchecked(self, (ciphertextLimit))?
         };
         Ok(__cordl_ret.into())
     }

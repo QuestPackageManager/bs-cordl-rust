@@ -56,7 +56,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -80,7 +80,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (copyFrom, copyTo))?
+            cordl_method_info.invoke_unchecked((), (copyFrom, copyTo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -88,7 +88,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
         quest_hook::libil2cpp::Void,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -105,7 +105,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -119,7 +119,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -138,7 +138,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (descriptors))?
+            cordl_method_info.invoke_unchecked((), (descriptors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -149,7 +149,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -171,7 +171,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr, desc))?
+            cordl_method_info.invoke_unchecked((), (ptr, desc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -179,7 +179,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
         descriptor: quest_hook::libil2cpp::Gc<crate::UnityEngine::SubsystemDescriptor>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -198,7 +198,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (descriptor))?
+            cordl_method_info.invoke_unchecked((), (descriptor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -215,7 +215,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -237,7 +237,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (descriptor, storeInList))?
+            cordl_method_info.invoke_unchecked((), (descriptor, storeInList))?
         };
         Ok(__cordl_ret.into())
     }
@@ -245,7 +245,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -262,7 +262,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (id))?
+            cordl_method_info.invoke_unchecked((), (id))?
         };
         Ok(__cordl_ret.into())
     }

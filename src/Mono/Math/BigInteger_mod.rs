@@ -48,7 +48,7 @@ impl crate::Mono::Math::BigInteger {
     pub type Sign = crate::Mono::Math::BigInteger_Sign;
     pub fn BitCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("BitCount")
@@ -60,14 +60,14 @@ impl crate::Mono::Math::BigInteger {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
@@ -80,7 +80,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -89,7 +89,7 @@ impl crate::Mono::Math::BigInteger {
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -105,7 +105,9 @@ impl crate::Mono::Math::BigInteger {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (o))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (o))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GeneratePseudoPrime(
@@ -114,7 +116,7 @@ impl crate::Mono::Math::BigInteger {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -131,7 +133,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bits))?
+            cordl_method_info.invoke_unchecked((), (bits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -144,7 +146,7 @@ impl crate::Mono::Math::BigInteger {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -166,7 +168,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bits, rng))?
+            cordl_method_info.invoke_unchecked((), (bits, rng))?
         };
         Ok(__cordl_ret.into())
     }
@@ -176,7 +178,7 @@ impl crate::Mono::Math::BigInteger {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -193,7 +195,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bits))?
+            cordl_method_info.invoke_unchecked((), (bits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -203,7 +205,7 @@ impl crate::Mono::Math::BigInteger {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -223,12 +225,12 @@ impl crate::Mono::Math::BigInteger {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
@@ -240,14 +242,14 @@ impl crate::Mono::Math::BigInteger {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Incr2(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Incr2")
@@ -260,13 +262,13 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsProbablePrime(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsProbablePrime")
@@ -278,12 +280,12 @@ impl crate::Mono::Math::BigInteger {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn LowestSetBit(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("LowestSetBit")
@@ -295,7 +297,7 @@ impl crate::Mono::Math::BigInteger {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ModInverse(
@@ -305,7 +307,7 @@ impl crate::Mono::Math::BigInteger {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -322,7 +324,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked(self, (modulus))?
+            cordl_method_info.invoke_unchecked(self, (modulus))?
         };
         Ok(__cordl_ret.into())
     }
@@ -334,7 +336,7 @@ impl crate::Mono::Math::BigInteger {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -354,7 +356,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked(self, (exp, n))?
+            cordl_method_info.invoke_unchecked(self, (exp, n))?
         };
         Ok(__cordl_ret.into())
     }
@@ -409,7 +411,7 @@ impl crate::Mono::Math::BigInteger {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Normalize")
@@ -422,7 +424,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -430,7 +432,7 @@ impl crate::Mono::Math::BigInteger {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Randomize")
@@ -443,7 +445,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -454,7 +456,7 @@ impl crate::Mono::Math::BigInteger {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -473,7 +475,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (rng))?
+            cordl_method_info.invoke_unchecked(self, (rng))?
         };
         Ok(__cordl_ret.into())
     }
@@ -483,7 +485,7 @@ impl crate::Mono::Math::BigInteger {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -500,7 +502,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bitNum, value))?
+            cordl_method_info.invoke_unchecked(self, (bitNum, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -509,7 +511,7 @@ impl crate::Mono::Math::BigInteger {
         bitNum: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>("SetBit")
@@ -522,13 +524,13 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bitNum))?
+            cordl_method_info.invoke_unchecked(self, (bitNum))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn TestBit_i32_1(&mut self, bitNum: i32) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("TestBit")
@@ -540,12 +542,14 @@ impl crate::Mono::Math::BigInteger {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (bitNum))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (bitNum))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TestBit_u32_0(&mut self, bitNum: u32) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), bool, 1usize>("TestBit")
@@ -557,7 +561,9 @@ impl crate::Mono::Math::BigInteger {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (bitNum))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (bitNum))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_2(
@@ -566,7 +572,7 @@ impl crate::Mono::Math::BigInteger {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -584,7 +590,7 @@ impl crate::Mono::Math::BigInteger {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_u32_0(
@@ -594,7 +600,7 @@ impl crate::Mono::Math::BigInteger {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -612,7 +618,7 @@ impl crate::Mono::Math::BigInteger {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (radix))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (radix))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_u32_Il2CppString1(
@@ -623,7 +629,7 @@ impl crate::Mono::Math::BigInteger {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -646,7 +652,7 @@ impl crate::Mono::Math::BigInteger {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (radix, characterSet))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (radix, characterSet))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_BigInteger1(
@@ -654,7 +660,7 @@ impl crate::Mono::Math::BigInteger {
         bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -671,7 +677,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bi))?
+            cordl_method_info.invoke_unchecked(self, (bi))?
         };
         Ok(__cordl_ret.into())
     }
@@ -681,7 +687,7 @@ impl crate::Mono::Math::BigInteger {
         len: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -698,7 +704,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sign, len))?
+            cordl_method_info.invoke_unchecked(self, (sign, len))?
         };
         Ok(__cordl_ret.into())
     }
@@ -708,7 +714,7 @@ impl crate::Mono::Math::BigInteger {
         len: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -725,7 +731,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bi, len))?
+            cordl_method_info.invoke_unchecked(self, (bi, len))?
         };
         Ok(__cordl_ret.into())
     }
@@ -734,7 +740,7 @@ impl crate::Mono::Math::BigInteger {
         inData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -753,7 +759,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (inData))?
+            cordl_method_info.invoke_unchecked(self, (inData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -762,7 +768,7 @@ impl crate::Mono::Math::BigInteger {
         ui: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
@@ -775,7 +781,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ui))?
+            cordl_method_info.invoke_unchecked(self, (ui))?
         };
         Ok(__cordl_ret.into())
     }
@@ -785,7 +791,7 @@ impl crate::Mono::Math::BigInteger {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -805,7 +811,7 @@ impl crate::Mono::Math::BigInteger {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RandomNumberGenerator,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Division(
@@ -815,7 +821,7 @@ impl crate::Mono::Math::BigInteger {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -835,7 +841,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi1, bi2))?
+            cordl_method_info.invoke_unchecked((), (bi1, bi2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -844,7 +850,7 @@ impl crate::Mono::Math::BigInteger {
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -863,7 +869,9 @@ impl crate::Mono::Math::BigInteger {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, bi2))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (bi1, bi2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Equality_u32_0(
@@ -871,7 +879,7 @@ impl crate::Mono::Math::BigInteger {
         ui: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -887,7 +895,9 @@ impl crate::Mono::Math::BigInteger {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, ui))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (bi1, ui))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_GreaterThan(
@@ -895,7 +905,7 @@ impl crate::Mono::Math::BigInteger {
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -914,7 +924,9 @@ impl crate::Mono::Math::BigInteger {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, bi2))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (bi1, bi2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_GreaterThanOrEqual(
@@ -922,7 +934,7 @@ impl crate::Mono::Math::BigInteger {
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -941,7 +953,9 @@ impl crate::Mono::Math::BigInteger {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, bi2))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (bi1, bi2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit_i32_1(
@@ -950,7 +964,7 @@ impl crate::Mono::Math::BigInteger {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -967,7 +981,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -977,7 +991,7 @@ impl crate::Mono::Math::BigInteger {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -994,7 +1008,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1003,7 +1017,7 @@ impl crate::Mono::Math::BigInteger {
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1022,7 +1036,9 @@ impl crate::Mono::Math::BigInteger {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, bi2))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (bi1, bi2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Inequality_u32_0(
@@ -1030,7 +1046,7 @@ impl crate::Mono::Math::BigInteger {
         ui: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1046,7 +1062,9 @@ impl crate::Mono::Math::BigInteger {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, ui))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (bi1, ui))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_LeftShift(
@@ -1056,7 +1074,7 @@ impl crate::Mono::Math::BigInteger {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1073,7 +1091,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi1, shiftVal))?
+            cordl_method_info.invoke_unchecked((), (bi1, shiftVal))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1082,7 +1100,7 @@ impl crate::Mono::Math::BigInteger {
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1101,7 +1119,9 @@ impl crate::Mono::Math::BigInteger {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, bi2))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (bi1, bi2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_LessThanOrEqual(
@@ -1109,7 +1129,7 @@ impl crate::Mono::Math::BigInteger {
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1128,7 +1148,9 @@ impl crate::Mono::Math::BigInteger {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, bi2))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (bi1, bi2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Modulus_BigInteger1(
@@ -1138,7 +1160,7 @@ impl crate::Mono::Math::BigInteger {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1158,7 +1180,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi1, bi2))?
+            cordl_method_info.invoke_unchecked((), (bi1, bi2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1167,7 +1189,7 @@ impl crate::Mono::Math::BigInteger {
         ui: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1183,7 +1205,9 @@ impl crate::Mono::Math::BigInteger {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (bi, ui))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (bi, ui))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Multiply_BigInteger0(
@@ -1193,7 +1217,7 @@ impl crate::Mono::Math::BigInteger {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1213,7 +1237,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi1, bi2))?
+            cordl_method_info.invoke_unchecked((), (bi1, bi2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1224,7 +1248,7 @@ impl crate::Mono::Math::BigInteger {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1241,7 +1265,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi, i))?
+            cordl_method_info.invoke_unchecked((), (bi, i))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1252,7 +1276,7 @@ impl crate::Mono::Math::BigInteger {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1269,7 +1293,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi1, shiftVal))?
+            cordl_method_info.invoke_unchecked((), (bi1, shiftVal))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1280,7 +1304,7 @@ impl crate::Mono::Math::BigInteger {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1300,7 +1324,7 @@ impl crate::Mono::Math::BigInteger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi1, bi2))?
+            cordl_method_info.invoke_unchecked((), (bi1, bi2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1359,7 +1383,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<crate::Mono::Math::BigInteger_Sign> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1379,7 +1403,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
                     })
             });
         let __cordl_ret: crate::Mono::Math::BigInteger_Sign = unsafe {
-            method.invoke_unchecked((), (bi1, bi2))?
+            cordl_method_info.invoke_unchecked((), (bi1, bi2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1394,7 +1418,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1418,7 +1442,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
             >,
-        > = unsafe { method.invoke_unchecked((), (n, d))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (n, d))? };
         Ok(__cordl_ret.into())
     }
     pub fn DwordMod(
@@ -1426,7 +1450,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         d: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1442,7 +1466,9 @@ impl crate::Mono::Math::BigInteger_Kernel {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (n, d))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (n, d))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LeftShift(
@@ -1452,7 +1478,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1469,7 +1495,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi, n))?
+            cordl_method_info.invoke_unchecked((), (bi, n))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1478,7 +1504,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         small: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1498,7 +1524,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (big, small))?
+            cordl_method_info.invoke_unchecked((), (big, small))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1513,7 +1539,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         dOffset: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1545,7 +1571,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (x, xOffset, xLen, y, yOffset, yLen, d, dOffset))?
         };
         Ok(__cordl_ret.into())
@@ -1557,7 +1583,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1574,7 +1600,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (n, f))?
+            cordl_method_info.invoke_unchecked((), (n, f))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1590,7 +1616,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         _cordl_mod: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1623,7 +1649,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (x, xOffset, xLen, y, yOffest, yLen, d, dOffset, _cordl_mod),
@@ -1636,7 +1662,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1656,7 +1682,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (bi1, bi2))?
+            cordl_method_info.invoke_unchecked((), (bi1, bi2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1667,7 +1693,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1684,7 +1710,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi, n))?
+            cordl_method_info.invoke_unchecked((), (bi, n))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1693,7 +1719,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         d: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1709,7 +1735,9 @@ impl crate::Mono::Math::BigInteger_Kernel {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (n, d))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (n, d))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Subtract(
@@ -1719,7 +1747,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1739,7 +1767,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (big, small))?
+            cordl_method_info.invoke_unchecked((), (big, small))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1750,7 +1778,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1770,7 +1798,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi, modulus))?
+            cordl_method_info.invoke_unchecked((), (bi, modulus))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1779,7 +1807,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         modulus: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1795,7 +1823,9 @@ impl crate::Mono::Math::BigInteger_Kernel {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (bi, modulus))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (bi, modulus))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn multiByteDivide(
@@ -1809,7 +1839,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1836,7 +1866,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
             >,
-        > = unsafe { method.invoke_unchecked((), (bi1, bi2))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (bi1, bi2))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1896,7 +1926,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
         x: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1913,7 +1943,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (x))?
+            cordl_method_info.invoke_unchecked(self, (x))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1925,7 +1955,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1945,7 +1975,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked(self, (a, b))?
+            cordl_method_info.invoke_unchecked(self, (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1957,7 +1987,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1977,7 +2007,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked(self, (a, b))?
+            cordl_method_info.invoke_unchecked(self, (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1998,7 +2028,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2018,7 +2048,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked(self, (a, k))?
+            cordl_method_info.invoke_unchecked(self, (a, k))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2030,7 +2060,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2047,7 +2077,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked(self, (b, exp))?
+            cordl_method_info.invoke_unchecked(self, (b, exp))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2056,7 +2086,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
         modulus: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2073,7 +2103,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (modulus))?
+            cordl_method_info.invoke_unchecked(self, (modulus))?
         };
         Ok(__cordl_ret.into())
     }

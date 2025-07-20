@@ -118,7 +118,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
         zFar: f32,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKMatrix4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -135,7 +135,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
                     })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKMatrix4x4 = unsafe {
-            method.invoke_unchecked((), (vFov, aspect, zNear, zFar))?
+            cordl_method_info.invoke_unchecked((), (vFov, aspect, zNear, zFar))?
         };
         Ok(__cordl_ret.into())
     }
@@ -143,7 +143,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
         value: crate::LIV::SDK::Unity::SDKQuaternion,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKMatrix4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -160,7 +160,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
                     })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKMatrix4x4 = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -168,7 +168,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
         value: crate::LIV::SDK::Unity::SDKVector3,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKMatrix4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -185,7 +185,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
                     })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKMatrix4x4 = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -195,7 +195,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
         scale: crate::LIV::SDK::Unity::SDKVector3,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKMatrix4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -216,7 +216,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
                     })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKMatrix4x4 = unsafe {
-            method.invoke_unchecked((), (translation, rotation, scale))?
+            cordl_method_info.invoke_unchecked((), (translation, rotation, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -226,7 +226,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -244,14 +244,14 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Translate(
         value: crate::LIV::SDK::Unity::SDKVector3,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKMatrix4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -268,7 +268,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
                     })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKMatrix4x4 = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -276,7 +276,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
         crate::LIV::SDK::Unity::SDKMatrix4x4,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -293,7 +293,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
                     })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKMatrix4x4 = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -301,7 +301,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
         v: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKMatrix4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -318,7 +318,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
                     })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKMatrix4x4 = unsafe {
-            method.invoke_unchecked((), (v))?
+            cordl_method_info.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -326,7 +326,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
         v: crate::LIV::SDK::Unity::SDKMatrix4x4,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -343,7 +343,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            method.invoke_unchecked((), (v))?
+            cordl_method_info.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -352,7 +352,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
         rhs: crate::LIV::SDK::Unity::SDKMatrix4x4,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKMatrix4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -372,7 +372,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
                     })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKMatrix4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -381,7 +381,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
         rhs: crate::LIV::SDK::Unity::SDKVector3,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -401,7 +401,7 @@ impl crate::LIV::SDK::Unity::SDKMatrix4x4 {
                     })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }

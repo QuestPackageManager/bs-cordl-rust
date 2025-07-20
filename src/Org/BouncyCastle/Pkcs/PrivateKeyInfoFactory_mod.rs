@@ -47,7 +47,7 @@ impl crate::Org::BouncyCastle::Pkcs::PrivateKeyInfoFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -69,7 +69,7 @@ impl crate::Org::BouncyCastle::Pkcs::PrivateKeyInfoFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
-        > = unsafe { method.invoke_unchecked((), (privateKey))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (privateKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreatePrivateKeyInfo_AsymmetricKeyParameter_Asn1Set1(
@@ -81,7 +81,7 @@ impl crate::Org::BouncyCastle::Pkcs::PrivateKeyInfoFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -108,7 +108,7 @@ impl crate::Org::BouncyCastle::Pkcs::PrivateKeyInfoFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
-        > = unsafe { method.invoke_unchecked((), (privateKey, attributes))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (privateKey, attributes))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreatePrivateKeyInfo_Il2CppArray_EncryptedPrivateKeyInfo2(
@@ -120,7 +120,7 @@ impl crate::Org::BouncyCastle::Pkcs::PrivateKeyInfoFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -147,7 +147,7 @@ impl crate::Org::BouncyCastle::Pkcs::PrivateKeyInfoFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
-        > = unsafe { method.invoke_unchecked((), (passPhrase, encInfo))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (passPhrase, encInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreatePrivateKeyInfo_Il2CppArray__cordl_bool_EncryptedPrivateKeyInfo3(
@@ -160,7 +160,7 @@ impl crate::Org::BouncyCastle::Pkcs::PrivateKeyInfoFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -189,7 +189,8 @@ impl crate::Org::BouncyCastle::Pkcs::PrivateKeyInfoFactory {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
         > = unsafe {
-            method.invoke_unchecked((), (passPhrase, wrongPkcs12Zero, encInfo))?
+            cordl_method_info
+                .invoke_unchecked((), (passPhrase, wrongPkcs12Zero, encInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -200,7 +201,7 @@ impl crate::Org::BouncyCastle::Pkcs::PrivateKeyInfoFactory {
         bI: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -226,7 +227,7 @@ impl crate::Org::BouncyCastle::Pkcs::PrivateKeyInfoFactory {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (encKey, _cordl_size, offSet, bI))?
+            cordl_method_info.invoke_unchecked((), (encKey, _cordl_size, offSet, bI))?
         };
         Ok(__cordl_ret.into())
     }
@@ -241,7 +242,7 @@ impl crate::Org::BouncyCastle::Pkcs::PrivateKeyInfoFactory {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -254,7 +255,7 @@ impl crate::Org::BouncyCastle::Pkcs::PrivateKeyInfoFactory {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

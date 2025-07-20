@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::OculusPlatformExtensions {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::OculusPlatformExtensions {
             });
         let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
             quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
-        > = unsafe { method.invoke_unchecked((), (oculusRequest))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (oculusRequest))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAwaiter_Request_1_0<T>(
@@ -82,7 +82,7 @@ impl crate::GlobalNamespace::OculusPlatformExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -106,7 +106,7 @@ impl crate::GlobalNamespace::OculusPlatformExtensions {
             });
         let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
             quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message_1<T>>,
-        > = unsafe { method.invoke_unchecked((), (oculusRequest))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (oculusRequest))? };
         Ok(__cordl_ret.into())
     }
 }

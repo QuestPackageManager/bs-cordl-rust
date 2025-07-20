@@ -45,7 +45,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -62,7 +62,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode> = unsafe {
-            method.invoke_unchecked(self, (node))?
+            cordl_method_info.invoke_unchecked(self, (node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -73,7 +73,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -90,7 +90,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute> = unsafe {
-            method.invoke_unchecked(self, (node))?
+            cordl_method_info.invoke_unchecked(self, (node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -99,7 +99,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         attr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -116,7 +116,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (attr))?
+            cordl_method_info.invoke_unchecked(self, (attr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -125,7 +125,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         node: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -141,7 +141,9 @@ impl crate::System::Xml::XmlAttributeCollection {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (node))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (node))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InsertNodeAt(
@@ -152,7 +154,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -169,7 +171,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode> = unsafe {
-            method.invoke_unchecked(self, (i, node))?
+            cordl_method_info.invoke_unchecked(self, (i, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -178,7 +180,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         attr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -195,7 +197,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (attr))?
+            cordl_method_info.invoke_unchecked(self, (attr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -206,7 +208,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -223,7 +225,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute> = unsafe {
-            method.invoke_unchecked(self, (node))?
+            cordl_method_info.invoke_unchecked(self, (node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -242,7 +244,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         attrLocalName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -266,7 +268,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (attrPrefix, attrLocalName))?
+            cordl_method_info.invoke_unchecked(self, (attrPrefix, attrLocalName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -277,7 +279,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -294,7 +296,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute> = unsafe {
-            method.invoke_unchecked(self, (node))?
+            cordl_method_info.invoke_unchecked(self, (node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -302,7 +304,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("RemoveAll")
@@ -315,7 +317,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -326,7 +328,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -343,7 +345,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute> = unsafe {
-            method.invoke_unchecked(self, (i))?
+            cordl_method_info.invoke_unchecked(self, (i))?
         };
         Ok(__cordl_ret.into())
     }
@@ -352,7 +354,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         attr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -368,7 +370,9 @@ impl crate::System::Xml::XmlAttributeCollection {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (attr))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (attr))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveNodeAt(
@@ -378,7 +382,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -395,7 +399,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode> = unsafe {
-            method.invoke_unchecked(self, (i))?
+            cordl_method_info.invoke_unchecked(self, (i))?
         };
         Ok(__cordl_ret.into())
     }
@@ -404,7 +408,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         attr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -421,7 +425,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (attr))?
+            cordl_method_info.invoke_unchecked(self, (attr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -431,7 +435,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         newVal: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -455,7 +459,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (oldVal, newVal))?
+            cordl_method_info.invoke_unchecked(self, (oldVal, newVal))?
         };
         Ok(__cordl_ret.into())
     }
@@ -466,7 +470,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -483,7 +487,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode> = unsafe {
-            method.invoke_unchecked(self, (node))?
+            cordl_method_info.invoke_unchecked(self, (node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -493,7 +497,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -510,7 +514,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (array, index))?
+            cordl_method_info.invoke_unchecked(self, (array, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -518,7 +522,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -534,14 +538,14 @@ impl crate::System::Xml::XmlAttributeCollection {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_ICollection_get_IsSynchronized(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -557,7 +561,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_ICollection_get_SyncRoot(
@@ -566,7 +570,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -584,7 +588,7 @@ impl crate::System::Xml::XmlAttributeCollection {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -592,7 +596,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -609,7 +613,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (parent))?
+            cordl_method_info.invoke_unchecked(self, (parent))?
         };
         Ok(__cordl_ret.into())
     }
@@ -620,7 +624,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -637,7 +641,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute> = unsafe {
-            method.invoke_unchecked(self, (name))?
+            cordl_method_info.invoke_unchecked(self, (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -649,7 +653,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -673,7 +677,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute> = unsafe {
-            method.invoke_unchecked(self, (localName, namespaceURI))?
+            cordl_method_info.invoke_unchecked(self, (localName, namespaceURI))?
         };
         Ok(__cordl_ret.into())
     }
@@ -684,7 +688,7 @@ impl crate::System::Xml::XmlAttributeCollection {
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -701,7 +705,7 @@ impl crate::System::Xml::XmlAttributeCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute> = unsafe {
-            method.invoke_unchecked(self, (i))?
+            cordl_method_info.invoke_unchecked(self, (i))?
         };
         Ok(__cordl_ret.into())
     }

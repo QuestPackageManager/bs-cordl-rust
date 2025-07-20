@@ -53,7 +53,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
@@ -66,7 +66,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -75,7 +75,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         command: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -92,7 +92,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (command))?
+            cordl_method_info.invoke_unchecked(self, (command))?
         };
         Ok(__cordl_ret.into())
     }
@@ -100,7 +100,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
@@ -113,7 +113,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -121,7 +121,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -134,7 +134,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -143,7 +143,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         msg: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -160,7 +160,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg))?
+            cordl_method_info.invoke_unchecked(self, (msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -175,7 +175,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -198,7 +198,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg))?
+            cordl_method_info.invoke_unchecked(self, (msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -207,7 +207,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         msg: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -224,7 +224,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg))?
+            cordl_method_info.invoke_unchecked(self, (msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -239,7 +239,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -262,7 +262,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg))?
+            cordl_method_info.invoke_unchecked(self, (msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -271,7 +271,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         msg: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -288,7 +288,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg))?
+            cordl_method_info.invoke_unchecked(self, (msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -298,7 +298,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         count: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -322,7 +322,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (achievementName, count))?
+            cordl_method_info.invoke_unchecked(self, (achievementName, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -332,7 +332,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         fields: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -356,7 +356,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (achievementName, fields))?
+            cordl_method_info.invoke_unchecked(self, (achievementName, fields))?
         };
         Ok(__cordl_ret.into())
     }
@@ -364,7 +364,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -381,7 +381,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -390,7 +390,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         achievementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -407,7 +407,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (achievementName))?
+            cordl_method_info.invoke_unchecked(self, (achievementName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -416,7 +416,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         achievementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -433,7 +433,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (achievementName))?
+            cordl_method_info.invoke_unchecked(self, (achievementName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -442,7 +442,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         msg: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -459,7 +459,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg))?
+            cordl_method_info.invoke_unchecked(self, (msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -472,7 +472,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -495,7 +495,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg))?
+            cordl_method_info.invoke_unchecked(self, (msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -504,7 +504,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         leaderboardName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -521,7 +521,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (leaderboardName))?
+            cordl_method_info.invoke_unchecked(self, (leaderboardName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -529,7 +529,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -546,7 +546,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -554,7 +554,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -571,7 +571,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -580,7 +580,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         userID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -597,7 +597,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (userID))?
+            cordl_method_info.invoke_unchecked(self, (userID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -610,7 +610,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -633,7 +633,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg))?
+            cordl_method_info.invoke_unchecked(self, (msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -641,7 +641,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -658,7 +658,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -673,7 +673,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -696,7 +696,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg))?
+            cordl_method_info.invoke_unchecked(self, (msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -705,7 +705,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         msg: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -722,7 +722,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg))?
+            cordl_method_info.invoke_unchecked(self, (msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -731,7 +731,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         users: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -750,7 +750,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (users))?
+            cordl_method_info.invoke_unchecked(self, (users))?
         };
         Ok(__cordl_ret.into())
     }
@@ -759,7 +759,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         newLine: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -776,7 +776,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (newLine))?
+            cordl_method_info.invoke_unchecked(self, (newLine))?
         };
         Ok(__cordl_ret.into())
     }
@@ -785,7 +785,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         achievementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -802,7 +802,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (achievementName))?
+            cordl_method_info.invoke_unchecked(self, (achievementName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -815,7 +815,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -838,7 +838,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg))?
+            cordl_method_info.invoke_unchecked(self, (msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -848,7 +848,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -872,7 +872,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (leaderboardName, value))?
+            cordl_method_info.invoke_unchecked(self, (leaderboardName, value))?
         };
         Ok(__cordl_ret.into())
     }

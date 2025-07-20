@@ -44,7 +44,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         alignment: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), i32, 2usize>("AlignToMultipleOf")
@@ -57,7 +57,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (number, alignment))?
+            cordl_method_info.invoke_unchecked((), (number, alignment))?
         };
         Ok(__cordl_ret.into())
     }
@@ -66,7 +66,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         alignment: i64,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i64, i64), i64, 2usize>("AlignToMultipleOf")
@@ -79,7 +79,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
                     })
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked((), (number, alignment))?
+            cordl_method_info.invoke_unchecked((), (number, alignment))?
         };
         Ok(__cordl_ret.into())
     }
@@ -88,7 +88,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         alignment: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, u32), u32, 2usize>("AlignToMultipleOf")
@@ -101,13 +101,13 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
                     })
             });
         let __cordl_ret: u32 = unsafe {
-            method.invoke_unchecked((), (number, alignment))?
+            cordl_method_info.invoke_unchecked((), (number, alignment))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Approximately(a: f64, b: f64) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64, f64), bool, 2usize>("Approximately")
@@ -119,7 +119,9 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IntToNormalizedFloat(
@@ -128,7 +130,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         maxValue: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -145,7 +147,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (value, minValue, maxValue))?
+            cordl_method_info.invoke_unchecked((), (value, minValue, maxValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -155,7 +157,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         intMaxValue: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -172,7 +174,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (value, intMinValue, intMaxValue))?
+            cordl_method_info.invoke_unchecked((), (value, intMinValue, intMaxValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -182,7 +184,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         uintMaxValue: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -199,7 +201,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
                     })
             });
         let __cordl_ret: u32 = unsafe {
-            method.invoke_unchecked((), (value, uintMinValue, uintMaxValue))?
+            cordl_method_info.invoke_unchecked((), (value, uintMinValue, uintMaxValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -209,7 +211,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         outBitSize: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -226,7 +228,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
                     })
             });
         let __cordl_ret: u32 = unsafe {
-            method.invoke_unchecked((), (value, inBitSize, outBitSize))?
+            cordl_method_info.invoke_unchecked((), (value, inBitSize, outBitSize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -236,7 +238,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         maxValue: u32,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -253,7 +255,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (value, minValue, maxValue))?
+            cordl_method_info.invoke_unchecked((), (value, minValue, maxValue))?
         };
         Ok(__cordl_ret.into())
     }

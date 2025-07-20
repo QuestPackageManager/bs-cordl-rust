@@ -43,7 +43,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
         d: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -61,14 +61,14 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (d))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (d))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMaxSecurityStrength_IMac1(
         m: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -86,7 +86,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (m))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (m))? };
         Ok(__cordl_ret.into())
     }
     pub fn HashDF(
@@ -97,7 +97,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -125,7 +125,9 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (digest, seedMaterial, seedLength))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (digest, seedMaterial, seedLength))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsTooLarge(
@@ -133,7 +135,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
         maxBytes: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -155,7 +157,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (bytes, maxBytes))?
+            cordl_method_info.invoke_unchecked((), (bytes, maxBytes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -170,7 +172,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -183,7 +185,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

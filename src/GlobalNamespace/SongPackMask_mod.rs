@@ -105,7 +105,7 @@ impl crate::GlobalNamespace::SongPackMask {
         other: crate::GlobalNamespace::SongPackMask,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -121,7 +121,9 @@ impl crate::GlobalNamespace::SongPackMask {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateFromSerializedData(
@@ -129,7 +131,7 @@ impl crate::GlobalNamespace::SongPackMask {
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -148,7 +150,7 @@ impl crate::GlobalNamespace::SongPackMask {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::SongPackMask = unsafe {
-            method.invoke_unchecked(self, (reader))?
+            cordl_method_info.invoke_unchecked(self, (reader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -156,7 +158,7 @@ impl crate::GlobalNamespace::SongPackMask {
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -175,7 +177,7 @@ impl crate::GlobalNamespace::SongPackMask {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::SongPackMask = unsafe {
-            method.invoke_unchecked((), (reader))?
+            cordl_method_info.invoke_unchecked((), (reader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -184,7 +186,7 @@ impl crate::GlobalNamespace::SongPackMask {
         other: crate::GlobalNamespace::SongPackMask,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -200,7 +202,9 @@ impl crate::GlobalNamespace::SongPackMask {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject1(
@@ -208,7 +212,7 @@ impl crate::GlobalNamespace::SongPackMask {
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -224,7 +228,9 @@ impl crate::GlobalNamespace::SongPackMask {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (obj))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_SongPackMask0(
@@ -232,7 +238,7 @@ impl crate::GlobalNamespace::SongPackMask {
         other: crate::GlobalNamespace::SongPackMask,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -248,7 +254,9 @@ impl crate::GlobalNamespace::SongPackMask {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FromBytes(
@@ -256,7 +264,7 @@ impl crate::GlobalNamespace::SongPackMask {
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -278,13 +286,13 @@ impl crate::GlobalNamespace::SongPackMask {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::SongPackMask = unsafe {
-            method.invoke_unchecked((), (bytes, offset))?
+            cordl_method_info.invoke_unchecked((), (bytes, offset))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
@@ -296,7 +304,7 @@ impl crate::GlobalNamespace::SongPackMask {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Parse(
@@ -305,7 +313,7 @@ impl crate::GlobalNamespace::SongPackMask {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -322,7 +330,7 @@ impl crate::GlobalNamespace::SongPackMask {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::SongPackMask = unsafe {
-            method.invoke_unchecked((), (stringSerializedMask))?
+            cordl_method_info.invoke_unchecked((), (stringSerializedMask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -331,7 +339,7 @@ impl crate::GlobalNamespace::SongPackMask {
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -350,7 +358,7 @@ impl crate::GlobalNamespace::SongPackMask {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer))?
+            cordl_method_info.invoke_unchecked(self, (writer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -360,7 +368,7 @@ impl crate::GlobalNamespace::SongPackMask {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -380,7 +388,7 @@ impl crate::GlobalNamespace::SongPackMask {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ToShortString(
@@ -389,7 +397,7 @@ impl crate::GlobalNamespace::SongPackMask {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -407,7 +415,7 @@ impl crate::GlobalNamespace::SongPackMask {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -416,7 +424,7 @@ impl crate::GlobalNamespace::SongPackMask {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -434,7 +442,7 @@ impl crate::GlobalNamespace::SongPackMask {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn TryParse(
@@ -446,7 +454,7 @@ impl crate::GlobalNamespace::SongPackMask {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -470,7 +478,7 @@ impl crate::GlobalNamespace::SongPackMask {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (stringSerializedMask, songPackMask))?
+            cordl_method_info.invoke_unchecked((), (stringSerializedMask, songPackMask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -479,7 +487,7 @@ impl crate::GlobalNamespace::SongPackMask {
         bloomFilter: crate::GlobalNamespace::BitMask256,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -496,7 +504,7 @@ impl crate::GlobalNamespace::SongPackMask {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bloomFilter))?
+            cordl_method_info.invoke_unchecked(self, (bloomFilter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -509,7 +517,7 @@ impl crate::GlobalNamespace::SongPackMask {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -532,7 +540,7 @@ impl crate::GlobalNamespace::SongPackMask {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packs))?
+            cordl_method_info.invoke_unchecked(self, (packs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -541,7 +549,7 @@ impl crate::GlobalNamespace::SongPackMask {
         packId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -558,7 +566,7 @@ impl crate::GlobalNamespace::SongPackMask {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packId))?
+            cordl_method_info.invoke_unchecked(self, (packId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -566,7 +574,7 @@ impl crate::GlobalNamespace::SongPackMask {
         crate::GlobalNamespace::SongPackMask,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -583,7 +591,7 @@ impl crate::GlobalNamespace::SongPackMask {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::SongPackMask = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -592,7 +600,7 @@ impl crate::GlobalNamespace::SongPackMask {
         b: crate::GlobalNamespace::SongPackMask,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -612,7 +620,7 @@ impl crate::GlobalNamespace::SongPackMask {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::SongPackMask = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -621,7 +629,7 @@ impl crate::GlobalNamespace::SongPackMask {
         b: crate::GlobalNamespace::SongPackMask,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -641,7 +649,7 @@ impl crate::GlobalNamespace::SongPackMask {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::SongPackMask = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -650,7 +658,7 @@ impl crate::GlobalNamespace::SongPackMask {
         b: crate::GlobalNamespace::SongPackMask,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -669,14 +677,16 @@ impl crate::GlobalNamespace::SongPackMask {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit(
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -693,7 +703,7 @@ impl crate::GlobalNamespace::SongPackMask {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::SongPackMask = unsafe {
-            method.invoke_unchecked((), (id))?
+            cordl_method_info.invoke_unchecked((), (id))?
         };
         Ok(__cordl_ret.into())
     }
@@ -702,7 +712,7 @@ impl crate::GlobalNamespace::SongPackMask {
         b: crate::GlobalNamespace::SongPackMask,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -721,7 +731,9 @@ impl crate::GlobalNamespace::SongPackMask {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
 }

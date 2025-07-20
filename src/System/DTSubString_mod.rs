@@ -104,7 +104,7 @@ impl crate::System::DTSubString {
         relativeIndex: i32,
     ) -> quest_hook::libil2cpp::Result<char> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), char, 1usize>("get_Item")
@@ -117,7 +117,7 @@ impl crate::System::DTSubString {
                     })
             });
         let __cordl_ret: char = unsafe {
-            method.invoke_unchecked(self, (relativeIndex))?
+            cordl_method_info.invoke_unchecked(self, (relativeIndex))?
         };
         Ok(__cordl_ret.into())
     }

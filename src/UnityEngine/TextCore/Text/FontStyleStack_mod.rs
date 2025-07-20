@@ -115,7 +115,7 @@ impl crate::UnityEngine::TextCore::Text::FontStyleStack {
         style: crate::UnityEngine::TextCore::Text::FontStyles,
     ) -> quest_hook::libil2cpp::Result<u8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -131,14 +131,16 @@ impl crate::UnityEngine::TextCore::Text::FontStyleStack {
                         )
                     })
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked(self, (style))? };
+        let __cordl_ret: u8 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (style))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
@@ -151,7 +153,7 @@ impl crate::UnityEngine::TextCore::Text::FontStyleStack {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -160,7 +162,7 @@ impl crate::UnityEngine::TextCore::Text::FontStyleStack {
         style: crate::UnityEngine::TextCore::Text::FontStyles,
     ) -> quest_hook::libil2cpp::Result<u8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -176,7 +178,9 @@ impl crate::UnityEngine::TextCore::Text::FontStyleStack {
                         )
                     })
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked(self, (style))? };
+        let __cordl_ret: u8 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (style))?
+        };
         Ok(__cordl_ret.into())
     }
 }

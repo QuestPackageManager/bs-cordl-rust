@@ -49,7 +49,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         tag: u64,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -66,7 +66,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (slot, obj, objectsize, tag))?
+            cordl_method_info.invoke_unchecked((), (slot, obj, objectsize, tag))?
         };
         Ok(__cordl_ret.into())
     }
@@ -77,7 +77,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         tag: u64,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -94,7 +94,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (slot, obj, objectsize, tag))?
+            cordl_method_info.invoke_unchecked((), (slot, obj, objectsize, tag))?
         };
         Ok(__cordl_ret.into())
     }
@@ -104,7 +104,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         tag: u64,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -121,7 +121,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (obj, objectsize, tag))?
+            cordl_method_info.invoke_unchecked((), (obj, objectsize, tag))?
         };
         Ok(__cordl_ret.into())
     }
@@ -131,7 +131,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         slot: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -156,7 +156,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tag, value, slot))?
+            cordl_method_info.invoke_unchecked((), (tag, value, slot))?
         };
         Ok(__cordl_ret.into())
     }
@@ -167,7 +167,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         tag: u64,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -184,7 +184,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (slot, str, length, tag))?
+            cordl_method_info.invoke_unchecked((), (slot, str, length, tag))?
         };
         Ok(__cordl_ret.into())
     }
@@ -197,7 +197,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -214,7 +214,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mystruct, tag))?
+            cordl_method_info.invoke_unchecked((), (mystruct, tag))?
         };
         Ok(__cordl_ret.into())
     }
@@ -228,7 +228,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -245,7 +245,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (mystruct, channel, tag))?
+            cordl_method_info.invoke_unchecked((), (mystruct, channel, tag))?
         };
         Ok(__cordl_ret.into())
     }
@@ -259,7 +259,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -276,7 +276,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (mystruct, channel, tag))?
+            cordl_method_info.invoke_unchecked((), (mystruct, channel, tag))?
         };
         Ok(__cordl_ret.into())
     }
@@ -284,7 +284,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         texture: crate::LIV::SDK::Unity::SDKTexture,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -301,7 +301,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (texture))?
+            cordl_method_info.invoke_unchecked((), (texture))?
         };
         Ok(__cordl_ret.into())
     }
@@ -310,7 +310,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         tag: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -327,7 +327,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (texture, tag))?
+            cordl_method_info.invoke_unchecked((), (texture, tag))?
         };
         Ok(__cordl_ret.into())
     }
@@ -335,7 +335,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         frame: crate::LIV::SDK::Unity::SDKOutputFrame,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -352,7 +352,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (frame))?
+            cordl_method_info.invoke_unchecked((), (frame))?
         };
         Ok(__cordl_ret.into())
     }
@@ -362,7 +362,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         timestamp: u64,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -379,7 +379,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (slot, tag, timestamp))?
+            cordl_method_info.invoke_unchecked((), (slot, tag, timestamp))?
         };
         Ok(__cordl_ret.into())
     }
@@ -389,7 +389,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         timestamp: u64,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -406,13 +406,13 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (slot, tag, timestamp))?
+            cordl_method_info.invoke_unchecked((), (slot, tag, timestamp))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentTime() -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u64, 0usize>("GetCurrentTime")
@@ -424,12 +424,12 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentTimeTicks() -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u64, 0usize>("GetCurrentTimeTicks")
@@ -441,12 +441,12 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetIsCaptureActive() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("GetIsCaptureActive")
@@ -458,14 +458,14 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetObjectTime(
         objectptr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -481,14 +481,16 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (objectptr))? };
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (objectptr))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetObjectTimeStamp(
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -504,12 +506,12 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (obj))? };
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRenderEventFunc() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -526,7 +528,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -536,7 +538,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -554,7 +556,9 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (sdkResolution))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (sdkResolution))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetStructFromGlobalChannel<T>(
@@ -567,7 +571,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -584,7 +588,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (mystruct, channel, tag))?
+            cordl_method_info.invoke_unchecked((), (mystruct, channel, tag))?
         };
         Ok(__cordl_ret.into())
     }
@@ -598,7 +602,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -615,7 +619,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (mystruct, channel, tag))?
+            cordl_method_info.invoke_unchecked((), (mystruct, channel, tag))?
         };
         Ok(__cordl_ret.into())
     }
@@ -623,7 +627,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         crate::LIV::SDK::Unity::SDKTexture,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -640,13 +644,13 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: crate::LIV::SDK::Unity::SDKTexture = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetViewportTexture() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -663,7 +667,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -671,7 +675,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         quest_hook::libil2cpp::Void,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -688,7 +692,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -696,7 +700,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         groundPlane: crate::LIV::SDK::Unity::SDKPlane,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -713,7 +717,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (groundPlane))?
+            cordl_method_info.invoke_unchecked((), (groundPlane))?
         };
         Ok(__cordl_ret.into())
     }
@@ -721,7 +725,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         applicationOutput: crate::LIV::SDK::Unity::SDKApplicationOutput,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -738,7 +742,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (applicationOutput))?
+            cordl_method_info.invoke_unchecked((), (applicationOutput))?
         };
         Ok(__cordl_ret.into())
     }
@@ -746,7 +750,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -762,14 +766,14 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (str))? };
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), (str))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateInputFrame(
         setframe: quest_hook::libil2cpp::ByRefMut<crate::LIV::SDK::Unity::SDKInputFrame>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -787,7 +791,9 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (setframe))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (setframe))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn addtexture(
@@ -795,7 +801,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         tag: u64,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -812,13 +818,13 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (sourcetexture, tag))?
+            cordl_method_info.invoke_unchecked((), (sourcetexture, tag))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsActive() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsActive")
@@ -830,14 +836,14 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn updatinputframe(
         InputFrame: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -854,7 +860,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (InputFrame))?
+            cordl_method_info.invoke_unchecked((), (InputFrame))?
         };
         Ok(__cordl_ret.into())
     }

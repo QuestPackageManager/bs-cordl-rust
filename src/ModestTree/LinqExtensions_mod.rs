@@ -49,7 +49,7 @@ impl crate::ModestTree::LinqExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -70,7 +70,9 @@ impl crate::ModestTree::LinqExtensions {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (list, value))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (list, value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Except<T>(
@@ -86,7 +88,7 @@ impl crate::ModestTree::LinqExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -111,7 +113,7 @@ impl crate::ModestTree::LinqExtensions {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = unsafe { method.invoke_unchecked((), (list, item))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (list, item))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDuplicates<T>(
@@ -126,7 +128,7 @@ impl crate::ModestTree::LinqExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -148,7 +150,7 @@ impl crate::ModestTree::LinqExtensions {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = unsafe { method.invoke_unchecked((), (list))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
     pub fn HasAtLeast<T>(
@@ -162,7 +164,7 @@ impl crate::ModestTree::LinqExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -184,7 +186,7 @@ impl crate::ModestTree::LinqExtensions {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (enumerable, amount))?
+            cordl_method_info.invoke_unchecked((), (enumerable, amount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -199,7 +201,7 @@ impl crate::ModestTree::LinqExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -221,7 +223,7 @@ impl crate::ModestTree::LinqExtensions {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (enumerable, amount))?
+            cordl_method_info.invoke_unchecked((), (enumerable, amount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -236,7 +238,7 @@ impl crate::ModestTree::LinqExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -258,7 +260,7 @@ impl crate::ModestTree::LinqExtensions {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (enumerable, amount))?
+            cordl_method_info.invoke_unchecked((), (enumerable, amount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -273,7 +275,7 @@ impl crate::ModestTree::LinqExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -295,7 +297,7 @@ impl crate::ModestTree::LinqExtensions {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (enumerable, amount))?
+            cordl_method_info.invoke_unchecked((), (enumerable, amount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -309,7 +311,7 @@ impl crate::ModestTree::LinqExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -327,7 +329,9 @@ impl crate::ModestTree::LinqExtensions {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (enumerable))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (enumerable))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsEmpty_List_1_0<T>(
@@ -338,7 +342,7 @@ impl crate::ModestTree::LinqExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -356,7 +360,9 @@ impl crate::ModestTree::LinqExtensions {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (list))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (list))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnlyOrDefault<TSource>(
@@ -369,7 +375,7 @@ impl crate::ModestTree::LinqExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -387,7 +393,9 @@ impl crate::ModestTree::LinqExtensions {
                         )
                     })
             });
-        let __cordl_ret: TSource = unsafe { method.invoke_unchecked((), (source))? };
+        let __cordl_ret: TSource = unsafe {
+            cordl_method_info.invoke_unchecked((), (source))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Yield<T>(
@@ -400,7 +408,7 @@ impl crate::ModestTree::LinqExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -420,7 +428,7 @@ impl crate::ModestTree::LinqExtensions {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = unsafe { method.invoke_unchecked((), (item))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (item))? };
         Ok(__cordl_ret.into())
     }
 }

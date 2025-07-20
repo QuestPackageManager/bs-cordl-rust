@@ -59,7 +59,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
         lightColor: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -76,7 +76,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (lightColor))?
+            cordl_method_info.invoke_unchecked(self, (lightColor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -87,7 +87,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -106,7 +106,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (optionalDataProvider))?
+            cordl_method_info.invoke_unchecked(self, (optionalDataProvider))?
         };
         Ok(__cordl_ret.into())
     }
@@ -117,7 +117,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -136,7 +136,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (poseDataProvider))?
+            cordl_method_info.invoke_unchecked(self, (poseDataProvider))?
         };
         Ok(__cordl_ret.into())
     }
@@ -147,7 +147,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -166,7 +166,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (visualDataProvider))?
+            cordl_method_info.invoke_unchecked(self, (visualDataProvider))?
         };
         Ok(__cordl_ret.into())
     }
@@ -180,7 +180,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -202,7 +202,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (optionalData))?
+            cordl_method_info.invoke_unchecked(self, (optionalData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -211,7 +211,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
         data: crate::BeatSaber::AvatarCore::OptionalAvatarData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -228,7 +228,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (data))?
+            cordl_method_info.invoke_unchecked(self, (data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -238,7 +238,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
         playbackDelaySeconds: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -255,7 +255,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (data, playbackDelaySeconds))?
+            cordl_method_info.invoke_unchecked(self, (data, playbackDelaySeconds))?
         };
         Ok(__cordl_ret.into())
     }
@@ -264,7 +264,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
         currentPose: crate::BeatSaber::AvatarCore::AvatarPoseData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -281,7 +281,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (currentPose))?
+            cordl_method_info.invoke_unchecked(self, (currentPose))?
         };
         Ok(__cordl_ret.into())
     }
@@ -290,7 +290,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
         visualData: crate::GlobalNamespace::MultiplayerAvatarsData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -307,7 +307,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (visualData))?
+            cordl_method_info.invoke_unchecked(self, (visualData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -315,7 +315,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -328,7 +328,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -336,7 +336,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -353,7 +353,7 @@ impl crate::BeatSaber::AvatarCore::Avatar {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

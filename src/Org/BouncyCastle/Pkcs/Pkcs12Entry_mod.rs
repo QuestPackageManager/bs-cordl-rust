@@ -45,7 +45,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -65,7 +65,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBagAttribute_DerObjectIdentifier0(
@@ -77,7 +77,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -99,7 +99,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-        > = unsafe { method.invoke_unchecked(self, (oid))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (oid))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBagAttribute_Il2CppString1(
@@ -109,7 +109,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -129,7 +129,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-        > = unsafe { method.invoke_unchecked(self, (oid))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (oid))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -146,7 +146,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
         attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -165,7 +165,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (attributes))?
+            cordl_method_info.invoke_unchecked(self, (attributes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -175,7 +175,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -195,7 +195,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerable,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Item_DerObjectIdentifier0(
@@ -207,7 +207,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -229,7 +229,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-        > = unsafe { method.invoke_unchecked(self, (oid))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (oid))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Item_Il2CppString1(
@@ -239,7 +239,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -259,7 +259,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-        > = unsafe { method.invoke_unchecked(self, (oid))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (oid))? };
         Ok(__cordl_ret.into())
     }
 }

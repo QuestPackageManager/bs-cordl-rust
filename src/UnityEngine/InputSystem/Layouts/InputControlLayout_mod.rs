@@ -127,7 +127,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -144,7 +144,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (arraySize))?
+            cordl_method_info.invoke_unchecked(self, (arraySize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -155,7 +155,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -172,7 +172,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -183,7 +183,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -200,7 +200,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -211,7 +211,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -228,7 +228,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -239,7 +239,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -256,7 +256,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (path))?
+            cordl_method_info.invoke_unchecked(self, (path))?
         };
         Ok(__cordl_ret.into())
     }
@@ -267,7 +267,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -284,7 +284,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (bit))?
+            cordl_method_info.invoke_unchecked(self, (bit))?
         };
         Ok(__cordl_ret.into())
     }
@@ -295,7 +295,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -312,7 +312,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (offset))?
+            cordl_method_info.invoke_unchecked(self, (offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -323,7 +323,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -340,7 +340,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -351,7 +351,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -368,7 +368,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (displayName))?
+            cordl_method_info.invoke_unchecked(self, (displayName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -379,7 +379,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -396,7 +396,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (format))?
+            cordl_method_info.invoke_unchecked(self, (format))?
         };
         Ok(__cordl_ret.into())
     }
@@ -407,7 +407,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -424,7 +424,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (format))?
+            cordl_method_info.invoke_unchecked(self, (format))?
         };
         Ok(__cordl_ret.into())
     }
@@ -435,7 +435,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -452,7 +452,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (layout))?
+            cordl_method_info.invoke_unchecked(self, (layout))?
         };
         Ok(__cordl_ret.into())
     }
@@ -463,7 +463,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -480,7 +480,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (parameters))?
+            cordl_method_info.invoke_unchecked(self, (parameters))?
         };
         Ok(__cordl_ret.into())
     }
@@ -491,7 +491,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -508,7 +508,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (processors))?
+            cordl_method_info.invoke_unchecked(self, (processors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -520,7 +520,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -537,7 +537,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (minValue, maxValue))?
+            cordl_method_info.invoke_unchecked(self, (minValue, maxValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -548,7 +548,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -565,7 +565,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (sizeInBits))?
+            cordl_method_info.invoke_unchecked(self, (sizeInBits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -580,7 +580,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -603,7 +603,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (usages))?
+            cordl_method_info.invoke_unchecked(self, (usages))?
         };
         Ok(__cordl_ret.into())
     }
@@ -618,7 +618,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -639,7 +639,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (usages))?
+            cordl_method_info.invoke_unchecked(self, (usages))?
         };
         Ok(__cordl_ret.into())
     }
@@ -654,7 +654,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -677,7 +677,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (usages))?
+            cordl_method_info.invoke_unchecked(self, (usages))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1127,7 +1127,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         layoutName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1154,7 +1154,8 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (_cordl_type, controlLayouts, layoutName))?
+            cordl_method_info
+                .invoke_unchecked((), (_cordl_type, controlLayouts, layoutName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1168,7 +1169,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         layoutName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1195,7 +1196,8 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (_cordl_type, controlLayouts, layoutName))?
+            cordl_method_info
+                .invoke_unchecked((), (_cordl_type, controlLayouts, layoutName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1215,7 +1217,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1248,7 +1250,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (member, attributes, controlItems))?
+            cordl_method_info.invoke_unchecked((), (member, attributes, controlItems))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1266,7 +1268,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         layoutName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1299,7 +1301,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (members, controlItems, layoutName))?
+            cordl_method_info.invoke_unchecked((), (members, controlItems, layoutName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1313,7 +1315,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         layoutName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1340,7 +1342,8 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (_cordl_type, controlLayouts, layoutName))?
+            cordl_method_info
+                .invoke_unchecked((), (_cordl_type, controlLayouts, layoutName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1348,7 +1351,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstance,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1365,7 +1368,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstance = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1378,7 +1381,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1402,7 +1405,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem = unsafe {
-            method.invoke_unchecked((), (member, attribute))?
+            cordl_method_info.invoke_unchecked((), (member, attribute))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1426,7 +1429,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1467,7 +1470,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                 crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
             >,
-        > = unsafe { method.invoke_unchecked((), (controlItems, variants))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (controlItems, variants))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindControl(
@@ -1479,7 +1482,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1499,7 +1502,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
             });
         let __cordl_ret: crate::System::Nullable_1<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
-        > = unsafe { method.invoke_unchecked(self, (path))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (path))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindControlIncludingArrayElements(
@@ -1512,7 +1515,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1537,7 +1540,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
             });
         let __cordl_ret: crate::System::Nullable_1<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
-        > = unsafe { method.invoke_unchecked(self, (path, arrayIndex))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (path, arrayIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromJson(
@@ -1548,7 +1551,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1568,7 +1571,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
-        > = unsafe { method.invoke_unchecked((), (json))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (json))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromType(
@@ -1580,7 +1583,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1605,14 +1608,14 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
-        > = unsafe { method.invoke_unchecked((), (name, _cordl_type))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (name, _cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetValueType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1629,7 +1632,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1639,7 +1642,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1657,7 +1660,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn MergeLayout(
@@ -1667,7 +1670,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1686,7 +1689,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (other))?
+            cordl_method_info.invoke_unchecked(self, (other))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1715,7 +1718,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1747,7 +1750,8 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (json, name, baseLayouts, deviceMatcher))?
+            cordl_method_info
+                .invoke_unchecked((), (json, name, baseLayouts, deviceMatcher))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1757,7 +1761,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1775,7 +1779,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn VariantsMatch_Il2CppString_Il2CppString1(
@@ -1783,7 +1787,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         actual: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1807,7 +1811,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (expected, actual))?
+            cordl_method_info.invoke_unchecked((), (expected, actual))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1816,7 +1820,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         actual: crate::UnityEngine::InputSystem::Utilities::InternedString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1836,7 +1840,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (expected, actual))?
+            cordl_method_info.invoke_unchecked((), (expected, actual))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1845,7 +1849,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         x: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1861,7 +1865,9 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (x))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (x))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -1870,7 +1876,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1892,7 +1898,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (name, _cordl_type))?
+            cordl_method_info.invoke_unchecked(self, (name, _cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1900,7 +1906,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1917,7 +1923,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1928,7 +1934,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1945,7 +1951,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem = unsafe {
-            method.invoke_unchecked(self, (path))?
+            cordl_method_info.invoke_unchecked(self, (path))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1959,7 +1965,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1983,7 +1989,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
             crate::System::Collections::Generic::IEnumerable_1<
                 crate::UnityEngine::InputSystem::Utilities::InternedString,
             >,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_baseLayouts(
@@ -1996,7 +2002,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2020,7 +2026,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
             crate::System::Collections::Generic::IEnumerable_1<
                 crate::UnityEngine::InputSystem::Utilities::InternedString,
             >,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_cache() -> quest_hook::libil2cpp::Result<
@@ -2029,7 +2035,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2049,14 +2055,14 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
             });
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_canRunInBackground(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<bool>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2073,7 +2079,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: crate::System::Nullable_1<bool> = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2085,7 +2091,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2105,7 +2111,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
             crate::UnityEngine::InputSystem::Utilities::InternedString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_controls(
@@ -2116,7 +2122,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2136,7 +2142,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_displayName(
@@ -2145,7 +2151,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2163,12 +2169,12 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_hideInUI(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hideInUI")
@@ -2180,12 +2186,12 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isControlLayout(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isControlLayout")
@@ -2197,12 +2203,12 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isDeviceLayout(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isDeviceLayout")
@@ -2214,12 +2220,12 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isGenericTypeOfDevice(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isGenericTypeOfDevice")
@@ -2231,12 +2237,12 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isNoisy(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isNoisy")
@@ -2248,12 +2254,12 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isOverride(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isOverride")
@@ -2265,7 +2271,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_name(
@@ -2274,7 +2280,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2291,7 +2297,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2301,7 +2307,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         crate::UnityEngine::InputSystem::Utilities::FourCC,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2318,13 +2324,13 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_stateSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_stateSizeInBytes")
@@ -2336,14 +2342,14 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_type(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2360,13 +2366,13 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_updateBeforeRender(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_updateBeforeRender")
@@ -2378,7 +2384,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_variants(
@@ -2387,7 +2393,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2404,7 +2410,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2413,7 +2419,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         value: crate::System::Nullable_1<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2430,7 +2436,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2439,7 +2445,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2456,7 +2462,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2465,7 +2471,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2482,7 +2488,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2491,7 +2497,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2508,7 +2514,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2517,7 +2523,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2534,7 +2540,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2620,7 +2626,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2637,7 +2643,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder = unsafe {
-            method.invoke_unchecked(self, (name))?
+            cordl_method_info.invoke_unchecked(self, (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2649,7 +2655,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2669,7 +2675,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Extend(
@@ -2681,7 +2687,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2701,7 +2707,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
-        > = unsafe { method.invoke_unchecked(self, (baseLayoutName))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (baseLayoutName))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -2720,7 +2726,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2740,7 +2746,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
-        > = unsafe { method.invoke_unchecked(self, (displayName))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (displayName))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithFormat_FourCC0(
@@ -2752,7 +2758,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2772,7 +2778,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
-        > = unsafe { method.invoke_unchecked(self, (format))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (format))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithFormat_Il2CppString1(
@@ -2784,7 +2790,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2804,7 +2810,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
-        > = unsafe { method.invoke_unchecked(self, (format))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (format))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithName(
@@ -2816,7 +2822,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2836,7 +2842,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
-        > = unsafe { method.invoke_unchecked(self, (name))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithSizeInBytes(
@@ -2848,7 +2854,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2868,7 +2874,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
-        > = unsafe { method.invoke_unchecked(self, (sizeInBytes))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (sizeInBytes))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithType<T>(
@@ -2883,7 +2889,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2903,14 +2909,14 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -2923,7 +2929,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2935,7 +2941,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2955,7 +2961,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_displayName(
@@ -2964,7 +2970,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2982,7 +2988,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_extendsLayout(
@@ -2991,7 +2997,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3009,7 +3015,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_name(
@@ -3018,7 +3024,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3036,7 +3042,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_stateFormat(
@@ -3045,7 +3051,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         crate::UnityEngine::InputSystem::Utilities::FourCC,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3062,13 +3068,13 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_stateSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_stateSizeInBytes")
@@ -3080,14 +3086,14 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_type(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3104,7 +3110,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3112,7 +3118,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<bool>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3129,7 +3135,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
                     })
             });
         let __cordl_ret: crate::System::Nullable_1<bool> = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3138,7 +3144,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3155,7 +3161,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3164,7 +3170,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3181,7 +3187,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3190,7 +3196,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3207,7 +3213,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3216,7 +3222,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         value: crate::UnityEngine::InputSystem::Utilities::FourCC,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3233,7 +3239,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3242,7 +3248,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3259,7 +3265,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3268,7 +3274,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         value: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3285,7 +3291,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3294,7 +3300,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         value: crate::System::Nullable_1<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3311,7 +3317,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3440,7 +3446,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
@@ -3453,7 +3459,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3467,7 +3473,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3492,7 +3498,9 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
-        > = unsafe { method.invoke_unchecked(self, (name, throwIfNotFound))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (name, throwIfNotFound))?
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -3603,7 +3611,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstan
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
@@ -3616,7 +3624,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstan
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3808,7 +3816,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         matcher: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3828,7 +3836,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (layout, matcher))?
+            cordl_method_info.invoke_unchecked(self, (layout, matcher))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3836,7 +3844,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Allocate")
@@ -3849,7 +3857,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3860,7 +3868,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         distance: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3881,7 +3889,8 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (firstLayout, secondLayout, distance))?
+            cordl_method_info
+                .invoke_unchecked(self, (firstLayout, secondLayout, distance))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3895,7 +3904,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3917,7 +3926,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = unsafe {
-            method.invoke_unchecked(self, (control, cache))?
+            cordl_method_info.invoke_unchecked(self, (control, cache))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3928,7 +3937,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3945,7 +3954,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = unsafe {
-            method.invoke_unchecked(self, (layoutName))?
+            cordl_method_info.invoke_unchecked(self, (layoutName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3961,7 +3970,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3988,7 +3997,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
             crate::System::Collections::Generic::IEnumerable_1<
                 crate::UnityEngine::InputSystem::Utilities::InternedString,
             >,
-        > = unsafe { method.invoke_unchecked(self, (layout, includeSelf))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (layout, includeSelf))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetControlTypeForLayout(
@@ -3996,7 +4005,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         layoutName: crate::UnityEngine::InputSystem::Utilities::InternedString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4013,7 +4022,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked(self, (layoutName))?
+            cordl_method_info.invoke_unchecked(self, (layoutName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4024,7 +4033,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4041,7 +4050,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = unsafe {
-            method.invoke_unchecked(self, (layoutName))?
+            cordl_method_info.invoke_unchecked(self, (layoutName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4050,7 +4059,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         name: crate::UnityEngine::InputSystem::Utilities::InternedString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4066,7 +4075,9 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (name))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (name))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsBasedOn(
@@ -4075,7 +4086,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         childLayout: crate::UnityEngine::InputSystem::Utilities::InternedString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4095,7 +4106,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (parentLayout, childLayout))?
+            cordl_method_info.invoke_unchecked(self, (parentLayout, childLayout))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4104,7 +4115,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         layout: crate::UnityEngine::InputSystem::Utilities::InternedString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4120,7 +4131,9 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (layout))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (layout))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryFindLayoutForType(
@@ -4130,7 +4143,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4147,7 +4160,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = unsafe {
-            method.invoke_unchecked(self, (layoutType))?
+            cordl_method_info.invoke_unchecked(self, (layoutType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4158,7 +4171,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4175,7 +4188,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = unsafe {
-            method.invoke_unchecked(self, (deviceDescription))?
+            cordl_method_info.invoke_unchecked(self, (deviceDescription))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4196,7 +4209,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4226,7 +4239,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
-        > = unsafe { method.invoke_unchecked(self, (name, table))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (name, table))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryLoadLayoutInternal(
@@ -4238,7 +4251,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4258,7 +4271,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
-        > = unsafe { method.invoke_unchecked(self, (name))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValueTypeIsAssignableFrom(
@@ -4267,7 +4280,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         valueType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4287,7 +4300,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (layoutName, valueType))?
+            cordl_method_info.invoke_unchecked(self, (layoutName, valueType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4438,7 +4451,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4455,7 +4468,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem = unsafe {
-            method.invoke_unchecked(self, (other))?
+            cordl_method_info.invoke_unchecked(self, (other))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4467,7 +4480,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4487,12 +4500,12 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
             crate::UnityEngine::InputSystem::Utilities::InternedString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_arraySize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_arraySize")
@@ -4504,12 +4517,12 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_bit(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_bit")
@@ -4521,7 +4534,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_defaultState(
@@ -4530,7 +4543,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4547,7 +4560,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4557,7 +4570,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4575,12 +4588,12 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_dontReset(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_dontReset")
@@ -4592,7 +4605,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_flags(
@@ -4601,7 +4614,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         crate::UnityEngine::InputSystem::Layouts::ControlItem_InputControlLayout_Flags,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4618,7 +4631,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::ControlItem_InputControlLayout_Flags = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4628,7 +4641,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         crate::UnityEngine::InputSystem::Utilities::FourCC,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4645,13 +4658,13 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_isArray(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isArray")
@@ -4663,14 +4676,14 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isFirstDefinedInThisLayout(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isFirstDefinedInThisLayout")
@@ -4682,14 +4695,14 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isModifyingExistingControl(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isModifyingExistingControl")
@@ -4701,12 +4714,12 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isNoisy(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isNoisy")
@@ -4718,12 +4731,12 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isSynthetic(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isSynthetic")
@@ -4735,7 +4748,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_layout(
@@ -4744,7 +4757,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4761,7 +4774,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4771,7 +4784,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4788,7 +4801,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4798,7 +4811,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4815,7 +4828,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4825,7 +4838,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4842,13 +4855,13 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_offset(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_offset")
@@ -4860,7 +4873,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_parameters(
@@ -4871,7 +4884,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4891,7 +4904,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
             crate::UnityEngine::InputSystem::Utilities::NamedValue,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_processors(
@@ -4902,7 +4915,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4922,7 +4935,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
             crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_shortDisplayName(
@@ -4931,7 +4944,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4949,12 +4962,12 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_sizeInBits(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_sizeInBits")
@@ -4966,7 +4979,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_usages(
@@ -4977,7 +4990,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4997,7 +5010,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
             crate::UnityEngine::InputSystem::Utilities::InternedString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_useStateFrom(
@@ -5006,7 +5019,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5024,7 +5037,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_variants(
@@ -5033,7 +5046,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5050,7 +5063,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5061,7 +5074,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5080,7 +5093,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5089,7 +5102,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5106,7 +5119,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5115,7 +5128,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>("set_bit")
@@ -5128,7 +5141,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5137,7 +5150,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5154,7 +5167,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5163,7 +5176,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5180,7 +5193,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5189,7 +5202,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5206,7 +5219,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5215,7 +5228,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: crate::UnityEngine::InputSystem::Layouts::ControlItem_InputControlLayout_Flags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5232,7 +5245,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5241,7 +5254,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: crate::UnityEngine::InputSystem::Utilities::FourCC,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5258,7 +5271,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5267,7 +5280,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5284,7 +5297,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5293,7 +5306,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5310,7 +5323,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5319,7 +5332,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5336,7 +5349,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5345,7 +5358,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5362,7 +5375,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5371,7 +5384,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: crate::UnityEngine::InputSystem::Utilities::InternedString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5388,7 +5401,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5397,7 +5410,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5414,7 +5427,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5423,7 +5436,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5440,7 +5453,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5449,7 +5462,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: crate::UnityEngine::InputSystem::Utilities::InternedString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5466,7 +5479,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5475,7 +5488,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5492,7 +5505,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5503,7 +5516,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5522,7 +5535,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5533,7 +5546,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5552,7 +5565,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5561,7 +5574,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5578,7 +5591,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5587,7 +5600,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5604,7 +5617,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5615,7 +5628,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5634,7 +5647,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5643,7 +5656,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5660,7 +5673,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5669,7 +5682,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         value: crate::UnityEngine::InputSystem::Utilities::InternedString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5686,7 +5699,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5781,7 +5794,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJso
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5813,7 +5826,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJso
                     crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (items))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (items))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -5829,7 +5842,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJso
         crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5846,7 +5859,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJso
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5854,7 +5867,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJso
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -5867,7 +5880,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJso
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -6116,7 +6129,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson {
         crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6135,7 +6148,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson = unsafe {
-            method.invoke_unchecked((), (layout))?
+            cordl_method_info.invoke_unchecked((), (layout))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6147,7 +6160,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6167,7 +6180,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -6405,7 +6418,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFound
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -6418,7 +6431,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFound
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -6427,7 +6440,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFound
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6444,7 +6457,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFound
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (name))?
+            cordl_method_info.invoke_unchecked(self, (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6454,7 +6467,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFound
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6476,7 +6489,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFound
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (message, innerException))?
+            cordl_method_info.invoke_unchecked(self, (message, innerException))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6486,7 +6499,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFound
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6510,7 +6523,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFound
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (name, message))?
+            cordl_method_info.invoke_unchecked(self, (name, message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6522,7 +6535,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFound
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6544,7 +6557,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFound
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (info, context))?
+            cordl_method_info.invoke_unchecked(self, (info, context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6554,7 +6567,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFound
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6572,7 +6585,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFound
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

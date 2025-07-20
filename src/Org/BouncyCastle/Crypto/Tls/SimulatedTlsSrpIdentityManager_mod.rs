@@ -57,7 +57,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -79,7 +79,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsSrpLoginParameters,
-        > = unsafe { method.invoke_unchecked(self, (identity))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (identity))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRfc5054Default(
@@ -93,7 +93,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -120,7 +120,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager,
-        > = unsafe { method.invoke_unchecked((), (group, seedKey))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (group, seedKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -149,7 +149,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
         mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -176,7 +176,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (group, verifierGenerator, mac))?
+            cordl_method_info.invoke_unchecked(self, (group, verifierGenerator, mac))?
         };
         Ok(__cordl_ret.into())
     }

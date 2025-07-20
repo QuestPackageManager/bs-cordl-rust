@@ -106,7 +106,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         str: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -123,7 +123,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (str))?
+            cordl_method_info.invoke_unchecked(self, (str))?
         };
         Ok(__cordl_ret.into())
     }
@@ -133,7 +133,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         c: char,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -149,7 +149,9 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (str, c))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (str, c))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AcceptString(
@@ -158,7 +160,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         output: quest_hook::libil2cpp::ByRefMut<crate::System::ReadOnlySpan_1<char>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -180,7 +182,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (input, output))?
+            cordl_method_info.invoke_unchecked(self, (input, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -189,7 +191,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         str: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -205,7 +207,9 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (str))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (str))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ExpectSingleChar(
@@ -214,7 +218,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         c: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -231,7 +235,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (str, c))?
+            cordl_method_info.invoke_unchecked(self, (str, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -240,7 +244,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         str: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -257,7 +261,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
                     })
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
-            method.invoke_unchecked(self, (str))?
+            cordl_method_info.invoke_unchecked(self, (str))?
         };
         Ok(__cordl_ret.into())
     }

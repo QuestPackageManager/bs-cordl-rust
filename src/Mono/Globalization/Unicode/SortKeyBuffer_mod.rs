@@ -70,7 +70,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         bidx: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -95,7 +95,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value, buf, bidx))?
+            cordl_method_info.invoke_unchecked(self, (value, buf, bidx))?
         };
         Ok(__cordl_ret.into())
     }
@@ -105,7 +105,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         lv1lsb: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -122,7 +122,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (lv1msb, lv1lsb))?
+            cordl_method_info.invoke_unchecked(self, (lv1msb, lv1lsb))?
         };
         Ok(__cordl_ret.into())
     }
@@ -138,7 +138,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         isHalfWidth: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -155,7 +155,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (
@@ -178,7 +178,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         lv1: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -195,7 +195,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (category, lv1))?
+            cordl_method_info.invoke_unchecked(self, (category, lv1))?
         };
         Ok(__cordl_ret.into())
     }
@@ -207,7 +207,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         lv3: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -224,7 +224,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (category, lv1, lv2, lv3))?
+            cordl_method_info.invoke_unchecked(self, (category, lv1, lv2, lv3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -235,7 +235,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         defaultValue: u8,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -258,7 +258,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (data, len, defaultValue))?
+            cordl_method_info.invoke_unchecked(self, (data, len, defaultValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -268,7 +268,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -286,7 +286,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::SortKey,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetResultAndReset(
@@ -295,7 +295,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -313,7 +313,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::SortKey,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize(
@@ -324,7 +324,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         frenchSort: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -348,7 +348,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (options, lcid, s, frenchSort))?
+            cordl_method_info.invoke_unchecked(self, (options, lcid, s, frenchSort))?
         };
         Ok(__cordl_ret.into())
     }
@@ -365,7 +365,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
@@ -378,7 +378,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -387,7 +387,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         lcid: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
@@ -400,7 +400,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (lcid))?
+            cordl_method_info.invoke_unchecked(self, (lcid))?
         };
         Ok(__cordl_ret.into())
     }

@@ -45,7 +45,7 @@ impl crate::System::Threading::Tasks::AsyncCausalityTracer {
         status: crate::System::Threading::Tasks::AsyncCausalityStatus,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -66,7 +66,7 @@ impl crate::System::Threading::Tasks::AsyncCausalityTracer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (traceLevel, taskId, status))?
+            cordl_method_info.invoke_unchecked((), (traceLevel, taskId, status))?
         };
         Ok(__cordl_ret.into())
     }
@@ -77,7 +77,7 @@ impl crate::System::Threading::Tasks::AsyncCausalityTracer {
         relatedContext: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -101,7 +101,7 @@ impl crate::System::Threading::Tasks::AsyncCausalityTracer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (traceLevel, taskId, operationName, relatedContext),
@@ -114,7 +114,7 @@ impl crate::System::Threading::Tasks::AsyncCausalityTracer {
         work: crate::System::Threading::Tasks::CausalitySynchronousWork,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -134,7 +134,7 @@ impl crate::System::Threading::Tasks::AsyncCausalityTracer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (traceLevel, work))?
+            cordl_method_info.invoke_unchecked((), (traceLevel, work))?
         };
         Ok(__cordl_ret.into())
     }
@@ -144,7 +144,7 @@ impl crate::System::Threading::Tasks::AsyncCausalityTracer {
         work: crate::System::Threading::Tasks::CausalitySynchronousWork,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -165,13 +165,13 @@ impl crate::System::Threading::Tasks::AsyncCausalityTracer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (traceLevel, taskId, work))?
+            cordl_method_info.invoke_unchecked((), (traceLevel, taskId, work))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_LoggingOn() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_LoggingOn")
@@ -183,7 +183,7 @@ impl crate::System::Threading::Tasks::AsyncCausalityTracer {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

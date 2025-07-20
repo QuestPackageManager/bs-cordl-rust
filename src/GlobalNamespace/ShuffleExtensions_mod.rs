@@ -54,7 +54,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -83,7 +83,8 @@ impl crate::GlobalNamespace::ShuffleExtensions {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<T>,
         > = unsafe {
-            method.invoke_unchecked((), (source, limit, count, random, tombstone))?
+            cordl_method_info
+                .invoke_unchecked((), (source, limit, count, random, tombstone))?
         };
         Ok(__cordl_ret.into())
     }
@@ -100,7 +101,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -125,7 +126,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = unsafe { method.invoke_unchecked((), (source, random))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (source, random))? };
         Ok(__cordl_ret.into())
     }
     pub fn ShuffleInPlace<T>(
@@ -137,7 +138,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -159,7 +160,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (list, random))?
+            cordl_method_info.invoke_unchecked((), (list, random))?
         };
         Ok(__cordl_ret.into())
     }
@@ -177,7 +178,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -203,7 +204,9 @@ impl crate::GlobalNamespace::ShuffleExtensions {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = unsafe { method.invoke_unchecked((), (source, limit, tombstone))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (source, limit, tombstone))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ZipSkipTombstone(
@@ -222,7 +225,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -255,7 +258,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
                 crate::System::ValueTuple_2<i32, i32>,
             >,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (collection1, collection2, collection2Tombstone))?
         };
         Ok(__cordl_ret.into())

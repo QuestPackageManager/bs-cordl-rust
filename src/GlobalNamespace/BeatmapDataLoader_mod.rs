@@ -53,7 +53,7 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -84,7 +84,9 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (beatmapLevelData, beatmapKey))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (beatmapLevelData, beatmapKey))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBasicBeatmapData_IBeatmapLevelData_ByRefMut0(
@@ -97,7 +99,7 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -124,7 +126,9 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapDataBasicInfo,
-        > = unsafe { method.invoke_unchecked(self, (beatmapLevelData, beatmapKey))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (beatmapLevelData, beatmapKey))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBasicBeatmapData_Il2CppString1(
@@ -134,7 +138,7 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -154,7 +158,7 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapDataBasicInfo,
-        > = unsafe { method.invoke_unchecked(self, (beatmapJson))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (beatmapJson))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBeatmapData(
@@ -182,7 +186,7 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -223,7 +227,7 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IReadonlyBeatmapData,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (
@@ -271,7 +275,7 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -319,7 +323,7 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
             >,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (
@@ -349,7 +353,7 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -362,7 +366,7 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

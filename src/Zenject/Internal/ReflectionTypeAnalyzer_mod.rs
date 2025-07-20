@@ -47,7 +47,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -64,7 +64,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -72,7 +72,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -89,7 +89,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (_cordl_type))?
+            cordl_method_info.invoke_unchecked((), (_cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -102,7 +102,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -127,7 +127,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
-        > = unsafe { method.invoke_unchecked((), (parentType, paramInfo))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (parentType, paramInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetConstructorInfo(
@@ -138,7 +138,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -158,7 +158,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFieldInfos(
@@ -173,7 +173,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -201,7 +201,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
                     crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetInjectableInfoForMember(
@@ -211,7 +211,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
         quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -233,7 +233,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo> = unsafe {
-            method.invoke_unchecked((), (parentType, memInfo))?
+            cordl_method_info.invoke_unchecked((), (parentType, memInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -249,7 +249,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -277,7 +277,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
                     crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPropertyInfos(
@@ -292,7 +292,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -320,7 +320,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
                     crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetReflectionInfo(
@@ -329,7 +329,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
         quest_hook::libil2cpp::Gc<crate::Zenject::Internal::ReflectionTypeInfo>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -349,7 +349,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::Internal::ReflectionTypeInfo,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetInjectConstructor(
@@ -358,7 +358,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
         quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -378,7 +378,7 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::ConstructorInfo,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -45,7 +45,7 @@ impl crate::GlobalNamespace::FileHelpers {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -63,7 +63,7 @@ impl crate::GlobalNamespace::FileHelpers {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (filePath))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (filePath))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFileNamesFromFilePaths(
@@ -80,7 +80,7 @@ impl crate::GlobalNamespace::FileHelpers {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -112,7 +112,7 @@ impl crate::GlobalNamespace::FileHelpers {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (filePaths))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (filePaths))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFilePaths(
@@ -130,7 +130,7 @@ impl crate::GlobalNamespace::FileHelpers {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -167,7 +167,9 @@ impl crate::GlobalNamespace::FileHelpers {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (directoryPath, extensions))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (directoryPath, extensions))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetUniqueDirectoryNameByAppendingNumber(
@@ -176,7 +178,7 @@ impl crate::GlobalNamespace::FileHelpers {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -194,14 +196,14 @@ impl crate::GlobalNamespace::FileHelpers {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (dirName))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (dirName))? };
         Ok(__cordl_ret.into())
     }
     pub fn PathIsUrl(
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -217,7 +219,9 @@ impl crate::GlobalNamespace::FileHelpers {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (filePath))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (filePath))?
+        };
         Ok(__cordl_ret.into())
     }
 }

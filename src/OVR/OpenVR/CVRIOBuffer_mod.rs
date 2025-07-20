@@ -44,7 +44,7 @@ impl crate::OVR::OpenVR::CVRIOBuffer {
         ulBuffer: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EIOBufferError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -61,7 +61,7 @@ impl crate::OVR::OpenVR::CVRIOBuffer {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EIOBufferError = unsafe {
-            method.invoke_unchecked(self, (ulBuffer))?
+            cordl_method_info.invoke_unchecked(self, (ulBuffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -83,7 +83,7 @@ impl crate::OVR::OpenVR::CVRIOBuffer {
         pulBuffer: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EIOBufferError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -108,7 +108,7 @@ impl crate::OVR::OpenVR::CVRIOBuffer {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EIOBufferError = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (pchPath, mode, unElementSize, unElements, pulBuffer),
@@ -121,7 +121,7 @@ impl crate::OVR::OpenVR::CVRIOBuffer {
         ulBuffer: u64,
     ) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u64), u64, 1usize>("PropertyContainer")
@@ -133,7 +133,9 @@ impl crate::OVR::OpenVR::CVRIOBuffer {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked(self, (ulBuffer))? };
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (ulBuffer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Read(
@@ -144,7 +146,7 @@ impl crate::OVR::OpenVR::CVRIOBuffer {
         punRead: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EIOBufferError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -166,7 +168,7 @@ impl crate::OVR::OpenVR::CVRIOBuffer {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EIOBufferError = unsafe {
-            method.invoke_unchecked(self, (ulBuffer, pDst, unBytes, punRead))?
+            cordl_method_info.invoke_unchecked(self, (ulBuffer, pDst, unBytes, punRead))?
         };
         Ok(__cordl_ret.into())
     }
@@ -177,7 +179,7 @@ impl crate::OVR::OpenVR::CVRIOBuffer {
         unBytes: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EIOBufferError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -194,7 +196,7 @@ impl crate::OVR::OpenVR::CVRIOBuffer {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EIOBufferError = unsafe {
-            method.invoke_unchecked(self, (ulBuffer, pSrc, unBytes))?
+            cordl_method_info.invoke_unchecked(self, (ulBuffer, pSrc, unBytes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -203,7 +205,7 @@ impl crate::OVR::OpenVR::CVRIOBuffer {
         pInterface: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -220,7 +222,7 @@ impl crate::OVR::OpenVR::CVRIOBuffer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pInterface))?
+            cordl_method_info.invoke_unchecked(self, (pInterface))?
         };
         Ok(__cordl_ret.into())
     }

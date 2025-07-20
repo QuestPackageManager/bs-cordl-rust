@@ -44,7 +44,7 @@ impl crate::System::Net::AuthenticationSchemeSelector {
         httpRequest: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListenerRequest>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::AuthenticationSchemes> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -63,7 +63,7 @@ impl crate::System::Net::AuthenticationSchemeSelector {
                     })
             });
         let __cordl_ret: crate::System::Net::AuthenticationSchemes = unsafe {
-            method.invoke_unchecked(self, (httpRequest))?
+            cordl_method_info.invoke_unchecked(self, (httpRequest))?
         };
         Ok(__cordl_ret.into())
     }
@@ -83,7 +83,7 @@ impl crate::System::Net::AuthenticationSchemeSelector {
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -105,7 +105,7 @@ impl crate::System::Net::AuthenticationSchemeSelector {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))?
+            cordl_method_info.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }

@@ -53,7 +53,7 @@ impl crate::System::Net::Security::RemoteCertificateValidationCallback {
         sslPolicyErrors: crate::System::Net::Security::SslPolicyErrors,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -81,7 +81,8 @@ impl crate::System::Net::Security::RemoteCertificateValidationCallback {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (sender, certificate, chain, sslPolicyErrors))?
+            cordl_method_info
+                .invoke_unchecked(self, (sender, certificate, chain, sslPolicyErrors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -101,7 +102,7 @@ impl crate::System::Net::Security::RemoteCertificateValidationCallback {
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -123,7 +124,7 @@ impl crate::System::Net::Security::RemoteCertificateValidationCallback {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))?
+            cordl_method_info.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }

@@ -48,7 +48,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -70,7 +70,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint,
-        > = unsafe { method.invoke_unchecked((), (extensions))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (extensions))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDistributionPoints(
@@ -85,7 +85,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -113,7 +113,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
                     crate::Org::BouncyCastle::Asn1::X509::DistributionPoint,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetInstance_Asn1TaggedObject__cordl_bool0(
@@ -123,7 +123,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -148,7 +148,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint,
-        > = unsafe { method.invoke_unchecked((), (obj, explicitly))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj, explicitly))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetInstance_Il2CppObject1(
@@ -157,7 +157,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -177,7 +177,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint,
-        > = unsafe { method.invoke_unchecked((), (obj))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_Asn1Sequence0(
@@ -210,7 +210,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -230,7 +230,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Object,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -239,7 +239,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -257,7 +257,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Asn1Sequence0(
@@ -265,7 +265,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -284,7 +284,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (seq))?
+            cordl_method_info.invoke_unchecked(self, (seq))?
         };
         Ok(__cordl_ret.into())
     }
@@ -299,7 +299,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -322,7 +322,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (points))?
+            cordl_method_info.invoke_unchecked(self, (points))?
         };
         Ok(__cordl_ret.into())
     }

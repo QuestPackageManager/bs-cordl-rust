@@ -55,7 +55,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -80,7 +80,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (list, value, comparer))?
+            cordl_method_info.invoke_unchecked((), (list, value, comparer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -93,7 +93,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -114,7 +114,9 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (list, value))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (list, value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddRange<T>(
@@ -130,7 +132,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -154,7 +156,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (initial, collection))?
+            cordl_method_info.invoke_unchecked((), (initial, collection))?
         };
         Ok(__cordl_ret.into())
     }
@@ -172,7 +174,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -199,7 +201,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (list, values, comparer))?
+            cordl_method_info.invoke_unchecked((), (list, values, comparer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -211,7 +213,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -229,7 +231,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<T>,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Contains<T>(
@@ -244,7 +246,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -269,7 +271,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (list, value, comparer))?
+            cordl_method_info.invoke_unchecked((), (list, value, comparer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -287,7 +289,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -314,7 +316,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (source, value, comparer))?
+            cordl_method_info.invoke_unchecked((), (source, value, comparer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -324,7 +326,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         indices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -347,7 +349,8 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (values, multidimensionalArray, indices))?
+            cordl_method_info
+                .invoke_unchecked((), (values, multidimensionalArray, indices))?
         };
         Ok(__cordl_ret.into())
     }
@@ -359,7 +362,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -378,7 +381,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (list))?
+            cordl_method_info.invoke_unchecked((), (list))?
         };
         Ok(__cordl_ret.into())
     }
@@ -389,7 +392,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<i32>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -412,7 +415,9 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<i32>,
-        > = unsafe { method.invoke_unchecked((), (values, dimensionsCount))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (values, dimensionsCount))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf<T>(
@@ -426,7 +431,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -448,7 +453,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (collection, predicate))?
+            cordl_method_info.invoke_unchecked((), (collection, predicate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -461,7 +466,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -482,14 +487,16 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (list, item))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (list, item))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsDictionaryType(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -505,7 +512,9 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (_cordl_type))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_type))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsNullOrEmpty<T>(
@@ -518,7 +527,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -536,7 +545,9 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (collection))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (collection))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn JaggedArrayGetValue(
@@ -546,7 +557,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -569,7 +580,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (values, indices))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (values, indices))? };
         Ok(__cordl_ret.into())
     }
     pub fn ResolveEnumerableCollectionConstructor_Type1(
@@ -580,7 +591,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -605,7 +616,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::ConstructorInfo,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (collectionType, collectionItemType, constructorArgumentType),
@@ -620,7 +631,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -644,7 +655,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::ConstructorInfo,
         > = unsafe {
-            method.invoke_unchecked((), (collectionType, collectionItemType))?
+            cordl_method_info.invoke_unchecked((), (collectionType, collectionItemType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -654,7 +665,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         rank: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -675,7 +686,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = unsafe {
-            method.invoke_unchecked((), (values, _cordl_type, rank))?
+            cordl_method_info.invoke_unchecked((), (values, _cordl_type, rank))?
         };
         Ok(__cordl_ret.into())
     }

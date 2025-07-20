@@ -186,7 +186,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename {
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -217,7 +217,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (
@@ -239,7 +239,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename {
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -261,7 +261,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename {
                     })
             });
         let __cordl_ret: u32 = unsafe {
-            method.invoke_unchecked(self, (pError, result))?
+            cordl_method_info.invoke_unchecked(self, (pError, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -274,7 +274,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename {
         pError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRScreenshotError>,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -301,7 +301,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename {
                     })
             });
         let __cordl_ret: u32 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (screenshotHandle, filenameType, pchFilename, cchFilename, pError),
@@ -325,7 +325,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename {
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -347,7 +347,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))?
+            cordl_method_info.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -414,7 +414,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType {
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -440,7 +440,8 @@ impl crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method.invoke_unchecked(self, (screenshotHandle, pError, callback, object))?
+            cordl_method_info
+                .invoke_unchecked(self, (screenshotHandle, pError, callback, object))?
         };
         Ok(__cordl_ret.into())
     }
@@ -450,7 +451,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType {
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotType> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -472,7 +473,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotType = unsafe {
-            method.invoke_unchecked(self, (pError, result))?
+            cordl_method_info.invoke_unchecked(self, (pError, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -482,7 +483,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType {
         pError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRScreenshotError>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotType> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -504,7 +505,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotType = unsafe {
-            method.invoke_unchecked(self, (screenshotHandle, pError))?
+            cordl_method_info.invoke_unchecked(self, (screenshotHandle, pError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -524,7 +525,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType {
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -546,7 +547,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))?
+            cordl_method_info.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -616,7 +617,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__HookScreenshot {
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -646,7 +647,8 @@ impl crate::OVR::OpenVR::IVRScreenshots__HookScreenshot {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method.invoke_unchecked(self, (pSupportedTypes, numTypes, callback, object))?
+            cordl_method_info
+                .invoke_unchecked(self, (pSupportedTypes, numTypes, callback, object))?
         };
         Ok(__cordl_ret.into())
     }
@@ -655,7 +657,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__HookScreenshot {
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -672,7 +674,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__HookScreenshot {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = unsafe {
-            method.invoke_unchecked(self, (result))?
+            cordl_method_info.invoke_unchecked(self, (result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -686,7 +688,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__HookScreenshot {
         numTypes: i32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -712,7 +714,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__HookScreenshot {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = unsafe {
-            method.invoke_unchecked(self, (pSupportedTypes, numTypes))?
+            cordl_method_info.invoke_unchecked(self, (pSupportedTypes, numTypes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -732,7 +734,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__HookScreenshot {
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -754,7 +756,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__HookScreenshot {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))?
+            cordl_method_info.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -824,7 +826,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot {
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -854,7 +856,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (
@@ -875,7 +877,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot {
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -895,7 +897,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = unsafe {
-            method.invoke_unchecked(self, (pOutScreenshotHandle, result))?
+            cordl_method_info.invoke_unchecked(self, (pOutScreenshotHandle, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -909,7 +911,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot {
         pchVRFilename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -935,7 +937,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (
@@ -964,7 +966,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot {
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -986,7 +988,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))?
+            cordl_method_info.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1058,7 +1060,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot {
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1088,7 +1090,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (
@@ -1108,7 +1110,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot {
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1125,7 +1127,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = unsafe {
-            method.invoke_unchecked(self, (result))?
+            cordl_method_info.invoke_unchecked(self, (result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1141,7 +1143,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1167,7 +1169,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (
@@ -1196,7 +1198,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot {
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1218,7 +1220,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))?
+            cordl_method_info.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1287,7 +1289,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot {
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1316,7 +1318,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (
@@ -1336,7 +1338,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot {
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1356,7 +1358,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = unsafe {
-            method.invoke_unchecked(self, (pOutScreenshotHandle, result))?
+            cordl_method_info.invoke_unchecked(self, (pOutScreenshotHandle, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1369,7 +1371,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot {
         pchVRFilename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1394,7 +1396,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (pOutScreenshotHandle, pchPreviewFilename, pchVRFilename),
@@ -1418,7 +1420,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot {
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1440,7 +1442,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))?
+            cordl_method_info.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1507,7 +1509,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress {
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1531,7 +1533,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (screenshotHandle, flProgress, callback, object),
@@ -1544,7 +1546,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress {
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1561,7 +1563,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = unsafe {
-            method.invoke_unchecked(self, (result))?
+            cordl_method_info.invoke_unchecked(self, (result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1571,7 +1573,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress {
         flProgress: f32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1588,7 +1590,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = unsafe {
-            method.invoke_unchecked(self, (screenshotHandle, flProgress))?
+            cordl_method_info.invoke_unchecked(self, (screenshotHandle, flProgress))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1608,7 +1610,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress {
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1630,7 +1632,7 @@ impl crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))?
+            cordl_method_info.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }

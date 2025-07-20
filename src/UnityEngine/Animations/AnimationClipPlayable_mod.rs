@@ -108,7 +108,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
         crate::UnityEngine::Animations::AnimationClipPlayable,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -128,7 +128,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Animations::AnimationClipPlayable = unsafe {
-            method.invoke_unchecked((), (graph, clip))?
+            cordl_method_info.invoke_unchecked((), (graph, clip))?
         };
         Ok(__cordl_ret.into())
     }
@@ -137,7 +137,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -157,7 +157,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = unsafe {
-            method.invoke_unchecked((), (graph, clip))?
+            cordl_method_info.invoke_unchecked((), (graph, clip))?
         };
         Ok(__cordl_ret.into())
     }
@@ -169,7 +169,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -192,7 +192,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (graph, clip, handle))?
+            cordl_method_info.invoke_unchecked((), (graph, clip, handle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -206,7 +206,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -231,7 +231,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (graph, clip, handle))?
+            cordl_method_info.invoke_unchecked((), (graph, clip, handle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -240,7 +240,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
         other: crate::UnityEngine::Animations::AnimationClipPlayable,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -256,14 +256,16 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetHandle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -280,7 +282,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -289,7 +291,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -306,7 +308,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -317,7 +319,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -339,7 +341,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (handle, value))?
+            cordl_method_info.invoke_unchecked((), (handle, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -348,7 +350,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -365,7 +367,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -376,7 +378,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -398,7 +400,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (handle, value))?
+            cordl_method_info.invoke_unchecked((), (handle, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -407,7 +409,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -424,7 +426,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -435,7 +437,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -457,7 +459,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (handle, value))?
+            cordl_method_info.invoke_unchecked((), (handle, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -466,7 +468,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -483,7 +485,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -494,7 +496,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -516,7 +518,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (handle, value))?
+            cordl_method_info.invoke_unchecked((), (handle, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -525,7 +527,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
         handle: crate::UnityEngine::Playables::PlayableHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -542,7 +544,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (handle))?
+            cordl_method_info.invoke_unchecked(self, (handle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -550,7 +552,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
         playable: crate::UnityEngine::Animations::AnimationClipPlayable,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -567,7 +569,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Playables::Playable = unsafe {
-            method.invoke_unchecked((), (playable))?
+            cordl_method_info.invoke_unchecked((), (playable))?
         };
         Ok(__cordl_ret.into())
     }

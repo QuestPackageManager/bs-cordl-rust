@@ -43,7 +43,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         beatmapEventType: crate::BeatmapSaveDataCommon::BeatmapEventType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BasicBeatmapEventType> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -60,7 +60,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::BasicBeatmapEventType = unsafe {
-            method.invoke_unchecked((), (beatmapEventType))?
+            cordl_method_info.invoke_unchecked((), (beatmapEventType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -87,7 +87,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType = unsafe {
-            method.invoke_unchecked((), (distributionParamType))?
+            cordl_method_info.invoke_unchecked((), (distributionParamType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -95,7 +95,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         easeType: crate::BeatmapSaveDataCommon::EaseType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EaseType> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -112,7 +112,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::EaseType = unsafe {
-            method.invoke_unchecked((), (easeType))?
+            cordl_method_info.invoke_unchecked((), (easeType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -120,7 +120,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         environmentColorType: crate::BeatmapSaveDataCommon::EnvironmentColorType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EnvironmentColorType> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -137,7 +137,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::EnvironmentColorType = unsafe {
-            method.invoke_unchecked((), (environmentColorType))?
+            cordl_method_info.invoke_unchecked((), (environmentColorType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -145,7 +145,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         axis: crate::BeatmapSaveDataCommon::Axis,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::LightAxis> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -162,7 +162,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::LightAxis = unsafe {
-            method.invoke_unchecked((), (axis))?
+            cordl_method_info.invoke_unchecked((), (axis))?
         };
         Ok(__cordl_ret.into())
     }
@@ -170,7 +170,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         rotationDirection: crate::BeatmapSaveDataCommon::RotationDirection,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::LightRotationDirection> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -187,7 +187,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::LightRotationDirection = unsafe {
-            method.invoke_unchecked((), (rotationDirection))?
+            cordl_method_info.invoke_unchecked((), (rotationDirection))?
         };
         Ok(__cordl_ret.into())
     }
@@ -195,7 +195,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         noteType: crate::BeatmapSaveDataVersion2_6_0AndEarlier::ColorType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ColorType> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -212,7 +212,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::ColorType = unsafe {
-            method.invoke_unchecked((), (noteType))?
+            cordl_method_info.invoke_unchecked((), (noteType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -220,7 +220,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         noteType: crate::BeatmapSaveDataCommon::NoteColorType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ColorType> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -237,7 +237,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::ColorType = unsafe {
-            method.invoke_unchecked((), (noteType))?
+            cordl_method_info.invoke_unchecked((), (noteType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -245,7 +245,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         noteCutDirection: crate::BeatmapSaveDataCommon::NoteCutDirection,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutDirection> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -262,7 +262,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = unsafe {
-            method.invoke_unchecked((), (noteCutDirection))?
+            cordl_method_info.invoke_unchecked((), (noteCutDirection))?
         };
         Ok(__cordl_ret.into())
     }
@@ -270,7 +270,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         layer: crate::BeatmapSaveDataCommon::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteLineLayer> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -287,7 +287,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::NoteLineLayer = unsafe {
-            method.invoke_unchecked((), (layer))?
+            cordl_method_info.invoke_unchecked((), (layer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -295,7 +295,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         layer: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteLineLayer> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -312,7 +312,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::NoteLineLayer = unsafe {
-            method.invoke_unchecked((), (layer))?
+            cordl_method_info.invoke_unchecked((), (layer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -320,7 +320,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         offsetDirection: crate::BeatmapSaveDataCommon::OffsetDirection,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OffsetDirection> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -337,7 +337,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OffsetDirection = unsafe {
-            method.invoke_unchecked((), (offsetDirection))?
+            cordl_method_info.invoke_unchecked((), (offsetDirection))?
         };
         Ok(__cordl_ret.into())
     }
@@ -345,7 +345,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         sliderType: crate::BeatmapSaveDataVersion3::SliderType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SliderData_Type> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -362,7 +362,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::SliderData_Type = unsafe {
-            method.invoke_unchecked((), (sliderType))?
+            cordl_method_info.invoke_unchecked((), (sliderType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -370,7 +370,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         sliderMidAnchorMode: crate::BeatmapSaveDataCommon::SliderMidAnchorMode,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SliderMidAnchorMode> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -387,7 +387,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::SliderMidAnchorMode = unsafe {
-            method.invoke_unchecked((), (sliderMidAnchorMode))?
+            cordl_method_info.invoke_unchecked((), (sliderMidAnchorMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -395,7 +395,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         transitionType: crate::BeatmapSaveDataVersion3::TransitionType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EaseType> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -412,7 +412,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::EaseType = unsafe {
-            method.invoke_unchecked((), (transitionType))?
+            cordl_method_info.invoke_unchecked((), (transitionType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -420,7 +420,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         transitionType: crate::BeatmapSaveDataVersion3::TransitionType,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -437,7 +437,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (transitionType))?
+            cordl_method_info.invoke_unchecked((), (transitionType))?
         };
         Ok(__cordl_ret.into())
     }

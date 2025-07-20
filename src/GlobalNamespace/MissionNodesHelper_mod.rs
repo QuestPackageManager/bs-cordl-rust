@@ -42,7 +42,7 @@ impl crate::GlobalNamespace::MissionNodesHelper {
         node: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -58,7 +58,9 @@ impl crate::GlobalNamespace::MissionNodesHelper {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (node))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (node))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CycleDetection_i32_Dictionary_2_1(
@@ -72,7 +74,7 @@ impl crate::GlobalNamespace::MissionNodesHelper {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -102,7 +104,7 @@ impl crate::GlobalNamespace::MissionNodesHelper {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (node, layer, layers))?
+            cordl_method_info.invoke_unchecked((), (node, layer, layers))?
         };
         Ok(__cordl_ret.into())
     }
@@ -116,7 +118,7 @@ impl crate::GlobalNamespace::MissionNodesHelper {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -147,7 +149,7 @@ impl crate::GlobalNamespace::MissionNodesHelper {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (finalNode, node, visitedNodes))?
+            cordl_method_info.invoke_unchecked((), (finalNode, node, visitedNodes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -156,7 +158,7 @@ impl crate::GlobalNamespace::MissionNodesHelper {
         rootNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -180,7 +182,7 @@ impl crate::GlobalNamespace::MissionNodesHelper {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (finalNode, rootNode))?
+            cordl_method_info.invoke_unchecked((), (finalNode, rootNode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -194,7 +196,7 @@ impl crate::GlobalNamespace::MissionNodesHelper {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -220,7 +222,7 @@ impl crate::GlobalNamespace::MissionNodesHelper {
             crate::System::Collections::Generic::HashSet_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
             >,
-        > = unsafe { method.invoke_unchecked((), (root))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (root))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -239,7 +241,7 @@ impl crate::GlobalNamespace::MissionNodesHelper {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -267,7 +269,7 @@ impl crate::GlobalNamespace::MissionNodesHelper {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, visitedNodes))?
+            cordl_method_info.invoke_unchecked((), (node, visitedNodes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -275,7 +277,7 @@ impl crate::GlobalNamespace::MissionNodesHelper {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -288,7 +290,7 @@ impl crate::GlobalNamespace::MissionNodesHelper {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

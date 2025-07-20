@@ -108,7 +108,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
         crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -125,7 +125,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand = unsafe {
-            method.invoke_unchecked((), (cursorPosition))?
+            cordl_method_info.invoke_unchecked((), (cursorPosition))?
         };
         Ok(__cordl_ret.into())
     }
@@ -133,7 +133,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
         crate::UnityEngine::InputSystem::Utilities::FourCC,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -150,7 +150,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -158,7 +158,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -175,7 +175,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -185,7 +185,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
         crate::UnityEngine::InputSystem::Utilities::FourCC,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -202,7 +202,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

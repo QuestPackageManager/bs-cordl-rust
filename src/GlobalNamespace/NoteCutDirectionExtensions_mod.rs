@@ -43,7 +43,7 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
         cutDirection: crate::GlobalNamespace::NoteCutDirection,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -60,7 +60,7 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (cutDirection))?
+            cordl_method_info.invoke_unchecked((), (cutDirection))?
         };
         Ok(__cordl_ret.into())
     }
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
         cutDirection: crate::GlobalNamespace::NoteCutDirection,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -84,7 +84,9 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (cutDirection))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (cutDirection))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsOnSamePlane(
@@ -92,7 +94,7 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
         noteCutDirection2: crate::GlobalNamespace::NoteCutDirection,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -112,7 +114,8 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (noteCutDirection1, noteCutDirection2))?
+            cordl_method_info
+                .invoke_unchecked((), (noteCutDirection1, noteCutDirection2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -120,7 +123,7 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
         angle: f32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutDirection> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -137,7 +140,7 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = unsafe {
-            method.invoke_unchecked((), (angle))?
+            cordl_method_info.invoke_unchecked((), (angle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -145,7 +148,7 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
         cutDirection: crate::GlobalNamespace::NoteCutDirection,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutDirection> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -162,7 +165,7 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = unsafe {
-            method.invoke_unchecked((), (cutDirection))?
+            cordl_method_info.invoke_unchecked((), (cutDirection))?
         };
         Ok(__cordl_ret.into())
     }
@@ -170,7 +173,7 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
         direction: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutDirection> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -187,7 +190,7 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = unsafe {
-            method.invoke_unchecked((), (direction))?
+            cordl_method_info.invoke_unchecked((), (direction))?
         };
         Ok(__cordl_ret.into())
     }
@@ -195,7 +198,7 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
         cutDirection: crate::GlobalNamespace::NoteCutDirection,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutDirection> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -212,7 +215,7 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = unsafe {
-            method.invoke_unchecked((), (cutDirection))?
+            cordl_method_info.invoke_unchecked((), (cutDirection))?
         };
         Ok(__cordl_ret.into())
     }
@@ -221,7 +224,7 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
         offset: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -238,7 +241,7 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
-            method.invoke_unchecked((), (cutDirection, offset))?
+            cordl_method_info.invoke_unchecked((), (cutDirection, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -246,7 +249,7 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
         cutDirection: crate::GlobalNamespace::NoteCutDirection,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -262,7 +265,9 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (cutDirection))? };
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (cutDirection))?
+        };
         Ok(__cordl_ret.into())
     }
 }

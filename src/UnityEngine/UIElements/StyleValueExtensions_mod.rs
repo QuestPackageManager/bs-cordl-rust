@@ -48,7 +48,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -72,7 +72,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (list, other))?
+            cordl_method_info.invoke_unchecked((), (list, other))?
         };
         Ok(__cordl_ret.into())
     }
@@ -88,7 +88,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -108,14 +108,14 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (styleValue))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (styleValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToLength_StyleKeyword0(
         keyword: crate::UnityEngine::UIElements::StyleKeyword,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -132,7 +132,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::Length = unsafe {
-            method.invoke_unchecked((), (keyword))?
+            cordl_method_info.invoke_unchecked((), (keyword))?
         };
         Ok(__cordl_ret.into())
     }
@@ -140,7 +140,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
         styleLength: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -157,7 +157,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::Length = unsafe {
-            method.invoke_unchecked((), (styleLength))?
+            cordl_method_info.invoke_unchecked((), (styleLength))?
         };
         Ok(__cordl_ret.into())
     }
@@ -165,7 +165,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
         keyword: crate::UnityEngine::UIElements::StyleKeyword,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Rotate> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -182,7 +182,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::Rotate = unsafe {
-            method.invoke_unchecked((), (keyword))?
+            cordl_method_info.invoke_unchecked((), (keyword))?
         };
         Ok(__cordl_ret.into())
     }
@@ -190,7 +190,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
         keyword: crate::UnityEngine::UIElements::StyleKeyword,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Scale> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -207,7 +207,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::Scale = unsafe {
-            method.invoke_unchecked((), (keyword))?
+            cordl_method_info.invoke_unchecked((), (keyword))?
         };
         Ok(__cordl_ret.into())
     }
@@ -215,7 +215,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
         keyword: crate::UnityEngine::UIElements::StyleKeyword,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Translate> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -232,7 +232,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::Translate = unsafe {
-            method.invoke_unchecked((), (keyword))?
+            cordl_method_info.invoke_unchecked((), (keyword))?
         };
         Ok(__cordl_ret.into())
     }
@@ -240,7 +240,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
         length: crate::UnityEngine::UIElements::Length,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Yoga::YogaValue> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -257,7 +257,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Yoga::YogaValue = unsafe {
-            method.invoke_unchecked((), (length))?
+            cordl_method_info.invoke_unchecked((), (length))?
         };
         Ok(__cordl_ret.into())
     }

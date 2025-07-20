@@ -54,7 +54,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventCallbackList>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -76,7 +76,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::EventCallbackList,
-        > = unsafe { method.invoke_unchecked((), (initializer))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (initializer))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCallbackListForReading(
@@ -85,7 +85,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventCallbackList>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -105,7 +105,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::EventCallbackList,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCallbackListForWriting(
@@ -114,7 +114,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventCallbackList>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -134,12 +134,12 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::EventCallbackList,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HasBubbleHandlers(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("HasBubbleHandlers")
@@ -151,12 +151,12 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HasTrickleDownHandlers(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("HasTrickleDownHandlers")
@@ -168,7 +168,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn InvokeCallbacks(
@@ -177,7 +177,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
         propagationPhase: crate::UnityEngine::UIElements::PropagationPhase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -199,7 +199,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (evt, propagationPhase))?
+            cordl_method_info.invoke_unchecked(self, (evt, propagationPhase))?
         };
         Ok(__cordl_ret.into())
     }
@@ -223,7 +223,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -246,7 +246,8 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (callback, useTrickleDown, invokePolicy))?
+            cordl_method_info
+                .invoke_unchecked(self, (callback, useTrickleDown, invokePolicy))?
         };
         Ok(__cordl_ret.into())
     }
@@ -269,7 +270,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -296,7 +297,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (callback, userArgs, useTrickleDown, invokePolicy),
@@ -310,7 +311,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -329,7 +330,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (toRelease))?
+            cordl_method_info.invoke_unchecked((), (toRelease))?
         };
         Ok(__cordl_ret.into())
     }
@@ -345,7 +346,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -367,7 +368,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (callback, useTrickleDown))?
+            cordl_method_info.invoke_unchecked(self, (callback, useTrickleDown))?
         };
         Ok(__cordl_ret.into())
     }
@@ -378,7 +379,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
         useTrickleDown: crate::UnityEngine::UIElements::TrickleDown,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -399,7 +400,8 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (eventTypeId, callback, useTrickleDown))?
+            cordl_method_info
+                .invoke_unchecked(self, (eventTypeId, callback, useTrickleDown))?
         };
         Ok(__cordl_ret.into())
     }
@@ -407,7 +409,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -420,7 +422,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -49,7 +49,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -69,7 +69,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (bytesNeeded))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (bytesNeeded))? };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateDerivedMacParameters(
@@ -79,7 +79,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -99,7 +99,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherParameters,
-        > = unsafe { method.invoke_unchecked(self, (keySize))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (keySize))? };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateDerivedParameters_Il2CppString_i32_1(
@@ -110,7 +110,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -135,7 +135,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherParameters,
-        > = unsafe { method.invoke_unchecked(self, (algorithm, keySize))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (algorithm, keySize))? };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateDerivedParameters_Il2CppString_i32_i32_3(
@@ -147,7 +147,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -173,7 +173,9 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherParameters,
-        > = unsafe { method.invoke_unchecked(self, (algorithm, keySize, ivSize))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (algorithm, keySize, ivSize))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateDerivedParameters_i32_0(
@@ -183,7 +185,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -203,7 +205,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherParameters,
-        > = unsafe { method.invoke_unchecked(self, (keySize))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (keySize))? };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateDerivedParameters_i32_i32_2(
@@ -214,7 +216,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -234,7 +236,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherParameters,
-        > = unsafe { method.invoke_unchecked(self, (keySize, ivSize))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (keySize, ivSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn Init_Il2CppArray_Il2CppArray1(
@@ -243,7 +245,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -267,7 +269,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (password, salt))?
+            cordl_method_info.invoke_unchecked(self, (password, salt))?
         };
         Ok(__cordl_ret.into())
     }
@@ -278,7 +280,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
         iterationCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -303,7 +305,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (password, salt, iterationCount))?
+            cordl_method_info.invoke_unchecked(self, (password, salt, iterationCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -318,7 +320,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -331,7 +333,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

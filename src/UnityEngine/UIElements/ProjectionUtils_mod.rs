@@ -48,7 +48,7 @@ impl crate::UnityEngine::UIElements::ProjectionUtils {
         far: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -65,7 +65,8 @@ impl crate::UnityEngine::UIElements::ProjectionUtils {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            method.invoke_unchecked((), (left, right, bottom, top, near, far))?
+            cordl_method_info
+                .invoke_unchecked((), (left, right, bottom, top, near, far))?
         };
         Ok(__cordl_ret.into())
     }

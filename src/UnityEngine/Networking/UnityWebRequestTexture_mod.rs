@@ -45,7 +45,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestTexture {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -65,7 +65,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestTexture {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequest,
-        > = unsafe { method.invoke_unchecked((), (uri))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (uri))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTexture__cordl_bool1(
@@ -75,7 +75,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestTexture {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -100,7 +100,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestTexture {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequest,
-        > = unsafe { method.invoke_unchecked((), (uri, nonReadable))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (uri, nonReadable))? };
         Ok(__cordl_ret.into())
     }
 }

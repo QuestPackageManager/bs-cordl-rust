@@ -119,7 +119,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
@@ -132,7 +132,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -145,7 +145,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
         curIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -168,7 +168,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nodetype, node, curIndex))?
+            cordl_method_info.invoke_unchecked(self, (nodetype, node, curIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -177,7 +177,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
         op: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Emit")
@@ -190,7 +190,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (op))?
+            cordl_method_info.invoke_unchecked(self, (op))?
         };
         Ok(__cordl_ret.into())
     }
@@ -200,7 +200,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
         opd1: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -217,7 +217,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (op, opd1))?
+            cordl_method_info.invoke_unchecked(self, (op, opd1))?
         };
         Ok(__cordl_ret.into())
     }
@@ -228,7 +228,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
         opd2: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -245,13 +245,13 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (op, opd1, opd2))?
+            cordl_method_info.invoke_unchecked(self, (op, opd1, opd2))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn MapCapnum(&mut self, capnum: i32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("MapCapnum")
@@ -263,7 +263,9 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (capnum))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (capnum))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PatchJump(
@@ -272,7 +274,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
         jumpDest: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -289,7 +291,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (offset, jumpDest))?
+            cordl_method_info.invoke_unchecked(self, (offset, jumpDest))?
         };
         Ok(__cordl_ret.into())
     }
@@ -302,7 +304,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
         quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexCode>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -324,7 +326,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Text::RegularExpressions::RegexCode,
-        > = unsafe { method.invoke_unchecked(self, (tree))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (tree))? };
         Ok(__cordl_ret.into())
     }
     pub fn StringCode(
@@ -332,7 +334,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -348,7 +350,9 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (str))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (str))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Write(
@@ -359,7 +363,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
         quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexCode>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -381,7 +385,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Text::RegularExpressions::RegexCode,
-        > = unsafe { method.invoke_unchecked((), (tree))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (tree))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -390,7 +394,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
         intStackSpan: crate::System::Span_1<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -407,7 +411,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (emittedSpan, intStackSpan))?
+            cordl_method_info.invoke_unchecked(self, (emittedSpan, intStackSpan))?
         };
         Ok(__cordl_ret.into())
     }

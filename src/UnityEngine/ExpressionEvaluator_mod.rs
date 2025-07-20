@@ -60,7 +60,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -87,7 +87,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (expression, value, delayed))?
+            cordl_method_info.invoke_unchecked((), (expression, value, delayed))?
         };
         Ok(__cordl_ret.into())
     }
@@ -102,7 +102,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
         count: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -130,7 +130,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (tokens, value, index, count))?
+            cordl_method_info.invoke_unchecked((), (tokens, value, index, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -141,7 +141,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
         count: i32,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -165,7 +165,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
                     })
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (values, op, index, count))?
+            cordl_method_info.invoke_unchecked((), (values, op, index, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -184,7 +184,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -212,7 +212,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (tokens, value, index, count))?
+            cordl_method_info.invoke_unchecked((), (tokens, value, index, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -227,7 +227,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -258,7 +258,9 @@ impl crate::UnityEngine::ExpressionEvaluator {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (expression, hasVariables))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (expression, hasVariables))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FixUnaryOperators(
@@ -275,7 +277,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -307,7 +309,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (tokens))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (tokens))? };
         Ok(__cordl_ret.into())
     }
     pub fn InfixToRPN(
@@ -324,7 +326,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -356,14 +358,14 @@ impl crate::UnityEngine::ExpressionEvaluator {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (tokens))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (tokens))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsCommand(
         token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -379,14 +381,16 @@ impl crate::UnityEngine::ExpressionEvaluator {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (token))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsDelayedFunction(
         token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -402,14 +406,16 @@ impl crate::UnityEngine::ExpressionEvaluator {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (token))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsOperator(
         token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -425,14 +431,16 @@ impl crate::UnityEngine::ExpressionEvaluator {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (token))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsVariable(
         token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -448,7 +456,9 @@ impl crate::UnityEngine::ExpressionEvaluator {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (token))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NeedToPop(
@@ -462,7 +472,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -490,7 +500,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (operatorStack, newOperator))?
+            cordl_method_info.invoke_unchecked((), (operatorStack, newOperator))?
         };
         Ok(__cordl_ret.into())
     }
@@ -500,7 +510,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -518,7 +528,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (expression))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (expression))? };
         Ok(__cordl_ret.into())
     }
     pub fn TokenToOperator(
@@ -527,7 +537,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ExpressionEvaluator_Operator>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -547,7 +557,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ExpressionEvaluator_Operator,
-        > = unsafe { method.invoke_unchecked((), (token))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (token))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryParse<T>(
@@ -559,7 +569,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -581,7 +591,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (expression, result))?
+            cordl_method_info.invoke_unchecked((), (expression, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -745,7 +755,7 @@ impl crate::UnityEngine::ExpressionEvaluator_Expression {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -762,7 +772,7 @@ impl crate::UnityEngine::ExpressionEvaluator_Expression {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (value, index, count))?
+            cordl_method_info.invoke_unchecked(self, (value, index, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -780,7 +790,7 @@ impl crate::UnityEngine::ExpressionEvaluator_Expression {
         expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -797,7 +807,7 @@ impl crate::UnityEngine::ExpressionEvaluator_Expression {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (expression))?
+            cordl_method_info.invoke_unchecked(self, (expression))?
         };
         Ok(__cordl_ret.into())
     }
@@ -982,7 +992,7 @@ impl crate::UnityEngine::ExpressionEvaluator_Operator {
         associativity: crate::UnityEngine::ExpressionEvaluator_Associativity,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1004,7 +1014,8 @@ impl crate::UnityEngine::ExpressionEvaluator_Operator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (op, precedence, inputs, associativity))?
+            cordl_method_info
+                .invoke_unchecked(self, (op, precedence, inputs, associativity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1125,7 +1136,7 @@ for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
 impl crate::UnityEngine::ExpressionEvaluator_PcgRandom {
     pub fn GetUInt(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("GetUInt")
@@ -1137,12 +1148,12 @@ impl crate::UnityEngine::ExpressionEvaluator_PcgRandom {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RotateRight(v: u32, rot: i32) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, i32), u32, 2usize>("RotateRight")
@@ -1154,14 +1165,16 @@ impl crate::UnityEngine::ExpressionEvaluator_PcgRandom {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (v, rot))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (v, rot))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Step(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Step")
@@ -1174,13 +1187,13 @@ impl crate::UnityEngine::ExpressionEvaluator_PcgRandom {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn XshRr(s: u64) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), u32, 1usize>("XshRr")
@@ -1192,7 +1205,7 @@ impl crate::UnityEngine::ExpressionEvaluator_PcgRandom {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (s))? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), (s))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -1201,7 +1214,7 @@ impl crate::UnityEngine::ExpressionEvaluator_PcgRandom {
         sequence: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1218,7 +1231,7 @@ impl crate::UnityEngine::ExpressionEvaluator_PcgRandom {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (state, sequence))?
+            cordl_method_info.invoke_unchecked(self, (state, sequence))?
         };
         Ok(__cordl_ret.into())
     }

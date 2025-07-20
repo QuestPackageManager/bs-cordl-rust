@@ -45,7 +45,7 @@ impl crate::GlobalNamespace::CubicBezierHelper {
         p3: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -66,7 +66,9 @@ impl crate::GlobalNamespace::CubicBezierHelper {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (p0, p1, p2, p3))? };
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (p0, p1, p2, p3))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EvaluateCurve(
@@ -77,7 +79,7 @@ impl crate::GlobalNamespace::CubicBezierHelper {
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -100,7 +102,7 @@ impl crate::GlobalNamespace::CubicBezierHelper {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (a1, c1, c2, a2, t))?
+            cordl_method_info.invoke_unchecked((), (a1, c1, c2, a2, t))?
         };
         Ok(__cordl_ret.into())
     }
@@ -112,7 +114,7 @@ impl crate::GlobalNamespace::CubicBezierHelper {
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -135,7 +137,7 @@ impl crate::GlobalNamespace::CubicBezierHelper {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (a1, c1, c2, a2, t))?
+            cordl_method_info.invoke_unchecked((), (a1, c1, c2, a2, t))?
         };
         Ok(__cordl_ret.into())
     }
@@ -147,7 +149,7 @@ impl crate::GlobalNamespace::CubicBezierHelper {
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -170,7 +172,7 @@ impl crate::GlobalNamespace::CubicBezierHelper {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (a1, c1, c2, a2, t))?
+            cordl_method_info.invoke_unchecked((), (a1, c1, c2, a2, t))?
         };
         Ok(__cordl_ret.into())
     }
@@ -182,7 +184,7 @@ impl crate::GlobalNamespace::CubicBezierHelper {
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -205,7 +207,7 @@ impl crate::GlobalNamespace::CubicBezierHelper {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (a1, c1, c2, a2, t))?
+            cordl_method_info.invoke_unchecked((), (a1, c1, c2, a2, t))?
         };
         Ok(__cordl_ret.into())
     }
@@ -216,7 +218,7 @@ impl crate::GlobalNamespace::CubicBezierHelper {
         t: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -240,7 +242,7 @@ impl crate::GlobalNamespace::CubicBezierHelper {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (points, t))?
+            cordl_method_info.invoke_unchecked((), (points, t))?
         };
         Ok(__cordl_ret.into())
     }

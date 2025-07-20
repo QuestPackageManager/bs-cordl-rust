@@ -46,7 +46,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSRTPUtils {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -70,7 +70,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSRTPUtils {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (extensions, useSRTPData))?
+            cordl_method_info.invoke_unchecked((), (extensions, useSRTPData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -82,7 +82,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSRTPUtils {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -104,7 +104,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSRTPUtils {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (useSrtpData))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (useSrtpData))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUseSrtpExtension(
@@ -113,7 +113,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSRTPUtils {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::UseSrtpData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -135,7 +135,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSRTPUtils {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::UseSrtpData,
-        > = unsafe { method.invoke_unchecked((), (extensions))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (extensions))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -151,7 +151,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSRTPUtils {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::UseSrtpData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -173,14 +173,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSRTPUtils {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::UseSrtpData,
-        > = unsafe { method.invoke_unchecked((), (extensionData))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (extensionData))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -193,7 +193,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSRTPUtils {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

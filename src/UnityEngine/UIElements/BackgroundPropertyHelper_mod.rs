@@ -45,7 +45,7 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
         crate::UnityEngine::UIElements::BackgroundPosition,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -62,7 +62,7 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::BackgroundPosition = unsafe {
-            method.invoke_unchecked((), (scaleMode))?
+            cordl_method_info.invoke_unchecked((), (scaleMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -72,7 +72,7 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
         crate::UnityEngine::UIElements::BackgroundRepeat,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -89,7 +89,7 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::BackgroundRepeat = unsafe {
-            method.invoke_unchecked((), (scaleMode))?
+            cordl_method_info.invoke_unchecked((), (scaleMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -97,7 +97,7 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
         scaleMode: crate::UnityEngine::ScaleMode,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::BackgroundSize> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -114,7 +114,7 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::BackgroundSize = unsafe {
-            method.invoke_unchecked((), (scaleMode))?
+            cordl_method_info.invoke_unchecked((), (scaleMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -126,7 +126,7 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
         valid: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ScaleMode> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -149,7 +149,7 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
                     })
             });
         let __cordl_ret: crate::UnityEngine::ScaleMode = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (

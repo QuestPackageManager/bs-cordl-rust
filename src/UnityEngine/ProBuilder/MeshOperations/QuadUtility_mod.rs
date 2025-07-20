@@ -51,7 +51,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -79,7 +79,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Face,
-        > = unsafe { method.invoke_unchecked((), (wing, connections))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (wing, connections))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetQuadScore(
@@ -89,7 +89,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
         normalThreshold: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -117,7 +117,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (mesh, left, right, normalThreshold))?
+            cordl_method_info.invoke_unchecked((), (mesh, left, right, normalThreshold))?
         };
         Ok(__cordl_ret.into())
     }
@@ -137,7 +137,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -175,7 +175,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = unsafe { method.invoke_unchecked((), (mesh, faces, smoothing))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (mesh, faces, smoothing))? };
         Ok(__cordl_ret.into())
     }
 }

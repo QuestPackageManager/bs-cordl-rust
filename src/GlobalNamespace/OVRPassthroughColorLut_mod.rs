@@ -108,7 +108,7 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Map
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Execute")
@@ -121,7 +121,7 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Map
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (index))?
+            cordl_method_info.invoke_unchecked(self, (index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -258,7 +258,7 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
         flipY: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -275,7 +275,7 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (width, height, resolution, slicesPerRow, channelCount, flipY),
@@ -285,7 +285,7 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
     }
     pub fn get_ChannelCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_ChannelCount")
@@ -297,12 +297,12 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_FlipY(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_FlipY")
@@ -314,12 +314,12 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Height(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Height")
@@ -331,12 +331,12 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Resolution(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Resolution")
@@ -348,12 +348,12 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_SlicesPerRow(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_SlicesPerRow")
@@ -365,12 +365,12 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Width")
@@ -382,7 +382,7 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -447,7 +447,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -463,7 +463,9 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (channels))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (channels))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Create(
@@ -471,7 +473,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         lutData: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -488,7 +490,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (lutData))?
+            cordl_method_info.invoke_unchecked(self, (lutData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -501,7 +503,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -522,7 +524,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData = unsafe {
-            method.invoke_unchecked(self, (colorBytes))?
+            cordl_method_info.invoke_unchecked(self, (colorBytes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -535,7 +537,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -554,7 +556,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData = unsafe {
-            method.invoke_unchecked(self, (colors))?
+            cordl_method_info.invoke_unchecked(self, (colors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -567,7 +569,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -588,7 +590,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData = unsafe {
-            method.invoke_unchecked(self, (colors))?
+            cordl_method_info.invoke_unchecked(self, (colors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -599,7 +601,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -618,7 +620,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData = unsafe {
-            method.invoke_unchecked(self, (colors))?
+            cordl_method_info.invoke_unchecked(self, (colors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -630,7 +632,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -647,7 +649,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData = unsafe {
-            method.invoke_unchecked(self, (lut, flipY))?
+            cordl_method_info.invoke_unchecked(self, (lut, flipY))?
         };
         Ok(__cordl_ret.into())
     }
@@ -655,7 +657,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Destroy")
@@ -668,7 +670,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -676,7 +678,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
@@ -689,7 +691,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -697,7 +699,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
@@ -710,7 +712,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -722,7 +724,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -740,7 +742,9 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (array))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetChannelsForTextureFormat(
@@ -749,7 +753,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -766,7 +770,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels = unsafe {
-            method.invoke_unchecked((), (format))?
+            cordl_method_info.invoke_unchecked((), (format))?
         };
         Ok(__cordl_ret.into())
     }
@@ -774,7 +778,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), u32, 1usize>("GetResolutionFromSize")
@@ -786,14 +790,16 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (_cordl_size))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_size))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTextureSize(
         texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -809,7 +815,9 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (texture))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (texture))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTextureSizeFromByteArray(
@@ -819,7 +827,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -841,13 +849,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (initialColorLut, channels))?
+            cordl_method_info.invoke_unchecked((), (initialColorLut, channels))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsPowerOfTwo(x: u32) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), bool, 1usize>("IsPowerOfTwo")
@@ -859,7 +867,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (x))? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (x))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsResolutionAccepted(
@@ -870,7 +878,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -895,7 +903,8 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (resolution, _cordl_size, errorMessage))?
+            cordl_method_info
+                .invoke_unchecked((), (resolution, _cordl_size, errorMessage))?
         };
         Ok(__cordl_ret.into())
     }
@@ -906,7 +915,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -930,7 +939,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (texture, errorMessage))?
+            cordl_method_info.invoke_unchecked((), (texture, errorMessage))?
         };
         Ok(__cordl_ret.into())
     }
@@ -944,7 +953,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -966,7 +975,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (colorArray, elementByteSize))?
+            cordl_method_info.invoke_unchecked(self, (colorArray, elementByteSize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -976,7 +985,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         elementByteSize: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32), bool, 2usize>("IsValidUpdateResolution")
@@ -989,7 +998,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (lutSize, elementByteSize))?
+            cordl_method_info.invoke_unchecked(self, (lutSize, elementByteSize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1056,7 +1065,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1075,7 +1084,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (colors))?
+            cordl_method_info.invoke_unchecked(self, (colors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1086,7 +1095,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1107,7 +1116,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (colors))?
+            cordl_method_info.invoke_unchecked(self, (colors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1116,7 +1125,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         colors: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1135,7 +1144,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (colors))?
+            cordl_method_info.invoke_unchecked(self, (colors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1145,7 +1154,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         flipY: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1162,7 +1171,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (lutTexture, flipY))?
+            cordl_method_info.invoke_unchecked(self, (lutTexture, flipY))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1174,7 +1183,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1200,7 +1209,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (colors, target))?
+            cordl_method_info.invoke_unchecked(self, (colors, target))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1212,7 +1221,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1238,7 +1247,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (colors, target))?
+            cordl_method_info.invoke_unchecked(self, (colors, target))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1250,7 +1259,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1274,7 +1283,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (initialColorLut, channels))?
+            cordl_method_info.invoke_unchecked(self, (initialColorLut, channels))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1286,7 +1295,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1310,7 +1319,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (initialColorLut, channels))?
+            cordl_method_info.invoke_unchecked(self, (initialColorLut, channels))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1322,7 +1331,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1344,7 +1353,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (initialColorLut, channels))?
+            cordl_method_info.invoke_unchecked(self, (initialColorLut, channels))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1354,7 +1363,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         flipY: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1371,7 +1380,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (initialLutTexture, flipY))?
+            cordl_method_info.invoke_unchecked(self, (initialLutTexture, flipY))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1381,7 +1390,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1401,7 +1410,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_size, channels))?
+            cordl_method_info.invoke_unchecked(self, (_cordl_size, channels))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1411,7 +1420,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1428,13 +1437,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsInitialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsInitialized")
@@ -1446,12 +1455,12 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Resolution(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_Resolution")
@@ -1463,7 +1472,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Channels(
@@ -1471,7 +1480,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         value: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1488,7 +1497,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1497,7 +1506,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1514,7 +1523,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1523,7 +1532,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         value: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1540,7 +1549,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1716,7 +1725,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
         crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1737,7 +1746,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings = unsafe {
-            method.invoke_unchecked((), (lut, channelCount, flipY))?
+            cordl_method_info.invoke_unchecked((), (lut, channelCount, flipY))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1747,7 +1756,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1770,7 +1779,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (settings, source, target))?
+            cordl_method_info.invoke_unchecked((), (settings, source, target))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1781,7 +1790,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
         flipY: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1805,7 +1814,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (lut, channelCount, target, flipY))?
+            cordl_method_info.invoke_unchecked((), (lut, channelCount, target, flipY))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1819,7 +1828,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1846,7 +1855,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (width, height, resolution, slicesPerRow, errorMessage),
@@ -1975,7 +1984,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Execute")
@@ -1988,7 +1997,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (index))?
+            cordl_method_info.invoke_unchecked(self, (index))?
         };
         Ok(__cordl_ret.into())
     }

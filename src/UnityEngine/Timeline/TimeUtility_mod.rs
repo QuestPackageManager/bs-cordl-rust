@@ -43,7 +43,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64, f64), f64, 2usize>("FromFrames")
@@ -56,7 +56,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                     })
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (frames, frameRate))?
+            cordl_method_info.invoke_unchecked((), (frames, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -65,7 +65,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, f64), f64, 2usize>("FromFrames")
@@ -78,7 +78,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                     })
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (frames, frameRate))?
+            cordl_method_info.invoke_unchecked((), (frames, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -86,7 +86,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -102,14 +102,16 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (clip))? };
+        let __cordl_ret: f64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (clip))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetClosestFrameRate(
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::FrameRate> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -126,7 +128,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Playables::FrameRate = unsafe {
-            method.invoke_unchecked((), (frameRate))?
+            cordl_method_info.invoke_unchecked((), (frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -135,7 +137,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64, f64), f64, 2usize>("GetEpsilon")
@@ -148,7 +150,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                     })
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate))?
+            cordl_method_info.invoke_unchecked((), (_cordl_time, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -157,7 +159,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64, f64), i32, 2usize>("NextFrame")
@@ -170,7 +172,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate))?
+            cordl_method_info.invoke_unchecked((), (_cordl_time, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -179,7 +181,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64, f64), f64, 2usize>("NextFrameTime")
@@ -192,7 +194,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                     })
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate))?
+            cordl_method_info.invoke_unchecked((), (_cordl_time, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -202,7 +204,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         epsilon: f64,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -219,7 +221,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate, epsilon))?
+            cordl_method_info.invoke_unchecked((), (_cordl_time, frameRate, epsilon))?
         };
         Ok(__cordl_ret.into())
     }
@@ -228,7 +230,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64, f64), bool, 2usize>("OnFrameBoundary")
@@ -241,7 +243,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate))?
+            cordl_method_info.invoke_unchecked((), (_cordl_time, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -251,7 +253,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         defaultValue: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -274,7 +276,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                     })
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (timeCode, frameRate, defaultValue))?
+            cordl_method_info.invoke_unchecked((), (timeCode, frameRate, defaultValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -284,7 +286,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         defaultValue: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -307,7 +309,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                     })
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (timeCode, frameRate, defaultValue))?
+            cordl_method_info.invoke_unchecked((), (timeCode, frameRate, defaultValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -316,7 +318,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64, f64), i32, 2usize>("PreviousFrame")
@@ -329,7 +331,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate))?
+            cordl_method_info.invoke_unchecked((), (_cordl_time, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -338,7 +340,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64, f64), f64, 2usize>("PreviousFrameTime")
@@ -351,7 +353,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                     })
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate))?
+            cordl_method_info.invoke_unchecked((), (_cordl_time, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -362,7 +364,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -385,7 +387,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (str, charToRemoveFunc))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (str, charToRemoveFunc))? };
         Ok(__cordl_ret.into())
     }
     pub fn RoundToFrame(
@@ -393,7 +395,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64, f64), f64, 2usize>("RoundToFrame")
@@ -406,7 +408,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                     })
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate))?
+            cordl_method_info.invoke_unchecked((), (_cordl_time, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -418,7 +420,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -442,7 +444,9 @@ impl crate::UnityEngine::Timeline::TimeUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (timeValue, frameRate, format))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (timeValue, frameRate, format))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TimeAsTimeCode(
@@ -453,7 +457,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -477,7 +481,9 @@ impl crate::UnityEngine::Timeline::TimeUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (timeValue, frameRate, format))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (timeValue, frameRate, format))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToExactFrames(
@@ -485,7 +491,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64, f64), f64, 2usize>("ToExactFrames")
@@ -498,7 +504,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                     })
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate))?
+            cordl_method_info.invoke_unchecked((), (_cordl_time, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -506,7 +512,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         enumValue: crate::UnityEngine::Timeline::StandardFrameRates,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::FrameRate> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -523,7 +529,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Playables::FrameRate = unsafe {
-            method.invoke_unchecked((), (enumValue))?
+            cordl_method_info.invoke_unchecked((), (enumValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -532,7 +538,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64, f64), i32, 2usize>("ToFrames")
@@ -545,7 +551,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate))?
+            cordl_method_info.invoke_unchecked((), (_cordl_time, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -556,7 +562,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -578,7 +584,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (rate, standard))?
+            cordl_method_info.invoke_unchecked((), (rate, standard))?
         };
         Ok(__cordl_ret.into())
     }
@@ -586,7 +592,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -603,7 +609,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (frameRate))?
+            cordl_method_info.invoke_unchecked((), (frameRate))?
         };
         Ok(__cordl_ret.into())
     }

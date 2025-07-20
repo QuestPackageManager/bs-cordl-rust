@@ -47,7 +47,7 @@ impl crate::System::ComponentModel::Design::ITypeDescriptorFilterService {
         attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -71,7 +71,7 @@ impl crate::System::ComponentModel::Design::ITypeDescriptorFilterService {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (component, attributes))?
+            cordl_method_info.invoke_unchecked(self, (component, attributes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -81,7 +81,7 @@ impl crate::System::ComponentModel::Design::ITypeDescriptorFilterService {
         events: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -105,7 +105,7 @@ impl crate::System::ComponentModel::Design::ITypeDescriptorFilterService {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (component, events))?
+            cordl_method_info.invoke_unchecked(self, (component, events))?
         };
         Ok(__cordl_ret.into())
     }
@@ -115,7 +115,7 @@ impl crate::System::ComponentModel::Design::ITypeDescriptorFilterService {
         properties: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -139,7 +139,7 @@ impl crate::System::ComponentModel::Design::ITypeDescriptorFilterService {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (component, properties))?
+            cordl_method_info.invoke_unchecked(self, (component, properties))?
         };
         Ok(__cordl_ret.into())
     }

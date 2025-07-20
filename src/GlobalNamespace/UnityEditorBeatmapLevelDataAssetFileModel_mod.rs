@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<T>,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBeatmapLevelDataFromAssetDatabase(
@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelDataSO>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapLevelDataSO,
-        > = unsafe { method.invoke_unchecked((), (levelId))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (levelId))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBeatmapLevelFromAssetDatabase(
@@ -105,7 +105,7 @@ impl crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -125,7 +125,7 @@ impl crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapLevelSO,
-        > = unsafe { method.invoke_unchecked((), (levelId))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (levelId))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBeatmapLevelPackFromAssetDatabase(
@@ -134,7 +134,7 @@ impl crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPackSO>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -154,7 +154,7 @@ impl crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapLevelPackSO,
-        > = unsafe { method.invoke_unchecked((), (packId))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (packId))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadUniqueAssetFromAssetDatabase<T>(
@@ -165,7 +165,7 @@ impl crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -181,7 +181,9 @@ impl crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
                         )
                     })
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (filename))? };
+        let __cordl_ret: T = unsafe {
+            cordl_method_info.invoke_unchecked((), (filename))?
+        };
         Ok(__cordl_ret.into())
     }
 }

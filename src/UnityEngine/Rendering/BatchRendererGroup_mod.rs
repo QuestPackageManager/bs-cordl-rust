@@ -58,7 +58,7 @@ impl crate::UnityEngine::Rendering::BatchRendererGroup {
         userContext: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -86,7 +86,8 @@ impl crate::UnityEngine::Rendering::BatchRendererGroup {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (group, context, lodParameters, userContext))?
+            cordl_method_info
+                .invoke_unchecked((), (group, context, lodParameters, userContext))?
         };
         Ok(__cordl_ret.into())
     }
@@ -154,7 +155,7 @@ impl crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
         userContext: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -178,7 +179,7 @@ impl crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
                     })
             });
         let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (rendererGroup, cullingContext, cullingOutput, userContext),
@@ -202,7 +203,7 @@ impl crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -224,7 +225,7 @@ impl crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))?
+            cordl_method_info.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }

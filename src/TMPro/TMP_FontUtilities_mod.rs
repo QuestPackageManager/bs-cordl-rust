@@ -52,7 +52,7 @@ impl crate::TMPro::TMP_FontUtilities {
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -79,7 +79,7 @@ impl crate::TMPro::TMP_FontUtilities {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = unsafe {
-            method.invoke_unchecked((), (fonts, unicode, character))?
+            cordl_method_info.invoke_unchecked((), (fonts, unicode, character))?
         };
         Ok(__cordl_ret.into())
     }
@@ -93,7 +93,7 @@ impl crate::TMPro::TMP_FontUtilities {
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -116,7 +116,7 @@ impl crate::TMPro::TMP_FontUtilities {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = unsafe {
-            method.invoke_unchecked((), (font, unicode, character))?
+            cordl_method_info.invoke_unchecked((), (font, unicode, character))?
         };
         Ok(__cordl_ret.into())
     }
@@ -134,7 +134,7 @@ impl crate::TMPro::TMP_FontUtilities {
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -161,7 +161,7 @@ impl crate::TMPro::TMP_FontUtilities {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = unsafe {
-            method.invoke_unchecked((), (fonts, unicode, character))?
+            cordl_method_info.invoke_unchecked((), (fonts, unicode, character))?
         };
         Ok(__cordl_ret.into())
     }
@@ -175,7 +175,7 @@ impl crate::TMPro::TMP_FontUtilities {
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -198,7 +198,7 @@ impl crate::TMPro::TMP_FontUtilities {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = unsafe {
-            method.invoke_unchecked((), (font, unicode, character))?
+            cordl_method_info.invoke_unchecked((), (font, unicode, character))?
         };
         Ok(__cordl_ret.into())
     }

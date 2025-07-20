@@ -52,7 +52,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -80,7 +80,8 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ve, closingInfo, renderChain, stats))?
+            cordl_method_info
+                .invoke_unchecked((), (ve, closingInfo, renderChain, stats))?
         };
         Ok(__cordl_ret.into())
     }
@@ -92,7 +93,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         result: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -119,7 +120,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ve, ancestor, result))?
+            cordl_method_info.invoke_unchecked((), (ve, ancestor, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -129,7 +130,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -146,7 +147,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
-            method.invoke_unchecked((), (colorConversion))?
+            cordl_method_info.invoke_unchecked((), (colorConversion))?
         };
         Ok(__cordl_ret.into())
     }
@@ -158,7 +159,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -185,7 +186,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ve, renderChain, mesh))?
+            cordl_method_info.invoke_unchecked((), (ve, renderChain, mesh))?
         };
         Ok(__cordl_ret.into())
     }
@@ -203,7 +204,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -234,7 +235,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ve, prev, next))?
+            cordl_method_info.invoke_unchecked((), (ve, prev, next))?
         };
         Ok(__cordl_ret.into())
     }
@@ -252,7 +253,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -283,7 +284,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ve, prev, next))?
+            cordl_method_info.invoke_unchecked((), (ve, prev, next))?
         };
         Ok(__cordl_ret.into())
     }
@@ -293,7 +294,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -310,7 +311,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
-            method.invoke_unchecked((), (mode))?
+            cordl_method_info.invoke_unchecked((), (mode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -319,7 +320,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         transform: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -343,7 +344,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ve, transform))?
+            cordl_method_info.invoke_unchecked((), (ve, transform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -366,7 +367,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -400,7 +401,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (renderChain, cmd, prev, next))?
+            cordl_method_info.invoke_unchecked((), (renderChain, cmd, prev, next))?
         };
         Ok(__cordl_ret.into())
     }
@@ -431,7 +432,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -477,7 +478,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UIR::RenderChainCommand,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -515,7 +516,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -549,7 +550,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (renderChain, cmd, prev, next))?
+            cordl_method_info.invoke_unchecked((), (renderChain, cmd, prev, next))?
         };
         Ok(__cordl_ret.into())
     }
@@ -580,7 +581,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -626,7 +627,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UIR::RenderChainCommand,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -652,7 +653,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -676,7 +677,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ve, ctx))?
+            cordl_method_info.invoke_unchecked((), (ve, ctx))?
         };
         Ok(__cordl_ret.into())
     }
@@ -685,7 +686,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         child: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -708,7 +709,9 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ve, child))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (ve, child))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NudgeVerticesToNewSpace(
@@ -721,7 +724,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -748,7 +751,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (ve, renderChain, device))?
+            cordl_method_info.invoke_unchecked((), (ve, renderChain, device))?
         };
         Ok(__cordl_ret.into())
     }
@@ -764,7 +767,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -791,7 +794,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo = unsafe {
-            method.invoke_unchecked((), (renderChain, ve, stats))?
+            cordl_method_info.invoke_unchecked((), (renderChain, ve, stats))?
         };
         Ok(__cordl_ret.into())
     }
@@ -806,7 +809,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         count: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -836,7 +839,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ve, device, mesh, src, dst, count))?
+            cordl_method_info.invoke_unchecked((), (ve, device, mesh, src, dst, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -847,7 +850,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -871,7 +874,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (renderChain, ve))?
+            cordl_method_info.invoke_unchecked((), (renderChain, ve))?
         };
         Ok(__cordl_ret.into())
     }
@@ -882,7 +885,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -906,7 +909,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ve, renderChain))?
+            cordl_method_info.invoke_unchecked((), (ve, renderChain))?
         };
         Ok(__cordl_ret.into())
     }
@@ -933,7 +936,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -973,7 +976,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (

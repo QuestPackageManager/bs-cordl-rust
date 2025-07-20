@@ -47,7 +47,7 @@ impl crate::UnityEngine::ProBuilder::XYZColor {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::XYZColor>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -67,7 +67,7 @@ impl crate::UnityEngine::ProBuilder::XYZColor {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::XYZColor,
-        > = unsafe { method.invoke_unchecked((), (col))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (col))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromRGB_f32_f32_f32_1(
@@ -78,7 +78,7 @@ impl crate::UnityEngine::ProBuilder::XYZColor {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::XYZColor>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -98,7 +98,7 @@ impl crate::UnityEngine::ProBuilder::XYZColor {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::XYZColor,
-        > = unsafe { method.invoke_unchecked((), (R, G, B))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (R, G, B))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -118,7 +118,7 @@ impl crate::UnityEngine::ProBuilder::XYZColor {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -136,7 +136,7 @@ impl crate::UnityEngine::ProBuilder::XYZColor {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -146,7 +146,7 @@ impl crate::UnityEngine::ProBuilder::XYZColor {
         z: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -163,7 +163,7 @@ impl crate::UnityEngine::ProBuilder::XYZColor {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (x, y, z))?
+            cordl_method_info.invoke_unchecked(self, (x, y, z))?
         };
         Ok(__cordl_ret.into())
     }

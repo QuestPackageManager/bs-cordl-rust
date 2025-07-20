@@ -50,7 +50,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         convex: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -79,7 +79,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (points, indexes, convex))?
+            cordl_method_info.invoke_unchecked((), (points, indexes, convex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -96,7 +96,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         convex: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -128,7 +128,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (vertices, triangles, unordered, convex))?
+            cordl_method_info
+                .invoke_unchecked((), (vertices, triangles, unordered, convex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -148,7 +149,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -185,7 +186,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (vertices, triangles, holes))?
+            cordl_method_info.invoke_unchecked((), (vertices, triangles, holes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -200,7 +201,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         convex: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -230,7 +231,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (vertices, triangles, unordered, convex))?
+            cordl_method_info
+                .invoke_unchecked((), (vertices, triangles, unordered, convex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -244,7 +246,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         convex: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -273,7 +275,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (points, indexes, convex))?
+            cordl_method_info.invoke_unchecked((), (points, indexes, convex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -295,7 +297,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -332,7 +334,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (points, holes, indexes))?
+            cordl_method_info.invoke_unchecked((), (points, holes, indexes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -342,7 +344,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -362,7 +364,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

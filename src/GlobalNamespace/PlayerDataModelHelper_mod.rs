@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -71,7 +71,9 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData,
-        > = unsafe { method.invoke_unchecked((), (playerAllOverallStatsData))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (playerAllOverallStatsData))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToPlayerAllOverallStatsData_PlayerSaveDataV1_0_1_PlayerAllOverallStatsData1(
@@ -82,7 +84,7 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerAllOverallStatsData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -104,7 +106,9 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerAllOverallStatsData,
-        > = unsafe { method.invoke_unchecked((), (playerAllOverallStatsData))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (playerAllOverallStatsData))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToPlayerAllOverallStatsData_PlayerSaveData_PlayerAllOverallStatsData0(
@@ -115,7 +119,7 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerAllOverallStatsData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -137,7 +141,9 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerAllOverallStatsData,
-        > = unsafe { method.invoke_unchecked((), (playerAllOverallStatsData))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (playerAllOverallStatsData))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToPlayerOverallStatsData(
@@ -150,7 +156,7 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -172,7 +178,7 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
-        > = unsafe { method.invoke_unchecked((), (playerOverallStatsData))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (playerOverallStatsData))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToPlayerOverallStats_PlayerSaveDataV1_0_1_PlayerOverallStatsData1(
@@ -185,7 +191,7 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -207,7 +213,9 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-        > = unsafe { method.invoke_unchecked((), (playerAllOverallStatsData))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (playerAllOverallStatsData))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToPlayerOverallStats_PlayerSaveData_PlayerOverallStatsData0(
@@ -220,7 +228,7 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -242,7 +250,9 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-        > = unsafe { method.invoke_unchecked((), (playerAllOverallStatsData))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (playerAllOverallStatsData))?
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -47,7 +47,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -63,7 +63,9 @@ impl crate::System::Reflection::CustomAttributeExtensions {
                         )
                     })
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (element))? };
+        let __cordl_ret: T = unsafe {
+            cordl_method_info.invoke_unchecked((), (element))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttribute_Assembly_Type0(
@@ -73,7 +75,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
         quest_hook::libil2cpp::Gc<crate::System::Attribute>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -95,7 +97,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Attribute> = unsafe {
-            method.invoke_unchecked((), (element, attributeType))?
+            cordl_method_info.invoke_unchecked((), (element, attributeType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -107,7 +109,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -125,7 +127,9 @@ impl crate::System::Reflection::CustomAttributeExtensions {
                         )
                     })
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (element))? };
+        let __cordl_ret: T = unsafe {
+            cordl_method_info.invoke_unchecked((), (element))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttribute_MemberInfo_Type1(
@@ -135,7 +139,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
         quest_hook::libil2cpp::Gc<crate::System::Attribute>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -157,7 +161,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Attribute> = unsafe {
-            method.invoke_unchecked((), (element, attributeType))?
+            cordl_method_info.invoke_unchecked((), (element, attributeType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -169,7 +173,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
         quest_hook::libil2cpp::Gc<crate::System::Attribute>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -192,7 +196,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Attribute> = unsafe {
-            method.invoke_unchecked((), (element, attributeType, inherit))?
+            cordl_method_info.invoke_unchecked((), (element, attributeType, inherit))?
         };
         Ok(__cordl_ret.into())
     }
@@ -205,7 +209,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -226,7 +230,9 @@ impl crate::System::Reflection::CustomAttributeExtensions {
                         )
                     })
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (element, inherit))? };
+        let __cordl_ret: T = unsafe {
+            cordl_method_info.invoke_unchecked((), (element, inherit))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes_Assembly0(
@@ -239,7 +245,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -263,7 +269,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = unsafe { method.invoke_unchecked((), (element))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (element))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes_MemberInfo1(
@@ -276,7 +282,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -302,7 +308,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = unsafe { method.invoke_unchecked((), (element))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (element))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes_MemberInfo3<T>(
@@ -315,7 +321,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -337,7 +343,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = unsafe { method.invoke_unchecked((), (element))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (element))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes_MemberInfo_Type2(
@@ -351,7 +357,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -380,7 +386,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = unsafe { method.invoke_unchecked((), (element, attributeType))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (element, attributeType))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes_MemberInfo_Type__cordl_bool4(
@@ -395,7 +401,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -425,7 +431,9 @@ impl crate::System::Reflection::CustomAttributeExtensions {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = unsafe { method.invoke_unchecked((), (element, attributeType, inherit))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (element, attributeType, inherit))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes_MemberInfo__cordl_bool5<T>(
@@ -439,7 +447,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -464,7 +472,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = unsafe { method.invoke_unchecked((), (element, inherit))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (element, inherit))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsDefined(
@@ -472,7 +480,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -494,7 +502,7 @@ impl crate::System::Reflection::CustomAttributeExtensions {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (element, attributeType))?
+            cordl_method_info.invoke_unchecked((), (element, attributeType))?
         };
         Ok(__cordl_ret.into())
     }

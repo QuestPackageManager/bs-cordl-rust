@@ -101,7 +101,7 @@ for crate::UnityEngine::TextCore::LowLevel::FontEngineUtilities {
 impl crate::UnityEngine::TextCore::LowLevel::FontEngineUtilities {
     pub fn MaxValue(a: i32, b: i32, c: i32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32, i32), i32, 3usize>("MaxValue")
@@ -113,7 +113,9 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngineUtilities {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b, c))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
+        };
         Ok(__cordl_ret.into())
     }
 }

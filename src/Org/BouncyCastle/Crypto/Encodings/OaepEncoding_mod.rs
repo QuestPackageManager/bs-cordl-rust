@@ -57,7 +57,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -83,7 +83,9 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (inBytes, inOff, inLen))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inBytes, inOff, inLen))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EncodeBlock(
@@ -95,7 +97,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -121,12 +123,14 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (inBytes, inOff, inLen))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inBytes, inOff, inLen))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetInputBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetInputBlockSize")
@@ -138,12 +142,12 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetOutputBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetOutputBlockSize")
@@ -155,7 +159,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUnderlyingCipher(
@@ -166,7 +170,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -186,7 +190,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
@@ -197,7 +201,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -219,7 +223,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (forEncryption, param))?
+            cordl_method_info.invoke_unchecked(self, (forEncryption, param))?
         };
         Ok(__cordl_ret.into())
     }
@@ -229,7 +233,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
         sp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -251,7 +255,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (i, sp))?
+            cordl_method_info.invoke_unchecked(self, (i, sp))?
         };
         Ok(__cordl_ret.into())
     }
@@ -314,7 +318,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -340,7 +344,9 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (inBytes, inOff, inLen))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inBytes, inOff, inLen))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_IAsymmetricBlockCipher0(
@@ -350,7 +356,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -369,7 +375,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (cipher))?
+            cordl_method_info.invoke_unchecked(self, (cipher))?
         };
         Ok(__cordl_ret.into())
     }
@@ -381,7 +387,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
         hash: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -405,7 +411,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (cipher, hash))?
+            cordl_method_info.invoke_unchecked(self, (cipher, hash))?
         };
         Ok(__cordl_ret.into())
     }
@@ -419,7 +425,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
         encodingParams: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -449,7 +455,8 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (cipher, hash, mgf1Hash, encodingParams))?
+            cordl_method_info
+                .invoke_unchecked(self, (cipher, hash, mgf1Hash, encodingParams))?
         };
         Ok(__cordl_ret.into())
     }
@@ -462,7 +469,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
         encodingParams: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -489,7 +496,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (cipher, hash, encodingParams))?
+            cordl_method_info.invoke_unchecked(self, (cipher, hash, encodingParams))?
         };
         Ok(__cordl_ret.into())
     }
@@ -499,7 +506,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -517,7 +524,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn maskGeneratorFunction1(
@@ -530,7 +537,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -557,7 +564,9 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::OaepEncoding {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (Z, zOff, zLen, length))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (Z, zOff, zLen, length))?
+        };
         Ok(__cordl_ret.into())
     }
 }

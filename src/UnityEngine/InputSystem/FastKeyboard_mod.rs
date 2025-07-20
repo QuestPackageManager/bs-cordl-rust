@@ -48,7 +48,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -73,7 +73,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboard1(
@@ -84,7 +84,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -109,7 +109,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboard2(
@@ -120,7 +120,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -145,7 +145,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboard3(
@@ -156,7 +156,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -181,7 +181,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboard4(
@@ -192,7 +192,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -217,7 +217,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboard5(
@@ -228,7 +228,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -253,7 +253,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboard6(
@@ -264,7 +264,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -289,7 +289,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboard7(
@@ -300,7 +300,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -325,7 +325,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboard8(
@@ -336,7 +336,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -361,7 +361,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboard9(
@@ -372,7 +372,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -397,7 +397,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardIMESelected(
@@ -410,7 +410,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -435,7 +435,9 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardOEM1(
@@ -446,7 +448,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -471,7 +473,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardOEM2(
@@ -482,7 +484,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -507,7 +509,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardOEM3(
@@ -518,7 +520,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -543,7 +545,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardOEM4(
@@ -554,7 +556,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -579,7 +581,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardOEM5(
@@ -590,7 +592,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -615,7 +617,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboarda(
@@ -626,7 +628,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -651,7 +653,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardalt(
@@ -664,7 +666,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -689,7 +691,9 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kDiscreteButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kDiscreteButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardanyKey(
@@ -702,7 +706,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -727,7 +731,9 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AnyKeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kAnyKeyLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kAnyKeyLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardb(
@@ -738,7 +744,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -763,7 +769,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardbackquote(
@@ -774,7 +780,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -799,7 +805,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardbackslash(
@@ -810,7 +816,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -835,7 +841,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardbackspace(
@@ -846,7 +852,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -871,7 +877,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardc(
@@ -882,7 +888,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -907,7 +913,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardcapsLock(
@@ -918,7 +924,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -943,7 +949,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardcomma(
@@ -954,7 +960,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -979,7 +985,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardcontextMenu(
@@ -990,7 +996,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1015,7 +1021,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardctrl(
@@ -1028,7 +1034,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1053,7 +1059,9 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kDiscreteButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kDiscreteButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardd(
@@ -1064,7 +1072,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1089,7 +1097,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboarddelete(
@@ -1100,7 +1108,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1125,7 +1133,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboarddownArrow(
@@ -1136,7 +1144,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1161,7 +1169,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboarde(
@@ -1172,7 +1180,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1197,7 +1205,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardend(
@@ -1208,7 +1216,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1233,7 +1241,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardenter(
@@ -1244,7 +1252,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1269,7 +1277,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardequals(
@@ -1280,7 +1288,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1305,7 +1313,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardescape(
@@ -1316,7 +1324,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1341,7 +1349,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf(
@@ -1352,7 +1360,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1377,7 +1385,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf1(
@@ -1388,7 +1396,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1413,7 +1421,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf10(
@@ -1424,7 +1432,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1449,7 +1457,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf11(
@@ -1460,7 +1468,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1485,7 +1493,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf12(
@@ -1496,7 +1504,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1521,7 +1529,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf2(
@@ -1532,7 +1540,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1557,7 +1565,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf3(
@@ -1568,7 +1576,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1593,7 +1601,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf4(
@@ -1604,7 +1612,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1629,7 +1637,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf5(
@@ -1640,7 +1648,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1665,7 +1673,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf6(
@@ -1676,7 +1684,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1701,7 +1709,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf7(
@@ -1712,7 +1720,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1737,7 +1745,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf8(
@@ -1748,7 +1756,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1773,7 +1781,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf9(
@@ -1784,7 +1792,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1809,7 +1817,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardg(
@@ -1820,7 +1828,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1845,7 +1853,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardh(
@@ -1856,7 +1864,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1881,7 +1889,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardhome(
@@ -1892,7 +1900,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1917,7 +1925,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardi(
@@ -1928,7 +1936,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1953,7 +1961,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardinsert(
@@ -1964,7 +1972,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1989,7 +1997,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardj(
@@ -2000,7 +2008,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2025,7 +2033,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardk(
@@ -2036,7 +2044,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2061,7 +2069,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardl(
@@ -2072,7 +2080,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2097,7 +2105,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardleftAlt(
@@ -2108,7 +2116,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2133,7 +2141,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardleftArrow(
@@ -2144,7 +2152,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2169,7 +2177,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardleftBracket(
@@ -2180,7 +2188,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2205,7 +2213,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardleftCtrl(
@@ -2216,7 +2224,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2241,7 +2249,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardleftMeta(
@@ -2252,7 +2260,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2277,7 +2285,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardleftShift(
@@ -2288,7 +2296,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2313,7 +2321,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardm(
@@ -2324,7 +2332,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2349,7 +2357,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardminus(
@@ -2360,7 +2368,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2385,7 +2393,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardn(
@@ -2396,7 +2404,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2421,7 +2429,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumLock(
@@ -2432,7 +2440,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2457,7 +2465,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad0(
@@ -2468,7 +2476,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2493,7 +2501,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad1(
@@ -2504,7 +2512,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2529,7 +2537,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad2(
@@ -2540,7 +2548,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2565,7 +2573,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad3(
@@ -2576,7 +2584,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2601,7 +2609,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad4(
@@ -2612,7 +2620,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2637,7 +2645,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad5(
@@ -2648,7 +2656,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2673,7 +2681,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad6(
@@ -2684,7 +2692,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2709,7 +2717,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad7(
@@ -2720,7 +2728,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2745,7 +2753,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad8(
@@ -2756,7 +2764,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2781,7 +2789,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad9(
@@ -2792,7 +2800,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2817,7 +2825,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpadDivide(
@@ -2828,7 +2836,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2853,7 +2861,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpadEnter(
@@ -2864,7 +2872,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2889,7 +2897,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpadEquals(
@@ -2900,7 +2908,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2925,7 +2933,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpadMinus(
@@ -2936,7 +2944,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2961,7 +2969,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpadMultiply(
@@ -2972,7 +2980,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2997,7 +3005,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpadPeriod(
@@ -3008,7 +3016,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3033,7 +3041,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpadPlus(
@@ -3044,7 +3052,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3069,7 +3077,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardo(
@@ -3080,7 +3088,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3105,7 +3113,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardp(
@@ -3116,7 +3124,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3141,7 +3149,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardpageDown(
@@ -3152,7 +3160,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3177,7 +3185,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardpageUp(
@@ -3188,7 +3196,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3213,7 +3221,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardpause(
@@ -3224,7 +3232,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3249,7 +3257,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardperiod(
@@ -3260,7 +3268,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3285,7 +3293,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardprintScreen(
@@ -3296,7 +3304,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3321,7 +3329,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardq(
@@ -3332,7 +3340,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3357,7 +3365,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardquote(
@@ -3368,7 +3376,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3393,7 +3401,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardr(
@@ -3404,7 +3412,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3429,7 +3437,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardrightAlt(
@@ -3440,7 +3448,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3465,7 +3473,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardrightArrow(
@@ -3476,7 +3484,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3501,7 +3509,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardrightBracket(
@@ -3512,7 +3520,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3537,7 +3545,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardrightCtrl(
@@ -3548,7 +3556,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3573,7 +3581,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardrightMeta(
@@ -3584,7 +3592,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3609,7 +3617,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardrightShift(
@@ -3620,7 +3628,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3645,7 +3653,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboards(
@@ -3656,7 +3664,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3681,7 +3689,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardscrollLock(
@@ -3692,7 +3700,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3717,7 +3725,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardsemicolon(
@@ -3728,7 +3736,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3753,7 +3761,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardshift(
@@ -3766,7 +3774,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3791,7 +3799,9 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kDiscreteButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kDiscreteButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardslash(
@@ -3802,7 +3812,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3827,7 +3837,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardspace(
@@ -3838,7 +3848,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3863,7 +3873,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardt(
@@ -3874,7 +3884,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3899,7 +3909,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardtab(
@@ -3910,7 +3920,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3935,7 +3945,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardu(
@@ -3946,7 +3956,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3971,7 +3981,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardupArrow(
@@ -3982,7 +3992,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4007,7 +4017,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardv(
@@ -4018,7 +4028,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4043,7 +4053,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardw(
@@ -4054,7 +4064,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4079,7 +4089,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardx(
@@ -4090,7 +4100,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4115,7 +4125,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardy(
@@ -4126,7 +4136,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4151,7 +4161,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardz(
@@ -4162,7 +4172,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4187,7 +4197,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -4201,7 +4211,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -4214,7 +4224,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

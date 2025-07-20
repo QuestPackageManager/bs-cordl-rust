@@ -70,7 +70,7 @@ impl crate::System::Net::Cache::RequestCacheBinding {
         policy: quest_hook::libil2cpp::Gc<crate::System::Net::Cache::RequestCachePolicy>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -97,7 +97,8 @@ impl crate::System::Net::Cache::RequestCacheBinding {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (requestCache, cacheValidator, policy))?
+            cordl_method_info
+                .invoke_unchecked(self, (requestCache, cacheValidator, policy))?
         };
         Ok(__cordl_ret.into())
     }
@@ -107,7 +108,7 @@ impl crate::System::Net::Cache::RequestCacheBinding {
         quest_hook::libil2cpp::Gc<crate::System::Net::Cache::RequestCache>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -127,7 +128,7 @@ impl crate::System::Net::Cache::RequestCacheBinding {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Cache::RequestCache,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Policy(
@@ -136,7 +137,7 @@ impl crate::System::Net::Cache::RequestCacheBinding {
         quest_hook::libil2cpp::Gc<crate::System::Net::Cache::RequestCachePolicy>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -156,7 +157,7 @@ impl crate::System::Net::Cache::RequestCacheBinding {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Cache::RequestCachePolicy,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Validator(
@@ -165,7 +166,7 @@ impl crate::System::Net::Cache::RequestCacheBinding {
         quest_hook::libil2cpp::Gc<crate::System::Net::Cache::RequestCacheValidator>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -185,7 +186,7 @@ impl crate::System::Net::Cache::RequestCacheBinding {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Cache::RequestCacheValidator,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -88,7 +88,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         fullCombo: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -114,7 +114,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (leaderboardId, playerName, score, fullCombo))?
+            cordl_method_info
+                .invoke_unchecked(self, (leaderboardId, playerName, score, fullCombo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -127,7 +128,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         fullCombo: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -154,7 +155,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (leaderboardId, leaderboardType, playerName, score, fullCombo),
@@ -180,7 +181,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         maxNumberOfScores: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -213,7 +214,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (main, tail, maxNumberOfScores))?
+            cordl_method_info.invoke_unchecked((), (main, tail, maxNumberOfScores))?
         };
         Ok(__cordl_ret.into())
     }
@@ -224,7 +225,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -242,14 +243,16 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked(self, (deleteLeaderboardFile))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (deleteLeaderboardFile))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClearLastScorePosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -266,7 +269,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -275,7 +278,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -292,13 +295,13 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (leaderboardId))?
+            cordl_method_info.invoke_unchecked(self, (leaderboardId))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentTimestamp(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("GetCurrentTimestamp")
@@ -310,7 +313,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i64 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHighScore(
@@ -319,7 +322,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         leaderboardType: crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -341,7 +344,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (leaderboardId, leaderboardType))?
+            cordl_method_info.invoke_unchecked(self, (leaderboardId, leaderboardType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -351,7 +354,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         leaderboardType: crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -373,7 +376,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (leaderboardId, leaderboardType))?
+            cordl_method_info.invoke_unchecked(self, (leaderboardId, leaderboardType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -387,7 +390,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -412,7 +415,9 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
-        > = unsafe { method.invoke_unchecked(self, (leaderboardId, leaderboardType))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (leaderboardId, leaderboardType))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetLeaderboardsData(
@@ -428,7 +433,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -456,7 +461,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, (leaderboardType))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (leaderboardType))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPositionInLeaderboard(
@@ -466,7 +471,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         score: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -489,7 +494,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (leaderboardId, leaderboardType, score))?
+            cordl_method_info
+                .invoke_unchecked(self, (leaderboardId, leaderboardType, score))?
         };
         Ok(__cordl_ret.into())
     }
@@ -507,7 +513,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -540,14 +546,16 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, (leaderboardId, leaderboardType))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (leaderboardId, leaderboardType))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Load(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Load")
@@ -560,7 +568,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -570,7 +578,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -588,14 +596,14 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadInternal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -612,7 +620,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -629,7 +637,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -657,7 +665,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, (filename))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (filename))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadLeaderboardsDataAsync(
@@ -677,7 +685,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -713,7 +721,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, (filename))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (filename))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadLeaderboardsDataInternal(
@@ -730,7 +738,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -760,7 +768,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (savedLeaderboardsData))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (savedLeaderboardsData))? };
         Ok(__cordl_ret.into())
     }
     pub fn MigrateQuestLeaderboards(
@@ -774,7 +782,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         maxNumberOfScores: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -800,7 +808,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (leaderboardDataList, maxNumberOfScores))?
+            cordl_method_info
+                .invoke_unchecked((), (leaderboardDataList, maxNumberOfScores))?
         };
         Ok(__cordl_ret.into())
     }
@@ -822,7 +831,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -840,7 +849,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SaveLeaderboardsData(
@@ -857,7 +866,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -886,7 +895,9 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked(self, (filename, leaderboardsData))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (filename, leaderboardsData))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SaveLeaderboardsDataAsync(
@@ -897,7 +908,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -922,7 +933,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked(self, (filename, json))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (filename, json))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateDailyLeaderboard(
@@ -930,7 +941,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -947,7 +958,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (leaderboardId))?
+            cordl_method_info.invoke_unchecked(self, (leaderboardId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -958,7 +969,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         score: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -981,7 +992,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (leaderboardId, leaderboardType, score))?
+            cordl_method_info
+                .invoke_unchecked(self, (leaderboardId, leaderboardType, score))?
         };
         Ok(__cordl_ret.into())
     }
@@ -991,7 +1003,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         score: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1013,7 +1025,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (leaderboardId, score))?
+            cordl_method_info.invoke_unchecked(self, (leaderboardId, score))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1025,7 +1037,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1049,7 +1061,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (fileStorage, localLeaderboardsSettingsSo))?
+            cordl_method_info
+                .invoke_unchecked(self, (fileStorage, localLeaderboardsSettingsSo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1063,7 +1076,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1087,7 +1100,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1101,7 +1114,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1125,7 +1138,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1201,7 +1214,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -1214,7 +1227,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1382,7 +1395,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel_SavedLeaderboardsData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -1395,7 +1408,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel_SavedLeaderboardsData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1466,7 +1479,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -1479,7 +1492,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

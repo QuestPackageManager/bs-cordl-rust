@@ -97,7 +97,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::SortingL
 impl crate::UnityEngine::SortingLayer {
     pub fn GetLayerValueFromID(id: i32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("GetLayerValueFromID")
@@ -109,7 +109,7 @@ impl crate::UnityEngine::SortingLayer {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (id))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (id))? };
         Ok(__cordl_ret.into())
     }
 }

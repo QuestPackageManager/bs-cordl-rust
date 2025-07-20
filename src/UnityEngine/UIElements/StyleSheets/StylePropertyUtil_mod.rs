@@ -44,7 +44,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil {
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -60,7 +60,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (id))? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (id))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsMatchingShorthand(
@@ -68,7 +68,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil {
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -87,7 +87,9 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (shorthand, id))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (shorthand, id))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetEnumIntValue(
@@ -96,7 +98,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil {
         intValue: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -119,7 +121,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (enumType, value, intValue))?
+            cordl_method_info.invoke_unchecked((), (enumType, value, intValue))?
         };
         Ok(__cordl_ret.into())
     }

@@ -48,7 +48,7 @@ impl crate::System::Runtime::Remoting::Channels::CADSerializer {
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -73,7 +73,7 @@ impl crate::System::Runtime::Remoting::Channels::CADSerializer {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessage,
-        > = unsafe { method.invoke_unchecked((), (mem, msg))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (mem, msg))? };
         Ok(__cordl_ret.into())
     }
     pub fn DeserializeObject(
@@ -82,7 +82,7 @@ impl crate::System::Runtime::Remoting::Channels::CADSerializer {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -100,7 +100,7 @@ impl crate::System::Runtime::Remoting::Channels::CADSerializer {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (mem))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (mem))? };
         Ok(__cordl_ret.into())
     }
     pub fn DeserializeObjectSafe(
@@ -109,7 +109,7 @@ impl crate::System::Runtime::Remoting::Channels::CADSerializer {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -129,7 +129,7 @@ impl crate::System::Runtime::Remoting::Channels::CADSerializer {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (mem))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (mem))? };
         Ok(__cordl_ret.into())
     }
     pub fn SerializeMessage(
@@ -140,7 +140,7 @@ impl crate::System::Runtime::Remoting::Channels::CADSerializer {
         quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -159,7 +159,7 @@ impl crate::System::Runtime::Remoting::Channels::CADSerializer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream> = unsafe {
-            method.invoke_unchecked((), (msg))?
+            cordl_method_info.invoke_unchecked((), (msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -169,7 +169,7 @@ impl crate::System::Runtime::Remoting::Channels::CADSerializer {
         quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -186,7 +186,7 @@ impl crate::System::Runtime::Remoting::Channels::CADSerializer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream> = unsafe {
-            method.invoke_unchecked((), (obj))?
+            cordl_method_info.invoke_unchecked((), (obj))?
         };
         Ok(__cordl_ret.into())
     }

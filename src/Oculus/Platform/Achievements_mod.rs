@@ -51,7 +51,7 @@ impl crate::Oculus::Platform::Achievements {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -84,7 +84,7 @@ impl crate::Oculus::Platform::Achievements {
                     crate::Oculus::Platform::Models::AchievementUpdate,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (name, count))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (name, count))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddFields(
@@ -100,7 +100,7 @@ impl crate::Oculus::Platform::Achievements {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -135,7 +135,7 @@ impl crate::Oculus::Platform::Achievements {
                     crate::Oculus::Platform::Models::AchievementUpdate,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (name, fields))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (name, fields))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllDefinitions() -> quest_hook::libil2cpp::Result<
@@ -148,7 +148,7 @@ impl crate::Oculus::Platform::Achievements {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -176,7 +176,7 @@ impl crate::Oculus::Platform::Achievements {
                     crate::Oculus::Platform::Models::AchievementDefinitionList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllProgress() -> quest_hook::libil2cpp::Result<
@@ -189,7 +189,7 @@ impl crate::Oculus::Platform::Achievements {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -217,7 +217,7 @@ impl crate::Oculus::Platform::Achievements {
                     crate::Oculus::Platform::Models::AchievementProgressList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDefinitionsByName(
@@ -236,7 +236,7 @@ impl crate::Oculus::Platform::Achievements {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -270,7 +270,7 @@ impl crate::Oculus::Platform::Achievements {
                     crate::Oculus::Platform::Models::AchievementDefinitionList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (names))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (names))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextAchievementDefinitionListPage(
@@ -287,7 +287,7 @@ impl crate::Oculus::Platform::Achievements {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -317,7 +317,7 @@ impl crate::Oculus::Platform::Achievements {
                     crate::Oculus::Platform::Models::AchievementDefinitionList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (list))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextAchievementProgressListPage(
@@ -334,7 +334,7 @@ impl crate::Oculus::Platform::Achievements {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -364,7 +364,7 @@ impl crate::Oculus::Platform::Achievements {
                     crate::Oculus::Platform::Models::AchievementProgressList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (list))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetProgressByName(
@@ -383,7 +383,7 @@ impl crate::Oculus::Platform::Achievements {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -417,7 +417,7 @@ impl crate::Oculus::Platform::Achievements {
                     crate::Oculus::Platform::Models::AchievementProgressList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (names))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (names))? };
         Ok(__cordl_ret.into())
     }
     pub fn Unlock(
@@ -432,7 +432,7 @@ impl crate::Oculus::Platform::Achievements {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -460,7 +460,7 @@ impl crate::Oculus::Platform::Achievements {
                     crate::Oculus::Platform::Models::AchievementUpdate,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (name))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -73,7 +73,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -95,7 +95,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hashCode, spriteAsset))?
+            cordl_method_info.invoke_unchecked((), (hashCode, spriteAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -107,7 +107,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -129,7 +129,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (hashCode, spriteAsset))?
+            cordl_method_info.invoke_unchecked(self, (hashCode, spriteAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -139,7 +139,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -158,7 +158,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (fontAsset))?
+            cordl_method_info.invoke_unchecked((), (fontAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -169,7 +169,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -188,7 +188,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (fontAsset))?
+            cordl_method_info.invoke_unchecked(self, (fontAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -197,7 +197,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -214,7 +214,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hashCode, material))?
+            cordl_method_info.invoke_unchecked((), (hashCode, material))?
         };
         Ok(__cordl_ret.into())
     }
@@ -224,7 +224,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -241,7 +241,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (hashCode, material))?
+            cordl_method_info.invoke_unchecked(self, (hashCode, material))?
         };
         Ok(__cordl_ret.into())
     }
@@ -252,7 +252,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -274,7 +274,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hashCode, spriteAsset))?
+            cordl_method_info.invoke_unchecked((), (hashCode, spriteAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -286,7 +286,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -308,7 +308,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (hashCode, spriteAsset))?
+            cordl_method_info.invoke_unchecked(self, (hashCode, spriteAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -328,7 +328,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -352,7 +352,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (hashCode, gradientPreset))?
+            cordl_method_info.invoke_unchecked((), (hashCode, gradientPreset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -366,7 +366,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -390,7 +390,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (hashCode, gradientPreset))?
+            cordl_method_info.invoke_unchecked(self, (hashCode, gradientPreset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -401,7 +401,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -425,7 +425,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (hashCode, fontAsset))?
+            cordl_method_info.invoke_unchecked((), (hashCode, fontAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -437,7 +437,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -461,7 +461,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (hashCode, fontAsset))?
+            cordl_method_info.invoke_unchecked(self, (hashCode, fontAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -472,7 +472,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -494,7 +494,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (hashCode, material))?
+            cordl_method_info.invoke_unchecked((), (hashCode, material))?
         };
         Ok(__cordl_ret.into())
     }
@@ -506,7 +506,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -528,7 +528,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (hashCode, material))?
+            cordl_method_info.invoke_unchecked(self, (hashCode, material))?
         };
         Ok(__cordl_ret.into())
     }
@@ -539,7 +539,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -563,7 +563,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (hashCode, spriteAsset))?
+            cordl_method_info.invoke_unchecked((), (hashCode, spriteAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -575,7 +575,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -599,7 +599,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (hashCode, spriteAsset))?
+            cordl_method_info.invoke_unchecked(self, (hashCode, spriteAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -607,7 +607,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -620,7 +620,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -630,7 +630,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -650,7 +650,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::MaterialReferenceManager,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

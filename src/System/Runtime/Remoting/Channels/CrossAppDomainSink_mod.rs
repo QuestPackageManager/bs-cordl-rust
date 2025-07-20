@@ -59,7 +59,7 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -86,7 +86,7 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
-        > = unsafe { method.invoke_unchecked(self, (reqMsg, replySink))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (reqMsg, replySink))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSink(
@@ -97,7 +97,7 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -117,7 +117,7 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Channels::CrossAppDomainSink,
-        > = unsafe { method.invoke_unchecked((), (domainID))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (domainID))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -138,7 +138,7 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
         crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -162,7 +162,7 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
                     })
             });
         let __cordl_ret: crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes = unsafe {
-            method.invoke_unchecked((), (arrRequest, cadMsg))?
+            cordl_method_info.invoke_unchecked((), (arrRequest, cadMsg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -171,7 +171,7 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -188,7 +188,7 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (data))?
+            cordl_method_info.invoke_unchecked(self, (data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -201,7 +201,7 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -223,7 +223,7 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessage,
-        > = unsafe { method.invoke_unchecked(self, (msgRequest))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (msgRequest))? };
         Ok(__cordl_ret.into())
     }
     pub fn _AsyncProcessMessage_b__10_0(
@@ -231,7 +231,7 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -248,7 +248,7 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (data))?
+            cordl_method_info.invoke_unchecked(self, (data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -257,7 +257,7 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
         domainID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
@@ -270,13 +270,13 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (domainID))?
+            cordl_method_info.invoke_unchecked(self, (domainID))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_TargetDomainId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_TargetDomainId")
@@ -288,7 +288,7 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

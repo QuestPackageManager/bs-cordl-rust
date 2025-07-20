@@ -61,7 +61,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -96,7 +96,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (ring, oldPassPhrase, newPassPhrase, newEncAlgorithm, _cordl_rand),
@@ -109,7 +109,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -126,7 +126,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (outStr))?
+            cordl_method_info.invoke_unchecked(self, (outStr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -136,7 +136,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -156,7 +156,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetExtraPublicKeys(
@@ -165,7 +165,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -185,7 +185,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerable,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPublicKey(
@@ -194,7 +194,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -214,7 +214,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSecretKey_0(
@@ -223,7 +223,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -243,7 +243,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSecretKey_i64_1(
@@ -253,7 +253,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -273,7 +273,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
-        > = unsafe { method.invoke_unchecked(self, (keyId))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (keyId))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSecretKeys(
@@ -282,7 +282,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -302,7 +302,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerable,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn InsertSecretKey(
@@ -318,7 +318,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -345,7 +345,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing,
-        > = unsafe { method.invoke_unchecked((), (secRing, secKey))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (secRing, secKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_IList0(
@@ -398,7 +398,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -425,7 +425,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing,
-        > = unsafe { method.invoke_unchecked((), (secRing, secKey))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (secRing, secKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReplacePublicKeys(
@@ -441,7 +441,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -468,7 +468,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing,
-        > = unsafe { method.invoke_unchecked((), (secretRing, publicRing))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (secretRing, publicRing))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_IList0(
@@ -476,7 +476,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         keys: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -493,7 +493,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (keys))?
+            cordl_method_info.invoke_unchecked(self, (keys))?
         };
         Ok(__cordl_ret.into())
     }
@@ -503,7 +503,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         extraPubKeys: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -523,7 +523,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (keys, extraPubKeys))?
+            cordl_method_info.invoke_unchecked(self, (keys, extraPubKeys))?
         };
         Ok(__cordl_ret.into())
     }
@@ -532,7 +532,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         encoding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -551,7 +551,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (encoding))?
+            cordl_method_info.invoke_unchecked(self, (encoding))?
         };
         Ok(__cordl_ret.into())
     }
@@ -560,7 +560,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -577,7 +577,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (inputStream))?
+            cordl_method_info.invoke_unchecked(self, (inputStream))?
         };
         Ok(__cordl_ret.into())
     }

@@ -49,7 +49,7 @@ impl crate::Newtonsoft::Json::Utilities::BufferUtils {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -77,7 +77,9 @@ impl crate::Newtonsoft::Json::Utilities::BufferUtils {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<char>,
-        > = unsafe { method.invoke_unchecked((), (bufferPool, _cordl_size, buffer))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (bufferPool, _cordl_size, buffer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RentBuffer(
@@ -89,7 +91,7 @@ impl crate::Newtonsoft::Json::Utilities::BufferUtils {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -114,7 +116,7 @@ impl crate::Newtonsoft::Json::Utilities::BufferUtils {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<char>,
-        > = unsafe { method.invoke_unchecked((), (bufferPool, minSize))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (bufferPool, minSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReturnBuffer(
@@ -124,7 +126,7 @@ impl crate::Newtonsoft::Json::Utilities::BufferUtils {
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -148,7 +150,7 @@ impl crate::Newtonsoft::Json::Utilities::BufferUtils {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (bufferPool, buffer))?
+            cordl_method_info.invoke_unchecked((), (bufferPool, buffer))?
         };
         Ok(__cordl_ret.into())
     }

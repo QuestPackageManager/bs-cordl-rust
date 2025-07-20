@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::DebugConsoleExtensionMethods {
         crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::DebugConsoleExtensionMethods {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::DebugConsoleController_ConsoleMessage = unsafe {
-            method.invoke_unchecked((), (message, _cordl_type))?
+            cordl_method_info.invoke_unchecked((), (message, _cordl_type))?
         };
         Ok(__cordl_ret.into())
     }

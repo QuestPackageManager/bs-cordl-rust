@@ -62,7 +62,7 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -104,13 +104,14 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (culture, t, contractions, diacriticals))?
+            cordl_method_info
+                .invoke_unchecked((), (culture, t, contractions, diacriticals))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Category(cp: i32) -> quest_hook::libil2cpp::Result<u8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), u8, 1usize>("Category")
@@ -122,7 +123,7 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                         )
                     })
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (cp))? };
+        let __cordl_ret: u8 = unsafe { cordl_method_info.invoke_unchecked((), (cp))? };
         Ok(__cordl_ret.into())
     }
     pub fn FillCJK(
@@ -148,7 +149,7 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -194,7 +195,7 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (culture, cjkIndexer, catTable, lv1Table, lv2Indexer, lv2Table),
@@ -225,7 +226,7 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -271,7 +272,7 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (culture, cjkIndexer, catTable, lv1Table, cjkLv2Indexer, lv2Table),
@@ -283,7 +284,7 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -300,7 +301,7 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (name))?
+            cordl_method_info.invoke_unchecked((), (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -310,7 +311,7 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
         quest_hook::libil2cpp::Gc<crate::Mono::Globalization::Unicode::TailoringInfo>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -330,12 +331,12 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Globalization::Unicode::TailoringInfo,
-        > = unsafe { method.invoke_unchecked((), (lcid))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (lcid))? };
         Ok(__cordl_ret.into())
     }
     pub fn HasSpecialWeight(c: char) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), bool, 1usize>("HasSpecialWeight")
@@ -347,12 +348,12 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c))? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsHalfWidthKana(c: char) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), bool, 1usize>("IsHalfWidthKana")
@@ -364,12 +365,12 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c))? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsHiragana(c: char) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), bool, 1usize>("IsHiragana")
@@ -381,12 +382,12 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c))? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsIgnorable(cp: i32, flag: u8) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, u8), bool, 2usize>("IsIgnorable")
@@ -398,12 +399,14 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (cp, flag))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (cp, flag))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsIgnorableNonSpacing(cp: i32) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), bool, 1usize>("IsIgnorableNonSpacing")
@@ -415,12 +418,12 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (cp))? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (cp))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsJapaneseSmallLetter(c: char) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), bool, 1usize>("IsJapaneseSmallLetter")
@@ -432,12 +435,12 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c))? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn Level1(cp: i32) -> quest_hook::libil2cpp::Result<u8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), u8, 1usize>("Level1")
@@ -449,12 +452,12 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                         )
                     })
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (cp))? };
+        let __cordl_ret: u8 = unsafe { cordl_method_info.invoke_unchecked((), (cp))? };
         Ok(__cordl_ret.into())
     }
     pub fn Level2(cp: i32) -> quest_hook::libil2cpp::Result<u8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), u8, 1usize>("Level2")
@@ -466,12 +469,12 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                         )
                     })
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (cp))? };
+        let __cordl_ret: u8 = unsafe { cordl_method_info.invoke_unchecked((), (cp))? };
         Ok(__cordl_ret.into())
     }
     pub fn Level3(cp: i32) -> quest_hook::libil2cpp::Result<u8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), u8, 1usize>("Level3")
@@ -483,7 +486,7 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                         )
                     })
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (cp))? };
+        let __cordl_ret: u8 = unsafe { cordl_method_info.invoke_unchecked((), (cp))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetCJKReferences(
@@ -509,7 +512,7 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -555,7 +558,7 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (name, cjkIndexer, catTable, lv1Table, lv2Indexer, lv2Table),
@@ -565,7 +568,7 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
     }
     pub fn ToKanaTypeInsensitive(i: i32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("ToKanaTypeInsensitive")
@@ -577,12 +580,12 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (i))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToWidthCompat(i: i32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("ToWidthCompat")
@@ -594,7 +597,7 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (i))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn UInt32FromBytePtr(
@@ -602,7 +605,7 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
         idx: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -623,12 +626,14 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (raw, idx))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (raw, idx))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsReady() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsReady")
@@ -640,7 +645,7 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

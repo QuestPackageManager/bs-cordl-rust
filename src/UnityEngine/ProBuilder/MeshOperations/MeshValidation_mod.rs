@@ -59,7 +59,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -98,7 +98,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (mesh, face))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (mesh, face))? };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsDegenerateTriangles_Face2(
@@ -106,7 +106,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -129,7 +129,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh, face))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (mesh, face))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsDegenerateTriangles_IList_1_1(
@@ -141,7 +143,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -168,14 +170,16 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh, faces))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (mesh, faces))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsDegenerateTriangles_ProBuilderMesh0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -193,7 +197,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (mesh))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsNonContiguousTriangles(
@@ -201,7 +207,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -224,7 +230,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh, face))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (mesh, face))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureArraySize<T>(
@@ -240,7 +248,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -266,7 +274,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (attribute, expectedVertexCount, strategy, fill))?
         };
         Ok(__cordl_ret.into())
@@ -286,7 +294,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -323,7 +331,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = unsafe { method.invoke_unchecked((), (mesh, faces))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (mesh, faces))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureListSize<T>(
@@ -339,7 +347,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -365,7 +373,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (attribute, expectedVertexCount, strategy, fill))?
         };
         Ok(__cordl_ret.into())
@@ -375,7 +383,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         removedVertices: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -397,7 +405,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (mesh, removedVertices))?
+            cordl_method_info.invoke_unchecked((), (mesh, removedVertices))?
         };
         Ok(__cordl_ret.into())
     }
@@ -407,7 +415,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -428,7 +436,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (attribute))?
+            cordl_method_info.invoke_unchecked((), (attribute))?
         };
         Ok(__cordl_ret.into())
     }
@@ -438,7 +446,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -459,7 +467,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (attribute))?
+            cordl_method_info.invoke_unchecked((), (attribute))?
         };
         Ok(__cordl_ret.into())
     }
@@ -469,7 +477,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -490,7 +498,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (attribute))?
+            cordl_method_info.invoke_unchecked((), (attribute))?
         };
         Ok(__cordl_ret.into())
     }
@@ -498,7 +506,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -517,7 +525,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh))?
+            cordl_method_info.invoke_unchecked((), (mesh))?
         };
         Ok(__cordl_ret.into())
     }
@@ -538,7 +546,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -571,7 +579,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             crate::System::Collections::Generic::List_1<
                 crate::UnityEngine::ProBuilder::Edge,
             >,
-        > = unsafe { method.invoke_unchecked((), (edges, removed))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (edges, removed))? };
         Ok(__cordl_ret.into())
     }
     pub fn RebuildIndexes(
@@ -585,7 +593,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -612,7 +620,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<i32>,
-        > = unsafe { method.invoke_unchecked((), (indices, removed))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (indices, removed))? };
         Ok(__cordl_ret.into())
     }
     pub fn RebuildSelectionIndexes(
@@ -637,7 +645,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -682,7 +690,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, faces, edges, indices, removed))?
+            cordl_method_info
+                .invoke_unchecked((), (mesh, faces, edges, indices, removed))?
         };
         Ok(__cordl_ret.into())
     }
@@ -693,7 +702,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -716,7 +725,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh, removed))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (mesh, removed))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveUnusedVertices(
@@ -726,7 +737,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -749,7 +760,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh, removed))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (mesh, removed))?
+        };
         Ok(__cordl_ret.into())
     }
 }

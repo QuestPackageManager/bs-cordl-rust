@@ -108,7 +108,7 @@ impl crate::GlobalNamespace::GetAssetBundleFileResult {
         crate::GlobalNamespace::GetAssetBundleFileResult,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -125,7 +125,7 @@ impl crate::GlobalNamespace::GetAssetBundleFileResult {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::GetAssetBundleFileResult = unsafe {
-            method.invoke_unchecked((), (assetBundlePath))?
+            cordl_method_info.invoke_unchecked((), (assetBundlePath))?
         };
         Ok(__cordl_ret.into())
     }
@@ -135,7 +135,7 @@ impl crate::GlobalNamespace::GetAssetBundleFileResult {
         assetBundlePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -157,7 +157,7 @@ impl crate::GlobalNamespace::GetAssetBundleFileResult {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (isError, assetBundlePath))?
+            cordl_method_info.invoke_unchecked(self, (isError, assetBundlePath))?
         };
         Ok(__cordl_ret.into())
     }

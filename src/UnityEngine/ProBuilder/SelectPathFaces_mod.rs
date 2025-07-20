@@ -46,7 +46,7 @@ impl crate::UnityEngine::ProBuilder::SelectPathFaces {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -71,7 +71,7 @@ impl crate::UnityEngine::ProBuilder::SelectPathFaces {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = unsafe { method.invoke_unchecked((), (mesh, start))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (mesh, start))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMinimalPath(
@@ -82,7 +82,7 @@ impl crate::UnityEngine::ProBuilder::SelectPathFaces {
         quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -108,7 +108,9 @@ impl crate::UnityEngine::ProBuilder::SelectPathFaces {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<i32>,
-        > = unsafe { method.invoke_unchecked((), (predecessors, start, end))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (predecessors, start, end))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetPath(
@@ -119,7 +121,7 @@ impl crate::UnityEngine::ProBuilder::SelectPathFaces {
         quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -145,7 +147,7 @@ impl crate::UnityEngine::ProBuilder::SelectPathFaces {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<i32>,
-        > = unsafe { method.invoke_unchecked((), (mesh, start, end))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (mesh, start, end))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetWeight(
@@ -154,7 +156,7 @@ impl crate::UnityEngine::ProBuilder::SelectPathFaces {
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -177,7 +179,7 @@ impl crate::UnityEngine::ProBuilder::SelectPathFaces {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (face1, face2, mesh))?
+            cordl_method_info.invoke_unchecked((), (face1, face2, mesh))?
         };
         Ok(__cordl_ret.into())
     }

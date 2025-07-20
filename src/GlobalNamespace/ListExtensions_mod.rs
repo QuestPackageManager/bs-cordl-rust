@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::ListExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::ListExtensions {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (list, _cordl_match))?
+            cordl_method_info.invoke_unchecked((), (list, _cordl_match))?
         };
         Ok(__cordl_ret.into())
     }
@@ -86,7 +86,7 @@ impl crate::GlobalNamespace::ListExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -108,7 +108,7 @@ impl crate::GlobalNamespace::ListExtensions {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (_cordl_self, item))?
+            cordl_method_info.invoke_unchecked((), (_cordl_self, item))?
         };
         Ok(__cordl_ret.into())
     }
@@ -123,7 +123,7 @@ impl crate::GlobalNamespace::ListExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -145,7 +145,7 @@ impl crate::GlobalNamespace::ListExtensions {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sortedList, newItem))?
+            cordl_method_info.invoke_unchecked((), (sortedList, newItem))?
         };
         Ok(__cordl_ret.into())
     }

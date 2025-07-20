@@ -45,7 +45,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -61,7 +61,9 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (format))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CanDecompressFormat__cordl_bool0(
@@ -69,7 +71,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         wholeImage: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -89,7 +91,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (format, wholeImage))?
+            cordl_method_info.invoke_unchecked((), (format, wholeImage))?
         };
         Ok(__cordl_ret.into())
     }
@@ -97,7 +99,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -113,7 +115,9 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (format))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (format))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDepthStencilFormatFromBitsLegacy_Native(
@@ -122,7 +126,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -139,7 +143,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
-            method.invoke_unchecked((), (minimumDepthBits))?
+            cordl_method_info.invoke_unchecked((), (minimumDepthBits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -149,7 +153,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -166,7 +170,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
-            method.invoke_unchecked((), (minimumDepthBits))?
+            cordl_method_info.invoke_unchecked((), (minimumDepthBits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -177,7 +181,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -194,7 +198,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
-            method.invoke_unchecked((), (minimumDepthBits, minimumStencilBits))?
+            cordl_method_info
+                .invoke_unchecked((), (minimumDepthBits, minimumStencilBits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -205,7 +210,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -222,7 +227,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
-            method.invoke_unchecked((), (format, isSRGB))?
+            cordl_method_info.invoke_unchecked((), (format, isSRGB))?
         };
         Ok(__cordl_ret.into())
     }
@@ -233,7 +238,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -250,7 +255,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
-            method.invoke_unchecked((), (format, isSRGB))?
+            cordl_method_info.invoke_unchecked((), (format, isSRGB))?
         };
         Ok(__cordl_ret.into())
     }
@@ -261,7 +266,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -281,7 +286,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
-            method.invoke_unchecked((), (format, readWrite))?
+            cordl_method_info.invoke_unchecked((), (format, readWrite))?
         };
         Ok(__cordl_ret.into())
     }
@@ -292,7 +297,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -309,7 +314,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
-            method.invoke_unchecked((), (format, isSRGB))?
+            cordl_method_info.invoke_unchecked((), (format, isSRGB))?
         };
         Ok(__cordl_ret.into())
     }
@@ -320,7 +325,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -337,7 +342,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
-            method.invoke_unchecked((), (format, isSRGB))?
+            cordl_method_info.invoke_unchecked((), (format, isSRGB))?
         };
         Ok(__cordl_ret.into())
     }
@@ -347,7 +352,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -364,7 +369,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
-            method.invoke_unchecked((), (format))?
+            cordl_method_info.invoke_unchecked((), (format))?
         };
         Ok(__cordl_ret.into())
     }
@@ -372,7 +377,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RenderTextureFormat> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -389,7 +394,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::RenderTextureFormat = unsafe {
-            method.invoke_unchecked((), (format))?
+            cordl_method_info.invoke_unchecked((), (format))?
         };
         Ok(__cordl_ret.into())
     }
@@ -399,7 +404,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -416,7 +421,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
-            method.invoke_unchecked((), (format))?
+            cordl_method_info.invoke_unchecked((), (format))?
         };
         Ok(__cordl_ret.into())
     }
@@ -424,7 +429,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         format: crate::UnityEngine::TextureFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -440,14 +445,16 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (format))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsCompressedFormat_Native_TextureFormat(
         format: crate::UnityEngine::TextureFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -463,14 +470,16 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (format))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsCrunchFormat(
         format: crate::UnityEngine::TextureFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -486,14 +495,16 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (format))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsDepthStencilFormat(
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -509,14 +520,16 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (format))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsPVRTCFormat(
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -532,14 +545,16 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (format))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsSRGBFormat(
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -555,7 +570,9 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (format))?
+        };
         Ok(__cordl_ret.into())
     }
 }

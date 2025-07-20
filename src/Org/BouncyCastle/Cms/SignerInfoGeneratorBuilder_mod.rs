@@ -58,7 +58,7 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::SignerInfoGenerator>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -86,7 +86,8 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::SignerInfoGenerator,
         > = unsafe {
-            method.invoke_unchecked(self, (signerFactory, subjectKeyIdentifier))?
+            cordl_method_info
+                .invoke_unchecked(self, (signerFactory, subjectKeyIdentifier))?
         };
         Ok(__cordl_ret.into())
     }
@@ -102,7 +103,7 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::SignerInfoGenerator>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -129,7 +130,9 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::SignerInfoGenerator,
-        > = unsafe { method.invoke_unchecked(self, (contentSigner, certificate))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (contentSigner, certificate))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateGenerator(
@@ -144,7 +147,7 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::SignerInfoGenerator>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -171,7 +174,7 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::SignerInfoGenerator,
-        > = unsafe { method.invoke_unchecked(self, (contentSigner, sigId))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (contentSigner, sigId))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -190,7 +193,7 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -210,7 +213,9 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder,
-        > = unsafe { method.invoke_unchecked(self, (hasNoSignedAttributes))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (hasNoSignedAttributes))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WithSignedAttributeGenerator(
@@ -224,7 +229,7 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -246,7 +251,7 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder,
-        > = unsafe { method.invoke_unchecked(self, (signedGen))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (signedGen))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithUnsignedAttributeGenerator(
@@ -260,7 +265,7 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -282,14 +287,14 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder,
-        > = unsafe { method.invoke_unchecked(self, (unsignedGen))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (unsignedGen))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -302,7 +307,7 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

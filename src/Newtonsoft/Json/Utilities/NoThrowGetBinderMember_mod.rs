@@ -50,7 +50,7 @@ impl crate::Newtonsoft::Json::Utilities::NoThrowGetBinderMember {
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -77,7 +77,9 @@ impl crate::Newtonsoft::Json::Utilities::NoThrowGetBinderMember {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe { method.invoke_unchecked(self, (target, errorSuggestion))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (target, errorSuggestion))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -94,7 +96,7 @@ impl crate::Newtonsoft::Json::Utilities::NoThrowGetBinderMember {
         innerBinder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::GetMemberBinder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -113,7 +115,7 @@ impl crate::Newtonsoft::Json::Utilities::NoThrowGetBinderMember {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (innerBinder))?
+            cordl_method_info.invoke_unchecked(self, (innerBinder))?
         };
         Ok(__cordl_ret.into())
     }

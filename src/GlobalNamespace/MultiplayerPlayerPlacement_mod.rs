@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
         layout: crate::GlobalNamespace::MultiplayerPlayerLayout,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -61,7 +61,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (numberOfPlayers, layout))?
+            cordl_method_info.invoke_unchecked((), (numberOfPlayers, layout))?
         };
         Ok(__cordl_ret.into())
     }
@@ -74,7 +74,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
         localPlayer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -102,7 +102,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (otherPlayers, localPlayer))?
+            cordl_method_info.invoke_unchecked((), (otherPlayers, localPlayer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -112,7 +112,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
         angleBetweenPlayers: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -129,7 +129,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (playerIndex, localPlayerIndex, angleBetweenPlayers),
@@ -142,7 +142,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
         innerCircleRadius: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -159,7 +159,8 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (angleBetweenPlayers, innerCircleRadius))?
+            cordl_method_info
+                .invoke_unchecked((), (angleBetweenPlayers, innerCircleRadius))?
         };
         Ok(__cordl_ret.into())
     }
@@ -169,7 +170,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
         layout: crate::GlobalNamespace::MultiplayerPlayerLayout,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -186,7 +187,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (outerCircleRadius, outerCirclePositionAngle, layout),
@@ -202,7 +203,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -225,7 +226,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (players))?
+            cordl_method_info.invoke_unchecked((), (players))?
         };
         Ok(__cordl_ret.into())
     }

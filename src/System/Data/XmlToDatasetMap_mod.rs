@@ -59,7 +59,7 @@ impl crate::System::Data::XmlToDatasetMap {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -82,7 +82,7 @@ impl crate::System::Data::XmlToDatasetMap {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (col, nameTable, columns))?
+            cordl_method_info.invoke_unchecked(self, (col, nameTable, columns))?
         };
         Ok(__cordl_ret.into())
     }
@@ -95,7 +95,7 @@ impl crate::System::Data::XmlToDatasetMap {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -118,7 +118,7 @@ impl crate::System::Data::XmlToDatasetMap {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nameTable, col, columns))?
+            cordl_method_info.invoke_unchecked(self, (nameTable, col, columns))?
         };
         Ok(__cordl_ret.into())
     }
@@ -130,7 +130,7 @@ impl crate::System::Data::XmlToDatasetMap {
         quest_hook::libil2cpp::Gc<crate::System::Data::XmlToDatasetMap_TableSchemaInfo>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -153,7 +153,7 @@ impl crate::System::Data::XmlToDatasetMap {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Data::XmlToDatasetMap_TableSchemaInfo,
-        > = unsafe { method.invoke_unchecked(self, (table, nameTable))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (table, nameTable))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddTableSchema_XmlNameTable_DataTable1(
@@ -164,7 +164,7 @@ impl crate::System::Data::XmlToDatasetMap {
         quest_hook::libil2cpp::Gc<crate::System::Data::XmlToDatasetMap_TableSchemaInfo>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -187,7 +187,7 @@ impl crate::System::Data::XmlToDatasetMap {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Data::XmlToDatasetMap_TableSchemaInfo,
-        > = unsafe { method.invoke_unchecked(self, (nameTable, table))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (nameTable, table))? };
         Ok(__cordl_ret.into())
     }
     pub fn BuildIdentityMap_DataSet_XmlNameTable0(
@@ -196,7 +196,7 @@ impl crate::System::Data::XmlToDatasetMap {
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -216,7 +216,7 @@ impl crate::System::Data::XmlToDatasetMap {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dataSet, nameTable))?
+            cordl_method_info.invoke_unchecked(self, (dataSet, nameTable))?
         };
         Ok(__cordl_ret.into())
     }
@@ -226,7 +226,7 @@ impl crate::System::Data::XmlToDatasetMap {
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -246,7 +246,7 @@ impl crate::System::Data::XmlToDatasetMap {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dataTable, nameTable))?
+            cordl_method_info.invoke_unchecked(self, (dataTable, nameTable))?
         };
         Ok(__cordl_ret.into())
     }
@@ -256,7 +256,7 @@ impl crate::System::Data::XmlToDatasetMap {
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -276,7 +276,7 @@ impl crate::System::Data::XmlToDatasetMap {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nameTable, dataSet))?
+            cordl_method_info.invoke_unchecked(self, (nameTable, dataSet))?
         };
         Ok(__cordl_ret.into())
     }
@@ -286,7 +286,7 @@ impl crate::System::Data::XmlToDatasetMap {
         dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -306,7 +306,7 @@ impl crate::System::Data::XmlToDatasetMap {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nameTable, dataTable))?
+            cordl_method_info.invoke_unchecked(self, (nameTable, dataTable))?
         };
         Ok(__cordl_ret.into())
     }
@@ -319,7 +319,7 @@ impl crate::System::Data::XmlToDatasetMap {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -342,7 +342,8 @@ impl crate::System::Data::XmlToDatasetMap {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = unsafe {
-            method.invoke_unchecked(self, (table, dataReader, fIgnoreNamespace))?
+            cordl_method_info
+                .invoke_unchecked(self, (table, dataReader, fIgnoreNamespace))?
         };
         Ok(__cordl_ret.into())
     }
@@ -354,7 +355,7 @@ impl crate::System::Data::XmlToDatasetMap {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -372,7 +373,9 @@ impl crate::System::Data::XmlToDatasetMap {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (node, fIgnoreNamespace))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (node, fIgnoreNamespace))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetSchemaForNode(
@@ -383,7 +386,7 @@ impl crate::System::Data::XmlToDatasetMap {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -401,7 +404,9 @@ impl crate::System::Data::XmlToDatasetMap {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (node, fIgnoreNamespace))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (node, fIgnoreNamespace))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetSelfAndDescendants(
@@ -411,7 +416,7 @@ impl crate::System::Data::XmlToDatasetMap {
         quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -429,7 +434,7 @@ impl crate::System::Data::XmlToDatasetMap {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ArrayList,
-        > = unsafe { method.invoke_unchecked(self, (dt))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (dt))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTableForNode(
@@ -440,7 +445,7 @@ impl crate::System::Data::XmlToDatasetMap {
         quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -457,7 +462,7 @@ impl crate::System::Data::XmlToDatasetMap {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable> = unsafe {
-            method.invoke_unchecked(self, (node, fIgnoreNamespace))?
+            cordl_method_info.invoke_unchecked(self, (node, fIgnoreNamespace))?
         };
         Ok(__cordl_ret.into())
     }
@@ -470,7 +475,7 @@ impl crate::System::Data::XmlToDatasetMap {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -493,7 +498,7 @@ impl crate::System::Data::XmlToDatasetMap {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (col, nameTable, columns))?
+            cordl_method_info.invoke_unchecked(self, (col, nameTable, columns))?
         };
         Ok(__cordl_ret.into())
     }
@@ -501,7 +506,7 @@ impl crate::System::Data::XmlToDatasetMap {
         c: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -517,7 +522,7 @@ impl crate::System::Data::XmlToDatasetMap {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c))? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_DataSet_XmlNameTable0(
@@ -566,7 +571,7 @@ impl crate::System::Data::XmlToDatasetMap {
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -586,7 +591,7 @@ impl crate::System::Data::XmlToDatasetMap {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dataSet, nameTable))?
+            cordl_method_info.invoke_unchecked(self, (dataSet, nameTable))?
         };
         Ok(__cordl_ret.into())
     }
@@ -596,7 +601,7 @@ impl crate::System::Data::XmlToDatasetMap {
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -616,7 +621,7 @@ impl crate::System::Data::XmlToDatasetMap {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dataTable, nameTable))?
+            cordl_method_info.invoke_unchecked(self, (dataTable, nameTable))?
         };
         Ok(__cordl_ret.into())
     }
@@ -626,7 +631,7 @@ impl crate::System::Data::XmlToDatasetMap {
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -646,7 +651,7 @@ impl crate::System::Data::XmlToDatasetMap {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nameTable, dataSet))?
+            cordl_method_info.invoke_unchecked(self, (nameTable, dataSet))?
         };
         Ok(__cordl_ret.into())
     }
@@ -656,7 +661,7 @@ impl crate::System::Data::XmlToDatasetMap {
         dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -676,7 +681,7 @@ impl crate::System::Data::XmlToDatasetMap {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nameTable, dataTable))?
+            cordl_method_info.invoke_unchecked(self, (nameTable, dataTable))?
         };
         Ok(__cordl_ret.into())
     }
@@ -749,7 +754,7 @@ impl crate::System::Data::XmlToDatasetMap_TableSchemaInfo {
         tableSchema: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -766,7 +771,7 @@ impl crate::System::Data::XmlToDatasetMap_TableSchemaInfo {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (tableSchema))?
+            cordl_method_info.invoke_unchecked(self, (tableSchema))?
         };
         Ok(__cordl_ret.into())
     }
@@ -839,7 +844,7 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
         capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
@@ -852,7 +857,7 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (capacity))?
+            cordl_method_info.invoke_unchecked(self, (capacity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -863,7 +868,7 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -881,7 +886,7 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (table))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (table))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Item_Il2CppString3(
@@ -891,7 +896,7 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -909,7 +914,7 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (name))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Item_XmlNode0(
@@ -919,7 +924,7 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -937,7 +942,7 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (node))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Item_XmlReader1(
@@ -947,7 +952,7 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -965,7 +970,7 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (dataReader))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (dataReader))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1027,7 +1032,7 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdentety {
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1043,12 +1048,14 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdentety {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (obj))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
@@ -1060,7 +1067,7 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdentety {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -1079,7 +1086,7 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdentety {
         namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1103,7 +1110,7 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdentety {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (localName, namespaceURI))?
+            cordl_method_info.invoke_unchecked(self, (localName, namespaceURI))?
         };
         Ok(__cordl_ret.into())
     }

@@ -41,7 +41,7 @@ impl std::ops::DerefMut for crate::System::Globalization::CharUnicodeInfo {
 impl crate::System::Globalization::CharUnicodeInfo {
     pub fn GetNumericValue(ch: char) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), f64, 1usize>("GetNumericValue")
@@ -53,7 +53,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (ch))? };
+        let __cordl_ret: f64 = unsafe { cordl_method_info.invoke_unchecked((), (ch))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUnicodeCategory_Il2CppString_i32_1(
@@ -61,7 +61,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::UnicodeCategory> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -83,7 +83,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     })
             });
         let __cordl_ret: crate::System::Globalization::UnicodeCategory = unsafe {
-            method.invoke_unchecked((), (s, index))?
+            cordl_method_info.invoke_unchecked((), (s, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -91,7 +91,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         ch: char,
     ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::UnicodeCategory> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -108,7 +108,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     })
             });
         let __cordl_ret: crate::System::Globalization::UnicodeCategory = unsafe {
-            method.invoke_unchecked((), (ch))?
+            cordl_method_info.invoke_unchecked((), (ch))?
         };
         Ok(__cordl_ret.into())
     }
@@ -116,7 +116,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         codePoint: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::UnicodeCategory> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -133,7 +133,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     })
             });
         let __cordl_ret: crate::System::Globalization::UnicodeCategory = unsafe {
-            method.invoke_unchecked((), (codePoint))?
+            cordl_method_info.invoke_unchecked((), (codePoint))?
         };
         Ok(__cordl_ret.into())
     }
@@ -143,7 +143,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         charLength: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -166,7 +166,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (s, index, charLength))?
+            cordl_method_info.invoke_unchecked((), (s, index, charLength))?
         };
         Ok(__cordl_ret.into())
     }
@@ -175,7 +175,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -196,7 +196,9 @@ impl crate::System::Globalization::CharUnicodeInfo {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (s, index))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (s, index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InternalGetCategoryValue(
@@ -204,7 +206,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<u8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -220,12 +222,14 @@ impl crate::System::Globalization::CharUnicodeInfo {
                         )
                     })
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (ch, offset))? };
+        let __cordl_ret: u8 = unsafe {
+            cordl_method_info.invoke_unchecked((), (ch, offset))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InternalGetNumericValue(ch: i32) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), f64, 1usize>("InternalGetNumericValue")
@@ -237,7 +241,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (ch))? };
+        let __cordl_ret: f64 = unsafe { cordl_method_info.invoke_unchecked((), (ch))? };
         Ok(__cordl_ret.into())
     }
     pub fn InternalGetUnicodeCategory_ByRefMut1(
@@ -246,7 +250,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         charLength: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::UnicodeCategory> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -269,7 +273,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     })
             });
         let __cordl_ret: crate::System::Globalization::UnicodeCategory = unsafe {
-            method.invoke_unchecked((), (str, index, charLength))?
+            cordl_method_info.invoke_unchecked((), (str, index, charLength))?
         };
         Ok(__cordl_ret.into())
     }
@@ -278,7 +282,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::UnicodeCategory> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -300,7 +304,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     })
             });
         let __cordl_ret: crate::System::Globalization::UnicodeCategory = unsafe {
-            method.invoke_unchecked((), (value, index))?
+            cordl_method_info.invoke_unchecked((), (value, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -309,7 +313,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -330,12 +334,14 @@ impl crate::System::Globalization::CharUnicodeInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (s, index))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (s, index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsWhiteSpace__cordl_char1(c: char) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), bool, 1usize>("IsWhiteSpace")
@@ -347,14 +353,14 @@ impl crate::System::Globalization::CharUnicodeInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c))? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_CategoriesValue() -> quest_hook::libil2cpp::Result<
         crate::System::ReadOnlySpan_1<u8>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -371,7 +377,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     })
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<u8> = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -379,7 +385,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         crate::System::ReadOnlySpan_1<u8>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -396,7 +402,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     })
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<u8> = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -404,7 +410,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         crate::System::ReadOnlySpan_1<u8>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -421,7 +427,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     })
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<u8> = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -429,7 +435,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         crate::System::ReadOnlySpan_1<u8>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -446,7 +452,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     })
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<u8> = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -454,7 +460,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         crate::System::ReadOnlySpan_1<u8>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -471,7 +477,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     })
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<u8> = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -479,7 +485,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         crate::System::ReadOnlySpan_1<u8>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -496,7 +502,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     })
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<u8> = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -504,7 +510,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         crate::System::ReadOnlySpan_1<u8>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -521,7 +527,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     })
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<u8> = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -529,7 +535,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         crate::System::ReadOnlySpan_1<u8>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -546,7 +552,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     })
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<u8> = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -45,7 +45,7 @@ impl std::ops::DerefMut for crate::System::Collections::Generic::BitHelper {
 impl crate::System::Collections::Generic::BitHelper {
     pub fn IsMarked(&mut self, bitPosition: i32) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("IsMarked")
@@ -57,7 +57,9 @@ impl crate::System::Collections::Generic::BitHelper {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (bitPosition))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (bitPosition))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MarkBit(
@@ -65,7 +67,7 @@ impl crate::System::Collections::Generic::BitHelper {
         bitPosition: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("MarkBit")
@@ -78,7 +80,7 @@ impl crate::System::Collections::Generic::BitHelper {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bitPosition))?
+            cordl_method_info.invoke_unchecked(self, (bitPosition))?
         };
         Ok(__cordl_ret.into())
     }
@@ -104,7 +106,7 @@ impl crate::System::Collections::Generic::BitHelper {
     }
     pub fn ToIntArrayLength(n: i32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("ToIntArrayLength")
@@ -116,7 +118,7 @@ impl crate::System::Collections::Generic::BitHelper {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (n))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (n))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray1(
@@ -125,7 +127,7 @@ impl crate::System::Collections::Generic::BitHelper {
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -147,7 +149,7 @@ impl crate::System::Collections::Generic::BitHelper {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bitArray, length))?
+            cordl_method_info.invoke_unchecked(self, (bitArray, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -157,7 +159,7 @@ impl crate::System::Collections::Generic::BitHelper {
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -179,7 +181,7 @@ impl crate::System::Collections::Generic::BitHelper {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bitArrayPtr, length))?
+            cordl_method_info.invoke_unchecked(self, (bitArrayPtr, length))?
         };
         Ok(__cordl_ret.into())
     }

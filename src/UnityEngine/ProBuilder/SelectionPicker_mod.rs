@@ -64,7 +64,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -115,7 +115,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
                 >,
             >,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (cam, rect, selectable, options, pixelsPerPoint))?
         };
         Ok(__cordl_ret.into())
@@ -130,7 +130,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -154,7 +154,9 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Face,
-        > = unsafe { method.invoke_unchecked((), (camera, mousePosition, pickable))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (camera, mousePosition, pickable))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PickFacesInRect(
@@ -182,7 +184,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -235,7 +237,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
                 >,
             >,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (cam, rect, selectable, options, pixelsPerPoint))?
         };
         Ok(__cordl_ret.into())
@@ -263,7 +265,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -310,7 +312,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
                 >,
             >,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (cam, rect, selectable, options, pixelsPerPoint))?
         };
         Ok(__cordl_ret.into())

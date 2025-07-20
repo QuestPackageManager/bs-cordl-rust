@@ -44,7 +44,7 @@ impl crate::UnityEngine::Timeline::MatchTargetFieldConstants {
         fields: crate::UnityEngine::Timeline::MatchTargetFields,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -63,7 +63,9 @@ impl crate::UnityEngine::Timeline::MatchTargetFieldConstants {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (me, fields))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (me, fields))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Toggle(
@@ -71,7 +73,7 @@ impl crate::UnityEngine::Timeline::MatchTargetFieldConstants {
         flag: crate::UnityEngine::Timeline::MatchTargetFields,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::MatchTargetFields> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -91,7 +93,7 @@ impl crate::UnityEngine::Timeline::MatchTargetFieldConstants {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Timeline::MatchTargetFields = unsafe {
-            method.invoke_unchecked((), (me, flag))?
+            cordl_method_info.invoke_unchecked((), (me, flag))?
         };
         Ok(__cordl_ret.into())
     }

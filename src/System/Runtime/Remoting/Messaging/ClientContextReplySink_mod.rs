@@ -61,7 +61,7 @@ impl crate::System::Runtime::Remoting::Messaging::ClientContextReplySink {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -88,7 +88,7 @@ impl crate::System::Runtime::Remoting::Messaging::ClientContextReplySink {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
-        > = unsafe { method.invoke_unchecked(self, (msg, replySink))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (msg, replySink))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -114,7 +114,7 @@ impl crate::System::Runtime::Remoting::Messaging::ClientContextReplySink {
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -136,7 +136,7 @@ impl crate::System::Runtime::Remoting::Messaging::ClientContextReplySink {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessage,
-        > = unsafe { method.invoke_unchecked(self, (msg))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (msg))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -149,7 +149,7 @@ impl crate::System::Runtime::Remoting::Messaging::ClientContextReplySink {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -173,7 +173,7 @@ impl crate::System::Runtime::Remoting::Messaging::ClientContextReplySink {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ctx, replySink))?
+            cordl_method_info.invoke_unchecked(self, (ctx, replySink))?
         };
         Ok(__cordl_ret.into())
     }

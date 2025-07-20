@@ -127,7 +127,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -154,7 +154,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(self, (loc, localCatalogHash, remoteCatalogLocation))?
         };
         Ok(__cordl_ret.into())
@@ -164,7 +164,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         handle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -181,7 +181,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (handle))?
+            cordl_method_info.invoke_unchecked(self, (handle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -196,7 +196,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -215,7 +215,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (handle))?
+            cordl_method_info.invoke_unchecked(self, (handle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -231,7 +231,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -253,7 +253,8 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (handle, unloadSceneOpExcludeReleaseCallback))?
+            cordl_method_info
+                .invoke_unchecked(self, (handle, unloadSceneOpExcludeReleaseCallback))?
         };
         Ok(__cordl_ret.into())
     }
@@ -268,7 +269,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -287,7 +288,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (handle))?
+            cordl_method_info.invoke_unchecked(self, (handle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -304,7 +305,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -334,7 +335,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, (autoReleaseHandle))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (autoReleaseHandle))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckForCatalogUpdatesWithChain(
@@ -350,7 +351,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -380,7 +381,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, (autoReleaseHandle))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (autoReleaseHandle))? };
         Ok(__cordl_ret.into())
     }
     pub fn CleanBundleCacheWithChain_AsyncOperationHandle_1_0(
@@ -399,7 +400,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -428,7 +429,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             bool,
-        > = unsafe { method.invoke_unchecked(self, (depOp, forceSingleThreading))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (depOp, forceSingleThreading))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CleanBundleCacheWithChain_IEnumerable_1_1(
@@ -445,7 +448,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -475,7 +478,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             bool,
         > = unsafe {
-            method.invoke_unchecked(self, (catalogIds, forceSingleThreading))?
+            cordl_method_info.invoke_unchecked(self, (catalogIds, forceSingleThreading))?
         };
         Ok(__cordl_ret.into())
     }
@@ -495,7 +498,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -524,7 +527,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             bool,
-        > = unsafe { method.invoke_unchecked(self, (depOp, forceSingleThreading))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (depOp, forceSingleThreading))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CleanBundleCache_IEnumerable_1_0(
@@ -541,7 +546,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -571,7 +576,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             bool,
         > = unsafe {
-            method.invoke_unchecked(self, (catalogIds, forceSingleThreading))?
+            cordl_method_info.invoke_unchecked(self, (catalogIds, forceSingleThreading))?
         };
         Ok(__cordl_ret.into())
     }
@@ -585,7 +590,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -610,7 +615,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             bool,
-        > = unsafe { method.invoke_unchecked(self, (keys, autoReleaseHandle))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (keys, autoReleaseHandle))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClearDependencyCacheAsync_IList_1_1(
@@ -629,7 +636,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -658,7 +665,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             bool,
-        > = unsafe { method.invoke_unchecked(self, (locations, autoReleaseHandle))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (locations, autoReleaseHandle))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClearDependencyCacheAsync_Il2CppObject0(
@@ -671,7 +680,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -696,7 +705,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             bool,
-        > = unsafe { method.invoke_unchecked(self, (key, autoReleaseHandle))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key, autoReleaseHandle))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClearDependencyCacheForKey(
@@ -704,7 +715,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -720,14 +731,16 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (key))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClearResourceLocators(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -744,7 +757,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -752,7 +765,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -769,7 +782,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -784,7 +797,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -806,7 +819,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             i64,
-        > = unsafe { method.invoke_unchecked(self, (catalogLoc))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (catalogLoc))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateCatalogLocationWithHashDependencies_IResourceLocation0<T>(
@@ -824,7 +837,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -846,7 +859,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::ResourceLocations::ResourceLocationBase,
-        > = unsafe { method.invoke_unchecked(self, (catalogLocation))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (catalogLocation))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateCatalogLocationWithHashDependencies_Il2CppString1<T>(
@@ -862,7 +875,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -882,7 +895,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::ResourceLocations::ResourceLocationBase,
-        > = unsafe { method.invoke_unchecked(self, (catalogLocation))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (catalogLocation))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateCatalogLocationWithHashDependencies_Il2CppString_Il2CppString2<T>(
@@ -899,7 +912,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -926,7 +939,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::ResourceLocations::ResourceLocationBase,
-        > = unsafe { method.invoke_unchecked(self, (catalogPath, hashFilePath))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (catalogPath, hashFilePath))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateUnloadSceneWithChain_AsyncOperationHandle0(
@@ -940,7 +955,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -965,7 +980,8 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         > = unsafe {
-            method.invoke_unchecked(self, (handle, unloadOptions, autoReleaseHandle))?
+            cordl_method_info
+                .invoke_unchecked(self, (handle, unloadOptions, autoReleaseHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -982,7 +998,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1009,7 +1025,8 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         > = unsafe {
-            method.invoke_unchecked(self, (handle, unloadOptions, autoReleaseHandle))?
+            cordl_method_info
+                .invoke_unchecked(self, (handle, unloadOptions, autoReleaseHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1023,7 +1040,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1047,7 +1064,8 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle = unsafe {
-            method.invoke_unchecked(self, (dep, keys, mode, autoReleaseHandle))?
+            cordl_method_info
+                .invoke_unchecked(self, (dep, keys, mode, autoReleaseHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1066,7 +1084,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1093,7 +1111,8 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle = unsafe {
-            method.invoke_unchecked(self, (dep, locations, autoReleaseHandle))?
+            cordl_method_info
+                .invoke_unchecked(self, (dep, locations, autoReleaseHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1106,7 +1125,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1129,7 +1148,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle = unsafe {
-            method.invoke_unchecked(self, (dep, key, autoReleaseHandle))?
+            cordl_method_info.invoke_unchecked(self, (dep, key, autoReleaseHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1142,7 +1161,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1165,7 +1184,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle = unsafe {
-            method.invoke_unchecked(self, (keys, mode, autoReleaseHandle))?
+            cordl_method_info.invoke_unchecked(self, (keys, mode, autoReleaseHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1183,7 +1202,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1209,7 +1228,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle = unsafe {
-            method.invoke_unchecked(self, (locations, autoReleaseHandle))?
+            cordl_method_info.invoke_unchecked(self, (locations, autoReleaseHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1221,7 +1240,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1243,7 +1262,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle = unsafe {
-            method.invoke_unchecked(self, (key, autoReleaseHandle))?
+            cordl_method_info.invoke_unchecked(self, (key, autoReleaseHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1257,7 +1276,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1280,7 +1299,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (x, y))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (x, y))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EvaluateKey(
@@ -1290,7 +1311,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1308,7 +1329,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (obj))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn GatherDependenciesFromLocations(
@@ -1329,7 +1350,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1363,7 +1384,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (locations))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (locations))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDownloadSizeAsync_IEnumerable1(
@@ -1375,7 +1396,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1397,7 +1418,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             i64,
-        > = unsafe { method.invoke_unchecked(self, (keys))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (keys))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDownloadSizeAsync_Il2CppObject0(
@@ -1409,7 +1430,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1429,7 +1450,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             i64,
-        > = unsafe { method.invoke_unchecked(self, (key))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (key))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDownloadSizeWithChain_IEnumerable1(
@@ -1442,7 +1463,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1467,7 +1488,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             i64,
-        > = unsafe { method.invoke_unchecked(self, (dep, keys))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (dep, keys))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDownloadSizeWithChain_Il2CppObject0(
@@ -1480,7 +1501,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1505,7 +1526,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             i64,
-        > = unsafe { method.invoke_unchecked(self, (dep, key))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (dep, key))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(
@@ -1515,7 +1536,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1533,7 +1554,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (loc))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (loc))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetLocatorInfo(
@@ -1545,7 +1568,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1565,7 +1588,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AddressableAssets::ResourceLocatorInfo,
-        > = unsafe { method.invoke_unchecked(self, (c))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRemoteCatalogHeaderSize(
@@ -1579,7 +1602,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1601,7 +1624,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             i64,
-        > = unsafe { method.invoke_unchecked(self, (catalogLoc))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (catalogLoc))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetResourceLocations_IEnumerable_Addressables_MergeMode_ByRefMut1(
@@ -1620,7 +1643,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1652,7 +1675,8 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (keys, _cordl_type, merge, locations))?
+            cordl_method_info
+                .invoke_unchecked(self, (keys, _cordl_type, merge, locations))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1671,7 +1695,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1702,7 +1726,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (key, _cordl_type, locations))?
+            cordl_method_info.invoke_unchecked(self, (key, _cordl_type, locations))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1716,7 +1740,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1740,7 +1764,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
             >,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn InitializeAsync_Il2CppString_Il2CppString__cordl_bool0(
@@ -1756,7 +1780,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1789,7 +1813,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                 crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
             >,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (runtimeDataPath, providerSuffix, autoReleaseHandle),
@@ -1808,7 +1832,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1832,7 +1856,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
             >,
-        > = unsafe { method.invoke_unchecked(self, (autoReleaseHandle))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (autoReleaseHandle))? };
         Ok(__cordl_ret.into())
     }
     pub fn InstantiateAsync_IResourceLocation_InstantiationParameters__cordl_bool5(
@@ -1848,7 +1872,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1875,7 +1899,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(self, (location, instantiateParameters, trackHandle))?
         };
         Ok(__cordl_ret.into())
@@ -1894,7 +1918,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1922,7 +1946,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (location, parent, instantiateInWorldSpace, trackHandle),
@@ -1945,7 +1969,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1974,7 +1998,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (location, position, rotation, parent, trackHandle),
@@ -1993,7 +2017,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2020,7 +2044,8 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         > = unsafe {
-            method.invoke_unchecked(self, (key, instantiateParameters, trackHandle))?
+            cordl_method_info
+                .invoke_unchecked(self, (key, instantiateParameters, trackHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2036,7 +2061,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2064,7 +2089,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (key, parent, instantiateInWorldSpace, trackHandle),
@@ -2085,7 +2110,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2114,7 +2139,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(self, (key, position, rotation, parent, trackHandle))?
         };
         Ok(__cordl_ret.into())
@@ -2133,7 +2158,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2161,7 +2186,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (dep, location, instantiateParameters, trackHandle),
@@ -2181,7 +2206,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2209,7 +2234,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(self, (dep, key, instantiateParameters, trackHandle))?
         };
         Ok(__cordl_ret.into())
@@ -2227,7 +2252,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2254,7 +2279,8 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         > = unsafe {
-            method.invoke_unchecked(self, (handle, unloadOptions, autoReleaseHandle))?
+            cordl_method_info
+                .invoke_unchecked(self, (handle, unloadOptions, autoReleaseHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2266,7 +2292,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         remoteHash: crate::UnityEngine::Hash128,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2288,7 +2314,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (catalogLoc, remoteHash))?
+            cordl_method_info.invoke_unchecked(self, (catalogLoc, remoteHash))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2307,7 +2333,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2329,7 +2355,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             TObject,
-        > = unsafe { method.invoke_unchecked(self, (location))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (location))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadAssetAsync_Il2CppObject1<TObject>(
@@ -2345,7 +2371,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2365,7 +2391,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             TObject,
-        > = unsafe { method.invoke_unchecked(self, (key))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (key))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadAssetWithChain_IResourceLocation0<TObject>(
@@ -2384,7 +2410,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2409,7 +2435,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             TObject,
-        > = unsafe { method.invoke_unchecked(self, (dep, loc))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (dep, loc))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadAssetWithChain_Il2CppObject1<TObject>(
@@ -2426,7 +2452,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2451,7 +2477,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             TObject,
-        > = unsafe { method.invoke_unchecked(self, (dep, key))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (dep, key))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadAssetsAsync_IEnumerable_Addressables_MergeMode__cordl_bool1<TObject>(
@@ -2472,7 +2498,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2504,7 +2530,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                 crate::System::Collections::Generic::IList_1<TObject>,
             >,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (keys, callback, mode, releaseDependenciesOnFailure),
@@ -2535,7 +2561,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2570,7 +2596,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                 crate::System::Collections::Generic::IList_1<TObject>,
             >,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (locations, callback, releaseDependenciesOnFailure),
@@ -2595,7 +2621,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2626,7 +2652,8 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                 crate::System::Collections::Generic::IList_1<TObject>,
             >,
         > = unsafe {
-            method.invoke_unchecked(self, (key, callback, releaseDependenciesOnFailure))?
+            cordl_method_info
+                .invoke_unchecked(self, (key, callback, releaseDependenciesOnFailure))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2649,7 +2676,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2682,7 +2709,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                 crate::System::Collections::Generic::IList_1<TObject>,
             >,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (dep, keys, callback, mode, releaseDependenciesOnFailure),
@@ -2714,7 +2741,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2750,7 +2777,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                 crate::System::Collections::Generic::IList_1<TObject>,
             >,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (dep, locations, callback, releaseDependenciesOnFailure),
@@ -2776,7 +2803,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2808,7 +2835,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                 crate::System::Collections::Generic::IList_1<TObject>,
             >,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (dep, key, callback, releaseDependenciesOnFailure),
@@ -2829,7 +2856,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2862,7 +2889,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                 crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
             >,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (catalogPath, autoReleaseHandle, providerSuffix),
@@ -2887,7 +2914,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2925,7 +2952,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, (keys, mode, _cordl_type))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (keys, mode, _cordl_type))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadResourceLocationsAsync_Il2CppObject_Type1(
@@ -2944,7 +2973,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2981,7 +3010,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, (key, _cordl_type))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (key, _cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadResourceLocationsWithChain_IEnumerable_Addressables_MergeMode_Type0(
@@ -3002,7 +3031,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3041,7 +3070,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, (dep, keys, mode, _cordl_type))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (dep, keys, mode, _cordl_type))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadResourceLocationsWithChain_Il2CppObject_Type1(
@@ -3061,7 +3092,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3099,7 +3130,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, (dep, key, _cordl_type))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (dep, key, _cordl_type))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadSceneAsync_IResourceLocation2(
@@ -3113,7 +3146,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3135,7 +3168,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
-        > = unsafe { method.invoke_unchecked(self, (location))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (location))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadSceneAsync_IResourceLocation_LoadSceneMode__cordl_bool_i32__cordl_bool3(
@@ -3153,7 +3186,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3182,7 +3215,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (location, loadMode, activateOnLoad, priority, trackHandle),
@@ -3205,7 +3238,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3234,7 +3267,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (
@@ -3257,7 +3290,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3277,7 +3310,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
-        > = unsafe { method.invoke_unchecked(self, (key))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (key))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadSceneAsync_Il2CppObject_LoadSceneParameters__cordl_bool_i32__cordl_bool1(
@@ -3293,7 +3326,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3322,7 +3355,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (key, loadSceneParameters, activateOnLoad, priority, trackHandle),
@@ -3345,7 +3378,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3374,7 +3407,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(self, (dep, key, loadMode, activateOnLoad, priority))?
         };
         Ok(__cordl_ret.into())
@@ -3392,7 +3425,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3421,7 +3454,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (dep, key, loadSceneParameters, activateOnLoad, priority),
@@ -3434,7 +3467,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3451,7 +3484,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg))?
+            cordl_method_info.invoke_unchecked(self, (msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3460,7 +3493,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3477,7 +3510,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg))?
+            cordl_method_info.invoke_unchecked(self, (msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3491,7 +3524,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3519,7 +3552,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (format, args))?
+            cordl_method_info.invoke_unchecked(self, (format, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3529,7 +3562,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         ex: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3549,7 +3582,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (op, ex))?
+            cordl_method_info.invoke_unchecked(self, (op, ex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3558,7 +3591,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         ex: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3575,7 +3608,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ex))?
+            cordl_method_info.invoke_unchecked(self, (ex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3589,7 +3622,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3617,7 +3650,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (format, args))?
+            cordl_method_info.invoke_unchecked(self, (format, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3626,7 +3659,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3643,7 +3676,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg))?
+            cordl_method_info.invoke_unchecked(self, (msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3657,7 +3690,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3685,7 +3718,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (format, args))?
+            cordl_method_info.invoke_unchecked(self, (format, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3705,7 +3738,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         handle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3722,7 +3755,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (handle))?
+            cordl_method_info.invoke_unchecked(self, (handle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3731,7 +3764,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         handle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3748,7 +3781,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (handle))?
+            cordl_method_info.invoke_unchecked(self, (handle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3757,7 +3790,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         handle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3774,7 +3807,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (handle))?
+            cordl_method_info.invoke_unchecked(self, (handle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3783,7 +3816,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         scene: crate::UnityEngine::SceneManagement::Scene,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3800,7 +3833,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (scene))?
+            cordl_method_info.invoke_unchecked(self, (scene))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3808,7 +3841,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3825,7 +3858,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3834,7 +3867,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         instance: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3850,14 +3883,16 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (instance))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (instance))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReleaseSceneManagerOperation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3874,7 +3909,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3883,7 +3918,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         handle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3900,7 +3935,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (handle))?
+            cordl_method_info.invoke_unchecked(self, (handle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3915,7 +3950,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3934,7 +3969,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (handle))?
+            cordl_method_info.invoke_unchecked(self, (handle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3947,7 +3982,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3964,7 +3999,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (obj))?
+            cordl_method_info.invoke_unchecked(self, (obj))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3975,7 +4010,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3994,7 +4029,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (loc))?
+            cordl_method_info.invoke_unchecked(self, (loc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4005,7 +4040,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4023,7 +4058,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (id))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (id))? };
         Ok(__cordl_ret.into())
     }
     pub fn TrackHandle_AsyncOperationHandle2(
@@ -4033,7 +4068,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4050,7 +4085,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle = unsafe {
-            method.invoke_unchecked(self, (handle))?
+            cordl_method_info.invoke_unchecked(self, (handle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4065,7 +4100,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4087,7 +4122,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
-        > = unsafe { method.invoke_unchecked(self, (handle))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn TrackHandle_AsyncOperationHandle_1_1<TObject>(
@@ -4105,7 +4140,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4127,7 +4162,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             TObject,
-        > = unsafe { method.invoke_unchecked(self, (handle))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnloadSceneAsync_AsyncOperationHandle1(
@@ -4141,7 +4176,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4166,7 +4201,8 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         > = unsafe {
-            method.invoke_unchecked(self, (handle, unloadOptions, autoReleaseHandle))?
+            cordl_method_info
+                .invoke_unchecked(self, (handle, unloadOptions, autoReleaseHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4183,7 +4219,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4210,7 +4246,8 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         > = unsafe {
-            method.invoke_unchecked(self, (handle, unloadOptions, autoReleaseHandle))?
+            cordl_method_info
+                .invoke_unchecked(self, (handle, unloadOptions, autoReleaseHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4225,7 +4262,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4250,7 +4287,8 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         > = unsafe {
-            method.invoke_unchecked(self, (scene, unloadOptions, autoReleaseHandle))?
+            cordl_method_info
+                .invoke_unchecked(self, (scene, unloadOptions, autoReleaseHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4275,7 +4313,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4318,7 +4356,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                 >,
             >,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (catalogIds, autoReleaseHandle, autoCleanBundleCache),
@@ -4336,7 +4374,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4359,7 +4397,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (locations))?
+            cordl_method_info.invoke_unchecked((), (locations))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4368,7 +4406,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         op: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4385,7 +4423,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (op))?
+            cordl_method_info.invoke_unchecked(self, (op))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4400,7 +4438,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4419,7 +4457,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (op))?
+            cordl_method_info.invoke_unchecked(self, (op))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4432,7 +4470,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4449,7 +4487,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (op))?
+            cordl_method_info.invoke_unchecked(self, (op))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4464,7 +4502,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4488,7 +4526,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             i64,
-        > = unsafe { method.invoke_unchecked(self, (getOp))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (getOp))? };
         Ok(__cordl_ret.into())
     }
     pub fn _TrackHandle_b__73_0(
@@ -4498,7 +4536,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4517,7 +4555,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sceneHandle))?
+            cordl_method_info.invoke_unchecked(self, (sceneHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4528,7 +4566,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4547,7 +4585,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (alloc))?
+            cordl_method_info.invoke_unchecked(self, (alloc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4557,7 +4595,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4575,12 +4613,12 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_CatalogRequestsTimeout(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_CatalogRequestsTimeout")
@@ -4592,7 +4630,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_CatalogsWithAvailableUpdates(
@@ -4605,7 +4643,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4631,7 +4669,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ChainOperation(
@@ -4640,7 +4678,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4657,7 +4695,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4669,7 +4707,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4689,7 +4727,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::ResourceProviders::IInstanceProvider,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_InternalIdTransformFunc(
@@ -4705,7 +4743,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4737,7 +4775,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                 >,
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_PlayerBuildDataPath(
@@ -4746,7 +4784,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4764,7 +4802,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ResourceLocators(
@@ -4779,7 +4817,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4807,7 +4845,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ResourceManager(
@@ -4818,7 +4856,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4838,7 +4876,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::ResourceManager,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_RuntimePath(
@@ -4847,7 +4885,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4865,12 +4903,12 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_SceneOperationCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_SceneOperationCount")
@@ -4882,12 +4920,12 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ShouldChainRequest(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_ShouldChainRequest")
@@ -4899,7 +4937,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_StreamingAssetsSubFolder(
@@ -4908,7 +4946,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4926,12 +4964,12 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_TrackedHandleCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_TrackedHandleCount")
@@ -4943,7 +4981,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_WebRequestOverride(
@@ -4958,7 +4996,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4986,7 +5024,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     crate::UnityEngine::Networking::UnityWebRequest,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_CatalogRequestsTimeout(
@@ -4994,7 +5032,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5011,7 +5049,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5022,7 +5060,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5041,7 +5079,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5057,7 +5095,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5083,7 +5121,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5098,7 +5136,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5121,7 +5159,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5257,7 +5295,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Execute")
@@ -5270,7 +5308,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5283,7 +5321,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
         keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5308,13 +5346,13 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (aa, t, keys))?
+            cordl_method_info.invoke_unchecked(self, (aa, t, keys))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InvokeWaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("InvokeWaitForCompletion")
@@ -5326,7 +5364,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -5340,7 +5378,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -5353,7 +5391,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5363,7 +5401,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5381,7 +5419,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -5483,7 +5521,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Execute")
@@ -5496,7 +5534,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5510,7 +5548,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
         mergeMode: crate::UnityEngine::AddressableAssets::Addressables_MergeMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5536,13 +5574,13 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (aa, t, key, mergeMode))?
+            cordl_method_info.invoke_unchecked(self, (aa, t, key, mergeMode))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InvokeWaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("InvokeWaitForCompletion")
@@ -5554,7 +5592,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -5568,7 +5606,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -5581,7 +5619,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5591,7 +5629,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5609,7 +5647,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

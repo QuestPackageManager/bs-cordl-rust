@@ -49,7 +49,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -75,7 +75,9 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (classToProxy, url, data))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (classToProxy, url, data))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Connect_Type_Il2CppString0(
@@ -85,7 +87,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -108,7 +110,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (classToProxy, url))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (classToProxy, url))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateClientActivatedServerIdentity(
@@ -121,7 +123,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -147,7 +149,9 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::ClientActivatedIdentity,
-        > = unsafe { method.invoke_unchecked((), (realObject, objectType, objectUri))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (realObject, objectType, objectUri))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateClientProxyForContextBound(
@@ -161,7 +165,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -188,7 +192,9 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type, activationAttributes))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_type, activationAttributes))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateClientProxy_ActivatedClientTypeEntry_Il2CppArray0(
@@ -204,7 +210,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -233,7 +239,9 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (entry, activationAttributes))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (entry, activationAttributes))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateClientProxy_Type_Il2CppString_Il2CppArray1(
@@ -248,7 +256,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -279,7 +287,8 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = unsafe {
-            method.invoke_unchecked((), (objectType, url, activationAttributes))?
+            cordl_method_info
+                .invoke_unchecked((), (objectType, url, activationAttributes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -291,7 +300,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -311,7 +320,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (entry))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (entry))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateContextBoundObjectIdentity(
@@ -322,7 +331,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -342,7 +351,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::ClientActivatedIdentity,
-        > = unsafe { method.invoke_unchecked((), (objectType))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (objectType))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateWellKnownServerIdentity(
@@ -353,7 +362,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ServerIdentity>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -379,7 +388,9 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::ServerIdentity,
-        > = unsafe { method.invoke_unchecked((), (objectType, objectUri, mode))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (objectType, objectUri, mode))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DeserializeCallData(
@@ -388,7 +399,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -408,14 +419,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (array))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn DisposeIdentity(
         ident: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Identity>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -434,7 +445,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ident))?
+            cordl_method_info.invoke_unchecked((), (ident))?
         };
         Ok(__cordl_ret.into())
     }
@@ -450,7 +461,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -479,7 +490,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodBase,
         > = unsafe {
-            method.invoke_unchecked((), (_cordl_type, methodName, signature))?
+            cordl_method_info.invoke_unchecked((), (_cordl_type, methodName, signature))?
         };
         Ok(__cordl_ret.into())
     }
@@ -495,7 +506,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -527,7 +538,9 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessageSink,
-        > = unsafe { method.invoke_unchecked((), (url, channelData, objectUri))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (url, channelData, objectUri))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetIdentityForUri(
@@ -536,7 +549,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Identity>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -556,7 +569,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Identity,
-        > = unsafe { method.invoke_unchecked((), (uri))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (uri))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMessageTargetIdentity(
@@ -567,7 +580,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Identity>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -589,7 +602,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Identity,
-        > = unsafe { method.invoke_unchecked((), (msg))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (msg))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMethodBaseFromMethodMessage(
@@ -600,7 +613,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -620,7 +633,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodBase,
-        > = unsafe { method.invoke_unchecked((), (msg))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (msg))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMethodBaseFromName(
@@ -635,7 +648,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -664,7 +677,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodBase,
         > = unsafe {
-            method.invoke_unchecked((), (_cordl_type, methodName, signature))?
+            cordl_method_info.invoke_unchecked((), (_cordl_type, methodName, signature))?
         };
         Ok(__cordl_ret.into())
     }
@@ -674,7 +687,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -692,7 +705,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (uri))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (uri))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetObjectData(
@@ -703,7 +716,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -728,7 +741,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj, info, context))?
+            cordl_method_info.invoke_unchecked((), (obj, info, context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -742,7 +755,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ClientIdentity>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -772,7 +785,9 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::ClientIdentity,
-        > = unsafe { method.invoke_unchecked((), (objRef, proxyType, clientProxy))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (objRef, proxyType, clientProxy))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetProxyForRemoteObject(
@@ -782,7 +797,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -805,7 +820,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (objref, classToProxy))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (objref, classToProxy))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRealProxy(
@@ -814,7 +829,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Proxies::RealProxy>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -834,7 +849,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Proxies::RealProxy,
-        > = unsafe { method.invoke_unchecked((), (proxy))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (proxy))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRemoteObject(
@@ -844,7 +859,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -867,14 +882,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (objRef, proxyType))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (objRef, proxyType))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetServerTypeForUri(
         URI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -891,7 +906,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked((), (URI))?
+            cordl_method_info.invoke_unchecked((), (URI))?
         };
         Ok(__cordl_ret.into())
     }
@@ -902,7 +917,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -925,7 +940,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodBase,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type, method))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type, method))? };
         Ok(__cordl_ret.into())
     }
     pub fn InternalExecute(
@@ -947,7 +962,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -988,7 +1003,9 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (method, obj, parameters, out_args))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (method, obj, parameters, out_args))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InternalExecuteMessage(
@@ -1002,7 +1019,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1027,14 +1044,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage,
-        > = unsafe { method.invoke_unchecked((), (target, reqMsg))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (target, reqMsg))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsOneWay(
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1052,14 +1069,16 @@ impl crate::System::Runtime::Remoting::RemotingServices {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (method))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (method))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsTransparentProxy(
         proxy: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1075,7 +1094,9 @@ impl crate::System::Runtime::Remoting::RemotingServices {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (proxy))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (proxy))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Marshal_Il2CppString_Type1(
@@ -1086,7 +1107,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ObjRef>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1112,7 +1133,9 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::ObjRef,
-        > = unsafe { method.invoke_unchecked((), (Obj, ObjURI, RequestedType))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (Obj, ObjURI, RequestedType))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Marshal_MarshalByRefObject0(
@@ -1121,7 +1144,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ObjRef>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1141,14 +1164,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::ObjRef,
-        > = unsafe { method.invoke_unchecked((), (Obj))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (Obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn NewUri() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1166,14 +1189,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterInternalChannels() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1190,7 +1213,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1200,7 +1223,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1219,7 +1242,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (identity))?
+            cordl_method_info.invoke_unchecked((), (identity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1229,7 +1252,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1247,7 +1270,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (uri))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (uri))? };
         Ok(__cordl_ret.into())
     }
     pub fn SerializeCallData(
@@ -1256,7 +1279,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1276,7 +1299,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (obj))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn SerializeExceptionData(
@@ -1285,7 +1308,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1305,7 +1328,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (ex))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (ex))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetMessageTargetIdentity(
@@ -1315,7 +1338,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         ident: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Identity>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1339,7 +1362,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (msg, ident))?
+            cordl_method_info.invoke_unchecked((), (msg, ident))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1349,7 +1372,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1369,7 +1392,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (objectRef))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (objectRef))? };
         Ok(__cordl_ret.into())
     }
     pub fn Unmarshal__cordl_bool1(
@@ -1379,7 +1402,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1402,7 +1425,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (objectRef, fRefine))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (objectRef, fRefine))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateOutArgObject(
@@ -1411,7 +1434,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         remote: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1438,7 +1461,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (pi, local, remote))?
+            cordl_method_info.invoke_unchecked((), (pi, local, remote))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1507,7 +1530,7 @@ impl crate::System::Runtime::Remoting::RemotingServices_CACD {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -1520,7 +1543,7 @@ impl crate::System::Runtime::Remoting::RemotingServices_CACD {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

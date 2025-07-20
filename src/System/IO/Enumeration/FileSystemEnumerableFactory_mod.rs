@@ -51,7 +51,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -85,7 +85,9 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::System::IO::DirectoryInfo>,
             >,
-        > = unsafe { method.invoke_unchecked((), (directory, expression, options))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (directory, expression, options))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FileInfos(
@@ -100,7 +102,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -134,7 +136,9 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::System::IO::FileInfo>,
             >,
-        > = unsafe { method.invoke_unchecked((), (directory, expression, options))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (directory, expression, options))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FileSystemInfos(
@@ -149,7 +153,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -183,7 +187,9 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
             >,
-        > = unsafe { method.invoke_unchecked((), (directory, expression, options))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (directory, expression, options))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MatchesPattern(
@@ -192,7 +198,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -217,7 +223,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (expression, name, options))?
+            cordl_method_info.invoke_unchecked((), (expression, name, options))?
         };
         Ok(__cordl_ret.into())
     }
@@ -231,7 +237,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -262,7 +268,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (directory, expression, options))?
+            cordl_method_info.invoke_unchecked((), (directory, expression, options))?
         };
         Ok(__cordl_ret.into())
     }
@@ -278,7 +284,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -314,7 +320,9 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (directory, expression, options))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (directory, expression, options))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UserEntries(
@@ -329,7 +337,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -365,7 +373,9 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (directory, expression, options))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (directory, expression, options))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UserFiles(
@@ -380,7 +390,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -416,7 +426,9 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (directory, expression, options))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (directory, expression, options))?
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -54,7 +54,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Subdivision {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -91,7 +91,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Subdivision {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = unsafe { method.invoke_unchecked((), (pb, faces))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (pb, faces))? };
         Ok(__cordl_ret.into())
     }
     pub fn Subdivide_ProBuilderMesh0(
@@ -100,7 +100,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Subdivision {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -122,7 +122,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Subdivision {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ActionResult,
-        > = unsafe { method.invoke_unchecked((), (pb))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (pb))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -50,7 +50,7 @@ impl crate::System::Net::Dns {
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -75,7 +75,8 @@ impl crate::System::Net::Dns {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method.invoke_unchecked((), (hostNameOrAddress, requestCallback, state))?
+            cordl_method_info
+                .invoke_unchecked((), (hostNameOrAddress, requestCallback, state))?
         };
         Ok(__cordl_ret.into())
     }
@@ -89,7 +90,7 @@ impl crate::System::Net::Dns {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -113,14 +114,14 @@ impl crate::System::Net::Dns {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
             >,
-        > = unsafe { method.invoke_unchecked((), (asyncResult))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (asyncResult))? };
         Ok(__cordl_ret.into())
     }
     pub fn Error_11001(
         hostName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -137,7 +138,7 @@ impl crate::System::Net::Dns {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hostName))?
+            cordl_method_info.invoke_unchecked((), (hostName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -151,7 +152,7 @@ impl crate::System::Net::Dns {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -175,7 +176,7 @@ impl crate::System::Net::Dns {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
             >,
-        > = unsafe { method.invoke_unchecked((), (hostNameOrAddress))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (hostNameOrAddress))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHostAddressesAsync(
@@ -192,7 +193,7 @@ impl crate::System::Net::Dns {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -224,7 +225,7 @@ impl crate::System::Net::Dns {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (hostNameOrAddress))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (hostNameOrAddress))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHostByAddr_icall(
@@ -249,7 +250,7 @@ impl crate::System::Net::Dns {
         hint: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -294,7 +295,8 @@ impl crate::System::Net::Dns {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (addr, h_name, h_aliases, h_addr_list, hint))?
+            cordl_method_info
+                .invoke_unchecked((), (addr, h_name, h_aliases, h_addr_list, hint))?
         };
         Ok(__cordl_ret.into())
     }
@@ -305,7 +307,7 @@ impl crate::System::Net::Dns {
         quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -327,7 +329,7 @@ impl crate::System::Net::Dns {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry> = unsafe {
-            method.invoke_unchecked((), (address, parse))?
+            cordl_method_info.invoke_unchecked((), (address, parse))?
         };
         Ok(__cordl_ret.into())
     }
@@ -337,7 +339,7 @@ impl crate::System::Net::Dns {
         quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -354,7 +356,7 @@ impl crate::System::Net::Dns {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry> = unsafe {
-            method.invoke_unchecked((), (hostName))?
+            cordl_method_info.invoke_unchecked((), (hostName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -380,7 +382,7 @@ impl crate::System::Net::Dns {
         hint: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -425,7 +427,8 @@ impl crate::System::Net::Dns {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (host, h_name, h_aliases, h_addr_list, hint))?
+            cordl_method_info
+                .invoke_unchecked((), (host, h_name, h_aliases, h_addr_list, hint))?
         };
         Ok(__cordl_ret.into())
     }
@@ -435,7 +438,7 @@ impl crate::System::Net::Dns {
         quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -452,7 +455,7 @@ impl crate::System::Net::Dns {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry> = unsafe {
-            method.invoke_unchecked((), (address))?
+            cordl_method_info.invoke_unchecked((), (address))?
         };
         Ok(__cordl_ret.into())
     }
@@ -462,7 +465,7 @@ impl crate::System::Net::Dns {
         quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -479,7 +482,7 @@ impl crate::System::Net::Dns {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry> = unsafe {
-            method.invoke_unchecked((), (hostNameOrAddress))?
+            cordl_method_info.invoke_unchecked((), (hostNameOrAddress))?
         };
         Ok(__cordl_ret.into())
     }
@@ -487,7 +490,7 @@ impl crate::System::Net::Dns {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -505,7 +508,7 @@ impl crate::System::Net::Dns {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHostName_icall(
@@ -514,7 +517,7 @@ impl crate::System::Net::Dns {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -534,7 +537,9 @@ impl crate::System::Net::Dns {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (h_name))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (h_name))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn hostent_to_IPHostEntry(
@@ -554,7 +559,7 @@ impl crate::System::Net::Dns {
         quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -592,7 +597,7 @@ impl crate::System::Net::Dns {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry> = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (originalHostName, h_name, h_aliases, h_addrlist))?
         };
         Ok(__cordl_ret.into())
@@ -657,7 +662,7 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -682,7 +687,7 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method.invoke_unchecked(self, (hostName, callback, object))?
+            cordl_method_info.invoke_unchecked(self, (hostName, callback, object))?
         };
         Ok(__cordl_ret.into())
     }
@@ -697,7 +702,7 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -721,7 +726,7 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (result))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (result))? };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -735,7 +740,7 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -759,7 +764,7 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (hostName))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (hostName))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -778,7 +783,7 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -800,7 +805,7 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))?
+            cordl_method_info.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }

@@ -51,7 +51,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataGenerator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsEnvelopedData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -78,7 +78,9 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataGenerator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::CmsEnvelopedData,
-        > = unsafe { method.invoke_unchecked(self, (content, cipherBuilder))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (content, cipherBuilder))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Generate_Il2CppString1(
@@ -91,7 +93,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataGenerator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsEnvelopedData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -118,7 +120,9 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataGenerator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::CmsEnvelopedData,
-        > = unsafe { method.invoke_unchecked(self, (content, encryptionOid))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (content, encryptionOid))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Generate_Il2CppString_CipherKeyGenerator0(
@@ -134,7 +138,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataGenerator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsEnvelopedData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -164,7 +168,9 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataGenerator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::CmsEnvelopedData,
-        > = unsafe { method.invoke_unchecked(self, (content, encryptionOid, keyGen))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (content, encryptionOid, keyGen))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Generate_Il2CppString_i32_3(
@@ -178,7 +184,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataGenerator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsEnvelopedData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -206,7 +212,9 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataGenerator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::CmsEnvelopedData,
-        > = unsafe { method.invoke_unchecked(self, (content, encryptionOid, keySize))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (content, encryptionOid, keySize))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -231,7 +239,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataGenerator {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -244,7 +252,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -255,7 +263,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataGenerator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -274,7 +282,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_rand))?
+            cordl_method_info.invoke_unchecked(self, (_cordl_rand))?
         };
         Ok(__cordl_ret.into())
     }

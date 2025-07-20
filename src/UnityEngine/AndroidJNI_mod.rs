@@ -42,7 +42,7 @@ impl crate::UnityEngine::AndroidJNI {
         clazz: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -59,13 +59,13 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (clazz))?
+            cordl_method_info.invoke_unchecked((), (clazz))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn AttachCurrentThread() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("AttachCurrentThread")
@@ -77,7 +77,7 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CallBooleanMethodUnsafe(
@@ -86,7 +86,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -109,7 +109,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -121,7 +121,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -146,7 +146,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -156,7 +156,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -177,7 +177,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -189,7 +189,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<u8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -214,7 +214,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: u8 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -224,7 +224,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<char> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -247,7 +247,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: char = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -259,7 +259,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<char> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -284,7 +284,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: char = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -294,7 +294,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<char> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -315,7 +315,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: char = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -325,7 +325,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -348,7 +348,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -360,7 +360,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -385,7 +385,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -395,7 +395,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -416,7 +416,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -426,7 +426,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -449,7 +449,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -461,7 +461,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -486,7 +486,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -496,7 +496,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -517,7 +517,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -527,7 +527,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -550,7 +550,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -562,7 +562,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -587,7 +587,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -597,7 +597,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -618,7 +618,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -628,7 +628,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -651,7 +651,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -663,7 +663,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -688,7 +688,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -698,7 +698,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -719,7 +719,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -729,7 +729,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -752,7 +752,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -764,7 +764,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -789,7 +789,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -799,7 +799,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -820,7 +820,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -830,7 +830,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -853,7 +853,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i8 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -865,7 +865,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<i8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -890,7 +890,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i8 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -900,7 +900,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<i8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -921,7 +921,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i8 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -931,7 +931,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i16> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -954,7 +954,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i16 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -966,7 +966,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<i16> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -991,7 +991,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i16 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1001,7 +1001,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<i16> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1022,7 +1022,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i16 = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1032,7 +1032,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1055,7 +1055,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1067,7 +1067,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1092,7 +1092,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1102,7 +1102,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1123,7 +1123,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1135,7 +1135,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<u8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1160,7 +1160,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: u8 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1170,7 +1170,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<char> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1193,7 +1193,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: char = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1205,7 +1205,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<char> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1230,7 +1230,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: char = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1240,7 +1240,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<char> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1261,7 +1261,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: char = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1271,7 +1271,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1294,7 +1294,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1306,7 +1306,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1331,7 +1331,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1341,7 +1341,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1362,7 +1362,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1372,7 +1372,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1395,7 +1395,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1407,7 +1407,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1432,7 +1432,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1442,7 +1442,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1463,7 +1463,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1473,7 +1473,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1496,7 +1496,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1508,7 +1508,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1533,7 +1533,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1543,7 +1543,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1564,7 +1564,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1574,7 +1574,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1597,7 +1597,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1609,7 +1609,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1634,7 +1634,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1644,7 +1644,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1665,7 +1665,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1675,7 +1675,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1698,7 +1698,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1710,7 +1710,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1735,7 +1735,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1745,7 +1745,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1766,7 +1766,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1776,7 +1776,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1799,7 +1799,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i8 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1811,7 +1811,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<i8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1836,7 +1836,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i8 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1846,7 +1846,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<i8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1867,7 +1867,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i8 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1877,7 +1877,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i16> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1900,7 +1900,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i16 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1912,7 +1912,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<i16> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1937,7 +1937,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i16 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1947,7 +1947,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<i16> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1968,7 +1968,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i16 = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1980,7 +1980,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2004,7 +2004,7 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (clazz, methodID, args))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (clazz, methodID, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticStringMethod_Il2CppArray0(
@@ -2017,7 +2017,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2043,7 +2043,7 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (clazz, methodID, args))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (clazz, methodID, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticStringMethod_Span_1_1(
@@ -2054,7 +2054,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2076,7 +2076,7 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (clazz, methodID, args))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (clazz, methodID, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticVoidMethodUnsafe(
@@ -2085,7 +2085,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2108,7 +2108,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2120,7 +2120,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2145,7 +2145,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2155,7 +2155,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2176,7 +2176,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2188,7 +2188,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2212,7 +2212,7 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (obj, methodID, args))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj, methodID, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn CallStringMethod_Il2CppArray0(
@@ -2225,7 +2225,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2251,7 +2251,7 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (obj, methodID, args))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj, methodID, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn CallStringMethod_Span_1_1(
@@ -2262,7 +2262,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2284,7 +2284,7 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (obj, methodID, args))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj, methodID, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn CallVoidMethodUnsafe(
@@ -2293,7 +2293,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2316,7 +2316,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2328,7 +2328,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2353,7 +2353,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2363,7 +2363,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2384,7 +2384,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (obj, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2392,7 +2392,7 @@ impl crate::UnityEngine::AndroidJNI {
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2409,7 +2409,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj))?
+            cordl_method_info.invoke_unchecked((), (obj))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2417,7 +2417,7 @@ impl crate::UnityEngine::AndroidJNI {
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2434,7 +2434,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj))?
+            cordl_method_info.invoke_unchecked((), (obj))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2442,7 +2442,7 @@ impl crate::UnityEngine::AndroidJNI {
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2459,13 +2459,13 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj))?
+            cordl_method_info.invoke_unchecked((), (obj))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn DetachCurrentThread() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("DetachCurrentThread")
@@ -2477,12 +2477,12 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureLocalCapacity(capacity: i32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("EnsureLocalCapacity")
@@ -2494,14 +2494,16 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (capacity))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (capacity))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptionClear() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2518,7 +2520,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2526,7 +2528,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Void,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2543,13 +2545,13 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptionOccurred() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2566,7 +2568,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2574,7 +2576,7 @@ impl crate::UnityEngine::AndroidJNI {
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2591,7 +2593,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (message))?
+            cordl_method_info.invoke_unchecked((), (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2599,7 +2601,7 @@ impl crate::UnityEngine::AndroidJNI {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2616,7 +2618,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (name))?
+            cordl_method_info.invoke_unchecked((), (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2626,7 +2628,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2646,7 +2648,7 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<bool>,
-        > = unsafe { method.invoke_unchecked((), (array))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromByteArray(
@@ -2655,7 +2657,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2675,7 +2677,7 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (array))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromCharArray(
@@ -2684,7 +2686,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2704,7 +2706,7 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<char>,
-        > = unsafe { method.invoke_unchecked((), (array))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromDoubleArray(
@@ -2713,7 +2715,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f64>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2733,7 +2735,7 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<f64>,
-        > = unsafe { method.invoke_unchecked((), (array))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromFloatArray(
@@ -2742,7 +2744,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2762,7 +2764,7 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<f32>,
-        > = unsafe { method.invoke_unchecked((), (array))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromIntArray(
@@ -2771,7 +2773,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2791,7 +2793,7 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = unsafe { method.invoke_unchecked((), (array))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromLongArray(
@@ -2800,7 +2802,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2820,7 +2822,7 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i64>,
-        > = unsafe { method.invoke_unchecked((), (array))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromObjectArray(
@@ -2831,7 +2833,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2851,14 +2853,14 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
-        > = unsafe { method.invoke_unchecked((), (array))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromReflectedField(
         refField: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2875,7 +2877,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (refField))?
+            cordl_method_info.invoke_unchecked((), (refField))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2883,7 +2885,7 @@ impl crate::UnityEngine::AndroidJNI {
         refMethod: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2900,7 +2902,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (refMethod))?
+            cordl_method_info.invoke_unchecked((), (refMethod))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2910,7 +2912,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2930,7 +2932,7 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i8>,
-        > = unsafe { method.invoke_unchecked((), (array))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromShortArray(
@@ -2939,7 +2941,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2959,14 +2961,14 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i16>,
-        > = unsafe { method.invoke_unchecked((), (array))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetArrayLength(
         array: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2982,7 +2984,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (array))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBooleanArrayElement(
@@ -2990,7 +2994,7 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3006,7 +3010,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (array, index))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (array, index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBooleanField(
@@ -3014,7 +3020,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3030,7 +3036,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (obj, fieldID))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj, fieldID))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetByteArrayElement(
@@ -3038,7 +3046,7 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<u8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3054,7 +3062,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (array, index))? };
+        let __cordl_ret: u8 = unsafe {
+            cordl_method_info.invoke_unchecked((), (array, index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetByteField(
@@ -3062,7 +3072,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3078,7 +3088,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (obj, fieldID))? };
+        let __cordl_ret: u8 = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj, fieldID))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCharArrayElement(
@@ -3086,7 +3098,7 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<char> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3102,7 +3114,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (array, index))? };
+        let __cordl_ret: char = unsafe {
+            cordl_method_info.invoke_unchecked((), (array, index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCharField(
@@ -3110,7 +3124,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<char> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3126,7 +3140,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (obj, fieldID))? };
+        let __cordl_ret: char = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj, fieldID))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDirectBuffer<T>(
@@ -3137,7 +3153,7 @@ impl crate::UnityEngine::AndroidJNI {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3154,7 +3170,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::Unity::Collections::NativeArray_1<T> = unsafe {
-            method.invoke_unchecked((), (buffer))?
+            cordl_method_info.invoke_unchecked((), (buffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3164,7 +3180,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3182,14 +3198,14 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (buffer))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (buffer))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDirectBufferCapacity(
         buffer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3205,14 +3221,16 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (buffer))? };
+        let __cordl_ret: i64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (buffer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDirectByteBuffer(
         buffer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeArray_1<u8>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3229,7 +3247,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::Unity::Collections::NativeArray_1<u8> = unsafe {
-            method.invoke_unchecked((), (buffer))?
+            cordl_method_info.invoke_unchecked((), (buffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3237,7 +3255,7 @@ impl crate::UnityEngine::AndroidJNI {
         buffer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeArray_1<i8>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3254,7 +3272,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::Unity::Collections::NativeArray_1<i8> = unsafe {
-            method.invoke_unchecked((), (buffer))?
+            cordl_method_info.invoke_unchecked((), (buffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3263,7 +3281,7 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3279,7 +3297,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (array, index))? };
+        let __cordl_ret: f64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (array, index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDoubleField(
@@ -3287,7 +3307,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3303,7 +3323,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (obj, fieldID))? };
+        let __cordl_ret: f64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj, fieldID))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetFieldID(
@@ -3312,7 +3334,7 @@ impl crate::UnityEngine::AndroidJNI {
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3337,7 +3359,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (clazz, name, sig))?
+            cordl_method_info.invoke_unchecked((), (clazz, name, sig))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3346,7 +3368,7 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3362,7 +3384,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (array, index))? };
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (array, index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetFloatField(
@@ -3370,7 +3394,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3386,7 +3410,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (obj, fieldID))? };
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj, fieldID))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetIntArrayElement(
@@ -3394,7 +3420,7 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3410,7 +3436,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array, index))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (array, index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetIntField(
@@ -3418,7 +3446,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3434,12 +3462,14 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (obj, fieldID))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj, fieldID))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetJavaVM() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), crate::System::IntPtr, 0usize>("GetJavaVM")
@@ -3452,7 +3482,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3461,7 +3491,7 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3477,7 +3507,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (array, index))? };
+        let __cordl_ret: i64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (array, index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetLongField(
@@ -3485,7 +3517,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3501,7 +3533,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (obj, fieldID))? };
+        let __cordl_ret: i64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj, fieldID))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetMethodID(
@@ -3510,7 +3544,7 @@ impl crate::UnityEngine::AndroidJNI {
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3535,7 +3569,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (clazz, name, sig))?
+            cordl_method_info.invoke_unchecked((), (clazz, name, sig))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3544,7 +3578,7 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3561,7 +3595,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array, index))?
+            cordl_method_info.invoke_unchecked((), (array, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3569,7 +3603,7 @@ impl crate::UnityEngine::AndroidJNI {
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3586,7 +3620,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (obj))?
+            cordl_method_info.invoke_unchecked((), (obj))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3595,7 +3629,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3612,13 +3646,13 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (obj, fieldID))?
+            cordl_method_info.invoke_unchecked((), (obj, fieldID))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetQueueGlobalRefsCount() -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u32, 0usize>("GetQueueGlobalRefsCount")
@@ -3630,7 +3664,7 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSByteArrayElement(
@@ -3638,7 +3672,7 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3654,7 +3688,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i8 = unsafe { method.invoke_unchecked((), (array, index))? };
+        let __cordl_ret: i8 = unsafe {
+            cordl_method_info.invoke_unchecked((), (array, index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetSByteField(
@@ -3662,7 +3698,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3678,7 +3714,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i8 = unsafe { method.invoke_unchecked((), (obj, fieldID))? };
+        let __cordl_ret: i8 = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj, fieldID))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetShortArrayElement(
@@ -3686,7 +3724,7 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i16> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3702,7 +3740,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i16 = unsafe { method.invoke_unchecked((), (array, index))? };
+        let __cordl_ret: i16 = unsafe {
+            cordl_method_info.invoke_unchecked((), (array, index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetShortField(
@@ -3710,7 +3750,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i16> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3726,7 +3766,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i16 = unsafe { method.invoke_unchecked((), (obj, fieldID))? };
+        let __cordl_ret: i16 = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj, fieldID))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticBooleanField(
@@ -3734,7 +3776,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3751,7 +3793,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (clazz, fieldID))?
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3760,7 +3802,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3776,7 +3818,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (clazz, fieldID))? };
+        let __cordl_ret: u8 = unsafe {
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticCharField(
@@ -3784,7 +3828,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<char> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3801,7 +3845,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: char = unsafe {
-            method.invoke_unchecked((), (clazz, fieldID))?
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3810,7 +3854,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3826,7 +3870,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (clazz, fieldID))? };
+        let __cordl_ret: f64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticFieldID(
@@ -3835,7 +3881,7 @@ impl crate::UnityEngine::AndroidJNI {
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3860,7 +3906,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (clazz, name, sig))?
+            cordl_method_info.invoke_unchecked((), (clazz, name, sig))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3869,7 +3915,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3885,7 +3931,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (clazz, fieldID))? };
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticIntField(
@@ -3893,7 +3941,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3909,7 +3957,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (clazz, fieldID))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticLongField(
@@ -3917,7 +3967,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3933,7 +3983,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (clazz, fieldID))? };
+        let __cordl_ret: i64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticMethodID(
@@ -3942,7 +3994,7 @@ impl crate::UnityEngine::AndroidJNI {
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3967,7 +4019,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (clazz, name, sig))?
+            cordl_method_info.invoke_unchecked((), (clazz, name, sig))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3976,7 +4028,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3993,7 +4045,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (clazz, fieldID))?
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4002,7 +4054,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4018,7 +4070,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i8 = unsafe { method.invoke_unchecked((), (clazz, fieldID))? };
+        let __cordl_ret: i8 = unsafe {
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticShortField(
@@ -4026,7 +4080,7 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i16> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4042,7 +4096,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i16 = unsafe { method.invoke_unchecked((), (clazz, fieldID))? };
+        let __cordl_ret: i16 = unsafe {
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticStringField(
@@ -4052,7 +4108,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4070,7 +4126,7 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (clazz, fieldID))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (clazz, fieldID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetStringChars(
@@ -4079,7 +4135,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4097,7 +4153,7 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (str))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (str))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetStringField(
@@ -4107,7 +4163,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4125,14 +4181,14 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (obj, fieldID))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj, fieldID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetStringLength(
         str: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4148,7 +4204,7 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (str))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (str))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetStringUTFChars(
@@ -4157,7 +4213,7 @@ impl crate::UnityEngine::AndroidJNI {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4175,14 +4231,14 @@ impl crate::UnityEngine::AndroidJNI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (str))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (str))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetStringUTFLength(
         str: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4198,14 +4254,14 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (str))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (str))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSuperclass(
         clazz: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4222,13 +4278,13 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (clazz))?
+            cordl_method_info.invoke_unchecked((), (clazz))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetVersion() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("GetVersion")
@@ -4240,7 +4296,7 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsAssignableFrom(
@@ -4248,7 +4304,7 @@ impl crate::UnityEngine::AndroidJNI {
         clazz2: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4265,7 +4321,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (clazz1, clazz2))?
+            cordl_method_info.invoke_unchecked((), (clazz1, clazz2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4274,7 +4330,7 @@ impl crate::UnityEngine::AndroidJNI {
         clazz: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4290,7 +4346,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (obj, clazz))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj, clazz))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsSameObject(
@@ -4298,7 +4356,7 @@ impl crate::UnityEngine::AndroidJNI {
         obj2: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4314,14 +4372,16 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (obj1, obj2))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj1, obj2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewBooleanArray(
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4338,7 +4398,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (_cordl_size))?
+            cordl_method_info.invoke_unchecked((), (_cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4346,7 +4406,7 @@ impl crate::UnityEngine::AndroidJNI {
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4363,7 +4423,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (_cordl_size))?
+            cordl_method_info.invoke_unchecked((), (_cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4371,7 +4431,7 @@ impl crate::UnityEngine::AndroidJNI {
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4388,7 +4448,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (_cordl_size))?
+            cordl_method_info.invoke_unchecked((), (_cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4400,7 +4460,7 @@ impl crate::UnityEngine::AndroidJNI {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4417,7 +4477,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (buffer))?
+            cordl_method_info.invoke_unchecked((), (buffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4426,7 +4486,7 @@ impl crate::UnityEngine::AndroidJNI {
         capacity: i64,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4448,7 +4508,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (buffer, capacity))?
+            cordl_method_info.invoke_unchecked((), (buffer, capacity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4456,7 +4516,7 @@ impl crate::UnityEngine::AndroidJNI {
         buffer: crate::Unity::Collections::NativeArray_1<u8>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4473,7 +4533,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (buffer))?
+            cordl_method_info.invoke_unchecked((), (buffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4481,7 +4541,7 @@ impl crate::UnityEngine::AndroidJNI {
         buffer: crate::Unity::Collections::NativeArray_1<i8>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4498,7 +4558,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (buffer))?
+            cordl_method_info.invoke_unchecked((), (buffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4506,7 +4566,7 @@ impl crate::UnityEngine::AndroidJNI {
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4523,7 +4583,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (_cordl_size))?
+            cordl_method_info.invoke_unchecked((), (_cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4531,7 +4591,7 @@ impl crate::UnityEngine::AndroidJNI {
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4548,7 +4608,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (_cordl_size))?
+            cordl_method_info.invoke_unchecked((), (_cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4556,7 +4616,7 @@ impl crate::UnityEngine::AndroidJNI {
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4573,7 +4633,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (obj))?
+            cordl_method_info.invoke_unchecked((), (obj))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4581,7 +4641,7 @@ impl crate::UnityEngine::AndroidJNI {
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4598,7 +4658,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (_cordl_size))?
+            cordl_method_info.invoke_unchecked((), (_cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4606,7 +4666,7 @@ impl crate::UnityEngine::AndroidJNI {
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4623,7 +4683,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (obj))?
+            cordl_method_info.invoke_unchecked((), (obj))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4631,7 +4691,7 @@ impl crate::UnityEngine::AndroidJNI {
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4648,7 +4708,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (_cordl_size))?
+            cordl_method_info.invoke_unchecked((), (_cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4658,7 +4718,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4681,7 +4741,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4691,7 +4751,7 @@ impl crate::UnityEngine::AndroidJNI {
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4708,7 +4768,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (_cordl_size, clazz, obj))?
+            cordl_method_info.invoke_unchecked((), (_cordl_size, clazz, obj))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4720,7 +4780,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4745,7 +4805,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4755,7 +4815,7 @@ impl crate::UnityEngine::AndroidJNI {
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4776,7 +4836,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, args))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4784,7 +4844,7 @@ impl crate::UnityEngine::AndroidJNI {
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4801,7 +4861,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (_cordl_size))?
+            cordl_method_info.invoke_unchecked((), (_cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4809,7 +4869,7 @@ impl crate::UnityEngine::AndroidJNI {
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4826,7 +4886,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (_cordl_size))?
+            cordl_method_info.invoke_unchecked((), (_cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4834,7 +4894,7 @@ impl crate::UnityEngine::AndroidJNI {
         chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4851,7 +4911,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (chars))?
+            cordl_method_info.invoke_unchecked((), (chars))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4859,7 +4919,7 @@ impl crate::UnityEngine::AndroidJNI {
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4876,7 +4936,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (bytes))?
+            cordl_method_info.invoke_unchecked((), (bytes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4884,7 +4944,7 @@ impl crate::UnityEngine::AndroidJNI {
         chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4903,7 +4963,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (chars))?
+            cordl_method_info.invoke_unchecked((), (chars))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4911,7 +4971,7 @@ impl crate::UnityEngine::AndroidJNI {
         chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4928,7 +4988,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (chars))?
+            cordl_method_info.invoke_unchecked((), (chars))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4936,7 +4996,7 @@ impl crate::UnityEngine::AndroidJNI {
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4953,7 +5013,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (obj))?
+            cordl_method_info.invoke_unchecked((), (obj))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4961,7 +5021,7 @@ impl crate::UnityEngine::AndroidJNI {
         ptr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4978,13 +5038,13 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (ptr))?
+            cordl_method_info.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn PushLocalFrame(capacity: i32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("PushLocalFrame")
@@ -4996,14 +5056,16 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (capacity))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (capacity))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn QueueDeleteGlobalRef(
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5020,7 +5082,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj))?
+            cordl_method_info.invoke_unchecked((), (obj))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5031,7 +5093,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5054,14 +5116,16 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (clazz, methods))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (clazz, methods))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterNativesAllocate(
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5078,7 +5142,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (length))?
+            cordl_method_info.invoke_unchecked((), (length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5088,7 +5152,7 @@ impl crate::UnityEngine::AndroidJNI {
         n: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5105,7 +5169,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (clazz, natives, n))?
+            cordl_method_info.invoke_unchecked((), (clazz, natives, n))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5117,7 +5181,7 @@ impl crate::UnityEngine::AndroidJNI {
         fnPtr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5144,7 +5208,8 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (natives, idx, name, signature, fnPtr))?
+            cordl_method_info
+                .invoke_unchecked((), (natives, idx, name, signature, fnPtr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5154,7 +5219,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5171,7 +5236,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, index, val))?
+            cordl_method_info.invoke_unchecked((), (array, index, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5181,7 +5246,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5198,7 +5263,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, index, val))?
+            cordl_method_info.invoke_unchecked((), (array, index, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5208,7 +5273,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5225,7 +5290,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (obj, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5235,7 +5300,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: i8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5252,7 +5317,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, index, val))?
+            cordl_method_info.invoke_unchecked((), (array, index, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5262,7 +5327,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5279,7 +5344,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (obj, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5289,7 +5354,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5306,7 +5371,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, index, val))?
+            cordl_method_info.invoke_unchecked((), (array, index, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5316,7 +5381,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5333,7 +5398,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (obj, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5343,7 +5408,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5360,7 +5425,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, index, val))?
+            cordl_method_info.invoke_unchecked((), (array, index, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5370,7 +5435,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5387,7 +5452,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (obj, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5397,7 +5462,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5414,7 +5479,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, index, val))?
+            cordl_method_info.invoke_unchecked((), (array, index, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5424,7 +5489,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5441,7 +5506,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (obj, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5451,7 +5516,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5468,7 +5533,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, index, val))?
+            cordl_method_info.invoke_unchecked((), (array, index, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5478,7 +5543,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5495,7 +5560,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (obj, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5505,7 +5570,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5522,7 +5587,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, index, val))?
+            cordl_method_info.invoke_unchecked((), (array, index, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5532,7 +5597,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5549,7 +5614,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (obj, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5559,7 +5624,7 @@ impl crate::UnityEngine::AndroidJNI {
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5576,7 +5641,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, index, obj))?
+            cordl_method_info.invoke_unchecked((), (array, index, obj))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5586,7 +5651,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5607,7 +5672,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (obj, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5617,7 +5682,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: i8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5634,7 +5699,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, index, val))?
+            cordl_method_info.invoke_unchecked((), (array, index, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5644,7 +5709,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: i8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5661,7 +5726,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (obj, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5671,7 +5736,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5688,7 +5753,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, index, val))?
+            cordl_method_info.invoke_unchecked((), (array, index, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5698,7 +5763,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5715,7 +5780,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (obj, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5725,7 +5790,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5742,7 +5807,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (clazz, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5752,7 +5817,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5769,7 +5834,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (clazz, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5779,7 +5844,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5796,7 +5861,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (clazz, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5806,7 +5871,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5823,7 +5888,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (clazz, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5833,7 +5898,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5850,7 +5915,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (clazz, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5860,7 +5925,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5877,7 +5942,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (clazz, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5887,7 +5952,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5904,7 +5969,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (clazz, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5914,7 +5979,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5935,7 +6000,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (clazz, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5945,7 +6010,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: i8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5962,7 +6027,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (clazz, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5972,7 +6037,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5989,7 +6054,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (clazz, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5999,7 +6064,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6022,7 +6087,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (clazz, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6032,7 +6097,7 @@ impl crate::UnityEngine::AndroidJNI {
         val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6055,13 +6120,13 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj, fieldID, val))?
+            cordl_method_info.invoke_unchecked((), (obj, fieldID, val))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Throw(obj: crate::System::IntPtr) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(crate::System::IntPtr), i32, 1usize>("Throw")
@@ -6073,7 +6138,7 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (obj))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowNew(
@@ -6081,7 +6146,7 @@ impl crate::UnityEngine::AndroidJNI {
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6102,14 +6167,16 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (clazz, message))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (clazz, message))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToBooleanArray(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6128,7 +6195,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array))?
+            cordl_method_info.invoke_unchecked((), (array))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6136,7 +6203,7 @@ impl crate::UnityEngine::AndroidJNI {
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6155,7 +6222,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array))?
+            cordl_method_info.invoke_unchecked((), (array))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6163,7 +6230,7 @@ impl crate::UnityEngine::AndroidJNI {
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6182,7 +6249,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array))?
+            cordl_method_info.invoke_unchecked((), (array))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6191,7 +6258,7 @@ impl crate::UnityEngine::AndroidJNI {
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6213,7 +6280,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array, length))?
+            cordl_method_info.invoke_unchecked((), (array, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6221,7 +6288,7 @@ impl crate::UnityEngine::AndroidJNI {
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f64>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6240,7 +6307,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array))?
+            cordl_method_info.invoke_unchecked((), (array))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6249,7 +6316,7 @@ impl crate::UnityEngine::AndroidJNI {
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6271,7 +6338,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array, length))?
+            cordl_method_info.invoke_unchecked((), (array, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6279,7 +6346,7 @@ impl crate::UnityEngine::AndroidJNI {
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6298,7 +6365,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array))?
+            cordl_method_info.invoke_unchecked((), (array))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6307,7 +6374,7 @@ impl crate::UnityEngine::AndroidJNI {
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6329,7 +6396,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array, length))?
+            cordl_method_info.invoke_unchecked((), (array, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6337,7 +6404,7 @@ impl crate::UnityEngine::AndroidJNI {
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6356,7 +6423,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array))?
+            cordl_method_info.invoke_unchecked((), (array))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6365,7 +6432,7 @@ impl crate::UnityEngine::AndroidJNI {
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6387,7 +6454,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array, length))?
+            cordl_method_info.invoke_unchecked((), (array, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6395,7 +6462,7 @@ impl crate::UnityEngine::AndroidJNI {
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6414,7 +6481,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array))?
+            cordl_method_info.invoke_unchecked((), (array))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6423,7 +6490,7 @@ impl crate::UnityEngine::AndroidJNI {
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6445,7 +6512,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array, length))?
+            cordl_method_info.invoke_unchecked((), (array, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6455,7 +6522,7 @@ impl crate::UnityEngine::AndroidJNI {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6474,7 +6541,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array))?
+            cordl_method_info.invoke_unchecked((), (array))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6485,7 +6552,7 @@ impl crate::UnityEngine::AndroidJNI {
         arrayClass: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6507,7 +6574,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array, arrayClass))?
+            cordl_method_info.invoke_unchecked((), (array, arrayClass))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6517,7 +6584,7 @@ impl crate::UnityEngine::AndroidJNI {
         arrayClass: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6540,7 +6607,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array, length, arrayClass))?
+            cordl_method_info.invoke_unchecked((), (array, length, arrayClass))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6550,7 +6617,7 @@ impl crate::UnityEngine::AndroidJNI {
         isStatic: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6567,7 +6634,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (clazz, fieldID, isStatic))?
+            cordl_method_info.invoke_unchecked((), (clazz, fieldID, isStatic))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6577,7 +6644,7 @@ impl crate::UnityEngine::AndroidJNI {
         isStatic: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6594,7 +6661,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (clazz, methodID, isStatic))?
+            cordl_method_info.invoke_unchecked((), (clazz, methodID, isStatic))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6602,7 +6669,7 @@ impl crate::UnityEngine::AndroidJNI {
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i8>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6621,7 +6688,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array))?
+            cordl_method_info.invoke_unchecked((), (array))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6630,7 +6697,7 @@ impl crate::UnityEngine::AndroidJNI {
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6652,7 +6719,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array, length))?
+            cordl_method_info.invoke_unchecked((), (array, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6660,7 +6727,7 @@ impl crate::UnityEngine::AndroidJNI {
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6679,7 +6746,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array))?
+            cordl_method_info.invoke_unchecked((), (array))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6688,7 +6755,7 @@ impl crate::UnityEngine::AndroidJNI {
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6710,7 +6777,7 @@ impl crate::UnityEngine::AndroidJNI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array, length))?
+            cordl_method_info.invoke_unchecked((), (array, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6718,7 +6785,7 @@ impl crate::UnityEngine::AndroidJNI {
         clazz: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6734,7 +6801,9 @@ impl crate::UnityEngine::AndroidJNI {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (clazz))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (clazz))?
+        };
         Ok(__cordl_ret.into())
     }
 }

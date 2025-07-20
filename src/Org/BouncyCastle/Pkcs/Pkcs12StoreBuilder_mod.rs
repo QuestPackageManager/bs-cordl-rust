@@ -58,7 +58,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkcs::Pkcs12Store>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -78,7 +78,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Pkcs::Pkcs12Store,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -97,7 +97,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -119,7 +119,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder,
-        > = unsafe { method.invoke_unchecked(self, (certAlgorithm))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (certAlgorithm))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetKeyAlgorithm_DerObjectIdentifier0(
@@ -131,7 +131,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -153,7 +153,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder,
-        > = unsafe { method.invoke_unchecked(self, (keyAlgorithm))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (keyAlgorithm))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetKeyAlgorithm_DerObjectIdentifier1(
@@ -168,7 +168,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -195,7 +195,9 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder,
-        > = unsafe { method.invoke_unchecked(self, (keyAlgorithm, keyPrfAlgorithm))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (keyAlgorithm, keyPrfAlgorithm))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUseDerEncoding(
@@ -205,7 +207,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -225,14 +227,14 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder,
-        > = unsafe { method.invoke_unchecked(self, (useDerEncoding))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (useDerEncoding))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -245,7 +247,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

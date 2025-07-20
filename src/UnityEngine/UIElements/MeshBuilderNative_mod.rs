@@ -52,7 +52,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         crate::UnityEngine::UIElements::MeshWriteDataInterface,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -72,7 +72,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
-            method.invoke_unchecked((), (borderParams, posZ))?
+            cordl_method_info.invoke_unchecked((), (borderParams, posZ))?
         };
         Ok(__cordl_ret.into())
     }
@@ -86,7 +86,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -111,7 +111,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (borderParams, posZ, ret))?
+            cordl_method_info.invoke_unchecked((), (borderParams, posZ, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -122,7 +122,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         crate::UnityEngine::UIElements::MeshWriteDataInterface,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -142,7 +142,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
-            method.invoke_unchecked((), (rectParams, posZ))?
+            cordl_method_info.invoke_unchecked((), (rectParams, posZ))?
         };
         Ok(__cordl_ret.into())
     }
@@ -156,7 +156,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -181,7 +181,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (rectParams, posZ, ret))?
+            cordl_method_info.invoke_unchecked((), (rectParams, posZ, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -192,7 +192,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         crate::UnityEngine::UIElements::MeshWriteDataInterface,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -212,7 +212,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
-            method.invoke_unchecked((), (rectParams, posZ))?
+            cordl_method_info.invoke_unchecked((), (rectParams, posZ))?
         };
         Ok(__cordl_ret.into())
     }
@@ -226,7 +226,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -251,7 +251,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (rectParams, posZ, ret))?
+            cordl_method_info.invoke_unchecked((), (rectParams, posZ, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -271,7 +271,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         crate::UnityEngine::UIElements::MeshWriteDataInterface,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -304,7 +304,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -341,7 +341,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -379,7 +379,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -417,7 +417,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         crate::UnityEngine::UIElements::MeshWriteDataInterface,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -453,7 +453,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -496,7 +496,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -537,7 +537,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (

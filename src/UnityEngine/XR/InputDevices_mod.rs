@@ -42,7 +42,7 @@ impl crate::UnityEngine::XR::InputDevices {
         node: crate::UnityEngine::XR::XRNode,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::XR::InputDevice> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -59,7 +59,7 @@ impl crate::UnityEngine::XR::InputDevices {
                     })
             });
         let __cordl_ret: crate::UnityEngine::XR::InputDevice = unsafe {
-            method.invoke_unchecked((), (node))?
+            cordl_method_info.invoke_unchecked((), (node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -69,7 +69,7 @@ impl crate::UnityEngine::XR::InputDevices {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -87,7 +87,7 @@ impl crate::UnityEngine::XR::InputDevices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (deviceId))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (deviceId))? };
         Ok(__cordl_ret.into())
     }
     pub fn InvokeConnectionEvent(
@@ -95,7 +95,7 @@ impl crate::UnityEngine::XR::InputDevices {
         change: crate::UnityEngine::XR::ConnectionChangeType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -112,13 +112,13 @@ impl crate::UnityEngine::XR::InputDevices {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (deviceId, change))?
+            cordl_method_info.invoke_unchecked((), (deviceId, change))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsDeviceValid(deviceId: u64) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), bool, 1usize>("IsDeviceValid")
@@ -130,7 +130,9 @@ impl crate::UnityEngine::XR::InputDevices {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (deviceId))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (deviceId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SendHapticImpulse(
@@ -140,7 +142,7 @@ impl crate::UnityEngine::XR::InputDevices {
         duration: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -157,7 +159,8 @@ impl crate::UnityEngine::XR::InputDevices {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (deviceId, channel, amplitude, duration))?
+            cordl_method_info
+                .invoke_unchecked((), (deviceId, channel, amplitude, duration))?
         };
         Ok(__cordl_ret.into())
     }
@@ -165,7 +168,7 @@ impl crate::UnityEngine::XR::InputDevices {
         deviceId: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -182,7 +185,7 @@ impl crate::UnityEngine::XR::InputDevices {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (deviceId))?
+            cordl_method_info.invoke_unchecked((), (deviceId))?
         };
         Ok(__cordl_ret.into())
     }

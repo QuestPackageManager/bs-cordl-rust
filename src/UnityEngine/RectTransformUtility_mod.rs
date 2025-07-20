@@ -44,7 +44,7 @@ impl crate::UnityEngine::RectTransformUtility {
         recursive: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -65,7 +65,7 @@ impl crate::UnityEngine::RectTransformUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (rect, keepPositioning, recursive))?
+            cordl_method_info.invoke_unchecked((), (rect, keepPositioning, recursive))?
         };
         Ok(__cordl_ret.into())
     }
@@ -76,7 +76,7 @@ impl crate::UnityEngine::RectTransformUtility {
         recursive: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -98,7 +98,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (rect, axis, keepPositioning, recursive))?
+            cordl_method_info
+                .invoke_unchecked((), (rect, axis, keepPositioning, recursive))?
         };
         Ok(__cordl_ret.into())
     }
@@ -106,7 +107,7 @@ impl crate::UnityEngine::RectTransformUtility {
         input: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -123,7 +124,7 @@ impl crate::UnityEngine::RectTransformUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (input))?
+            cordl_method_info.invoke_unchecked((), (input))?
         };
         Ok(__cordl_ret.into())
     }
@@ -133,7 +134,7 @@ impl crate::UnityEngine::RectTransformUtility {
         canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -154,7 +155,7 @@ impl crate::UnityEngine::RectTransformUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (point, elementTransform, canvas))?
+            cordl_method_info.invoke_unchecked((), (point, elementTransform, canvas))?
         };
         Ok(__cordl_ret.into())
     }
@@ -165,7 +166,7 @@ impl crate::UnityEngine::RectTransformUtility {
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -187,7 +188,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (point, elementTransform, canvas, ret))?
+            cordl_method_info
+                .invoke_unchecked((), (point, elementTransform, canvas, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -196,7 +198,7 @@ impl crate::UnityEngine::RectTransformUtility {
         canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -216,7 +218,7 @@ impl crate::UnityEngine::RectTransformUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Rect = unsafe {
-            method.invoke_unchecked((), (rectTransform, canvas))?
+            cordl_method_info.invoke_unchecked((), (rectTransform, canvas))?
         };
         Ok(__cordl_ret.into())
     }
@@ -226,7 +228,7 @@ impl crate::UnityEngine::RectTransformUtility {
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -247,7 +249,7 @@ impl crate::UnityEngine::RectTransformUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (rectTransform, canvas, ret))?
+            cordl_method_info.invoke_unchecked((), (rectTransform, canvas, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -258,7 +260,7 @@ impl crate::UnityEngine::RectTransformUtility {
         offset: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -280,7 +282,7 @@ impl crate::UnityEngine::RectTransformUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (screenPoint, rect, cam, offset))?
+            cordl_method_info.invoke_unchecked((), (screenPoint, rect, cam, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -291,7 +293,7 @@ impl crate::UnityEngine::RectTransformUtility {
         offset: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -313,7 +315,7 @@ impl crate::UnityEngine::RectTransformUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (screenPoint, rect, cam, offset))?
+            cordl_method_info.invoke_unchecked((), (screenPoint, rect, cam, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -323,7 +325,7 @@ impl crate::UnityEngine::RectTransformUtility {
         cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -344,7 +346,7 @@ impl crate::UnityEngine::RectTransformUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (rect, screenPoint, cam))?
+            cordl_method_info.invoke_unchecked((), (rect, screenPoint, cam))?
         };
         Ok(__cordl_ret.into())
     }
@@ -355,7 +357,7 @@ impl crate::UnityEngine::RectTransformUtility {
         offset: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -377,7 +379,7 @@ impl crate::UnityEngine::RectTransformUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (rect, screenPoint, cam, offset))?
+            cordl_method_info.invoke_unchecked((), (rect, screenPoint, cam, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -388,7 +390,7 @@ impl crate::UnityEngine::RectTransformUtility {
         localPoint: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -410,7 +412,7 @@ impl crate::UnityEngine::RectTransformUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (rect, screenPoint, cam, localPoint))?
+            cordl_method_info.invoke_unchecked((), (rect, screenPoint, cam, localPoint))?
         };
         Ok(__cordl_ret.into())
     }
@@ -419,7 +421,7 @@ impl crate::UnityEngine::RectTransformUtility {
         screenPos: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Ray> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -439,7 +441,7 @@ impl crate::UnityEngine::RectTransformUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Ray = unsafe {
-            method.invoke_unchecked((), (cam, screenPos))?
+            cordl_method_info.invoke_unchecked((), (cam, screenPos))?
         };
         Ok(__cordl_ret.into())
     }
@@ -450,7 +452,7 @@ impl crate::UnityEngine::RectTransformUtility {
         worldPoint: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -472,7 +474,7 @@ impl crate::UnityEngine::RectTransformUtility {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (rect, screenPoint, cam, worldPoint))?
+            cordl_method_info.invoke_unchecked((), (rect, screenPoint, cam, worldPoint))?
         };
         Ok(__cordl_ret.into())
     }
@@ -481,7 +483,7 @@ impl crate::UnityEngine::RectTransformUtility {
         worldPoint: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -501,7 +503,7 @@ impl crate::UnityEngine::RectTransformUtility {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (cam, worldPoint))?
+            cordl_method_info.invoke_unchecked((), (cam, worldPoint))?
         };
         Ok(__cordl_ret.into())
     }

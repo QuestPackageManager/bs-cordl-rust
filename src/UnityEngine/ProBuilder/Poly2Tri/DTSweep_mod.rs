@@ -47,7 +47,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -65,7 +65,9 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (node))? };
+        let __cordl_ret: f64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (node))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EdgeEvent_DTSweepConstraint_AdvancingFrontNode0(
@@ -80,7 +82,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -107,7 +109,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))?
+            cordl_method_info.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -129,7 +131,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -162,7 +164,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, ep, eq, triangle, point))?
+            cordl_method_info.invoke_unchecked((), (tcx, ep, eq, triangle, point))?
         };
         Ok(__cordl_ret.into())
     }
@@ -175,7 +177,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -199,7 +201,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, node))?
+            cordl_method_info.invoke_unchecked((), (tcx, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -212,7 +214,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -236,7 +238,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, n))?
+            cordl_method_info.invoke_unchecked((), (tcx, n))?
         };
         Ok(__cordl_ret.into())
     }
@@ -249,7 +251,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -273,7 +275,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, node))?
+            cordl_method_info.invoke_unchecked((), (tcx, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -286,7 +288,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -310,7 +312,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, node))?
+            cordl_method_info.invoke_unchecked((), (tcx, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -326,7 +328,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -353,7 +355,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))?
+            cordl_method_info.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -369,7 +371,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -396,7 +398,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))?
+            cordl_method_info.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -412,7 +414,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -439,7 +441,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))?
+            cordl_method_info.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -455,7 +457,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -482,7 +484,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))?
+            cordl_method_info.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -498,7 +500,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -525,7 +527,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))?
+            cordl_method_info.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -541,7 +543,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -568,7 +570,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))?
+            cordl_method_info.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -584,7 +586,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -611,7 +613,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))?
+            cordl_method_info.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -627,7 +629,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -654,7 +656,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))?
+            cordl_method_info.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -670,7 +672,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -697,7 +699,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))?
+            cordl_method_info.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -707,7 +709,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -726,7 +728,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx))?
+            cordl_method_info.invoke_unchecked((), (tcx))?
         };
         Ok(__cordl_ret.into())
     }
@@ -736,7 +738,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -755,7 +757,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx))?
+            cordl_method_info.invoke_unchecked((), (tcx))?
         };
         Ok(__cordl_ret.into())
     }
@@ -777,7 +779,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -810,7 +812,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, ep, eq, t, p))?
+            cordl_method_info.invoke_unchecked((), (tcx, ep, eq, t, p))?
         };
         Ok(__cordl_ret.into())
     }
@@ -835,7 +837,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -871,7 +873,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, ep, eq, flipTriangle, t, p))?
+            cordl_method_info.invoke_unchecked((), (tcx, ep, eq, flipTriangle, t, p))?
         };
         Ok(__cordl_ret.into())
     }
@@ -881,7 +883,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -899,7 +901,9 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (node))? };
+        let __cordl_ret: f64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (node))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsEdgeSideOfTriangle(
@@ -914,7 +918,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -941,7 +945,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (triangle, ep, eq))?
+            cordl_method_info.invoke_unchecked((), (triangle, ep, eq))?
         };
         Ok(__cordl_ret.into())
     }
@@ -954,7 +958,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -977,7 +981,9 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (tcx, node))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (tcx, node))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Legalize(
@@ -989,7 +995,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1012,7 +1018,9 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (tcx, t))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (tcx, t))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewFrontTriangle(
@@ -1031,7 +1039,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1061,7 +1069,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-        > = unsafe { method.invoke_unchecked((), (tcx, point, node))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (tcx, point, node))? };
         Ok(__cordl_ret.into())
     }
     pub fn NextFlipPoint(
@@ -1083,7 +1091,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1116,7 +1124,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        > = unsafe { method.invoke_unchecked((), (ep, eq, ot, op))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (ep, eq, ot, op))? };
         Ok(__cordl_ret.into())
     }
     pub fn NextFlipTriangle(
@@ -1142,7 +1150,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1179,7 +1187,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-        > = unsafe { method.invoke_unchecked((), (tcx, o, t, ot, p, op))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (tcx, o, t, ot, p, op))? };
         Ok(__cordl_ret.into())
     }
     pub fn PointEvent(
@@ -1195,7 +1203,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1222,7 +1230,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-        > = unsafe { method.invoke_unchecked((), (tcx, point))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (tcx, point))? };
         Ok(__cordl_ret.into())
     }
     pub fn RotateTrianglePair(
@@ -1240,7 +1248,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1270,7 +1278,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (t, p, ot, op))?
+            cordl_method_info.invoke_unchecked((), (t, p, ot, op))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1286,7 +1294,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1313,7 +1321,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ep, eq, p))?
+            cordl_method_info.invoke_unchecked((), (ep, eq, p))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1323,7 +1331,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1342,7 +1350,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx))?
+            cordl_method_info.invoke_unchecked((), (tcx))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1352,7 +1360,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1371,7 +1379,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx))?
+            cordl_method_info.invoke_unchecked((), (tcx))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1387,7 +1395,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1414,7 +1422,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, b, c))?
+            cordl_method_info.invoke_unchecked((), (tcx, b, c))?
         };
         Ok(__cordl_ret.into())
     }

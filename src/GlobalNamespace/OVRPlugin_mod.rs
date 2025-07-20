@@ -856,7 +856,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         param: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -879,7 +879,9 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (name, param))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (name, param))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddInsightPassthroughSurfaceGeometry(
@@ -889,7 +891,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         geometryInstanceHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -911,7 +913,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (layerId, meshHandle, T_world_model, geometryInstanceHandle),
@@ -921,7 +923,7 @@ impl crate::GlobalNamespace::OVRPlugin {
     }
     pub fn AreControllerDrivenHandPosesNatural() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -937,7 +939,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn AreHandPosesGeneratedByControllerData(
@@ -945,7 +947,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -965,7 +967,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (stepId, nodeId))?
+            cordl_method_info.invoke_unchecked((), (stepId, nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -979,7 +981,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         layerFlags: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_LayerDesc> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1004,7 +1006,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_LayerDesc = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -1024,7 +1026,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         textContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1041,7 +1043,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (textContext))?
+            cordl_method_info.invoke_unchecked((), (textContext))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1054,7 +1056,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         meshHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1082,7 +1084,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (layerId, vertices, triangles, meshHandle))?
+            cordl_method_info
+                .invoke_unchecked((), (layerId, vertices, triangles, meshHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1093,7 +1096,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         colorLut: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1115,7 +1118,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (channels, resolution, data, colorLut))?
+            cordl_method_info
+                .invoke_unchecked((), (channels, resolution, data, colorLut))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1124,7 +1128,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         spaceUserHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1141,7 +1145,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (spaceUserId, spaceUserHandle))?
+            cordl_method_info.invoke_unchecked((), (spaceUserId, spaceUserHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1150,7 +1154,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1170,7 +1174,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (createInfo, requestId))?
+            cordl_method_info.invoke_unchecked((), (createInfo, requestId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1178,7 +1182,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         createInfo: crate::GlobalNamespace::OVRPlugin_VirtualKeyboardCreateInfo,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1195,7 +1199,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (createInfo))?
+            cordl_method_info.invoke_unchecked((), (createInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1204,7 +1208,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         keyboardSpace: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1224,7 +1228,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (createInfo, keyboardSpace))?
+            cordl_method_info.invoke_unchecked((), (createInfo, keyboardSpace))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1232,7 +1236,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         geometryInstanceHandle: u64,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1249,7 +1253,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (geometryInstanceHandle))?
+            cordl_method_info.invoke_unchecked((), (geometryInstanceHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1257,7 +1261,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         meshHandle: u64,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1273,14 +1277,16 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (meshHandle))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (meshHandle))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DestroyPassthroughColorLut(
         colorLut: u64,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1296,12 +1302,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (colorLut))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (colorLut))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DestroySpace(space: u64) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), bool, 1usize>("DestroySpace")
@@ -1313,14 +1321,16 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (space))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (space))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DestroySpaceUser(
         spaceUserHandle: u64,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), bool, 1usize>("DestroySpaceUser")
@@ -1333,7 +1343,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (spaceUserHandle))?
+            cordl_method_info.invoke_unchecked((), (spaceUserHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1341,7 +1351,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1358,7 +1368,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1366,7 +1376,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         layerID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1382,7 +1392,9 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (layerID))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (layerID))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EnqueueSetupLayer(
@@ -1391,7 +1403,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         layerID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1412,7 +1424,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (desc, compositionDepth, layerID))?
+            cordl_method_info.invoke_unchecked((), (desc, compositionDepth, layerID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1443,7 +1455,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         automaticFiltering: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1485,7 +1497,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -1528,7 +1540,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1553,7 +1565,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (space, numSupportedComponents, supportedComponents),
@@ -1567,7 +1579,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1588,7 +1600,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (space, location, requestId))?
+            cordl_method_info.invoke_unchecked((), (space, location, requestId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1596,7 +1608,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_Controller,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1613,13 +1625,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Controller = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetAdaptiveGPUPerformanceScale() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1635,12 +1647,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAppCpuStartToGpuEndTime() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("GetAppCpuStartToGpuEndTime")
@@ -1652,12 +1664,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAppFramerate() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("GetAppFramerate")
@@ -1669,14 +1681,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAppPerfStats() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_AppPerfStats,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1693,7 +1705,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_AppPerfStats = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1704,7 +1716,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1726,13 +1738,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (stepId, bodyState))?
+            cordl_method_info.invoke_unchecked((), (stepId, bodyState))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetBoundaryConfigured() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("GetBoundaryConfigured")
@@ -1744,14 +1756,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBoundaryDimensions(
         boundaryType: crate::GlobalNamespace::OVRPlugin_BoundaryType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Vector3f> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1768,7 +1780,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Vector3f = unsafe {
-            method.invoke_unchecked((), (boundaryType))?
+            cordl_method_info.invoke_unchecked((), (boundaryType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1778,7 +1790,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_BoundaryGeometry,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1795,7 +1807,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_BoundaryGeometry = unsafe {
-            method.invoke_unchecked((), (boundaryType))?
+            cordl_method_info.invoke_unchecked((), (boundaryType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1805,7 +1817,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         pointsCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1826,13 +1838,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (boundaryType, points, pointsCount))?
+            cordl_method_info.invoke_unchecked((), (boundaryType, points, pointsCount))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetBoundaryVisible() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("GetBoundaryVisible")
@@ -1844,14 +1856,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetConnectedControllers() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_Controller,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1868,7 +1880,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Controller = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1876,7 +1888,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         controllerMask: u32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_HapticsDesc> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1893,7 +1905,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_HapticsDesc = unsafe {
-            method.invoke_unchecked((), (controllerMask))?
+            cordl_method_info.invoke_unchecked((), (controllerMask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1901,7 +1913,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         controllerMask: u32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_HapticsState> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1918,7 +1930,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_HapticsState = unsafe {
-            method.invoke_unchecked((), (controllerMask))?
+            cordl_method_info.invoke_unchecked((), (controllerMask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1927,7 +1939,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1947,7 +1959,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (stepId, nodeId))?
+            cordl_method_info.invoke_unchecked((), (stepId, nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1956,7 +1968,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         sampleRateHz: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1976,7 +1988,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (controllerMask, sampleRateHz))?
+            cordl_method_info.invoke_unchecked((), (controllerMask, sampleRateHz))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1986,7 +1998,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_ControllerState,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2003,7 +2015,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_ControllerState = unsafe {
-            method.invoke_unchecked((), (controllerMask))?
+            cordl_method_info.invoke_unchecked((), (controllerMask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2013,7 +2025,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_ControllerState2,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2030,7 +2042,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_ControllerState2 = unsafe {
-            method.invoke_unchecked((), (controllerMask))?
+            cordl_method_info.invoke_unchecked((), (controllerMask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2040,7 +2052,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_ControllerState4,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2057,7 +2069,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_ControllerState4 = unsafe {
-            method.invoke_unchecked((), (controllerMask))?
+            cordl_method_info.invoke_unchecked((), (controllerMask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2067,7 +2079,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_ControllerState5,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2084,7 +2096,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_ControllerState5 = unsafe {
-            method.invoke_unchecked((), (controllerMask))?
+            cordl_method_info.invoke_unchecked((), (controllerMask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2094,7 +2106,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_ControllerState6,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2111,7 +2123,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_ControllerState6 = unsafe {
-            method.invoke_unchecked((), (controllerMask))?
+            cordl_method_info.invoke_unchecked((), (controllerMask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2121,7 +2133,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_InteractionProfile,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2138,7 +2150,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_InteractionProfile = unsafe {
-            method.invoke_unchecked((), (hand))?
+            cordl_method_info.invoke_unchecked((), (hand))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2148,7 +2160,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_InteractionProfile,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2165,7 +2177,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_InteractionProfile = unsafe {
-            method.invoke_unchecked((), (hand))?
+            cordl_method_info.invoke_unchecked((), (hand))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2173,7 +2185,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_Posef,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2190,7 +2202,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Posef = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2198,7 +2210,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_EyeTextureFormat,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2215,7 +2227,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_EyeTextureFormat = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2223,7 +2235,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_Handedness,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2240,13 +2252,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Handedness = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetExternalCameraCount() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("GetExternalCameraCount")
@@ -2258,14 +2270,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEyeFrustum(
         eyeId: crate::GlobalNamespace::OVRPlugin_Eye,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Frustumf> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2282,7 +2294,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Frustumf = unsafe {
-            method.invoke_unchecked((), (eyeId))?
+            cordl_method_info.invoke_unchecked((), (eyeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2294,7 +2306,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2317,7 +2329,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (stepId, frameIndex, eyeGazesState))?
+            cordl_method_info.invoke_unchecked((), (stepId, frameIndex, eyeGazesState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2327,7 +2339,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2346,13 +2358,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (recommendedSize))?
+            cordl_method_info.invoke_unchecked((), (recommendedSize))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetEyeRecommendedResolutionScale() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2368,14 +2380,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEyeTextureSize(
         eyeId: crate::GlobalNamespace::OVRPlugin_Eye,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Sizei> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2392,7 +2404,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Sizei = unsafe {
-            method.invoke_unchecked((), (eyeId))?
+            cordl_method_info.invoke_unchecked((), (eyeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2404,7 +2416,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2427,7 +2439,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (stepId, frameIndex, faceState))?
+            cordl_method_info.invoke_unchecked((), (stepId, frameIndex, faceState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2439,7 +2451,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2462,13 +2474,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (stepId, frameIndex, faceState))?
+            cordl_method_info.invoke_unchecked((), (stepId, frameIndex, faceState))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetHandNodePoseStateLatency() -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f64, 0usize>("GetHandNodePoseStateLatency")
@@ -2480,7 +2492,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHandState(
@@ -2491,7 +2503,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2514,13 +2526,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (stepId, hand, handState))?
+            cordl_method_info.invoke_unchecked((), (stepId, hand, handState))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetHandTrackingEnabled() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("GetHandTrackingEnabled")
@@ -2532,7 +2544,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHeadPoseModifier(
@@ -2544,7 +2556,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2568,7 +2580,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (relativeRotation, relativeTranslation))?
+            cordl_method_info
+                .invoke_unchecked((), (relativeRotation, relativeTranslation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2576,7 +2589,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_ColorSpace,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2593,7 +2606,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_ColorSpace = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2601,7 +2614,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2618,7 +2631,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2629,7 +2642,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2651,7 +2664,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (stepId, keyboardState))?
+            cordl_method_info.invoke_unchecked((), (stepId, keyboardState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2659,7 +2672,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         layerId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2676,7 +2689,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (layerId))?
+            cordl_method_info.invoke_unchecked((), (layerId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2687,7 +2700,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2709,7 +2722,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (layerId, recommendedSize))?
+            cordl_method_info.invoke_unchecked((), (layerId, recommendedSize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2719,7 +2732,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         eyeId: crate::GlobalNamespace::OVRPlugin_Eye,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2736,7 +2749,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (layerId, stage, eyeId))?
+            cordl_method_info.invoke_unchecked((), (layerId, stage, eyeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2744,7 +2757,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         layerId: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2760,12 +2773,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (layerId))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (layerId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetLocalTrackingSpaceRecenterCount() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2781,7 +2796,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMesh(
@@ -2791,7 +2806,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2815,7 +2830,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (meshType, mesh))?
+            cordl_method_info.invoke_unchecked((), (meshType, mesh))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2829,7 +2844,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2854,13 +2869,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (cameraId, cameraExtrinsics, cameraIntrinsics))?
+            cordl_method_info
+                .invoke_unchecked((), (cameraId, cameraExtrinsics, cameraIntrinsics))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetNativeOpenXRInstance() -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u64, 0usize>("GetNativeOpenXRInstance")
@@ -2872,12 +2888,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNativeOpenXRSession() -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u64, 0usize>("GetNativeOpenXRSession")
@@ -2889,7 +2905,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNodeAcceleration(
@@ -2897,7 +2913,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         stepId: crate::GlobalNamespace::OVRPlugin_Step,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Vector3f> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2917,7 +2933,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Vector3f = unsafe {
-            method.invoke_unchecked((), (nodeId, stepId))?
+            cordl_method_info.invoke_unchecked((), (nodeId, stepId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2926,7 +2942,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         stepId: crate::GlobalNamespace::OVRPlugin_Step,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Vector3f> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2946,7 +2962,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Vector3f = unsafe {
-            method.invoke_unchecked((), (nodeId, stepId))?
+            cordl_method_info.invoke_unchecked((), (nodeId, stepId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2955,7 +2971,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         stepId: crate::GlobalNamespace::OVRPlugin_Step,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Vector3f> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2975,7 +2991,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Vector3f = unsafe {
-            method.invoke_unchecked((), (nodeId, stepId))?
+            cordl_method_info.invoke_unchecked((), (nodeId, stepId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2986,7 +3002,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3008,7 +3024,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (nodeId, frustum))?
+            cordl_method_info.invoke_unchecked((), (nodeId, frustum))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3016,7 +3032,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3032,14 +3048,16 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (nodeId))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (nodeId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNodeOrientationValid(
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3055,7 +3073,9 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (nodeId))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (nodeId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNodePose(
@@ -3063,7 +3083,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         stepId: crate::GlobalNamespace::OVRPlugin_Step,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Posef> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3083,7 +3103,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Posef = unsafe {
-            method.invoke_unchecked((), (nodeId, stepId))?
+            cordl_method_info.invoke_unchecked((), (nodeId, stepId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3092,7 +3112,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_PoseStatef> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3109,7 +3129,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PoseStatef = unsafe {
-            method.invoke_unchecked((), (_cordl_time, nodeId))?
+            cordl_method_info.invoke_unchecked((), (_cordl_time, nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3117,7 +3137,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_PoseStatef> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3134,7 +3154,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PoseStatef = unsafe {
-            method.invoke_unchecked((), (nodeId))?
+            cordl_method_info.invoke_unchecked((), (nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3143,7 +3163,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         stepId: crate::GlobalNamespace::OVRPlugin_Step,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_PoseStatef> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3163,7 +3183,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PoseStatef = unsafe {
-            method.invoke_unchecked((), (nodeId, stepId))?
+            cordl_method_info.invoke_unchecked((), (nodeId, stepId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3171,7 +3191,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3187,14 +3207,16 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (nodeId))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (nodeId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNodePositionValid(
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3210,14 +3232,16 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (nodeId))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (nodeId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNodePresent(
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3233,7 +3257,9 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (nodeId))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (nodeId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNodeVelocity(
@@ -3241,7 +3267,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         stepId: crate::GlobalNamespace::OVRPlugin_Step,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Vector3f> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3261,7 +3287,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Vector3f = unsafe {
-            method.invoke_unchecked((), (nodeId, stepId))?
+            cordl_method_info.invoke_unchecked((), (nodeId, stepId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3271,7 +3297,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3290,7 +3316,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (outCapabilities))?
+            cordl_method_info.invoke_unchecked((), (outCapabilities))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3298,7 +3324,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_PassthroughCapabilityFlags,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3315,7 +3341,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PassthroughCapabilityFlags = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3325,7 +3351,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3344,7 +3370,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (preferences))?
+            cordl_method_info.invoke_unchecked((), (preferences))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3352,7 +3378,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         perfMetrics: crate::GlobalNamespace::OVRPlugin_PerfMetrics,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<f32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3369,7 +3395,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::System::Nullable_1<f32> = unsafe {
-            method.invoke_unchecked((), (perfMetrics))?
+            cordl_method_info.invoke_unchecked((), (perfMetrics))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3377,7 +3403,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         perfMetrics: crate::GlobalNamespace::OVRPlugin_PerfMetrics,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3394,7 +3420,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::System::Nullable_1<i32> = unsafe {
-            method.invoke_unchecked((), (perfMetrics))?
+            cordl_method_info.invoke_unchecked((), (perfMetrics))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3406,7 +3432,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3432,7 +3458,7 @@ impl crate::GlobalNamespace::OVRPlugin {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRenderModelProperties(
@@ -3442,7 +3468,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3466,7 +3492,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (modelPath, modelProperties))?
+            cordl_method_info.invoke_unchecked((), (modelPath, modelProperties))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3477,7 +3503,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3499,7 +3525,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (skeletonType, skeleton))?
+            cordl_method_info.invoke_unchecked((), (skeletonType, skeleton))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3510,7 +3536,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3532,7 +3558,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (skeletonType, skeleton))?
+            cordl_method_info.invoke_unchecked((), (skeletonType, skeleton))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3541,7 +3567,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         count: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3557,7 +3583,9 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (space, count))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (space, count))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetSpaceBoundary2D_Allocator2(
@@ -3567,7 +3595,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector2>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3587,7 +3615,7 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: crate::Unity::Collections::NativeArray_1<
             crate::UnityEngine::Vector2,
-        > = unsafe { method.invoke_unchecked((), (space, allocator))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (space, allocator))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSpaceBoundary2D_ByRefMut3(
@@ -3599,7 +3627,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3625,7 +3653,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (space, boundary))?
+            cordl_method_info.invoke_unchecked((), (space, boundary))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3634,7 +3662,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         boundary: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3656,7 +3684,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (space, boundary))?
+            cordl_method_info.invoke_unchecked((), (space, boundary))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3666,7 +3694,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         count: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3689,7 +3717,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (space, boundary, count))?
+            cordl_method_info.invoke_unchecked((), (space, boundary, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3698,7 +3726,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         rect: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Rectf>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3719,7 +3747,9 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (space, rect))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (space, rect))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetSpaceBoundingBox3D(
@@ -3729,7 +3759,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3750,7 +3780,9 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (space, bounds))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (space, bounds))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetSpaceComponentStatus(
@@ -3760,7 +3792,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         changePending: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3782,7 +3814,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (space, componentType, enabled, changePending))?
+            cordl_method_info
+                .invoke_unchecked((), (space, componentType, enabled, changePending))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3793,7 +3826,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         changePending: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3815,7 +3848,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (space, componentType, enabled, changePending))?
+            cordl_method_info
+                .invoke_unchecked((), (space, componentType, enabled, changePending))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3828,7 +3862,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3852,7 +3886,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (space, containerUuids))?
+            cordl_method_info.invoke_unchecked((), (space, containerUuids))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3863,7 +3897,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3885,7 +3919,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (space, roomLayout))?
+            cordl_method_info.invoke_unchecked((), (space, roomLayout))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3896,7 +3930,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3919,7 +3953,9 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (space, labels))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (space, labels))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetSpaceTriangleMesh(
@@ -3928,7 +3964,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         triangles: crate::Unity::Collections::NativeArray_1<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3951,7 +3987,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (space, vertices, triangles))?
+            cordl_method_info.invoke_unchecked((), (space, vertices, triangles))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3961,7 +3997,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         triangleCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3982,7 +4018,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (space, vertexCount, triangleCount))?
+            cordl_method_info.invoke_unchecked((), (space, vertexCount, triangleCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3991,7 +4027,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         spaceUserId: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4008,7 +4044,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (spaceUserHandle, spaceUserId))?
+            cordl_method_info.invoke_unchecked((), (spaceUserHandle, spaceUserId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4017,7 +4053,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         uuid: quest_hook::libil2cpp::ByRefMut<crate::System::Guid>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4033,14 +4069,16 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (space, uuid))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (space, uuid))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetSystemHeadsetType() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_SystemHeadset,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4057,13 +4095,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SystemHeadset = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetSystemHmd3DofModeEnabled() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4079,7 +4117,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSystemKeyboardDescription(
@@ -4089,7 +4127,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4111,13 +4149,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (keyboardQueryFlags, keyboardDescription))?
+            cordl_method_info
+                .invoke_unchecked((), (keyboardQueryFlags, keyboardDescription))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetTimeInSeconds() -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f64, 0usize>("GetTimeInSeconds")
@@ -4129,14 +4168,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTrackerFrustum(
         trackerId: crate::GlobalNamespace::OVRPlugin_Tracker,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Frustumf> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4153,7 +4192,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Frustumf = unsafe {
-            method.invoke_unchecked((), (trackerId))?
+            cordl_method_info.invoke_unchecked((), (trackerId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4161,7 +4200,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         trackerId: crate::GlobalNamespace::OVRPlugin_Tracker,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Posef> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4178,7 +4217,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Posef = unsafe {
-            method.invoke_unchecked((), (trackerId))?
+            cordl_method_info.invoke_unchecked((), (trackerId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4186,7 +4225,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_Posef,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4203,7 +4242,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Posef = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4211,7 +4250,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_TrackingOrigin,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4228,7 +4267,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_TrackingOrigin = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4236,7 +4275,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_Posef,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4253,7 +4292,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Posef = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4261,7 +4300,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         trackingOrigin: crate::GlobalNamespace::OVRPlugin_TrackingOrigin,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Posef> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4278,7 +4317,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Posef = unsafe {
-            method.invoke_unchecked((), (trackingOrigin))?
+            cordl_method_info.invoke_unchecked((), (trackingOrigin))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4286,7 +4325,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         cameraId: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4302,14 +4341,16 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (cameraId))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (cameraId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetUseOverriddenExternalCameraStaticPose(
         cameraId: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4325,7 +4366,9 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (cameraId))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (cameraId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetVirtualKeyboardDirtyTextures(
@@ -4334,7 +4377,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4353,7 +4396,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (textureIds))?
+            cordl_method_info.invoke_unchecked((), (textureIds))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4363,7 +4406,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4382,7 +4425,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (animationStates))?
+            cordl_method_info.invoke_unchecked((), (animationStates))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4390,7 +4433,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         scale: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4407,7 +4450,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (scale))?
+            cordl_method_info.invoke_unchecked((), (scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4418,7 +4461,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4440,7 +4483,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (textureId, textureData))?
+            cordl_method_info.invoke_unchecked((), (textureId, textureData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4450,7 +4493,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4468,12 +4511,12 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (guid))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (guid))? };
         Ok(__cordl_ret.into())
     }
     pub fn InitializeInsightPassthrough() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4489,12 +4532,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn InitializeMixedReality() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("InitializeMixedReality")
@@ -4506,12 +4549,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsControllerDrivenHandPosesEnabled() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4527,12 +4570,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsInsightPassthroughInitialized() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4548,12 +4591,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsInsightPassthroughSupported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4569,12 +4612,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsMixedRealityInitialized() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("IsMixedRealityInitialized")
@@ -4586,14 +4629,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsMultimodalHandsControllersSupported() -> quest_hook::libil2cpp::Result<
         bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4609,14 +4652,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsOrientationTracked(
         value: crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4632,14 +4675,16 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsOrientationValid(
         value: crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4655,14 +4700,16 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsPassthroughShape(
         shape: crate::GlobalNamespace::OVRPlugin_OverlayShape,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4678,14 +4725,16 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (shape))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (shape))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsPerfMetricsSupported(
         perfMetrics: crate::GlobalNamespace::OVRPlugin_PerfMetrics,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4701,14 +4750,16 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (perfMetrics))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (perfMetrics))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsPositionTracked(
         value: crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4724,14 +4775,16 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsPositionValid(
         value: crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4747,14 +4800,16 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsSuccess(
         result: crate::GlobalNamespace::OVRPlugin_Result,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4770,7 +4825,9 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (result))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (result))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidBone(
@@ -4778,7 +4835,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         skeletonType: crate::GlobalNamespace::OVRPlugin_SkeletonType,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4798,7 +4855,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (bone, skeletonType))?
+            cordl_method_info.invoke_unchecked((), (bone, skeletonType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4808,7 +4865,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4828,7 +4885,7 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (modelKey))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (modelKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn LocateSpace(
@@ -4836,7 +4893,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         baseOrigin: crate::GlobalNamespace::OVRPlugin_TrackingOrigin,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Posef> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4853,7 +4910,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Posef = unsafe {
-            method.invoke_unchecked((), (space, baseOrigin))?
+            cordl_method_info.invoke_unchecked((), (space, baseOrigin))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4861,7 +4918,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         quest_hook::libil2cpp::Void,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4878,7 +4935,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4888,7 +4945,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         fov: crate::GlobalNamespace::OVRPlugin_Fovf,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4905,7 +4962,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (cameraId, useOverriddenFov, fov))?
+            cordl_method_info.invoke_unchecked((), (cameraId, useOverriddenFov, fov))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4915,7 +4972,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         poseInStageOrigin: crate::GlobalNamespace::OVRPlugin_Posef,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4932,7 +4989,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (cameraId, useOverriddenPose, poseInStageOrigin))?
         };
         Ok(__cordl_ret.into())
@@ -4943,7 +5000,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4962,7 +5019,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (eventDataBuffer))?
+            cordl_method_info.invoke_unchecked((), (eventDataBuffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4971,7 +5028,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4991,7 +5048,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (queryInfo, requestId))?
+            cordl_method_info.invoke_unchecked((), (queryInfo, requestId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4999,7 +5056,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         flags: crate::GlobalNamespace::OVRPlugin_RecenterFlags,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5015,7 +5072,9 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (flags))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (flags))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RequestSceneCapture(
@@ -5023,7 +5082,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5045,13 +5104,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (requestString, requestId))?
+            cordl_method_info.invoke_unchecked((), (requestString, requestId))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ResetAppPerfStats() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("ResetAppPerfStats")
@@ -5063,12 +5122,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ResetDefaultExternalCamera() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("ResetDefaultExternalCamera")
@@ -5080,7 +5139,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RetrieveSpaceQueryResults_Allocator0(
@@ -5093,7 +5152,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         allocator: crate::Unity::Collections::Allocator,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5118,7 +5177,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (requestId, results, allocator))?
+            cordl_method_info.invoke_unchecked((), (requestId, results, allocator))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5133,7 +5192,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5159,7 +5218,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (requestId, results))?
+            cordl_method_info.invoke_unchecked((), (requestId, results))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5170,7 +5229,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5192,7 +5251,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (space, location, mode, requestId))?
+            cordl_method_info.invoke_unchecked((), (space, location, mode, requestId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5202,7 +5261,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5223,7 +5282,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (spaces, location, requestId))?
+            cordl_method_info.invoke_unchecked((), (spaces, location, requestId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5233,7 +5292,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5260,7 +5319,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (name, param, source))?
+            cordl_method_info.invoke_unchecked((), (name, param, source))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5271,7 +5330,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5293,13 +5352,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (inputInfo, interactorRootPose))?
+            cordl_method_info.invoke_unchecked((), (inputInfo, interactorRootPose))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetBoundaryVisible(value: bool) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(bool), bool, 1usize>("SetBoundaryVisible")
@@ -5311,14 +5370,16 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetClientColorDesc(
         colorSpace: crate::GlobalNamespace::OVRPlugin_ColorSpace,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5334,7 +5395,9 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (colorSpace))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (colorSpace))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetColorScaleAndOffset(
@@ -5343,7 +5406,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         applyToAllLayers: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5360,7 +5423,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (colorScale, colorOffset, applyToAllLayers))?
+            cordl_method_info
+                .invoke_unchecked((), (colorScale, colorOffset, applyToAllLayers))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5368,7 +5432,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         controllerDrivenHandPoses: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5385,7 +5449,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (controllerDrivenHandPoses))?
+            cordl_method_info.invoke_unchecked((), (controllerDrivenHandPoses))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5393,7 +5457,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         controllerDrivenHandPosesAreNatural: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5410,7 +5474,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (controllerDrivenHandPosesAreNatural))?
+            cordl_method_info
+                .invoke_unchecked((), (controllerDrivenHandPosesAreNatural))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5419,7 +5484,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         hapticsBuffer: crate::GlobalNamespace::OVRPlugin_HapticsBuffer,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5436,7 +5501,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (controllerMask, hapticsBuffer))?
+            cordl_method_info.invoke_unchecked((), (controllerMask, hapticsBuffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5445,7 +5510,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         hapticsVibration: crate::GlobalNamespace::OVRPlugin_HapticsAmplitudeEnvelopeVibration,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5465,7 +5530,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (controllerMask, hapticsVibration))?
+            cordl_method_info.invoke_unchecked((), (controllerMask, hapticsVibration))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5474,7 +5539,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         hapticsVibration: crate::GlobalNamespace::OVRPlugin_HapticsPcmVibration,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5494,7 +5559,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (controllerMask, hapticsVibration))?
+            cordl_method_info.invoke_unchecked((), (controllerMask, hapticsVibration))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5505,7 +5570,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         amplitude: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5527,7 +5592,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (controllerMask, hapticsLocationMask, frequency, amplitude),
@@ -5541,7 +5606,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         amplitude: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5558,7 +5623,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (controllerMask, frequency, amplitude))?
+            cordl_method_info
+                .invoke_unchecked((), (controllerMask, frequency, amplitude))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5572,7 +5638,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5599,7 +5665,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (cameraName, cameraIntrinsics, cameraExtrinsics))?
         };
         Ok(__cordl_ret.into())
@@ -5608,7 +5674,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: crate::GlobalNamespace::OVRPlugin_EyeTextureFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5624,14 +5690,16 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetDeveloperMode(
         active: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5647,7 +5715,9 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (active))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (active))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetExternalCameraProperties(
@@ -5660,7 +5730,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5687,7 +5757,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (cameraName, cameraIntrinsics, cameraExtrinsics))?
         };
         Ok(__cordl_ret.into())
@@ -5696,7 +5766,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         sharpenType: crate::GlobalNamespace::OVRPlugin_LayerSharpenType,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5712,14 +5782,16 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (sharpenType))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (sharpenType))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetHandNodePoseStateLatency(
         latencyInSeconds: f64,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5736,7 +5808,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (latencyInSeconds))?
+            cordl_method_info.invoke_unchecked((), (latencyInSeconds))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5749,7 +5821,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5773,7 +5845,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (relativeRotation, relativeTranslation))?
+            cordl_method_info
+                .invoke_unchecked((), (relativeRotation, relativeTranslation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5782,7 +5855,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         intensity: crate::GlobalNamespace::OVRPlugin_InsightPassthroughKeyboardHandsIntensity,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5802,7 +5875,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (layerId, intensity))?
+            cordl_method_info.invoke_unchecked((), (layerId, intensity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5811,7 +5884,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         style: crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5828,7 +5901,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (layerId, style))?
+            cordl_method_info.invoke_unchecked((), (layerId, style))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5837,7 +5910,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         style: crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle2,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5857,7 +5930,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (layerId, style))?
+            cordl_method_info.invoke_unchecked((), (layerId, style))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5865,7 +5938,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         uv: crate::GlobalNamespace::OVRPlugin_Vector2f,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5881,7 +5954,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (uv))? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (uv))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetLogCallback2(
@@ -5890,7 +5963,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5909,7 +5982,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (logCallback))?
+            cordl_method_info.invoke_unchecked((), (logCallback))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5917,7 +5990,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5933,14 +6006,16 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSimultaneousHandsAndControllersEnabled(
         enabled: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5956,7 +6031,9 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (enabled))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (enabled))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSpaceComponentStatus(
@@ -5967,7 +6044,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5990,7 +6067,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (space, componentType, enable, timeout, requestId),
@@ -6000,7 +6077,7 @@ impl crate::GlobalNamespace::OVRPlugin {
     }
     pub fn SetTrackingCalibratedOrigin() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6016,14 +6093,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SetTrackingOriginType(
         originType: crate::GlobalNamespace::OVRPlugin_TrackingOrigin,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6039,7 +6116,9 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (originType))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (originType))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVirtualKeyboardModelVisibility(
@@ -6048,7 +6127,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6067,7 +6146,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (visibility))?
+            cordl_method_info.invoke_unchecked((), (visibility))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6077,7 +6156,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6098,7 +6177,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (spaces, userHandles, requestId))?
+            cordl_method_info.invoke_unchecked((), (spaces, userHandles, requestId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6106,7 +6185,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         ui: crate::GlobalNamespace::OVRPlugin_PlatformUI,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6122,12 +6201,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ui))? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (ui))? };
         Ok(__cordl_ret.into())
     }
     pub fn ShutdownInsightPassthrough() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("ShutdownInsightPassthrough")
@@ -6139,12 +6218,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ShutdownMixedReality() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("ShutdownMixedReality")
@@ -6156,12 +6235,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn StartBodyTracking() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("StartBodyTracking")
@@ -6173,12 +6252,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn StartEyeTracking() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("StartEyeTracking")
@@ -6190,12 +6269,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn StartFaceTracking() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("StartFaceTracking")
@@ -6207,14 +6286,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn StartKeyboardTracking(
         trackedKeyboardId: u64,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), bool, 1usize>("StartKeyboardTracking")
@@ -6227,13 +6306,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (trackedKeyboardId))?
+            cordl_method_info.invoke_unchecked((), (trackedKeyboardId))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn StopBodyTracking() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("StopBodyTracking")
@@ -6245,12 +6324,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn StopEyeTracking() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("StopEyeTracking")
@@ -6262,12 +6341,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn StopFaceTracking() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("StopFaceTracking")
@@ -6279,12 +6358,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn StopKeyboardTracking() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("StopKeyboardTracking")
@@ -6296,14 +6375,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SuggestVirtualKeyboardLocation(
         locationInfo: crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationInfo,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6320,7 +6399,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (locationInfo))?
+            cordl_method_info.invoke_unchecked((), (locationInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6331,7 +6410,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_BoundaryTestResult,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6351,7 +6430,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_BoundaryTestResult = unsafe {
-            method.invoke_unchecked((), (nodeId, boundaryType))?
+            cordl_method_info.invoke_unchecked((), (nodeId, boundaryType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6362,7 +6441,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_BoundaryTestResult,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6382,7 +6461,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_BoundaryTestResult = unsafe {
-            method.invoke_unchecked((), (point, boundaryType))?
+            cordl_method_info.invoke_unchecked((), (point, boundaryType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6390,7 +6469,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         b: bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6407,7 +6486,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (b))?
+            cordl_method_info.invoke_unchecked((), (b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6420,7 +6499,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6446,7 +6525,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (space, baseOrigin, pose, locationFlags))?
+            cordl_method_info
+                .invoke_unchecked((), (space, baseOrigin, pose, locationFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6456,7 +6536,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         pose: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Posef>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6479,13 +6559,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (space, baseOrigin, pose))?
+            cordl_method_info.invoke_unchecked((), (space, baseOrigin, pose))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateExternalCamera() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("UpdateExternalCamera")
@@ -6497,7 +6577,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateInsightPassthroughGeometryTransform(
@@ -6505,7 +6585,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         transform: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6522,7 +6602,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (geometryInstanceHandle, transform))?
+            cordl_method_info.invoke_unchecked((), (geometryInstanceHandle, transform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6531,7 +6611,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         predictionSeconds: f64,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6548,7 +6628,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (frameIndex, predictionSeconds))?
+            cordl_method_info.invoke_unchecked((), (frameIndex, predictionSeconds))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6557,7 +6637,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         data: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6574,13 +6654,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (colorLut, data))?
+            cordl_method_info.invoke_unchecked((), (colorLut, data))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_AsymmetricFovEnabled() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_AsymmetricFovEnabled")
@@ -6592,12 +6672,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_EyeTextureArrayEnabled() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_EyeTextureArrayEnabled")
@@ -6609,14 +6689,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_audioInId() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6634,14 +6714,14 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_audioOutId() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6659,12 +6739,12 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_batteryLevel() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_batteryLevel")
@@ -6676,14 +6756,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_batteryStatus() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_BatteryStatus,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6700,13 +6780,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_BatteryStatus = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_batteryTemperature() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_batteryTemperature")
@@ -6718,12 +6798,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_bodyTrackingEnabled() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_bodyTrackingEnabled")
@@ -6735,12 +6815,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_bodyTrackingSupported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_bodyTrackingSupported")
@@ -6752,12 +6832,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_chromatic() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_chromatic")
@@ -6769,12 +6849,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_cpuLevel() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_cpuLevel")
@@ -6786,12 +6866,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_eyeDepth() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_eyeDepth")
@@ -6803,14 +6883,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_eyeFovPremultipliedAlphaModeEnabled() -> quest_hook::libil2cpp::Result<
         bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6826,12 +6906,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_eyeHeight() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_eyeHeight")
@@ -6843,14 +6923,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_eyeTrackedFoveatedRenderingEnabled() -> quest_hook::libil2cpp::Result<
         bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6866,14 +6946,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_eyeTrackedFoveatedRenderingSupported() -> quest_hook::libil2cpp::Result<
         bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6889,12 +6969,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_eyeTrackingEnabled() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_eyeTrackingEnabled")
@@ -6906,12 +6986,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_eyeTrackingSupported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_eyeTrackingSupported")
@@ -6923,12 +7003,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_faceTrackingEnabled() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_faceTrackingEnabled")
@@ -6940,12 +7020,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_faceTrackingSupported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_faceTrackingSupported")
@@ -6957,14 +7037,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_fixedFoveatedRenderingLevel() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_FixedFoveatedRenderingLevel,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6981,13 +7061,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_FixedFoveatedRenderingLevel = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_fixedFoveatedRenderingSupported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7003,14 +7083,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_foveatedRenderingLevel() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_FoveatedRenderingLevel,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7027,13 +7107,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_FoveatedRenderingLevel = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_foveatedRenderingSupported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7049,12 +7129,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_gpuLevel() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_gpuLevel")
@@ -7066,12 +7146,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_gpuUtilLevel() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_gpuUtilLevel")
@@ -7083,12 +7163,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_gpuUtilSupported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_gpuUtilSupported")
@@ -7100,12 +7180,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_hasInputFocus() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_hasInputFocus")
@@ -7117,12 +7197,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_hasVrFocus() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_hasVrFocus")
@@ -7134,12 +7214,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_headphonesPresent() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_headphonesPresent")
@@ -7151,12 +7231,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_hmdPresent() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_hmdPresent")
@@ -7168,12 +7248,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_initialized() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_initialized")
@@ -7185,12 +7265,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ipd() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_ipd")
@@ -7202,14 +7282,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_latency() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7227,12 +7307,12 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_localDimming() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_localDimming")
@@ -7244,12 +7324,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_localDimmingSupported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_localDimmingSupported")
@@ -7261,12 +7341,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_monoscopic() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_monoscopic")
@@ -7278,14 +7358,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_nativeSDKVersion() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7302,7 +7382,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Version> = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -7310,7 +7390,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_XrApi,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7327,13 +7407,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_XrApi = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_occlusionMesh() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_occlusionMesh")
@@ -7345,12 +7425,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_position() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_position")
@@ -7362,12 +7442,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_positionSupported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_positionSupported")
@@ -7379,12 +7459,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_positionTracked() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_positionTracked")
@@ -7396,12 +7476,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_powerSaving() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_powerSaving")
@@ -7413,14 +7493,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_productName() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7438,12 +7518,12 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_recommendedMSAALevel() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_recommendedMSAALevel")
@@ -7455,12 +7535,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_rotation() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_rotation")
@@ -7472,12 +7552,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_shouldQuit() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_shouldQuit")
@@ -7489,12 +7569,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_shouldRecenter() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_shouldRecenter")
@@ -7506,14 +7586,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_suggestedCpuPerfLevel() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7530,7 +7610,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -7538,7 +7618,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7555,7 +7635,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -7563,7 +7643,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7583,12 +7663,12 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<f32>,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_systemDisplayFrequency() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_systemDisplayFrequency")
@@ -7600,14 +7680,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_systemRegion() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_SystemRegion,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7624,13 +7704,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SystemRegion = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_systemVolume() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_systemVolume")
@@ -7642,14 +7722,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_tiledMultiResLevel() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_TiledMultiResLevel,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7666,13 +7746,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_TiledMultiResLevel = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_tiledMultiResSupported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_tiledMultiResSupported")
@@ -7684,14 +7764,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_useDynamicFixedFoveatedRendering() -> quest_hook::libil2cpp::Result<
         bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7707,12 +7787,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_useDynamicFoveatedRendering() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7728,12 +7808,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_useIPDInPositionTracking() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7749,12 +7829,12 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_userPresent() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_userPresent")
@@ -7766,14 +7846,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_version() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7790,13 +7870,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Version> = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_vsyncCount() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_vsyncCount")
@@ -7808,14 +7888,14 @@ impl crate::GlobalNamespace::OVRPlugin {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_chromatic(
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7832,7 +7912,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7840,7 +7920,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7857,7 +7937,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7865,7 +7945,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7882,7 +7962,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7890,7 +7970,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7907,7 +7987,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7915,7 +7995,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7932,7 +8012,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7940,7 +8020,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7957,7 +8037,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7965,7 +8045,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: crate::GlobalNamespace::OVRPlugin_FixedFoveatedRenderingLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7982,7 +8062,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7990,7 +8070,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: crate::GlobalNamespace::OVRPlugin_FoveatedRenderingLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8007,7 +8087,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8015,7 +8095,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8032,7 +8112,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8040,7 +8120,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8057,7 +8137,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8065,7 +8145,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8082,7 +8162,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8090,7 +8170,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8107,7 +8187,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8115,7 +8195,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8132,7 +8212,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8140,7 +8220,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8157,7 +8237,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8165,7 +8245,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8182,7 +8262,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8190,7 +8270,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8207,7 +8287,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8215,7 +8295,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8232,7 +8312,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8240,7 +8320,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8257,7 +8337,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8265,7 +8345,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: crate::GlobalNamespace::OVRPlugin_TiledMultiResLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8282,7 +8362,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8290,7 +8370,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8307,7 +8387,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8315,7 +8395,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8332,7 +8412,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8340,7 +8420,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8357,7 +8437,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8365,7 +8445,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8382,7 +8462,7 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8919,7 +8999,7 @@ for crate::GlobalNamespace::OVRPlugin_BodyJointLocation {
 impl crate::GlobalNamespace::OVRPlugin_BodyJointLocation {
     pub fn get_OrientationTracked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_OrientationTracked")
@@ -8931,12 +9011,12 @@ impl crate::GlobalNamespace::OVRPlugin_BodyJointLocation {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_OrientationValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_OrientationValid")
@@ -8948,12 +9028,12 @@ impl crate::GlobalNamespace::OVRPlugin_BodyJointLocation {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_PositionTracked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_PositionTracked")
@@ -8965,12 +9045,12 @@ impl crate::GlobalNamespace::OVRPlugin_BodyJointLocation {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_PositionValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_PositionValid")
@@ -8982,7 +9062,7 @@ impl crate::GlobalNamespace::OVRPlugin_BodyJointLocation {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -11141,7 +11221,7 @@ impl crate::GlobalNamespace::OVRPlugin_Colorf {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -11159,7 +11239,7 @@ impl crate::GlobalNamespace::OVRPlugin_Colorf {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -11495,7 +11575,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState2 {
         cs: crate::GlobalNamespace::OVRPlugin_ControllerState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -11512,7 +11592,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState2 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (cs))?
+            cordl_method_info.invoke_unchecked(self, (cs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11668,7 +11748,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState4 {
         cs: crate::GlobalNamespace::OVRPlugin_ControllerState2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -11685,7 +11765,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState4 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (cs))?
+            cordl_method_info.invoke_unchecked(self, (cs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11821,7 +11901,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState5 {
         cs: crate::GlobalNamespace::OVRPlugin_ControllerState4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -11838,7 +11918,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState5 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (cs))?
+            cordl_method_info.invoke_unchecked(self, (cs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11976,7 +12056,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState6 {
         cs: crate::GlobalNamespace::OVRPlugin_ControllerState5,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -11993,7 +12073,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState6 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (cs))?
+            cordl_method_info.invoke_unchecked(self, (cs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12403,7 +12483,7 @@ for crate::GlobalNamespace::OVRPlugin_EyeGazeState {
 impl crate::GlobalNamespace::OVRPlugin_EyeGazeState {
     pub fn get_IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsValid")
@@ -12415,7 +12495,7 @@ impl crate::GlobalNamespace::OVRPlugin_EyeGazeState {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -13191,7 +13271,7 @@ impl crate::GlobalNamespace::OVRPlugin_FaceExpressionStatusInternal {
         crate::GlobalNamespace::OVRPlugin_FaceExpressionStatus,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -13208,7 +13288,7 @@ impl crate::GlobalNamespace::OVRPlugin_FaceExpressionStatusInternal {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_FaceExpressionStatus = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -14416,7 +14496,7 @@ impl crate::GlobalNamespace::OVRPlugin_GUID {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -14429,7 +14509,7 @@ impl crate::GlobalNamespace::OVRPlugin_GUID {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -16313,7 +16393,7 @@ impl crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle2 {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -16332,7 +16412,7 @@ impl crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle2 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (target))?
+            cordl_method_info.invoke_unchecked(self, (target))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16875,7 +16955,7 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
         texture: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16891,7 +16971,9 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (texture))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (texture))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetKtxTextureData(
@@ -16900,7 +16982,7 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
         bufferSize: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16917,7 +16999,7 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (texture, textureData, bufferSize))?
+            cordl_method_info.invoke_unchecked((), (texture, textureData, bufferSize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16925,7 +17007,7 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
         texture: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16941,14 +17023,16 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (texture))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (texture))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetKtxTextureSize(
         texture: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16964,14 +17048,16 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (texture))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (texture))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetKtxTextureWidth(
         texture: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16987,7 +17073,9 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (texture))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (texture))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadKtxFromMemory(
@@ -16995,7 +17083,7 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
         length: u32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17012,7 +17100,7 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (dataPtr, length))?
+            cordl_method_info.invoke_unchecked((), (dataPtr, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17028,7 +17116,7 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
         format: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17045,7 +17133,7 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (texture, format))?
+            cordl_method_info.invoke_unchecked((), (texture, format))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17053,7 +17141,7 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -17066,7 +17154,7 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -17205,7 +17293,7 @@ impl crate::GlobalNamespace::OVRPlugin_LayerDesc {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -17223,7 +17311,7 @@ impl crate::GlobalNamespace::OVRPlugin_LayerDesc {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -17349,7 +17437,7 @@ impl crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_LayerDesc> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -17366,7 +17454,7 @@ impl crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_LayerDesc = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -17375,7 +17463,7 @@ impl crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
         layerDesc: crate::GlobalNamespace::OVRPlugin_LayerDesc,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -17392,7 +17480,7 @@ impl crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (layerDesc))?
+            cordl_method_info.invoke_unchecked(self, (layerDesc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17938,7 +18026,7 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -17963,7 +18051,7 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (logLevel, message, _cordl_size, callback, object),
@@ -17976,7 +18064,7 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -17993,7 +18081,7 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (result))?
+            cordl_method_info.invoke_unchecked(self, (result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18004,7 +18092,7 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -18025,7 +18113,7 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (logLevel, message, _cordl_size))?
+            cordl_method_info.invoke_unchecked(self, (logLevel, message, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18045,7 +18133,7 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -18067,7 +18155,7 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))?
+            cordl_method_info.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18231,7 +18319,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         outSyncId: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18259,7 +18347,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -18286,7 +18374,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         outSyncId: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18313,7 +18401,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -18331,7 +18419,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
     }
     pub fn GetInitialized() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("GetInitialized")
@@ -18343,14 +18431,14 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMrcActivationMode() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::Media_OVRPlugin_MrcActivationMode,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18367,13 +18455,13 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::Media_OVRPlugin_MrcActivationMode = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetMrcAudioSampleRate() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("GetMrcAudioSampleRate")
@@ -18385,12 +18473,12 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMrcFrameImageFlipped() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("GetMrcFrameImageFlipped")
@@ -18402,7 +18490,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMrcFrameSize(
@@ -18410,7 +18498,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         frameHeight: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18430,7 +18518,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (frameWidth, frameHeight))?
+            cordl_method_info.invoke_unchecked((), (frameWidth, frameHeight))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18438,7 +18526,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         crate::GlobalNamespace::Media_OVRPlugin_InputVideoBufferType,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18455,7 +18543,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::Media_OVRPlugin_InputVideoBufferType = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -18463,7 +18551,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         crate::GlobalNamespace::Media_OVRPlugin_PlatformCameraMode,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18480,13 +18568,13 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::Media_OVRPlugin_PlatformCameraMode = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("Initialize")
@@ -18498,12 +18586,12 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsCastingToRemoteClient() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("IsCastingToRemoteClient")
@@ -18515,12 +18603,12 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsMrcActivated() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("IsMrcActivated")
@@ -18532,12 +18620,12 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsMrcEnabled() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("IsMrcEnabled")
@@ -18549,7 +18637,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -18563,7 +18651,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         queueIndexVk: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18579,14 +18667,16 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (queueIndexVk))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (queueIndexVk))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetMrcActivationMode(
         mode: crate::GlobalNamespace::Media_OVRPlugin_MrcActivationMode,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18602,14 +18692,16 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mode))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (mode))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetMrcAudioSampleRate(
         sampleRate: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), bool, 1usize>("SetMrcAudioSampleRate")
@@ -18621,14 +18713,16 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (sampleRate))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (sampleRate))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetMrcFrameImageFlipped(
         imageFlipped: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18644,7 +18738,9 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (imageFlipped))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (imageFlipped))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetMrcFrameSize(
@@ -18652,7 +18748,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         frameHeight: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), bool, 2usize>("SetMrcFrameSize")
@@ -18665,7 +18761,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (frameWidth, frameHeight))?
+            cordl_method_info.invoke_unchecked((), (frameWidth, frameHeight))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18675,7 +18771,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         rightControllerPose: crate::GlobalNamespace::OVRPlugin_Posef,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18696,7 +18792,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (headsetPose, leftControllerPose, rightControllerPose),
@@ -18708,7 +18804,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         videoBufferType: crate::GlobalNamespace::Media_OVRPlugin_InputVideoBufferType,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18725,7 +18821,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (videoBufferType))?
+            cordl_method_info.invoke_unchecked((), (videoBufferType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18733,7 +18829,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         mode: crate::GlobalNamespace::Media_OVRPlugin_PlatformCameraMode,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18749,12 +18845,14 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mode))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (mode))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetPlatformInitialized() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("SetPlatformInitialized")
@@ -18766,12 +18864,12 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Shutdown() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("Shutdown")
@@ -18783,12 +18881,12 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SyncMrcFrame(syncId: i32) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), bool, 1usize>("SyncMrcFrame")
@@ -18800,12 +18898,14 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (syncId))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (syncId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Update() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("Update")
@@ -18817,12 +18917,12 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UseMrcDebugCamera() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("UseMrcDebugCamera")
@@ -18834,14 +18934,14 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -18854,7 +18954,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -18938,7 +19038,7 @@ impl crate::GlobalNamespace::OVRPlugin_Mesh {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -18951,7 +19051,7 @@ impl crate::GlobalNamespace::OVRPlugin_Mesh {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -19295,7 +19395,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_0 {
         eyeId: crate::GlobalNamespace::OVRPlugin_Eye,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Sizei> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19312,7 +19412,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Sizei = unsafe {
-            method.invoke_unchecked((), (eyeId))?
+            cordl_method_info.invoke_unchecked((), (eyeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19376,7 +19476,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_1 {
         scale: crate::GlobalNamespace::OVRPlugin_Vector3f,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19400,7 +19500,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_1 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (onTop, headLocked, texture, device, pose, scale))?
         };
         Ok(__cordl_ret.into())
@@ -19460,7 +19560,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_2 {
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Posef> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19477,7 +19577,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_2 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Posef = unsafe {
-            method.invoke_unchecked((), (nodeId))?
+            cordl_method_info.invoke_unchecked((), (nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19487,7 +19587,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_2 {
         amplitude: f32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19504,7 +19604,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_2 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (controllerMask, frequency, amplitude))?
+            cordl_method_info
+                .invoke_unchecked((), (controllerMask, frequency, amplitude))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19563,7 +19664,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_3 {
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Posef> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19580,7 +19681,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_3 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Posef = unsafe {
-            method.invoke_unchecked((), (nodeId))?
+            cordl_method_info.invoke_unchecked((), (nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19588,7 +19689,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_3 {
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Posef> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19605,7 +19706,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_3 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Posef = unsafe {
-            method.invoke_unchecked((), (nodeId))?
+            cordl_method_info.invoke_unchecked((), (nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19714,7 +19815,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0 {
         crate::GlobalNamespace::OVRPlugin_Posef,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19731,7 +19832,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Posef = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -19739,7 +19840,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0 {
         crate::GlobalNamespace::OVRPlugin_TrackingOrigin,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19756,7 +19857,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_TrackingOrigin = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -19764,7 +19865,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0 {
         flags: u32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19781,7 +19882,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (flags))?
+            cordl_method_info.invoke_unchecked((), (flags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19789,7 +19890,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0 {
         originType: crate::GlobalNamespace::OVRPlugin_TrackingOrigin,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19806,7 +19907,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (originType))?
+            cordl_method_info.invoke_unchecked((), (originType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19916,7 +20017,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_11_0 {
         crate::GlobalNamespace::OVRPlugin_EyeTextureFormat,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19933,7 +20034,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_11_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_EyeTextureFormat = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -19941,7 +20042,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_11_0 {
         value: crate::GlobalNamespace::OVRPlugin_EyeTextureFormat,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19958,7 +20059,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_11_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20016,7 +20117,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_12_0 {
 impl crate::GlobalNamespace::OVRPlugin_OVRP_1_12_0 {
     pub fn ovrp_GetAppFramerate() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("ovrp_GetAppFramerate")
@@ -20028,7 +20129,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_12_0 {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetControllerState2(
@@ -20037,7 +20138,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_12_0 {
         crate::GlobalNamespace::OVRPlugin_ControllerState2,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20054,7 +20155,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_12_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_ControllerState2 = unsafe {
-            method.invoke_unchecked((), (controllerMask))?
+            cordl_method_info.invoke_unchecked((), (controllerMask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20063,7 +20164,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_12_0 {
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_PoseStatef> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20083,7 +20184,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_12_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PoseStatef = unsafe {
-            method.invoke_unchecked((), (stepId, nodeId))?
+            cordl_method_info.invoke_unchecked((), (stepId, nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20155,7 +20256,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20185,7 +20286,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -20206,7 +20307,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         layerId: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20223,7 +20324,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (layerId))?
+            cordl_method_info.invoke_unchecked((), (layerId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20234,7 +20335,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         layerId: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20256,7 +20357,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (desc, layerId))?
+            cordl_method_info.invoke_unchecked((), (desc, layerId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20273,7 +20374,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         layerIndex: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20303,7 +20404,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -20324,7 +20425,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         cameraCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20341,7 +20442,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (cameraCount))?
+            cordl_method_info.invoke_unchecked((), (cameraCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20352,7 +20453,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20374,7 +20475,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (cameraId, cameraExtrinsics))?
+            cordl_method_info.invoke_unchecked((), (cameraId, cameraExtrinsics))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20385,7 +20486,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20407,7 +20508,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (cameraId, cameraIntrinsics))?
+            cordl_method_info.invoke_unchecked((), (cameraId, cameraIntrinsics))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20416,7 +20517,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         cameraName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20438,7 +20539,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (cameraId, cameraName))?
+            cordl_method_info.invoke_unchecked((), (cameraId, cameraName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20446,7 +20547,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20463,7 +20564,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -20474,7 +20575,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         textureHandle: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20496,7 +20597,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (layerId, stage, eyeId, textureHandle))?
+            cordl_method_info
+                .invoke_unchecked((), (layerId, stage, eyeId, textureHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20505,7 +20607,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         layerTextureStageCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20522,7 +20624,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (layerId, layerTextureStageCount))?
+            cordl_method_info.invoke_unchecked((), (layerId, layerTextureStageCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20530,7 +20632,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20547,7 +20649,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -20558,7 +20660,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20580,7 +20682,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (nodeId, nodeFrustum))?
+            cordl_method_info.invoke_unchecked((), (nodeId, nodeFrustum))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20588,7 +20690,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20605,7 +20707,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -20613,7 +20715,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20630,7 +20732,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -20638,7 +20740,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20655,7 +20757,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -20715,7 +20817,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         cameraDevice: crate::GlobalNamespace::OVRPlugin_CameraDevice,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20732,7 +20834,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (cameraDevice))?
+            cordl_method_info.invoke_unchecked((), (cameraDevice))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20742,7 +20844,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         colorFrameRowPitch: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20763,7 +20865,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (cameraDevice, colorFrameBgraPixels, colorFrameRowPitch),
@@ -20778,7 +20880,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20800,7 +20902,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (cameraDevice, colorFrameSize))?
+            cordl_method_info.invoke_unchecked((), (cameraDevice, colorFrameSize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20811,7 +20913,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20833,7 +20935,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (controllerMask, controllerState))?
+            cordl_method_info.invoke_unchecked((), (controllerMask, controllerState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20841,7 +20943,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         cameraDevice: crate::GlobalNamespace::OVRPlugin_CameraDevice,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20858,7 +20960,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (cameraDevice))?
+            cordl_method_info.invoke_unchecked((), (cameraDevice))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20866,7 +20968,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         cameraDevice: crate::GlobalNamespace::OVRPlugin_CameraDevice,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20883,7 +20985,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (cameraDevice))?
+            cordl_method_info.invoke_unchecked((), (cameraDevice))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20891,7 +20993,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         cameraDevice: crate::GlobalNamespace::OVRPlugin_CameraDevice,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20908,7 +21010,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (cameraDevice))?
+            cordl_method_info.invoke_unchecked((), (cameraDevice))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20916,7 +21018,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         cameraDevice: crate::GlobalNamespace::OVRPlugin_CameraDevice,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20933,7 +21035,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (cameraDevice))?
+            cordl_method_info.invoke_unchecked((), (cameraDevice))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20942,7 +21044,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         preferredColorFrameSize: crate::GlobalNamespace::OVRPlugin_Sizei,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20962,7 +21064,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (cameraDevice, preferredColorFrameSize))?
+            cordl_method_info
+                .invoke_unchecked((), (cameraDevice, preferredColorFrameSize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20970,7 +21073,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20987,7 +21090,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -21100,7 +21203,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_18_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21119,7 +21222,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_18_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (appHasInputFocus))?
+            cordl_method_info.invoke_unchecked((), (appHasInputFocus))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21127,7 +21230,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_18_0 {
         latencyInSeconds: quest_hook::libil2cpp::ByRefMut<f64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21144,7 +21247,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_18_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (latencyInSeconds))?
+            cordl_method_info.invoke_unchecked((), (latencyInSeconds))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21152,7 +21255,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_18_0 {
         latencyInSeconds: f64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21169,7 +21272,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_18_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (latencyInSeconds))?
+            cordl_method_info.invoke_unchecked((), (latencyInSeconds))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21280,7 +21383,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         crate::System::IntPtr,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21297,7 +21400,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -21305,7 +21408,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         crate::System::IntPtr,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21322,7 +21425,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -21330,7 +21433,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         crate::System::IntPtr,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21347,13 +21450,13 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ovrp_GetVersion() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21370,7 +21473,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -21378,7 +21481,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21395,7 +21498,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -21403,7 +21506,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21421,14 +21524,14 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetAppMonoscopic() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21445,7 +21548,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -21453,7 +21556,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21470,7 +21573,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -21478,7 +21581,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21495,13 +21598,13 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetAudioInId() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21518,13 +21621,13 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetAudioOutId() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21541,7 +21644,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -21551,7 +21654,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         crate::GlobalNamespace::OVRPlugin_ControllerState,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21568,13 +21671,13 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_ControllerState = unsafe {
-            method.invoke_unchecked((), (controllerMask))?
+            cordl_method_info.invoke_unchecked((), (controllerMask))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetEyeTextureScale() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("ovrp_GetEyeTextureScale")
@@ -21586,14 +21689,14 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetInitialized() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21610,7 +21713,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -21618,7 +21721,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21636,14 +21739,14 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetNodeFrustum(
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Frustumf> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21660,7 +21763,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Frustumf = unsafe {
-            method.invoke_unchecked((), (nodeId))?
+            cordl_method_info.invoke_unchecked((), (nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21668,7 +21771,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21685,7 +21788,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (nodeId))?
+            cordl_method_info.invoke_unchecked((), (nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21693,7 +21796,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21710,7 +21813,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (nodeId))?
+            cordl_method_info.invoke_unchecked((), (nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21718,7 +21821,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21735,13 +21838,13 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (nodeId))?
+            cordl_method_info.invoke_unchecked((), (nodeId))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetSystemBatteryLevel() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("ovrp_GetSystemBatteryLevel")
@@ -21753,14 +21856,14 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetSystemBatteryStatus() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_BatteryStatus,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21777,13 +21880,13 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_BatteryStatus = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetSystemBatteryTemperature() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21799,12 +21902,12 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetSystemCpuLevel() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("ovrp_GetSystemCpuLevel")
@@ -21816,12 +21919,12 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetSystemDisplayFrequency() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21837,12 +21940,12 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetSystemGpuLevel() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("ovrp_GetSystemGpuLevel")
@@ -21854,14 +21957,14 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetSystemPowerSavingMode() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21878,7 +21981,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -21886,7 +21989,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21904,12 +22007,12 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetSystemVSyncCount() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("ovrp_GetSystemVSyncCount")
@@ -21921,12 +22024,12 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetSystemVolume() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("ovrp_GetSystemVolume")
@@ -21938,14 +22041,14 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetTrackingOrientationEnabled() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21962,7 +22065,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -21970,7 +22073,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21987,7 +22090,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -21995,7 +22098,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22012,7 +22115,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -22020,7 +22123,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22037,13 +22140,13 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetUserEyeDepth() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("ovrp_GetUserEyeDepth")
@@ -22055,12 +22158,12 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetUserEyeHeight() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("ovrp_GetUserEyeHeight")
@@ -22072,12 +22175,12 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetUserIPD() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("ovrp_GetUserIPD")
@@ -22089,14 +22192,14 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetUserPresent() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22113,7 +22216,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -22121,7 +22224,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22139,14 +22242,14 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_SetAppMonoscopic(
         value: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22163,7 +22266,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22171,7 +22274,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         value: f32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22188,7 +22291,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22196,7 +22299,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         value: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22213,7 +22316,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22221,7 +22324,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         value: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22238,7 +22341,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22246,7 +22349,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         value: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22263,7 +22366,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22271,7 +22374,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         value: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22288,7 +22391,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22296,7 +22399,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         value: f32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22313,7 +22416,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22321,7 +22424,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         value: f32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22338,7 +22441,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22346,7 +22449,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         value: f32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22363,7 +22466,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22371,7 +22474,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         ui: crate::GlobalNamespace::OVRPlugin_PlatformUI,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22388,7 +22491,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (ui))?
+            cordl_method_info.invoke_unchecked((), (ui))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22449,7 +22552,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22468,7 +22571,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (useAsymmetricFov))?
+            cordl_method_info.invoke_unchecked((), (useAsymmetricFov))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22476,7 +22579,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
         gpuUtil: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22493,7 +22596,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (gpuUtil))?
+            cordl_method_info.invoke_unchecked((), (gpuUtil))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22503,7 +22606,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22522,7 +22625,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (gpuUtilSupported))?
+            cordl_method_info.invoke_unchecked((), (gpuUtilSupported))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22531,7 +22634,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
         numFrequencies: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22548,7 +22651,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (systemDisplayAvailableFrequencies, numFrequencies),
@@ -22560,7 +22663,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
         systemDisplayFrequency: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22577,7 +22680,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (systemDisplayFrequency))?
+            cordl_method_info.invoke_unchecked((), (systemDisplayFrequency))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22587,7 +22690,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22606,7 +22709,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (level))?
+            cordl_method_info.invoke_unchecked((), (level))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22616,7 +22719,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22635,7 +22738,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (foveationSupported))?
+            cordl_method_info.invoke_unchecked((), (foveationSupported))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22643,7 +22746,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
         requestedFrequency: f32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22660,7 +22763,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (requestedFrequency))?
+            cordl_method_info.invoke_unchecked((), (requestedFrequency))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22668,7 +22771,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
         level: crate::GlobalNamespace::OVRPlugin_FoveatedRenderingLevel,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22685,7 +22788,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (level))?
+            cordl_method_info.invoke_unchecked((), (level))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22749,7 +22852,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0 {
         layerId: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22772,7 +22875,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (desc, compositionDepth, layerId))?
+            cordl_method_info.invoke_unchecked((), (desc, compositionDepth, layerId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22782,7 +22885,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22801,7 +22904,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (dominantHand))?
+            cordl_method_info.invoke_unchecked((), (dominantHand))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22810,7 +22913,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0 {
         param: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22834,7 +22937,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (name, param))?
+            cordl_method_info.invoke_unchecked((), (name, param))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22899,7 +23002,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22923,7 +23026,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (relativeRotation, relativeTranslation))?
+            cordl_method_info
+                .invoke_unchecked((), (relativeRotation, relativeTranslation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22932,7 +23036,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
         surfaceObject: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22949,7 +23053,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (layerId, surfaceObject))?
+            cordl_method_info.invoke_unchecked((), (layerId, surfaceObject))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22962,7 +23066,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22986,7 +23090,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (stepId, frameIndex, nodeId, nodePoseState))?
+            cordl_method_info
+                .invoke_unchecked((), (stepId, frameIndex, nodeId, nodePoseState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22999,7 +23104,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23023,7 +23128,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (relativeRotation, relativeTranslation))?
+            cordl_method_info
+                .invoke_unchecked((), (relativeRotation, relativeTranslation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23083,7 +23189,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_2_0 {
         vsyncCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23100,7 +23206,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_2_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (vsyncCount))?
+            cordl_method_info.invoke_unchecked((), (vsyncCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23108,7 +23214,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_2_0 {
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23125,7 +23231,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_2_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -23186,7 +23292,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23205,7 +23311,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (trackingTransformPose))?
+            cordl_method_info.invoke_unchecked((), (trackingTransformPose))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23214,7 +23320,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
         value: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23234,7 +23340,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (perfMetrics, value))?
+            cordl_method_info.invoke_unchecked((), (perfMetrics, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23243,7 +23349,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
         value: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23263,7 +23369,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (perfMetrics, value))?
+            cordl_method_info.invoke_unchecked((), (perfMetrics, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23273,7 +23379,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23292,7 +23398,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (trackingTransformRawPose))?
+            cordl_method_info.invoke_unchecked((), (trackingTransformRawPose))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23303,7 +23409,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23325,7 +23431,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (perfMetrics, isSupported))?
+            cordl_method_info.invoke_unchecked((), (perfMetrics, isSupported))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23335,7 +23441,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23362,7 +23468,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (name, param, source))?
+            cordl_method_info.invoke_unchecked((), (name, param, source))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23422,7 +23528,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_31_0 {
         value: quest_hook::libil2cpp::ByRefMut<f64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23439,7 +23545,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_31_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23449,7 +23555,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_31_0 {
         applyToAllLayers: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23470,7 +23576,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_31_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (colorScale, colorOffset, applyToAllLayers))?
+            cordl_method_info
+                .invoke_unchecked((), (colorScale, colorOffset, applyToAllLayers))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23531,7 +23638,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_32_0 {
         param: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23555,7 +23662,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_32_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (name, param))?
+            cordl_method_info.invoke_unchecked((), (name, param))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23631,7 +23738,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_34_0 {
         colorOffset: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23668,7 +23775,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_34_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -23902,7 +24009,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23924,7 +24031,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (nodeId, nodeOrientationValid))?
+            cordl_method_info.invoke_unchecked((), (nodeId, nodeOrientationValid))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23935,7 +24042,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23957,7 +24064,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (nodeId, nodePositionValid))?
+            cordl_method_info.invoke_unchecked((), (nodeId, nodePositionValid))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23968,7 +24075,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         trackingOrigin: crate::GlobalNamespace::OVRPlugin_TrackingOrigin,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23990,7 +24097,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (trackingTransformRelativePose, trackingOrigin))?
+            cordl_method_info
+                .invoke_unchecked((), (trackingTransformRelativePose, trackingOrigin))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24003,7 +24111,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         outSyncId: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24027,7 +24135,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -24052,7 +24160,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         outSyncId: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24077,7 +24185,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -24099,7 +24207,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24118,7 +24226,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (initialized))?
+            cordl_method_info.invoke_unchecked((), (initialized))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24128,7 +24236,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24147,7 +24255,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (activationMode))?
+            cordl_method_info.invoke_unchecked((), (activationMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24155,7 +24263,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         sampleRate: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24172,7 +24280,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (sampleRate))?
+            cordl_method_info.invoke_unchecked((), (sampleRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24180,7 +24288,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         flipped: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Bool>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24199,7 +24307,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (flipped))?
+            cordl_method_info.invoke_unchecked((), (flipped))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24208,7 +24316,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         frameHeight: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24228,7 +24336,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (frameWidth, frameHeight))?
+            cordl_method_info.invoke_unchecked((), (frameWidth, frameHeight))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24238,7 +24346,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24257,7 +24365,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (inputVideoBufferType))?
+            cordl_method_info.invoke_unchecked((), (inputVideoBufferType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24265,7 +24373,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24282,7 +24390,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -24292,7 +24400,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24311,7 +24419,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (mrcActivated))?
+            cordl_method_info.invoke_unchecked((), (mrcActivated))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24321,7 +24429,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24340,7 +24448,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (mrcEnabled))?
+            cordl_method_info.invoke_unchecked((), (mrcEnabled))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24348,7 +24456,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         activationMode: crate::GlobalNamespace::Media_OVRPlugin_MrcActivationMode,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24365,7 +24473,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (activationMode))?
+            cordl_method_info.invoke_unchecked((), (activationMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24373,7 +24481,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         sampleRate: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24390,7 +24498,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (sampleRate))?
+            cordl_method_info.invoke_unchecked((), (sampleRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24398,7 +24506,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         flipped: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24415,7 +24523,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (flipped))?
+            cordl_method_info.invoke_unchecked((), (flipped))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24424,7 +24532,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         frameHeight: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24441,7 +24549,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (frameWidth, frameHeight))?
+            cordl_method_info.invoke_unchecked((), (frameWidth, frameHeight))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24449,7 +24557,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         inputVideoBufferType: crate::GlobalNamespace::Media_OVRPlugin_InputVideoBufferType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24466,7 +24574,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (inputVideoBufferType))?
+            cordl_method_info.invoke_unchecked((), (inputVideoBufferType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24474,7 +24582,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24491,7 +24599,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -24499,7 +24607,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         syncId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24516,7 +24624,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (syncId))?
+            cordl_method_info.invoke_unchecked((), (syncId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24524,7 +24632,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24541,7 +24649,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -24551,7 +24659,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24570,7 +24678,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (useMrcDebugCamera))?
+            cordl_method_info.invoke_unchecked((), (useMrcDebugCamera))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24578,7 +24686,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         active: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24595,7 +24703,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (active))?
+            cordl_method_info.invoke_unchecked((), (active))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24706,7 +24814,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_3_0 {
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24723,7 +24831,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_3_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -24731,7 +24839,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_3_0 {
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24748,7 +24856,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_3_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -24756,7 +24864,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_3_0 {
         value: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24773,7 +24881,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_3_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24934,7 +25042,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_42_0 {
         adaptiveGpuPerformanceScale: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24951,7 +25059,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_42_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (adaptiveGpuPerformanceScale))?
+            cordl_method_info.invoke_unchecked((), (adaptiveGpuPerformanceScale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25066,7 +25174,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25089,7 +25197,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (stepId, hand, handState))?
+            cordl_method_info.invoke_unchecked((), (stepId, hand, handState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25099,7 +25207,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25118,7 +25226,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (handTrackingEnabled))?
+            cordl_method_info.invoke_unchecked((), (handTrackingEnabled))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25126,7 +25234,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         recenterCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25143,7 +25251,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (recenterCount))?
+            cordl_method_info.invoke_unchecked((), (recenterCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25152,7 +25260,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         meshPtr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25172,7 +25280,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (meshType, meshPtr))?
+            cordl_method_info.invoke_unchecked((), (meshType, meshPtr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25183,7 +25291,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25205,7 +25313,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (skeletonType, skeleton))?
+            cordl_method_info.invoke_unchecked((), (skeletonType, skeleton))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25216,7 +25324,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25238,7 +25346,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (cameraId, useOverriddenFov))?
+            cordl_method_info.invoke_unchecked((), (cameraId, useOverriddenFov))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25249,7 +25357,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25271,7 +25379,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (cameraId, useOverriddenStaticPose))?
+            cordl_method_info.invoke_unchecked((), (cameraId, useOverriddenStaticPose))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25281,7 +25389,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         fov: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Fovf>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25304,7 +25412,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (cameraId, useOverriddenFov, fov))?
+            cordl_method_info.invoke_unchecked((), (cameraId, useOverriddenFov, fov))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25316,7 +25424,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25339,7 +25447,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (cameraId, useOverriddenPose, poseInStageOrigin))?
         };
         Ok(__cordl_ret.into())
@@ -25348,7 +25456,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25365,7 +25473,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -25379,7 +25487,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25406,7 +25514,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (cameraName, cameraIntrinsics, cameraExtrinsics))?
         };
         Ok(__cordl_ret.into())
@@ -25467,7 +25575,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_45_0 {
         enabled: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Bool>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25486,7 +25594,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_45_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (enabled))?
+            cordl_method_info.invoke_unchecked((), (enabled))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25494,7 +25602,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_45_0 {
         queueIndexVk: u32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25511,7 +25619,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_45_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (queueIndexVk))?
+            cordl_method_info.invoke_unchecked((), (queueIndexVk))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25573,7 +25681,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_46_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25592,7 +25700,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_46_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (isDynamic))?
+            cordl_method_info.invoke_unchecked((), (isDynamic))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25600,7 +25708,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_46_0 {
         isDynamic: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25617,7 +25725,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_46_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (isDynamic))?
+            cordl_method_info.invoke_unchecked((), (isDynamic))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25734,7 +25842,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_48_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25761,7 +25869,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_48_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (cameraName, cameraIntrinsics, cameraExtrinsics))?
         };
         Ok(__cordl_ret.into())
@@ -25825,7 +25933,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25844,7 +25952,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (colorSpace))?
+            cordl_method_info.invoke_unchecked((), (colorSpace))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25853,7 +25961,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         anchorHandle: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25873,7 +25981,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (anchorName, anchorHandle))?
+            cordl_method_info.invoke_unchecked((), (anchorName, anchorHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25881,7 +25989,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         anchorHandle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25898,7 +26006,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (anchorHandle))?
+            cordl_method_info.invoke_unchecked((), (anchorHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25913,7 +26021,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         outSyncId: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25939,7 +26047,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -25966,7 +26074,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         outSyncId: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25991,7 +26099,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -26012,7 +26120,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         CameraAnchorHandle: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26032,7 +26140,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (anchorCount, CameraAnchorHandle))?
+            cordl_method_info.invoke_unchecked((), (anchorCount, CameraAnchorHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26041,7 +26149,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         anchorHandle: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26061,7 +26169,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (anchorName, anchorHandle))?
+            cordl_method_info.invoke_unchecked((), (anchorName, anchorHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26070,7 +26178,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         cameraName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26092,7 +26200,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (anchorHandle, cameraName))?
+            cordl_method_info.invoke_unchecked((), (anchorHandle, cameraName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26103,7 +26211,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26125,7 +26233,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (anchorHandle, anchorType))?
+            cordl_method_info.invoke_unchecked((), (anchorHandle, anchorType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26135,7 +26243,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         maxDistance: quest_hook::libil2cpp::ByRefMut<f64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26156,7 +26264,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (anchorHandle, minDistance, maxDistance))?
+            cordl_method_info
+                .invoke_unchecked((), (anchorHandle, minDistance, maxDistance))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26164,7 +26273,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         anchorHandle: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26181,7 +26290,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (anchorHandle))?
+            cordl_method_info.invoke_unchecked((), (anchorHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26190,7 +26299,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         pose: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Posef>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26212,7 +26321,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (anchorHandle, pose))?
+            cordl_method_info.invoke_unchecked((), (anchorHandle, pose))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26222,7 +26331,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         maxDistance: f64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26239,7 +26348,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (anchorHandle, minDistance, maxDistance))?
+            cordl_method_info
+                .invoke_unchecked((), (anchorHandle, minDistance, maxDistance))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26248,7 +26358,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         pose: crate::GlobalNamespace::OVRPlugin_Posef,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26265,7 +26375,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (anchorHandle, pose))?
+            cordl_method_info.invoke_unchecked((), (anchorHandle, pose))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26275,7 +26385,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         rightControllerPose: crate::GlobalNamespace::OVRPlugin_Posef,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26296,7 +26406,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (headsetPose, leftControllerPose, rightControllerPose),
@@ -26308,7 +26418,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         colorSpace: crate::GlobalNamespace::OVRPlugin_ColorSpace,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26325,7 +26435,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (colorSpace))?
+            cordl_method_info.invoke_unchecked((), (colorSpace))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26589,7 +26699,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_54_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26606,7 +26716,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_54_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -26667,7 +26777,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
         xrSession: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26687,7 +26797,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (xrInstance, xrSession))?
+            cordl_method_info.invoke_unchecked((), (xrInstance, xrSession))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26695,7 +26805,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
         xrApi: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_XrApi>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26714,7 +26824,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (xrApi))?
+            cordl_method_info.invoke_unchecked((), (xrApi))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26725,7 +26835,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26747,7 +26857,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (skeletonType, skeleton))?
+            cordl_method_info.invoke_unchecked((), (skeletonType, skeleton))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26757,7 +26867,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26776,7 +26886,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (eventDataBuffer))?
+            cordl_method_info.invoke_unchecked((), (eventDataBuffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26839,7 +26949,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_1 {
         eventData: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26861,7 +26971,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_1 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (eventType, eventData))?
+            cordl_method_info.invoke_unchecked((), (eventType, eventData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26972,7 +27082,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
         enabled: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Bool>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26991,7 +27101,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (enabled))?
+            cordl_method_info.invoke_unchecked((), (enabled))?
         };
         Ok(__cordl_ret.into())
     }
@@ -27001,7 +27111,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27020,7 +27130,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (platformCameraMode))?
+            cordl_method_info.invoke_unchecked((), (platformCameraMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -27028,7 +27138,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
         platformCameraMode: crate::GlobalNamespace::Media_OVRPlugin_PlatformCameraMode,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27045,7 +27155,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (platformCameraMode))?
+            cordl_method_info.invoke_unchecked((), (platformCameraMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -27053,7 +27163,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
         enabled: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27070,7 +27180,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (enabled))?
+            cordl_method_info.invoke_unchecked((), (enabled))?
         };
         Ok(__cordl_ret.into())
     }
@@ -27078,7 +27188,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
         uv: crate::GlobalNamespace::OVRPlugin_Vector2f,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27095,7 +27205,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (uv))?
+            cordl_method_info.invoke_unchecked((), (uv))?
         };
         Ok(__cordl_ret.into())
     }
@@ -27257,7 +27367,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_5_0 {
         crate::GlobalNamespace::OVRPlugin_SystemRegion,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27274,7 +27384,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_5_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SystemRegion = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -27489,7 +27599,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
         geometryInstanceHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27511,7 +27621,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (layerId, meshHandle, T_world_model, geometryInstanceHandle),
@@ -27528,7 +27638,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
         meshHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27552,7 +27662,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -27571,7 +27681,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
         geometryInstanceHandle: u64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27588,7 +27698,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (geometryInstanceHandle))?
+            cordl_method_info.invoke_unchecked((), (geometryInstanceHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -27596,7 +27706,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
         meshHandle: u64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27613,7 +27723,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (meshHandle))?
+            cordl_method_info.invoke_unchecked((), (meshHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -27621,7 +27731,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27638,7 +27748,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -27646,7 +27756,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27663,7 +27773,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -27672,7 +27782,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
         style: crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27689,7 +27799,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (layerId, style))?
+            cordl_method_info.invoke_unchecked((), (layerId, style))?
         };
         Ok(__cordl_ret.into())
     }
@@ -27697,7 +27807,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27714,7 +27824,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -27723,7 +27833,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
         T_world_model: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27740,7 +27850,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (geometryInstanceHandle, T_world_model))?
+            cordl_method_info
+                .invoke_unchecked((), (geometryInstanceHandle, T_world_model))?
         };
         Ok(__cordl_ret.into())
     }
@@ -27804,7 +27915,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_64_0 {
         trackingOrigin: crate::GlobalNamespace::OVRPlugin_TrackingOrigin,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27827,7 +27938,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_64_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (location, space, trackingOrigin))?
+            cordl_method_info.invoke_unchecked((), (location, space, trackingOrigin))?
         };
         Ok(__cordl_ret.into())
     }
@@ -27887,7 +27998,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
         space: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27904,7 +28015,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (space))?
+            cordl_method_info.invoke_unchecked((), (space))?
         };
         Ok(__cordl_ret.into())
     }
@@ -27912,7 +28023,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
         texture: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27929,7 +28040,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (texture))?
+            cordl_method_info.invoke_unchecked((), (texture))?
         };
         Ok(__cordl_ret.into())
     }
@@ -27939,7 +28050,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
         bufferSize: u32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27956,7 +28067,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (texture, data, bufferSize))?
+            cordl_method_info.invoke_unchecked((), (texture, data, bufferSize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -27966,7 +28077,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
         texture: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -27987,7 +28098,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (data, length, texture))?
+            cordl_method_info.invoke_unchecked((), (data, length, texture))?
         };
         Ok(__cordl_ret.into())
     }
@@ -27996,7 +28107,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
         height: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28013,7 +28124,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (texture, height))?
+            cordl_method_info.invoke_unchecked((), (texture, height))?
         };
         Ok(__cordl_ret.into())
     }
@@ -28022,7 +28133,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
         _cordl_size: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28039,7 +28150,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (texture, _cordl_size))?
+            cordl_method_info.invoke_unchecked((), (texture, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -28048,7 +28159,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
         width: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28065,7 +28176,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (texture, width))?
+            cordl_method_info.invoke_unchecked((), (texture, width))?
         };
         Ok(__cordl_ret.into())
     }
@@ -28074,7 +28185,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
         format: u32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28091,7 +28202,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (texture, format))?
+            cordl_method_info.invoke_unchecked((), (texture, format))?
         };
         Ok(__cordl_ret.into())
     }
@@ -28151,7 +28262,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_66_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28168,7 +28279,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_66_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -28178,7 +28289,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_66_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28197,7 +28308,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_66_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (isCasting))?
+            cordl_method_info.invoke_unchecked((), (isCasting))?
         };
         Ok(__cordl_ret.into())
     }
@@ -28314,7 +28425,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28337,7 +28448,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (stepId, frameIndex, keyboardState))?
+            cordl_method_info.invoke_unchecked((), (stepId, frameIndex, keyboardState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -28346,7 +28457,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
         path: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28363,7 +28474,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (index, path))?
+            cordl_method_info.invoke_unchecked((), (index, path))?
         };
         Ok(__cordl_ret.into())
     }
@@ -28374,7 +28485,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28398,7 +28509,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (path, properties))?
+            cordl_method_info.invoke_unchecked((), (path, properties))?
         };
         Ok(__cordl_ret.into())
     }
@@ -28409,7 +28520,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28431,7 +28542,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (keyboardQueryFlags, keyboardDescription))?
+            cordl_method_info
+                .invoke_unchecked((), (keyboardQueryFlags, keyboardDescription))?
         };
         Ok(__cordl_ret.into())
     }
@@ -28442,7 +28554,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
         buffer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28464,7 +28576,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (modelKey, bufferInputCapacity, bufferCountOutput, buffer),
@@ -28477,7 +28589,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
         intensity: crate::GlobalNamespace::OVRPlugin_InsightPassthroughKeyboardHandsIntensity,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28497,7 +28609,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (layerId, intensity))?
+            cordl_method_info.invoke_unchecked((), (layerId, intensity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -28505,7 +28617,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
         trackedKeyboardId: u64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28522,7 +28634,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (trackedKeyboardId))?
+            cordl_method_info.invoke_unchecked((), (trackedKeyboardId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -28530,7 +28642,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28547,7 +28659,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -28610,7 +28722,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_69_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28632,7 +28744,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_69_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (nodeId, nodePoseState))?
+            cordl_method_info.invoke_unchecked((), (nodeId, nodePoseState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -28690,7 +28802,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
 impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
     pub fn ovrp_GetAppCpuStartToGpuEndTime() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28706,14 +28818,14 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetControllerHapticsDesc(
         controllerMask: u32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_HapticsDesc> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28730,7 +28842,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_HapticsDesc = unsafe {
-            method.invoke_unchecked((), (controllerMask))?
+            cordl_method_info.invoke_unchecked((), (controllerMask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -28738,7 +28850,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
         controllerMask: u32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_HapticsState> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28755,7 +28867,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_HapticsState = unsafe {
-            method.invoke_unchecked((), (controllerMask))?
+            cordl_method_info.invoke_unchecked((), (controllerMask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -28763,7 +28875,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
         f32,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28779,12 +28891,12 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetSystemRecommendedMSAALevel() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28800,14 +28912,14 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovrp_GetTrackingIPDEnabled() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28824,7 +28936,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -28833,7 +28945,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
         hapticsBuffer: crate::GlobalNamespace::OVRPlugin_HapticsBuffer,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28850,7 +28962,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (controllerMask, hapticsBuffer))?
+            cordl_method_info.invoke_unchecked((), (controllerMask, hapticsBuffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -28864,7 +28976,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
         layerIndex: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28889,7 +29001,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (flags, textureLeft, textureRight, device, pose, scale, layerIndex),
@@ -28901,7 +29013,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
         value: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28918,7 +29030,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -28979,7 +29091,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_70_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -28998,7 +29110,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_70_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (logCallback))?
+            cordl_method_info.invoke_unchecked((), (logCallback))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29060,7 +29172,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29079,7 +29191,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (perfLevel))?
+            cordl_method_info.invoke_unchecked((), (perfLevel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29089,7 +29201,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29108,7 +29220,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (perfLevel))?
+            cordl_method_info.invoke_unchecked((), (perfLevel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29118,7 +29230,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29137,7 +29249,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (supported))?
+            cordl_method_info.invoke_unchecked((), (supported))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29145,7 +29257,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         perfLevel: crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29162,7 +29274,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (perfLevel))?
+            cordl_method_info.invoke_unchecked((), (perfLevel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29170,7 +29282,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         perfLevel: crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29187,7 +29299,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (perfLevel))?
+            cordl_method_info.invoke_unchecked((), (perfLevel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29195,7 +29307,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         func: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29212,7 +29324,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (func))?
+            cordl_method_info.invoke_unchecked((), (func))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29220,7 +29332,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         xrSpace: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29237,7 +29349,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (xrSpace))?
+            cordl_method_info.invoke_unchecked((), (xrSpace))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29245,7 +29357,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         xrInstance: u64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29262,7 +29374,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (xrInstance))?
+            cordl_method_info.invoke_unchecked((), (xrInstance))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29270,7 +29382,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         xrInstance: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29287,7 +29399,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (xrInstance))?
+            cordl_method_info.invoke_unchecked((), (xrInstance))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29295,7 +29407,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         xrSession: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29312,7 +29424,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (xrSession))?
+            cordl_method_info.invoke_unchecked((), (xrSession))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29320,7 +29432,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         xrSession: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29337,7 +29449,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (xrSession))?
+            cordl_method_info.invoke_unchecked((), (xrSession))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29345,7 +29457,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         xrSession: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29362,7 +29474,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (xrSession))?
+            cordl_method_info.invoke_unchecked((), (xrSession))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29370,7 +29482,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         xrSession: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29387,7 +29499,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (xrSession))?
+            cordl_method_info.invoke_unchecked((), (xrSession))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29395,7 +29507,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         xrSession: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29412,7 +29524,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (xrSession))?
+            cordl_method_info.invoke_unchecked((), (xrSession))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29421,7 +29533,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         newState: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29438,7 +29550,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (oldState, newState))?
+            cordl_method_info.invoke_unchecked((), (oldState, newState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29448,7 +29560,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         patchVersion: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29465,7 +29577,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (majorVersion, minorVersion, patchVersion))?
+            cordl_method_info
+                .invoke_unchecked((), (majorVersion, minorVersion, patchVersion))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29528,7 +29641,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29550,7 +29663,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (createInfo, requestId))?
+            cordl_method_info.invoke_unchecked((), (createInfo, requestId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29567,7 +29680,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29595,7 +29708,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -29614,7 +29727,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29635,7 +29748,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (space, location, requestId))?
+            cordl_method_info.invoke_unchecked((), (space, location, requestId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29646,7 +29759,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29668,7 +29781,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (space, boundaryInternal))?
+            cordl_method_info.invoke_unchecked((), (space, boundaryInternal))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29677,7 +29790,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         rect: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Rectf>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29699,7 +29812,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (space, rect))?
+            cordl_method_info.invoke_unchecked((), (space, rect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29710,7 +29823,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29732,7 +29845,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (space, bounds))?
+            cordl_method_info.invoke_unchecked((), (space, bounds))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29745,7 +29858,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29771,7 +29884,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (space, componentType, enabled, changePending))?
+            cordl_method_info
+                .invoke_unchecked((), (space, componentType, enabled, changePending))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29782,7 +29896,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29804,7 +29918,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (space, containerInternal))?
+            cordl_method_info.invoke_unchecked((), (space, containerInternal))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29815,7 +29929,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29837,7 +29951,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (space, roomLayoutInternal))?
+            cordl_method_info.invoke_unchecked((), (space, roomLayoutInternal))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29848,7 +29962,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29870,7 +29984,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (space, labelsInternal))?
+            cordl_method_info.invoke_unchecked((), (space, labelsInternal))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29881,7 +29995,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29903,7 +30017,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (queryInfo, requestId))?
+            cordl_method_info.invoke_unchecked((), (queryInfo, requestId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29914,7 +30028,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29936,7 +30050,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (request, requestId))?
+            cordl_method_info.invoke_unchecked((), (request, requestId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -29947,7 +30061,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         results: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -29969,7 +30083,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (requestId, resultCapacityInput, resultCountOutput, results),
@@ -29984,7 +30098,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30006,7 +30120,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (space, location, mode, requestId))?
+            cordl_method_info.invoke_unchecked((), (space, location, mode, requestId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30018,7 +30132,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30041,7 +30155,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (space, componentType, enable, timeout, requestId),
@@ -30156,7 +30270,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
         textContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30173,7 +30287,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (textContext))?
+            cordl_method_info.invoke_unchecked((), (textContext))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30181,7 +30295,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
         createInfo: crate::GlobalNamespace::OVRPlugin_VirtualKeyboardCreateInfo,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30198,7 +30312,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (createInfo))?
+            cordl_method_info.invoke_unchecked((), (createInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30207,7 +30321,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
         keyboardSpace: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30227,7 +30341,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (createInfo, keyboardSpace))?
+            cordl_method_info.invoke_unchecked((), (createInfo, keyboardSpace))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30235,7 +30349,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30252,7 +30366,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -30264,7 +30378,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30289,7 +30403,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (path, flags, properties))?
+            cordl_method_info.invoke_unchecked((), (path, flags, properties))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30298,7 +30412,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
         uuid: quest_hook::libil2cpp::ByRefMut<crate::System::Guid>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30318,7 +30432,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (space, uuid))?
+            cordl_method_info.invoke_unchecked((), (space, uuid))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30326,7 +30440,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
         location: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30343,7 +30457,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (location))?
+            cordl_method_info.invoke_unchecked((), (location))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30354,7 +30468,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30376,7 +30490,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (inputInfo, interactorRootPose))?
+            cordl_method_info.invoke_unchecked((), (inputInfo, interactorRootPose))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30384,7 +30498,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
         locationInfo: crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationInfo,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30401,7 +30515,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (locationInfo))?
+            cordl_method_info.invoke_unchecked((), (locationInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30516,7 +30630,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_76_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30539,7 +30653,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_76_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (_cordl_time, nodeId, nodePoseState))?
+            cordl_method_info.invoke_unchecked((), (_cordl_time, nodeId, nodePoseState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30603,7 +30717,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30626,7 +30740,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (stepId, frameIndex, bodyState))?
+            cordl_method_info.invoke_unchecked((), (stepId, frameIndex, bodyState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30634,7 +30748,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         value: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Bool>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30653,7 +30767,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30661,7 +30775,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         value: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Bool>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30680,7 +30794,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30689,7 +30803,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         sampleRateHz: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30709,7 +30823,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (controller, sampleRateHz))?
+            cordl_method_info.invoke_unchecked((), (controller, sampleRateHz))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30720,7 +30834,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30742,7 +30856,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (controllerMask, controllerState))?
+            cordl_method_info.invoke_unchecked((), (controllerMask, controllerState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30753,7 +30867,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30775,7 +30889,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (hand, interactionProfile))?
+            cordl_method_info.invoke_unchecked((), (hand, interactionProfile))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30787,7 +30901,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30810,7 +30924,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (stepId, frameIndex, eyeGazesState))?
+            cordl_method_info.invoke_unchecked((), (stepId, frameIndex, eyeGazesState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30820,7 +30934,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30839,7 +30953,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (eyeTrackingEnabled))?
+            cordl_method_info.invoke_unchecked((), (eyeTrackingEnabled))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30849,7 +30963,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30868,7 +30982,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (eyeTrackingSupported))?
+            cordl_method_info.invoke_unchecked((), (eyeTrackingSupported))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30880,7 +30994,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30903,7 +31017,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (stepId, frameIndex, faceState))?
+            cordl_method_info.invoke_unchecked((), (stepId, frameIndex, faceState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30913,7 +31027,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30932,7 +31046,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (faceTrackingEnabled))?
+            cordl_method_info.invoke_unchecked((), (faceTrackingEnabled))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30942,7 +31056,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30961,7 +31075,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (faceTrackingSupported))?
+            cordl_method_info.invoke_unchecked((), (faceTrackingSupported))?
         };
         Ok(__cordl_ret.into())
     }
@@ -30971,7 +31085,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -30990,7 +31104,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (isEyeTrackedFoveation))?
+            cordl_method_info.invoke_unchecked((), (isEyeTrackedFoveation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -31000,7 +31114,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31019,7 +31133,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (foveationSupported))?
+            cordl_method_info.invoke_unchecked((), (foveationSupported))?
         };
         Ok(__cordl_ret.into())
     }
@@ -31029,7 +31143,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31048,7 +31162,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (localDimmingMode))?
+            cordl_method_info.invoke_unchecked((), (localDimmingMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -31058,7 +31172,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31077,7 +31191,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (localDimmingSupported))?
+            cordl_method_info.invoke_unchecked((), (localDimmingSupported))?
         };
         Ok(__cordl_ret.into())
     }
@@ -31087,7 +31201,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31106,7 +31220,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (capabilityFlags))?
+            cordl_method_info.invoke_unchecked((), (capabilityFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -31115,7 +31229,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         hapticsVibration: crate::GlobalNamespace::OVRPlugin_HapticsAmplitudeEnvelopeVibration,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31135,7 +31249,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (controllerMask, hapticsVibration))?
+            cordl_method_info.invoke_unchecked((), (controllerMask, hapticsVibration))?
         };
         Ok(__cordl_ret.into())
     }
@@ -31144,7 +31258,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         hapticsVibration: crate::GlobalNamespace::OVRPlugin_HapticsPcmVibration,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31164,7 +31278,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (controllerMask, hapticsVibration))?
+            cordl_method_info.invoke_unchecked((), (controllerMask, hapticsVibration))?
         };
         Ok(__cordl_ret.into())
     }
@@ -31175,7 +31289,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         amplitude: f32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31197,7 +31311,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (controllerMask, hapticsLocationMask, frequency, amplitude),
@@ -31209,7 +31323,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         isEyeTrackedFoveation: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31226,7 +31340,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (isEyeTrackedFoveation))?
+            cordl_method_info.invoke_unchecked((), (isEyeTrackedFoveation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -31234,7 +31348,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         localDimmingMode: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31251,7 +31365,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (localDimmingMode))?
+            cordl_method_info.invoke_unchecked((), (localDimmingMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -31259,7 +31373,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31276,7 +31390,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -31284,7 +31398,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31301,7 +31415,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -31309,7 +31423,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31326,7 +31440,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -31334,7 +31448,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31351,7 +31465,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -31359,7 +31473,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31376,7 +31490,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -31384,7 +31498,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31401,7 +31515,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -31462,7 +31576,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         spaceUserHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31482,7 +31596,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (spaceUserId, spaceUserHandle))?
+            cordl_method_info.invoke_unchecked((), (spaceUserId, spaceUserHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -31491,7 +31605,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         userHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31511,7 +31625,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (userId, userHandle))?
+            cordl_method_info.invoke_unchecked((), (userId, userHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -31519,7 +31633,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         userHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31536,7 +31650,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (userHandle))?
+            cordl_method_info.invoke_unchecked((), (userHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -31545,7 +31659,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         spaceUserId: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31565,7 +31679,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (spaceUserHandle, spaceUserId))?
+            cordl_method_info.invoke_unchecked((), (spaceUserHandle, spaceUserId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -31577,7 +31691,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         trackingOrigin: crate::GlobalNamespace::OVRPlugin_TrackingOrigin,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31600,7 +31714,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (location, space, trackingOrigin))?
+            cordl_method_info.invoke_unchecked((), (location, space, trackingOrigin))?
         };
         Ok(__cordl_ret.into())
     }
@@ -31609,7 +31723,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         nameHandle: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31631,7 +31745,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (name, nameHandle))?
+            cordl_method_info.invoke_unchecked((), (name, nameHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -31639,7 +31753,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         nameHandle: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31656,7 +31770,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (nameHandle))?
+            cordl_method_info.invoke_unchecked((), (nameHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -31667,7 +31781,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31693,7 +31807,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (markerId, annotationKey, annotationValue, instanceKey),
@@ -31708,7 +31822,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31730,7 +31844,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (markerId, resultTypeId, instanceKey, timestampMs),
@@ -31745,7 +31859,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31762,7 +31876,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (markerId, nameHandle, instanceKey, timestampMs))?
         };
         Ok(__cordl_ret.into())
@@ -31773,7 +31887,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31790,7 +31904,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (markerId, instanceKey, timestampMs))?
+            cordl_method_info.invoke_unchecked((), (markerId, instanceKey, timestampMs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -31801,7 +31915,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31825,7 +31939,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (spaces, numSpaces, location, requestId))?
+            cordl_method_info
+                .invoke_unchecked((), (spaces, numSpaces, location, requestId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -31837,7 +31952,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31864,7 +31979,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (spaces, numSpaces, userHandles, numUsers, requestId),
@@ -31928,7 +32043,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_7_0 {
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31945,7 +32060,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_7_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -31953,7 +32068,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_7_0 {
         value: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -31970,7 +32085,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_7_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32083,7 +32198,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_82_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32105,7 +32220,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_82_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (space, triangleMeshInternal))?
+            cordl_method_info.invoke_unchecked((), (space, triangleMeshInternal))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32168,7 +32283,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32190,7 +32305,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (controllerMask, controllerState))?
+            cordl_method_info.invoke_unchecked((), (controllerMask, controllerState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32200,7 +32315,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32219,7 +32334,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (textureIds))?
+            cordl_method_info.invoke_unchecked((), (textureIds))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32229,7 +32344,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32248,7 +32363,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (animationStates))?
+            cordl_method_info.invoke_unchecked((), (animationStates))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32259,7 +32374,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32281,7 +32396,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (textureId, textureData))?
+            cordl_method_info.invoke_unchecked((), (textureId, textureData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32291,7 +32406,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32310,7 +32425,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (visibility))?
+            cordl_method_info.invoke_unchecked((), (visibility))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32373,7 +32488,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
         colorLut: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32395,7 +32510,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (channels, resolution, data, colorLut))?
+            cordl_method_info
+                .invoke_unchecked((), (channels, resolution, data, colorLut))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32403,7 +32519,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
         colorLut: u64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32420,7 +32536,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (colorLut))?
+            cordl_method_info.invoke_unchecked((), (colorLut))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32430,7 +32546,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32449,7 +32565,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (recommendedDimensions))?
+            cordl_method_info.invoke_unchecked((), (recommendedDimensions))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32460,7 +32576,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32482,7 +32598,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (layerId, recommendedDimensions))?
+            cordl_method_info.invoke_unchecked((), (layerId, recommendedDimensions))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32493,7 +32609,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32515,7 +32631,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (layerId, style))?
+            cordl_method_info.invoke_unchecked((), (layerId, style))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32524,7 +32640,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
         data: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32541,7 +32657,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (colorLut, data))?
+            cordl_method_info.invoke_unchecked((), (colorLut, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32603,7 +32719,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_85_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32622,7 +32738,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_85_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (capabilityFlags))?
+            cordl_method_info.invoke_unchecked((), (capabilityFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32630,7 +32746,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_85_0 {
         crate::GlobalNamespace::OVRPlugin_Result,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32647,7 +32763,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_85_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -32711,7 +32827,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32734,7 +32850,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (stepId, nodeId, isGeneratedByControllerData))?
+            cordl_method_info
+                .invoke_unchecked((), (stepId, nodeId, isGeneratedByControllerData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32744,7 +32861,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
         isInHand: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Bool>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32767,7 +32884,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (stepId, nodeId, isInHand))?
+            cordl_method_info.invoke_unchecked((), (stepId, nodeId, isInHand))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32778,7 +32895,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32800,7 +32917,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (hand, interactionProfile))?
+            cordl_method_info.invoke_unchecked((), (hand, interactionProfile))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32808,7 +32925,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
         enabled: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Bool>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32827,7 +32944,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (enabled))?
+            cordl_method_info.invoke_unchecked((), (enabled))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32837,7 +32954,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32856,7 +32973,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (supported))?
+            cordl_method_info.invoke_unchecked((), (supported))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32864,7 +32981,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
         controllerDrivenHandPoses: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32881,7 +32998,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (controllerDrivenHandPoses))?
+            cordl_method_info.invoke_unchecked((), (controllerDrivenHandPoses))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32889,7 +33006,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
         supported: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32906,7 +33023,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (supported))?
+            cordl_method_info.invoke_unchecked((), (supported))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32966,7 +33083,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
         natural: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Bool>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -32985,7 +33102,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (natural))?
+            cordl_method_info.invoke_unchecked((), (natural))?
         };
         Ok(__cordl_ret.into())
     }
@@ -32995,7 +33112,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33014,7 +33131,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (preferences))?
+            cordl_method_info.invoke_unchecked((), (preferences))?
         };
         Ok(__cordl_ret.into())
     }
@@ -33022,7 +33139,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
         controllerDrivenHandPosesAreNatural: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33039,7 +33156,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (controllerDrivenHandPosesAreNatural))?
+            cordl_method_info
+                .invoke_unchecked((), (controllerDrivenHandPosesAreNatural))?
         };
         Ok(__cordl_ret.into())
     }
@@ -33047,7 +33165,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
         sharpenType: crate::GlobalNamespace::OVRPlugin_LayerSharpenType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33064,7 +33182,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (sharpenType))?
+            cordl_method_info.invoke_unchecked((), (sharpenType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -33124,7 +33242,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_88_0 {
         enabled: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33141,7 +33259,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_88_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            method.invoke_unchecked((), (enabled))?
+            cordl_method_info.invoke_unchecked((), (enabled))?
         };
         Ok(__cordl_ret.into())
     }
@@ -33201,7 +33319,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33218,7 +33336,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -33226,7 +33344,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         boundaryType: crate::GlobalNamespace::OVRPlugin_BoundaryType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Vector3f> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33243,7 +33361,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Vector3f = unsafe {
-            method.invoke_unchecked((), (boundaryType))?
+            cordl_method_info.invoke_unchecked((), (boundaryType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -33253,7 +33371,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         crate::GlobalNamespace::OVRPlugin_BoundaryGeometry,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33270,7 +33388,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_BoundaryGeometry = unsafe {
-            method.invoke_unchecked((), (boundaryType))?
+            cordl_method_info.invoke_unchecked((), (boundaryType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -33278,7 +33396,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33295,7 +33413,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -33304,7 +33422,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Posef> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33321,7 +33439,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Posef = unsafe {
-            method.invoke_unchecked((), (stateId, nodeId))?
+            cordl_method_info.invoke_unchecked((), (stateId, nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -33330,7 +33448,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Posef> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33347,7 +33465,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Posef = unsafe {
-            method.invoke_unchecked((), (stateId, nodeId))?
+            cordl_method_info.invoke_unchecked((), (stateId, nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -33356,7 +33474,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         nodeId: crate::GlobalNamespace::OVRPlugin_Node,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Posef> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33373,7 +33491,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Posef = unsafe {
-            method.invoke_unchecked((), (stateId, nodeId))?
+            cordl_method_info.invoke_unchecked((), (stateId, nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -33381,7 +33499,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         value: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33398,7 +33516,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -33409,7 +33527,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         crate::GlobalNamespace::OVRPlugin_BoundaryTestResult,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33429,7 +33547,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_BoundaryTestResult = unsafe {
-            method.invoke_unchecked((), (nodeId, boundaryType))?
+            cordl_method_info.invoke_unchecked((), (nodeId, boundaryType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -33440,7 +33558,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         crate::GlobalNamespace::OVRPlugin_BoundaryTestResult,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33460,7 +33578,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_BoundaryTestResult = unsafe {
-            method.invoke_unchecked((), (point, boundaryType))?
+            cordl_method_info.invoke_unchecked((), (point, boundaryType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -33470,7 +33588,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         predictionSeconds: f64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33487,7 +33605,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (stateId, frameIndex, predictionSeconds))?
+            cordl_method_info
+                .invoke_unchecked((), (stateId, frameIndex, predictionSeconds))?
         };
         Ok(__cordl_ret.into())
     }
@@ -33546,7 +33665,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
         crate::GlobalNamespace::OVRPlugin_Controller,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33563,7 +33682,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Controller = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -33571,7 +33690,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
         crate::GlobalNamespace::OVRPlugin_AppPerfStats,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33588,7 +33707,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_AppPerfStats = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -33598,7 +33717,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
         pointsCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33619,7 +33738,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), (boundaryType, points, pointsCount))?
+            cordl_method_info.invoke_unchecked((), (boundaryType, points, pointsCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -33627,7 +33746,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
         crate::GlobalNamespace::OVRPlugin_Controller,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33644,7 +33763,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Controller = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -33652,7 +33771,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
         crate::GlobalNamespace::OVRPlugin_SystemHeadset,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33669,7 +33788,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SystemHeadset = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -33677,7 +33796,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
         crate::GlobalNamespace::OVRPlugin_Bool,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -33694,7 +33813,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -34921,7 +35040,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRPlugin_PinnedArr
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
@@ -34934,7 +35053,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRPlugin_PinnedArr
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -34947,7 +35066,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRPlugin_PinnedArr
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -34966,7 +35085,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRPlugin_PinnedArr
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (array))?
+            cordl_method_info.invoke_unchecked(self, (array))?
         };
         Ok(__cordl_ret.into())
     }
@@ -34978,7 +35097,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRPlugin_PinnedArr
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -34995,7 +35114,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRPlugin_PinnedArr
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (pinnedArray))?
+            cordl_method_info.invoke_unchecked((), (pinnedArray))?
         };
         Ok(__cordl_ret.into())
     }
@@ -35426,7 +35545,7 @@ impl crate::GlobalNamespace::OVRPlugin_Posef {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -35444,7 +35563,7 @@ impl crate::GlobalNamespace::OVRPlugin_Posef {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -35593,7 +35712,7 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
         nameHandle: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -35615,13 +35734,13 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (name, nameHandle))?
+            cordl_method_info.invoke_unchecked((), (name, nameHandle))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn DestroyMarkerHandle(nameHandle: i32) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), bool, 1usize>("DestroyMarkerHandle")
@@ -35633,7 +35752,9 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (nameHandle))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (nameHandle))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MarkerAnnotation(
@@ -35643,7 +35764,7 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -35669,7 +35790,7 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (markerId, annotationKey, annotationValue, instanceKey),
@@ -35684,7 +35805,7 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -35706,7 +35827,7 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (markerId, resultTypeId, instanceKey, timestampMs),
@@ -35721,7 +35842,7 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -35738,7 +35859,7 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (markerId, nameHandle, instanceKey, timestampMs))?
         };
         Ok(__cordl_ret.into())
@@ -35749,7 +35870,7 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -35766,7 +35887,7 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (markerId, instanceKey, timestampMs))?
+            cordl_method_info.invoke_unchecked((), (markerId, instanceKey, timestampMs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -35888,7 +36009,7 @@ impl crate::GlobalNamespace::OVRPlugin_Quatf {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -35906,7 +36027,7 @@ impl crate::GlobalNamespace::OVRPlugin_Quatf {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -37241,7 +37362,7 @@ impl crate::GlobalNamespace::OVRPlugin_Sizei {
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -37257,7 +37378,9 @@ impl crate::GlobalNamespace::OVRPlugin_Sizei {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (obj))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_OVRPlugin_Sizei0(
@@ -37265,7 +37388,7 @@ impl crate::GlobalNamespace::OVRPlugin_Sizei {
         other: crate::GlobalNamespace::OVRPlugin_Sizei,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -37281,12 +37404,14 @@ impl crate::GlobalNamespace::OVRPlugin_Sizei {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
@@ -37298,7 +37423,7 @@ impl crate::GlobalNamespace::OVRPlugin_Sizei {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -39824,7 +39949,7 @@ impl crate::GlobalNamespace::OVRPlugin_TextureRectMatrixf {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -39842,7 +39967,7 @@ impl crate::GlobalNamespace::OVRPlugin_TextureRectMatrixf {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -40655,7 +40780,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         func: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -40672,7 +40797,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (func))?
+            cordl_method_info.invoke_unchecked((), (func))?
         };
         Ok(__cordl_ret.into())
     }
@@ -40687,7 +40812,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         xrSpace: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -40704,13 +40829,13 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (xrSpace))?
+            cordl_method_info.invoke_unchecked((), (xrSpace))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn OnInstanceCreate(xrInstance: u64) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), bool, 1usize>("OnInstanceCreate")
@@ -40722,14 +40847,16 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (xrInstance))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (xrInstance))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnInstanceDestroy(
         xrInstance: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -40746,7 +40873,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (xrInstance))?
+            cordl_method_info.invoke_unchecked((), (xrInstance))?
         };
         Ok(__cordl_ret.into())
     }
@@ -40754,7 +40881,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         xrSession: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -40771,7 +40898,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (xrSession))?
+            cordl_method_info.invoke_unchecked((), (xrSession))?
         };
         Ok(__cordl_ret.into())
     }
@@ -40779,7 +40906,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         xrSession: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -40796,7 +40923,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (xrSession))?
+            cordl_method_info.invoke_unchecked((), (xrSession))?
         };
         Ok(__cordl_ret.into())
     }
@@ -40804,7 +40931,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         xrSession: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -40821,7 +40948,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (xrSession))?
+            cordl_method_info.invoke_unchecked((), (xrSession))?
         };
         Ok(__cordl_ret.into())
     }
@@ -40829,7 +40956,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         xrSession: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -40846,7 +40973,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (xrSession))?
+            cordl_method_info.invoke_unchecked((), (xrSession))?
         };
         Ok(__cordl_ret.into())
     }
@@ -40854,7 +40981,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         xrSession: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -40871,7 +40998,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (xrSession))?
+            cordl_method_info.invoke_unchecked((), (xrSession))?
         };
         Ok(__cordl_ret.into())
     }
@@ -40880,7 +41007,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         newState: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -40897,7 +41024,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (oldState, newState))?
+            cordl_method_info.invoke_unchecked((), (oldState, newState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -40905,7 +41032,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         quest_hook::libil2cpp::Void,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -40922,7 +41049,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -40930,7 +41057,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -40943,7 +41070,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -41274,7 +41401,7 @@ impl crate::GlobalNamespace::OVRPlugin_Vector3f {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -41292,7 +41419,7 @@ impl crate::GlobalNamespace::OVRPlugin_Vector3f {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -41407,7 +41534,7 @@ impl crate::GlobalNamespace::OVRPlugin_Vector4f {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -41425,7 +41552,7 @@ impl crate::GlobalNamespace::OVRPlugin_Vector4f {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -41540,7 +41667,7 @@ impl crate::GlobalNamespace::OVRPlugin_Vector4s {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -41558,7 +41685,7 @@ impl crate::GlobalNamespace::OVRPlugin_Vector4s {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -42578,7 +42705,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelVisibility {
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelVisibility {
     pub fn get_Visible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Visible")
@@ -42590,7 +42717,7 @@ impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelVisibility {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Visible(
@@ -42598,7 +42725,7 @@ impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelVisibility {
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -42615,7 +42742,7 @@ impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelVisibility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

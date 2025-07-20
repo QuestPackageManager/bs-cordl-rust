@@ -54,7 +54,7 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -74,7 +74,7 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipher,
-        > = unsafe { method.invoke_unchecked(self, (stream))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (stream))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMaxOutputSize(
@@ -82,7 +82,7 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
         inputLen: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("GetMaxOutputSize")
@@ -94,7 +94,9 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (inputLen))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inputLen))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -123,7 +125,7 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -148,7 +150,7 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (encryptionOID, keySize, random))?
+            cordl_method_info.invoke_unchecked(self, (encryptionOID, keySize, random))?
         };
         Ok(__cordl_ret.into())
     }
@@ -158,7 +160,7 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -176,7 +178,7 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Key(
@@ -185,7 +187,7 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -205,7 +207,7 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherParameters,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

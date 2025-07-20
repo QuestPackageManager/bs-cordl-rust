@@ -51,7 +51,7 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -70,7 +70,7 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
                     })
             });
         let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<T> = unsafe {
-            method.invoke_unchecked((), (asyncOperationHandle))?
+            cordl_method_info.invoke_unchecked((), (asyncOperationHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -84,7 +84,7 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -104,7 +104,7 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<T>,
-        > = unsafe { method.invoke_unchecked((), (label))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (label))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadContentAsync<T>(
@@ -125,7 +125,7 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -155,7 +155,7 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
                     crate::System::Collections::Generic::IList_1<T>,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (label))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (label))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadContentOperation<T>(
@@ -170,7 +170,7 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -192,7 +192,7 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
-        > = unsafe { method.invoke_unchecked((), (label))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (label))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -54,7 +54,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -78,7 +78,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (buffer, deviceDescriptor))?
+            cordl_method_info.invoke_unchecked((), (buffer, deviceDescriptor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -90,7 +90,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -115,7 +115,8 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (bufferPtr, bufferLength, deviceDescriptor))?
+            cordl_method_info
+                .invoke_unchecked((), (bufferPtr, bufferLength, deviceDescriptor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -125,7 +126,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
         endPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -150,7 +151,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (itemSize, currentPtr, endPtr))?
+            cordl_method_info.invoke_unchecked((), (itemSize, currentPtr, endPtr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -279,7 +280,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
 impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
     pub fn GetPhysicalMax(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetPhysicalMax")
@@ -291,12 +292,12 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPhysicalMin(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetPhysicalMin")
@@ -308,7 +309,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUsagePage(
@@ -321,7 +322,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
         crate::UnityEngine::InputSystem::HID::HID_UsagePage,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -343,7 +344,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_UsagePage = unsafe {
-            method.invoke_unchecked(self, (index, localItemState))?
+            cordl_method_info.invoke_unchecked(self, (index, localItemState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -464,7 +465,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
 impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
     pub fn GetUsage(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("GetUsage")
@@ -476,7 +477,9 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (index))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Reset(
@@ -485,7 +488,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -504,7 +507,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (state))?
+            cordl_method_info.invoke_unchecked((), (state))?
         };
         Ok(__cordl_ret.into())
     }
@@ -513,7 +516,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -530,7 +533,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -767,7 +770,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -792,7 +795,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (reportId, reportType, reports))?
+            cordl_method_info.invoke_unchecked((), (reportId, reportType, reports))?
         };
         Ok(__cordl_ret.into())
     }

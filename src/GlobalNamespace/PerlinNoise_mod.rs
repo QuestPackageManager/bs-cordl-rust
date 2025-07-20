@@ -40,7 +40,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PerlinNoise {
 impl crate::GlobalNamespace::PerlinNoise {
     pub fn Fade(t: f32) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), f32, 1usize>("Fade")
@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::PerlinNoise {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (t))? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), (t))? };
         Ok(__cordl_ret.into())
     }
     pub fn Grad3D(
@@ -62,7 +62,7 @@ impl crate::GlobalNamespace::PerlinNoise {
         z: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, f32, f32, f32), f32, 4usize>("Grad3D")
@@ -74,12 +74,14 @@ impl crate::GlobalNamespace::PerlinNoise {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (hash, x, y, z))? };
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (hash, x, y, z))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Inc(num: i32, repeat: i32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), i32, 2usize>("Inc")
@@ -91,12 +93,14 @@ impl crate::GlobalNamespace::PerlinNoise {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (num, repeat))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (num, repeat))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Lerp(a: f32, b: f32, x: f32) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32, f32), f32, 3usize>("Lerp")
@@ -108,7 +112,9 @@ impl crate::GlobalNamespace::PerlinNoise {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (a, b, x))? };
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b, x))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -127,7 +133,7 @@ impl crate::GlobalNamespace::PerlinNoise {
         repeat: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -144,7 +150,8 @@ impl crate::GlobalNamespace::PerlinNoise {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (x, y, z, octaves, persistence, repeat))?
+            cordl_method_info
+                .invoke_unchecked((), (x, y, z, octaves, persistence, repeat))?
         };
         Ok(__cordl_ret.into())
     }
@@ -155,7 +162,7 @@ impl crate::GlobalNamespace::PerlinNoise {
         repeat: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32, f32, i32), f32, 4usize>("Perlin3D")
@@ -168,7 +175,7 @@ impl crate::GlobalNamespace::PerlinNoise {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (x, y, z, repeat))?
+            cordl_method_info.invoke_unchecked((), (x, y, z, repeat))?
         };
         Ok(__cordl_ret.into())
     }
@@ -176,7 +183,7 @@ impl crate::GlobalNamespace::PerlinNoise {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -189,7 +196,7 @@ impl crate::GlobalNamespace::PerlinNoise {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

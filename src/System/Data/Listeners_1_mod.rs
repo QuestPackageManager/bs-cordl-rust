@@ -84,7 +84,7 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(TElem), quest_hook::libil2cpp::Void, 1usize>("Add")
@@ -97,7 +97,7 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (listener))?
+            cordl_method_info.invoke_unchecked(self, (listener))?
         };
         Ok(__cordl_ret.into())
     }
@@ -110,7 +110,7 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(TElem), i32, 1usize>("IndexOfReference")
@@ -122,7 +122,9 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (listener))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (listener))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -161,7 +163,7 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -191,7 +193,7 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (arg1, arg2, arg3, action))?
+            cordl_method_info.invoke_unchecked(self, (arg1, arg2, arg3, action))?
         };
         Ok(__cordl_ret.into())
     }
@@ -204,7 +206,7 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -221,7 +223,7 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (listener))?
+            cordl_method_info.invoke_unchecked(self, (listener))?
         };
         Ok(__cordl_ret.into())
     }
@@ -234,7 +236,7 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -251,7 +253,7 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nullIndex))?
+            cordl_method_info.invoke_unchecked(self, (nullIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -267,7 +269,7 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -289,7 +291,7 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ObjectID, notifyFilter))?
+            cordl_method_info.invoke_unchecked(self, (ObjectID, notifyFilter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -299,7 +301,7 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_HasListeners")
@@ -311,7 +313,7 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -438,7 +440,7 @@ impl<
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -455,7 +457,7 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (arg1, arg2, arg3, arg4))?
+            cordl_method_info.invoke_unchecked(self, (arg1, arg2, arg3, arg4))?
         };
         Ok(__cordl_ret.into())
     }
@@ -499,7 +501,7 @@ impl<
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -521,7 +523,7 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))?
+            cordl_method_info.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -632,7 +634,7 @@ impl<
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(T1), TResult, 1usize>("Invoke")
@@ -644,7 +646,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: TResult = unsafe { method.invoke_unchecked(self, (arg1))? };
+        let __cordl_ret: TResult = unsafe {
+            cordl_method_info.invoke_unchecked(self, (arg1))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -679,7 +683,7 @@ impl<
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -701,7 +705,7 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))?
+            cordl_method_info.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }

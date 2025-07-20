@@ -43,7 +43,7 @@ impl crate::System::SpanHelpers {
         pointerSizeLength: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -60,7 +60,7 @@ impl crate::System::SpanHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ip, pointerSizeLength))?
+            cordl_method_info.invoke_unchecked((), (ip, pointerSizeLength))?
         };
         Ok(__cordl_ret.into())
     }
@@ -69,7 +69,7 @@ impl crate::System::SpanHelpers {
         byteLength: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -86,7 +86,7 @@ impl crate::System::SpanHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (b, byteLength))?
+            cordl_method_info.invoke_unchecked((), (b, byteLength))?
         };
         Ok(__cordl_ret.into())
     }
@@ -96,7 +96,7 @@ impl crate::System::SpanHelpers {
         compareInfo: quest_hook::libil2cpp::Gc<crate::System::Globalization::CompareInfo>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -119,7 +119,7 @@ impl crate::System::SpanHelpers {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (span, value, compareInfo))?
+            cordl_method_info.invoke_unchecked((), (span, value, compareInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -129,7 +129,7 @@ impl crate::System::SpanHelpers {
         compareInfo: quest_hook::libil2cpp::Gc<crate::System::Globalization::CompareInfo>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -152,7 +152,7 @@ impl crate::System::SpanHelpers {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (span, value, compareInfo))?
+            cordl_method_info.invoke_unchecked((), (span, value, compareInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -161,7 +161,7 @@ impl crate::System::SpanHelpers {
         value: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -180,7 +180,9 @@ impl crate::System::SpanHelpers {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (span, value))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (span, value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOfAny_ByRefMut_i32_ByRefMut_i32_0(
@@ -190,7 +192,7 @@ impl crate::System::SpanHelpers {
         valueLength: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -212,7 +214,7 @@ impl crate::System::SpanHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (searchSpace, searchSpaceLength, value, valueLength),
@@ -231,7 +233,7 @@ impl crate::System::SpanHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -253,7 +255,7 @@ impl crate::System::SpanHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (searchSpace, searchSpaceLength, value, valueLength),
@@ -271,7 +273,7 @@ impl crate::System::SpanHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -288,7 +290,7 @@ impl crate::System::SpanHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (searchSpace, value, length))?
+            cordl_method_info.invoke_unchecked((), (searchSpace, value, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -298,7 +300,7 @@ impl crate::System::SpanHelpers {
         length: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -315,7 +317,7 @@ impl crate::System::SpanHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (searchSpace, value, length))?
+            cordl_method_info.invoke_unchecked((), (searchSpace, value, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -325,7 +327,7 @@ impl crate::System::SpanHelpers {
         length: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -342,7 +344,7 @@ impl crate::System::SpanHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (searchSpace, value, length))?
+            cordl_method_info.invoke_unchecked((), (searchSpace, value, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -352,7 +354,7 @@ impl crate::System::SpanHelpers {
         length: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -369,7 +371,7 @@ impl crate::System::SpanHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (searchSpace, value, length))?
+            cordl_method_info.invoke_unchecked((), (searchSpace, value, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -377,7 +379,7 @@ impl crate::System::SpanHelpers {
         _cordl_match: crate::System::Numerics::Vector_1<u16>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -393,14 +395,16 @@ impl crate::System::SpanHelpers {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_match))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_match))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LocateFirstFoundChar_u64_1(
         _cordl_match: u64,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), i32, 1usize>("LocateFirstFoundChar")
@@ -412,14 +416,16 @@ impl crate::System::SpanHelpers {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_match))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_match))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LocateLastFoundChar_Vector_1_0(
         _cordl_match: crate::System::Numerics::Vector_1<u16>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -435,14 +441,16 @@ impl crate::System::SpanHelpers {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_match))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_match))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LocateLastFoundChar_u64_1(
         _cordl_match: u64,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), i32, 1usize>("LocateLastFoundChar")
@@ -454,7 +462,9 @@ impl crate::System::SpanHelpers {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_match))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_match))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SequenceCompareTo(
@@ -464,7 +474,7 @@ impl crate::System::SpanHelpers {
         secondLength: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -486,7 +496,8 @@ impl crate::System::SpanHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (first, firstLength, second, secondLength))?
+            cordl_method_info
+                .invoke_unchecked((), (first, firstLength, second, secondLength))?
         };
         Ok(__cordl_ret.into())
     }
@@ -500,7 +511,7 @@ impl crate::System::SpanHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -521,7 +532,7 @@ impl crate::System::SpanHelpers {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (first, second, length))?
+            cordl_method_info.invoke_unchecked((), (first, second, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -531,7 +542,7 @@ impl crate::System::SpanHelpers {
         length: u64,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -552,7 +563,7 @@ impl crate::System::SpanHelpers {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (first, second, length))?
+            cordl_method_info.invoke_unchecked((), (first, second, length))?
         };
         Ok(__cordl_ret.into())
     }

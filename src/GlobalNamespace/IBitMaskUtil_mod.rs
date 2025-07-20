@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::IBitMaskUtil {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -68,12 +68,14 @@ impl crate::GlobalNamespace::IBitMaskUtil {
                         )
                     })
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (bytes, offset))? };
+        let __cordl_ret: T = unsafe {
+            cordl_method_info.invoke_unchecked((), (bytes, offset))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBase64Char(digit: u64) -> quest_hook::libil2cpp::Result<char> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), char, 1usize>("GetBase64Char")
@@ -85,12 +87,14 @@ impl crate::GlobalNamespace::IBitMaskUtil {
                         )
                     })
             });
-        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (digit))? };
+        let __cordl_ret: char = unsafe {
+            cordl_method_info.invoke_unchecked((), (digit))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBase64Digit(c: char) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), u32, 1usize>("GetBase64Digit")
@@ -102,12 +106,12 @@ impl crate::GlobalNamespace::IBitMaskUtil {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (c))? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHexDigit(c: char) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), u32, 1usize>("GetHexDigit")
@@ -119,7 +123,7 @@ impl crate::GlobalNamespace::IBitMaskUtil {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (c))? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn NumberOfSetBits<T>(bitMask: T) -> quest_hook::libil2cpp::Result<i32>
@@ -128,7 +132,7 @@ impl crate::GlobalNamespace::IBitMaskUtil {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(T), i32, 1usize>("NumberOfSetBits")
@@ -140,7 +144,9 @@ impl crate::GlobalNamespace::IBitMaskUtil {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (bitMask))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (bitMask))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToBytes<T>(
@@ -153,7 +159,7 @@ impl crate::GlobalNamespace::IBitMaskUtil {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -173,7 +179,7 @@ impl crate::GlobalNamespace::IBitMaskUtil {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (bitMask))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (bitMask))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToShortString<T>(
@@ -186,7 +192,7 @@ impl crate::GlobalNamespace::IBitMaskUtil {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -204,7 +210,7 @@ impl crate::GlobalNamespace::IBitMaskUtil {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (bitMask))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (bitMask))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryParse_ByRefMut0<T>(
@@ -218,7 +224,7 @@ impl crate::GlobalNamespace::IBitMaskUtil {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -240,7 +246,7 @@ impl crate::GlobalNamespace::IBitMaskUtil {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (stringSerializedMask, bitMask))?
+            cordl_method_info.invoke_unchecked((), (stringSerializedMask, bitMask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -257,7 +263,7 @@ impl crate::GlobalNamespace::IBitMaskUtil {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -281,7 +287,8 @@ impl crate::GlobalNamespace::IBitMaskUtil {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (stringSerializedMask, offset, length, bitMask))?
+            cordl_method_info
+                .invoke_unchecked((), (stringSerializedMask, offset, length, bitMask))?
         };
         Ok(__cordl_ret.into())
     }

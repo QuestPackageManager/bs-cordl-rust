@@ -47,7 +47,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Plane> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -73,7 +73,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Plane = unsafe {
-            method.invoke_unchecked((), (points, indexes))?
+            cordl_method_info.invoke_unchecked((), (points, indexes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -82,7 +82,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         textureGroup: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Plane> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -104,7 +104,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Plane = unsafe {
-            method.invoke_unchecked((), (mesh, textureGroup))?
+            cordl_method_info.invoke_unchecked((), (mesh, textureGroup))?
         };
         Ok(__cordl_ret.into())
     }
@@ -112,7 +112,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         axis: crate::UnityEngine::ProBuilder::ProjectionAxis,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -129,7 +129,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (axis))?
+            cordl_method_info.invoke_unchecked((), (axis))?
         };
         Ok(__cordl_ret.into())
     }
@@ -146,7 +146,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -177,7 +177,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        > = unsafe { method.invoke_unchecked((), (positions, indexes))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (positions, indexes))? };
         Ok(__cordl_ret.into())
     }
     pub fn PlanarProject_IList_1_IList_1_Vector3_1(
@@ -194,7 +194,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -226,7 +226,9 @@ impl crate::UnityEngine::ProBuilder::Projection {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        > = unsafe { method.invoke_unchecked((), (positions, indexes, direction))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (positions, indexes, direction))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PlanarProject_IList_1_IList_1_Vector3_List_1_2(
@@ -242,7 +244,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -274,7 +276,8 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (positions, indexes, direction, results))?
+            cordl_method_info
+                .invoke_unchecked((), (positions, indexes, direction, results))?
         };
         Ok(__cordl_ret.into())
     }
@@ -284,7 +287,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         projection: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -309,7 +312,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, face, projection))?
+            cordl_method_info.invoke_unchecked((), (mesh, face, projection))?
         };
         Ok(__cordl_ret.into())
     }
@@ -319,7 +322,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         unwrapSettings: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -342,7 +345,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, textureGroup, unwrapSettings))?
+            cordl_method_info.invoke_unchecked((), (mesh, textureGroup, unwrapSettings))?
         };
         Ok(__cordl_ret.into())
     }
@@ -350,7 +353,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         axis: crate::UnityEngine::ProBuilder::ProjectionAxis,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -367,7 +370,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (axis))?
+            cordl_method_info.invoke_unchecked((), (axis))?
         };
         Ok(__cordl_ret.into())
     }
@@ -382,7 +385,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -411,7 +414,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
-        > = unsafe { method.invoke_unchecked((), (verts, method))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (verts, method))? };
         Ok(__cordl_ret.into())
     }
     pub fn SphericalProject(
@@ -427,7 +430,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -458,14 +461,14 @@ impl crate::UnityEngine::ProBuilder::Projection {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        > = unsafe { method.invoke_unchecked((), (vertices, indexes))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (vertices, indexes))? };
         Ok(__cordl_ret.into())
     }
     pub fn VectorToProjectionAxis(
         direction: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::ProjectionAxis> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -482,7 +485,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     })
             });
         let __cordl_ret: crate::UnityEngine::ProBuilder::ProjectionAxis = unsafe {
-            method.invoke_unchecked((), (direction))?
+            cordl_method_info.invoke_unchecked((), (direction))?
         };
         Ok(__cordl_ret.into())
     }

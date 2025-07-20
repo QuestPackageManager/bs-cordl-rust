@@ -82,7 +82,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -107,7 +107,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v, tagNo, obj))?
+            cordl_method_info.invoke_unchecked(self, (v, tagNo, obj))?
         };
         Ok(__cordl_ret.into())
     }
@@ -117,7 +117,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -137,7 +137,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn MakeGeneralInfoSeq_Il2CppArray1(
@@ -152,7 +152,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -178,7 +178,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-        > = unsafe { method.invoke_unchecked((), (generalInfos))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (generalInfos))? };
         Ok(__cordl_ret.into())
     }
     pub fn MakeGeneralInfoSeq_InfoTypeAndValue0(
@@ -189,7 +189,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -211,7 +211,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-        > = unsafe { method.invoke_unchecked((), (generalInfo))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (generalInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_DerInteger1(
@@ -251,7 +251,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -273,7 +273,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
-        > = unsafe { method.invoke_unchecked(self, (text))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (text))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetGeneralInfo_Asn1Sequence2(
@@ -285,7 +285,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -307,7 +307,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
-        > = unsafe { method.invoke_unchecked(self, (seqOfInfoTypeAndValue))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (seqOfInfoTypeAndValue))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetGeneralInfo_Il2CppArray1(
@@ -323,7 +325,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -349,7 +351,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
-        > = unsafe { method.invoke_unchecked(self, (genInfos))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (genInfos))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetGeneralInfo_InfoTypeAndValue0(
@@ -361,7 +363,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -383,7 +385,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
-        > = unsafe { method.invoke_unchecked(self, (genInfo))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (genInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetMessageTime(
@@ -395,7 +397,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -417,7 +419,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
-        > = unsafe { method.invoke_unchecked(self, (_cordl_time))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetProtectionAlg(
@@ -429,7 +431,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -451,7 +453,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
-        > = unsafe { method.invoke_unchecked(self, (aid))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (aid))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetRecipKID_Asn1OctetString1(
@@ -461,7 +463,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -483,7 +485,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
-        > = unsafe { method.invoke_unchecked(self, (kid))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kid))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetRecipKID_Il2CppArray0(
@@ -493,7 +495,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -515,7 +517,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
-        > = unsafe { method.invoke_unchecked(self, (kid))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kid))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetRecipNonce_Asn1OctetString1(
@@ -525,7 +527,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -547,7 +549,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
-        > = unsafe { method.invoke_unchecked(self, (nonce))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (nonce))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetRecipNonce_Il2CppArray0(
@@ -557,7 +559,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -579,7 +581,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
-        > = unsafe { method.invoke_unchecked(self, (nonce))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (nonce))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetSenderKID_Asn1OctetString1(
@@ -589,7 +591,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -611,7 +613,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
-        > = unsafe { method.invoke_unchecked(self, (kid))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kid))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetSenderKID_Il2CppArray0(
@@ -621,7 +623,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -643,7 +645,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
-        > = unsafe { method.invoke_unchecked(self, (kid))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kid))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetSenderNonce_Asn1OctetString1(
@@ -653,7 +655,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -675,7 +677,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
-        > = unsafe { method.invoke_unchecked(self, (nonce))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (nonce))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetSenderNonce_Il2CppArray0(
@@ -685,7 +687,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -707,7 +709,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
-        > = unsafe { method.invoke_unchecked(self, (nonce))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (nonce))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetTransactionID_Asn1OctetString1(
@@ -717,7 +719,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -739,7 +741,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
-        > = unsafe { method.invoke_unchecked(self, (tid))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (tid))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetTransactionID_Il2CppArray0(
@@ -749,7 +751,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -771,7 +773,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
-        > = unsafe { method.invoke_unchecked(self, (tid))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (tid))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_DerInteger1(
@@ -785,7 +787,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -812,7 +814,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pvno, sender, recipient))?
+            cordl_method_info.invoke_unchecked(self, (pvno, sender, recipient))?
         };
         Ok(__cordl_ret.into())
     }
@@ -827,7 +829,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -852,7 +854,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pvno, sender, recipient))?
+            cordl_method_info.invoke_unchecked(self, (pvno, sender, recipient))?
         };
         Ok(__cordl_ret.into())
     }

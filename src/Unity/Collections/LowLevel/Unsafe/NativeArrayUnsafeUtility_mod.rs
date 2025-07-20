@@ -51,7 +51,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -74,7 +74,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
                     })
             });
         let __cordl_ret: crate::Unity::Collections::NativeArray_1<T> = unsafe {
-            method.invoke_unchecked((), (dataPointer, length, allocator))?
+            cordl_method_info.invoke_unchecked((), (dataPointer, length, allocator))?
         };
         Ok(__cordl_ret.into())
     }
@@ -88,7 +88,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -106,7 +106,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (nativeArray))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (nativeArray))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUnsafePtr<T>(
@@ -119,7 +119,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -137,7 +137,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (nativeArray))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (nativeArray))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUnsafeReadOnlyPtr<T>(
@@ -150,7 +150,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -168,7 +168,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (nativeArray))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (nativeArray))? };
         Ok(__cordl_ret.into())
     }
 }

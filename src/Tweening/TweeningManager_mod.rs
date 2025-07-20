@@ -83,7 +83,7 @@ impl crate::Tweening::TweeningManager {
         quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -106,7 +106,8 @@ impl crate::Tweening::TweeningManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Tweening::Tween> = unsafe {
-            method.invoke_unchecked(self, (tween, owner, updateEveryOtherFrame))?
+            cordl_method_info
+                .invoke_unchecked(self, (tween, owner, updateEveryOtherFrame))?
         };
         Ok(__cordl_ret.into())
     }
@@ -117,7 +118,7 @@ impl crate::Tweening::TweeningManager {
         updateEveryOtherFrame: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -140,7 +141,8 @@ impl crate::Tweening::TweeningManager {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (tween, owner, updateEveryOtherFrame))?
+            cordl_method_info
+                .invoke_unchecked(self, (tween, owner, updateEveryOtherFrame))?
         };
         Ok(__cordl_ret.into())
     }
@@ -150,7 +152,7 @@ impl crate::Tweening::TweeningManager {
         owner: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -172,13 +174,13 @@ impl crate::Tweening::TweeningManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (tween, owner))?
+            cordl_method_info.invoke_unchecked(self, (tween, owner))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("GetTime")
@@ -190,7 +192,7 @@ impl crate::Tweening::TweeningManager {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn KillAllTweens(
@@ -198,7 +200,7 @@ impl crate::Tweening::TweeningManager {
         owner: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -215,7 +217,7 @@ impl crate::Tweening::TweeningManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (owner))?
+            cordl_method_info.invoke_unchecked(self, (owner))?
         };
         Ok(__cordl_ret.into())
     }
@@ -223,7 +225,7 @@ impl crate::Tweening::TweeningManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LateUpdate")
@@ -236,7 +238,7 @@ impl crate::Tweening::TweeningManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -252,7 +254,7 @@ impl crate::Tweening::TweeningManager {
         tween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -269,7 +271,7 @@ impl crate::Tweening::TweeningManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (tween))?
+            cordl_method_info.invoke_unchecked(self, (tween))?
         };
         Ok(__cordl_ret.into())
     }
@@ -282,7 +284,7 @@ impl crate::Tweening::TweeningManager {
         quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -305,7 +307,8 @@ impl crate::Tweening::TweeningManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Tweening::Tween> = unsafe {
-            method.invoke_unchecked(self, (tween, owner, updateEveryOtherFrame))?
+            cordl_method_info
+                .invoke_unchecked(self, (tween, owner, updateEveryOtherFrame))?
         };
         Ok(__cordl_ret.into())
     }
@@ -318,7 +321,7 @@ impl crate::Tweening::TweeningManager {
         quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -341,7 +344,8 @@ impl crate::Tweening::TweeningManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Tweening::Tween> = unsafe {
-            method.invoke_unchecked(self, (tween, owner, updateEveryOtherFrame))?
+            cordl_method_info
+                .invoke_unchecked(self, (tween, owner, updateEveryOtherFrame))?
         };
         Ok(__cordl_ret.into())
     }
@@ -349,7 +353,7 @@ impl crate::Tweening::TweeningManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
@@ -362,7 +366,7 @@ impl crate::Tweening::TweeningManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -370,7 +374,7 @@ impl crate::Tweening::TweeningManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -383,7 +387,7 @@ impl crate::Tweening::TweeningManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

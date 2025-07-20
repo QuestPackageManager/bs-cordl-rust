@@ -44,7 +44,7 @@ impl crate::UnityEngine::XR::HashCodeHelper {
         hash3: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32, i32), i32, 3usize>("Combine")
@@ -57,7 +57,7 @@ impl crate::UnityEngine::XR::HashCodeHelper {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (hash1, hash2, hash3))?
+            cordl_method_info.invoke_unchecked((), (hash1, hash2, hash3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -66,7 +66,7 @@ impl crate::UnityEngine::XR::HashCodeHelper {
         hash2: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), i32, 2usize>("Combine")
@@ -78,7 +78,9 @@ impl crate::UnityEngine::XR::HashCodeHelper {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (hash1, hash2))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (hash1, hash2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Combine_i32_i32_2(
@@ -88,7 +90,7 @@ impl crate::UnityEngine::XR::HashCodeHelper {
         hash4: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32, i32, i32), i32, 4usize>("Combine")
@@ -101,7 +103,7 @@ impl crate::UnityEngine::XR::HashCodeHelper {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (hash1, hash2, hash3, hash4))?
+            cordl_method_info.invoke_unchecked((), (hash1, hash2, hash3, hash4))?
         };
         Ok(__cordl_ret.into())
     }
@@ -113,7 +115,7 @@ impl crate::UnityEngine::XR::HashCodeHelper {
         hash5: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -130,7 +132,7 @@ impl crate::UnityEngine::XR::HashCodeHelper {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (hash1, hash2, hash3, hash4, hash5))?
+            cordl_method_info.invoke_unchecked((), (hash1, hash2, hash3, hash4, hash5))?
         };
         Ok(__cordl_ret.into())
     }
@@ -143,7 +145,7 @@ impl crate::UnityEngine::XR::HashCodeHelper {
         hash6: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -160,7 +162,8 @@ impl crate::UnityEngine::XR::HashCodeHelper {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (hash1, hash2, hash3, hash4, hash5, hash6))?
+            cordl_method_info
+                .invoke_unchecked((), (hash1, hash2, hash3, hash4, hash5, hash6))?
         };
         Ok(__cordl_ret.into())
     }
@@ -174,7 +177,7 @@ impl crate::UnityEngine::XR::HashCodeHelper {
         hash7: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -191,7 +194,7 @@ impl crate::UnityEngine::XR::HashCodeHelper {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (hash1, hash2, hash3, hash4, hash5, hash6, hash7))?
         };
         Ok(__cordl_ret.into())
@@ -207,7 +210,7 @@ impl crate::UnityEngine::XR::HashCodeHelper {
         hash8: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -224,7 +227,7 @@ impl crate::UnityEngine::XR::HashCodeHelper {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (hash1, hash2, hash3, hash4, hash5, hash6, hash7, hash8),

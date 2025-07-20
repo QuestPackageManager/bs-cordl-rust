@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockBeatmapData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -69,7 +69,7 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MockBeatmapData,
-        > = unsafe { method.invoke_unchecked((), (beatmapData))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (beatmapData))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToMockNoteData(
@@ -78,7 +78,7 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MockNoteData,
-        > = unsafe { method.invoke_unchecked((), (noteData))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (noteData))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToMockObstacleData(
@@ -105,7 +105,7 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockObstacleData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -127,7 +127,7 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MockObstacleData,
-        > = unsafe { method.invoke_unchecked((), (obstacleData))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obstacleData))? };
         Ok(__cordl_ret.into())
     }
 }

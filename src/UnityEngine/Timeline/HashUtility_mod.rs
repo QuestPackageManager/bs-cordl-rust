@@ -42,7 +42,7 @@ impl crate::UnityEngine::Timeline::HashUtility {
         hashes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -60,7 +60,9 @@ impl crate::UnityEngine::Timeline::HashUtility {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (hashes))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (hashes))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CombineHash_i32_i32_0(
@@ -68,7 +70,7 @@ impl crate::UnityEngine::Timeline::HashUtility {
         h2: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), i32, 2usize>("CombineHash")
@@ -80,7 +82,9 @@ impl crate::UnityEngine::Timeline::HashUtility {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (h1, h2))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (h1, h2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CombineHash_i32_i32_i32_1(
@@ -89,7 +93,7 @@ impl crate::UnityEngine::Timeline::HashUtility {
         h3: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32, i32), i32, 3usize>("CombineHash")
@@ -101,7 +105,9 @@ impl crate::UnityEngine::Timeline::HashUtility {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (h1, h2, h3))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (h1, h2, h3))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CombineHash_i32_i32_i32_i32_2(
@@ -111,7 +117,7 @@ impl crate::UnityEngine::Timeline::HashUtility {
         h4: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -127,7 +133,9 @@ impl crate::UnityEngine::Timeline::HashUtility {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (h1, h2, h3, h4))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (h1, h2, h3, h4))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CombineHash_i32_i32_i32_i32_i32_3(
@@ -138,7 +146,7 @@ impl crate::UnityEngine::Timeline::HashUtility {
         h5: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -155,7 +163,7 @@ impl crate::UnityEngine::Timeline::HashUtility {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (h1, h2, h3, h4, h5))?
+            cordl_method_info.invoke_unchecked((), (h1, h2, h3, h4, h5))?
         };
         Ok(__cordl_ret.into())
     }
@@ -168,7 +176,7 @@ impl crate::UnityEngine::Timeline::HashUtility {
         h6: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -185,7 +193,7 @@ impl crate::UnityEngine::Timeline::HashUtility {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (h1, h2, h3, h4, h5, h6))?
+            cordl_method_info.invoke_unchecked((), (h1, h2, h3, h4, h5, h6))?
         };
         Ok(__cordl_ret.into())
     }
@@ -199,7 +207,7 @@ impl crate::UnityEngine::Timeline::HashUtility {
         h7: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -216,7 +224,7 @@ impl crate::UnityEngine::Timeline::HashUtility {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (h1, h2, h3, h4, h5, h6, h7))?
+            cordl_method_info.invoke_unchecked((), (h1, h2, h3, h4, h5, h6, h7))?
         };
         Ok(__cordl_ret.into())
     }

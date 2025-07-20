@@ -55,7 +55,7 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -86,7 +86,7 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (pageElem, idxElem, pageNmsp))?
+            cordl_method_info.invoke_unchecked((), (pageElem, idxElem, pageNmsp))?
         };
         Ok(__cordl_ret.into())
     }
@@ -106,7 +106,7 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -137,7 +137,7 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (pageElem, idxElem, pageNmsp))?
+            cordl_method_info.invoke_unchecked((), (pageElem, idxElem, pageNmsp))?
         };
         Ok(__cordl_ret.into())
     }
@@ -150,7 +150,7 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
         idxNode: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -174,7 +174,7 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (pageNode, idxNode))?
+            cordl_method_info.invoke_unchecked((), (pageNode, idxNode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -189,7 +189,7 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
         idxNode: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -215,7 +215,7 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (pageNode, idxNode))?
+            cordl_method_info.invoke_unchecked((), (pageNode, idxNode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -230,7 +230,7 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
         idxNode: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -256,7 +256,7 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (pageNode, idxNode))?
+            cordl_method_info.invoke_unchecked((), (pageNode, idxNode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -277,7 +277,7 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
         idxEnd: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -309,7 +309,8 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (pageCurrent, idxCurrent, pageEnd, idxEnd))?
+            cordl_method_info
+                .invoke_unchecked((), (pageCurrent, idxCurrent, pageEnd, idxEnd))?
         };
         Ok(__cordl_ret.into())
     }

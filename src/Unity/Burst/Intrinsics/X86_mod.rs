@@ -437,7 +437,7 @@ impl crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
         bindex: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32), bool, 2usize>("GetBit")
@@ -450,7 +450,7 @@ impl crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (aindex, bindex))?
+            cordl_method_info.invoke_unchecked(self, (aindex, bindex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -461,7 +461,7 @@ impl crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
         val: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -478,7 +478,7 @@ impl crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (aindex, bindex, val))?
+            cordl_method_info.invoke_unchecked(self, (aindex, bindex, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -660,7 +660,7 @@ impl crate::Unity::Burst::Intrinsics::X86 {
     pub type Ssse3 = crate::Unity::Burst::Intrinsics::X86_Ssse3;
     pub fn BurstIntrinsicGetCSRFromManaged() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -676,14 +676,14 @@ impl crate::Unity::Burst::Intrinsics::X86 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BurstIntrinsicSetCSRFromManaged(
         _cordl__: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -700,13 +700,13 @@ impl crate::Unity::Burst::Intrinsics::X86 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (_cordl__))?
+            cordl_method_info.invoke_unchecked((), (_cordl__))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn DoGetCSRTrampoline() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("DoGetCSRTrampoline")
@@ -718,14 +718,14 @@ impl crate::Unity::Burst::Intrinsics::X86 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DoSetCSRTrampoline(
         bits: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -742,7 +742,7 @@ impl crate::Unity::Burst::Intrinsics::X86 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (bits))?
+            cordl_method_info.invoke_unchecked((), (bits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -750,7 +750,7 @@ impl crate::Unity::Burst::Intrinsics::X86 {
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -767,7 +767,7 @@ impl crate::Unity::Burst::Intrinsics::X86 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (ptr))?
+            cordl_method_info.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -776,7 +776,7 @@ impl crate::Unity::Burst::Intrinsics::X86 {
         val: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -798,13 +798,13 @@ impl crate::Unity::Burst::Intrinsics::X86 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr, val))?
+            cordl_method_info.invoke_unchecked((), (ptr, val))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsNaN_u32_0(v: u32) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), bool, 1usize>("IsNaN")
@@ -816,12 +816,12 @@ impl crate::Unity::Burst::Intrinsics::X86 {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (v))? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (v))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNaN_u64_1(v: u64) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), bool, 1usize>("IsNaN")
@@ -833,12 +833,12 @@ impl crate::Unity::Burst::Intrinsics::X86 {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (v))? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (v))? };
         Ok(__cordl_ret.into())
     }
     pub fn Saturate_To_Int16(val: i32) -> quest_hook::libil2cpp::Result<i16> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i16, 1usize>("Saturate_To_Int16")
@@ -850,12 +850,12 @@ impl crate::Unity::Burst::Intrinsics::X86 {
                         )
                     })
             });
-        let __cordl_ret: i16 = unsafe { method.invoke_unchecked((), (val))? };
+        let __cordl_ret: i16 = unsafe { cordl_method_info.invoke_unchecked((), (val))? };
         Ok(__cordl_ret.into())
     }
     pub fn Saturate_To_Int8(val: i32) -> quest_hook::libil2cpp::Result<i8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i8, 1usize>("Saturate_To_Int8")
@@ -867,12 +867,12 @@ impl crate::Unity::Burst::Intrinsics::X86 {
                         )
                     })
             });
-        let __cordl_ret: i8 = unsafe { method.invoke_unchecked((), (val))? };
+        let __cordl_ret: i8 = unsafe { cordl_method_info.invoke_unchecked((), (val))? };
         Ok(__cordl_ret.into())
     }
     pub fn Saturate_To_UnsignedInt16(val: i32) -> quest_hook::libil2cpp::Result<u16> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -888,12 +888,12 @@ impl crate::Unity::Burst::Intrinsics::X86 {
                         )
                     })
             });
-        let __cordl_ret: u16 = unsafe { method.invoke_unchecked((), (val))? };
+        let __cordl_ret: u16 = unsafe { cordl_method_info.invoke_unchecked((), (val))? };
         Ok(__cordl_ret.into())
     }
     pub fn Saturate_To_UnsignedInt8(val: i32) -> quest_hook::libil2cpp::Result<u8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), u8, 1usize>("Saturate_To_UnsignedInt8")
@@ -905,14 +905,14 @@ impl crate::Unity::Burst::Intrinsics::X86 {
                         )
                     })
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (val))? };
+        let __cordl_ret: u8 = unsafe { cordl_method_info.invoke_unchecked((), (val))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_MXCSR() -> quest_hook::libil2cpp::Result<
         crate::Unity::Burst::Intrinsics::X86_MXCSRBits,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -929,13 +929,13 @@ impl crate::Unity::Burst::Intrinsics::X86 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::X86_MXCSRBits = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn getcsr_raw() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("getcsr_raw")
@@ -947,14 +947,14 @@ impl crate::Unity::Burst::Intrinsics::X86 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_MXCSR(
         value: crate::Unity::Burst::Intrinsics::X86_MXCSRBits,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -971,7 +971,7 @@ impl crate::Unity::Burst::Intrinsics::X86 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))?
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -979,7 +979,7 @@ impl crate::Unity::Burst::Intrinsics::X86 {
         bits: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -996,7 +996,7 @@ impl crate::Unity::Burst::Intrinsics::X86 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (bits))?
+            cordl_method_info.invoke_unchecked((), (bits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1058,7 +1058,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         control: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1079,7 +1079,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (src1, src2, control))?
+            cordl_method_info.invoke_unchecked((), (src1, src2, control))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1087,7 +1087,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1104,7 +1104,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (ptr))?
+            cordl_method_info.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1114,7 +1114,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1135,7 +1135,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1145,7 +1145,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1166,7 +1166,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1176,7 +1176,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1197,7 +1197,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1207,7 +1207,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1228,13 +1228,13 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsAvxSupported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsAvxSupported")
@@ -1246,7 +1246,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn maskload_pd(
@@ -1254,7 +1254,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         mask: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1276,7 +1276,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (mem_addr, mask))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1285,7 +1285,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         mask: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1307,7 +1307,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (mem_addr, mask))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1317,7 +1317,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1340,7 +1340,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, mask, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, mask, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1350,7 +1350,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1373,7 +1373,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, mask, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, mask, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1382,7 +1382,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1402,7 +1402,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1411,7 +1411,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1431,7 +1431,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1440,7 +1440,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1460,7 +1460,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1469,7 +1469,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1489,7 +1489,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1498,7 +1498,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1518,7 +1518,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1527,7 +1527,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1547,7 +1547,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1556,7 +1556,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1576,7 +1576,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1585,7 +1585,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1605,7 +1605,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1615,7 +1615,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1636,7 +1636,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1646,7 +1646,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1667,7 +1667,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1677,7 +1677,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         mask: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1698,7 +1698,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, mask))?
+            cordl_method_info.invoke_unchecked((), (a, b, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1708,7 +1708,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         mask: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1729,7 +1729,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, mask))?
+            cordl_method_info.invoke_unchecked((), (a, b, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1737,7 +1737,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1754,7 +1754,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (ptr))?
+            cordl_method_info.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1762,7 +1762,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1779,7 +1779,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (ptr))?
+            cordl_method_info.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1787,7 +1787,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1804,7 +1804,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (ptr))?
+            cordl_method_info.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1812,7 +1812,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1829,7 +1829,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (ptr))?
+            cordl_method_info.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1837,7 +1837,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1854,7 +1854,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1862,7 +1862,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1879,7 +1879,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1887,7 +1887,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1904,7 +1904,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1912,7 +1912,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1929,7 +1929,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1937,7 +1937,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1954,7 +1954,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1962,7 +1962,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1979,7 +1979,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1987,7 +1987,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2004,7 +2004,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2012,7 +2012,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2029,7 +2029,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2037,7 +2037,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2054,7 +2054,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2062,7 +2062,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2079,7 +2079,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2087,7 +2087,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2104,7 +2104,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2112,7 +2112,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2129,7 +2129,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2137,7 +2137,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         val: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2154,7 +2154,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (val))?
+            cordl_method_info.invoke_unchecked((), (val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2162,7 +2162,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         val: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2179,7 +2179,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (val))?
+            cordl_method_info.invoke_unchecked((), (val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2189,7 +2189,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2210,7 +2210,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2220,7 +2220,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2241,7 +2241,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2249,7 +2249,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2266,7 +2266,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2274,7 +2274,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2291,7 +2291,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2299,7 +2299,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2316,7 +2316,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2324,7 +2324,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2341,7 +2341,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2349,7 +2349,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2366,7 +2366,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2374,7 +2374,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2391,7 +2391,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2399,7 +2399,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2415,14 +2415,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_cvttpd_epi32(
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2439,7 +2439,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2447,7 +2447,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2464,7 +2464,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2473,7 +2473,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2493,7 +2493,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2502,7 +2502,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2522,7 +2522,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2532,7 +2532,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2553,7 +2553,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2562,7 +2562,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2578,7 +2578,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, index))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_extract_epi64(
@@ -2586,7 +2588,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2602,7 +2604,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (a, index))? };
+        let __cordl_ret: i64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_extractf128_pd(
@@ -2610,7 +2614,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2627,7 +2631,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2636,7 +2640,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2653,7 +2657,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2662,7 +2666,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2679,7 +2683,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2687,7 +2691,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         val: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2704,7 +2708,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (val))?
+            cordl_method_info.invoke_unchecked((), (val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2712,7 +2716,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         val: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2729,7 +2733,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (val))?
+            cordl_method_info.invoke_unchecked((), (val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2738,7 +2742,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2758,7 +2762,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2767,7 +2771,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2787,7 +2791,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2796,7 +2800,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2816,7 +2820,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2825,7 +2829,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2845,7 +2849,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2855,7 +2859,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2872,7 +2876,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, i, index))?
+            cordl_method_info.invoke_unchecked((), (a, i, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2882,7 +2886,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2899,7 +2903,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, i, index))?
+            cordl_method_info.invoke_unchecked((), (a, i, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2909,7 +2913,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2926,7 +2930,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, i, index))?
+            cordl_method_info.invoke_unchecked((), (a, i, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2936,7 +2940,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2953,7 +2957,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, i, index))?
+            cordl_method_info.invoke_unchecked((), (a, i, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2963,7 +2967,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2984,7 +2988,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2994,7 +2998,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3015,7 +3019,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3025,7 +3029,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3046,7 +3050,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3054,7 +3058,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         mem_addr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3071,7 +3075,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (mem_addr))?
+            cordl_method_info.invoke_unchecked((), (mem_addr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3079,7 +3083,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3096,7 +3100,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (ptr))?
+            cordl_method_info.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3104,7 +3108,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3121,7 +3125,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (ptr))?
+            cordl_method_info.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3129,7 +3133,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3146,7 +3150,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (ptr))?
+            cordl_method_info.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3155,7 +3159,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         loaddr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3179,7 +3183,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (hiaddr, loaddr))?
+            cordl_method_info.invoke_unchecked((), (hiaddr, loaddr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3188,7 +3192,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         loaddr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3212,7 +3216,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (hiaddr, loaddr))?
+            cordl_method_info.invoke_unchecked((), (hiaddr, loaddr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3221,7 +3225,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         loaddr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3245,7 +3249,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (hiaddr, loaddr))?
+            cordl_method_info.invoke_unchecked((), (hiaddr, loaddr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3253,7 +3257,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3270,7 +3274,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (ptr))?
+            cordl_method_info.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3278,7 +3282,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3295,7 +3299,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (ptr))?
+            cordl_method_info.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3303,7 +3307,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3320,7 +3324,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (ptr))?
+            cordl_method_info.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3329,7 +3333,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         mask: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3351,7 +3355,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (mem_addr, mask))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3360,7 +3364,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         mask: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3382,7 +3386,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (mem_addr, mask))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3392,7 +3396,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3415,7 +3419,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, mask, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, mask, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3425,7 +3429,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3448,7 +3452,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, mask, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, mask, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3457,7 +3461,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3477,7 +3481,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3486,7 +3490,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3506,7 +3510,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3515,7 +3519,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3535,7 +3539,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3544,7 +3548,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3564,7 +3568,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3572,7 +3576,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3589,7 +3593,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3597,7 +3601,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3614,7 +3618,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3622,7 +3626,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3639,7 +3643,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3647,7 +3651,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3663,14 +3667,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_movemask_ps(
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3686,7 +3690,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_mul_pd(
@@ -3694,7 +3698,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3714,7 +3718,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3723,7 +3727,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3743,7 +3747,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3752,7 +3756,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3772,7 +3776,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3781,7 +3785,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3801,7 +3805,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3811,7 +3815,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3832,7 +3836,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3842,7 +3846,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3863,7 +3867,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3873,7 +3877,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3894,7 +3898,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3903,7 +3907,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3920,7 +3924,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3929,7 +3933,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3946,7 +3950,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3955,7 +3959,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -3975,7 +3979,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3984,7 +3988,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4004,7 +4008,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4012,7 +4016,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4029,7 +4033,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4038,7 +4042,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         rounding: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4055,7 +4059,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, rounding))?
+            cordl_method_info.invoke_unchecked((), (a, rounding))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4064,7 +4068,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         rounding: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4081,7 +4085,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, rounding))?
+            cordl_method_info.invoke_unchecked((), (a, rounding))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4089,7 +4093,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4106,7 +4110,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4114,7 +4118,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: i16,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4131,7 +4135,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4139,7 +4143,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4156,7 +4160,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4164,7 +4168,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: i64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4181,7 +4185,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4189,7 +4193,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: u8,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4206,7 +4210,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4214,7 +4218,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4231,7 +4235,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4239,7 +4243,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4256,7 +4260,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4279,7 +4283,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         e0_: i16,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4313,7 +4317,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -4349,7 +4353,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         e0: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4366,7 +4370,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (e7, e6, e5, e4, e3, e2, e1, e0))?
+            cordl_method_info.invoke_unchecked((), (e7, e6, e5, e4, e3, e2, e1, e0))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4377,7 +4381,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         e0: i64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4394,7 +4398,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (e3, e2, e1, e0))?
+            cordl_method_info.invoke_unchecked((), (e3, e2, e1, e0))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4433,7 +4437,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         e0_: u8,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4483,7 +4487,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -4529,7 +4533,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         lo: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4549,7 +4553,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (hi, lo))?
+            cordl_method_info.invoke_unchecked((), (hi, lo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4558,7 +4562,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         lo: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4578,7 +4582,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (hi, lo))?
+            cordl_method_info.invoke_unchecked((), (hi, lo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4587,7 +4591,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         lo: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4607,7 +4611,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (hi, lo))?
+            cordl_method_info.invoke_unchecked((), (hi, lo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4618,7 +4622,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4635,7 +4639,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (d, c, b, a))?
+            cordl_method_info.invoke_unchecked((), (d, c, b, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4650,7 +4654,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         e0: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4667,7 +4671,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (e7, e6, e5, e4, e3, e2, e1, e0))?
+            cordl_method_info.invoke_unchecked((), (e7, e6, e5, e4, e3, e2, e1, e0))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4690,7 +4694,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         e0_: i16,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4724,7 +4728,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -4760,7 +4764,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         e0: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4777,7 +4781,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (e7, e6, e5, e4, e3, e2, e1, e0))?
+            cordl_method_info.invoke_unchecked((), (e7, e6, e5, e4, e3, e2, e1, e0))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4788,7 +4792,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         e0: i64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4805,7 +4809,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (e3, e2, e1, e0))?
+            cordl_method_info.invoke_unchecked((), (e3, e2, e1, e0))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4844,7 +4848,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         e0_: u8,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4894,7 +4898,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -4940,7 +4944,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         lo: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4960,7 +4964,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (hi, lo))?
+            cordl_method_info.invoke_unchecked((), (hi, lo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4969,7 +4973,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         lo: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -4989,7 +4993,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (hi, lo))?
+            cordl_method_info.invoke_unchecked((), (hi, lo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4998,7 +5002,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         lo: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5018,7 +5022,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (hi, lo))?
+            cordl_method_info.invoke_unchecked((), (hi, lo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5029,7 +5033,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5046,7 +5050,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (d, c, b, a))?
+            cordl_method_info.invoke_unchecked((), (d, c, b, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5061,7 +5065,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         e0: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5078,7 +5082,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (e7, e6, e5, e4, e3, e2, e1, e0))?
+            cordl_method_info.invoke_unchecked((), (e7, e6, e5, e4, e3, e2, e1, e0))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5086,7 +5090,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         crate::Unity::Burst::Intrinsics::v256,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5103,7 +5107,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5111,7 +5115,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         crate::Unity::Burst::Intrinsics::v256,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5128,7 +5132,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5136,7 +5140,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         crate::Unity::Burst::Intrinsics::v256,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5153,7 +5157,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5163,7 +5167,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5184,7 +5188,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5194,7 +5198,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5215,7 +5219,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5223,7 +5227,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5240,7 +5244,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5248,7 +5252,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5265,7 +5269,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5274,7 +5278,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5296,7 +5300,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr, a))?
+            cordl_method_info.invoke_unchecked((), (ptr, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5305,7 +5309,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         val: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5327,7 +5331,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr, val))?
+            cordl_method_info.invoke_unchecked((), (ptr, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5336,7 +5340,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         v: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5358,7 +5362,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr, v))?
+            cordl_method_info.invoke_unchecked((), (ptr, v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5368,7 +5372,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         val: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5393,7 +5397,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hiaddr, loaddr, val))?
+            cordl_method_info.invoke_unchecked((), (hiaddr, loaddr, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5403,7 +5407,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         val: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5428,7 +5432,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hiaddr, loaddr, val))?
+            cordl_method_info.invoke_unchecked((), (hiaddr, loaddr, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5438,7 +5442,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         val: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5463,7 +5467,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hiaddr, loaddr, val))?
+            cordl_method_info.invoke_unchecked((), (hiaddr, loaddr, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5472,7 +5476,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5494,7 +5498,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr, a))?
+            cordl_method_info.invoke_unchecked((), (ptr, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5503,7 +5507,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5525,7 +5529,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr, a))?
+            cordl_method_info.invoke_unchecked((), (ptr, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5534,7 +5538,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         v: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5556,7 +5560,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr, v))?
+            cordl_method_info.invoke_unchecked((), (ptr, v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5565,7 +5569,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5587,7 +5591,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5596,7 +5600,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5618,7 +5622,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5627,7 +5631,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5649,7 +5653,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5658,7 +5662,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5678,7 +5682,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5687,7 +5691,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5707,7 +5711,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5716,7 +5720,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5735,7 +5739,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_testc_ps(
@@ -5743,7 +5749,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5762,7 +5768,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_testc_si256(
@@ -5770,7 +5778,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5789,7 +5797,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_testnzc_pd(
@@ -5797,7 +5807,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5816,7 +5826,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_testnzc_ps(
@@ -5824,7 +5836,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5843,7 +5855,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_testnzc_si256(
@@ -5851,7 +5865,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5870,7 +5884,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_testz_pd(
@@ -5878,7 +5894,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5897,7 +5913,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_testz_ps(
@@ -5905,7 +5923,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5924,7 +5942,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_testz_si256(
@@ -5932,7 +5952,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5951,14 +5971,16 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_undefined_pd() -> quest_hook::libil2cpp::Result<
         crate::Unity::Burst::Intrinsics::v256,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -5975,7 +5997,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5983,7 +6005,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         crate::Unity::Burst::Intrinsics::v256,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6000,7 +6022,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -6008,7 +6030,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         crate::Unity::Burst::Intrinsics::v256,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6025,7 +6047,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -6034,7 +6056,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6054,7 +6076,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6063,7 +6085,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6083,7 +6105,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6092,7 +6114,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6112,7 +6134,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6121,7 +6143,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6141,7 +6163,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6150,7 +6172,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6170,7 +6192,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6179,7 +6201,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6199,7 +6221,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6207,7 +6229,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         quest_hook::libil2cpp::Void,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6224,7 +6246,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -6232,7 +6254,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         quest_hook::libil2cpp::Void,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6249,7 +6271,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -6257,7 +6279,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6274,7 +6296,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6282,7 +6304,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6299,7 +6321,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6307,7 +6329,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6324,7 +6346,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6333,7 +6355,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6350,7 +6372,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6359,7 +6381,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6376,7 +6398,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6385,7 +6407,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6405,7 +6427,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6414,7 +6436,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6434,7 +6456,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6443,7 +6465,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6462,7 +6484,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn testc_ps(
@@ -6470,7 +6494,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6489,7 +6513,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn testnzc_pd(
@@ -6497,7 +6523,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6516,7 +6542,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn testnzc_ps(
@@ -6524,7 +6552,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6543,7 +6571,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn testz_pd(
@@ -6551,7 +6581,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6570,7 +6600,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn testz_ps(
@@ -6578,7 +6610,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6597,14 +6629,16 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn undefined_pd() -> quest_hook::libil2cpp::Result<
         crate::Unity::Burst::Intrinsics::v128,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6621,7 +6655,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -6629,7 +6663,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         crate::Unity::Burst::Intrinsics::v128,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6646,7 +6680,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -6654,7 +6688,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
         crate::Unity::Burst::Intrinsics::v128,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6671,7 +6705,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -6743,7 +6777,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6775,7 +6809,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (dptr, base_addr, indexPtr, scale, n, mask))?
+            cordl_method_info
+                .invoke_unchecked((), (dptr, base_addr, indexPtr, scale, n, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6797,7 +6832,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6829,7 +6864,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (dptr, base_addr, indexPtr, scale, n, mask))?
+            cordl_method_info
+                .invoke_unchecked((), (dptr, base_addr, indexPtr, scale, n, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6839,7 +6875,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6860,7 +6896,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6868,7 +6904,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6885,7 +6921,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6893,7 +6929,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6910,7 +6946,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6918,7 +6954,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6935,7 +6971,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6943,7 +6979,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6960,7 +6996,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6968,7 +7004,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -6985,7 +7021,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6993,7 +7029,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7010,13 +7046,13 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsAvx2Supported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsAvx2Supported")
@@ -7028,7 +7064,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn i32gather_epi32(
@@ -7037,7 +7073,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7060,7 +7096,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (base_addr, vindex, scale))?
+            cordl_method_info.invoke_unchecked((), (base_addr, vindex, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7070,7 +7106,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7093,7 +7129,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (base_addr, vindex, scale))?
+            cordl_method_info.invoke_unchecked((), (base_addr, vindex, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7103,7 +7139,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7126,7 +7162,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (base_addr, vindex, scale))?
+            cordl_method_info.invoke_unchecked((), (base_addr, vindex, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7136,7 +7172,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7159,7 +7195,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (base_addr, vindex, scale))?
+            cordl_method_info.invoke_unchecked((), (base_addr, vindex, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7169,7 +7205,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7192,7 +7228,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (base_addr, vindex, scale))?
+            cordl_method_info.invoke_unchecked((), (base_addr, vindex, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7202,7 +7238,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7225,7 +7261,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (base_addr, vindex, scale))?
+            cordl_method_info.invoke_unchecked((), (base_addr, vindex, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7235,7 +7271,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7258,7 +7294,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (base_addr, vindex, scale))?
+            cordl_method_info.invoke_unchecked((), (base_addr, vindex, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7268,7 +7304,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7291,7 +7327,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (base_addr, vindex, scale))?
+            cordl_method_info.invoke_unchecked((), (base_addr, vindex, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7303,7 +7339,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7328,7 +7364,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
+            cordl_method_info
+                .invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7340,7 +7377,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7365,7 +7402,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
+            cordl_method_info
+                .invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7377,7 +7415,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7402,7 +7440,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
+            cordl_method_info
+                .invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7414,7 +7453,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7439,7 +7478,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
+            cordl_method_info
+                .invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7451,7 +7491,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7476,7 +7516,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
+            cordl_method_info
+                .invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7488,7 +7529,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7513,7 +7554,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
+            cordl_method_info
+                .invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7525,7 +7567,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7550,7 +7592,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
+            cordl_method_info
+                .invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7562,7 +7605,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7587,7 +7630,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
+            cordl_method_info
+                .invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7596,7 +7640,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         mask: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7618,7 +7662,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (mem_addr, mask))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7627,7 +7671,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         mask: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7649,7 +7693,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (mem_addr, mask))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7659,7 +7703,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7682,7 +7726,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, mask, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, mask, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7692,7 +7736,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7715,7 +7759,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, mask, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, mask, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7723,7 +7767,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7740,7 +7784,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7748,7 +7792,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7765,7 +7809,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7773,7 +7817,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7790,7 +7834,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7799,7 +7843,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7819,7 +7863,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7828,7 +7872,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7848,7 +7892,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7857,7 +7901,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7877,7 +7921,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7886,7 +7930,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7906,7 +7950,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7915,7 +7959,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7935,7 +7979,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7944,7 +7988,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7964,7 +8008,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7973,7 +8017,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -7993,7 +8037,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8002,7 +8046,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8022,7 +8066,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8032,7 +8076,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8053,7 +8097,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8062,7 +8106,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8082,7 +8126,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8091,7 +8135,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8111,7 +8155,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8120,7 +8164,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8140,7 +8184,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8149,7 +8193,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8169,7 +8213,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8179,7 +8223,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8200,7 +8244,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8210,7 +8254,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8231,7 +8275,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8241,7 +8285,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         mask: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8262,7 +8306,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, mask))?
+            cordl_method_info.invoke_unchecked((), (a, b, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8270,7 +8314,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8287,7 +8331,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8295,7 +8339,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8312,7 +8356,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8320,7 +8364,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8337,7 +8381,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8345,7 +8389,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8362,7 +8406,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8370,7 +8414,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8387,7 +8431,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8395,7 +8439,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8412,7 +8456,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8420,7 +8464,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8437,7 +8481,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8446,7 +8490,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8463,7 +8507,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8472,7 +8516,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8489,7 +8533,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8498,7 +8542,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8518,7 +8562,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8527,7 +8571,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8547,7 +8591,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8556,7 +8600,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8576,7 +8620,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8585,7 +8629,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8605,7 +8649,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8614,7 +8658,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8634,7 +8678,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8643,7 +8687,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8663,7 +8707,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8672,7 +8716,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8692,7 +8736,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8701,7 +8745,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8721,7 +8765,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8729,7 +8773,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8746,7 +8790,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8754,7 +8798,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8771,7 +8815,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8779,7 +8823,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8796,7 +8840,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8804,7 +8848,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8821,7 +8865,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8829,7 +8873,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8846,7 +8890,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8854,7 +8898,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8871,7 +8915,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8879,7 +8923,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8896,7 +8940,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8904,7 +8948,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8921,7 +8965,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8929,7 +8973,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8946,7 +8990,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8954,7 +8998,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8971,7 +9015,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8979,7 +9023,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -8996,7 +9040,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9004,7 +9048,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9021,7 +9065,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9029,7 +9073,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9045,14 +9089,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: f64 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_cvtsi256_si32(
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9068,14 +9112,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_cvtsi256_si64(
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9091,7 +9135,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i64 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_extract_epi16(
@@ -9099,7 +9143,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9115,7 +9159,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, index))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_extract_epi8(
@@ -9123,7 +9169,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9139,7 +9185,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, index))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_extracti128_si256(
@@ -9147,7 +9195,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9164,7 +9212,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9173,7 +9221,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9193,7 +9241,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9202,7 +9250,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9222,7 +9270,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9231,7 +9279,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9251,7 +9299,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9260,7 +9308,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9280,7 +9328,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9289,7 +9337,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9309,7 +9357,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9318,7 +9366,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9338,7 +9386,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9348,7 +9396,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9371,7 +9419,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (base_addr, vindex, scale))?
+            cordl_method_info.invoke_unchecked((), (base_addr, vindex, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9381,7 +9429,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9404,7 +9452,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (base_addr, vindex, scale))?
+            cordl_method_info.invoke_unchecked((), (base_addr, vindex, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9414,7 +9462,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9437,7 +9485,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (base_addr, vindex, scale))?
+            cordl_method_info.invoke_unchecked((), (base_addr, vindex, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9447,7 +9495,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9470,7 +9518,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (base_addr, vindex, scale))?
+            cordl_method_info.invoke_unchecked((), (base_addr, vindex, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9480,7 +9528,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9503,7 +9551,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (base_addr, vindex, scale))?
+            cordl_method_info.invoke_unchecked((), (base_addr, vindex, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9513,7 +9561,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9536,7 +9584,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (base_addr, vindex, scale))?
+            cordl_method_info.invoke_unchecked((), (base_addr, vindex, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9546,7 +9594,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9569,7 +9617,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (base_addr, vindex, scale))?
+            cordl_method_info.invoke_unchecked((), (base_addr, vindex, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9579,7 +9627,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9602,7 +9650,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (base_addr, vindex, scale))?
+            cordl_method_info.invoke_unchecked((), (base_addr, vindex, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9612,7 +9660,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9633,7 +9681,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9642,7 +9690,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9662,7 +9710,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9671,7 +9719,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9691,7 +9739,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9703,7 +9751,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9728,7 +9776,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
+            cordl_method_info
+                .invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9740,7 +9789,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9765,7 +9814,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
+            cordl_method_info
+                .invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9777,7 +9827,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9802,7 +9852,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
+            cordl_method_info
+                .invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9814,7 +9865,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9839,7 +9890,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
+            cordl_method_info
+                .invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9851,7 +9903,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9876,7 +9928,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
+            cordl_method_info
+                .invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9888,7 +9941,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9913,7 +9966,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
+            cordl_method_info
+                .invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9925,7 +9979,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9950,7 +10004,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
+            cordl_method_info
+                .invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9962,7 +10017,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -9987,7 +10042,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
+            cordl_method_info
+                .invoke_unchecked((), (src, base_addr, vindex, mask, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9996,7 +10052,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         mask: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10018,7 +10074,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (mem_addr, mask))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10027,7 +10083,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         mask: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10049,7 +10105,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (mem_addr, mask))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10059,7 +10115,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10082,7 +10138,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, mask, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, mask, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10092,7 +10148,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10115,7 +10171,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, mask, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, mask, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10124,7 +10180,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10144,7 +10200,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10153,7 +10209,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10173,7 +10229,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10182,7 +10238,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10202,7 +10258,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10211,7 +10267,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10231,7 +10287,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10240,7 +10296,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10260,7 +10316,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10269,7 +10325,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10289,7 +10345,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10298,7 +10354,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10318,7 +10374,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10327,7 +10383,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10347,7 +10403,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10356,7 +10412,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10376,7 +10432,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10385,7 +10441,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10405,7 +10461,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10414,7 +10470,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10434,7 +10490,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10443,7 +10499,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10463,7 +10519,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10471,7 +10527,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         a: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10487,7 +10543,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_mpsadbw_epu8(
@@ -10496,7 +10552,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10517,7 +10573,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10526,7 +10582,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10546,7 +10602,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10555,7 +10611,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10575,7 +10631,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10584,7 +10640,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10604,7 +10660,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10613,7 +10669,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10633,7 +10689,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10642,7 +10698,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10662,7 +10718,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10671,7 +10727,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10691,7 +10747,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10700,7 +10756,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10720,7 +10776,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10729,7 +10785,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10749,7 +10805,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10758,7 +10814,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10778,7 +10834,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10787,7 +10843,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10807,7 +10863,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10816,7 +10872,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10836,7 +10892,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10845,7 +10901,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10865,7 +10921,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10875,7 +10931,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10896,7 +10952,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10905,7 +10961,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10922,7 +10978,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10931,7 +10987,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10948,7 +11004,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10957,7 +11013,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         idx: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -10977,7 +11033,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, idx))?
+            cordl_method_info.invoke_unchecked((), (a, idx))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10986,7 +11042,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         idx: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11006,7 +11062,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, idx))?
+            cordl_method_info.invoke_unchecked((), (a, idx))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11015,7 +11071,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11035,7 +11091,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11044,7 +11100,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11061,7 +11117,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11070,7 +11126,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11090,7 +11146,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11099,7 +11155,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11116,7 +11172,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11125,7 +11181,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11142,7 +11198,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11151,7 +11207,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11171,7 +11227,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11180,7 +11236,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11200,7 +11256,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11209,7 +11265,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11229,7 +11285,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11238,7 +11294,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11258,7 +11314,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11267,7 +11323,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11287,7 +11343,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11296,7 +11352,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11316,7 +11372,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11325,7 +11381,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11342,7 +11398,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11351,7 +11407,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11368,7 +11424,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11377,7 +11433,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11394,7 +11450,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11403,7 +11459,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11420,7 +11476,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11429,7 +11485,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         count: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11449,7 +11505,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11458,7 +11514,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         count: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11478,7 +11534,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11487,7 +11543,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11507,7 +11563,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11516,7 +11572,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11536,7 +11592,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11545,7 +11601,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11562,7 +11618,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11571,7 +11627,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11588,7 +11644,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11597,7 +11653,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         count: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11617,7 +11673,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11626,7 +11682,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11646,7 +11702,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11655,7 +11711,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11675,7 +11731,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11684,7 +11740,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11704,7 +11760,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11713,7 +11769,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11730,7 +11786,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11739,7 +11795,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11756,7 +11812,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11765,7 +11821,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11782,7 +11838,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11791,7 +11847,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11808,7 +11864,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11817,7 +11873,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         count: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11837,7 +11893,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11846,7 +11902,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         count: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11866,7 +11922,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11874,7 +11930,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         mem_addr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11891,7 +11947,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (mem_addr))?
+            cordl_method_info.invoke_unchecked((), (mem_addr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11900,7 +11956,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11920,7 +11976,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11929,7 +11985,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11949,7 +12005,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11958,7 +12014,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -11978,7 +12034,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11987,7 +12043,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12007,7 +12063,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12016,7 +12072,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12036,7 +12092,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12045,7 +12101,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12065,7 +12121,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12074,7 +12130,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12094,7 +12150,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12103,7 +12159,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12123,7 +12179,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12132,7 +12188,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12152,7 +12208,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12161,7 +12217,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12181,7 +12237,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12190,7 +12246,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12210,7 +12266,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12219,7 +12275,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12239,7 +12295,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12248,7 +12304,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12268,7 +12324,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12277,7 +12333,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12297,7 +12353,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12306,7 +12362,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12326,7 +12382,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12335,7 +12391,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12355,7 +12411,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12364,7 +12420,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         b: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12384,7 +12440,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12393,7 +12449,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12413,7 +12469,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12422,7 +12478,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12442,7 +12498,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12451,7 +12507,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12471,7 +12527,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12480,7 +12536,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12500,7 +12556,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12509,7 +12565,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12529,7 +12585,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12585,7 +12641,7 @@ impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Bmi1 {
 impl crate::Unity::Burst::Intrinsics::X86_Bmi1 {
     pub fn andn_u32(a: u32, b: u32) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, u32), u32, 2usize>("andn_u32")
@@ -12597,12 +12653,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi1 {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn andn_u64(a: u64, b: u64) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64, u64), u64, 2usize>("andn_u64")
@@ -12614,12 +12672,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi1 {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn bextr2_u32(a: u32, control: u32) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, u32), u32, 2usize>("bextr2_u32")
@@ -12631,12 +12691,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi1 {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (a, control))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, control))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn bextr2_u64(a: u64, control: u64) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64, u64), u64, 2usize>("bextr2_u64")
@@ -12648,7 +12710,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi1 {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (a, control))? };
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, control))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn bextr_u32(
@@ -12657,7 +12721,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi1 {
         len: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, u32, u32), u32, 3usize>("bextr_u32")
@@ -12669,7 +12733,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi1 {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (a, start, len))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, start, len))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn bextr_u64(
@@ -12678,7 +12744,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi1 {
         len: u32,
     ) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64, u32, u32), u64, 3usize>("bextr_u64")
@@ -12690,12 +12756,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi1 {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (a, start, len))? };
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, start, len))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn blsi_u32(a: u32) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), u32, 1usize>("blsi_u32")
@@ -12707,12 +12775,12 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi1 {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn blsi_u64(a: u64) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), u64, 1usize>("blsi_u64")
@@ -12724,12 +12792,12 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi1 {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn blsmsk_u32(a: u32) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), u32, 1usize>("blsmsk_u32")
@@ -12741,12 +12809,12 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi1 {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn blsmsk_u64(a: u64) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), u64, 1usize>("blsmsk_u64")
@@ -12758,12 +12826,12 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi1 {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn blsr_u32(a: u32) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), u32, 1usize>("blsr_u32")
@@ -12775,12 +12843,12 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi1 {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn blsr_u64(a: u64) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), u64, 1usize>("blsr_u64")
@@ -12792,12 +12860,12 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi1 {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsBmi1Supported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsBmi1Supported")
@@ -12809,12 +12877,12 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi1 {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn tzcnt_u32(a: u32) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), u32, 1usize>("tzcnt_u32")
@@ -12826,12 +12894,12 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi1 {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn tzcnt_u64(a: u64) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), u64, 1usize>("tzcnt_u64")
@@ -12843,7 +12911,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi1 {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -12898,7 +12966,7 @@ impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Bmi2 {
 impl crate::Unity::Burst::Intrinsics::X86_Bmi2 {
     pub fn bzhi_u32(a: u32, index: u32) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, u32), u32, 2usize>("bzhi_u32")
@@ -12910,12 +12978,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi2 {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (a, index))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn bzhi_u64(a: u64, index: u64) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64, u64), u64, 2usize>("bzhi_u64")
@@ -12927,12 +12997,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi2 {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (a, index))? };
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsBmi2Supported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsBmi2Supported")
@@ -12944,7 +13016,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi2 {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn mulx_u32(
@@ -12953,7 +13025,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi2 {
         hi: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12969,7 +13041,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi2 {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (a, b, hi))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b, hi))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn mulx_u64(
@@ -12978,7 +13052,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi2 {
         hi: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -12994,12 +13068,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi2 {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (a, b, hi))? };
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b, hi))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn pdep_u32(a: u32, mask: u32) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, u32), u32, 2usize>("pdep_u32")
@@ -13011,12 +13087,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi2 {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (a, mask))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, mask))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn pdep_u64(a: u64, mask: u64) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64, u64), u64, 2usize>("pdep_u64")
@@ -13028,12 +13106,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi2 {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (a, mask))? };
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, mask))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn pext_u32(a: u32, mask: u32) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, u32), u32, 2usize>("pext_u32")
@@ -13045,12 +13125,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi2 {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (a, mask))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, mask))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn pext_u64(a: u64, mask: u64) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64, u64), u64, 2usize>("pext_u64")
@@ -13062,7 +13144,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Bmi2 {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (a, mask))? };
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, mask))?
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -13117,7 +13201,7 @@ impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_F16C {
 impl crate::Unity::Burst::Intrinsics::X86_F16C {
     pub fn FloatToHalf(f: u32, rounding: i32) -> quest_hook::libil2cpp::Result<u16> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, i32), u16, 2usize>("FloatToHalf")
@@ -13129,12 +13213,14 @@ impl crate::Unity::Burst::Intrinsics::X86_F16C {
                         )
                     })
             });
-        let __cordl_ret: u16 = unsafe { method.invoke_unchecked((), (f, rounding))? };
+        let __cordl_ret: u16 = unsafe {
+            cordl_method_info.invoke_unchecked((), (f, rounding))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HalfToFloat(h: u16) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u16), u32, 1usize>("HalfToFloat")
@@ -13146,14 +13232,14 @@ impl crate::Unity::Burst::Intrinsics::X86_F16C {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (h))? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), (h))? };
         Ok(__cordl_ret.into())
     }
     pub fn cvtph_ps(
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13170,7 +13256,7 @@ impl crate::Unity::Burst::Intrinsics::X86_F16C {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13179,7 +13265,7 @@ impl crate::Unity::Burst::Intrinsics::X86_F16C {
         rounding: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13196,13 +13282,13 @@ impl crate::Unity::Burst::Intrinsics::X86_F16C {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, rounding))?
+            cordl_method_info.invoke_unchecked((), (a, rounding))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsF16CSupported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsF16CSupported")
@@ -13214,14 +13300,14 @@ impl crate::Unity::Burst::Intrinsics::X86_F16C {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_cvtph_ps(
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13238,7 +13324,7 @@ impl crate::Unity::Burst::Intrinsics::X86_F16C {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13247,7 +13333,7 @@ impl crate::Unity::Burst::Intrinsics::X86_F16C {
         rounding: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13264,7 +13350,7 @@ impl crate::Unity::Burst::Intrinsics::X86_F16C {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, rounding))?
+            cordl_method_info.invoke_unchecked((), (a, rounding))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13322,7 +13408,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
     pub type Union = crate::Unity::Burst::Intrinsics::Fma_X86_Union;
     pub fn FmaHelper(a: f32, b: f32, c: f32) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32, f32), f32, 3usize>("FmaHelper")
@@ -13334,12 +13420,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (a, b, c))? };
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FnmaHelper(a: f32, b: f32, c: f32) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32, f32), f32, 3usize>("FnmaHelper")
@@ -13351,7 +13439,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (a, b, c))? };
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn fmadd_pd(
@@ -13360,7 +13450,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13381,7 +13471,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13391,7 +13481,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13412,7 +13502,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13422,7 +13512,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13443,7 +13533,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13453,7 +13543,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13474,7 +13564,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13484,7 +13574,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13505,7 +13595,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13515,7 +13605,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13536,7 +13626,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13546,7 +13636,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13567,7 +13657,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13577,7 +13667,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13598,7 +13688,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13608,7 +13698,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13629,7 +13719,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13639,7 +13729,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13660,7 +13750,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13670,7 +13760,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13691,7 +13781,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13701,7 +13791,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13722,7 +13812,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13732,7 +13822,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13753,7 +13843,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13763,7 +13853,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13784,7 +13874,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13794,7 +13884,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13815,7 +13905,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13825,7 +13915,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13846,7 +13936,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13856,7 +13946,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13877,7 +13967,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13887,7 +13977,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13908,7 +13998,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13918,7 +14008,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13939,7 +14029,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13949,7 +14039,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -13970,13 +14060,13 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsFmaSupported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsFmaSupported")
@@ -13988,7 +14078,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn mm256_fmadd_pd(
@@ -13997,7 +14087,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -14018,7 +14108,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -14028,7 +14118,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -14049,7 +14139,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -14059,7 +14149,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -14080,7 +14170,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -14090,7 +14180,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -14111,7 +14201,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -14121,7 +14211,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -14142,7 +14232,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -14152,7 +14242,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -14173,7 +14263,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -14183,7 +14273,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -14204,7 +14294,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -14214,7 +14304,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -14235,7 +14325,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -14245,7 +14335,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -14266,7 +14356,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -14276,7 +14366,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -14297,7 +14387,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -14307,7 +14397,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -14328,7 +14418,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -14338,7 +14428,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
         c: crate::Unity::Burst::Intrinsics::v256,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v256> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -14359,7 +14449,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Fma {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v256 = unsafe {
-            method.invoke_unchecked((), (a, b, c))?
+            cordl_method_info.invoke_unchecked((), (a, b, c))?
         };
         Ok(__cordl_ret.into())
     }
@@ -14525,7 +14615,7 @@ impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Popcnt {
 impl crate::Unity::Burst::Intrinsics::X86_Popcnt {
     pub fn get_IsPopcntSupported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsPopcntSupported")
@@ -14537,12 +14627,12 @@ impl crate::Unity::Burst::Intrinsics::X86_Popcnt {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn popcnt_u32(v: u32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), i32, 1usize>("popcnt_u32")
@@ -14554,12 +14644,12 @@ impl crate::Unity::Burst::Intrinsics::X86_Popcnt {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (v))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (v))? };
         Ok(__cordl_ret.into())
     }
     pub fn popcnt_u64(v: u64) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), i32, 1usize>("popcnt_u64")
@@ -14571,7 +14661,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Popcnt {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (v))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (v))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -14791,7 +14881,7 @@ impl crate::Unity::Burst::Intrinsics::X86_RoundingScope {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
@@ -14804,7 +14894,7 @@ impl crate::Unity::Burst::Intrinsics::X86_RoundingScope {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -14813,7 +14903,7 @@ impl crate::Unity::Burst::Intrinsics::X86_RoundingScope {
         roundingMode: crate::Unity::Burst::Intrinsics::X86_MXCSRBits,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -14830,7 +14920,7 @@ impl crate::Unity::Burst::Intrinsics::X86_RoundingScope {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (roundingMode))?
+            cordl_method_info.invoke_unchecked(self, (roundingMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -14896,7 +14986,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         a: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32, i32, i32), i32, 4usize>("SHUFFLE")
@@ -14908,7 +14998,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (d, c, b, a))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (d, c, b, a))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TRANSPOSE4_PS(
@@ -14918,7 +15010,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         row3: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::Intrinsics::v128>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -14948,7 +15040,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (row0, row1, row2, row3))?
+            cordl_method_info.invoke_unchecked((), (row0, row1, row2, row3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -14957,7 +15049,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -14977,7 +15069,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -14986,7 +15078,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15006,7 +15098,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15015,7 +15107,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15035,7 +15127,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15044,7 +15136,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15064,7 +15156,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15073,7 +15165,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15093,7 +15185,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15102,7 +15194,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15122,7 +15214,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15131,7 +15223,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15151,7 +15243,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15160,7 +15252,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15180,7 +15272,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15189,7 +15281,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15209,7 +15301,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15218,7 +15310,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15238,7 +15330,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15247,7 +15339,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15267,7 +15359,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15276,7 +15368,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15296,7 +15388,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15305,7 +15397,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15325,7 +15417,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15334,7 +15426,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15354,7 +15446,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15363,7 +15455,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15383,7 +15475,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15392,7 +15484,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15412,7 +15504,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15421,7 +15513,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15441,7 +15533,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15450,7 +15542,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15470,7 +15562,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15479,7 +15571,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15499,7 +15591,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15508,7 +15600,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15528,7 +15620,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15537,7 +15629,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15557,7 +15649,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15566,7 +15658,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15586,7 +15678,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15595,7 +15687,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15615,7 +15707,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15624,7 +15716,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15644,7 +15736,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15653,7 +15745,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15673,7 +15765,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15682,7 +15774,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15702,7 +15794,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15711,7 +15803,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15731,7 +15823,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15740,7 +15832,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15760,7 +15852,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15769,7 +15861,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15788,7 +15880,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn comige_ss(
@@ -15796,7 +15890,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15815,7 +15909,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn comigt_ss(
@@ -15823,7 +15919,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15842,7 +15938,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn comile_ss(
@@ -15850,7 +15948,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15869,7 +15967,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn comilt_ss(
@@ -15877,7 +15977,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15896,7 +15996,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn comineq_ss(
@@ -15904,7 +16006,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15923,14 +16025,16 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn cvt_ss2si(
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15946,7 +16050,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn cvtsi32_ss(
@@ -15954,7 +16058,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15971,7 +16075,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -15980,7 +16084,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: i64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -15997,7 +16101,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16005,7 +16109,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16021,14 +16125,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn cvtss_si32(
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16044,14 +16148,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn cvtss_si64(
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16067,14 +16171,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i64 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn cvtt_ss2si(
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16090,14 +16194,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn cvttss_si32(
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16113,14 +16217,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn cvttss_si64(
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16136,7 +16240,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i64 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn div_ps(
@@ -16144,7 +16248,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16164,7 +16268,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16173,7 +16277,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16193,13 +16297,13 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsSseSupported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsSseSupported")
@@ -16211,14 +16315,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn load_ps(
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16235,7 +16339,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (ptr))?
+            cordl_method_info.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16243,7 +16347,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16260,7 +16364,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (ptr))?
+            cordl_method_info.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16268,7 +16372,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         mem_addr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16285,7 +16389,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (mem_addr))?
+            cordl_method_info.invoke_unchecked((), (mem_addr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16293,7 +16397,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         mem_addr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16310,7 +16414,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (mem_addr))?
+            cordl_method_info.invoke_unchecked((), (mem_addr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16319,7 +16423,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16339,7 +16443,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16348,7 +16452,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16368,7 +16472,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16377,7 +16481,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16397,7 +16501,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16406,7 +16510,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16426,7 +16530,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16435,7 +16539,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16455,7 +16559,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16464,7 +16568,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16484,7 +16588,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16493,7 +16597,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16513,7 +16617,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16521,7 +16625,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16537,7 +16641,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn mul_ps(
@@ -16545,7 +16649,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16565,7 +16669,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16574,7 +16678,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16594,7 +16698,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16603,7 +16707,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16623,7 +16727,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16631,7 +16735,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16648,7 +16752,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16656,7 +16760,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16673,7 +16777,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16681,7 +16785,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16698,7 +16802,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16706,7 +16810,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16723,7 +16827,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16731,7 +16835,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         a: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16748,7 +16852,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16759,7 +16863,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         e0: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16776,7 +16880,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (e3, e2, e1, e0))?
+            cordl_method_info.invoke_unchecked((), (e3, e2, e1, e0))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16784,7 +16888,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         a: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16801,7 +16905,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16809,7 +16913,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         a: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16826,7 +16930,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16837,7 +16941,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         e0: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16854,7 +16958,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (e3, e2, e1, e0))?
+            cordl_method_info.invoke_unchecked((), (e3, e2, e1, e0))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16862,7 +16966,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         crate::Unity::Burst::Intrinsics::v128,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16879,7 +16983,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -16889,7 +16993,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16910,7 +17014,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16918,7 +17022,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16935,7 +17039,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16943,7 +17047,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16960,7 +17064,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -16969,7 +17073,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         val: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -16991,7 +17095,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr, val))?
+            cordl_method_info.invoke_unchecked((), (ptr, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17000,7 +17104,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         val: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17022,7 +17126,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr, val))?
+            cordl_method_info.invoke_unchecked((), (ptr, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17031,7 +17135,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17053,7 +17157,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17062,7 +17166,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17084,7 +17188,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17093,7 +17197,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17115,7 +17219,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17124,7 +17228,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17144,7 +17248,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17153,7 +17257,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17173,7 +17277,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17182,7 +17286,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17201,7 +17305,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ucomige_ss(
@@ -17209,7 +17315,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17228,7 +17334,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ucomigt_ss(
@@ -17236,7 +17344,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17255,7 +17363,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ucomile_ss(
@@ -17263,7 +17373,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17282,7 +17392,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ucomilt_ss(
@@ -17290,7 +17402,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17309,7 +17421,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ucomineq_ss(
@@ -17317,7 +17431,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17336,7 +17450,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn unpackhi_ps(
@@ -17344,7 +17460,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17364,7 +17480,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17373,7 +17489,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17393,7 +17509,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17402,7 +17518,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17422,7 +17538,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17478,7 +17594,7 @@ impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Sse2 {
 impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
     pub fn SHUFFLE2(x: i32, y: i32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), i32, 2usize>("SHUFFLE2")
@@ -17490,7 +17606,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (x, y))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (x, y))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn add_epi16(
@@ -17498,7 +17616,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17518,7 +17636,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17527,7 +17645,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17547,7 +17665,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17556,7 +17674,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17576,7 +17694,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17585,7 +17703,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17605,7 +17723,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17614,7 +17732,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17634,7 +17752,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17643,7 +17761,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17663,7 +17781,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17672,7 +17790,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17692,7 +17810,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17701,7 +17819,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17721,7 +17839,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17730,7 +17848,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17750,7 +17868,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17759,7 +17877,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17779,7 +17897,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17788,7 +17906,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17808,7 +17926,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17817,7 +17935,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17837,7 +17955,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17846,7 +17964,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17866,7 +17984,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17875,7 +17993,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17895,7 +18013,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17904,7 +18022,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17924,7 +18042,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17933,7 +18051,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17953,7 +18071,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17962,7 +18080,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -17979,7 +18097,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -17988,7 +18106,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18005,7 +18123,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18013,7 +18131,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18030,7 +18148,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr))?
+            cordl_method_info.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18039,7 +18157,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18059,7 +18177,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18068,7 +18186,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18088,7 +18206,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18097,7 +18215,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18117,7 +18235,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18126,7 +18244,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18146,7 +18264,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18155,7 +18273,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18175,7 +18293,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18184,7 +18302,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18204,7 +18322,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18213,7 +18331,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18233,7 +18351,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18242,7 +18360,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18262,7 +18380,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18271,7 +18389,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18291,7 +18409,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18300,7 +18418,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18320,7 +18438,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18329,7 +18447,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18349,7 +18467,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18358,7 +18476,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18378,7 +18496,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18387,7 +18505,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18407,7 +18525,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18416,7 +18534,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18436,7 +18554,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18445,7 +18563,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18465,7 +18583,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18474,7 +18592,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18494,7 +18612,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18503,7 +18621,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18523,7 +18641,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18532,7 +18650,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18552,7 +18670,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18561,7 +18679,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18581,7 +18699,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18590,7 +18708,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18610,7 +18728,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18619,7 +18737,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18639,7 +18757,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18648,7 +18766,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18668,7 +18786,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18677,7 +18795,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18697,7 +18815,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18706,7 +18824,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18726,7 +18844,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18735,7 +18853,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18755,7 +18873,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18764,7 +18882,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18784,7 +18902,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18793,7 +18911,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18813,7 +18931,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18822,7 +18940,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18842,7 +18960,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18851,7 +18969,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18871,7 +18989,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18880,7 +18998,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18900,7 +19018,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18909,7 +19027,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18929,7 +19047,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18938,7 +19056,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18958,7 +19076,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18967,7 +19085,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -18987,7 +19105,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -18996,7 +19114,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19015,7 +19133,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn comige_sd(
@@ -19023,7 +19143,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19042,7 +19162,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn comigt_sd(
@@ -19050,7 +19172,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19069,7 +19191,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn comile_sd(
@@ -19077,7 +19201,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19096,7 +19220,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn comilt_sd(
@@ -19104,7 +19230,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19123,7 +19249,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn comineq_sd(
@@ -19131,7 +19259,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19150,14 +19278,16 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn cvtepi32_pd(
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19174,7 +19304,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19182,7 +19312,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19199,7 +19329,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19207,7 +19337,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19224,7 +19354,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19232,7 +19362,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19249,7 +19379,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19257,7 +19387,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19274,7 +19404,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19282,7 +19412,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19299,7 +19429,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19307,7 +19437,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19323,14 +19453,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: f64 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn cvtsd_si32(
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19346,14 +19476,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn cvtsd_si64(
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19369,14 +19499,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i64 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn cvtsd_si64x(
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19392,7 +19522,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i64 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn cvtsd_ss(
@@ -19400,7 +19530,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19420,7 +19550,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19428,7 +19558,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19444,14 +19574,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn cvtsi128_si64(
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19467,14 +19597,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i64 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn cvtsi128_si64x(
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19490,7 +19620,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i64 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn cvtsi32_sd(
@@ -19498,7 +19628,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19515,7 +19645,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19523,7 +19653,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19540,7 +19670,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19549,7 +19679,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: i64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19566,7 +19696,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19574,7 +19704,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: i64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19591,7 +19721,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19600,7 +19730,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: i64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19617,7 +19747,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19625,7 +19755,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: i64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19642,7 +19772,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19651,7 +19781,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19671,7 +19801,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19679,7 +19809,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19696,7 +19826,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19704,7 +19834,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19721,7 +19851,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19729,7 +19859,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19745,14 +19875,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn cvttsd_si64(
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19768,14 +19898,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i64 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn cvttsd_si64x(
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19791,7 +19921,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i64 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn div_pd(
@@ -19799,7 +19929,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19819,7 +19949,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19828,7 +19958,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19848,7 +19978,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19857,7 +19987,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<u16> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19873,12 +20003,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: u16 = unsafe { method.invoke_unchecked((), (a, imm8))? };
+        let __cordl_ret: u16 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsSse2Supported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsSse2Supported")
@@ -19890,7 +20022,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn insert_epi16(
@@ -19899,7 +20031,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19916,7 +20048,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, i, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, i, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19924,7 +20056,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19941,7 +20073,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (ptr))?
+            cordl_method_info.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19949,7 +20081,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19966,7 +20098,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (ptr))?
+            cordl_method_info.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -19974,7 +20106,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         mem_addr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -19991,7 +20123,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (mem_addr))?
+            cordl_method_info.invoke_unchecked((), (mem_addr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20000,7 +20132,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20020,7 +20152,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20029,7 +20161,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20049,7 +20181,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20058,7 +20190,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20078,7 +20210,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20087,7 +20219,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20107,7 +20239,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20116,7 +20248,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20136,7 +20268,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20145,7 +20277,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20165,7 +20297,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20174,7 +20306,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20194,7 +20326,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20203,7 +20335,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20223,7 +20355,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20232,7 +20364,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20252,7 +20384,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20260,7 +20392,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20277,7 +20409,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20286,7 +20418,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20306,7 +20438,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20314,7 +20446,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20330,14 +20462,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn movemask_pd(
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20353,7 +20485,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn mul_epu32(
@@ -20361,7 +20493,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20381,7 +20513,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20390,7 +20522,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20410,7 +20542,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20419,7 +20551,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20439,7 +20571,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20448,7 +20580,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20468,7 +20600,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20477,7 +20609,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20497,7 +20629,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20506,7 +20638,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20526,7 +20658,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20535,7 +20667,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20555,7 +20687,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20564,7 +20696,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20584,7 +20716,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20593,7 +20725,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20613,7 +20745,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20622,7 +20754,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20642,7 +20774,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20651,7 +20783,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20671,7 +20803,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20680,7 +20812,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20700,7 +20832,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20708,7 +20840,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: i16,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20725,7 +20857,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20733,7 +20865,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20750,7 +20882,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20758,7 +20890,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: i64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20775,7 +20907,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20783,7 +20915,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: i8,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20800,7 +20932,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20808,7 +20940,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20825,7 +20957,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20840,7 +20972,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         e0: i16,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20857,7 +20989,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (e7, e6, e5, e4, e3, e2, e1, e0))?
+            cordl_method_info.invoke_unchecked((), (e7, e6, e5, e4, e3, e2, e1, e0))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20868,7 +21000,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         e0: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20885,7 +21017,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (e3, e2, e1, e0))?
+            cordl_method_info.invoke_unchecked((), (e3, e2, e1, e0))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20894,7 +21026,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         e0: i64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20911,7 +21043,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (e1, e0))?
+            cordl_method_info.invoke_unchecked((), (e1, e0))?
         };
         Ok(__cordl_ret.into())
     }
@@ -20934,7 +21066,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         e0_: i8,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20951,7 +21083,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -20981,7 +21113,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         e0: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -20998,7 +21130,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (e1, e0))?
+            cordl_method_info.invoke_unchecked((), (e1, e0))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21006,7 +21138,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21023,7 +21155,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21031,7 +21163,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21048,7 +21180,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21063,7 +21195,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         e0: i16,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21080,7 +21212,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (e7, e6, e5, e4, e3, e2, e1, e0))?
+            cordl_method_info.invoke_unchecked((), (e7, e6, e5, e4, e3, e2, e1, e0))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21091,7 +21223,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         e0: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21108,7 +21240,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (e3, e2, e1, e0))?
+            cordl_method_info.invoke_unchecked((), (e3, e2, e1, e0))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21131,7 +21263,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         e0_: i8,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21148,7 +21280,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -21178,7 +21310,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         e0: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21195,7 +21327,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (e1, e0))?
+            cordl_method_info.invoke_unchecked((), (e1, e0))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21203,7 +21335,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         crate::Unity::Burst::Intrinsics::v128,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21220,7 +21352,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -21229,7 +21361,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21246,7 +21378,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21256,7 +21388,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21277,7 +21409,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21286,7 +21418,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21303,7 +21435,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21312,7 +21444,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21329,7 +21461,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21338,7 +21470,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21358,7 +21490,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21367,7 +21499,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21387,7 +21519,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21396,7 +21528,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21416,7 +21548,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21425,7 +21557,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21442,7 +21574,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21451,7 +21583,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21468,7 +21600,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21477,7 +21609,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21494,7 +21626,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21503,7 +21635,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21520,7 +21652,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21528,7 +21660,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21545,7 +21677,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21554,7 +21686,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21574,7 +21706,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21583,7 +21715,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21603,7 +21735,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21612,7 +21744,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21632,7 +21764,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21641,7 +21773,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21658,7 +21790,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21667,7 +21799,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21684,7 +21816,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21693,7 +21825,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21713,7 +21845,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21722,7 +21854,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21742,7 +21874,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21751,7 +21883,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         count: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21771,7 +21903,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, count))?
+            cordl_method_info.invoke_unchecked((), (a, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21780,7 +21912,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21797,7 +21929,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21806,7 +21938,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21823,7 +21955,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21832,7 +21964,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21849,7 +21981,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21858,7 +21990,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21875,7 +22007,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21884,7 +22016,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         val: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21906,7 +22038,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr, val))?
+            cordl_method_info.invoke_unchecked((), (ptr, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21915,7 +22047,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         val: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21937,7 +22069,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr, val))?
+            cordl_method_info.invoke_unchecked((), (ptr, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21946,7 +22078,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21968,7 +22100,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -21977,7 +22109,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -21999,7 +22131,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22008,7 +22140,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22030,7 +22162,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22039,7 +22171,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22061,7 +22193,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22070,7 +22202,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         a: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22092,7 +22224,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mem_addr, a))?
+            cordl_method_info.invoke_unchecked((), (mem_addr, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22101,7 +22233,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22121,7 +22253,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22130,7 +22262,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22150,7 +22282,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22159,7 +22291,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22179,7 +22311,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22188,7 +22320,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22208,7 +22340,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22217,7 +22349,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22237,7 +22369,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22246,7 +22378,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22266,7 +22398,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22275,7 +22407,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22295,7 +22427,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22304,7 +22436,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22324,7 +22456,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22333,7 +22465,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22353,7 +22485,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22362,7 +22494,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22382,7 +22514,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22391,7 +22523,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22410,7 +22542,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ucomige_sd(
@@ -22418,7 +22552,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22437,7 +22571,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ucomigt_sd(
@@ -22445,7 +22581,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22464,7 +22600,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ucomile_sd(
@@ -22472,7 +22610,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22491,7 +22629,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ucomilt_sd(
@@ -22499,7 +22639,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22518,7 +22658,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ucomineq_sd(
@@ -22526,7 +22668,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22545,7 +22687,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn unpackhi_epi16(
@@ -22553,7 +22697,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22573,7 +22717,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22582,7 +22726,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22602,7 +22746,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22611,7 +22755,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22631,7 +22775,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22640,7 +22784,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22660,7 +22804,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22669,7 +22813,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22689,7 +22833,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22698,7 +22842,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22718,7 +22862,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22727,7 +22871,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22747,7 +22891,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22756,7 +22900,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22776,7 +22920,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22785,7 +22929,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22805,7 +22949,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22814,7 +22958,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22834,7 +22978,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22843,7 +22987,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22863,7 +23007,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22872,7 +23016,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22892,7 +23036,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22951,7 +23095,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -22971,7 +23115,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -22980,7 +23124,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23000,13 +23144,13 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsSse3Supported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsSse3Supported")
@@ -23018,7 +23162,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn hadd_pd(
@@ -23026,7 +23170,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23046,7 +23190,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23055,7 +23199,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23075,7 +23219,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23084,7 +23228,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23104,7 +23248,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23113,7 +23257,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23133,7 +23277,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23141,7 +23285,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23158,7 +23302,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23166,7 +23310,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23183,7 +23327,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23191,7 +23335,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23208,7 +23352,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23268,7 +23412,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         zeroMask: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23285,13 +23429,13 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (srcField, dstField, zeroMask))?
+            cordl_method_info.invoke_unchecked((), (srcField, dstField, zeroMask))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn RoundDImpl(d: f64, roundingMode: i32) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64, i32), f64, 2usize>("RoundDImpl")
@@ -23304,7 +23448,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (d, roundingMode))?
+            cordl_method_info.invoke_unchecked((), (d, roundingMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23314,7 +23458,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23335,7 +23479,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23345,7 +23489,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23366,7 +23510,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23376,7 +23520,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23397,7 +23541,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23407,7 +23551,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         mask: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23428,7 +23572,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, mask))?
+            cordl_method_info.invoke_unchecked((), (a, b, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23438,7 +23582,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         mask: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23459,7 +23603,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, mask))?
+            cordl_method_info.invoke_unchecked((), (a, b, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23469,7 +23613,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         mask: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23490,7 +23634,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, mask))?
+            cordl_method_info.invoke_unchecked((), (a, b, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23498,7 +23642,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23515,7 +23659,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23523,7 +23667,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23540,7 +23684,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23549,7 +23693,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23569,7 +23713,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23578,7 +23722,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23598,7 +23742,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23607,7 +23751,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23627,7 +23771,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23635,7 +23779,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23652,7 +23796,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23660,7 +23804,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23677,7 +23821,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23685,7 +23829,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23702,7 +23846,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23710,7 +23854,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23727,7 +23871,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23735,7 +23879,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23752,7 +23896,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23760,7 +23904,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23777,7 +23921,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23785,7 +23929,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23802,7 +23946,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23810,7 +23954,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23827,7 +23971,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23835,7 +23979,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23852,7 +23996,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23860,7 +24004,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23877,7 +24021,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23885,7 +24029,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23902,7 +24046,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23910,7 +24054,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23927,7 +24071,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23937,7 +24081,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23958,7 +24102,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23968,7 +24112,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -23989,7 +24133,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -23998,7 +24142,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24014,7 +24158,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, imm8))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn extract_epi64(
@@ -24022,7 +24168,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24038,7 +24184,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (a, imm8))? };
+        let __cordl_ret: i64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn extract_epi8(
@@ -24046,7 +24194,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<u8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24062,7 +24210,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                         )
                     })
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (a, imm8))? };
+        let __cordl_ret: u8 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn extract_ps(
@@ -24070,7 +24220,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24086,7 +24236,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, imm8))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn extractf_ps(
@@ -24094,7 +24246,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24110,14 +24262,16 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (a, imm8))? };
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, imm8))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn floor_pd(
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24134,7 +24288,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24142,7 +24296,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24159,7 +24313,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24168,7 +24322,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24188,7 +24342,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24197,7 +24351,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24217,13 +24371,13 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsSse41Supported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsSse41Supported")
@@ -24235,7 +24389,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn insert_epi32(
@@ -24244,7 +24398,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24261,7 +24415,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, i, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, i, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24271,7 +24425,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24288,7 +24442,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, i, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, i, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24298,7 +24452,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24315,7 +24469,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, i, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, i, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24325,7 +24479,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24346,7 +24500,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24355,7 +24509,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24375,7 +24529,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24384,7 +24538,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24404,7 +24558,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24413,7 +24567,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24433,7 +24587,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24442,7 +24596,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24462,7 +24616,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24471,7 +24625,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24491,7 +24645,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24500,7 +24654,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24520,7 +24674,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24529,7 +24683,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24549,7 +24703,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24558,7 +24712,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24578,7 +24732,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24586,7 +24740,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24603,7 +24757,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24613,7 +24767,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24634,7 +24788,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24643,7 +24797,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24663,7 +24817,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24672,7 +24826,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24692,7 +24846,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24701,7 +24855,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24721,7 +24875,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24730,7 +24884,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         rounding: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24747,7 +24901,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, rounding))?
+            cordl_method_info.invoke_unchecked((), (a, rounding))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24756,7 +24910,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         rounding: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24773,7 +24927,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, rounding))?
+            cordl_method_info.invoke_unchecked((), (a, rounding))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24783,7 +24937,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         rounding: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24804,7 +24958,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, rounding))?
+            cordl_method_info.invoke_unchecked((), (a, b, rounding))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24814,7 +24968,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         rounding: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24835,7 +24989,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, rounding))?
+            cordl_method_info.invoke_unchecked((), (a, b, rounding))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24843,7 +24997,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         mem_addr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24860,7 +25014,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (mem_addr))?
+            cordl_method_info.invoke_unchecked((), (mem_addr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -24868,7 +25022,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24884,7 +25038,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn test_all_zeros(
@@ -24892,7 +25046,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         mask: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24911,7 +25065,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, mask))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, mask))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn test_mix_ones_zeroes(
@@ -24919,7 +25075,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         mask: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24938,7 +25094,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, mask))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, mask))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn testc_si128(
@@ -24946,7 +25104,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24965,7 +25123,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn testnzc_si128(
@@ -24973,7 +25133,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -24992,7 +25152,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn testz_si128(
@@ -25000,7 +25162,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25019,7 +25181,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -25090,7 +25254,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25119,7 +25283,8 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (a, alen, b, blen, len, imm8, allOnes))?
+            cordl_method_info
+                .invoke_unchecked((), (a, alen, b, blen, len, imm8, allOnes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25129,7 +25294,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
         intRes2: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25146,7 +25311,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (len, imm8, intRes2))?
+            cordl_method_info.invoke_unchecked((), (len, imm8, intRes2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25159,7 +25324,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25180,7 +25345,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (ptr, max))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (ptr, max))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeStrmOutput<T>(
@@ -25194,7 +25361,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25211,7 +25378,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (len, imm8, allOnesT, intRes2))?
+            cordl_method_info.invoke_unchecked((), (len, imm8, allOnesT, intRes2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25223,7 +25390,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25246,7 +25413,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (a, la, b, lb, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, la, b, lb, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25258,7 +25425,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25281,7 +25448,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (a, la, b, lb, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, la, b, lb, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25293,7 +25460,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25316,7 +25483,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (a, la, b, lb, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, la, b, lb, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25335,7 +25502,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25365,7 +25532,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (a, alen, b, blen, len, imm8, allOnes, allOnesT))?
         };
         Ok(__cordl_ret.into())
@@ -25378,7 +25545,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25401,7 +25568,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, la, b, lb, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, la, b, lb, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25420,7 +25587,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25450,7 +25617,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (a, alen, b, blen, len, imm8, allOnes, allOnesT))?
         };
         Ok(__cordl_ret.into())
@@ -25463,7 +25630,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25486,7 +25653,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (a, la, b, lb, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, la, b, lb, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25498,7 +25665,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25521,7 +25688,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (a, la, b, lb, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, la, b, lb, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25533,7 +25700,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25556,7 +25723,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (a, la, b, lb, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, la, b, lb, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25565,7 +25732,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
         val2: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25585,7 +25752,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (val1, val2))?
+            cordl_method_info.invoke_unchecked((), (val1, val2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25595,7 +25762,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25615,7 +25782,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b, imm8))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn cmpistrc(
@@ -25624,7 +25793,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25644,7 +25813,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b, imm8))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn cmpistri(
@@ -25653,7 +25824,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25673,7 +25844,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b, imm8))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn cmpistri_emulation<T>(
@@ -25689,7 +25862,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25717,7 +25890,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (a, b, len, imm8, allOnes, allOnesT))?
+            cordl_method_info.invoke_unchecked((), (a, b, len, imm8, allOnes, allOnesT))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25727,7 +25900,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25748,7 +25921,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, imm8))?
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25765,7 +25938,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25793,7 +25966,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, len, imm8, allOnes, allOnesT))?
+            cordl_method_info.invoke_unchecked((), (a, b, len, imm8, allOnes, allOnesT))?
         };
         Ok(__cordl_ret.into())
     }
@@ -25803,7 +25976,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25823,7 +25996,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b, imm8))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn cmpistrs(
@@ -25832,7 +26007,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25852,7 +26027,9 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b, imm8))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn cmpistrz(
@@ -25861,7 +26038,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
         imm8: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -25881,12 +26058,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b, imm8))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b, imm8))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn crc32_u16(crc: u32, v: u16) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, u16), u32, 2usize>("crc32_u16")
@@ -25898,12 +26077,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (crc, v))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (crc, v))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn crc32_u32(crc: u32, v: u32) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, u32), u32, 2usize>("crc32_u32")
@@ -25915,12 +26096,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (crc, v))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (crc, v))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn crc32_u64_i64_0(crc_ul: u64, v: i64) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64, i64), u64, 2usize>("crc32_u64")
@@ -25932,12 +26115,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (crc_ul, v))? };
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (crc_ul, v))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn crc32_u64_u64_1(crc_ul: u64, v: u64) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64, u64), u64, 2usize>("crc32_u64")
@@ -25949,12 +26134,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (crc_ul, v))? };
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (crc_ul, v))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn crc32_u8(crc: u32, v: u8) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, u8), u32, 2usize>("crc32_u8")
@@ -25966,12 +26153,14 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (crc, v))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (crc, v))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsSse42Supported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsSse42Supported")
@@ -25983,7 +26172,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -26040,7 +26229,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26057,7 +26246,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26065,7 +26254,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26082,7 +26271,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26090,7 +26279,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
         a: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26107,7 +26296,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a))?
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26117,7 +26306,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
         count: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26138,13 +26327,13 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b, count))?
+            cordl_method_info.invoke_unchecked((), (a, b, count))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsSsse3Supported() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsSsse3Supported")
@@ -26156,7 +26345,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn hadd_epi16(
@@ -26164,7 +26353,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26184,7 +26373,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26193,7 +26382,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26213,7 +26402,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26222,7 +26411,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26242,7 +26431,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26251,7 +26440,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26271,7 +26460,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26280,7 +26469,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26300,7 +26489,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26309,7 +26498,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26329,7 +26518,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26338,7 +26527,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26358,7 +26547,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26367,7 +26556,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26387,7 +26576,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26396,7 +26585,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26416,7 +26605,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26425,7 +26614,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26445,7 +26634,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26454,7 +26643,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26474,7 +26663,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -26483,7 +26672,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
         b: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::Intrinsics::v128> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -26503,7 +26692,7 @@ impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {
                     })
             });
         let __cordl_ret: crate::Unity::Burst::Intrinsics::v128 = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }

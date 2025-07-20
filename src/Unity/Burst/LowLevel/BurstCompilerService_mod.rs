@@ -46,7 +46,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
         compilerOptions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -70,7 +70,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (delegateMethod, compilerOptions))?
+            cordl_method_info.invoke_unchecked((), (delegateMethod, compilerOptions))?
         };
         Ok(__cordl_ret.into())
     }
@@ -80,7 +80,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -98,12 +98,12 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (userID))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (userID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentExecutionMode() -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u32, 0usize>("GetCurrentExecutionMode")
@@ -115,7 +115,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDisassembly(
@@ -125,7 +125,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -150,7 +150,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (m, compilerOptions))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (m, compilerOptions))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetOrCreateSharedMemory(
@@ -161,7 +161,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -183,7 +183,9 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (key, size_of, alignment))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (key, size_of, alignment))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBurstLibrary(
@@ -192,7 +194,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -209,7 +211,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (fullPathToLibBurstGenerated))?
+            cordl_method_info.invoke_unchecked((), (fullPathToLibBurstGenerated))?
         };
         Ok(__cordl_ret.into())
     }
@@ -221,7 +223,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
         lineNumber: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -250,7 +252,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (userData, logType, message, filename, lineNumber),
@@ -266,7 +268,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
         lineNumber: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -295,7 +297,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (userData, logType, message, filename, lineNumber),
@@ -307,7 +309,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
         environment: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -324,7 +326,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (environment))?
+            cordl_method_info.invoke_unchecked((), (environment))?
         };
         Ok(__cordl_ret.into())
     }

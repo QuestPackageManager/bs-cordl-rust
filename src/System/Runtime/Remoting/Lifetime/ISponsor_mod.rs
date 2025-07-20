@@ -46,7 +46,7 @@ impl crate::System::Runtime::Remoting::Lifetime::ISponsor {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -65,7 +65,7 @@ impl crate::System::Runtime::Remoting::Lifetime::ISponsor {
                     })
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked(self, (lease))?
+            cordl_method_info.invoke_unchecked(self, (lease))?
         };
         Ok(__cordl_ret.into())
     }

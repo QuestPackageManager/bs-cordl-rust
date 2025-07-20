@@ -61,7 +61,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         id2: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32), i32, 2usize>("CompareId")
@@ -73,14 +73,16 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (id1, id2))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (id1, id2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DelayExpandDropItem(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -97,7 +99,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -105,7 +107,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -122,7 +124,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -130,7 +132,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -147,7 +149,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -159,7 +161,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         pointerPosition: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -181,7 +183,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (item, pointerPosition))?
+            cordl_method_info.invoke_unchecked(self, (item, pointerPosition))?
         };
         Ok(__cordl_ret.into())
     }
@@ -192,7 +194,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::DragVisualMode> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -211,7 +213,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::DragVisualMode = unsafe {
-            method.invoke_unchecked(self, (args))?
+            cordl_method_info.invoke_unchecked(self, (args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -231,7 +233,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -250,7 +252,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (args))?
+            cordl_method_info.invoke_unchecked(self, (args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -259,7 +261,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         ids: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -278,7 +280,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ids))?
+            cordl_method_info.invoke_unchecked(self, (ids))?
         };
         Ok(__cordl_ret.into())
     }
@@ -290,7 +292,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         skipText: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StartDragArgs> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -312,7 +314,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::StartDragArgs = unsafe {
-            method.invoke_unchecked(self, (itemIds, skipText))?
+            cordl_method_info.invoke_unchecked(self, (itemIds, skipText))?
         };
         Ok(__cordl_ret.into())
     }
@@ -321,7 +323,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         view: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseTreeView>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -340,7 +342,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (view))?
+            cordl_method_info.invoke_unchecked(self, (view))?
         };
         Ok(__cordl_ret.into())
     }
@@ -426,7 +428,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_Dr
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -439,7 +441,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_Dr
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

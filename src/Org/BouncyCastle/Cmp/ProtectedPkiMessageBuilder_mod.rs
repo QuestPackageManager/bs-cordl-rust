@@ -56,7 +56,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -78,7 +78,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (certificate))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (certificate))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddGeneralInfo(
@@ -92,7 +92,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -114,7 +114,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (genInfo))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (genInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn Build_IMacFactory1(
@@ -124,7 +124,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -146,7 +146,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage,
-        > = unsafe { method.invoke_unchecked(self, (factory))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (factory))? };
         Ok(__cordl_ret.into())
     }
     pub fn Build_ISignatureFactory0(
@@ -158,7 +158,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -180,7 +180,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage,
-        > = unsafe { method.invoke_unchecked(self, (signatureFactory))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (signatureFactory))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateSignature(
@@ -196,7 +196,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -226,7 +226,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (signer, header, body))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (signer, header, body))? };
         Ok(__cordl_ret.into())
     }
     pub fn FinalizeHeader(
@@ -236,7 +236,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -255,7 +255,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (algorithmIdentifier))?
+            cordl_method_info.invoke_unchecked(self, (algorithmIdentifier))?
         };
         Ok(__cordl_ret.into())
     }
@@ -271,7 +271,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -298,7 +298,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage,
-        > = unsafe { method.invoke_unchecked(self, (header, protection))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (header, protection))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_GeneralName0(
@@ -339,7 +339,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -361,7 +361,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (body))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (body))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetFreeText(
@@ -375,7 +375,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -397,7 +397,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (freeText))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (freeText))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetMessageTime(
@@ -411,7 +411,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -433,7 +433,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (generalizedTime))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (generalizedTime))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetRecipKID(
@@ -445,7 +445,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -467,7 +467,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (id))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (id))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetRecipNonce(
@@ -479,7 +479,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -501,7 +501,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (nonce))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (nonce))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetSenderKID(
@@ -513,7 +513,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -535,7 +535,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (id))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (id))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetSenderNonce(
@@ -547,7 +547,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -569,7 +569,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (nonce))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (nonce))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetTransactionId(
@@ -581,7 +581,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -603,7 +603,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (tid))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (tid))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_GeneralName0(
@@ -616,7 +616,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -640,7 +640,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sender, recipient))?
+            cordl_method_info.invoke_unchecked(self, (sender, recipient))?
         };
         Ok(__cordl_ret.into())
     }
@@ -655,7 +655,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -680,7 +680,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pvno, sender, recipient))?
+            cordl_method_info.invoke_unchecked(self, (pvno, sender, recipient))?
         };
         Ok(__cordl_ret.into())
     }

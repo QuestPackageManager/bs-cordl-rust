@@ -58,7 +58,7 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -97,7 +97,9 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
             quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::Timeline::TimeNotificationBehaviour,
             >,
-        > = unsafe { method.invoke_unchecked((), (graph, markers, asset, director))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (graph, markers, asset, director))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateNotificationsPlayable_PlayableDirector0(
@@ -118,7 +120,7 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -154,7 +156,9 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
             quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::Timeline::TimeNotificationBehaviour,
             >,
-        > = unsafe { method.invoke_unchecked((), (graph, markers, director))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (graph, markers, director))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateNotificationsPlayable_TimelineAsset1(
@@ -175,7 +179,7 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -211,14 +215,16 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
             quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::Timeline::TimeNotificationBehaviour,
             >,
-        > = unsafe { method.invoke_unchecked((), (graph, markers, timelineAsset))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (graph, markers, timelineAsset))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TrackTypeSupportsNotifications(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -234,7 +240,9 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (_cordl_type))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_type))?
+        };
         Ok(__cordl_ret.into())
     }
 }

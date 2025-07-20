@@ -61,7 +61,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
@@ -74,7 +74,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -85,7 +85,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -105,7 +105,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe { method.invoke_unchecked(self, (cancellationToken))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLevelDataVersion(
@@ -113,7 +113,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapLevelDataVersion> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -130,7 +130,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::BeatmapLevelDataVersion = unsafe {
-            method.invoke_unchecked(self, (levelId))?
+            cordl_method_info.invoke_unchecked(self, (levelId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -146,7 +146,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -175,7 +175,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::BeatmapLevelDataVersion,
             >,
-        > = unsafe { method.invoke_unchecked(self, (levelId, token))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (levelId, token))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLevelEntitlementStatusInternalAsync(
@@ -190,7 +190,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -219,7 +219,9 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::EntitlementStatus,
             >,
-        > = unsafe { method.invoke_unchecked(self, (levelId, cancellationToken))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (levelId, cancellationToken))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetPackEntitlementStatusInternalAsync(
@@ -234,7 +236,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -263,7 +265,9 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::EntitlementStatus,
             >,
-        > = unsafe { method.invoke_unchecked(self, (levelPackId, cancellationToken))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (levelPackId, cancellationToken))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetRedirectedLevelPackProductData(
@@ -278,7 +282,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -309,7 +313,9 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (packId, cancellationToken))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (packId, cancellationToken))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HasLevelEntitlement(
@@ -317,7 +323,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -333,7 +339,9 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (levelId))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (levelId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HasLevelPackEntitlement(
@@ -341,7 +349,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -357,7 +365,9 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (levelPackId))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (levelPackId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
@@ -367,7 +377,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -386,7 +396,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (vrPlatformHelper))?
+            cordl_method_info.invoke_unchecked(self, (vrPlatformHelper))?
         };
         Ok(__cordl_ret.into())
     }
@@ -394,7 +404,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -411,7 +421,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -427,7 +437,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -456,7 +466,9 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
             >,
-        > = unsafe { method.invoke_unchecked(self, (levelPackId, cancellationToken))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (levelPackId, cancellationToken))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -488,7 +500,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -517,7 +529,9 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::OpenProductStoreResult,
             >,
-        > = unsafe { method.invoke_unchecked(self, (levelPackId, cancellationToken))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (levelPackId, cancellationToken))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OpenLevelProductStoreAsync(
@@ -532,7 +546,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -561,7 +575,9 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::OpenProductStoreResult,
             >,
-        > = unsafe { method.invoke_unchecked(self, (levelId, cancellationToken))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (levelId, cancellationToken))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OpenStore(
@@ -569,7 +585,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -586,7 +602,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (uri))?
+            cordl_method_info.invoke_unchecked(self, (uri))?
         };
         Ok(__cordl_ret.into())
     }
@@ -601,7 +617,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -625,7 +641,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult,
             >,
-        > = unsafe { method.invoke_unchecked(self, (cancellationToken))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn _GetRedirectedLevelPackProductData_g__GetProductLabel_17_0(
@@ -636,7 +652,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -657,7 +673,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (levelPackProductData))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (levelPackProductData))? };
         Ok(__cordl_ret.into())
     }
     pub fn _HasLevelPackEntitlement_b__19_0(
@@ -667,7 +683,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -686,7 +702,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (levelProductData))?
+            cordl_method_info.invoke_unchecked(self, (levelProductData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -698,7 +714,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -721,7 +737,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (levelProductData))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (levelProductData))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -734,7 +750,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -758,7 +774,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (sonyCommerceHelper, sonyLevelProductCollectionModel),

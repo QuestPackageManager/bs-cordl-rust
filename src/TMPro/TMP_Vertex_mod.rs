@@ -101,7 +101,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::TMP_Vertex {
 impl crate::TMPro::TMP_Vertex {
     pub fn get_zero() -> quest_hook::libil2cpp::Result<crate::TMPro::TMP_Vertex> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -118,7 +118,7 @@ impl crate::TMPro::TMP_Vertex {
                     })
             });
         let __cordl_ret: crate::TMPro::TMP_Vertex = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }

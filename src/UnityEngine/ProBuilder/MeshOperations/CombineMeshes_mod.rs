@@ -96,7 +96,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
         targetTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -175,7 +175,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -207,7 +207,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -239,7 +239,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
             >,
-        > = unsafe { method.invoke_unchecked((), (meshes))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (meshes))? };
         Ok(__cordl_ret.into())
     }
     pub fn Combine_IEnumerable_1_0(
@@ -256,7 +256,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -288,7 +288,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
             >,
-        > = unsafe { method.invoke_unchecked((), (meshes))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (meshes))? };
         Ok(__cordl_ret.into())
     }
     pub fn Combine_ProBuilderMesh1(
@@ -308,7 +308,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -345,7 +345,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
             >,
-        > = unsafe { method.invoke_unchecked((), (meshes, meshTarget))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (meshes, meshTarget))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateMeshFromSplit(
@@ -377,7 +377,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -427,7 +427,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -472,7 +472,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -529,7 +529,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
             >,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (vertices, faces, sharedVertices, sharedTextures, maxVertexCount),

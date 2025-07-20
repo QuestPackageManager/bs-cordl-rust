@@ -55,7 +55,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
                     crate::GlobalNamespace::OculusLevelProductPacksSO,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (packDefinitions))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (packDefinitions))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPS4LeaderboardIds(
@@ -106,7 +106,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -138,7 +138,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyLeaderboardIdsSO>,
             >,
-        > = unsafe { method.invoke_unchecked((), (packDefinitions))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (packDefinitions))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPS4LevelProductPacks(
@@ -155,7 +155,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -187,7 +187,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PS4LevelProductPacksSO>,
             >,
-        > = unsafe { method.invoke_unchecked((), (packDefinitions))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (packDefinitions))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPS5LeaderboardIds(
@@ -204,7 +204,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -236,7 +236,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyLeaderboardIdsSO>,
             >,
-        > = unsafe { method.invoke_unchecked((), (packDefinitions))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (packDefinitions))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPS5LevelProductPacks(
@@ -253,7 +253,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -285,7 +285,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PS5LevelProductPacksSO>,
             >,
-        > = unsafe { method.invoke_unchecked((), (packDefinitions))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (packDefinitions))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPerceivedLoudnessSOs(
@@ -302,7 +302,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -334,7 +334,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PerceivedLoudnessSO>,
             >,
-        > = unsafe { method.invoke_unchecked((), (packDefinitions))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (packDefinitions))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetQuestLeaderboardIds(
@@ -351,7 +351,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -383,7 +383,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardIdsSO>,
             >,
-        > = unsafe { method.invoke_unchecked((), (packDefinitions))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (packDefinitions))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRiftLeaderboardIds(
@@ -400,7 +400,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -432,7 +432,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardIdsSO>,
             >,
-        > = unsafe { method.invoke_unchecked((), (packDefinitions))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (packDefinitions))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSteamLeaderboardIds(
@@ -449,7 +449,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -481,7 +481,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardIdsSO>,
             >,
-        > = unsafe { method.invoke_unchecked((), (packDefinitions))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (packDefinitions))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSteamLevelProductPacks(
@@ -500,7 +500,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -534,7 +534,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
                     crate::GlobalNamespace::SteamLevelProductPacksSO,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (packDefinitions))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (packDefinitions))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -43,7 +43,7 @@ impl crate::Mono::Math::Prime::PrimalityTests {
         confidence: crate::Mono::Math::Prime::ConfidenceFactor,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -62,7 +62,9 @@ impl crate::Mono::Math::Prime::PrimalityTests {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (bi, confidence))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (bi, confidence))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RabinMillerTest(
@@ -70,7 +72,7 @@ impl crate::Mono::Math::Prime::PrimalityTests {
         confidence: crate::Mono::Math::Prime::ConfidenceFactor,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -89,7 +91,9 @@ impl crate::Mono::Math::Prime::PrimalityTests {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (n, confidence))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (n, confidence))?
+        };
         Ok(__cordl_ret.into())
     }
 }

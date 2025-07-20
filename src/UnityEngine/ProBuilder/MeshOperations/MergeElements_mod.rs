@@ -49,7 +49,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -77,7 +77,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, faces))?
+            cordl_method_info.invoke_unchecked((), (mesh, faces))?
         };
         Ok(__cordl_ret.into())
     }
@@ -94,7 +94,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -123,7 +123,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Face,
-        > = unsafe { method.invoke_unchecked((), (target, faces))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (target, faces))? };
         Ok(__cordl_ret.into())
     }
     pub fn MergePairs(
@@ -147,7 +147,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -191,7 +191,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (target, pairs, collapseCoincidentVertices))?
+            cordl_method_info
+                .invoke_unchecked((), (target, pairs, collapseCoincidentVertices))?
         };
         Ok(__cordl_ret.into())
     }

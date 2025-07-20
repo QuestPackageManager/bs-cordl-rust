@@ -95,7 +95,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -120,7 +120,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(self, (characteristic, difficulty, beatmapBasicData))?
         };
         Ok(__cordl_ret.into())
@@ -135,7 +135,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -159,7 +159,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
             crate::System::Collections::Generic::IEnumerable_1<
                 crate::GlobalNamespace::BeatmapKey,
             >,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCharacteristics(
@@ -174,7 +174,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -202,7 +202,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
                     crate::GlobalNamespace::BeatmapCharacteristicSO,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetColorScheme(
@@ -215,7 +215,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -238,7 +238,9 @@ impl crate::GlobalNamespace::BeatmapLevel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ColorScheme,
-        > = unsafe { method.invoke_unchecked(self, (characteristic, difficulty))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (characteristic, difficulty))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDifficulties(
@@ -254,7 +256,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -280,7 +282,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
             crate::System::Collections::Generic::IEnumerable_1<
                 crate::GlobalNamespace::BeatmapDifficulty,
             >,
-        > = unsafe { method.invoke_unchecked(self, (characteristic))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (characteristic))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDifficultyBeatmapData(
@@ -293,7 +295,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapBasicData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -318,7 +320,9 @@ impl crate::GlobalNamespace::BeatmapLevel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapBasicData,
-        > = unsafe { method.invoke_unchecked(self, (characteristic, difficulty))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (characteristic, difficulty))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetEnvironmentName(
@@ -329,7 +333,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EnvironmentName> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -351,7 +355,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::EnvironmentName = unsafe {
-            method.invoke_unchecked(self, (characteristic, difficulty))?
+            cordl_method_info.invoke_unchecked(self, (characteristic, difficulty))?
         };
         Ok(__cordl_ret.into())
     }
@@ -429,7 +433,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -451,7 +455,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (characteristic, difficulty))?
+            cordl_method_info.invoke_unchecked(self, (characteristic, difficulty))?
         };
         Ok(__cordl_ret.into())
     }
@@ -463,7 +467,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapKey> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -485,7 +489,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::BeatmapKey = unsafe {
-            method.invoke_unchecked(self, (entry))?
+            cordl_method_info.invoke_unchecked(self, (entry))?
         };
         Ok(__cordl_ret.into())
     }
@@ -530,7 +534,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -599,7 +603,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (
@@ -641,7 +645,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -679,7 +683,7 @@ impl crate::GlobalNamespace::BeatmapLevel {
                 >,
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapBasicData>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -59,7 +59,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -84,7 +84,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (typeMap, ob))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (typeMap, ob))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetListCount(
@@ -93,7 +93,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         ob: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -116,7 +116,9 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (listType, ob))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (listType, ob))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetMemberValue(
@@ -130,7 +132,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -156,7 +158,9 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (member, ob, isValueList))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (member, ob, isValueList))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetStringValue(
@@ -172,7 +176,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -200,7 +204,9 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (typeMap, _cordl_type, value))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (typeMap, _cordl_type, value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ImplicitConvert(
@@ -210,7 +216,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -233,14 +239,14 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (obj, _cordl_type))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj, _cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn InitCallbacks(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -257,7 +263,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -270,7 +276,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         isValueList: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -295,7 +301,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (member, ob, isValueList))?
+            cordl_method_info.invoke_unchecked(self, (member, ob, isValueList))?
         };
         Ok(__cordl_ret.into())
     }
@@ -316,7 +322,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         memberValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -340,7 +346,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (member, memberValue))?
+            cordl_method_info.invoke_unchecked(self, (member, memberValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -351,7 +357,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         isValueList: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -376,7 +382,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (map, ob, isValueList))?
+            cordl_method_info.invoke_unchecked(self, (map, ob, isValueList))?
         };
         Ok(__cordl_ret.into())
     }
@@ -387,7 +393,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         isValueList: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -412,7 +418,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (map, ob, isValueList))?
+            cordl_method_info.invoke_unchecked(self, (map, ob, isValueList))?
         };
         Ok(__cordl_ret.into())
     }
@@ -426,7 +432,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         namesp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -456,7 +462,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (typeMap, ob, element, namesp))?
+            cordl_method_info.invoke_unchecked(self, (typeMap, ob, element, namesp))?
         };
         Ok(__cordl_ret.into())
     }
@@ -469,7 +475,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         targetString: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -500,7 +506,8 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (container, listType, map, ob, targetString))?
+            cordl_method_info
+                .invoke_unchecked(self, (container, listType, map, ob, targetString))?
         };
         Ok(__cordl_ret.into())
     }
@@ -514,7 +521,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         namesp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -544,7 +551,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (typeMap, ob, element, namesp))?
+            cordl_method_info.invoke_unchecked(self, (typeMap, ob, element, namesp))?
         };
         Ok(__cordl_ret.into())
     }
@@ -556,7 +563,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         memberValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -580,7 +587,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (elem, memberValue))?
+            cordl_method_info.invoke_unchecked(self, (elem, memberValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -591,7 +598,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         isValueList: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -616,7 +623,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (map, ob, isValueList))?
+            cordl_method_info.invoke_unchecked(self, (map, ob, isValueList))?
         };
         Ok(__cordl_ret.into())
     }
@@ -632,7 +639,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -660,7 +667,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (membersMap, parameters))?
+            cordl_method_info.invoke_unchecked(self, (membersMap, parameters))?
         };
         Ok(__cordl_ret.into())
     }
@@ -677,7 +684,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         writeWrappingElem: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -710,7 +717,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (
@@ -736,7 +743,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         namesp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -766,7 +773,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (typeMap, ob, element, namesp))?
+            cordl_method_info.invoke_unchecked(self, (typeMap, ob, element, namesp))?
         };
         Ok(__cordl_ret.into())
     }
@@ -778,7 +785,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         ob: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -802,7 +809,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (typeMap, ob))?
+            cordl_method_info.invoke_unchecked(self, (typeMap, ob))?
         };
         Ok(__cordl_ret.into())
     }
@@ -814,7 +821,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         ob: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -838,7 +845,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (typeMap, ob))?
+            cordl_method_info.invoke_unchecked(self, (typeMap, ob))?
         };
         Ok(__cordl_ret.into())
     }
@@ -852,7 +859,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         namesp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -882,7 +889,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (typeMap, ob, element, namesp))?
+            cordl_method_info.invoke_unchecked(self, (typeMap, ob, element, namesp))?
         };
         Ok(__cordl_ret.into())
     }
@@ -900,7 +907,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         isNullable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -938,7 +945,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (
@@ -968,7 +975,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         isNullable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1003,7 +1010,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (memberValue, name, ns, mappedType, typeData, wrapped, isNullable),
@@ -1016,7 +1023,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         ob: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1033,7 +1040,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ob))?
+            cordl_method_info.invoke_unchecked(self, (ob))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1042,7 +1049,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         typeMap: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::XmlMapping>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1061,7 +1068,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (typeMap))?
+            cordl_method_info.invoke_unchecked(self, (typeMap))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1154,7 +1161,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_Callba
         ob: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1171,7 +1178,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_Callba
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ob))?
+            cordl_method_info.invoke_unchecked(self, (ob))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1180,7 +1187,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_Callba
         ob: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1197,7 +1204,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_Callba
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ob))?
+            cordl_method_info.invoke_unchecked(self, (ob))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1211,7 +1218,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_Callba
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1235,7 +1242,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_Callba
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (swi, typeMap))?
+            cordl_method_info.invoke_unchecked(self, (swi, typeMap))?
         };
         Ok(__cordl_ret.into())
     }

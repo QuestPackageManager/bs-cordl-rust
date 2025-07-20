@@ -43,7 +43,7 @@ impl crate::Unity::Mathematics::Geometry::Math {
         aabb: crate::Unity::Mathematics::Geometry::MinMaxAABB,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::MinMaxAABB> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -63,7 +63,7 @@ impl crate::Unity::Mathematics::Geometry::Math {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::Geometry::MinMaxAABB = unsafe {
-            method.invoke_unchecked((), (transform, aabb))?
+            cordl_method_info.invoke_unchecked((), (transform, aabb))?
         };
         Ok(__cordl_ret.into())
     }
@@ -72,7 +72,7 @@ impl crate::Unity::Mathematics::Geometry::Math {
         aabb: crate::Unity::Mathematics::Geometry::MinMaxAABB,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::MinMaxAABB> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -92,7 +92,7 @@ impl crate::Unity::Mathematics::Geometry::Math {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::Geometry::MinMaxAABB = unsafe {
-            method.invoke_unchecked((), (transform, aabb))?
+            cordl_method_info.invoke_unchecked((), (transform, aabb))?
         };
         Ok(__cordl_ret.into())
     }
@@ -101,7 +101,7 @@ impl crate::Unity::Mathematics::Geometry::Math {
         aabb: crate::Unity::Mathematics::Geometry::MinMaxAABB,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::MinMaxAABB> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -121,7 +121,7 @@ impl crate::Unity::Mathematics::Geometry::Math {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::Geometry::MinMaxAABB = unsafe {
-            method.invoke_unchecked((), (transform, aabb))?
+            cordl_method_info.invoke_unchecked((), (transform, aabb))?
         };
         Ok(__cordl_ret.into())
     }

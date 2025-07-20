@@ -54,7 +54,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         terrain: quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -75,7 +75,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (x, z, terrain))?
+            cordl_method_info.invoke_unchecked(self, (x, z, terrain))?
         };
         Ok(__cordl_ret.into())
     }
@@ -91,7 +91,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainUtils::TerrainMap>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -120,7 +120,8 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TerrainUtils::TerrainMap,
         > = unsafe {
-            method.invoke_unchecked((), (originTerrain, filter, fullValidation))?
+            cordl_method_info
+                .invoke_unchecked((), (originTerrain, filter, fullValidation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -137,7 +138,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainUtils::TerrainMap>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -167,7 +168,8 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TerrainUtils::TerrainMap,
         > = unsafe {
-            method.invoke_unchecked((), (gridOrigin, gridSize, filter, fullValidation))?
+            cordl_method_info
+                .invoke_unchecked((), (gridOrigin, gridSize, filter, fullValidation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -179,7 +181,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -196,7 +198,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain> = unsafe {
-            method.invoke_unchecked(self, (tileX, tileZ))?
+            cordl_method_info.invoke_unchecked(self, (tileX, tileZ))?
         };
         Ok(__cordl_ret.into())
     }
@@ -214,7 +216,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         terrain: quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -235,7 +237,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (tileX, tileZ, terrain))?
+            cordl_method_info.invoke_unchecked(self, (tileX, tileZ, terrain))?
         };
         Ok(__cordl_ret.into())
     }
@@ -245,7 +247,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         crate::UnityEngine::TerrainUtils::TerrainMapStatusCode,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -262,7 +264,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
                     })
             });
         let __cordl_ret: crate::UnityEngine::TerrainUtils::TerrainMapStatusCode = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -272,7 +274,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         tileZ: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -289,7 +291,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (tileX, tileZ))?
+            cordl_method_info.invoke_unchecked(self, (tileX, tileZ))?
         };
         Ok(__cordl_ret.into())
     }
@@ -297,7 +299,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -310,7 +312,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -325,7 +327,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -351,7 +353,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
                 crate::UnityEngine::TerrainUtils::TerrainTileCoord,
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

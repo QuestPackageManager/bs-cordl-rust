@@ -48,7 +48,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -73,7 +73,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sb, name, value))?
+            cordl_method_info.invoke_unchecked((), (sb, name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -85,7 +85,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -114,7 +114,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (settings, text, log))?
+            cordl_method_info.invoke_unchecked((), (settings, text, log))?
         };
         Ok(__cordl_ret.into())
     }
@@ -123,7 +123,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         stream: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -145,7 +145,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (settings, stream))?
+            cordl_method_info.invoke_unchecked((), (settings, stream))?
         };
         Ok(__cordl_ret.into())
     }
@@ -153,7 +153,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         property: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -169,7 +169,9 @@ impl crate::BeatSaber::Settings::SettingStrings {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (property))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (property))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadBool(
@@ -181,7 +183,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -207,7 +209,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (name, text, value, err))?
+            cordl_method_info.invoke_unchecked((), (name, text, value, err))?
         };
         Ok(__cordl_ret.into())
     }
@@ -224,7 +226,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -250,7 +252,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (name, text, value, err))?
+            cordl_method_info.invoke_unchecked((), (name, text, value, err))?
         };
         Ok(__cordl_ret.into())
     }
@@ -263,7 +265,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -289,7 +291,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (name, text, value, err))?
+            cordl_method_info.invoke_unchecked((), (name, text, value, err))?
         };
         Ok(__cordl_ret.into())
     }
@@ -302,7 +304,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -328,7 +330,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (name, text, value, err))?
+            cordl_method_info.invoke_unchecked((), (name, text, value, err))?
         };
         Ok(__cordl_ret.into())
     }
@@ -340,7 +342,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -369,7 +371,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (settings, text, log))?
+            cordl_method_info.invoke_unchecked((), (settings, text, log))?
         };
         Ok(__cordl_ret.into())
     }
@@ -382,7 +384,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -410,7 +412,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (settings, name, value, log))?
+            cordl_method_info.invoke_unchecked((), (settings, name, value, log))?
         };
         Ok(__cordl_ret.into())
     }
@@ -422,7 +424,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -449,7 +451,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (settings, property, log))?
+            cordl_method_info.invoke_unchecked((), (settings, property, log))?
         };
         Ok(__cordl_ret.into())
     }
@@ -464,7 +466,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -494,7 +496,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (_cordl__, text, value, err))?
+            cordl_method_info.invoke_unchecked((), (_cordl__, text, value, err))?
         };
         Ok(__cordl_ret.into())
     }
@@ -503,7 +505,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         text: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -525,7 +527,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (settings, text))?
+            cordl_method_info.invoke_unchecked((), (settings, text))?
         };
         Ok(__cordl_ret.into())
     }

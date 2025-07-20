@@ -49,7 +49,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -74,7 +74,9 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMouseclickCount(
@@ -87,7 +89,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -112,7 +114,9 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousedelta(
@@ -125,7 +129,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -150,7 +154,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DeltaControl,
-        > = unsafe { method.invoke_unchecked(self, (kDeltaLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kDeltaLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousedeltadown(
@@ -161,7 +165,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -186,7 +190,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousedeltaleft(
@@ -197,7 +201,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -222,7 +226,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousedeltaright(
@@ -233,7 +237,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -258,7 +262,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousedeltaup(
@@ -269,7 +273,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -294,7 +298,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousedeltax(
@@ -305,7 +309,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -330,7 +334,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousedeltay(
@@ -341,7 +345,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -366,7 +370,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousedisplayIndex(
@@ -379,7 +383,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -404,7 +408,9 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMouseforwardButton(
@@ -417,7 +423,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -442,7 +448,9 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMouseleftButton(
@@ -455,7 +463,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -480,7 +488,9 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousemiddleButton(
@@ -493,7 +503,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -518,7 +528,9 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousepointerId(
@@ -531,7 +543,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -556,7 +568,9 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kDigitalLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kDigitalLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMouseposition(
@@ -569,7 +583,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -594,7 +608,9 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousepositionx(
@@ -605,7 +621,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -630,7 +646,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousepositiony(
@@ -641,7 +657,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -666,7 +682,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousepress(
@@ -679,7 +695,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -704,7 +720,9 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousepressure(
@@ -715,7 +733,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -740,7 +758,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMouseradius(
@@ -753,7 +771,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -778,7 +796,9 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMouseradiusx(
@@ -789,7 +809,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -814,7 +834,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMouseradiusy(
@@ -825,7 +845,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -850,7 +870,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMouserightButton(
@@ -863,7 +883,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -888,7 +908,9 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousescroll(
@@ -901,7 +923,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -926,7 +948,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DeltaControl,
-        > = unsafe { method.invoke_unchecked(self, (kDeltaLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kDeltaLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousescrolldown(
@@ -937,7 +959,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -962,7 +984,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousescrollleft(
@@ -973,7 +995,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -998,7 +1020,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousescrollright(
@@ -1009,7 +1031,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1034,7 +1056,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousescrollup(
@@ -1045,7 +1067,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1070,7 +1092,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousescrollx(
@@ -1081,7 +1103,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1106,7 +1128,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousescrolly(
@@ -1117,7 +1139,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1142,7 +1164,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn MergeForward(
@@ -1150,7 +1172,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         nextEventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1170,7 +1192,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (currentEventPtr, nextEventPtr))?
+            cordl_method_info.invoke_unchecked((), (currentEventPtr, nextEventPtr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1185,7 +1207,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1202,7 +1224,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1211,7 +1233,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1228,7 +1250,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eventPtr))?
+            cordl_method_info.invoke_unchecked(self, (eventPtr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1238,7 +1260,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         nextEventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1259,7 +1281,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (currentEventPtr, nextEventPtr))?
+            cordl_method_info.invoke_unchecked(self, (currentEventPtr, nextEventPtr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1267,7 +1289,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1287,7 +1309,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1296,7 +1318,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1316,7 +1338,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eventPtr))?
+            cordl_method_info.invoke_unchecked(self, (eventPtr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1324,7 +1346,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -1337,7 +1359,7 @@ impl crate::UnityEngine::InputSystem::FastMouse {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

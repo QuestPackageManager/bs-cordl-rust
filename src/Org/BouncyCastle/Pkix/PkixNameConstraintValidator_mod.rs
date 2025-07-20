@@ -82,7 +82,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -101,7 +101,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (subtree))?
+            cordl_method_info.invoke_unchecked(self, (subtree))?
         };
         Ok(__cordl_ret.into())
     }
@@ -110,7 +110,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         dn: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -129,7 +129,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dn))?
+            cordl_method_info.invoke_unchecked(self, (dn))?
         };
         Ok(__cordl_ret.into())
     }
@@ -143,7 +143,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -167,7 +167,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (excluded, directory))?
+            cordl_method_info.invoke_unchecked(self, (excluded, directory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -179,7 +179,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         dns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -203,7 +203,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (excluded, dns))?
+            cordl_method_info.invoke_unchecked(self, (excluded, dns))?
         };
         Ok(__cordl_ret.into())
     }
@@ -215,7 +215,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         email: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -239,7 +239,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (excluded, email))?
+            cordl_method_info.invoke_unchecked(self, (excluded, email))?
         };
         Ok(__cordl_ret.into())
     }
@@ -251,7 +251,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         ip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -275,7 +275,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (excluded, ip))?
+            cordl_method_info.invoke_unchecked(self, (excluded, ip))?
         };
         Ok(__cordl_ret.into())
     }
@@ -287,7 +287,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         name: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::OtherName>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -311,7 +311,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (excluded, name))?
+            cordl_method_info.invoke_unchecked(self, (excluded, name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -323,7 +323,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -347,7 +347,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (excluded, uri))?
+            cordl_method_info.invoke_unchecked(self, (excluded, uri))?
         };
         Ok(__cordl_ret.into())
     }
@@ -356,7 +356,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         dn: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -375,7 +375,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dn))?
+            cordl_method_info.invoke_unchecked(self, (dn))?
         };
         Ok(__cordl_ret.into())
     }
@@ -389,7 +389,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -413,7 +413,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (permitted, directory))?
+            cordl_method_info.invoke_unchecked(self, (permitted, directory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -425,7 +425,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         dns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -449,7 +449,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (permitted, dns))?
+            cordl_method_info.invoke_unchecked(self, (permitted, dns))?
         };
         Ok(__cordl_ret.into())
     }
@@ -461,7 +461,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         email: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -485,7 +485,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (permitted, email))?
+            cordl_method_info.invoke_unchecked(self, (permitted, email))?
         };
         Ok(__cordl_ret.into())
     }
@@ -497,7 +497,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         ip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -521,7 +521,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (permitted, ip))?
+            cordl_method_info.invoke_unchecked(self, (permitted, ip))?
         };
         Ok(__cordl_ret.into())
     }
@@ -533,7 +533,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         name: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::OtherName>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -557,7 +557,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (permitted, name))?
+            cordl_method_info.invoke_unchecked(self, (permitted, name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -569,7 +569,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -593,7 +593,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (permitted, uri))?
+            cordl_method_info.invoke_unchecked(self, (permitted, uri))?
         };
         Ok(__cordl_ret.into())
     }
@@ -603,7 +603,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         coll2: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -627,7 +627,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (coll1, coll2))?
+            cordl_method_info.invoke_unchecked(self, (coll1, coll2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -636,7 +636,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         ip2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -659,7 +659,9 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (ip1, ip2))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (ip1, ip2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
@@ -667,7 +669,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -683,7 +685,9 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (o))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (o))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractHostFromURL(
@@ -692,7 +696,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -710,7 +714,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (url))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (url))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractIPsAndSubnetMasks(
@@ -727,7 +731,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -760,7 +764,9 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (ipWithSubmask1, ipWithSubmask2))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (ipWithSubmask1, ipWithSubmask2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractNameAsString(
@@ -772,7 +778,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -792,12 +798,12 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (name))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
@@ -809,12 +815,12 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("HashCode")
@@ -826,7 +832,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HashCollection(
@@ -834,7 +840,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         c: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -852,7 +858,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (c))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectDN(
@@ -867,7 +873,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -894,7 +900,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (permitted, dns))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (permitted, dns))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectDns(
@@ -909,7 +915,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -936,7 +942,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (permitted, dnss))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (permitted, dnss))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectEmail_ISet_ISet0(
@@ -951,7 +957,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -978,7 +984,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (permitted, emails))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (permitted, emails))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectEmail_Il2CppString_Il2CppString_ISet1(
@@ -990,7 +996,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1017,7 +1023,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (email1, email2, intersect))?
+            cordl_method_info.invoke_unchecked(self, (email1, email2, intersect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1026,7 +1032,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         nameType: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1043,7 +1049,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nameType))?
+            cordl_method_info.invoke_unchecked(self, (nameType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1059,7 +1065,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1086,7 +1092,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (permitted, ips))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (permitted, ips))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectIPRange(
@@ -1099,7 +1105,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1126,7 +1132,9 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (ipWithSubmask1, ipWithSubmask2))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (ipWithSubmask1, ipWithSubmask2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectOtherName_ISet_ISet0(
@@ -1141,7 +1149,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1168,7 +1176,9 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (permitted, otherNames))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (permitted, otherNames))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectOtherName_OtherName_OtherName_ISet1(
@@ -1184,7 +1194,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1211,7 +1221,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (otherName1, otherName2, intersect))?
+            cordl_method_info
+                .invoke_unchecked(self, (otherName1, otherName2, intersect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1222,7 +1233,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1241,7 +1252,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (permitted))?
+            cordl_method_info.invoke_unchecked(self, (permitted))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1257,7 +1268,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1284,7 +1295,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (permitted, uris))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (permitted, uris))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectUri_Il2CppString_Il2CppString_ISet1(
@@ -1296,7 +1307,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1323,7 +1334,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (email1, email2, intersect))?
+            cordl_method_info.invoke_unchecked(self, (email1, email2, intersect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1335,7 +1346,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1362,7 +1373,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (ip, subnetMask))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (ip, subnetMask))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsDirectoryConstrained(
@@ -1375,7 +1386,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1399,7 +1410,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraints, directory))?
+            cordl_method_info.invoke_unchecked(self, (constraints, directory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1411,7 +1422,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         dns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1435,7 +1446,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraints, dns))?
+            cordl_method_info.invoke_unchecked(self, (constraints, dns))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1445,7 +1456,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         dns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1469,7 +1480,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraint, dns))?
+            cordl_method_info.invoke_unchecked(self, (constraint, dns))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1481,7 +1492,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         email: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1505,7 +1516,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraints, email))?
+            cordl_method_info.invoke_unchecked(self, (constraints, email))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1515,7 +1526,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         email: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1539,7 +1550,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraint, email))?
+            cordl_method_info.invoke_unchecked(self, (constraint, email))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1551,7 +1562,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         ip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1575,7 +1586,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraints, ip))?
+            cordl_method_info.invoke_unchecked(self, (constraints, ip))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1585,7 +1596,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         ip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1609,7 +1620,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraint, ip))?
+            cordl_method_info.invoke_unchecked(self, (constraint, ip))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1623,7 +1634,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1647,7 +1658,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraints, otherName))?
+            cordl_method_info.invoke_unchecked(self, (constraints, otherName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1661,7 +1672,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1685,7 +1696,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraint, otherName))?
+            cordl_method_info.invoke_unchecked(self, (constraint, otherName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1697,7 +1708,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1721,7 +1732,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraints, uri))?
+            cordl_method_info.invoke_unchecked(self, (constraints, uri))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1731,7 +1742,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1755,7 +1766,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraint, uri))?
+            cordl_method_info.invoke_unchecked(self, (constraint, uri))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1766,7 +1777,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1793,7 +1804,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (ip1, ip2))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (ip1, ip2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Min(
@@ -1803,7 +1814,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1830,7 +1841,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (ip1, ip2))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (ip1, ip2))? };
         Ok(__cordl_ret.into())
     }
     pub fn MinMaxIPs(
@@ -1847,7 +1858,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1887,7 +1898,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
         > = unsafe {
-            method.invoke_unchecked(self, (ip1, subnetmask1, ip2, subnetmask2))?
+            cordl_method_info
+                .invoke_unchecked(self, (ip1, subnetmask1, ip2, subnetmask2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1905,7 +1917,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1932,7 +1944,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (ip1, ip2))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (ip1, ip2))? };
         Ok(__cordl_ret.into())
     }
     pub fn SpecialEquals(
@@ -1941,7 +1953,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         o2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1964,7 +1976,9 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (o1, o2))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (o1, o2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StringifyIP(
@@ -1974,7 +1988,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1994,7 +2008,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (ip))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (ip))? };
         Ok(__cordl_ret.into())
     }
     pub fn StringifyIPCollection(
@@ -2006,7 +2020,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2026,7 +2040,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (ips))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (ips))? };
         Ok(__cordl_ret.into())
     }
     pub fn StringifyOtherNameCollection(
@@ -2038,7 +2052,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2058,7 +2072,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (otherNames))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (otherNames))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -2067,7 +2081,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2085,7 +2099,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionDN(
@@ -2098,7 +2112,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2125,7 +2139,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (excluded, dn))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (excluded, dn))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionDns(
@@ -2138,7 +2152,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2165,7 +2179,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (excluded, dns))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (excluded, dns))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionEmail_ISet0(
@@ -2178,7 +2192,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2205,7 +2219,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (excluded, email))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (excluded, email))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionEmail_Il2CppString_ISet1(
@@ -2217,7 +2231,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2244,7 +2258,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (email1, email2, _cordl_union))?
+            cordl_method_info.invoke_unchecked(self, (email1, email2, _cordl_union))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2258,7 +2272,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2285,7 +2299,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (excluded, ip))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (excluded, ip))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionIPRange(
@@ -2298,7 +2312,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2325,7 +2339,9 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (ipWithSubmask1, ipWithSubmask2))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (ipWithSubmask1, ipWithSubmask2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnionOtherName(
@@ -2340,7 +2356,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2367,7 +2383,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (permitted, otherName))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (permitted, otherName))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionUri(
@@ -2380,7 +2396,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2407,7 +2423,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (excluded, uri))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (excluded, uri))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithinDNSubtree(
@@ -2415,7 +2431,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         subtree: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2438,7 +2454,9 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (dns, subtree))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (dns, subtree))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WithinDomain(
@@ -2447,7 +2465,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         domain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2471,7 +2489,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (testDomain, domain))?
+            cordl_method_info.invoke_unchecked(self, (testDomain, domain))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2479,7 +2497,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -2492,7 +2510,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2503,7 +2521,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2522,7 +2540,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (name))?
+            cordl_method_info.invoke_unchecked(self, (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2533,7 +2551,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2552,7 +2570,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (name))?
+            cordl_method_info.invoke_unchecked(self, (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2565,7 +2583,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2592,7 +2610,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (email1, email2, _cordl_union))?
+            cordl_method_info.invoke_unchecked(self, (email1, email2, _cordl_union))?
         };
         Ok(__cordl_ret.into())
     }

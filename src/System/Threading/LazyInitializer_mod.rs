@@ -46,7 +46,7 @@ impl crate::System::Threading::LazyInitializer {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -62,7 +62,9 @@ impl crate::System::Threading::LazyInitializer {
                         )
                     })
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (target))? };
+        let __cordl_ret: T = unsafe {
+            cordl_method_info.invoke_unchecked((), (target))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureInitializedCore_ByRefMut_ByRefMut_Func_1_2<T>(
@@ -78,7 +80,7 @@ impl crate::System::Threading::LazyInitializer {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -104,7 +106,8 @@ impl crate::System::Threading::LazyInitializer {
                     })
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked((), (target, initialized, syncLock, valueFactory))?
+            cordl_method_info
+                .invoke_unchecked((), (target, initialized, syncLock, valueFactory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -120,7 +123,7 @@ impl crate::System::Threading::LazyInitializer {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -145,7 +148,7 @@ impl crate::System::Threading::LazyInitializer {
                     })
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked((), (target, syncLock, valueFactory))?
+            cordl_method_info.invoke_unchecked((), (target, syncLock, valueFactory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -158,7 +161,7 @@ impl crate::System::Threading::LazyInitializer {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -178,7 +181,7 @@ impl crate::System::Threading::LazyInitializer {
                     })
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked((), (target, valueFactory))?
+            cordl_method_info.invoke_unchecked((), (target, valueFactory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -190,7 +193,7 @@ impl crate::System::Threading::LazyInitializer {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -206,7 +209,9 @@ impl crate::System::Threading::LazyInitializer {
                         )
                     })
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (target))? };
+        let __cordl_ret: T = unsafe {
+            cordl_method_info.invoke_unchecked((), (target))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureInitialized_ByRefMut_ByRefMut_Func_1_2<T>(
@@ -222,7 +227,7 @@ impl crate::System::Threading::LazyInitializer {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -248,7 +253,8 @@ impl crate::System::Threading::LazyInitializer {
                     })
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked((), (target, initialized, syncLock, valueFactory))?
+            cordl_method_info
+                .invoke_unchecked((), (target, initialized, syncLock, valueFactory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -264,7 +270,7 @@ impl crate::System::Threading::LazyInitializer {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -289,7 +295,7 @@ impl crate::System::Threading::LazyInitializer {
                     })
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked((), (target, syncLock, valueFactory))?
+            cordl_method_info.invoke_unchecked((), (target, syncLock, valueFactory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -302,7 +308,7 @@ impl crate::System::Threading::LazyInitializer {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -322,7 +328,7 @@ impl crate::System::Threading::LazyInitializer {
                     })
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked((), (target, valueFactory))?
+            cordl_method_info.invoke_unchecked((), (target, valueFactory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -334,7 +340,7 @@ impl crate::System::Threading::LazyInitializer {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -356,7 +362,7 @@ impl crate::System::Threading::LazyInitializer {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (syncLock))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (syncLock))? };
         Ok(__cordl_ret.into())
     }
 }

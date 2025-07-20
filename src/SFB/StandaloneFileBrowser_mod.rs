@@ -63,7 +63,7 @@ impl crate::SFB::StandaloneFileBrowser {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -104,7 +104,8 @@ impl crate::SFB::StandaloneFileBrowser {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (title, directory, extensions, multiselect, cb))?
+            cordl_method_info
+                .invoke_unchecked((), (title, directory, extensions, multiselect, cb))?
         };
         Ok(__cordl_ret.into())
     }
@@ -124,7 +125,7 @@ impl crate::SFB::StandaloneFileBrowser {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -163,7 +164,8 @@ impl crate::SFB::StandaloneFileBrowser {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (title, directory, extension, multiselect, cb))?
+            cordl_method_info
+                .invoke_unchecked((), (title, directory, extension, multiselect, cb))?
         };
         Ok(__cordl_ret.into())
     }
@@ -182,7 +184,7 @@ impl crate::SFB::StandaloneFileBrowser {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -222,7 +224,8 @@ impl crate::SFB::StandaloneFileBrowser {
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (title, directory, extensions, multiselect))?
+            cordl_method_info
+                .invoke_unchecked((), (title, directory, extensions, multiselect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -239,7 +242,7 @@ impl crate::SFB::StandaloneFileBrowser {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -277,7 +280,8 @@ impl crate::SFB::StandaloneFileBrowser {
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (title, directory, extension, multiselect))?
+            cordl_method_info
+                .invoke_unchecked((), (title, directory, extension, multiselect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -293,7 +297,7 @@ impl crate::SFB::StandaloneFileBrowser {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -327,7 +331,9 @@ impl crate::SFB::StandaloneFileBrowser {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (title, directory, multiselect))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (title, directory, multiselect))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OpenFolderPanelAsync(
@@ -345,7 +351,7 @@ impl crate::SFB::StandaloneFileBrowser {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -381,7 +387,7 @@ impl crate::SFB::StandaloneFileBrowser {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (title, directory, multiselect, cb))?
+            cordl_method_info.invoke_unchecked((), (title, directory, multiselect, cb))?
         };
         Ok(__cordl_ret.into())
     }
@@ -399,7 +405,7 @@ impl crate::SFB::StandaloneFileBrowser {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -438,7 +444,8 @@ impl crate::SFB::StandaloneFileBrowser {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (title, directory, defaultName, extensions, cb))?
+            cordl_method_info
+                .invoke_unchecked((), (title, directory, defaultName, extensions, cb))?
         };
         Ok(__cordl_ret.into())
     }
@@ -454,7 +461,7 @@ impl crate::SFB::StandaloneFileBrowser {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -491,7 +498,8 @@ impl crate::SFB::StandaloneFileBrowser {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (title, directory, defaultName, extension, cb))?
+            cordl_method_info
+                .invoke_unchecked((), (title, directory, defaultName, extension, cb))?
         };
         Ok(__cordl_ret.into())
     }
@@ -506,7 +514,7 @@ impl crate::SFB::StandaloneFileBrowser {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -540,7 +548,8 @@ impl crate::SFB::StandaloneFileBrowser {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe {
-            method.invoke_unchecked((), (title, directory, defaultName, extensions))?
+            cordl_method_info
+                .invoke_unchecked((), (title, directory, defaultName, extensions))?
         };
         Ok(__cordl_ret.into())
     }
@@ -553,7 +562,7 @@ impl crate::SFB::StandaloneFileBrowser {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -585,7 +594,8 @@ impl crate::SFB::StandaloneFileBrowser {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe {
-            method.invoke_unchecked((), (title, directory, defaultName, extension))?
+            cordl_method_info
+                .invoke_unchecked((), (title, directory, defaultName, extension))?
         };
         Ok(__cordl_ret.into())
     }
@@ -593,7 +603,7 @@ impl crate::SFB::StandaloneFileBrowser {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -606,7 +616,7 @@ impl crate::SFB::StandaloneFileBrowser {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

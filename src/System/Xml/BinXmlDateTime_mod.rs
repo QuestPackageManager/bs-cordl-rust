@@ -48,7 +48,7 @@ impl crate::System::Xml::BinXmlDateTime {
         min: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -73,7 +73,8 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (val, yr, mnth, day, negTimeZone, hr, min))?
+            cordl_method_info
+                .invoke_unchecked((), (val, yr, mnth, day, negTimeZone, hr, min))?
         };
         Ok(__cordl_ret.into())
     }
@@ -88,7 +89,7 @@ impl crate::System::Xml::BinXmlDateTime {
         ms: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -114,7 +115,8 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (val, yr, mnth, day, hr, min, sec, ms))?
+            cordl_method_info
+                .invoke_unchecked((), (val, yr, mnth, day, hr, min, sec, ms))?
         };
         Ok(__cordl_ret.into())
     }
@@ -126,7 +128,7 @@ impl crate::System::Xml::BinXmlDateTime {
         ms: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -149,7 +151,7 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (val, hr, min, sec, ms))?
+            cordl_method_info.invoke_unchecked((), (val, hr, min, sec, ms))?
         };
         Ok(__cordl_ret.into())
     }
@@ -157,7 +159,7 @@ impl crate::System::Xml::BinXmlDateTime {
         dt: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -173,14 +175,14 @@ impl crate::System::Xml::BinXmlDateTime {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (dt))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (dt))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFractions_DateTimeOffset1(
         dt: crate::System::DateTimeOffset,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -196,7 +198,7 @@ impl crate::System::Xml::BinXmlDateTime {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (dt))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (dt))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetKatmaiDateTicks(
@@ -204,7 +206,7 @@ impl crate::System::Xml::BinXmlDateTime {
         pos: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -225,7 +227,9 @@ impl crate::System::Xml::BinXmlDateTime {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (data, pos))? };
+        let __cordl_ret: i64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (data, pos))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetKatmaiTimeTicks(
@@ -233,7 +237,7 @@ impl crate::System::Xml::BinXmlDateTime {
         pos: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -254,7 +258,9 @@ impl crate::System::Xml::BinXmlDateTime {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (data, pos))? };
+        let __cordl_ret: i64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (data, pos))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetKatmaiTimeZoneTicks(
@@ -262,7 +268,7 @@ impl crate::System::Xml::BinXmlDateTime {
         pos: i32,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -283,7 +289,9 @@ impl crate::System::Xml::BinXmlDateTime {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (data, pos))? };
+        let __cordl_ret: i64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (data, pos))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SqlDateTimeToDateTime(
@@ -291,7 +299,7 @@ impl crate::System::Xml::BinXmlDateTime {
         timeticks: u32,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -308,7 +316,7 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
-            method.invoke_unchecked((), (dateticks, timeticks))?
+            cordl_method_info.invoke_unchecked((), (dateticks, timeticks))?
         };
         Ok(__cordl_ret.into())
     }
@@ -319,7 +327,7 @@ impl crate::System::Xml::BinXmlDateTime {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -337,7 +345,7 @@ impl crate::System::Xml::BinXmlDateTime {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (dateticks, timeticks))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (dateticks, timeticks))? };
         Ok(__cordl_ret.into())
     }
     pub fn SqlSmallDateTimeToDateTime(
@@ -345,7 +353,7 @@ impl crate::System::Xml::BinXmlDateTime {
         timeticks: u16,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -362,7 +370,7 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
-            method.invoke_unchecked((), (dateticks, timeticks))?
+            cordl_method_info.invoke_unchecked((), (dateticks, timeticks))?
         };
         Ok(__cordl_ret.into())
     }
@@ -373,7 +381,7 @@ impl crate::System::Xml::BinXmlDateTime {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -391,7 +399,7 @@ impl crate::System::Xml::BinXmlDateTime {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (dateticks, timeticks))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (dateticks, timeticks))? };
         Ok(__cordl_ret.into())
     }
     pub fn Write2Dig(
@@ -399,7 +407,7 @@ impl crate::System::Xml::BinXmlDateTime {
         val: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -421,7 +429,7 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sb, val))?
+            cordl_method_info.invoke_unchecked((), (sb, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -430,7 +438,7 @@ impl crate::System::Xml::BinXmlDateTime {
         val: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -452,7 +460,7 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sb, val))?
+            cordl_method_info.invoke_unchecked((), (sb, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -461,7 +469,7 @@ impl crate::System::Xml::BinXmlDateTime {
         val: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -483,7 +491,7 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sb, val))?
+            cordl_method_info.invoke_unchecked((), (sb, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -494,7 +502,7 @@ impl crate::System::Xml::BinXmlDateTime {
         day: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -518,7 +526,7 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sb, yr, mnth, day))?
+            cordl_method_info.invoke_unchecked((), (sb, yr, mnth, day))?
         };
         Ok(__cordl_ret.into())
     }
@@ -530,7 +538,7 @@ impl crate::System::Xml::BinXmlDateTime {
         ms: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -555,7 +563,7 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sb, hr, min, sec, ms))?
+            cordl_method_info.invoke_unchecked((), (sb, hr, min, sec, ms))?
         };
         Ok(__cordl_ret.into())
     }
@@ -567,7 +575,7 @@ impl crate::System::Xml::BinXmlDateTime {
         fraction: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -592,7 +600,7 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sb, hr, min, sec, fraction))?
+            cordl_method_info.invoke_unchecked((), (sb, hr, min, sec, fraction))?
         };
         Ok(__cordl_ret.into())
     }
@@ -601,7 +609,7 @@ impl crate::System::Xml::BinXmlDateTime {
         zone: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -623,7 +631,7 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sb, zone))?
+            cordl_method_info.invoke_unchecked((), (sb, zone))?
         };
         Ok(__cordl_ret.into())
     }
@@ -634,7 +642,7 @@ impl crate::System::Xml::BinXmlDateTime {
         min: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -658,7 +666,7 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sb, negTimeZone, hr, min))?
+            cordl_method_info.invoke_unchecked((), (sb, negTimeZone, hr, min))?
         };
         Ok(__cordl_ret.into())
     }
@@ -668,7 +676,7 @@ impl crate::System::Xml::BinXmlDateTime {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -686,7 +694,7 @@ impl crate::System::Xml::BinXmlDateTime {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (val))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (val))? };
         Ok(__cordl_ret.into())
     }
     pub fn XsdDateToString(
@@ -695,7 +703,7 @@ impl crate::System::Xml::BinXmlDateTime {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -713,7 +721,7 @@ impl crate::System::Xml::BinXmlDateTime {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (val))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (val))? };
         Ok(__cordl_ret.into())
     }
     pub fn XsdKatmaiDateOffsetToDateTimeOffset(
@@ -721,7 +729,7 @@ impl crate::System::Xml::BinXmlDateTime {
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -743,7 +751,7 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: crate::System::DateTimeOffset = unsafe {
-            method.invoke_unchecked((), (data, offset))?
+            cordl_method_info.invoke_unchecked((), (data, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -754,7 +762,7 @@ impl crate::System::Xml::BinXmlDateTime {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -777,7 +785,7 @@ impl crate::System::Xml::BinXmlDateTime {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (data, offset))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (data, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn XsdKatmaiDateTimeOffsetToDateTimeOffset(
@@ -785,7 +793,7 @@ impl crate::System::Xml::BinXmlDateTime {
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -807,7 +815,7 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: crate::System::DateTimeOffset = unsafe {
-            method.invoke_unchecked((), (data, offset))?
+            cordl_method_info.invoke_unchecked((), (data, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -818,7 +826,7 @@ impl crate::System::Xml::BinXmlDateTime {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -841,7 +849,7 @@ impl crate::System::Xml::BinXmlDateTime {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (data, offset))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (data, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn XsdKatmaiDateTimeToDateTime(
@@ -849,7 +857,7 @@ impl crate::System::Xml::BinXmlDateTime {
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -871,7 +879,7 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
-            method.invoke_unchecked((), (data, offset))?
+            cordl_method_info.invoke_unchecked((), (data, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -882,7 +890,7 @@ impl crate::System::Xml::BinXmlDateTime {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -905,7 +913,7 @@ impl crate::System::Xml::BinXmlDateTime {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (data, offset))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (data, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn XsdKatmaiDateToDateTime(
@@ -913,7 +921,7 @@ impl crate::System::Xml::BinXmlDateTime {
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -935,7 +943,7 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
-            method.invoke_unchecked((), (data, offset))?
+            cordl_method_info.invoke_unchecked((), (data, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -946,7 +954,7 @@ impl crate::System::Xml::BinXmlDateTime {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -969,7 +977,7 @@ impl crate::System::Xml::BinXmlDateTime {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (data, offset))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (data, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn XsdKatmaiTimeOffsetToDateTimeOffset(
@@ -977,7 +985,7 @@ impl crate::System::Xml::BinXmlDateTime {
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -999,7 +1007,7 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: crate::System::DateTimeOffset = unsafe {
-            method.invoke_unchecked((), (data, offset))?
+            cordl_method_info.invoke_unchecked((), (data, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1010,7 +1018,7 @@ impl crate::System::Xml::BinXmlDateTime {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1033,7 +1041,7 @@ impl crate::System::Xml::BinXmlDateTime {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (data, offset))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (data, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn XsdKatmaiTimeToDateTime(
@@ -1041,7 +1049,7 @@ impl crate::System::Xml::BinXmlDateTime {
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1063,7 +1071,7 @@ impl crate::System::Xml::BinXmlDateTime {
                     })
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
-            method.invoke_unchecked((), (data, offset))?
+            cordl_method_info.invoke_unchecked((), (data, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1074,7 +1082,7 @@ impl crate::System::Xml::BinXmlDateTime {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1097,7 +1105,7 @@ impl crate::System::Xml::BinXmlDateTime {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (data, offset))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (data, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn XsdTimeToString(
@@ -1106,7 +1114,7 @@ impl crate::System::Xml::BinXmlDateTime {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1124,7 +1132,7 @@ impl crate::System::Xml::BinXmlDateTime {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (val))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (val))? };
         Ok(__cordl_ret.into())
     }
 }

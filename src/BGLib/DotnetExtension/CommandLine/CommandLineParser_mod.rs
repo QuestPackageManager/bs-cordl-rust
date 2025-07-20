@@ -52,7 +52,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -82,7 +82,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (parsedOption, option, value))?
+            cordl_method_info.invoke_unchecked((), (parsedOption, option, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -96,7 +96,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -118,7 +118,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (options))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (options))? };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateOptionsMap(
@@ -139,7 +139,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -176,7 +176,9 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                 crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
             >,
-        > = unsafe { method.invoke_unchecked((), (options, argumentIdentifierRegex))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (options, argumentIdentifierRegex))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCommandLineArgs() -> quest_hook::libil2cpp::Result<
@@ -187,7 +189,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -213,7 +215,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseArgs(
@@ -251,7 +253,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -309,7 +311,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -339,7 +341,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -369,7 +371,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
                     })
             });
         let __cordl_ret: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult = unsafe {
-            method.invoke_unchecked((), (args, options))?
+            cordl_method_info.invoke_unchecked((), (args, options))?
         };
         Ok(__cordl_ret.into())
     }
@@ -383,7 +385,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -404,7 +406,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
                     })
             });
         let __cordl_ret: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult = unsafe {
-            method.invoke_unchecked((), (options))?
+            cordl_method_info.invoke_unchecked((), (options))?
         };
         Ok(__cordl_ret.into())
     }
@@ -422,7 +424,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -450,7 +452,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
             crate::System::Collections::Generic::HashSet_1<
                 crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
             >,
-        > = unsafe { method.invoke_unchecked((), (options))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (options))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -49,7 +49,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -71,7 +71,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::ReturnMessage,
-        > = unsafe { method.invoke_unchecked((), (msg))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (msg))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckReturnMessage(
@@ -85,7 +85,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -112,7 +112,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessage,
-        > = unsafe { method.invoke_unchecked((), (callMsg, retMsg))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (callMsg, retMsg))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateClientChannelSinkChain_IChannelSender_Il2CppString_Il2CppArray_ByRefMut1(
@@ -134,7 +134,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -174,7 +174,8 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessageSink,
         > = unsafe {
-            method.invoke_unchecked((), (sender, url, channelDataArray, objectUri))?
+            cordl_method_info
+                .invoke_unchecked((), (sender, url, channelDataArray, objectUri))?
         };
         Ok(__cordl_ret.into())
     }
@@ -192,7 +193,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -224,7 +225,9 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessageSink,
-        > = unsafe { method.invoke_unchecked((), (url, remoteChannelData, objectUri))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (url, remoteChannelData, objectUri))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateProvider(
@@ -233,7 +236,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -253,7 +256,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (prov))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (prov))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentChannelInfo() -> quest_hook::libil2cpp::Result<
@@ -264,7 +267,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -290,7 +293,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsLocalCall(
@@ -299,7 +302,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -317,14 +320,16 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (callMsg))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (callMsg))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterChannelConfig(
         channel: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ChannelData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -343,7 +348,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (channel))?
+            cordl_method_info.invoke_unchecked((), (channel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -353,7 +358,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -372,7 +377,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (chnl))?
+            cordl_method_info.invoke_unchecked((), (chnl))?
         };
         Ok(__cordl_ret.into())
     }
@@ -383,7 +388,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
         ensureSecurity: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -405,7 +410,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (chnl, ensureSecurity))?
+            cordl_method_info.invoke_unchecked((), (chnl, ensureSecurity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -417,7 +422,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -439,7 +444,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessage,
-        > = unsafe { method.invoke_unchecked((), (msg))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (msg))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_CrossContextChannel() -> quest_hook::libil2cpp::Result<
@@ -448,7 +453,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -468,7 +473,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Contexts::CrossContextChannel,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -40,7 +40,7 @@ impl std::ops::DerefMut for crate::System::Xml::Bits {
 impl crate::System::Xml::Bits {
     pub fn Count(num: u32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), i32, 1usize>("Count")
@@ -52,12 +52,12 @@ impl crate::System::Xml::Bits {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (num))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (num))? };
         Ok(__cordl_ret.into())
     }
     pub fn LeastPosition(num: u32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), i32, 1usize>("LeastPosition")
@@ -69,7 +69,7 @@ impl crate::System::Xml::Bits {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (num))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (num))? };
         Ok(__cordl_ret.into())
     }
 }

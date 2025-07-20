@@ -44,7 +44,7 @@ impl crate::UnityEngine::InspectorOrderAttribute {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InspectorSort> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -61,7 +61,7 @@ impl crate::UnityEngine::InspectorOrderAttribute {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InspectorSort = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -69,7 +69,7 @@ impl crate::UnityEngine::InspectorOrderAttribute {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InspectorSortDirection> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -86,7 +86,7 @@ impl crate::UnityEngine::InspectorOrderAttribute {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InspectorSortDirection = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

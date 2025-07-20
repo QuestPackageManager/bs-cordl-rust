@@ -52,7 +52,7 @@ impl crate::System::Collections::Generic::CollectionExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -77,7 +77,7 @@ impl crate::System::Collections::Generic::CollectionExtensions {
                     })
             });
         let __cordl_ret: TValue = unsafe {
-            method.invoke_unchecked((), (dictionary, key))?
+            cordl_method_info.invoke_unchecked((), (dictionary, key))?
         };
         Ok(__cordl_ret.into())
     }
@@ -95,7 +95,7 @@ impl crate::System::Collections::Generic::CollectionExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -121,7 +121,7 @@ impl crate::System::Collections::Generic::CollectionExtensions {
                     })
             });
         let __cordl_ret: TValue = unsafe {
-            method.invoke_unchecked((), (dictionary, key, defaultValue))?
+            cordl_method_info.invoke_unchecked((), (dictionary, key, defaultValue))?
         };
         Ok(__cordl_ret.into())
     }

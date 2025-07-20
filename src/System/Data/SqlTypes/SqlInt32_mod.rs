@@ -103,7 +103,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -119,7 +119,9 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (value))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareTo_SqlInt32_1(
@@ -127,7 +129,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         value: crate::System::Data::SqlTypes::SqlInt32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -143,7 +145,9 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (value))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
@@ -151,7 +155,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -167,12 +171,14 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
@@ -184,7 +190,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetXsdType(
@@ -193,7 +199,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -213,7 +219,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::XmlQualifiedName,
-        > = unsafe { method.invoke_unchecked((), (schemaSet))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (schemaSet))? };
         Ok(__cordl_ret.into())
     }
     pub fn GreaterThan(
@@ -221,7 +227,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         y: crate::System::Data::SqlTypes::SqlInt32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -241,7 +247,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = unsafe {
-            method.invoke_unchecked((), (x, y))?
+            cordl_method_info.invoke_unchecked((), (x, y))?
         };
         Ok(__cordl_ret.into())
     }
@@ -250,7 +256,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         y: crate::System::Data::SqlTypes::SqlInt32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -270,13 +276,13 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = unsafe {
-            method.invoke_unchecked((), (x, y))?
+            cordl_method_info.invoke_unchecked((), (x, y))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SameSignInt(x: i32, y: i32) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), bool, 2usize>("SameSignInt")
@@ -288,7 +294,9 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (x, y))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (x, y))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn System_Xml_Serialization_IXmlSerializable_GetSchema(
@@ -297,7 +305,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -315,7 +323,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchema,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Xml_Serialization_IXmlSerializable_ReadXml(
@@ -323,7 +331,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -340,7 +348,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reader))?
+            cordl_method_info.invoke_unchecked(self, (reader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -349,7 +357,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -366,7 +374,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer))?
+            cordl_method_info.invoke_unchecked(self, (writer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -374,7 +382,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDouble> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -391,7 +399,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlDouble = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -399,7 +407,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -416,7 +424,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt64 = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -426,7 +434,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -444,7 +452,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool0(
@@ -452,7 +460,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         fNull: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
@@ -465,7 +473,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (fNull))?
+            cordl_method_info.invoke_unchecked(self, (fNull))?
         };
         Ok(__cordl_ret.into())
     }
@@ -474,7 +482,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
@@ -487,13 +495,13 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsNull")
@@ -505,12 +513,12 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Value")
@@ -522,7 +530,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Addition(
@@ -530,7 +538,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         y: crate::System::Data::SqlTypes::SqlInt32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -550,7 +558,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt32 = unsafe {
-            method.invoke_unchecked((), (x, y))?
+            cordl_method_info.invoke_unchecked((), (x, y))?
         };
         Ok(__cordl_ret.into())
     }
@@ -559,7 +567,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         y: crate::System::Data::SqlTypes::SqlInt32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -579,7 +587,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt32 = unsafe {
-            method.invoke_unchecked((), (x, y))?
+            cordl_method_info.invoke_unchecked((), (x, y))?
         };
         Ok(__cordl_ret.into())
     }
@@ -588,7 +596,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         y: crate::System::Data::SqlTypes::SqlInt32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -608,7 +616,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = unsafe {
-            method.invoke_unchecked((), (x, y))?
+            cordl_method_info.invoke_unchecked((), (x, y))?
         };
         Ok(__cordl_ret.into())
     }
@@ -616,7 +624,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         x: crate::System::Data::SqlTypes::SqlInt64,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -633,7 +641,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt32 = unsafe {
-            method.invoke_unchecked((), (x))?
+            cordl_method_info.invoke_unchecked((), (x))?
         };
         Ok(__cordl_ret.into())
     }
@@ -642,7 +650,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         y: crate::System::Data::SqlTypes::SqlInt32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -662,7 +670,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = unsafe {
-            method.invoke_unchecked((), (x, y))?
+            cordl_method_info.invoke_unchecked((), (x, y))?
         };
         Ok(__cordl_ret.into())
     }
@@ -670,7 +678,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         x: crate::System::Data::SqlTypes::SqlByte,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -687,7 +695,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt32 = unsafe {
-            method.invoke_unchecked((), (x))?
+            cordl_method_info.invoke_unchecked((), (x))?
         };
         Ok(__cordl_ret.into())
     }
@@ -695,7 +703,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         x: crate::System::Data::SqlTypes::SqlInt16,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -712,7 +720,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt32 = unsafe {
-            method.invoke_unchecked((), (x))?
+            cordl_method_info.invoke_unchecked((), (x))?
         };
         Ok(__cordl_ret.into())
     }
@@ -720,7 +728,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         x: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -737,7 +745,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt32 = unsafe {
-            method.invoke_unchecked((), (x))?
+            cordl_method_info.invoke_unchecked((), (x))?
         };
         Ok(__cordl_ret.into())
     }
@@ -746,7 +754,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         y: crate::System::Data::SqlTypes::SqlInt32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -766,7 +774,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = unsafe {
-            method.invoke_unchecked((), (x, y))?
+            cordl_method_info.invoke_unchecked((), (x, y))?
         };
         Ok(__cordl_ret.into())
     }
@@ -775,7 +783,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         y: crate::System::Data::SqlTypes::SqlInt32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -795,7 +803,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt32 = unsafe {
-            method.invoke_unchecked((), (x, y))?
+            cordl_method_info.invoke_unchecked((), (x, y))?
         };
         Ok(__cordl_ret.into())
     }
@@ -804,7 +812,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         y: crate::System::Data::SqlTypes::SqlInt32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -824,7 +832,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt32 = unsafe {
-            method.invoke_unchecked((), (x, y))?
+            cordl_method_info.invoke_unchecked((), (x, y))?
         };
         Ok(__cordl_ret.into())
     }
@@ -832,7 +840,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
         x: crate::System::Data::SqlTypes::SqlInt32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -849,7 +857,7 @@ impl crate::System::Data::SqlTypes::SqlInt32 {
                     })
             });
         let __cordl_ret: crate::System::Data::SqlTypes::SqlInt32 = unsafe {
-            method.invoke_unchecked((), (x))?
+            cordl_method_info.invoke_unchecked((), (x))?
         };
         Ok(__cordl_ret.into())
     }

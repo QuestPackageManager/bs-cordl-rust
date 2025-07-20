@@ -56,7 +56,7 @@ impl crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -78,7 +78,7 @@ impl crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder,
-        > = unsafe { method.invoke_unchecked(self, (recipientGen))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (recipientGen))? };
         Ok(__cordl_ret.into())
     }
     pub fn Build(
@@ -90,7 +90,7 @@ impl crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::PkiArchiveControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -112,7 +112,7 @@ impl crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::PkiArchiveControl,
-        > = unsafe { method.invoke_unchecked(self, (contentEncryptor))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (contentEncryptor))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -139,7 +139,7 @@ impl crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -163,7 +163,7 @@ impl crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (privateKeyInfo, generalName))?
+            cordl_method_info.invoke_unchecked(self, (privateKeyInfo, generalName))?
         };
         Ok(__cordl_ret.into())
     }

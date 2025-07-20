@@ -45,7 +45,7 @@ impl crate::System::Xml::BinHexEncoder {
         outArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -71,7 +71,7 @@ impl crate::System::Xml::BinHexEncoder {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (inArray, offsetIn, count, outArray))?
+            cordl_method_info.invoke_unchecked((), (inArray, offsetIn, count, outArray))?
         };
         Ok(__cordl_ret.into())
     }
@@ -83,7 +83,7 @@ impl crate::System::Xml::BinHexEncoder {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -107,7 +107,9 @@ impl crate::System::Xml::BinHexEncoder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (inArray, offsetIn, count))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (inArray, offsetIn, count))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Encode_XmlWriter0(
@@ -117,7 +119,7 @@ impl crate::System::Xml::BinHexEncoder {
         writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -141,7 +143,7 @@ impl crate::System::Xml::BinHexEncoder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (buffer, index, count, writer))?
+            cordl_method_info.invoke_unchecked((), (buffer, index, count, writer))?
         };
         Ok(__cordl_ret.into())
     }

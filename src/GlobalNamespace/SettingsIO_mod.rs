@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::SettingsIO {
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::SettingsIO {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (settings, text))?
+            cordl_method_info.invoke_unchecked((), (settings, text))?
         };
         Ok(__cordl_ret.into())
     }
@@ -81,7 +81,7 @@ impl crate::GlobalNamespace::SettingsIO {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -101,7 +101,7 @@ impl crate::GlobalNamespace::SettingsIO {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (settings))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (settings))? };
         Ok(__cordl_ret.into())
     }
     pub fn Load(
@@ -109,7 +109,7 @@ impl crate::GlobalNamespace::SettingsIO {
         platform: crate::GlobalNamespace::HardwareCategory,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Settings::Settings> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -131,7 +131,7 @@ impl crate::GlobalNamespace::SettingsIO {
                     })
             });
         let __cordl_ret: crate::BeatSaber::Settings::Settings = unsafe {
-            method.invoke_unchecked((), (fileStorage, platform))?
+            cordl_method_info.invoke_unchecked((), (fileStorage, platform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -144,7 +144,7 @@ impl crate::GlobalNamespace::SettingsIO {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -171,7 +171,7 @@ impl crate::GlobalNamespace::SettingsIO {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<crate::BeatSaber::Settings::Settings>,
-        > = unsafe { method.invoke_unchecked((), (fileStorage, platform))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (fileStorage, platform))? };
         Ok(__cordl_ret.into())
     }
     pub fn SaveAsync(
@@ -181,7 +181,7 @@ impl crate::GlobalNamespace::SettingsIO {
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -204,7 +204,7 @@ impl crate::GlobalNamespace::SettingsIO {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked((), (fileStorage, settings))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (fileStorage, settings))? };
         Ok(__cordl_ret.into())
     }
     pub fn WipeAsync(
@@ -213,7 +213,7 @@ impl crate::GlobalNamespace::SettingsIO {
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -233,7 +233,7 @@ impl crate::GlobalNamespace::SettingsIO {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked((), (fileStorage))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (fileStorage))? };
         Ok(__cordl_ret.into())
     }
 }

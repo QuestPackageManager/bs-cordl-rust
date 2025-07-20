@@ -52,7 +52,7 @@ impl crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -79,7 +79,8 @@ impl crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::MeshWriteData,
         > = unsafe {
-            method.invoke_unchecked(self, (vertexCount, indexCount, allocatorData))?
+            cordl_method_info
+                .invoke_unchecked(self, (vertexCount, indexCount, allocatorData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -99,7 +100,7 @@ impl crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator {
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -121,7 +122,7 @@ impl crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))?
+            cordl_method_info.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -187,7 +188,7 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder {
         isDynamicColor: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Vertex> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -210,7 +211,8 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::Vertex = unsafe {
-            method.invoke_unchecked((), (info, index, offset, flags, isDynamicColor))?
+            cordl_method_info
+                .invoke_unchecked((), (info, index, offset, flags, isDynamicColor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -219,7 +221,7 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder {
         logTruncation: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, bool), i32, 2usize>("LimitTextVertices")
@@ -232,7 +234,7 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (vertexCount, logTruncation))?
+            cordl_method_info.invoke_unchecked((), (vertexCount, logTruncation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -244,7 +246,7 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder {
         isDynamicColor: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -267,7 +269,7 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (meshInfo, offset, meshAlloc, flags, isDynamicColor),
@@ -406,7 +408,7 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder_AllocMeshData {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -426,7 +428,9 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder_AllocMeshData {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::MeshWriteData,
-        > = unsafe { method.invoke_unchecked(self, (vertexCount, indexCount))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (vertexCount, indexCount))?
+        };
         Ok(__cordl_ret.into())
     }
 }

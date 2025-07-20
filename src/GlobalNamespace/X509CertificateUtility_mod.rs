@@ -50,7 +50,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ICertificateEncryptionProvider>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -77,7 +77,9 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ICertificateEncryptionProvider,
-        > = unsafe { method.invoke_unchecked((), (privateKeyPem, password))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (privateKeyPem, password))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCertificateList(
@@ -95,7 +97,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -131,7 +133,8 @@ impl crate::GlobalNamespace::X509CertificateUtility {
                 >,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (certificatePem, certificateChainPem))?
+            cordl_method_info
+                .invoke_unchecked((), (certificatePem, certificateChainPem))?
         };
         Ok(__cordl_ret.into())
     }
@@ -146,7 +149,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -173,7 +176,9 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider,
-        > = unsafe { method.invoke_unchecked((), (privateKeyPem, passwordFinder))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (privateKeyPem, passwordFinder))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetRootCertificates() -> quest_hook::libil2cpp::Result<
@@ -186,7 +191,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -214,14 +219,14 @@ impl crate::GlobalNamespace::X509CertificateUtility {
                     crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRootCertificatesRaw() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -239,7 +244,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateCertificateChain(
@@ -253,7 +258,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -281,7 +286,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (certificate, certificateChain))?
+            cordl_method_info.invoke_unchecked((), (certificate, certificateChain))?
         };
         Ok(__cordl_ret.into())
     }
@@ -296,7 +301,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -324,7 +329,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (certificate, certificateChain))?
+            cordl_method_info.invoke_unchecked((), (certificate, certificateChain))?
         };
         Ok(__cordl_ret.into())
     }
@@ -339,7 +344,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -367,7 +372,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (certificate, certificateChain))?
+            cordl_method_info.invoke_unchecked((), (certificate, certificateChain))?
         };
         Ok(__cordl_ret.into())
     }
@@ -431,7 +436,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -451,7 +456,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<char>,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppArray0(
@@ -477,7 +482,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -496,7 +501,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (password))?
+            cordl_method_info.invoke_unchecked(self, (password))?
         };
         Ok(__cordl_ret.into())
     }
@@ -505,7 +510,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -522,7 +527,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (password))?
+            cordl_method_info.invoke_unchecked(self, (password))?
         };
         Ok(__cordl_ret.into())
     }
@@ -599,7 +604,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProv
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
@@ -612,7 +617,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProv
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -636,7 +641,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProv
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -662,7 +667,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProv
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (data, offset, length))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (data, offset, length))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -672,7 +677,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProv
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -691,7 +696,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProv
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (privateKey))?
+            cordl_method_info.invoke_unchecked(self, (privateKey))?
         };
         Ok(__cordl_ret.into())
     }

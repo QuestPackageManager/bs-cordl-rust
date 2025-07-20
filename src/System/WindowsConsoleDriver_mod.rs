@@ -46,7 +46,7 @@ impl crate::System::WindowsConsoleDriver {
         info: quest_hook::libil2cpp::ByRefMut<crate::System::ConsoleScreenBufferInfo>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -67,14 +67,16 @@ impl crate::System::WindowsConsoleDriver {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (handle, info))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (handle, info))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetStdHandle(
         handle: crate::System::Handles,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -91,13 +93,13 @@ impl crate::System::WindowsConsoleDriver {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (handle))?
+            cordl_method_info.invoke_unchecked((), (handle))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsModifierKey(virtualKeyCode: i16) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i16), bool, 1usize>("IsModifierKey")
@@ -110,7 +112,7 @@ impl crate::System::WindowsConsoleDriver {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (virtualKeyCode))?
+            cordl_method_info.invoke_unchecked((), (virtualKeyCode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -128,7 +130,7 @@ impl crate::System::WindowsConsoleDriver {
         nread: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -150,7 +152,7 @@ impl crate::System::WindowsConsoleDriver {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (handle, record, length, nread))?
+            cordl_method_info.invoke_unchecked((), (handle, record, length, nread))?
         };
         Ok(__cordl_ret.into())
     }
@@ -159,7 +161,7 @@ impl crate::System::WindowsConsoleDriver {
         intercept: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::ConsoleKeyInfo> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -176,7 +178,7 @@ impl crate::System::WindowsConsoleDriver {
                     })
             });
         let __cordl_ret: crate::System::ConsoleKeyInfo = unsafe {
-            method.invoke_unchecked(self, (intercept))?
+            cordl_method_info.invoke_unchecked(self, (intercept))?
         };
         Ok(__cordl_ret.into())
     }
@@ -184,7 +186,7 @@ impl crate::System::WindowsConsoleDriver {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -197,7 +199,7 @@ impl crate::System::WindowsConsoleDriver {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

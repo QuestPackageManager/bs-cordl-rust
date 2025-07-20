@@ -86,7 +86,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(K), i32, 1usize>("Add")
@@ -98,7 +98,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (item))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (item))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AllocPage(
@@ -112,7 +114,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -132,7 +134,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Data::RBTree_1_TreePage<K>,
-        > = unsafe { method.invoke_unchecked(self, (_cordl_size))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -141,7 +143,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
@@ -154,7 +156,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -168,7 +170,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(K, K), i32, 2usize>("CompareNode")
@@ -181,7 +183,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (record1, record2))?
+            cordl_method_info.invoke_unchecked(self, (record1, record2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -195,7 +197,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(K, K), i32, 2usize>("CompareSateliteTreeNode")
@@ -208,7 +210,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (record1, record2))?
+            cordl_method_info.invoke_unchecked(self, (record1, record2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -221,7 +223,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("ComputeIndexByNode")
@@ -233,7 +235,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (nodeId))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (nodeId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeIndexWithSatelliteByNode(
@@ -245,7 +249,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("ComputeIndexWithSatelliteByNode")
@@ -257,7 +261,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (nodeId))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (nodeId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeNodeByIndex_ByRefMut0(
@@ -270,7 +276,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -287,7 +293,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (index, satelliteRootId))?
+            cordl_method_info.invoke_unchecked(self, (index, satelliteRootId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -301,7 +307,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32), i32, 2usize>("ComputeNodeByIndex")
@@ -313,7 +319,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (x_id, index))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (x_id, index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CopyTo_Array0(
@@ -326,7 +334,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -343,7 +351,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (array, index))?
+            cordl_method_info.invoke_unchecked(self, (array, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -357,7 +365,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -379,7 +387,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (array, index))?
+            cordl_method_info.invoke_unchecked(self, (array, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -392,7 +400,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -409,7 +417,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nodeId))?
+            cordl_method_info.invoke_unchecked(self, (nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -419,7 +427,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), K, 1usize>("DeleteByIndex")
@@ -431,7 +439,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: K = unsafe { method.invoke_unchecked(self, (i))? };
+        let __cordl_ret: K = unsafe { cordl_method_info.invoke_unchecked(self, (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn FreeNode(
@@ -443,7 +451,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -460,7 +468,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nodeId))?
+            cordl_method_info.invoke_unchecked(self, (nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -473,7 +481,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -492,7 +500,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (page))?
+            cordl_method_info.invoke_unchecked(self, (page))?
         };
         Ok(__cordl_ret.into())
     }
@@ -506,7 +514,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -526,7 +534,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndexByKey(&mut self, key: K) -> quest_hook::libil2cpp::Result<i32>
@@ -535,7 +543,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(K), i32, 1usize>("GetIndexByKey")
@@ -547,7 +555,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (key))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndexByNode(&mut self, node: i32) -> quest_hook::libil2cpp::Result<i32>
@@ -556,7 +566,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("GetIndexByNode")
@@ -568,7 +578,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (node))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (node))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndexByNodePath(
@@ -580,7 +592,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -596,7 +608,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (path))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (path))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndexOfPageWithFreeSlot(
@@ -608,7 +622,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool), i32, 1usize>("GetIndexOfPageWithFreeSlot")
@@ -621,7 +635,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (allocatedPage))?
+            cordl_method_info.invoke_unchecked(self, (allocatedPage))?
         };
         Ok(__cordl_ret.into())
     }
@@ -631,7 +645,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), i32, 1usize>("GetIntValueFromBitMap")
@@ -643,7 +657,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (bitMap))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (bitMap))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNewNode(&mut self, key: K) -> quest_hook::libil2cpp::Result<i32>
@@ -652,7 +668,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(K), i32, 1usize>("GetNewNode")
@@ -664,7 +680,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (key))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNodeByIndex(
@@ -676,7 +694,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -693,7 +711,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: crate::System::Data::RBTree_1_NodePath<K> = unsafe {
-            method.invoke_unchecked(self, (userIndex))?
+            cordl_method_info.invoke_unchecked(self, (userIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -706,7 +724,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -723,7 +741,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: crate::System::Data::RBTree_1_NodePath<K> = unsafe {
-            method.invoke_unchecked(self, (key))?
+            cordl_method_info.invoke_unchecked(self, (key))?
         };
         Ok(__cordl_ret.into())
     }
@@ -736,7 +754,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -753,7 +771,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nodeId))?
+            cordl_method_info.invoke_unchecked(self, (nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -763,7 +781,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, K), i32, 2usize>("IndexOf")
@@ -775,7 +793,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (nodeId, item))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (nodeId, item))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InitTree(
@@ -786,7 +806,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("InitTree")
@@ -799,7 +819,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -814,7 +834,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, K, bool), i32, 3usize>("InsertAt")
@@ -827,7 +847,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (position, item, append))?
+            cordl_method_info.invoke_unchecked(self, (position, item, append))?
         };
         Ok(__cordl_ret.into())
     }
@@ -837,7 +857,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(K), i32, 1usize>("Insert")
@@ -849,7 +869,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (item))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (item))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Insert_i32_K1(
@@ -862,7 +884,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, K), i32, 2usize>("Insert")
@@ -875,7 +897,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (position, item))?
+            cordl_method_info.invoke_unchecked(self, (position, item))?
         };
         Ok(__cordl_ret.into())
     }
@@ -885,7 +907,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), K, 1usize>("Key")
@@ -897,7 +919,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: K = unsafe { method.invoke_unchecked(self, (nodeId))? };
+        let __cordl_ret: K = unsafe {
+            cordl_method_info.invoke_unchecked(self, (nodeId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Left(&mut self, nodeId: i32) -> quest_hook::libil2cpp::Result<i32>
@@ -906,7 +930,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("Left")
@@ -918,7 +942,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (nodeId))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (nodeId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LeftRotate(
@@ -932,7 +958,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32, i32), i32, 3usize>("LeftRotate")
@@ -945,7 +971,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (root_id, x_id, mainTreeNode))?
+            cordl_method_info.invoke_unchecked(self, (root_id, x_id, mainTreeNode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -958,7 +984,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -977,7 +1003,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (page))?
+            cordl_method_info.invoke_unchecked(self, (page))?
         };
         Ok(__cordl_ret.into())
     }
@@ -990,7 +1016,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1009,7 +1035,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (page))?
+            cordl_method_info.invoke_unchecked(self, (page))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1019,7 +1045,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("Minimum")
@@ -1031,7 +1057,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (x_id))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (x_id))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -1053,7 +1081,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("Next")
@@ -1065,7 +1093,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (nodeId))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (nodeId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Parent(&mut self, nodeId: i32) -> quest_hook::libil2cpp::Result<i32>
@@ -1074,7 +1104,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("Parent")
@@ -1086,7 +1116,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (nodeId))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (nodeId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RBDelete(&mut self, z_id: i32) -> quest_hook::libil2cpp::Result<i32>
@@ -1095,7 +1127,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("RBDelete")
@@ -1107,7 +1139,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (z_id))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (z_id))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RBDeleteFixup(
@@ -1122,7 +1156,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32, i32, i32), i32, 4usize>("RBDeleteFixup")
@@ -1135,7 +1169,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (root_id, x_id, px_id, mainTreeNodeID))?
+            cordl_method_info
+                .invoke_unchecked(self, (root_id, x_id, px_id, mainTreeNodeID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1150,7 +1185,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32, i32), i32, 3usize>("RBDeleteX")
@@ -1163,7 +1198,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (root_id, z_id, mainTreeNodeID))?
+            cordl_method_info.invoke_unchecked(self, (root_id, z_id, mainTreeNodeID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1180,7 +1215,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32, i32, i32, bool), i32, 5usize>("RBInsert")
@@ -1193,7 +1228,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (root_id, x_id, mainTreeNodeID, position, append),
@@ -1210,7 +1245,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1227,7 +1262,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nodeId))?
+            cordl_method_info.invoke_unchecked(self, (nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1240,7 +1275,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1257,7 +1292,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (position))?
+            cordl_method_info.invoke_unchecked(self, (position))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1267,7 +1302,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("Right")
@@ -1279,7 +1314,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (nodeId))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (nodeId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RightRotate(
@@ -1293,7 +1330,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32, i32), i32, 3usize>("RightRotate")
@@ -1306,7 +1343,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (root_id, x_id, mainTreeNode))?
+            cordl_method_info.invoke_unchecked(self, (root_id, x_id, mainTreeNode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1320,7 +1357,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, K), i32, 2usize>("SearchSubTree")
@@ -1332,7 +1369,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (root_id, key))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (root_id, key))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetColor(
@@ -1345,7 +1384,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1362,7 +1401,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nodeId, color))?
+            cordl_method_info.invoke_unchecked(self, (nodeId, color))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1376,7 +1415,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1393,7 +1432,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nodeId, key))?
+            cordl_method_info.invoke_unchecked(self, (nodeId, key))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1407,7 +1446,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1424,7 +1463,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nodeId, leftNodeId))?
+            cordl_method_info.invoke_unchecked(self, (nodeId, leftNodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1438,7 +1477,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1455,7 +1494,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nodeId, nextNodeId))?
+            cordl_method_info.invoke_unchecked(self, (nodeId, nextNodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1469,7 +1508,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1486,7 +1525,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nodeId, parentNodeId))?
+            cordl_method_info.invoke_unchecked(self, (nodeId, parentNodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1500,7 +1539,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1517,7 +1556,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nodeId, rightNodeId))?
+            cordl_method_info.invoke_unchecked(self, (nodeId, rightNodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1531,7 +1570,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1548,7 +1587,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nodeId, _cordl_size))?
+            cordl_method_info.invoke_unchecked(self, (nodeId, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1558,7 +1597,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("SubTreeSize")
@@ -1570,7 +1609,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (nodeId))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (nodeId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Successor_ByRefMut_ByRefMut1(
@@ -1583,7 +1624,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1603,7 +1644,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeId, mainTreeNodeId))?
+            cordl_method_info.invoke_unchecked(self, (nodeId, mainTreeNodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1613,7 +1654,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("Successor")
@@ -1625,7 +1666,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (x_id))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (x_id))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateNodeKey(
@@ -1638,7 +1681,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1655,7 +1698,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (currentKey, newKey))?
+            cordl_method_info.invoke_unchecked(self, (currentKey, newKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1668,7 +1711,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1685,7 +1728,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (accessMethod))?
+            cordl_method_info.invoke_unchecked(self, (accessMethod))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1698,7 +1741,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1715,7 +1758,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     })
             });
         let __cordl_ret: crate::System::Data::RBTree_1_NodeColor<K> = unsafe {
-            method.invoke_unchecked(self, (nodeId))?
+            cordl_method_info.invoke_unchecked(self, (nodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1725,7 +1768,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Count")
@@ -1737,7 +1780,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_HasDuplicates(&mut self) -> quest_hook::libil2cpp::Result<bool>
@@ -1746,7 +1789,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_HasDuplicates")
@@ -1758,7 +1801,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<K>
@@ -1767,7 +1810,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), K, 1usize>("get_Item")
@@ -1779,7 +1822,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: K = unsafe { method.invoke_unchecked(self, (index))? };
+        let __cordl_ret: K = unsafe {
+            cordl_method_info.invoke_unchecked(self, (index))?
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -2150,7 +2195,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_NodePath<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2167,7 +2212,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_NodePath<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nodeID, mainTreeNodeID))?
+            cordl_method_info.invoke_unchecked(self, (nodeID, mainTreeNodeID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2304,7 +2349,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
@@ -2317,7 +2362,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2327,7 +2372,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("MoveNext")
@@ -2339,7 +2384,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerator_Reset(
@@ -2350,7 +2395,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2367,7 +2412,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2381,7 +2426,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2399,7 +2444,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_RBTree_1_0(
@@ -2411,7 +2456,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2428,7 +2473,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (tree))?
+            cordl_method_info.invoke_unchecked(self, (tree))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2442,7 +2487,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2462,7 +2507,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (tree, position))?
+            cordl_method_info.invoke_unchecked(self, (tree, position))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2472,7 +2517,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), K, 0usize>("get_Current")
@@ -2484,7 +2529,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
                         )
                     })
             });
-        let __cordl_ret: K = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: K = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -2610,7 +2655,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2626,7 +2671,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (tree))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (tree))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -2651,7 +2698,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
@@ -2664,7 +2711,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_size))?
+            cordl_method_info.invoke_unchecked(self, (_cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2674,7 +2721,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_InUseCount")
@@ -2686,7 +2733,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_PageId(&mut self) -> quest_hook::libil2cpp::Result<i32>
@@ -2695,7 +2742,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_PageId")
@@ -2707,7 +2754,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_InUseCount(
@@ -2719,7 +2766,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2736,7 +2783,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2749,7 +2796,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2766,7 +2813,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))?
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

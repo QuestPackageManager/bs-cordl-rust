@@ -40,7 +40,7 @@ impl std::ops::DerefMut for crate::System::Threading::TimeoutHelper {
 impl crate::System::Threading::TimeoutHelper {
     pub fn GetTime() -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u32, 0usize>("GetTime")
@@ -52,7 +52,7 @@ impl crate::System::Threading::TimeoutHelper {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateTimeOut(
@@ -60,7 +60,7 @@ impl crate::System::Threading::TimeoutHelper {
         originalWaitMillisecondsTimeout: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, i32), i32, 2usize>("UpdateTimeOut")
@@ -73,7 +73,8 @@ impl crate::System::Threading::TimeoutHelper {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (startTime, originalWaitMillisecondsTimeout))?
+            cordl_method_info
+                .invoke_unchecked((), (startTime, originalWaitMillisecondsTimeout))?
         };
         Ok(__cordl_ret.into())
     }

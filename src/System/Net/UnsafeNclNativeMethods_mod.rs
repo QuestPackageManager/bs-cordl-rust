@@ -47,7 +47,7 @@ impl crate::System::Net::HttpApi_UnsafeNclNativeMethods_HTTP_REQUEST_HEADER_ID {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -65,7 +65,7 @@ impl crate::System::Net::HttpApi_UnsafeNclNativeMethods_HTTP_REQUEST_HEADER_ID {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (position))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (position))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -235,7 +235,7 @@ impl crate::System::Net::UnsafeNclNativeMethods_SecureStringHelper {
         quest_hook::libil2cpp::Gc<crate::System::Security::SecureString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -253,7 +253,7 @@ impl crate::System::Net::UnsafeNclNativeMethods_SecureStringHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::SecureString,
-        > = unsafe { method.invoke_unchecked((), (plainString))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (plainString))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateString(
@@ -262,7 +262,7 @@ impl crate::System::Net::UnsafeNclNativeMethods_SecureStringHelper {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -282,7 +282,7 @@ impl crate::System::Net::UnsafeNclNativeMethods_SecureStringHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (secureString))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (secureString))? };
         Ok(__cordl_ret.into())
     }
 }

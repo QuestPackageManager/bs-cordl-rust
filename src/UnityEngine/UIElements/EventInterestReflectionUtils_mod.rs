@@ -49,7 +49,7 @@ impl crate::UnityEngine::UIElements::EventInterestReflectionUtils {
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -71,7 +71,7 @@ impl crate::UnityEngine::UIElements::EventInterestReflectionUtils {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (elementType, methodName))?
+            cordl_method_info.invoke_unchecked((), (elementType, methodName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -81,7 +81,7 @@ impl crate::UnityEngine::UIElements::EventInterestReflectionUtils {
         defaultActionAtTargetCategories: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -102,7 +102,7 @@ impl crate::UnityEngine::UIElements::EventInterestReflectionUtils {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -118,7 +118,7 @@ impl crate::UnityEngine::UIElements::EventInterestReflectionUtils {
         eventType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::EventCategory> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -135,7 +135,7 @@ impl crate::UnityEngine::UIElements::EventInterestReflectionUtils {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::EventCategory = unsafe {
-            method.invoke_unchecked((), (eventType))?
+            cordl_method_info.invoke_unchecked((), (eventType))?
         };
         Ok(__cordl_ret.into())
     }

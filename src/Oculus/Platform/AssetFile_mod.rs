@@ -50,7 +50,7 @@ impl crate::Oculus::Platform::AssetFile {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -78,7 +78,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetFileDeleteResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileID))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
     }
     pub fn DeleteById(
@@ -93,7 +93,7 @@ impl crate::Oculus::Platform::AssetFile {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -121,7 +121,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetFileDeleteResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileID))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
     }
     pub fn DeleteByName(
@@ -136,7 +136,7 @@ impl crate::Oculus::Platform::AssetFile {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -164,7 +164,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetFileDeleteResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileName))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileName))? };
         Ok(__cordl_ret.into())
     }
     pub fn Download(
@@ -179,7 +179,7 @@ impl crate::Oculus::Platform::AssetFile {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -207,7 +207,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetFileDownloadResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileID))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
     }
     pub fn DownloadById(
@@ -222,7 +222,7 @@ impl crate::Oculus::Platform::AssetFile {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -250,7 +250,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetFileDownloadResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileID))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
     }
     pub fn DownloadByName(
@@ -265,7 +265,7 @@ impl crate::Oculus::Platform::AssetFile {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -293,7 +293,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetFileDownloadResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileName))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileName))? };
         Ok(__cordl_ret.into())
     }
     pub fn DownloadCancel(
@@ -308,7 +308,7 @@ impl crate::Oculus::Platform::AssetFile {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -336,7 +336,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileID))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
     }
     pub fn DownloadCancelById(
@@ -351,7 +351,7 @@ impl crate::Oculus::Platform::AssetFile {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -379,7 +379,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileID))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
     }
     pub fn DownloadCancelByName(
@@ -394,7 +394,7 @@ impl crate::Oculus::Platform::AssetFile {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -422,7 +422,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileName))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileName))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetList() -> quest_hook::libil2cpp::Result<
@@ -435,7 +435,7 @@ impl crate::Oculus::Platform::AssetFile {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -463,7 +463,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetDetailsList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SetDownloadUpdateNotificationCallback(
@@ -476,7 +476,7 @@ impl crate::Oculus::Platform::AssetFile {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -499,7 +499,7 @@ impl crate::Oculus::Platform::AssetFile {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (callback))?
+            cordl_method_info.invoke_unchecked((), (callback))?
         };
         Ok(__cordl_ret.into())
     }
@@ -513,7 +513,7 @@ impl crate::Oculus::Platform::AssetFile {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -539,7 +539,7 @@ impl crate::Oculus::Platform::AssetFile {
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileID))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
     }
     pub fn StatusById(
@@ -552,7 +552,7 @@ impl crate::Oculus::Platform::AssetFile {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -578,7 +578,7 @@ impl crate::Oculus::Platform::AssetFile {
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileID))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
     }
     pub fn StatusByName(
@@ -591,7 +591,7 @@ impl crate::Oculus::Platform::AssetFile {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -617,7 +617,7 @@ impl crate::Oculus::Platform::AssetFile {
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileName))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileName))? };
         Ok(__cordl_ret.into())
     }
 }

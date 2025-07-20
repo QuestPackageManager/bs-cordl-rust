@@ -50,7 +50,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -75,7 +75,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DeltaControl,
-        > = unsafe { method.invoke_unchecked(self, (kDeltaLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kDeltaLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreendeltadown(
@@ -86,7 +86,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -111,7 +111,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreendeltaleft(
@@ -122,7 +122,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -147,7 +147,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreendeltaright(
@@ -158,7 +158,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -183,7 +183,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreendeltaup(
@@ -194,7 +194,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -219,7 +219,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreendeltax(
@@ -230,7 +230,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -255,7 +255,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreendeltay(
@@ -266,7 +266,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -291,7 +291,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreendisplayIndex(
@@ -304,7 +304,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -329,7 +329,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenposition(
@@ -342,7 +344,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -367,7 +369,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenpositionx(
@@ -378,7 +382,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -403,7 +407,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenpositiony(
@@ -414,7 +418,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -439,7 +443,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenpress(
@@ -452,7 +456,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -477,7 +481,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPressControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPressLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPressLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenpressure(
@@ -488,7 +494,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -513,7 +519,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAnalogLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kAnalogLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouch(
@@ -526,7 +534,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -551,7 +559,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kTouchLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchdelta(
@@ -564,7 +572,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -589,7 +597,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DeltaControl,
-        > = unsafe { method.invoke_unchecked(self, (kDeltaLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kDeltaLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchdeltadown(
@@ -600,7 +608,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -625,7 +633,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchdeltaleft(
@@ -636,7 +644,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -661,7 +669,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchdeltaright(
@@ -672,7 +680,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -697,7 +705,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchdeltaup(
@@ -708,7 +716,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -733,7 +741,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchdeltax(
@@ -744,7 +752,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -769,7 +777,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchdeltay(
@@ -780,7 +788,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -805,7 +813,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchdisplayIndex(
@@ -818,7 +826,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -843,7 +851,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchindirectTouch(
@@ -856,7 +866,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -881,7 +891,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchphase(
@@ -894,7 +906,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -919,7 +931,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPhaseControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPhaseLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPhaseLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchposition(
@@ -932,7 +946,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -957,7 +971,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchpositionx(
@@ -968,7 +984,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -993,7 +1009,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchpositiony(
@@ -1004,7 +1020,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1029,7 +1045,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchpress(
@@ -1042,7 +1058,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1067,7 +1083,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPressControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPressLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPressLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchpressure(
@@ -1078,7 +1096,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1103,7 +1121,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchradius(
@@ -1116,7 +1134,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1141,7 +1159,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchradiusx(
@@ -1152,7 +1172,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1177,7 +1197,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchradiusy(
@@ -1188,7 +1208,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1213,7 +1233,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchstartPosition(
@@ -1226,7 +1246,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1251,7 +1271,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchstartPositionx(
@@ -1262,7 +1284,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1288,7 +1310,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchstartPositiony(
@@ -1299,7 +1321,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1325,7 +1347,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchstartTime(
@@ -1338,7 +1360,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1363,7 +1385,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DoubleControl,
-        > = unsafe { method.invoke_unchecked(self, (kDoubleLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kDoubleLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchtap(
@@ -1376,7 +1400,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1401,7 +1425,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchtapCount(
@@ -1414,7 +1440,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1439,7 +1465,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenprimaryTouchtouchId(
@@ -1452,7 +1480,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1477,7 +1505,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenradius(
@@ -1490,7 +1520,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1515,7 +1545,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenradiusx(
@@ -1526,7 +1558,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1551,7 +1583,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreenradiusy(
@@ -1562,7 +1594,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1587,7 +1619,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0(
@@ -1600,7 +1632,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1625,7 +1657,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kTouchLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0delta(
@@ -1638,7 +1670,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1663,7 +1695,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DeltaControl,
-        > = unsafe { method.invoke_unchecked(self, (kDeltaLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kDeltaLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0deltadown(
@@ -1674,7 +1706,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1699,7 +1731,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0deltaleft(
@@ -1710,7 +1742,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1735,7 +1767,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0deltaright(
@@ -1746,7 +1778,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1771,7 +1803,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0deltaup(
@@ -1782,7 +1814,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1807,7 +1839,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0deltax(
@@ -1818,7 +1850,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1843,7 +1875,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0deltay(
@@ -1854,7 +1886,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1879,7 +1911,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0displayIndex(
@@ -1892,7 +1924,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1917,7 +1949,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0indirectTouch(
@@ -1930,7 +1964,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1955,7 +1989,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0phase(
@@ -1968,7 +2004,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1993,7 +2029,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPhaseControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPhaseLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPhaseLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0position(
@@ -2006,7 +2044,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2031,7 +2069,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0positionx(
@@ -2042,7 +2082,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2067,7 +2107,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0positiony(
@@ -2078,7 +2118,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2103,7 +2143,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0press(
@@ -2116,7 +2156,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2141,7 +2181,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPressControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPressLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPressLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0pressure(
@@ -2152,7 +2194,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2177,7 +2219,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0radius(
@@ -2190,7 +2232,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2215,7 +2257,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0radiusx(
@@ -2226,7 +2270,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2251,7 +2295,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0radiusy(
@@ -2262,7 +2306,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2287,7 +2331,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0startPosition(
@@ -2300,7 +2344,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2325,7 +2369,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0startPositionx(
@@ -2336,7 +2382,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2361,7 +2407,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0startPositiony(
@@ -2372,7 +2418,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2397,7 +2443,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0startTime(
@@ -2410,7 +2456,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2435,7 +2481,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DoubleControl,
-        > = unsafe { method.invoke_unchecked(self, (kDoubleLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kDoubleLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0tap(
@@ -2448,7 +2496,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2473,7 +2521,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0tapCount(
@@ -2486,7 +2536,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2511,7 +2561,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch0touchId(
@@ -2524,7 +2576,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2549,7 +2601,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1(
@@ -2562,7 +2616,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2587,7 +2641,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kTouchLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1delta(
@@ -2600,7 +2654,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2625,7 +2679,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DeltaControl,
-        > = unsafe { method.invoke_unchecked(self, (kDeltaLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kDeltaLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1deltadown(
@@ -2636,7 +2690,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2661,7 +2715,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1deltaleft(
@@ -2672,7 +2726,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2697,7 +2751,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1deltaright(
@@ -2708,7 +2762,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2733,7 +2787,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1deltaup(
@@ -2744,7 +2798,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2769,7 +2823,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1deltax(
@@ -2780,7 +2834,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2805,7 +2859,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1deltay(
@@ -2816,7 +2870,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2841,7 +2895,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1displayIndex(
@@ -2854,7 +2908,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2879,7 +2933,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1indirectTouch(
@@ -2892,7 +2948,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2917,7 +2973,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1phase(
@@ -2930,7 +2988,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2955,7 +3013,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPhaseControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPhaseLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPhaseLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1position(
@@ -2968,7 +3028,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -2993,7 +3053,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1positionx(
@@ -3004,7 +3066,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3029,7 +3091,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1positiony(
@@ -3040,7 +3102,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3065,7 +3127,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1press(
@@ -3078,7 +3140,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3103,7 +3165,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPressControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPressLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPressLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1pressure(
@@ -3114,7 +3178,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3139,7 +3203,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1radius(
@@ -3152,7 +3216,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3177,7 +3241,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1radiusx(
@@ -3188,7 +3254,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3213,7 +3279,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1radiusy(
@@ -3224,7 +3290,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3249,7 +3315,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1startPosition(
@@ -3262,7 +3328,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3287,7 +3353,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1startPositionx(
@@ -3298,7 +3366,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3323,7 +3391,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1startPositiony(
@@ -3334,7 +3402,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3359,7 +3427,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1startTime(
@@ -3372,7 +3440,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3397,7 +3465,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DoubleControl,
-        > = unsafe { method.invoke_unchecked(self, (kDoubleLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kDoubleLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1tap(
@@ -3410,7 +3480,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3435,7 +3505,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1tapCount(
@@ -3448,7 +3520,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3473,7 +3545,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch1touchId(
@@ -3486,7 +3560,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3511,7 +3585,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2(
@@ -3524,7 +3600,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3549,7 +3625,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kTouchLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2delta(
@@ -3562,7 +3638,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3587,7 +3663,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DeltaControl,
-        > = unsafe { method.invoke_unchecked(self, (kDeltaLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kDeltaLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2deltadown(
@@ -3598,7 +3674,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3623,7 +3699,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2deltaleft(
@@ -3634,7 +3710,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3659,7 +3735,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2deltaright(
@@ -3670,7 +3746,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3695,7 +3771,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2deltaup(
@@ -3706,7 +3782,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3731,7 +3807,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2deltax(
@@ -3742,7 +3818,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3767,7 +3843,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2deltay(
@@ -3778,7 +3854,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3803,7 +3879,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2displayIndex(
@@ -3816,7 +3892,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3841,7 +3917,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2indirectTouch(
@@ -3854,7 +3932,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3879,7 +3957,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2phase(
@@ -3892,7 +3972,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3917,7 +3997,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPhaseControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPhaseLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPhaseLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2position(
@@ -3930,7 +4012,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3955,7 +4037,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2positionx(
@@ -3966,7 +4050,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -3991,7 +4075,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2positiony(
@@ -4002,7 +4086,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4027,7 +4111,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2press(
@@ -4040,7 +4124,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4065,7 +4149,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPressControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPressLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPressLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2pressure(
@@ -4076,7 +4162,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4101,7 +4187,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2radius(
@@ -4114,7 +4200,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4139,7 +4225,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2radiusx(
@@ -4150,7 +4238,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4175,7 +4263,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2radiusy(
@@ -4186,7 +4274,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4211,7 +4299,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2startPosition(
@@ -4224,7 +4312,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4249,7 +4337,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2startPositionx(
@@ -4260,7 +4350,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4285,7 +4375,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2startPositiony(
@@ -4296,7 +4386,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4321,7 +4411,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2startTime(
@@ -4334,7 +4424,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4359,7 +4449,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DoubleControl,
-        > = unsafe { method.invoke_unchecked(self, (kDoubleLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kDoubleLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2tap(
@@ -4372,7 +4464,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4397,7 +4489,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2tapCount(
@@ -4410,7 +4504,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4435,7 +4529,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch2touchId(
@@ -4448,7 +4544,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4473,7 +4569,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3(
@@ -4486,7 +4584,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4511,7 +4609,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kTouchLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3delta(
@@ -4524,7 +4622,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4549,7 +4647,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DeltaControl,
-        > = unsafe { method.invoke_unchecked(self, (kDeltaLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kDeltaLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3deltadown(
@@ -4560,7 +4658,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4585,7 +4683,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3deltaleft(
@@ -4596,7 +4694,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4621,7 +4719,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3deltaright(
@@ -4632,7 +4730,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4657,7 +4755,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3deltaup(
@@ -4668,7 +4766,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4693,7 +4791,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3deltax(
@@ -4704,7 +4802,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4729,7 +4827,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3deltay(
@@ -4740,7 +4838,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4765,7 +4863,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3displayIndex(
@@ -4778,7 +4876,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4803,7 +4901,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3indirectTouch(
@@ -4816,7 +4916,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4841,7 +4941,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3phase(
@@ -4854,7 +4956,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4879,7 +4981,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPhaseControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPhaseLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPhaseLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3position(
@@ -4892,7 +4996,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4917,7 +5021,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3positionx(
@@ -4928,7 +5034,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4953,7 +5059,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3positiony(
@@ -4964,7 +5070,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -4989,7 +5095,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3press(
@@ -5002,7 +5108,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5027,7 +5133,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPressControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPressLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPressLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3pressure(
@@ -5038,7 +5146,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5063,7 +5171,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3radius(
@@ -5076,7 +5184,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5101,7 +5209,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3radiusx(
@@ -5112,7 +5222,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5137,7 +5247,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3radiusy(
@@ -5148,7 +5258,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5173,7 +5283,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3startPosition(
@@ -5186,7 +5296,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5211,7 +5321,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3startPositionx(
@@ -5222,7 +5334,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5247,7 +5359,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3startPositiony(
@@ -5258,7 +5370,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5283,7 +5395,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3startTime(
@@ -5296,7 +5408,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5321,7 +5433,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DoubleControl,
-        > = unsafe { method.invoke_unchecked(self, (kDoubleLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kDoubleLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3tap(
@@ -5334,7 +5448,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5359,7 +5473,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3tapCount(
@@ -5372,7 +5488,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5397,7 +5513,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch3touchId(
@@ -5410,7 +5528,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5435,7 +5553,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4(
@@ -5448,7 +5568,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5473,7 +5593,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kTouchLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4delta(
@@ -5486,7 +5606,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5511,7 +5631,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DeltaControl,
-        > = unsafe { method.invoke_unchecked(self, (kDeltaLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kDeltaLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4deltadown(
@@ -5522,7 +5642,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5547,7 +5667,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4deltaleft(
@@ -5558,7 +5678,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5583,7 +5703,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4deltaright(
@@ -5594,7 +5714,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5619,7 +5739,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4deltaup(
@@ -5630,7 +5750,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5655,7 +5775,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4deltax(
@@ -5666,7 +5786,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5691,7 +5811,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4deltay(
@@ -5702,7 +5822,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5727,7 +5847,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4displayIndex(
@@ -5740,7 +5860,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5765,7 +5885,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4indirectTouch(
@@ -5778,7 +5900,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5803,7 +5925,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4phase(
@@ -5816,7 +5940,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5841,7 +5965,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPhaseControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPhaseLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPhaseLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4position(
@@ -5854,7 +5980,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5879,7 +6005,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4positionx(
@@ -5890,7 +6018,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5915,7 +6043,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4positiony(
@@ -5926,7 +6054,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5951,7 +6079,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4press(
@@ -5964,7 +6092,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -5989,7 +6117,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPressControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPressLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPressLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4pressure(
@@ -6000,7 +6130,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6025,7 +6155,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4radius(
@@ -6038,7 +6168,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6063,7 +6193,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4radiusx(
@@ -6074,7 +6206,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6099,7 +6231,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4radiusy(
@@ -6110,7 +6242,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6135,7 +6267,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4startPosition(
@@ -6148,7 +6280,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6173,7 +6305,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4startPositionx(
@@ -6184,7 +6318,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6209,7 +6343,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4startPositiony(
@@ -6220,7 +6354,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6245,7 +6379,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4startTime(
@@ -6258,7 +6392,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6283,7 +6417,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DoubleControl,
-        > = unsafe { method.invoke_unchecked(self, (kDoubleLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kDoubleLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4tap(
@@ -6296,7 +6432,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6321,7 +6457,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4tapCount(
@@ -6334,7 +6472,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6359,7 +6497,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch4touchId(
@@ -6372,7 +6512,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6397,7 +6537,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5(
@@ -6410,7 +6552,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6435,7 +6577,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kTouchLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5delta(
@@ -6448,7 +6590,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6473,7 +6615,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DeltaControl,
-        > = unsafe { method.invoke_unchecked(self, (kDeltaLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kDeltaLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5deltadown(
@@ -6484,7 +6626,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6509,7 +6651,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5deltaleft(
@@ -6520,7 +6662,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6545,7 +6687,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5deltaright(
@@ -6556,7 +6698,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6581,7 +6723,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5deltaup(
@@ -6592,7 +6734,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6617,7 +6759,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5deltax(
@@ -6628,7 +6770,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6653,7 +6795,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5deltay(
@@ -6664,7 +6806,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6689,7 +6831,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5displayIndex(
@@ -6702,7 +6844,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6727,7 +6869,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5indirectTouch(
@@ -6740,7 +6884,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6765,7 +6909,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5phase(
@@ -6778,7 +6924,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6803,7 +6949,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPhaseControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPhaseLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPhaseLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5position(
@@ -6816,7 +6964,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6841,7 +6989,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5positionx(
@@ -6852,7 +7002,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6877,7 +7027,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5positiony(
@@ -6888,7 +7038,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6913,7 +7063,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5press(
@@ -6926,7 +7076,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6951,7 +7101,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPressControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPressLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPressLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5pressure(
@@ -6962,7 +7114,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -6987,7 +7139,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5radius(
@@ -7000,7 +7152,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7025,7 +7177,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5radiusx(
@@ -7036,7 +7190,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7061,7 +7215,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5radiusy(
@@ -7072,7 +7226,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7097,7 +7251,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5startPosition(
@@ -7110,7 +7264,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7135,7 +7289,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5startPositionx(
@@ -7146,7 +7302,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7171,7 +7327,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5startPositiony(
@@ -7182,7 +7338,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7207,7 +7363,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5startTime(
@@ -7220,7 +7376,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7245,7 +7401,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DoubleControl,
-        > = unsafe { method.invoke_unchecked(self, (kDoubleLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kDoubleLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5tap(
@@ -7258,7 +7416,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7283,7 +7441,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5tapCount(
@@ -7296,7 +7456,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7321,7 +7481,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch5touchId(
@@ -7334,7 +7496,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7359,7 +7521,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6(
@@ -7372,7 +7536,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7397,7 +7561,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kTouchLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6delta(
@@ -7410,7 +7574,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7435,7 +7599,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DeltaControl,
-        > = unsafe { method.invoke_unchecked(self, (kDeltaLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kDeltaLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6deltadown(
@@ -7446,7 +7610,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7471,7 +7635,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6deltaleft(
@@ -7482,7 +7646,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7507,7 +7671,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6deltaright(
@@ -7518,7 +7682,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7543,7 +7707,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6deltaup(
@@ -7554,7 +7718,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7579,7 +7743,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6deltax(
@@ -7590,7 +7754,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7615,7 +7779,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6deltay(
@@ -7626,7 +7790,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7651,7 +7815,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6displayIndex(
@@ -7664,7 +7828,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7689,7 +7853,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6indirectTouch(
@@ -7702,7 +7868,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7727,7 +7893,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6phase(
@@ -7740,7 +7908,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7765,7 +7933,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPhaseControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPhaseLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPhaseLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6position(
@@ -7778,7 +7948,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7803,7 +7973,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6positionx(
@@ -7814,7 +7986,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7839,7 +8011,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6positiony(
@@ -7850,7 +8022,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7875,7 +8047,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6press(
@@ -7888,7 +8060,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7913,7 +8085,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPressControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPressLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPressLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6pressure(
@@ -7924,7 +8098,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7949,7 +8123,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6radius(
@@ -7962,7 +8136,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -7987,7 +8161,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6radiusx(
@@ -7998,7 +8174,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8023,7 +8199,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6radiusy(
@@ -8034,7 +8210,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8059,7 +8235,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6startPosition(
@@ -8072,7 +8248,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8097,7 +8273,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6startPositionx(
@@ -8108,7 +8286,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8133,7 +8311,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6startPositiony(
@@ -8144,7 +8322,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8169,7 +8347,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6startTime(
@@ -8182,7 +8360,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8207,7 +8385,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DoubleControl,
-        > = unsafe { method.invoke_unchecked(self, (kDoubleLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kDoubleLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6tap(
@@ -8220,7 +8400,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8245,7 +8425,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6tapCount(
@@ -8258,7 +8440,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8283,7 +8465,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch6touchId(
@@ -8296,7 +8480,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8321,7 +8505,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7(
@@ -8334,7 +8520,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8359,7 +8545,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kTouchLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7delta(
@@ -8372,7 +8558,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8397,7 +8583,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DeltaControl,
-        > = unsafe { method.invoke_unchecked(self, (kDeltaLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kDeltaLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7deltadown(
@@ -8408,7 +8594,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8433,7 +8619,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7deltaleft(
@@ -8444,7 +8630,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8469,7 +8655,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7deltaright(
@@ -8480,7 +8666,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8505,7 +8691,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7deltaup(
@@ -8516,7 +8702,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8541,7 +8727,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7deltax(
@@ -8552,7 +8738,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8577,7 +8763,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7deltay(
@@ -8588,7 +8774,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8613,7 +8799,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7displayIndex(
@@ -8626,7 +8812,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8651,7 +8837,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7indirectTouch(
@@ -8664,7 +8852,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8689,7 +8877,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7phase(
@@ -8702,7 +8892,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8727,7 +8917,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPhaseControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPhaseLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPhaseLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7position(
@@ -8740,7 +8932,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8765,7 +8957,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7positionx(
@@ -8776,7 +8970,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8801,7 +8995,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7positiony(
@@ -8812,7 +9006,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8837,7 +9031,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7press(
@@ -8850,7 +9044,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8875,7 +9069,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPressControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPressLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPressLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7pressure(
@@ -8886,7 +9082,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8911,7 +9107,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7radius(
@@ -8924,7 +9120,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8949,7 +9145,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7radiusx(
@@ -8960,7 +9158,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -8985,7 +9183,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7radiusy(
@@ -8996,7 +9194,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9021,7 +9219,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7startPosition(
@@ -9034,7 +9232,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9059,7 +9257,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7startPositionx(
@@ -9070,7 +9270,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9095,7 +9295,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7startPositiony(
@@ -9106,7 +9306,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9131,7 +9331,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7startTime(
@@ -9144,7 +9344,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9169,7 +9369,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DoubleControl,
-        > = unsafe { method.invoke_unchecked(self, (kDoubleLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kDoubleLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7tap(
@@ -9182,7 +9384,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9207,7 +9409,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7tapCount(
@@ -9220,7 +9424,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9245,7 +9449,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch7touchId(
@@ -9258,7 +9464,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9283,7 +9489,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8(
@@ -9296,7 +9504,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9321,7 +9529,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kTouchLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8delta(
@@ -9334,7 +9542,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9359,7 +9567,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DeltaControl,
-        > = unsafe { method.invoke_unchecked(self, (kDeltaLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kDeltaLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8deltadown(
@@ -9370,7 +9578,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9395,7 +9603,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8deltaleft(
@@ -9406,7 +9614,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9431,7 +9639,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8deltaright(
@@ -9442,7 +9650,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9467,7 +9675,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8deltaup(
@@ -9478,7 +9686,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9503,7 +9711,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8deltax(
@@ -9514,7 +9722,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9539,7 +9747,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8deltay(
@@ -9550,7 +9758,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9575,7 +9783,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8displayIndex(
@@ -9588,7 +9796,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9613,7 +9821,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8indirectTouch(
@@ -9626,7 +9836,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9651,7 +9861,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8phase(
@@ -9664,7 +9876,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9689,7 +9901,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPhaseControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPhaseLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPhaseLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8position(
@@ -9702,7 +9916,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9727,7 +9941,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8positionx(
@@ -9738,7 +9954,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9763,7 +9979,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8positiony(
@@ -9774,7 +9990,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9799,7 +10015,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8press(
@@ -9812,7 +10028,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9837,7 +10053,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPressControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPressLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPressLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8pressure(
@@ -9848,7 +10066,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9873,7 +10091,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8radius(
@@ -9886,7 +10104,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9911,7 +10129,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8radiusx(
@@ -9922,7 +10142,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9947,7 +10167,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8radiusy(
@@ -9958,7 +10178,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -9983,7 +10203,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8startPosition(
@@ -9996,7 +10216,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10021,7 +10241,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8startPositionx(
@@ -10032,7 +10254,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10057,7 +10279,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8startPositiony(
@@ -10068,7 +10290,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10093,7 +10315,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8startTime(
@@ -10106,7 +10328,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10131,7 +10353,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DoubleControl,
-        > = unsafe { method.invoke_unchecked(self, (kDoubleLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kDoubleLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8tap(
@@ -10144,7 +10368,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10169,7 +10393,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8tapCount(
@@ -10182,7 +10408,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10207,7 +10433,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch8touchId(
@@ -10220,7 +10448,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10245,7 +10473,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9(
@@ -10258,7 +10488,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10283,7 +10513,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kTouchLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9delta(
@@ -10296,7 +10526,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10321,7 +10551,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DeltaControl,
-        > = unsafe { method.invoke_unchecked(self, (kDeltaLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kDeltaLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9deltadown(
@@ -10332,7 +10562,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10357,7 +10587,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9deltaleft(
@@ -10368,7 +10598,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10393,7 +10623,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9deltaright(
@@ -10404,7 +10634,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10429,7 +10659,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9deltaup(
@@ -10440,7 +10670,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10465,7 +10695,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9deltax(
@@ -10476,7 +10706,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10501,7 +10731,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9deltay(
@@ -10512,7 +10742,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10537,7 +10767,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9displayIndex(
@@ -10550,7 +10780,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10575,7 +10805,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9indirectTouch(
@@ -10588,7 +10820,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10613,7 +10845,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9phase(
@@ -10626,7 +10860,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10651,7 +10885,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPhaseControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPhaseLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPhaseLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9position(
@@ -10664,7 +10900,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10689,7 +10925,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9positionx(
@@ -10700,7 +10938,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10725,7 +10963,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9positiony(
@@ -10736,7 +10974,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10761,7 +10999,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9press(
@@ -10774,7 +11012,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10799,7 +11037,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::TouchPressControl,
-        > = unsafe { method.invoke_unchecked(self, (kTouchPressLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kTouchPressLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9pressure(
@@ -10810,7 +11050,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10835,7 +11075,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9radius(
@@ -10848,7 +11088,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10873,7 +11113,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9radiusx(
@@ -10884,7 +11126,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10909,7 +11151,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9radiusy(
@@ -10920,7 +11162,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10945,7 +11187,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9startPosition(
@@ -10958,7 +11200,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -10983,7 +11225,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kVector2Layout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9startPositionx(
@@ -10994,7 +11238,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -11019,7 +11263,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9startPositiony(
@@ -11030,7 +11274,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -11055,7 +11299,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (kAxisLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9startTime(
@@ -11068,7 +11312,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -11093,7 +11337,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DoubleControl,
-        > = unsafe { method.invoke_unchecked(self, (kDoubleLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kDoubleLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9tap(
@@ -11106,7 +11352,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -11131,7 +11377,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kButtonLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9tapCount(
@@ -11144,7 +11392,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -11169,7 +11417,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlTouchscreentouch9touchId(
@@ -11182,7 +11432,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -11207,7 +11457,9 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (kIntegerLayout, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -11221,7 +11473,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -11234,7 +11486,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -49,7 +49,7 @@ impl crate::Mono::Security::Authenticode::PrivateKey {
         quest_hook::libil2cpp::Gc<crate::Mono::Security::Authenticode::PrivateKey>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -69,7 +69,7 @@ impl crate::Mono::Security::Authenticode::PrivateKey {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Authenticode::PrivateKey,
-        > = unsafe { method.invoke_unchecked((), (filename))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (filename))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateFromFile_Il2CppString1(
@@ -79,7 +79,7 @@ impl crate::Mono::Security::Authenticode::PrivateKey {
         quest_hook::libil2cpp::Gc<crate::Mono::Security::Authenticode::PrivateKey>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -106,7 +106,7 @@ impl crate::Mono::Security::Authenticode::PrivateKey {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Authenticode::PrivateKey,
-        > = unsafe { method.invoke_unchecked((), (filename, password))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (filename, password))? };
         Ok(__cordl_ret.into())
     }
     pub fn Decode(
@@ -115,7 +115,7 @@ impl crate::Mono::Security::Authenticode::PrivateKey {
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -139,7 +139,7 @@ impl crate::Mono::Security::Authenticode::PrivateKey {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (pvk, password))?
+            cordl_method_info.invoke_unchecked(self, (pvk, password))?
         };
         Ok(__cordl_ret.into())
     }
@@ -151,7 +151,7 @@ impl crate::Mono::Security::Authenticode::PrivateKey {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -178,7 +178,7 @@ impl crate::Mono::Security::Authenticode::PrivateKey {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (salt, password))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (salt, password))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -197,7 +197,7 @@ impl crate::Mono::Security::Authenticode::PrivateKey {
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -221,7 +221,7 @@ impl crate::Mono::Security::Authenticode::PrivateKey {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (data, password))?
+            cordl_method_info.invoke_unchecked(self, (data, password))?
         };
         Ok(__cordl_ret.into())
     }
@@ -231,7 +231,7 @@ impl crate::Mono::Security::Authenticode::PrivateKey {
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -251,7 +251,7 @@ impl crate::Mono::Security::Authenticode::PrivateKey {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

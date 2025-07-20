@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::AuthenticationTokenPlatformExtensions {
         crate::GlobalNamespace::AuthenticationToken_Platform,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -63,7 +63,7 @@ impl crate::GlobalNamespace::AuthenticationTokenPlatformExtensions {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::AuthenticationToken_Platform = unsafe {
-            method.invoke_unchecked((), (platform))?
+            cordl_method_info.invoke_unchecked((), (platform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::AuthenticationTokenPlatformExtensions {
         platform: crate::GlobalNamespace::AuthenticationToken_Platform,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::UserInfo_Platform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -88,7 +88,7 @@ impl crate::GlobalNamespace::AuthenticationTokenPlatformExtensions {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::UserInfo_Platform = unsafe {
-            method.invoke_unchecked((), (platform))?
+            cordl_method_info.invoke_unchecked((), (platform))?
         };
         Ok(__cordl_ret.into())
     }

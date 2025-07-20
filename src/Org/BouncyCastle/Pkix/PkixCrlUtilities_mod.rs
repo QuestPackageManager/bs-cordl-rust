@@ -49,7 +49,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
         quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -74,7 +74,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ICollection,
-        > = unsafe { method.invoke_unchecked(self, (crlSelect, crlStores))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (crlSelect, crlStores))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindCrls_PkixParameters1(
@@ -89,7 +89,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -116,7 +116,9 @@ impl crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (crlselect, paramsPkix))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (crlselect, paramsPkix))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FindCrls_PkixParameters_DateTime0(
@@ -132,7 +134,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -161,7 +163,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
         > = unsafe {
-            method.invoke_unchecked(self, (crlselect, paramsPkix, currentDate))?
+            cordl_method_info
+                .invoke_unchecked(self, (crlselect, paramsPkix, currentDate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -176,7 +179,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -189,7 +192,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

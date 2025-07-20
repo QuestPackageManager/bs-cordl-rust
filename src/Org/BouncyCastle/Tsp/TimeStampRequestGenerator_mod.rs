@@ -56,7 +56,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -81,7 +81,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (oid, critical, extValue))?
+            cordl_method_info.invoke_unchecked(self, (oid, critical, extValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -94,7 +94,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
         extValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -119,7 +119,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (oid, critical, extValue))?
+            cordl_method_info.invoke_unchecked(self, (oid, critical, extValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -130,7 +130,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
         value: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -155,7 +155,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (oid, critical, value))?
+            cordl_method_info.invoke_unchecked(self, (oid, critical, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -166,7 +166,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -191,7 +191,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (oid, critical, value))?
+            cordl_method_info.invoke_unchecked(self, (oid, critical, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -205,7 +205,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Tsp::TimeStampRequest>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -232,7 +232,9 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Tsp::TimeStampRequest,
-        > = unsafe { method.invoke_unchecked(self, (digestAlgorithm, digest))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (digestAlgorithm, digest))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Generate_DerObjectIdentifier_BigInteger3(
@@ -246,7 +248,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Tsp::TimeStampRequest>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -276,7 +278,9 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Tsp::TimeStampRequest,
-        > = unsafe { method.invoke_unchecked(self, (digestAlgorithm, digest, nonce))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (digestAlgorithm, digest, nonce))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Generate_Il2CppString0(
@@ -287,7 +291,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Tsp::TimeStampRequest>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -314,7 +318,9 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Tsp::TimeStampRequest,
-        > = unsafe { method.invoke_unchecked(self, (digestAlgorithm, digest))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (digestAlgorithm, digest))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Generate_Il2CppString_BigInteger1(
@@ -328,7 +334,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Tsp::TimeStampRequest>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -359,7 +365,8 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Tsp::TimeStampRequest,
         > = unsafe {
-            method.invoke_unchecked(self, (digestAlgorithmOid, digest, nonce))?
+            cordl_method_info
+                .invoke_unchecked(self, (digestAlgorithmOid, digest, nonce))?
         };
         Ok(__cordl_ret.into())
     }
@@ -375,7 +382,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
         certReq: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -392,7 +399,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (certReq))?
+            cordl_method_info.invoke_unchecked(self, (certReq))?
         };
         Ok(__cordl_ret.into())
     }
@@ -401,7 +408,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
         reqPolicy: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -418,7 +425,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reqPolicy))?
+            cordl_method_info.invoke_unchecked(self, (reqPolicy))?
         };
         Ok(__cordl_ret.into())
     }
@@ -426,7 +433,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -439,7 +446,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -51,7 +51,7 @@ impl crate::Oculus::Platform::UserDataStore {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -84,7 +84,7 @@ impl crate::Oculus::Platform::UserDataStore {
                     crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (userID, key))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (userID, key))? };
         Ok(__cordl_ret.into())
     }
     pub fn PrivateGetEntries(
@@ -102,7 +102,7 @@ impl crate::Oculus::Platform::UserDataStore {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -140,7 +140,7 @@ impl crate::Oculus::Platform::UserDataStore {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (userID))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (userID))? };
         Ok(__cordl_ret.into())
     }
     pub fn PrivateGetEntryByKey(
@@ -159,7 +159,7 @@ impl crate::Oculus::Platform::UserDataStore {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -202,7 +202,7 @@ impl crate::Oculus::Platform::UserDataStore {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (userID, key))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (userID, key))? };
         Ok(__cordl_ret.into())
     }
     pub fn PrivateWriteEntry(
@@ -219,7 +219,7 @@ impl crate::Oculus::Platform::UserDataStore {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -255,7 +255,7 @@ impl crate::Oculus::Platform::UserDataStore {
                     crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (userID, key, value))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (userID, key, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn PublicDeleteEntryByKey(
@@ -271,7 +271,7 @@ impl crate::Oculus::Platform::UserDataStore {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -304,7 +304,7 @@ impl crate::Oculus::Platform::UserDataStore {
                     crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (userID, key))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (userID, key))? };
         Ok(__cordl_ret.into())
     }
     pub fn PublicGetEntries(
@@ -322,7 +322,7 @@ impl crate::Oculus::Platform::UserDataStore {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -360,7 +360,7 @@ impl crate::Oculus::Platform::UserDataStore {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (userID))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (userID))? };
         Ok(__cordl_ret.into())
     }
     pub fn PublicGetEntryByKey(
@@ -379,7 +379,7 @@ impl crate::Oculus::Platform::UserDataStore {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -422,7 +422,7 @@ impl crate::Oculus::Platform::UserDataStore {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (userID, key))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (userID, key))? };
         Ok(__cordl_ret.into())
     }
     pub fn PublicWriteEntry(
@@ -439,7 +439,7 @@ impl crate::Oculus::Platform::UserDataStore {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -475,7 +475,7 @@ impl crate::Oculus::Platform::UserDataStore {
                     crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (userID, key, value))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (userID, key, value))? };
         Ok(__cordl_ret.into())
     }
 }

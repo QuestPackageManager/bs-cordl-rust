@@ -47,7 +47,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -63,7 +63,9 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
                         )
                     })
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (filePath))? };
+        let __cordl_ret: T = unsafe {
+            cordl_method_info.invoke_unchecked((), (filePath))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadFromFile_JsonSerializerSettings1<T>(
@@ -77,7 +79,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -101,7 +103,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
                     })
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked((), (filePath, settings))?
+            cordl_method_info.invoke_unchecked((), (filePath, settings))?
         };
         Ok(__cordl_ret.into())
     }
@@ -116,7 +118,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -138,7 +140,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
                     })
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked((), (textReader, settings))?
+            cordl_method_info.invoke_unchecked((), (textReader, settings))?
         };
         Ok(__cordl_ret.into())
     }
@@ -151,7 +153,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -173,7 +175,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (content, filePath))?
+            cordl_method_info.invoke_unchecked((), (content, filePath))?
         };
         Ok(__cordl_ret.into())
     }
@@ -187,7 +189,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -210,7 +212,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (content, filePath, indentation))?
+            cordl_method_info.invoke_unchecked((), (content, filePath, indentation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -231,7 +233,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -263,7 +265,8 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (content, filePath, settings, beforeSerialize))?
+            cordl_method_info
+                .invoke_unchecked((), (content, filePath, settings, beforeSerialize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -284,7 +287,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -314,7 +317,8 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (writer, content, settings, beforeSerialize))?
+            cordl_method_info
+                .invoke_unchecked((), (writer, content, settings, beforeSerialize))?
         };
         Ok(__cordl_ret.into())
     }

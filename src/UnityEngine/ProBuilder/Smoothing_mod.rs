@@ -56,7 +56,7 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -90,7 +90,8 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, faces, angleThreshold, normals))?
+            cordl_method_info
+                .invoke_unchecked((), (mesh, faces, angleThreshold, normals))?
         };
         Ok(__cordl_ret.into())
     }
@@ -104,7 +105,7 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
         angleThreshold: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -133,7 +134,7 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, faces, angleThreshold))?
+            cordl_method_info.invoke_unchecked((), (mesh, faces, angleThreshold))?
         };
         Ok(__cordl_ret.into())
     }
@@ -150,7 +151,7 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -184,7 +185,8 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (normals, wing, angleThreshold, processed))?
+            cordl_method_info
+                .invoke_unchecked((), (normals, wing, angleThreshold, processed))?
         };
         Ok(__cordl_ret.into())
     }
@@ -195,7 +197,7 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -216,14 +218,16 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (start, used))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (start, used))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetUnusedSmoothingGroup(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -241,12 +245,14 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (mesh))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (mesh))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsSmooth(index: i32) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), bool, 1usize>("IsSmooth")
@@ -258,7 +264,9 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (index))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsSoftEdge(
@@ -270,7 +278,7 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
         threshold: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -296,7 +304,7 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (normals, left, right, threshold))?
+            cordl_method_info.invoke_unchecked((), (normals, left, right, threshold))?
         };
         Ok(__cordl_ret.into())
     }

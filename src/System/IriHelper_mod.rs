@@ -43,7 +43,7 @@ impl crate::System::IriHelper {
         isQuery: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -60,7 +60,7 @@ impl crate::System::IriHelper {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (unicode, isQuery))?
+            cordl_method_info.invoke_unchecked((), (unicode, isQuery))?
         };
         Ok(__cordl_ret.into())
     }
@@ -71,7 +71,7 @@ impl crate::System::IriHelper {
         isQuery: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -88,7 +88,8 @@ impl crate::System::IriHelper {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (highSurr, lowSurr, surrogatePair, isQuery))?
+            cordl_method_info
+                .invoke_unchecked((), (highSurr, lowSurr, surrogatePair, isQuery))?
         };
         Ok(__cordl_ret.into())
     }
@@ -97,7 +98,7 @@ impl crate::System::IriHelper {
         component: crate::System::UriComponents,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -113,7 +114,9 @@ impl crate::System::IriHelper {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ch, component))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (ch, component))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EscapeUnescapeIri(
@@ -125,7 +128,7 @@ impl crate::System::IriHelper {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -150,7 +153,9 @@ impl crate::System::IriHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (pInput, start, end, component))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (pInput, start, end, component))?
+        };
         Ok(__cordl_ret.into())
     }
 }

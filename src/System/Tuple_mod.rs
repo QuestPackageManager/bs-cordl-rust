@@ -44,7 +44,7 @@ impl crate::System::Tuple {
         h3: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -60,7 +60,9 @@ impl crate::System::Tuple {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (h1, h2, h3))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (h1, h2, h3))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CombineHashCodes_i32_i32_0(
@@ -68,7 +70,7 @@ impl crate::System::Tuple {
         h2: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), i32, 2usize>("CombineHashCodes")
@@ -80,7 +82,9 @@ impl crate::System::Tuple {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (h1, h2))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (h1, h2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CombineHashCodes_i32_i32_2(
@@ -90,7 +94,7 @@ impl crate::System::Tuple {
         h4: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -106,7 +110,9 @@ impl crate::System::Tuple {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (h1, h2, h3, h4))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (h1, h2, h3, h4))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Create_T1_T2_0<T1, T2>(
@@ -122,7 +128,7 @@ impl crate::System::Tuple {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -139,7 +145,7 @@ impl crate::System::Tuple {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Tuple_2<T1, T2>> = unsafe {
-            method.invoke_unchecked((), (item1, item2))?
+            cordl_method_info.invoke_unchecked((), (item1, item2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -159,7 +165,7 @@ impl crate::System::Tuple {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -176,7 +182,7 @@ impl crate::System::Tuple {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Tuple_3<T1, T2, T3>> = unsafe {
-            method.invoke_unchecked((), (item1, item2, item3))?
+            cordl_method_info.invoke_unchecked((), (item1, item2, item3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -199,7 +205,7 @@ impl crate::System::Tuple {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -219,7 +225,9 @@ impl crate::System::Tuple {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Tuple_4<T1, T2, T3, T4>,
-        > = unsafe { method.invoke_unchecked((), (item1, item2, item3, item4))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (item1, item2, item3, item4))?
+        };
         Ok(__cordl_ret.into())
     }
 }

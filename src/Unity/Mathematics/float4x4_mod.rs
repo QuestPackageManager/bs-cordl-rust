@@ -103,7 +103,7 @@ impl crate::Unity::Mathematics::float4x4 {
         angle: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -120,7 +120,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (axis, angle))?
+            cordl_method_info.invoke_unchecked((), (axis, angle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -129,7 +129,7 @@ impl crate::Unity::Mathematics::float4x4 {
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -145,7 +145,9 @@ impl crate::Unity::Mathematics::float4x4 {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (o))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (o))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_float4x4_0(
@@ -153,7 +155,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -169,7 +171,9 @@ impl crate::Unity::Mathematics::float4x4 {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (rhs))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (rhs))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EulerXYZ_f32_f32_f32_1(
@@ -178,7 +182,7 @@ impl crate::Unity::Mathematics::float4x4 {
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -195,7 +199,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (x, y, z))?
+            cordl_method_info.invoke_unchecked((), (x, y, z))?
         };
         Ok(__cordl_ret.into())
     }
@@ -203,7 +207,7 @@ impl crate::Unity::Mathematics::float4x4 {
         xyz: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -220,7 +224,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (xyz))?
+            cordl_method_info.invoke_unchecked((), (xyz))?
         };
         Ok(__cordl_ret.into())
     }
@@ -230,7 +234,7 @@ impl crate::Unity::Mathematics::float4x4 {
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -247,7 +251,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (x, y, z))?
+            cordl_method_info.invoke_unchecked((), (x, y, z))?
         };
         Ok(__cordl_ret.into())
     }
@@ -255,7 +259,7 @@ impl crate::Unity::Mathematics::float4x4 {
         xyz: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -272,7 +276,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (xyz))?
+            cordl_method_info.invoke_unchecked((), (xyz))?
         };
         Ok(__cordl_ret.into())
     }
@@ -282,7 +286,7 @@ impl crate::Unity::Mathematics::float4x4 {
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -299,7 +303,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (x, y, z))?
+            cordl_method_info.invoke_unchecked((), (x, y, z))?
         };
         Ok(__cordl_ret.into())
     }
@@ -307,7 +311,7 @@ impl crate::Unity::Mathematics::float4x4 {
         xyz: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -324,7 +328,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (xyz))?
+            cordl_method_info.invoke_unchecked((), (xyz))?
         };
         Ok(__cordl_ret.into())
     }
@@ -334,7 +338,7 @@ impl crate::Unity::Mathematics::float4x4 {
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -351,7 +355,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (x, y, z))?
+            cordl_method_info.invoke_unchecked((), (x, y, z))?
         };
         Ok(__cordl_ret.into())
     }
@@ -359,7 +363,7 @@ impl crate::Unity::Mathematics::float4x4 {
         xyz: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -376,7 +380,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (xyz))?
+            cordl_method_info.invoke_unchecked((), (xyz))?
         };
         Ok(__cordl_ret.into())
     }
@@ -386,7 +390,7 @@ impl crate::Unity::Mathematics::float4x4 {
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -403,7 +407,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (x, y, z))?
+            cordl_method_info.invoke_unchecked((), (x, y, z))?
         };
         Ok(__cordl_ret.into())
     }
@@ -411,7 +415,7 @@ impl crate::Unity::Mathematics::float4x4 {
         xyz: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -428,7 +432,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (xyz))?
+            cordl_method_info.invoke_unchecked((), (xyz))?
         };
         Ok(__cordl_ret.into())
     }
@@ -438,7 +442,7 @@ impl crate::Unity::Mathematics::float4x4 {
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -455,7 +459,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (x, y, z))?
+            cordl_method_info.invoke_unchecked((), (x, y, z))?
         };
         Ok(__cordl_ret.into())
     }
@@ -463,7 +467,7 @@ impl crate::Unity::Mathematics::float4x4 {
         xyz: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -480,7 +484,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (xyz))?
+            cordl_method_info.invoke_unchecked((), (xyz))?
         };
         Ok(__cordl_ret.into())
     }
@@ -491,7 +495,7 @@ impl crate::Unity::Mathematics::float4x4 {
         order: crate::Unity::Mathematics::math_RotationOrder,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -508,7 +512,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (x, y, z, order))?
+            cordl_method_info.invoke_unchecked((), (x, y, z, order))?
         };
         Ok(__cordl_ret.into())
     }
@@ -517,7 +521,7 @@ impl crate::Unity::Mathematics::float4x4 {
         order: crate::Unity::Mathematics::math_RotationOrder,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -537,13 +541,13 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (xyz, order))?
+            cordl_method_info.invoke_unchecked((), (xyz, order))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
@@ -555,7 +559,7 @@ impl crate::Unity::Mathematics::float4x4 {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn LookAt(
@@ -564,7 +568,7 @@ impl crate::Unity::Mathematics::float4x4 {
         up: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -585,7 +589,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (eye, target, up))?
+            cordl_method_info.invoke_unchecked((), (eye, target, up))?
         };
         Ok(__cordl_ret.into())
     }
@@ -596,7 +600,7 @@ impl crate::Unity::Mathematics::float4x4 {
         far: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -613,7 +617,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (width, height, near, far))?
+            cordl_method_info.invoke_unchecked((), (width, height, near, far))?
         };
         Ok(__cordl_ret.into())
     }
@@ -626,7 +630,7 @@ impl crate::Unity::Mathematics::float4x4 {
         far: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -643,7 +647,8 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (left, right, bottom, top, near, far))?
+            cordl_method_info
+                .invoke_unchecked((), (left, right, bottom, top, near, far))?
         };
         Ok(__cordl_ret.into())
     }
@@ -654,7 +659,7 @@ impl crate::Unity::Mathematics::float4x4 {
         far: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -671,7 +676,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (verticalFov, aspect, near, far))?
+            cordl_method_info.invoke_unchecked((), (verticalFov, aspect, near, far))?
         };
         Ok(__cordl_ret.into())
     }
@@ -684,7 +689,7 @@ impl crate::Unity::Mathematics::float4x4 {
         far: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -701,7 +706,8 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (left, right, bottom, top, near, far))?
+            cordl_method_info
+                .invoke_unchecked((), (left, right, bottom, top, near, far))?
         };
         Ok(__cordl_ret.into())
     }
@@ -709,7 +715,7 @@ impl crate::Unity::Mathematics::float4x4 {
         angle: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -726,7 +732,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (angle))?
+            cordl_method_info.invoke_unchecked((), (angle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -734,7 +740,7 @@ impl crate::Unity::Mathematics::float4x4 {
         angle: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -751,7 +757,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (angle))?
+            cordl_method_info.invoke_unchecked((), (angle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -759,7 +765,7 @@ impl crate::Unity::Mathematics::float4x4 {
         angle: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -776,7 +782,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (angle))?
+            cordl_method_info.invoke_unchecked((), (angle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -784,7 +790,7 @@ impl crate::Unity::Mathematics::float4x4 {
         s: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -801,7 +807,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (s))?
+            cordl_method_info.invoke_unchecked((), (s))?
         };
         Ok(__cordl_ret.into())
     }
@@ -811,7 +817,7 @@ impl crate::Unity::Mathematics::float4x4 {
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -828,7 +834,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (x, y, z))?
+            cordl_method_info.invoke_unchecked((), (x, y, z))?
         };
         Ok(__cordl_ret.into())
     }
@@ -836,7 +842,7 @@ impl crate::Unity::Mathematics::float4x4 {
         scales: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -853,7 +859,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (scales))?
+            cordl_method_info.invoke_unchecked((), (scales))?
         };
         Ok(__cordl_ret.into())
     }
@@ -863,7 +869,7 @@ impl crate::Unity::Mathematics::float4x4 {
         scale: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -884,7 +890,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (translation, rotation, scale))?
+            cordl_method_info.invoke_unchecked((), (translation, rotation, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -894,7 +900,7 @@ impl crate::Unity::Mathematics::float4x4 {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -912,7 +918,7 @@ impl crate::Unity::Mathematics::float4x4 {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_Il2CppString_IFormatProvider1(
@@ -923,7 +929,7 @@ impl crate::Unity::Mathematics::float4x4 {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -946,14 +952,16 @@ impl crate::Unity::Mathematics::float4x4 {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (format, formatProvider))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (format, formatProvider))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Translate(
         vector: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -970,7 +978,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (vector))?
+            cordl_method_info.invoke_unchecked((), (vector))?
         };
         Ok(__cordl_ret.into())
     }
@@ -979,7 +987,7 @@ impl crate::Unity::Mathematics::float4x4 {
         transform: crate::Unity::Mathematics::RigidTransform,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -996,7 +1004,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (transform))?
+            cordl_method_info.invoke_unchecked(self, (transform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1005,7 +1013,7 @@ impl crate::Unity::Mathematics::float4x4 {
         v: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
@@ -1018,7 +1026,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))?
+            cordl_method_info.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1027,7 +1035,7 @@ impl crate::Unity::Mathematics::float4x4 {
         v: crate::Unity::Mathematics::bool4x4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1044,7 +1052,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))?
+            cordl_method_info.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1053,7 +1061,7 @@ impl crate::Unity::Mathematics::float4x4 {
         v: crate::Unity::Mathematics::double4x4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1070,7 +1078,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))?
+            cordl_method_info.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1079,7 +1087,7 @@ impl crate::Unity::Mathematics::float4x4 {
         v: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
@@ -1092,7 +1100,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))?
+            cordl_method_info.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1116,7 +1124,7 @@ impl crate::Unity::Mathematics::float4x4 {
         m33: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1150,7 +1158,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (
@@ -1180,7 +1188,7 @@ impl crate::Unity::Mathematics::float4x4 {
         v: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
@@ -1193,7 +1201,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))?
+            cordl_method_info.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1203,7 +1211,7 @@ impl crate::Unity::Mathematics::float4x4 {
         translation: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1223,7 +1231,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (rotation, translation))?
+            cordl_method_info.invoke_unchecked(self, (rotation, translation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1235,7 +1243,7 @@ impl crate::Unity::Mathematics::float4x4 {
         c3: crate::Unity::Mathematics::float4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1257,7 +1265,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (c0, c1, c2, c3))?
+            cordl_method_info.invoke_unchecked(self, (c0, c1, c2, c3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1266,7 +1274,7 @@ impl crate::Unity::Mathematics::float4x4 {
         v: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
@@ -1279,7 +1287,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))?
+            cordl_method_info.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1288,7 +1296,7 @@ impl crate::Unity::Mathematics::float4x4 {
         v: crate::Unity::Mathematics::int4x4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1305,7 +1313,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))?
+            cordl_method_info.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1315,7 +1323,7 @@ impl crate::Unity::Mathematics::float4x4 {
         translation: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1335,7 +1343,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (rotation, translation))?
+            cordl_method_info.invoke_unchecked(self, (rotation, translation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1344,7 +1352,7 @@ impl crate::Unity::Mathematics::float4x4 {
         v: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
@@ -1357,7 +1365,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))?
+            cordl_method_info.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1366,7 +1374,7 @@ impl crate::Unity::Mathematics::float4x4 {
         v: crate::Unity::Mathematics::uint4x4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1383,7 +1391,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))?
+            cordl_method_info.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1394,7 +1402,7 @@ impl crate::Unity::Mathematics::float4x4 {
         quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float4>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1414,7 +1422,7 @@ impl crate::Unity::Mathematics::float4x4 {
             });
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
             crate::Unity::Mathematics::float4,
-        > = unsafe { method.invoke_unchecked(self, (index))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Addition_f32_float4x4_2(
@@ -1422,7 +1430,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1439,7 +1447,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1448,7 +1456,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1465,7 +1473,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1474,7 +1482,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1494,7 +1502,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1502,7 +1510,7 @@ impl crate::Unity::Mathematics::float4x4 {
         val: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1519,7 +1527,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (val))?
+            cordl_method_info.invoke_unchecked((), (val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1528,7 +1536,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1545,7 +1553,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1554,7 +1562,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1571,7 +1579,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1580,7 +1588,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1600,7 +1608,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1609,7 +1617,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1626,7 +1634,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::bool4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1635,7 +1643,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1652,7 +1660,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::bool4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1661,7 +1669,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1681,7 +1689,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::bool4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1689,7 +1697,7 @@ impl crate::Unity::Mathematics::float4x4 {
         v: bool,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1706,7 +1714,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (v))?
+            cordl_method_info.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1714,7 +1722,7 @@ impl crate::Unity::Mathematics::float4x4 {
         v: crate::Unity::Mathematics::bool4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1731,7 +1739,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (v))?
+            cordl_method_info.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1739,7 +1747,7 @@ impl crate::Unity::Mathematics::float4x4 {
         v: crate::Unity::Mathematics::double4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1756,7 +1764,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (v))?
+            cordl_method_info.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1764,7 +1772,7 @@ impl crate::Unity::Mathematics::float4x4 {
         v: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1781,7 +1789,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (v))?
+            cordl_method_info.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1790,7 +1798,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1807,7 +1815,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::bool4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1816,7 +1824,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1833,7 +1841,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::bool4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1842,7 +1850,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1862,7 +1870,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::bool4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1871,7 +1879,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1888,7 +1896,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::bool4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1897,7 +1905,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1914,7 +1922,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::bool4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1923,7 +1931,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1943,7 +1951,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::bool4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1951,7 +1959,7 @@ impl crate::Unity::Mathematics::float4x4 {
         m: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1968,7 +1976,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (m))?
+            cordl_method_info.invoke_unchecked((), (m))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1976,7 +1984,7 @@ impl crate::Unity::Mathematics::float4x4 {
         v: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1993,7 +2001,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (v))?
+            cordl_method_info.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2001,7 +2009,7 @@ impl crate::Unity::Mathematics::float4x4 {
         m: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2018,7 +2026,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            method.invoke_unchecked((), (m))?
+            cordl_method_info.invoke_unchecked((), (m))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2026,7 +2034,7 @@ impl crate::Unity::Mathematics::float4x4 {
         v: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2043,7 +2051,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (v))?
+            cordl_method_info.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2051,7 +2059,7 @@ impl crate::Unity::Mathematics::float4x4 {
         v: crate::Unity::Mathematics::int4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2068,7 +2076,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (v))?
+            cordl_method_info.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2076,7 +2084,7 @@ impl crate::Unity::Mathematics::float4x4 {
         v: u32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2093,7 +2101,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (v))?
+            cordl_method_info.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2101,7 +2109,7 @@ impl crate::Unity::Mathematics::float4x4 {
         v: crate::Unity::Mathematics::uint4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2118,7 +2126,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (v))?
+            cordl_method_info.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2126,7 +2134,7 @@ impl crate::Unity::Mathematics::float4x4 {
         val: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2143,7 +2151,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (val))?
+            cordl_method_info.invoke_unchecked((), (val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2152,7 +2160,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2169,7 +2177,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::bool4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2178,7 +2186,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2195,7 +2203,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::bool4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2204,7 +2212,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2224,7 +2232,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::bool4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2233,7 +2241,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2250,7 +2258,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::bool4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2259,7 +2267,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2276,7 +2284,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::bool4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2285,7 +2293,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2305,7 +2313,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::bool4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2314,7 +2322,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2331,7 +2339,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::bool4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2340,7 +2348,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2357,7 +2365,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::bool4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2366,7 +2374,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2386,7 +2394,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::bool4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2395,7 +2403,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2412,7 +2420,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2421,7 +2429,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2438,7 +2446,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2447,7 +2455,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2467,7 +2475,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2476,7 +2484,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2493,7 +2501,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2502,7 +2510,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2519,7 +2527,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2528,7 +2536,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2548,7 +2556,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2557,7 +2565,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2574,7 +2582,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2583,7 +2591,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2600,7 +2608,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2609,7 +2617,7 @@ impl crate::Unity::Mathematics::float4x4 {
         rhs: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2629,7 +2637,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))?
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2637,7 +2645,7 @@ impl crate::Unity::Mathematics::float4x4 {
         val: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2654,7 +2662,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (val))?
+            cordl_method_info.invoke_unchecked((), (val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2662,7 +2670,7 @@ impl crate::Unity::Mathematics::float4x4 {
         val: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4x4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -2679,7 +2687,7 @@ impl crate::Unity::Mathematics::float4x4 {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4x4 = unsafe {
-            method.invoke_unchecked((), (val))?
+            cordl_method_info.invoke_unchecked((), (val))?
         };
         Ok(__cordl_ret.into())
     }

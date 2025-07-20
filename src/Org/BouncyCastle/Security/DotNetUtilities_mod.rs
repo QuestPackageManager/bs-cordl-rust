@@ -46,7 +46,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -71,7 +71,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (n, _cordl_size))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (n, _cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateRSAProvider_CspParameters1(
@@ -83,7 +83,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -108,7 +108,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked((), (rp, csp))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (rp, csp))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateRSAProvider_RSAParameters0(
@@ -117,7 +117,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -137,7 +137,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked((), (rp))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (rp))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromX509Certificate(
@@ -148,7 +148,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -170,7 +170,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::X509Certificate,
-        > = unsafe { method.invoke_unchecked((), (x509Cert))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (x509Cert))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDsaKeyPair_DSA0(
@@ -181,7 +181,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -203,7 +203,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
-        > = unsafe { method.invoke_unchecked((), (dsa))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (dsa))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDsaKeyPair_DSAParameters1(
@@ -214,7 +214,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -234,7 +234,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
-        > = unsafe { method.invoke_unchecked((), (dp))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (dp))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDsaPublicKey_DSA0(
@@ -245,7 +245,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -267,7 +267,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::DsaPublicKeyParameters,
-        > = unsafe { method.invoke_unchecked((), (dsa))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (dsa))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDsaPublicKey_DSAParameters1(
@@ -278,7 +278,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -298,7 +298,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::DsaPublicKeyParameters,
-        > = unsafe { method.invoke_unchecked((), (dp))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (dp))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetKeyPair(
@@ -311,7 +311,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -333,7 +333,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
-        > = unsafe { method.invoke_unchecked((), (privateKey))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (privateKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRsaKeyPair_RSA0(
@@ -344,7 +344,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -366,7 +366,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
-        > = unsafe { method.invoke_unchecked((), (rsa))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (rsa))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRsaKeyPair_RSAParameters1(
@@ -377,7 +377,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -397,7 +397,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
-        > = unsafe { method.invoke_unchecked((), (rp))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (rp))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRsaPublicKey_RSA0(
@@ -408,7 +408,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -430,7 +430,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
-        > = unsafe { method.invoke_unchecked((), (rsa))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (rsa))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRsaPublicKey_RSAParameters1(
@@ -441,7 +441,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -461,7 +461,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
-        > = unsafe { method.invoke_unchecked((), (rp))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (rp))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -479,7 +479,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         crate::System::Security::Cryptography::RSAParameters,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -498,7 +498,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
                     })
             });
         let __cordl_ret: crate::System::Security::Cryptography::RSAParameters = unsafe {
-            method.invoke_unchecked((), (rsaKey))?
+            cordl_method_info.invoke_unchecked((), (rsaKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -510,7 +510,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         crate::System::Security::Cryptography::RSAParameters,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -529,7 +529,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
                     })
             });
         let __cordl_ret: crate::System::Security::Cryptography::RSAParameters = unsafe {
-            method.invoke_unchecked((), (privKey))?
+            cordl_method_info.invoke_unchecked((), (privKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -541,7 +541,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         crate::System::Security::Cryptography::RSAParameters,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -560,7 +560,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
                     })
             });
         let __cordl_ret: crate::System::Security::Cryptography::RSAParameters = unsafe {
-            method.invoke_unchecked((), (privKey))?
+            cordl_method_info.invoke_unchecked((), (privKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -572,7 +572,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -594,7 +594,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked((), (rsaKey))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (rsaKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToRSA_RsaKeyParameters_CspParameters1(
@@ -608,7 +608,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -635,7 +635,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked((), (rsaKey, csp))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (rsaKey, csp))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToRSA_RsaPrivateCrtKeyParameters2(
@@ -646,7 +646,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -668,7 +668,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked((), (privKey))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (privKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToRSA_RsaPrivateCrtKeyParameters_CspParameters3(
@@ -682,7 +682,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -709,7 +709,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked((), (privKey, csp))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (privKey, csp))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToRSA_RsaPrivateKeyStructure4(
@@ -720,7 +720,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -742,7 +742,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked((), (privKey))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (privKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToRSA_RsaPrivateKeyStructure_CspParameters5(
@@ -756,7 +756,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -783,7 +783,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked((), (privKey, csp))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (privKey, csp))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToX509Certificate_X509Certificate1(
@@ -796,7 +796,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -818,7 +818,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-        > = unsafe { method.invoke_unchecked((), (x509Cert))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (x509Cert))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToX509Certificate_X509CertificateStructure0(
@@ -831,7 +831,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -853,14 +853,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-        > = unsafe { method.invoke_unchecked((), (x509Struct))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (x509Struct))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -873,7 +873,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

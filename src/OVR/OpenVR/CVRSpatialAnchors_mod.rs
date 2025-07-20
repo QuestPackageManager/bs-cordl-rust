@@ -45,7 +45,7 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
         pHandleOut: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRSpatialAnchorError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -67,7 +67,7 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRSpatialAnchorError = unsafe {
-            method.invoke_unchecked(self, (pchDescriptor, pHandleOut))?
+            cordl_method_info.invoke_unchecked(self, (pchDescriptor, pHandleOut))?
         };
         Ok(__cordl_ret.into())
     }
@@ -79,7 +79,7 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
         pHandleOut: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRSpatialAnchorError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -103,7 +103,8 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRSpatialAnchorError = unsafe {
-            method.invoke_unchecked(self, (unDeviceIndex, eOrigin, pPose, pHandleOut))?
+            cordl_method_info
+                .invoke_unchecked(self, (unDeviceIndex, eOrigin, pPose, pHandleOut))?
         };
         Ok(__cordl_ret.into())
     }
@@ -114,7 +115,7 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
         punDescriptorBufferLenInOut: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRSpatialAnchorError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -137,7 +138,7 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRSpatialAnchorError = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (unHandle, pchDescriptorOut, punDescriptorBufferLenInOut),
@@ -154,7 +155,7 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRSpatialAnchorError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -177,7 +178,7 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRSpatialAnchorError = unsafe {
-            method.invoke_unchecked(self, (unHandle, eOrigin, pPoseOut))?
+            cordl_method_info.invoke_unchecked(self, (unHandle, eOrigin, pPoseOut))?
         };
         Ok(__cordl_ret.into())
     }
@@ -195,7 +196,7 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
         pInterface: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -212,7 +213,7 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pInterface))?
+            cordl_method_info.invoke_unchecked(self, (pInterface))?
         };
         Ok(__cordl_ret.into())
     }

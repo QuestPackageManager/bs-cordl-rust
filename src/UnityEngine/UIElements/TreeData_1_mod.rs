@@ -146,7 +146,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -167,7 +167,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (item, parentId, childIndex))?
+            cordl_method_info.invoke_unchecked(self, (item, parentId, childIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -185,7 +185,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -209,7 +209,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (items, isRoot))?
+            cordl_method_info.invoke_unchecked(self, (items, isRoot))?
         };
         Ok(__cordl_ret.into())
     }
@@ -224,7 +224,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -241,7 +241,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::TreeViewItemData_1<T> = unsafe {
-            method.invoke_unchecked(self, (id))?
+            cordl_method_info.invoke_unchecked(self, (id))?
         };
         Ok(__cordl_ret.into())
     }
@@ -251,7 +251,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("GetParentId")
@@ -263,7 +263,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (id))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (id))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HasAncestor(
@@ -276,7 +278,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32), bool, 2usize>("HasAncestor")
@@ -289,7 +291,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (childId, ancestorId))?
+            cordl_method_info.invoke_unchecked(self, (childId, ancestorId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -304,7 +306,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -321,7 +323,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (id, newParentId, childIndex))?
+            cordl_method_info.invoke_unchecked(self, (id, newParentId, childIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -338,7 +340,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -359,7 +361,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (rootItems))?
+            cordl_method_info.invoke_unchecked(self, (rootItems))?
         };
         Ok(__cordl_ret.into())
     }
@@ -373,7 +375,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -390,7 +392,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (id, parentId))?
+            cordl_method_info.invoke_unchecked(self, (id, parentId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -403,7 +405,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -420,7 +422,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (current))?
+            cordl_method_info.invoke_unchecked(self, (current))?
         };
         Ok(__cordl_ret.into())
     }
@@ -437,7 +439,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -458,7 +460,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (rootItems))?
+            cordl_method_info.invoke_unchecked(self, (rootItems))?
         };
         Ok(__cordl_ret.into())
     }
@@ -474,7 +476,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -494,7 +496,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

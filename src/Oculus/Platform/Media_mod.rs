@@ -54,7 +54,7 @@ impl crate::Oculus::Platform::Media {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -91,7 +91,8 @@ impl crate::Oculus::Platform::Media {
                 >,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (postTextSuggestion, filePath, contentType))?
+            cordl_method_info
+                .invoke_unchecked((), (postTextSuggestion, filePath, contentType))?
         };
         Ok(__cordl_ret.into())
     }

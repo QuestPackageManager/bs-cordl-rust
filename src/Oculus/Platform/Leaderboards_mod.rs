@@ -50,7 +50,7 @@ impl crate::Oculus::Platform::Leaderboards {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -78,7 +78,7 @@ impl crate::Oculus::Platform::Leaderboards {
                     crate::Oculus::Platform::Models::LeaderboardList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (leaderboardName))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (leaderboardName))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEntries(
@@ -96,7 +96,7 @@ impl crate::Oculus::Platform::Leaderboards {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -132,7 +132,8 @@ impl crate::Oculus::Platform::Leaderboards {
                 >,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (leaderboardName, limit, filter, startAt))?
+            cordl_method_info
+                .invoke_unchecked((), (leaderboardName, limit, filter, startAt))?
         };
         Ok(__cordl_ret.into())
     }
@@ -150,7 +151,7 @@ impl crate::Oculus::Platform::Leaderboards {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -184,7 +185,9 @@ impl crate::Oculus::Platform::Leaderboards {
                     crate::Oculus::Platform::Models::LeaderboardEntryList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (leaderboardName, limit, afterRank))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (leaderboardName, limit, afterRank))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetEntriesByIds(
@@ -202,7 +205,7 @@ impl crate::Oculus::Platform::Leaderboards {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -240,7 +243,8 @@ impl crate::Oculus::Platform::Leaderboards {
                 >,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (leaderboardName, limit, startAt, userIDs))?
+            cordl_method_info
+                .invoke_unchecked((), (leaderboardName, limit, startAt, userIDs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -258,7 +262,7 @@ impl crate::Oculus::Platform::Leaderboards {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -288,7 +292,7 @@ impl crate::Oculus::Platform::Leaderboards {
                     crate::Oculus::Platform::Models::LeaderboardEntryList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (list))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextLeaderboardListPage(
@@ -303,7 +307,7 @@ impl crate::Oculus::Platform::Leaderboards {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -333,7 +337,7 @@ impl crate::Oculus::Platform::Leaderboards {
                     crate::Oculus::Platform::Models::LeaderboardList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (list))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPreviousEntries(
@@ -350,7 +354,7 @@ impl crate::Oculus::Platform::Leaderboards {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -380,7 +384,7 @@ impl crate::Oculus::Platform::Leaderboards {
                     crate::Oculus::Platform::Models::LeaderboardEntryList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (list))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteEntry(
@@ -392,7 +396,7 @@ impl crate::Oculus::Platform::Leaderboards {
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request_1<bool>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -422,7 +426,7 @@ impl crate::Oculus::Platform::Leaderboards {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<bool>,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (leaderboardName, score, extraData, forceUpdate))?
         };
         Ok(__cordl_ret.into())
@@ -437,7 +441,7 @@ impl crate::Oculus::Platform::Leaderboards {
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request_1<bool>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -468,7 +472,7 @@ impl crate::Oculus::Platform::Leaderboards {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<bool>,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (leaderboardName, score, supplementaryMetric, extraData, forceUpdate),

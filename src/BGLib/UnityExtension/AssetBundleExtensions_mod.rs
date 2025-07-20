@@ -49,7 +49,7 @@ impl crate::BGLib::UnityExtension::AssetBundleExtensions {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -71,7 +71,9 @@ impl crate::BGLib::UnityExtension::AssetBundleExtensions {
             });
         let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
-        > = unsafe { method.invoke_unchecked((), (assetBundleCreateRequest))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (assetBundleCreateRequest))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetAwaiter_ResourceRequest1(
@@ -82,7 +84,7 @@ impl crate::BGLib::UnityExtension::AssetBundleExtensions {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -102,7 +104,7 @@ impl crate::BGLib::UnityExtension::AssetBundleExtensions {
             });
         let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-        > = unsafe { method.invoke_unchecked((), (resourceRequest))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (resourceRequest))? };
         Ok(__cordl_ret.into())
     }
 }

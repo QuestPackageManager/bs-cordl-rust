@@ -47,7 +47,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConver
         quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -67,7 +67,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConver
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::BeatSaber::BeatAvatarSDK::AvatarData,
-        > = unsafe { method.invoke_unchecked((), (multiplayerAvatarsData))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (multiplayerAvatarsData))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateMultiplayerAvatarsData(
@@ -76,7 +76,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConver
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::MultiplayerAvatarData> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -95,7 +95,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConver
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::MultiplayerAvatarData = unsafe {
-            method.invoke_unchecked((), (avatarData))?
+            cordl_method_info.invoke_unchecked((), (avatarData))?
         };
         Ok(__cordl_ret.into())
     }

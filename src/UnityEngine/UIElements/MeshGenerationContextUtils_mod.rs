@@ -52,7 +52,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -76,7 +76,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (visualElement, rectParams))?
+            cordl_method_info.invoke_unchecked((), (visualElement, rectParams))?
         };
         Ok(__cordl_ret.into())
     }
@@ -85,7 +85,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
         length: crate::UnityEngine::UIElements::Length,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -105,7 +105,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (borderRectSize, length))?
+            cordl_method_info.invoke_unchecked((), (borderRectSize, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -117,7 +117,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
         bottomRight: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -142,7 +142,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (ve, topLeft, bottomLeft, topRight, bottomRight))?
         };
         Ok(__cordl_ret.into())
@@ -154,7 +154,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
         rectParams: crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -176,7 +176,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mgc, rectParams))?
+            cordl_method_info.invoke_unchecked((), (mgc, rectParams))?
         };
         Ok(__cordl_ret.into())
     }
@@ -187,7 +187,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
         te: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -211,7 +211,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mgc, te))?
+            cordl_method_info.invoke_unchecked((), (mgc, te))?
         };
         Ok(__cordl_ret.into())
     }
@@ -353,7 +353,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
         crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -370,7 +370,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -518,7 +518,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         uvOut: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -543,7 +543,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -568,7 +568,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         uvOut: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -592,7 +592,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (rect, uv, texture, scaleMode, rectOut, uvOut))?
+            cordl_method_info
+                .invoke_unchecked((), (rect, uv, texture, scaleMode, rectOut, uvOut))?
         };
         Ok(__cordl_ret.into())
     }
@@ -601,7 +602,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         rotation: crate::UnityEngine::SpritePackingRotation,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -621,7 +622,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     })
             });
         let __cordl_ret: crate::UnityEngine::Rect = unsafe {
-            method.invoke_unchecked((), (uv, rotation))?
+            cordl_method_info.invoke_unchecked((), (uv, rotation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -629,7 +630,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -646,7 +647,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     })
             });
         let __cordl_ret: crate::UnityEngine::Rect = unsafe {
-            method.invoke_unchecked((), (sprite))?
+            cordl_method_info.invoke_unchecked((), (sprite))?
         };
         Ok(__cordl_ret.into())
     }
@@ -654,7 +655,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -671,13 +672,13 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     })
             });
         let __cordl_ret: crate::UnityEngine::Rect = unsafe {
-            method.invoke_unchecked((), (sprite))?
+            cordl_method_info.invoke_unchecked((), (sprite))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HasRadius(&mut self, epsilon: f32) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), bool, 1usize>("HasRadius")
@@ -689,12 +690,14 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (epsilon))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (epsilon))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HasSlices(&mut self, epsilon: f32) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), bool, 1usize>("HasSlices")
@@ -706,7 +709,9 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (epsilon))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (epsilon))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MakeSprite(
@@ -722,7 +727,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -748,7 +753,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -775,7 +780,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -798,7 +803,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams = unsafe {
-            method.invoke_unchecked((), (rect, uv, texture, scaleMode, panelContext))?
+            cordl_method_info
+                .invoke_unchecked((), (rect, uv, texture, scaleMode, panelContext))?
         };
         Ok(__cordl_ret.into())
     }
@@ -814,7 +820,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -839,7 +845,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (rect, uv, vectorImage, scaleMode, panelContext))?
         };
         Ok(__cordl_ret.into())
@@ -849,7 +855,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         b: crate::UnityEngine::Rect,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -866,7 +872,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     })
             });
         let __cordl_ret: crate::UnityEngine::Rect = unsafe {
-            method.invoke_unchecked((), (a, b))?
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -877,7 +883,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -894,7 +900,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams = unsafe {
-            method.invoke_unchecked(self, (uvRegion))?
+            cordl_method_info.invoke_unchecked(self, (uvRegion))?
         };
         Ok(__cordl_ret.into())
     }

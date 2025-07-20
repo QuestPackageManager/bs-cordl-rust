@@ -45,7 +45,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -65,7 +65,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequest,
-        > = unsafe { method.invoke_unchecked((), (uri))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (uri))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAssetBundle_Il2CppString_u32_2(
@@ -75,7 +75,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -100,7 +100,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequest,
-        > = unsafe { method.invoke_unchecked((), (uri, crc))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (uri, crc))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAssetBundle_Uri1(
@@ -109,7 +109,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -129,7 +129,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequest,
-        > = unsafe { method.invoke_unchecked((), (uri))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (uri))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAssetBundle_Uri_CachedAssetBundle_u32_4(
@@ -140,7 +140,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -164,7 +164,9 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequest,
-        > = unsafe { method.invoke_unchecked((), (uri, cachedAssetBundle, crc))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (uri, cachedAssetBundle, crc))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetAssetBundle_Uri_u32_3(
@@ -174,7 +176,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -194,7 +196,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequest,
-        > = unsafe { method.invoke_unchecked((), (uri, crc))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (uri, crc))? };
         Ok(__cordl_ret.into())
     }
 }

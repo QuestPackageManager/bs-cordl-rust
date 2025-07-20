@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::MathfExtra {
         precision: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32, f32), bool, 3usize>("Approximately")
@@ -57,13 +57,13 @@ impl crate::GlobalNamespace::MathfExtra {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (a, b, precision))?
+            cordl_method_info.invoke_unchecked((), (a, b, precision))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn MaxAbs(a: f32, b: f32) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32), f32, 2usize>("MaxAbs")
@@ -75,12 +75,14 @@ impl crate::GlobalNamespace::MathfExtra {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (a, b))? };
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Repeat(t: i32, length: i32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), i32, 2usize>("Repeat")
@@ -92,7 +94,9 @@ impl crate::GlobalNamespace::MathfExtra {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (t, length))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (t, length))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Round_Vector4_1(
@@ -100,7 +104,7 @@ impl crate::GlobalNamespace::MathfExtra {
         digits: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -117,13 +121,13 @@ impl crate::GlobalNamespace::MathfExtra {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            method.invoke_unchecked((), (value, digits))?
+            cordl_method_info.invoke_unchecked((), (value, digits))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Round_f32_0(value: f32, decimals: i32) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, i32), f32, 2usize>("Round")
@@ -136,7 +140,7 @@ impl crate::GlobalNamespace::MathfExtra {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (value, decimals))?
+            cordl_method_info.invoke_unchecked((), (value, decimals))?
         };
         Ok(__cordl_ret.into())
     }
@@ -145,7 +149,7 @@ impl crate::GlobalNamespace::MathfExtra {
         to: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -161,7 +165,9 @@ impl crate::GlobalNamespace::MathfExtra {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (from, to))? };
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (from, to))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _cordl_Mod_f32_f32_0(
@@ -169,7 +175,7 @@ impl crate::GlobalNamespace::MathfExtra {
         _cordl_mod: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32), f32, 2usize>("Mod")
@@ -182,7 +188,7 @@ impl crate::GlobalNamespace::MathfExtra {
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (value, _cordl_mod))?
+            cordl_method_info.invoke_unchecked((), (value, _cordl_mod))?
         };
         Ok(__cordl_ret.into())
     }
@@ -191,7 +197,7 @@ impl crate::GlobalNamespace::MathfExtra {
         _cordl_mod: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), i32, 2usize>("Mod")
@@ -204,7 +210,7 @@ impl crate::GlobalNamespace::MathfExtra {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (value, _cordl_mod))?
+            cordl_method_info.invoke_unchecked((), (value, _cordl_mod))?
         };
         Ok(__cordl_ret.into())
     }

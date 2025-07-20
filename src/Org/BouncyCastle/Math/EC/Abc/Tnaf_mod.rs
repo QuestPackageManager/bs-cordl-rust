@@ -54,7 +54,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -87,7 +87,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
-        > = unsafe { method.invoke_unchecked((), (k, s, vm, a, m, c))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (k, s, vm, a, m, c))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLucas(
@@ -102,7 +102,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -128,7 +128,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
-        > = unsafe { method.invoke_unchecked((), (mu, k, doV))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (mu, k, doV))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMu_AbstractF2mCurve0(
@@ -137,7 +137,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         >,
     ) -> quest_hook::libil2cpp::Result<i8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -155,7 +155,9 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
                         )
                     })
             });
-        let __cordl_ret: i8 = unsafe { method.invoke_unchecked((), (curve))? };
+        let __cordl_ret: i8 = unsafe {
+            cordl_method_info.invoke_unchecked((), (curve))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetMu_ECFieldElement1(
@@ -164,7 +166,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         >,
     ) -> quest_hook::libil2cpp::Result<i8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -182,12 +184,14 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
                         )
                     })
             });
-        let __cordl_ret: i8 = unsafe { method.invoke_unchecked((), (curveA))? };
+        let __cordl_ret: i8 = unsafe {
+            cordl_method_info.invoke_unchecked((), (curveA))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetMu_i32_2(curveA: i32) -> quest_hook::libil2cpp::Result<i8> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i8, 1usize>("GetMu")
@@ -199,7 +203,9 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
                         )
                     })
             });
-        let __cordl_ret: i8 = unsafe { method.invoke_unchecked((), (curveA))? };
+        let __cordl_ret: i8 = unsafe {
+            cordl_method_info.invoke_unchecked((), (curveA))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetPreComp(
@@ -217,7 +223,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -250,14 +256,14 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
                     crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (p, a))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (p, a))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetShiftsForCofactor(
         h: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -275,7 +281,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (h))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (h))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSi_AbstractF2mCurve0(
@@ -290,7 +296,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -318,7 +324,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
-        > = unsafe { method.invoke_unchecked((), (curve))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (curve))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSi_i32_i32_BigInteger1(
@@ -333,7 +339,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -365,7 +371,9 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
-        > = unsafe { method.invoke_unchecked((), (fieldSize, curveA, cofactor))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (fieldSize, curveA, cofactor))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTw(
@@ -375,7 +383,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -395,7 +403,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (mu, w))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (mu, w))? };
         Ok(__cordl_ret.into())
     }
     pub fn MultiplyFromTnaf(
@@ -407,7 +415,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -434,7 +442,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
-        > = unsafe { method.invoke_unchecked((), (p, u))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (p, u))? };
         Ok(__cordl_ret.into())
     }
     pub fn MultiplyRTnaf(
@@ -446,7 +454,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -473,7 +481,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
-        > = unsafe { method.invoke_unchecked((), (p, k))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (p, k))? };
         Ok(__cordl_ret.into())
     }
     pub fn MultiplyTnaf(
@@ -487,7 +495,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -514,7 +522,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
-        > = unsafe { method.invoke_unchecked((), (p, lambda))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (p, lambda))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -538,7 +546,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -566,7 +574,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
-        > = unsafe { method.invoke_unchecked((), (mu, u, v))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (mu, u, v))? };
         Ok(__cordl_ret.into())
     }
     pub fn Norm_ZTauElement0(
@@ -578,7 +586,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -603,7 +611,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (mu, lambda))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (mu, lambda))? };
         Ok(__cordl_ret.into())
     }
     pub fn PartModReduction(
@@ -621,7 +629,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -656,7 +664,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement,
-        > = unsafe { method.invoke_unchecked((), (k, m, a, s, mu, c))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (k, m, a, s, mu, c))? };
         Ok(__cordl_ret.into())
     }
     pub fn Round(
@@ -671,7 +679,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -699,7 +707,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement,
-        > = unsafe { method.invoke_unchecked((), (lambda0, lambda1, mu))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (lambda0, lambda1, mu))? };
         Ok(__cordl_ret.into())
     }
     pub fn Tau(
@@ -710,7 +718,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -732,7 +740,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
-        > = unsafe { method.invoke_unchecked((), (p))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (p))? };
         Ok(__cordl_ret.into())
     }
     pub fn TauAdicNaf(
@@ -744,7 +752,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -769,7 +777,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i8>,
-        > = unsafe { method.invoke_unchecked((), (mu, lambda))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (mu, lambda))? };
         Ok(__cordl_ret.into())
     }
     pub fn TauAdicWNaf(
@@ -791,7 +799,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i8>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -831,7 +839,8 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i8>,
         > = unsafe {
-            method.invoke_unchecked((), (mu, lambda, width, pow2w, tw, alpha))?
+            cordl_method_info
+                .invoke_unchecked((), (mu, lambda, width, pow2w, tw, alpha))?
         };
         Ok(__cordl_ret.into())
     }
@@ -839,7 +848,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -852,7 +861,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

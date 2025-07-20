@@ -72,7 +72,7 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -91,7 +91,7 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (call))?
+            cordl_method_info.invoke_unchecked(self, (call))?
         };
         Ok(__cordl_ret.into())
     }
@@ -107,7 +107,7 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -130,7 +130,7 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodInfo,
-        > = unsafe { method.invoke_unchecked(self, (name, targetObjType))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (name, targetObjType))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDelegate_Il2CppObject_MethodInfo0(
@@ -145,7 +145,7 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -172,7 +172,7 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Events::BaseInvokableCall,
-        > = unsafe { method.invoke_unchecked(self, (target, theFunction))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (target, theFunction))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDelegate_UnityAction_1_1(
@@ -185,7 +185,7 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -207,7 +207,7 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Events::BaseInvokableCall,
-        > = unsafe { method.invoke_unchecked((), (action))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (action))? };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -219,7 +219,7 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(T0), quest_hook::libil2cpp::Void, 1usize>("Invoke")
@@ -232,7 +232,7 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (arg0))?
+            cordl_method_info.invoke_unchecked(self, (arg0))?
         };
         Ok(__cordl_ret.into())
     }
@@ -256,7 +256,7 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -275,7 +275,7 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (call))?
+            cordl_method_info.invoke_unchecked(self, (call))?
         };
         Ok(__cordl_ret.into())
     }
@@ -285,7 +285,7 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -298,7 +298,7 @@ impl<T0: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::UnityEvent_1<T
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

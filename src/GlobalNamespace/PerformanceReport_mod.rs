@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::PerformanceReport {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -71,7 +71,9 @@ impl crate::GlobalNamespace::PerformanceReport {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (timestamp, sceneSetupData))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (timestamp, sceneSetupData))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateTimestamp(
@@ -80,7 +82,7 @@ impl crate::GlobalNamespace::PerformanceReport {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -98,7 +100,7 @@ impl crate::GlobalNamespace::PerformanceReport {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (timestamp))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (timestamp))? };
         Ok(__cordl_ret.into())
     }
     pub fn ListAggregatedFps(
@@ -110,7 +112,7 @@ impl crate::GlobalNamespace::PerformanceReport {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -133,7 +135,9 @@ impl crate::GlobalNamespace::PerformanceReport {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (frameDurations, minWindowSize))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (frameDurations, minWindowSize))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ListFrameDurations(
@@ -144,7 +148,7 @@ impl crate::GlobalNamespace::PerformanceReport {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -164,7 +168,7 @@ impl crate::GlobalNamespace::PerformanceReport {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (frameDurations))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (frameDurations))? };
         Ok(__cordl_ret.into())
     }
     pub fn ListStat_Il2CppArray0(
@@ -173,7 +177,7 @@ impl crate::GlobalNamespace::PerformanceReport {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -193,7 +197,7 @@ impl crate::GlobalNamespace::PerformanceReport {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (statList))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (statList))? };
         Ok(__cordl_ret.into())
     }
     pub fn ListStat_Il2CppArray1(
@@ -202,7 +206,7 @@ impl crate::GlobalNamespace::PerformanceReport {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -222,7 +226,7 @@ impl crate::GlobalNamespace::PerformanceReport {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (statList))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (statList))? };
         Ok(__cordl_ret.into())
     }
 }

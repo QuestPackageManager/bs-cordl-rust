@@ -48,7 +48,7 @@ impl crate::UnityEngine::ProBuilder::Clipping {
         crate::UnityEngine::ProBuilder::Clipping_OutCode,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -65,7 +65,7 @@ impl crate::UnityEngine::ProBuilder::Clipping {
                     })
             });
         let __cordl_ret: crate::UnityEngine::ProBuilder::Clipping_OutCode = unsafe {
-            method.invoke_unchecked((), (rect, x, y))?
+            cordl_method_info.invoke_unchecked((), (rect, x, y))?
         };
         Ok(__cordl_ret.into())
     }
@@ -77,7 +77,7 @@ impl crate::UnityEngine::ProBuilder::Clipping {
         y1: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -94,7 +94,7 @@ impl crate::UnityEngine::ProBuilder::Clipping {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (rect, x0, y0, x1, y1))?
+            cordl_method_info.invoke_unchecked((), (rect, x0, y0, x1, y1))?
         };
         Ok(__cordl_ret.into())
     }

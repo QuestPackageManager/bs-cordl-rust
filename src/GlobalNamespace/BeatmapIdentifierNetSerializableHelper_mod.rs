@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapKey> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::BeatmapKey = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (beatmapKeySerializable, beatmapCharacteristicCollection),
@@ -87,7 +87,7 @@ impl crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -107,7 +107,7 @@ impl crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapKeyNetSerializable,
-        > = unsafe { method.invoke_unchecked((), (beatmapKey))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (beatmapKey))? };
         Ok(__cordl_ret.into())
     }
 }

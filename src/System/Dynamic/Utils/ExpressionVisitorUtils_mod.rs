@@ -54,7 +54,7 @@ impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -87,7 +87,7 @@ impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
-        > = unsafe { method.invoke_unchecked((), (visitor, nodes))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (visitor, nodes))? };
         Ok(__cordl_ret.into())
     }
     pub fn VisitBlockExpressions(
@@ -105,7 +105,7 @@ impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -138,7 +138,7 @@ impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
-        > = unsafe { method.invoke_unchecked((), (visitor, block))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (visitor, block))? };
         Ok(__cordl_ret.into())
     }
     pub fn VisitParameters(
@@ -159,7 +159,7 @@ impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -197,7 +197,9 @@ impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {
                     crate::System::Linq::Expressions::ParameterExpression,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (visitor, nodes, callerName))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (visitor, nodes, callerName))?
+        };
         Ok(__cordl_ret.into())
     }
 }

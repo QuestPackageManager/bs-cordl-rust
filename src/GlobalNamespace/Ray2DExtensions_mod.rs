@@ -45,7 +45,7 @@ impl crate::GlobalNamespace::Ray2DExtensions {
         distances: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -69,7 +69,8 @@ impl crate::GlobalNamespace::Ray2DExtensions {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (ray, circleCenter, radius, distances))?
+            cordl_method_info
+                .invoke_unchecked((), (ray, circleCenter, radius, distances))?
         };
         Ok(__cordl_ret.into())
     }

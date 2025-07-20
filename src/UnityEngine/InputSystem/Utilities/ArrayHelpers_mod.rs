@@ -54,7 +54,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -80,7 +80,8 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (array, length, values, capacityIncrement))?
+            cordl_method_info
+                .invoke_unchecked((), (array, length, values, capacityIncrement))?
         };
         Ok(__cordl_ret.into())
     }
@@ -95,7 +96,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -120,7 +121,9 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array, values))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (array, values))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AppendWithCapacity_Allocator1<TValue>(
@@ -137,7 +140,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -162,7 +165,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (array, count, value, capacityIncrement, allocator),
@@ -183,7 +186,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -209,7 +212,8 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (array, count, value, capacityIncrement))?
+            cordl_method_info
+                .invoke_unchecked((), (array, count, value, capacityIncrement))?
         };
         Ok(__cordl_ret.into())
     }
@@ -226,7 +230,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -251,7 +255,9 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array, values))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (array, values))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Append_TValue0<TValue>(
@@ -265,7 +271,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -288,7 +294,9 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array, value))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (array, value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Clear_ByRefMut2<TValue>(
@@ -300,7 +308,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -322,7 +330,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, count))?
+            cordl_method_info.invoke_unchecked((), (array, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -334,7 +342,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -353,7 +361,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array))?
+            cordl_method_info.invoke_unchecked((), (array))?
         };
         Ok(__cordl_ret.into())
     }
@@ -366,7 +374,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -388,7 +396,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, count))?
+            cordl_method_info.invoke_unchecked((), (array, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -402,7 +410,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -424,7 +432,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<TValue>,
-        > = unsafe { method.invoke_unchecked((), (array))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn Contains<TValue>(
@@ -436,7 +444,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -457,7 +465,9 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (array, value))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (array, value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsReference_TValue0<TValue>(
@@ -469,7 +479,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -490,7 +500,9 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (array, value))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (array, value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsReference_i32_TSecond1<TFirst, TSecond>(
@@ -505,7 +517,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -528,7 +540,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (array, count, value))?
+            cordl_method_info.invoke_unchecked((), (array, count, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -545,7 +557,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -569,7 +581,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (array, startIndex, count, value))?
+            cordl_method_info.invoke_unchecked((), (array, startIndex, count, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -583,7 +595,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -605,7 +617,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<TValue>,
-        > = unsafe { method.invoke_unchecked((), (array))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn DuplicateWithCapacity<TValue>(
@@ -621,7 +633,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -647,7 +659,8 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, count, capacity, capacityIncrement))?
+            cordl_method_info
+                .invoke_unchecked((), (array, count, capacity, capacityIncrement))?
         };
         Ok(__cordl_ret.into())
     }
@@ -664,7 +677,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -690,7 +703,8 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, count, capacity, capacityIncrement))?
+            cordl_method_info
+                .invoke_unchecked((), (array, count, capacity, capacityIncrement))?
         };
         Ok(__cordl_ret.into())
     }
@@ -705,7 +719,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -728,7 +742,9 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (array, value))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (array, value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EraseAt<TValue>(
@@ -742,7 +758,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -766,7 +782,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, index))?
+            cordl_method_info.invoke_unchecked((), (array, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -780,7 +796,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -803,7 +819,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, count, index))?
+            cordl_method_info.invoke_unchecked((), (array, count, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -817,7 +833,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -840,7 +856,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, count, index))?
+            cordl_method_info.invoke_unchecked((), (array, count, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -854,7 +870,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -875,7 +891,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, count, index))?
+            cordl_method_info.invoke_unchecked((), (array, count, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -892,7 +908,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -918,7 +934,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, length, index, count))?
+            cordl_method_info.invoke_unchecked((), (array, length, index, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -934,7 +950,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -957,7 +973,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (array, count, allocator))?
+            cordl_method_info.invoke_unchecked((), (array, count, allocator))?
         };
         Ok(__cordl_ret.into())
     }
@@ -972,7 +988,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -995,7 +1011,9 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array, count))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (array, count))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GrowWithCapacity_Allocator1<TValue>(
@@ -1012,7 +1030,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1037,7 +1055,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (array, count, growBy, capacityIncrement, allocator),
@@ -1058,7 +1076,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1084,7 +1102,8 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (array, count, growBy, capacityIncrement))?
+            cordl_method_info
+                .invoke_unchecked((), (array, count, growBy, capacityIncrement))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1098,7 +1117,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1121,7 +1140,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (first, index, count))?
+            cordl_method_info.invoke_unchecked((), (first, index, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1135,7 +1154,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1160,7 +1179,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (first, second, count))?
+            cordl_method_info.invoke_unchecked((), (first, second, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1176,7 +1195,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1199,7 +1218,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (array, value, count))?
+            cordl_method_info.invoke_unchecked((), (array, value, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1216,7 +1235,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1240,7 +1259,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (array, value, startIndex, count))?
+            cordl_method_info.invoke_unchecked((), (array, value, startIndex, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1255,7 +1274,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1279,7 +1298,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (array, value, startIndex, count))?
+            cordl_method_info.invoke_unchecked((), (array, value, startIndex, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1292,7 +1311,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1314,7 +1333,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (array, predicate))?
+            cordl_method_info.invoke_unchecked((), (array, predicate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1329,7 +1348,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1355,7 +1374,8 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (array, predicate, startIndex, count))?
+            cordl_method_info
+                .invoke_unchecked((), (array, predicate, startIndex, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1370,7 +1390,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1394,7 +1414,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (array, value, startIndex, count))?
+            cordl_method_info.invoke_unchecked((), (array, value, startIndex, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1410,7 +1430,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1435,7 +1455,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, index, value))?
+            cordl_method_info.invoke_unchecked((), (array, index, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1453,7 +1473,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1480,7 +1500,8 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, count, index, value, capacityIncrement))?
+            cordl_method_info
+                .invoke_unchecked((), (array, count, index, value, capacityIncrement))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1495,7 +1516,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1520,7 +1541,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<TValue>,
-        > = unsafe { method.invoke_unchecked((), (value, values))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (value, values))? };
         Ok(__cordl_ret.into())
     }
     pub fn LengthSafe<TValue>(
@@ -1531,7 +1552,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1549,7 +1570,9 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (array))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Merge_IEqualityComparer_1_1<TValue>(
@@ -1566,7 +1589,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1598,7 +1621,9 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<TValue>,
-        > = unsafe { method.invoke_unchecked((), (first, second, comparer))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (first, second, comparer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Merge_Il2CppArray_Il2CppArray0<TValue>(
@@ -1612,7 +1637,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1639,7 +1664,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<TValue>,
-        > = unsafe { method.invoke_unchecked((), (first, second))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (first, second))? };
         Ok(__cordl_ret.into())
     }
     pub fn MoveSlice<TValue>(
@@ -1653,7 +1678,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1677,7 +1702,8 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, sourceIndex, destinationIndex, count))?
+            cordl_method_info
+                .invoke_unchecked((), (array, sourceIndex, destinationIndex, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1693,7 +1719,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1718,7 +1744,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, index, valueFn))?
+            cordl_method_info.invoke_unchecked((), (array, index, valueFn))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1734,7 +1760,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1757,7 +1783,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, newSize, allocator))?
+            cordl_method_info.invoke_unchecked((), (array, newSize, allocator))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1774,7 +1800,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1799,7 +1825,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<TNew>,
-        > = unsafe { method.invoke_unchecked((), (array, converter))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (array, converter))? };
         Ok(__cordl_ret.into())
     }
     pub fn Swap<TValue>(
@@ -1811,7 +1837,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1831,7 +1857,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (first, second))?
+            cordl_method_info.invoke_unchecked((), (first, second))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1845,7 +1871,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1868,7 +1894,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, index1, index2))?
+            cordl_method_info.invoke_unchecked((), (array, index1, index2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1882,7 +1908,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1899,7 +1925,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, index1, index2))?
+            cordl_method_info.invoke_unchecked((), (array, index1, index2))?
         };
         Ok(__cordl_ret.into())
     }

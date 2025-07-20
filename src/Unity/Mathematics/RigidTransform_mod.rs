@@ -105,7 +105,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         angle: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -122,7 +122,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (axis, angle))?
+            cordl_method_info.invoke_unchecked((), (axis, angle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -131,7 +131,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -147,7 +147,9 @@ impl crate::Unity::Mathematics::RigidTransform {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (x))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (x))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_RigidTransform0(
@@ -155,7 +157,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         x: crate::Unity::Mathematics::RigidTransform,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -171,7 +173,9 @@ impl crate::Unity::Mathematics::RigidTransform {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (x))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (x))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EulerXYZ_f32_f32_f32_1(
@@ -180,7 +184,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -197,7 +201,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (x, y, z))?
+            cordl_method_info.invoke_unchecked((), (x, y, z))?
         };
         Ok(__cordl_ret.into())
     }
@@ -205,7 +209,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         xyz: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -222,7 +226,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (xyz))?
+            cordl_method_info.invoke_unchecked((), (xyz))?
         };
         Ok(__cordl_ret.into())
     }
@@ -232,7 +236,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -249,7 +253,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (x, y, z))?
+            cordl_method_info.invoke_unchecked((), (x, y, z))?
         };
         Ok(__cordl_ret.into())
     }
@@ -257,7 +261,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         xyz: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -274,7 +278,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (xyz))?
+            cordl_method_info.invoke_unchecked((), (xyz))?
         };
         Ok(__cordl_ret.into())
     }
@@ -284,7 +288,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -301,7 +305,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (x, y, z))?
+            cordl_method_info.invoke_unchecked((), (x, y, z))?
         };
         Ok(__cordl_ret.into())
     }
@@ -309,7 +313,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         xyz: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -326,7 +330,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (xyz))?
+            cordl_method_info.invoke_unchecked((), (xyz))?
         };
         Ok(__cordl_ret.into())
     }
@@ -336,7 +340,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -353,7 +357,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (x, y, z))?
+            cordl_method_info.invoke_unchecked((), (x, y, z))?
         };
         Ok(__cordl_ret.into())
     }
@@ -361,7 +365,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         xyz: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -378,7 +382,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (xyz))?
+            cordl_method_info.invoke_unchecked((), (xyz))?
         };
         Ok(__cordl_ret.into())
     }
@@ -388,7 +392,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -405,7 +409,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (x, y, z))?
+            cordl_method_info.invoke_unchecked((), (x, y, z))?
         };
         Ok(__cordl_ret.into())
     }
@@ -413,7 +417,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         xyz: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -430,7 +434,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (xyz))?
+            cordl_method_info.invoke_unchecked((), (xyz))?
         };
         Ok(__cordl_ret.into())
     }
@@ -440,7 +444,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -457,7 +461,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (x, y, z))?
+            cordl_method_info.invoke_unchecked((), (x, y, z))?
         };
         Ok(__cordl_ret.into())
     }
@@ -465,7 +469,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         xyz: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -482,7 +486,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (xyz))?
+            cordl_method_info.invoke_unchecked((), (xyz))?
         };
         Ok(__cordl_ret.into())
     }
@@ -493,7 +497,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         order: crate::Unity::Mathematics::math_RotationOrder,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -510,7 +514,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (x, y, z, order))?
+            cordl_method_info.invoke_unchecked((), (x, y, z, order))?
         };
         Ok(__cordl_ret.into())
     }
@@ -519,7 +523,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         order: crate::Unity::Mathematics::math_RotationOrder,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -539,13 +543,13 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (xyz, order))?
+            cordl_method_info.invoke_unchecked((), (xyz, order))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
@@ -557,14 +561,14 @@ impl crate::Unity::Mathematics::RigidTransform {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RotateX(
         angle: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -581,7 +585,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (angle))?
+            cordl_method_info.invoke_unchecked((), (angle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -589,7 +593,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         angle: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -606,7 +610,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (angle))?
+            cordl_method_info.invoke_unchecked((), (angle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -614,7 +618,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         angle: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -631,7 +635,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (angle))?
+            cordl_method_info.invoke_unchecked((), (angle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -641,7 +645,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -659,7 +663,7 @@ impl crate::Unity::Mathematics::RigidTransform {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_Il2CppString_IFormatProvider1(
@@ -670,7 +674,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -693,14 +697,16 @@ impl crate::Unity::Mathematics::RigidTransform {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (format, formatProvider))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (format, formatProvider))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Translate(
         vector: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -717,7 +723,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
-            method.invoke_unchecked((), (vector))?
+            cordl_method_info.invoke_unchecked((), (vector))?
         };
         Ok(__cordl_ret.into())
     }
@@ -727,7 +733,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         translation: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -747,7 +753,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (rotation, translation))?
+            cordl_method_info.invoke_unchecked(self, (rotation, translation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -756,7 +762,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         transform: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -773,7 +779,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (transform))?
+            cordl_method_info.invoke_unchecked(self, (transform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -783,7 +789,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         translation: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -803,7 +809,7 @@ impl crate::Unity::Mathematics::RigidTransform {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (rotation, translation))?
+            cordl_method_info.invoke_unchecked(self, (rotation, translation))?
         };
         Ok(__cordl_ret.into())
     }

@@ -51,7 +51,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsBlockCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -78,7 +78,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsBlockCipher,
         > = unsafe {
-            method.invoke_unchecked(self, (context, cipherKeySize, macAlgorithm))?
+            cordl_method_info
+                .invoke_unchecked(self, (context, cipherKeySize, macAlgorithm))?
         };
         Ok(__cordl_ret.into())
     }
@@ -90,7 +91,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -110,7 +111,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateAeadBlockCipher_Aes_Gcm(
@@ -121,7 +122,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -141,7 +142,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateAeadBlockCipher_Aes_Ocb(
@@ -152,7 +153,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -172,7 +173,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateAeadBlockCipher_Camellia_Gcm(
@@ -183,7 +184,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -203,7 +204,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateAesBlockCipher(
@@ -212,7 +213,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -232,7 +233,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBlockCipher,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateAesEngine(
@@ -241,7 +242,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -261,7 +262,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBlockCipher,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateCamelliaBlockCipher(
@@ -270,7 +271,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -290,7 +291,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBlockCipher,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateCamelliaCipher(
@@ -304,7 +305,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsBlockCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -331,7 +332,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsBlockCipher,
         > = unsafe {
-            method.invoke_unchecked(self, (context, cipherKeySize, macAlgorithm))?
+            cordl_method_info
+                .invoke_unchecked(self, (context, cipherKeySize, macAlgorithm))?
         };
         Ok(__cordl_ret.into())
     }
@@ -341,7 +343,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -361,7 +363,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBlockCipher,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateChaCha20Poly1305(
@@ -373,7 +375,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -395,7 +397,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsCipher,
-        > = unsafe { method.invoke_unchecked(self, (context))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (context))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateCipher(
@@ -409,7 +411,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -436,7 +438,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsCipher,
         > = unsafe {
-            method.invoke_unchecked(self, (context, encryptionAlgorithm, macAlgorithm))?
+            cordl_method_info
+                .invoke_unchecked(self, (context, encryptionAlgorithm, macAlgorithm))?
         };
         Ok(__cordl_ret.into())
     }
@@ -451,7 +454,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsAeadCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -477,7 +480,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsAeadCipher,
-        > = unsafe { method.invoke_unchecked(self, (context, cipherKeySize, macSize))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (context, cipherKeySize, macSize))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateCipher_Aes_Gcm(
@@ -491,7 +496,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsAeadCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -517,7 +522,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsAeadCipher,
-        > = unsafe { method.invoke_unchecked(self, (context, cipherKeySize, macSize))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (context, cipherKeySize, macSize))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateCipher_Aes_Ocb(
@@ -531,7 +538,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsAeadCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -557,7 +564,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsAeadCipher,
-        > = unsafe { method.invoke_unchecked(self, (context, cipherKeySize, macSize))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (context, cipherKeySize, macSize))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateCipher_Camellia_Gcm(
@@ -571,7 +580,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsAeadCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -597,7 +606,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsAeadCipher,
-        > = unsafe { method.invoke_unchecked(self, (context, cipherKeySize, macSize))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (context, cipherKeySize, macSize))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateDesEdeBlockCipher(
@@ -606,7 +617,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -626,7 +637,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBlockCipher,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateDesEdeCipher(
@@ -639,7 +650,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsBlockCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -664,7 +675,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsBlockCipher,
-        > = unsafe { method.invoke_unchecked(self, (context, macAlgorithm))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (context, macAlgorithm))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateHMacDigest(
@@ -674,7 +687,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -694,7 +707,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IDigest,
-        > = unsafe { method.invoke_unchecked(self, (macAlgorithm))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (macAlgorithm))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateNullCipher(
@@ -707,7 +720,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsNullCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -732,7 +745,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsNullCipher,
-        > = unsafe { method.invoke_unchecked(self, (context, macAlgorithm))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (context, macAlgorithm))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateRC4Cipher(
@@ -746,7 +761,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsStreamCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -773,7 +788,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsStreamCipher,
         > = unsafe {
-            method.invoke_unchecked(self, (context, cipherKeySize, macAlgorithm))?
+            cordl_method_info
+                .invoke_unchecked(self, (context, cipherKeySize, macAlgorithm))?
         };
         Ok(__cordl_ret.into())
     }
@@ -783,7 +799,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IStreamCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -803,7 +819,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IStreamCipher,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateSeedBlockCipher(
@@ -812,7 +828,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -832,7 +848,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBlockCipher,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateSeedCipher(
@@ -845,7 +861,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsBlockCipher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -870,7 +886,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsBlockCipher,
-        > = unsafe { method.invoke_unchecked(self, (context, macAlgorithm))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (context, macAlgorithm))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -884,7 +902,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -897,7 +915,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

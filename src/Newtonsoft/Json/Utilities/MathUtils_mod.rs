@@ -41,7 +41,7 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::MathUtils {
 impl crate::Newtonsoft::Json::Utilities::MathUtils {
     pub fn ApproxEquals(d1: f64, d2: f64) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64, f64), bool, 2usize>("ApproxEquals")
@@ -53,12 +53,14 @@ impl crate::Newtonsoft::Json::Utilities::MathUtils {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (d1, d2))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (d1, d2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IntLength(i: u64) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), i32, 1usize>("IntLength")
@@ -70,12 +72,12 @@ impl crate::Newtonsoft::Json::Utilities::MathUtils {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (i))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntToHex(n: i32) -> quest_hook::libil2cpp::Result<char> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), char, 1usize>("IntToHex")
@@ -87,7 +89,7 @@ impl crate::Newtonsoft::Json::Utilities::MathUtils {
                         )
                     })
             });
-        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (n))? };
+        let __cordl_ret: char = unsafe { cordl_method_info.invoke_unchecked((), (n))? };
         Ok(__cordl_ret.into())
     }
     pub fn Max_Nullable_1_Nullable_1_0(
@@ -95,7 +97,7 @@ impl crate::Newtonsoft::Json::Utilities::MathUtils {
         val2: crate::System::Nullable_1<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -112,7 +114,7 @@ impl crate::Newtonsoft::Json::Utilities::MathUtils {
                     })
             });
         let __cordl_ret: crate::System::Nullable_1<i32> = unsafe {
-            method.invoke_unchecked((), (val1, val2))?
+            cordl_method_info.invoke_unchecked((), (val1, val2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -121,7 +123,7 @@ impl crate::Newtonsoft::Json::Utilities::MathUtils {
         val2: crate::System::Nullable_1<f64>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<f64>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -138,7 +140,7 @@ impl crate::Newtonsoft::Json::Utilities::MathUtils {
                     })
             });
         let __cordl_ret: crate::System::Nullable_1<f64> = unsafe {
-            method.invoke_unchecked((), (val1, val2))?
+            cordl_method_info.invoke_unchecked((), (val1, val2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -147,7 +149,7 @@ impl crate::Newtonsoft::Json::Utilities::MathUtils {
         val2: crate::System::Nullable_1<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -164,7 +166,7 @@ impl crate::Newtonsoft::Json::Utilities::MathUtils {
                     })
             });
         let __cordl_ret: crate::System::Nullable_1<i32> = unsafe {
-            method.invoke_unchecked((), (val1, val2))?
+            cordl_method_info.invoke_unchecked((), (val1, val2))?
         };
         Ok(__cordl_ret.into())
     }

@@ -56,7 +56,7 @@ impl crate::UnityOpus::Library {
         decodeFec: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -84,7 +84,8 @@ impl crate::UnityOpus::Library {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (decoder, data, len, pcm, frameSize, decodeFec))?
+            cordl_method_info
+                .invoke_unchecked((), (decoder, data, len, pcm, frameSize, decodeFec))?
         };
         Ok(__cordl_ret.into())
     }
@@ -97,7 +98,7 @@ impl crate::UnityOpus::Library {
         decodeFec: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -125,7 +126,8 @@ impl crate::UnityOpus::Library {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (decoder, data, len, pcm, frameSize, decodeFec))?
+            cordl_method_info
+                .invoke_unchecked((), (decoder, data, len, pcm, frameSize, decodeFec))?
         };
         Ok(__cordl_ret.into())
     }
@@ -135,7 +137,7 @@ impl crate::UnityOpus::Library {
         error: quest_hook::libil2cpp::ByRefMut<crate::UnityOpus::ErrorCode>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -156,7 +158,7 @@ impl crate::UnityOpus::Library {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (samplingFrequency, channels, error))?
+            cordl_method_info.invoke_unchecked((), (samplingFrequency, channels, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -164,7 +166,7 @@ impl crate::UnityOpus::Library {
         decoder: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -181,7 +183,7 @@ impl crate::UnityOpus::Library {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (decoder))?
+            cordl_method_info.invoke_unchecked((), (decoder))?
         };
         Ok(__cordl_ret.into())
     }
@@ -193,7 +195,7 @@ impl crate::UnityOpus::Library {
         maxDataBytes: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -220,7 +222,8 @@ impl crate::UnityOpus::Library {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (encoder, pcm, frameSize, data, maxDataBytes))?
+            cordl_method_info
+                .invoke_unchecked((), (encoder, pcm, frameSize, data, maxDataBytes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -232,7 +235,7 @@ impl crate::UnityOpus::Library {
         maxDataBytes: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -259,7 +262,8 @@ impl crate::UnityOpus::Library {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (encoder, pcm, frameSize, data, maxDataBytes))?
+            cordl_method_info
+                .invoke_unchecked((), (encoder, pcm, frameSize, data, maxDataBytes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -270,7 +274,7 @@ impl crate::UnityOpus::Library {
         error: quest_hook::libil2cpp::ByRefMut<crate::UnityOpus::ErrorCode>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -292,7 +296,7 @@ impl crate::UnityOpus::Library {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (samplingFrequency, channels, application, error))?
         };
         Ok(__cordl_ret.into())
@@ -301,7 +305,7 @@ impl crate::UnityOpus::Library {
         encoder: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -318,7 +322,7 @@ impl crate::UnityOpus::Library {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (encoder))?
+            cordl_method_info.invoke_unchecked((), (encoder))?
         };
         Ok(__cordl_ret.into())
     }
@@ -327,7 +331,7 @@ impl crate::UnityOpus::Library {
         bitrate: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -344,7 +348,7 @@ impl crate::UnityOpus::Library {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (encoder, bitrate))?
+            cordl_method_info.invoke_unchecked((), (encoder, bitrate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -353,7 +357,7 @@ impl crate::UnityOpus::Library {
         complexity: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -370,7 +374,7 @@ impl crate::UnityOpus::Library {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (encoder, complexity))?
+            cordl_method_info.invoke_unchecked((), (encoder, complexity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -379,7 +383,7 @@ impl crate::UnityOpus::Library {
         signal: crate::UnityOpus::OpusSignal,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -396,7 +400,7 @@ impl crate::UnityOpus::Library {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (encoder, signal))?
+            cordl_method_info.invoke_unchecked((), (encoder, signal))?
         };
         Ok(__cordl_ret.into())
     }
@@ -407,7 +411,7 @@ impl crate::UnityOpus::Library {
         softclipMem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -433,7 +437,8 @@ impl crate::UnityOpus::Library {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (pcm, frameSize, channels, softclipMem))?
+            cordl_method_info
+                .invoke_unchecked((), (pcm, frameSize, channels, softclipMem))?
         };
         Ok(__cordl_ret.into())
     }
@@ -441,7 +446,7 @@ impl crate::UnityOpus::Library {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -454,7 +459,7 @@ impl crate::UnityOpus::Library {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

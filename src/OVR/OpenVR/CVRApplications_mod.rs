@@ -47,7 +47,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         bTemporary: bool,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -69,7 +69,8 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = unsafe {
-            method.invoke_unchecked(self, (pchApplicationManifestFullPath, bTemporary))?
+            cordl_method_info
+                .invoke_unchecked(self, (pchApplicationManifestFullPath, bTemporary))?
         };
         Ok(__cordl_ret.into())
     }
@@ -78,7 +79,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         pchAppKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -94,7 +95,9 @@ impl crate::OVR::OpenVR::CVRApplications {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pchAppKey))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (pchAppKey))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetApplicationAutoLaunch(
@@ -102,7 +105,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         pchAppKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -118,12 +121,14 @@ impl crate::OVR::OpenVR::CVRApplications {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pchAppKey))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (pchAppKey))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetApplicationCount(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("GetApplicationCount")
@@ -135,7 +140,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetApplicationKeyByIndex(
@@ -145,7 +150,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         unAppKeyBufferLen: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -168,7 +173,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (unApplicationIndex, pchAppKeyBuffer, unAppKeyBufferLen),
@@ -183,7 +188,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         unAppKeyBufferLen: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -206,7 +211,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (unProcessId, pchAppKeyBuffer, unAppKeyBufferLen),
@@ -221,7 +226,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         unArgs: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -244,7 +249,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: u32 = unsafe {
-            method.invoke_unchecked(self, (unHandle, pchArgs, unArgs))?
+            cordl_method_info.invoke_unchecked(self, (unHandle, pchArgs, unArgs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -253,7 +258,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         pchAppKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -269,7 +274,9 @@ impl crate::OVR::OpenVR::CVRApplications {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, (pchAppKey))? };
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (pchAppKey))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetApplicationPropertyBool(
@@ -279,7 +286,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRApplicationError>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -304,7 +311,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (pchAppKey, eProperty, peError))?
+            cordl_method_info.invoke_unchecked(self, (pchAppKey, eProperty, peError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -319,7 +326,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRApplicationError>,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -348,7 +355,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: u32 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (
@@ -369,7 +376,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRApplicationError>,
     ) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -394,7 +401,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: u64 = unsafe {
-            method.invoke_unchecked(self, (pchAppKey, eProperty, peError))?
+            cordl_method_info.invoke_unchecked(self, (pchAppKey, eProperty, peError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -407,7 +414,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         unMimeTypesBuffer: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -432,7 +439,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (pchAppKey, pchMimeTypesBuffer, unMimeTypesBuffer),
@@ -447,7 +454,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -465,7 +472,7 @@ impl crate::OVR::OpenVR::CVRApplications {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (error))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (error))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetApplicationsThatSupportMimeType(
@@ -477,7 +484,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         unAppKeysThatSupportBuffer: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -502,7 +509,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: u32 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (
@@ -521,7 +528,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -539,12 +546,12 @@ impl crate::OVR::OpenVR::CVRApplications {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (state))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (state))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentSceneProcessId(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("GetCurrentSceneProcessId")
@@ -556,7 +563,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDefaultApplicationForMimeType(
@@ -566,7 +573,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         unAppKeyBufferLen: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -591,7 +598,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (pchMimeType, pchAppKeyBuffer, unAppKeyBufferLen),
@@ -605,7 +612,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         unAppKeyBufferLen: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -627,7 +634,8 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = unsafe {
-            method.invoke_unchecked(self, (pchAppKeyBuffer, unAppKeyBufferLen))?
+            cordl_method_info
+                .invoke_unchecked(self, (pchAppKeyBuffer, unAppKeyBufferLen))?
         };
         Ok(__cordl_ret.into())
     }
@@ -637,7 +645,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         crate::OVR::OpenVR::EVRApplicationTransitionState,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -654,7 +662,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRApplicationTransitionState = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -664,7 +672,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         pchAppKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -686,7 +694,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = unsafe {
-            method.invoke_unchecked(self, (unProcessId, pchAppKey))?
+            cordl_method_info.invoke_unchecked(self, (unProcessId, pchAppKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -695,7 +703,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         pchAppKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -711,12 +719,14 @@ impl crate::OVR::OpenVR::CVRApplications {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pchAppKey))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (pchAppKey))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsQuitUserPromptRequested(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsQuitUserPromptRequested")
@@ -728,7 +738,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn LaunchApplication(
@@ -736,7 +746,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         pchAppKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -753,7 +763,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = unsafe {
-            method.invoke_unchecked(self, (pchAppKey))?
+            cordl_method_info.invoke_unchecked(self, (pchAppKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -763,7 +773,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         pchArgs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -787,7 +797,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = unsafe {
-            method.invoke_unchecked(self, (pchMimeType, pchArgs))?
+            cordl_method_info.invoke_unchecked(self, (pchMimeType, pchArgs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -796,7 +806,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         pchAppKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -813,7 +823,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = unsafe {
-            method.invoke_unchecked(self, (pchAppKey))?
+            cordl_method_info.invoke_unchecked(self, (pchAppKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -826,7 +836,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -853,7 +863,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (pchBinaryPath, pchArguments, pchWorkingDirectory),
@@ -872,7 +882,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -901,7 +911,8 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = unsafe {
-            method.invoke_unchecked(self, (pchTemplateAppKey, pchNewAppKey, pKeys))?
+            cordl_method_info
+                .invoke_unchecked(self, (pchTemplateAppKey, pchNewAppKey, pKeys))?
         };
         Ok(__cordl_ret.into())
     }
@@ -919,7 +930,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         pchAppKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -936,7 +947,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = unsafe {
-            method.invoke_unchecked(self, (pchAppKey))?
+            cordl_method_info.invoke_unchecked(self, (pchAppKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -947,7 +958,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -964,7 +975,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = unsafe {
-            method.invoke_unchecked(self, (pchApplicationManifestFullPath))?
+            cordl_method_info.invoke_unchecked(self, (pchApplicationManifestFullPath))?
         };
         Ok(__cordl_ret.into())
     }
@@ -974,7 +985,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         bAutoLaunch: bool,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -996,7 +1007,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = unsafe {
-            method.invoke_unchecked(self, (pchAppKey, bAutoLaunch))?
+            cordl_method_info.invoke_unchecked(self, (pchAppKey, bAutoLaunch))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1006,7 +1017,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         pchMimeType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1030,7 +1041,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRApplicationError = unsafe {
-            method.invoke_unchecked(self, (pchAppKey, pchMimeType))?
+            cordl_method_info.invoke_unchecked(self, (pchAppKey, pchMimeType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1039,7 +1050,7 @@ impl crate::OVR::OpenVR::CVRApplications {
         pInterface: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1056,7 +1067,7 @@ impl crate::OVR::OpenVR::CVRApplications {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pInterface))?
+            cordl_method_info.invoke_unchecked(self, (pInterface))?
         };
         Ok(__cordl_ret.into())
     }

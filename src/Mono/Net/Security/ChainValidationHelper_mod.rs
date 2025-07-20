@@ -70,7 +70,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::ChainValidationHelper>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -102,7 +102,9 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Net::Security::ChainValidationHelper,
-        > = unsafe { method.invoke_unchecked((), (provider, settings, stream))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (provider, settings, stream))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DefaultSelectionCallback(
@@ -124,7 +126,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -162,7 +164,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (targetHost, localCertificates, remoteCertificate, acceptableIssuers),
@@ -182,7 +184,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::ChainValidationHelper>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -212,7 +214,9 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Net::Security::ChainValidationHelper,
-        > = unsafe { method.invoke_unchecked((), (owner, provider, settings))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (owner, provider, settings))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetValidationCallback(
@@ -223,7 +227,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         quest_hook::libil2cpp::Gc<crate::System::Net::ServerCertValidationCallback>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -245,7 +249,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::ServerCertValidationCallback,
-        > = unsafe { method.invoke_unchecked((), (settings))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (settings))? };
         Ok(__cordl_ret.into())
     }
     pub fn InvokeCallback(
@@ -259,7 +263,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         errors: crate::System::Net::Security::SslPolicyErrors,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -284,7 +288,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (leaf, chain, errors))?
+            cordl_method_info.invoke_unchecked(self, (leaf, chain, errors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -326,7 +330,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -365,7 +369,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (
@@ -393,7 +397,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::ValidationResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -424,7 +428,9 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::ValidationResult,
-        > = unsafe { method.invoke_unchecked(self, (host, serverMode, leaf, chain))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (host, serverMode, leaf, chain))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateChain_ByRefMut1(
@@ -447,7 +453,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::ValidationResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -485,7 +491,8 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::ValidationResult,
         > = unsafe {
-            method.invoke_unchecked(self, (host, server, leaf, chain, certs, errors))?
+            cordl_method_info
+                .invoke_unchecked(self, (host, server, leaf, chain, certs, errors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -507,7 +514,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::ValidationResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -543,7 +550,8 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::ValidationResult,
         > = unsafe {
-            method.invoke_unchecked(self, (host, server, leaf, chain, certs, errors))?
+            cordl_method_info
+                .invoke_unchecked(self, (host, server, leaf, chain, certs, errors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -560,7 +568,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         stream: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MonoTlsStream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -591,7 +599,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (owner, provider, settings, cloneSettings, stream),
@@ -605,7 +613,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::MonoTlsSettings>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -625,7 +633,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::MonoTlsSettings,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

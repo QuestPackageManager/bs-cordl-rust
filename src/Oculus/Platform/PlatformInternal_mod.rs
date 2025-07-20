@@ -48,7 +48,7 @@ impl crate::Oculus::Platform::PlatformInternal {
         quest_hook::libil2cpp::Void,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -65,7 +65,7 @@ impl crate::Oculus::Platform::PlatformInternal {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -82,7 +82,7 @@ impl crate::Oculus::Platform::PlatformInternal {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -115,7 +115,7 @@ impl crate::Oculus::Platform::PlatformInternal {
                     crate::Oculus::Platform::Models::PlatformInitialize,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (appID, accessToken))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (appID, accessToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseMessageHandle(
@@ -125,7 +125,7 @@ impl crate::Oculus::Platform::PlatformInternal {
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -145,7 +145,7 @@ impl crate::Oculus::Platform::PlatformInternal {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message> = unsafe {
-            method.invoke_unchecked((), (messageHandle, messageType))?
+            cordl_method_info.invoke_unchecked((), (messageHandle, messageType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -210,7 +210,7 @@ impl crate::Oculus::Platform::PlatformInternal_HTTP {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -233,7 +233,7 @@ impl crate::Oculus::Platform::PlatformInternal_HTTP {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (callback))?
+            cordl_method_info.invoke_unchecked((), (callback))?
         };
         Ok(__cordl_ret.into())
     }
@@ -457,7 +457,7 @@ impl crate::Oculus::Platform::PlatformInternal_Users {
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -489,7 +489,7 @@ impl crate::Oculus::Platform::PlatformInternal_Users {
                     crate::Oculus::Platform::Models::LinkedAccountList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (providers))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (providers))? };
         Ok(__cordl_ret.into())
     }
 }

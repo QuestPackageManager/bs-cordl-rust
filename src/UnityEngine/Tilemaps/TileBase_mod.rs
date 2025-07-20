@@ -47,7 +47,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -72,7 +72,8 @@ impl crate::UnityEngine::Tilemaps::TileBase {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (position, tilemap, tileAnimationData))?
+            cordl_method_info
+                .invoke_unchecked(self, (position, tilemap, tileAnimationData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -82,7 +83,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Tilemaps::TileAnimationData> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -104,7 +105,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Tilemaps::TileAnimationData = unsafe {
-            method.invoke_unchecked(self, (position, tilemap))?
+            cordl_method_info.invoke_unchecked(self, (position, tilemap))?
         };
         Ok(__cordl_ret.into())
     }
@@ -118,7 +119,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         hasAnimation: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -144,7 +145,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     self,
                     (position, tilemap, tileAnimationData, hasAnimation),
@@ -159,7 +160,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         tileData: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Tilemaps::TileData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -184,7 +185,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (position, tilemap, tileData))?
+            cordl_method_info.invoke_unchecked(self, (position, tilemap, tileData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -194,7 +195,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Tilemaps::TileData> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -216,7 +217,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Tilemaps::TileData = unsafe {
-            method.invoke_unchecked(self, (position, tilemap))?
+            cordl_method_info.invoke_unchecked(self, (position, tilemap))?
         };
         Ok(__cordl_ret.into())
     }
@@ -233,7 +234,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -255,7 +256,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (position, tilemap))?
+            cordl_method_info.invoke_unchecked(self, (position, tilemap))?
         };
         Ok(__cordl_ret.into())
     }
@@ -266,7 +267,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -289,7 +290,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (position, tilemap, go))?
+            cordl_method_info.invoke_unchecked(self, (position, tilemap, go))?
         };
         Ok(__cordl_ret.into())
     }
@@ -301,7 +302,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         startUpInvokedByUser: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -325,7 +326,8 @@ impl crate::UnityEngine::Tilemaps::TileBase {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (position, tilemap, go, startUpInvokedByUser))?
+            cordl_method_info
+                .invoke_unchecked(self, (position, tilemap, go, startUpInvokedByUser))?
         };
         Ok(__cordl_ret.into())
     }
@@ -333,7 +335,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
@@ -346,7 +348,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -42,7 +42,7 @@ impl crate::Tweening::FrameParityExtensions {
         frameParity: crate::Tweening::FrameParity,
     ) -> quest_hook::libil2cpp::Result<crate::Tweening::FrameParity> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -59,7 +59,7 @@ impl crate::Tweening::FrameParityExtensions {
                     })
             });
         let __cordl_ret: crate::Tweening::FrameParity = unsafe {
-            method.invoke_unchecked((), (frameParity))?
+            cordl_method_info.invoke_unchecked((), (frameParity))?
         };
         Ok(__cordl_ret.into())
     }

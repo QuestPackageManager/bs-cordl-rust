@@ -61,7 +61,7 @@ impl crate::Mono::Net::Security::AsyncReadRequest {
         crate::Mono::Net::Security::AsyncOperationStatus,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -78,7 +78,7 @@ impl crate::Mono::Net::Security::AsyncReadRequest {
                     })
             });
         let __cordl_ret: crate::Mono::Net::Security::AsyncOperationStatus = unsafe {
-            method.invoke_unchecked(self, (status))?
+            cordl_method_info.invoke_unchecked(self, (status))?
         };
         Ok(__cordl_ret.into())
     }
@@ -93,7 +93,7 @@ impl crate::Mono::Net::Security::AsyncReadRequest {
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -120,7 +120,8 @@ impl crate::Mono::Net::Security::AsyncReadRequest {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (parent, sync, buffer, offset, _cordl_size))?
+            cordl_method_info
+                .invoke_unchecked(self, (parent, sync, buffer, offset, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }

@@ -46,7 +46,7 @@ impl crate::BeatSaber::RecPlay::PoseSampler {
         nearest: i32,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::RecPlay::FrameSample> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -71,7 +71,7 @@ impl crate::BeatSaber::RecPlay::PoseSampler {
                     })
             });
         let __cordl_ret: crate::BeatSaber::RecPlay::FrameSample = unsafe {
-            method.invoke_unchecked((), (frames, _cordl_time, nearest))?
+            cordl_method_info.invoke_unchecked((), (frames, _cordl_time, nearest))?
         };
         Ok(__cordl_ret.into())
     }
@@ -82,7 +82,7 @@ impl crate::BeatSaber::RecPlay::PoseSampler {
         sample: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::RecPlay::FrameSample>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -108,7 +108,7 @@ impl crate::BeatSaber::RecPlay::PoseSampler {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Pose = unsafe {
-            method.invoke_unchecked((), (frames, sample))?
+            cordl_method_info.invoke_unchecked((), (frames, sample))?
         };
         Ok(__cordl_ret.into())
     }
@@ -120,7 +120,7 @@ impl crate::BeatSaber::RecPlay::PoseSampler {
         nearest: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -145,7 +145,7 @@ impl crate::BeatSaber::RecPlay::PoseSampler {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Pose = unsafe {
-            method.invoke_unchecked((), (frames, _cordl_time, nearest))?
+            cordl_method_info.invoke_unchecked((), (frames, _cordl_time, nearest))?
         };
         Ok(__cordl_ret.into())
     }

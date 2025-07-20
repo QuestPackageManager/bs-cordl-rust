@@ -47,7 +47,7 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -63,7 +63,7 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
                         )
                     })
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (o))? };
+        let __cordl_ret: T = unsafe { cordl_method_info.invoke_unchecked((), (o))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnsafeEnumCast<T>(val: T) -> quest_hook::libil2cpp::Result<i32>
@@ -72,7 +72,7 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(T), i32, 1usize>("UnsafeEnumCast")
@@ -84,7 +84,7 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (val))? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (val))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnsafeEnumCastLong<T>(val: T) -> quest_hook::libil2cpp::Result<i64>
@@ -93,7 +93,7 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(T), i64, 1usize>("UnsafeEnumCastLong")
@@ -105,7 +105,7 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (val))? };
+        let __cordl_ret: i64 = unsafe { cordl_method_info.invoke_unchecked((), (val))? };
         Ok(__cordl_ret.into())
     }
 }

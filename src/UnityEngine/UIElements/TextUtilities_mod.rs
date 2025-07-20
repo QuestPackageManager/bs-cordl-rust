@@ -46,7 +46,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
         >,
     ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -69,7 +69,9 @@ impl crate::UnityEngine::UIElements::TextUtilities {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (ve, fontAsset))? };
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (ve, fontAsset))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetFontAsset(
@@ -78,7 +80,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -100,7 +102,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::FontAsset,
-        > = unsafe { method.invoke_unchecked((), (ve))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (ve))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTextCoreSettingsForElement(
@@ -109,7 +111,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
         crate::UnityEngine::UIElements::UIR::TextCoreSettings,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -128,7 +130,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::TextCoreSettings = unsafe {
-            method.invoke_unchecked((), (ve))?
+            cordl_method_info.invoke_unchecked((), (ve))?
         };
         Ok(__cordl_ret.into())
     }
@@ -138,7 +140,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PanelTextSettings>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -160,14 +162,14 @@ impl crate::UnityEngine::UIElements::TextUtilities {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::PanelTextSettings,
-        > = unsafe { method.invoke_unchecked((), (ve))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (ve))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsFontAssigned(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -185,7 +187,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ve))? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (ve))? };
         Ok(__cordl_ret.into())
     }
     pub fn MeasureVisualElementTextSize(
@@ -197,7 +199,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
         heightMode: crate::UnityEngine::UIElements::VisualElement_MeasureMode,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -225,7 +227,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (te, textToMeasure, width, widthMode, height, heightMode),

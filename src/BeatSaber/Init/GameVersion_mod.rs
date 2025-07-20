@@ -59,7 +59,7 @@ impl crate::BeatSaber::Init::GameVersion {
         other: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -75,7 +75,9 @@ impl crate::BeatSaber::Init::GameVersion {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
@@ -83,7 +85,7 @@ impl crate::BeatSaber::Init::GameVersion {
         other: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -99,7 +101,9 @@ impl crate::BeatSaber::Init::GameVersion {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -118,7 +122,7 @@ impl crate::BeatSaber::Init::GameVersion {
         quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -136,7 +140,7 @@ impl crate::BeatSaber::Init::GameVersion {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::BeatSaber::Init::GameVersion,
-        > = unsafe { method.invoke_unchecked((), (version))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (version))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -145,7 +149,7 @@ impl crate::BeatSaber::Init::GameVersion {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -163,7 +167,7 @@ impl crate::BeatSaber::Init::GameVersion {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdatePlatformId(
@@ -173,7 +177,7 @@ impl crate::BeatSaber::Init::GameVersion {
         quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -191,7 +195,7 @@ impl crate::BeatSaber::Init::GameVersion {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::BeatSaber::Init::GameVersion,
-        > = unsafe { method.invoke_unchecked(self, (newPlatformId))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (newPlatformId))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -200,7 +204,7 @@ impl crate::BeatSaber::Init::GameVersion {
         metadata: crate::System::Nullable_1<crate::BeatSaber::Init::GameVersion_Metadata>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -222,13 +226,13 @@ impl crate::BeatSaber::Init::GameVersion {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (content, metadata))?
+            cordl_method_info.invoke_unchecked(self, (content, metadata))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsReleasable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsReleasable")
@@ -240,7 +244,7 @@ impl crate::BeatSaber::Init::GameVersion {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -424,7 +428,7 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
         other: crate::BeatSaber::Init::GameVersion_BuildInfo,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -440,7 +444,9 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
@@ -448,7 +454,7 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
         other: crate::BeatSaber::Init::GameVersion_BuildInfo,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -464,7 +470,9 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractNumberFromPlatformId(
@@ -474,7 +482,7 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -497,7 +505,9 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (platform, inputPlatformId))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (platform, inputPlatformId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FormatPlatformId(
@@ -507,7 +517,7 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -530,7 +540,9 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (platform, inputPlatformId))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (platform, inputPlatformId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Parse(
@@ -539,7 +551,7 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
         >,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Init::GameVersion_BuildInfo> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -556,7 +568,7 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
                     })
             });
         let __cordl_ret: crate::BeatSaber::Init::GameVersion_BuildInfo = unsafe {
-            method.invoke_unchecked((), (buildMetadataValue))?
+            cordl_method_info.invoke_unchecked((), (buildMetadataValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -566,7 +578,7 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -584,7 +596,7 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -594,7 +606,7 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
         buildId: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -617,7 +629,7 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (platform, platformId, buildId))?
+            cordl_method_info.invoke_unchecked(self, (platform, platformId, buildId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -776,7 +788,7 @@ impl crate::BeatSaber::Init::GameVersion_Content {
         other: crate::BeatSaber::Init::GameVersion_Content,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -792,7 +804,9 @@ impl crate::BeatSaber::Init::GameVersion_Content {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
@@ -800,7 +814,7 @@ impl crate::BeatSaber::Init::GameVersion_Content {
         other: crate::BeatSaber::Init::GameVersion_Content,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -816,14 +830,16 @@ impl crate::BeatSaber::Init::GameVersion_Content {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ParseOnStartOf(
         versionCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Init::GameVersion_Content> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -840,7 +856,7 @@ impl crate::BeatSaber::Init::GameVersion_Content {
                     })
             });
         let __cordl_ret: crate::BeatSaber::Init::GameVersion_Content = unsafe {
-            method.invoke_unchecked((), (versionCode))?
+            cordl_method_info.invoke_unchecked((), (versionCode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -848,7 +864,7 @@ impl crate::BeatSaber::Init::GameVersion_Content {
         versionCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Init::GameVersion_Content> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -865,7 +881,7 @@ impl crate::BeatSaber::Init::GameVersion_Content {
                     })
             });
         let __cordl_ret: crate::BeatSaber::Init::GameVersion_Content = unsafe {
-            method.invoke_unchecked((), (versionCode))?
+            cordl_method_info.invoke_unchecked((), (versionCode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -874,7 +890,7 @@ impl crate::BeatSaber::Init::GameVersion_Content {
         pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Init::GameVersion_Content> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -898,7 +914,7 @@ impl crate::BeatSaber::Init::GameVersion_Content {
                     })
             });
         let __cordl_ret: crate::BeatSaber::Init::GameVersion_Content = unsafe {
-            method.invoke_unchecked((), (versionCore, pattern))?
+            cordl_method_info.invoke_unchecked((), (versionCore, pattern))?
         };
         Ok(__cordl_ret.into())
     }
@@ -906,7 +922,7 @@ impl crate::BeatSaber::Init::GameVersion_Content {
         crate::BeatSaber::Init::GameVersion_Content,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -923,7 +939,7 @@ impl crate::BeatSaber::Init::GameVersion_Content {
                     })
             });
         let __cordl_ret: crate::BeatSaber::Init::GameVersion_Content = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -933,7 +949,7 @@ impl crate::BeatSaber::Init::GameVersion_Content {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -951,7 +967,7 @@ impl crate::BeatSaber::Init::GameVersion_Content {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -961,7 +977,7 @@ impl crate::BeatSaber::Init::GameVersion_Content {
         patch: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -978,7 +994,7 @@ impl crate::BeatSaber::Init::GameVersion_Content {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (major, minor, patch))?
+            cordl_method_info.invoke_unchecked(self, (major, minor, patch))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1131,7 +1147,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1149,7 +1165,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CompareTo(
@@ -1157,7 +1173,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
         other: crate::BeatSaber::Init::GameVersion_Metadata,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1173,7 +1189,9 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
@@ -1181,7 +1199,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
         other: crate::BeatSaber::Init::GameVersion_Metadata,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1197,7 +1215,9 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractSubStrings(
@@ -1210,7 +1230,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1241,7 +1261,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (versionMetadata, preReleaseLabelString, buildInfoString),
@@ -1253,7 +1273,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
         versionMetadata: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Init::GameVersion_Metadata> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1270,7 +1290,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
                     })
             });
         let __cordl_ret: crate::BeatSaber::Init::GameVersion_Metadata = unsafe {
-            method.invoke_unchecked((), (versionMetadata))?
+            cordl_method_info.invoke_unchecked((), (versionMetadata))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1280,7 +1300,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1298,7 +1318,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_GameVersion_PreReleaseLabel_Nullable_1_1(
@@ -1309,7 +1329,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1331,7 +1351,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (preReleaseLabel, buildInfo))?
+            cordl_method_info.invoke_unchecked(self, (preReleaseLabel, buildInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1342,7 +1362,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1361,7 +1381,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (buildInfo))?
+            cordl_method_info.invoke_unchecked(self, (buildInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1515,7 +1535,7 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
         other: crate::BeatSaber::Init::GameVersion_PreReleaseLabel,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1531,7 +1551,9 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other))? };
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
@@ -1539,7 +1561,7 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
         other: crate::BeatSaber::Init::GameVersion_PreReleaseLabel,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1555,7 +1577,9 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FirstLetterToUpper(
@@ -1566,7 +1590,7 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1588,7 +1612,7 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (value))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPrefixText(
@@ -1597,7 +1621,7 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1615,7 +1639,7 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Parse(
@@ -1624,7 +1648,7 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
         crate::BeatSaber::Init::GameVersion_PreReleaseLabel,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -1641,7 +1665,7 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
                     })
             });
         let __cordl_ret: crate::BeatSaber::Init::GameVersion_PreReleaseLabel = unsafe {
-            method.invoke_unchecked((), (releaseLabel))?
+            cordl_method_info.invoke_unchecked((), (releaseLabel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1651,7 +1675,7 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1669,7 +1693,7 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ())? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -1678,7 +1702,7 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
@@ -1700,7 +1724,7 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (prefix, label))?
+            cordl_method_info.invoke_unchecked(self, (prefix, label))?
         };
         Ok(__cordl_ret.into())
     }

@@ -53,7 +53,7 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
         comparison: crate::System::StringComparison,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -84,7 +84,7 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
                     })
             });
         let __cordl_ret: crate::System::Nullable_1<i32> = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (enumNames, value, valueIndex, valueSubstringLength, comparison),
@@ -98,7 +98,7 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::EnumInfo>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -118,7 +118,7 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Utilities::EnumInfo,
-        > = unsafe { method.invoke_unchecked((), (enumType))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (enumType))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFlagsValues<T>(
@@ -131,7 +131,7 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -151,7 +151,7 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<T>,
-        > = unsafe { method.invoke_unchecked((), (value))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn InitializeValuesAndNames(
@@ -165,7 +165,7 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::EnumInfo>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -190,7 +190,7 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Utilities::EnumInfo,
-        > = unsafe { method.invoke_unchecked((), (key))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (key))? };
         Ok(__cordl_ret.into())
     }
     pub fn InternalFlagsFormat(
@@ -200,7 +200,7 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -223,7 +223,7 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (entry, result))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (entry, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn MatchName(
@@ -243,7 +243,7 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
         comparison: crate::System::StringComparison,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -281,7 +281,7 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
                     })
             });
         let __cordl_ret: crate::System::Nullable_1<i32> = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -307,7 +307,7 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -335,7 +335,7 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked((), (enumType, namingStrategy, value, disallowNumber))?
         };
         Ok(__cordl_ret.into())
@@ -344,7 +344,7 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -360,7 +360,9 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (value))? };
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryToString_NamingStrategy1(
@@ -374,7 +376,7 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -404,7 +406,8 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (enumType, value, namingStrategy, name))?
+            cordl_method_info
+                .invoke_unchecked((), (enumType, value, namingStrategy, name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -417,7 +420,7 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -445,7 +448,7 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (enumType, value, camelCase, name))?
+            cordl_method_info.invoke_unchecked((), (enumType, value, camelCase, name))?
         };
         Ok(__cordl_ret.into())
     }

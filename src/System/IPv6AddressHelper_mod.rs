@@ -42,7 +42,7 @@ impl crate::System::IPv6AddressHelper {
         numbers: crate::System::ReadOnlySpan_1<u16>,
     ) -> quest_hook::libil2cpp::Result<crate::System::ValueTuple_2<i32, i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -59,7 +59,7 @@ impl crate::System::IPv6AddressHelper {
                     })
             });
         let __cordl_ret: crate::System::ValueTuple_2<i32, i32> = unsafe {
-            method.invoke_unchecked((), (numbers))?
+            cordl_method_info.invoke_unchecked((), (numbers))?
         };
         Ok(__cordl_ret.into())
     }
@@ -70,7 +70,7 @@ impl crate::System::IPv6AddressHelper {
         validateStrictAddress: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -94,7 +94,8 @@ impl crate::System::IPv6AddressHelper {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (name, start, end, validateStrictAddress))?
+            cordl_method_info
+                .invoke_unchecked((), (name, start, end, validateStrictAddress))?
         };
         Ok(__cordl_ret.into())
     }
@@ -102,7 +103,7 @@ impl crate::System::IPv6AddressHelper {
         numbers: crate::System::ReadOnlySpan_1<u16>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -118,7 +119,9 @@ impl crate::System::IPv6AddressHelper {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (numbers))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (numbers))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsValid(
@@ -127,7 +130,7 @@ impl crate::System::IPv6AddressHelper {
         end: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -150,7 +153,7 @@ impl crate::System::IPv6AddressHelper {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (name, start, end))?
+            cordl_method_info.invoke_unchecked((), (name, start, end))?
         };
         Ok(__cordl_ret.into())
     }
@@ -160,7 +163,7 @@ impl crate::System::IPv6AddressHelper {
         end: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -183,7 +186,7 @@ impl crate::System::IPv6AddressHelper {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (name, start, end))?
+            cordl_method_info.invoke_unchecked((), (name, start, end))?
         };
         Ok(__cordl_ret.into())
     }
@@ -196,7 +199,7 @@ impl crate::System::IPv6AddressHelper {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -224,7 +227,7 @@ impl crate::System::IPv6AddressHelper {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (address, numbers, start, scopeId))?
+            cordl_method_info.invoke_unchecked((), (address, numbers, start, scopeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -239,7 +242,7 @@ impl crate::System::IPv6AddressHelper {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -268,14 +271,16 @@ impl crate::System::IPv6AddressHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (str, start, isLoopback, scopeId))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (str, start, isLoopback, scopeId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldHaveIpv4Embedded(
         numbers: crate::System::ReadOnlySpan_1<u16>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -291,7 +296,9 @@ impl crate::System::IPv6AddressHelper {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (numbers))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (numbers))?
+        };
         Ok(__cordl_ret.into())
     }
 }

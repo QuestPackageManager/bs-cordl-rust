@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::StringExtensions {
         stringComparison: crate::System::StringComparison,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -77,7 +77,8 @@ impl crate::GlobalNamespace::StringExtensions {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (stringArray, value, stringComparison))?
+            cordl_method_info
+                .invoke_unchecked((), (stringArray, value, stringComparison))?
         };
         Ok(__cordl_ret.into())
     }
@@ -87,7 +88,7 @@ impl crate::GlobalNamespace::StringExtensions {
         comp: crate::System::StringComparison,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -112,7 +113,7 @@ impl crate::GlobalNamespace::StringExtensions {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (source, substring, comp))?
+            cordl_method_info.invoke_unchecked((), (source, substring, comp))?
         };
         Ok(__cordl_ret.into())
     }
@@ -124,7 +125,7 @@ impl crate::GlobalNamespace::StringExtensions {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -148,7 +149,9 @@ impl crate::GlobalNamespace::StringExtensions {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (s, length, appendEllipsis))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (s, length, appendEllipsis))?
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -42,7 +42,7 @@ impl crate::Microsoft::Win32::NativeMethods {
         handle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -58,7 +58,9 @@ impl crate::Microsoft::Win32::NativeMethods {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (handle))? };
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (handle))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DuplicateHandle(
@@ -75,7 +77,7 @@ impl crate::Microsoft::Win32::NativeMethods {
         dwOptions: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -104,7 +106,7 @@ impl crate::Microsoft::Win32::NativeMethods {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method
+            cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
@@ -122,7 +124,7 @@ impl crate::Microsoft::Win32::NativeMethods {
     }
     pub fn GetCurrentProcess() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -139,13 +141,13 @@ impl crate::Microsoft::Win32::NativeMethods {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentProcessId() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("GetCurrentProcessId")
@@ -157,7 +159,7 @@ impl crate::Microsoft::Win32::NativeMethods {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetExitCodeProcess_IntPtr0(
@@ -165,7 +167,7 @@ impl crate::Microsoft::Win32::NativeMethods {
         exitCode: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -182,7 +184,7 @@ impl crate::Microsoft::Win32::NativeMethods {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (processHandle, exitCode))?
+            cordl_method_info.invoke_unchecked((), (processHandle, exitCode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -193,7 +195,7 @@ impl crate::Microsoft::Win32::NativeMethods {
         exitCode: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -215,7 +217,7 @@ impl crate::Microsoft::Win32::NativeMethods {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (processHandle, exitCode))?
+            cordl_method_info.invoke_unchecked((), (processHandle, exitCode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -227,7 +229,7 @@ impl crate::Microsoft::Win32::NativeMethods {
         user: quest_hook::libil2cpp::ByRefMut<i64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -250,7 +252,8 @@ impl crate::Microsoft::Win32::NativeMethods {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (handle, creation, _cordl_exit, kernel, user))?
+            cordl_method_info
+                .invoke_unchecked((), (handle, creation, _cordl_exit, kernel, user))?
         };
         Ok(__cordl_ret.into())
     }
@@ -264,7 +267,7 @@ impl crate::Microsoft::Win32::NativeMethods {
         user: quest_hook::libil2cpp::ByRefMut<i64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -289,7 +292,8 @@ impl crate::Microsoft::Win32::NativeMethods {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (handle, creation, _cordl_exit, kernel, user))?
+            cordl_method_info
+                .invoke_unchecked((), (handle, creation, _cordl_exit, kernel, user))?
         };
         Ok(__cordl_ret.into())
     }

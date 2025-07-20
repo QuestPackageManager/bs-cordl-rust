@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -76,7 +76,8 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe {
-            method.invoke_unchecked((), (serviceIdPrefix, npTitleId, productLabel))?
+            cordl_method_info
+                .invoke_unchecked((), (serviceIdPrefix, npTitleId, productLabel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -88,7 +89,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -117,7 +118,8 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe {
-            method.invoke_unchecked((), (serviceIdPrefix, titleId, productLabel))?
+            cordl_method_info
+                .invoke_unchecked((), (serviceIdPrefix, titleId, productLabel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -128,7 +130,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -153,7 +155,9 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (serviceId, productLabel))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (serviceId, productLabel))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetContentId_SonyPublisherSKUSettingsSO0(
@@ -164,7 +168,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -184,7 +188,9 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (sonyPublisherSKUSettings))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (sonyPublisherSKUSettings))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNpTitleId(
@@ -193,7 +199,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -211,7 +217,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (titleId))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (titleId))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetServiceId(
@@ -222,7 +228,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -242,7 +248,9 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (sonyPublisherSKUSettings))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (sonyPublisherSKUSettings))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetServiceIdFromNpTitleId(
@@ -252,7 +260,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -277,7 +285,9 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (serviceIdPrefix, npTitleId))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (serviceIdPrefix, npTitleId))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetServiceIdFromTitleId(
@@ -287,7 +297,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
@@ -312,7 +322,9 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (serviceIdPrefix, titleId))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (serviceIdPrefix, titleId))?
+        };
         Ok(__cordl_ret.into())
     }
 }
